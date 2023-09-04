@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 1%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width:100%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 15%;
+    min-width: 40px;
+    max-width: 65px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 15%;
+    min-width: 60px;
+    max-width: 90px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    padding-right: 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #707070;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: grey;
+}
+
+
+.photosdisplay{
+    width: 100%;
+    margin: 13px 0 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+}
+
+.photosdisplay img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.photosdisplay2, .photosdisplay3{
+    display: none;
+}
+
+
+.row{
+    padding-top: 5px;
+    padding-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4%;
+}
+
+.col-1{
+    flex-basis: 90%;
+    position: relative;
+    margin-left: 5%;
+
+}
+
+.col-1 h2{
+    font-size: 54px;
+    font-family: sans-serif;
+    color: #707070;
+}
+
+.col-1 h3{
+    font-size: 25px;
+    color: #707070;
+    font-weight: 100;
+    margin: 10px 0 10px;
+}
+
+.col-1 p{
+    font-size: 16px;
+    font-family: Montserrat;
+    color: #b7b7b7;
+    font-weight: 100;
+    margin: 10px 0 10px;
+}
+
+button{
+    width: 60%;
+    max-width: 11rem;
+    font-family: Montserrat;
+    font-size: 15px;
+    align-items: center;
+    border: 0;
+    margin-top: 10px;
+    padding: 10px 10px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
+    position: absolute;
+    left: -40px;
+    top:8px;
+}
+
+
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 3%;
+    background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
+    border-radius: 10px 0 0 20px;
+    height: 25%;
+    width: 48%;
+    z-index: -1;
+    display: none;
+    
+}
+
+
+@media only screen and (max-width:950px){
+
+    .row{
+        margin: 20px 0;
+    }
+
+    .photosdisplay, .photosdisplay3{
+        display: none;
+    }
+
+    .photosdisplay2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0;
+        margin: 13px 0 40px;
+    }
+
+    .photosdisplay2 img{
+        width: 100%;
+    }
+
+    .color-box{
+        display: none;
+    }
+
+    .col-1{
+        flex-basis: 100%;
+    }
+
+    .col-1 h2{
+        font-size: 35px;
+    }
+
+    .col-1 h3{
+        font-size: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width:600px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
+        position: absolute;
+        top: 10%;
+        height: 60%;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 3em 3em 3em;
+    }
+
+    nav ul li a{
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-family: "Montserrat";
+    }
+
+
+    .menu-icon{
+        display: block;
+        margin-right: 8%;
+        min-width: 40px;
+        max-width: 65px;
+        cursor: pointer;
+    }
+
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+        padding-right: 10px;
+    }
+
+    .row{
+        margin: 10px 0;
+    }
+
+    .photosdisplay, .photosdisplay2{
+        display: none;
+    }
+
+    .photosdisplay3{
+        display: block;
+        margin: 13px 0 25px;
+    }
+
+    .photosdisplay3 img{
+        width: 100%;
+    }
+
+    .color-box{
+        display: none;
+    }
+
+    .col-1{
+        flex-basis: 100%;
+    }
+
+    .col-1 h2{
+        font-size: 30px;
+    }
+
+    .col-1 h3{
+        font-size: 25px;
+    }
+}
