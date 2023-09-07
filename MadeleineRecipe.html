@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
     rel="stylesheet">
   <!-- My CSS -->
-  <link rel="stylesheet" href="style/MadeleineRecipe.css">
+  <link rel="stylesheet" href="style/(Completed) Madeleine Recipe.css">
 </head>
 
 <body>
@@ -24,9 +24,9 @@
             <nav>
                 <ul id="menulist">
                     <li><a href="">Shop</a></li>
-                    <li><a href="">Recipe</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">About Me</a></li>
+                    <li><a href="RecipeSummary.html">Recipe</a></li>
+                    <li><a href="GallerySummary.html">Gallery</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
                 </ul>
             </nav>
             <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
@@ -35,7 +35,7 @@
     <div class="contentsection">
         <div class="element1">
             <div class="pic1">
-                <img src ="Pictures/Madeleine 1.JPG">
+                <img src ="Pictures/Madeleine 1.jpg">
             </div>
             <div class="pic2">
                 <img src ="Pictures/Madeleine 4.jpg">
@@ -116,7 +116,7 @@
         function togglemenu(){
             if(menulist.style.maxHeight == "0px")
             {
-                menulist.style.maxHeight = "800px"
+                menulist.style.maxHeight = "100vh"
             }
             else
             {
@@ -128,3 +128,4 @@
 </body>
 
 </html>
+
