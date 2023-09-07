@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    
+}
+
+/*headings section*/
+
+.headingsection{
+    height: 88%;
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.logo{
+    width: 20%;
+    min-width: 5em;
+    max-width: 6.5em;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.menu-icon{
+    width: 15%;
+    min-width: 60px;
+    max-width: 90px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    padding-right: 5%;
+    background-color: white;
+}
+
+nav ul{
+    background-color: white;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 1.8em;
+    background-color: white;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #707070;
+    font-size: 14px;
+    background-color: white;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: grey;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(107, 107, 107);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+/*content*/
+
+.content{
+    display: flex;
+    grid-template-columns: 3fr 5fr;
+}
+
+.element1{
+    max-width: 600px;
+}
+
+.element1 img{
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-top: 5px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.photodisplay2, .photodisplay3{
+    display: none;
+}
+
+.element2{
+    height: 90vh;
+}
+
+.myintroduction{
+    height: 60vh;
+}
+
+.myintroduction h1{
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    margin-right: 400px;
+    color: #888888;
+    font-size: 22px;
+    font-style: italic;
+    font-family: Fraunces;
+    text-align: justify;
+}
+
+.myintroduction h2{
+    margin-top: ;
+    margin-left: ;
+    margin-bottom: ;
+    color:;
+}
+
+.myintroduction p{
+    margin-left: 70px;
+    margin-right: 400px;
+    font-size: 14px;
+    color:rgb(122, 122, 122);
+    text-align: justify;
+    z-index: 100;
+    text-shadow: 1px 1px 2px white;
+}
+
+.myintroductionp2{
+    margin-left: 70px;
+    margin-right: 400px;
+    font-size: 14px;
+    color:rgb(122, 122, 122);
+    text-align: justify;
+    z-index: 100;
+}
+
+
+.backgroundpic{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
+.backgroundpic img{
+    object-fit: cover;
+    height: 530px;
+    opacity: 0.9;  
+}
+
+.backgroundpicdisplay2{
+    display: none;
+}
+
+.KBakeryName{
+    position: absolute;
+    right: 24%;
+    bottom: 7%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.KBakeryName img{
+    object-fit: cover;
+    height: 130px;
+}
+
+.KBakeryNameformobile{
+    display: none;
+}
+
+.IGContact{
+    margin-left: 70px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.IGContact img{
+    width: 35px;
+}
+
+.IGname{
+    margin-left: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.IGname a{
+    text-decoration: none;
+    color: #da849a;
+
+}
+
+
+@media only screen and (max-width:1350px){
+    .backgroundpic img{
+        height: 500px; 
+    }
+
+    .backgroundpic{
+        bottom: 2%;
+    }
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2{
+        margin-right: 350px;
+    }
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
+        margin-left: 40px;
+    }
+
+    .KBakeryName img{
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width:1250px){
+    
+    .element1 img{
+        margin-left: 30px;
+    }
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
+        margin-left: 20px;
+    }
+
+    .myintroduction h1{
+        margin-right: 200px;
+    }
+    
+    .myintroduction p, .myintroductionp2{
+        margin-right: 300px;
+    }
+
+    .backgroundpic img{
+        height: 480px; 
+    }
+}
+
+@media only screen and (max-width:1120px){
+    
+    .element1 img{
+        margin-left: 30px;
+    }
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
+        margin-left: 20px;
+    }
+
+    .myintroduction h1{
+        margin-right: 130px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    
+    .myintroduction p, .myintroductionp2{
+        margin-right: 280px;
+    }
+
+    .backgroundpic img{
+        height: 480px; 
+    }
+
+    .backgroundpicdisplay{
+        display: none;
+    }
+
+    .backgroundpicdisplay2{
+        display: flex;
+    }
+
+    .KBakeryName img{
+        height: 100px;
+    }
+
+    .IGContact{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:1040px){
+    
+    .element1 img{
+        margin-left: 30px;
+    }
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
+        margin-left: 20px;
+    }
+
+    .myintroduction h1{
+        margin-right: 100px;
+        margin-top: 50px;
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
+    
+    .myintroduction p{
+        margin-right: 170px;
+    }
+    
+    .myintroductionp2{
+        margin-right: 280px;
+    }
+
+    .backgroundpic img{
+        height: 430px;
+        margin-bottom: 7%; 
+    }
+
+    .KBakeryName{
+        right: 22%;
+        bottom: 5%;
+    }
+
+    .KBakeryName img{
+        height: 90px;
+    }
+
+    .IGContact{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:970px){
+    
+    .element1 img{
+        margin-left: 20px;
+    }
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
+        margin-left: 15px;
+    }
+
+    .myintroduction h1{
+        margin-right: 50px;
+        margin-top: 50px;
+        margin-bottom: 28px;
+        font-size: 18px;
+    }
+    
+    .myintroduction p{
+        margin-right: 50px;
+    }
+    
+    .myintroductionp2{
+        margin-right: 250px;
+    }
+
+    .backgroundpic img{
+        height: 400px;
+        margin-bottom: 7%; 
+    }
+
+    .KBakeryName{
+        right: 22%;
+        bottom: 5%;
+    }
+
+    .KBakeryName img{
+        height: 80px;
+    }
+
+    .IGContact{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .content{
+        flex-wrap: wrap;
+    }
+    
+    .element1{
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .element1 img{
+        max-height: 250px;
+        height: auto;
+    }
+
+    .photodisplay{
+        display: none;
+    }
+
+    .photodisplay3{
+        display: flex;
+    }
+
+    .element2{
+        height: auto;
+    }
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2{
+        margin-left: 30px;
+        margin-right: 280px;
+    }
+
+    .myintroduction p, .myintroductionp2{
+        font-size: 13px;
+    }
+
+    .backgroundpic img{
+        height: 470px;
+        margin-bottom: 7%;
+    }
+
+    .KBakeryName{
+        right: 24%;
+        bottom: 0%;
+    }
+
+    .KBakeryName img{
+        height: 100px;
+    }
+
+    .IGContact{
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    .element1{
+        height: auto;
+        margin-left: 15px;
+    }
+
+    .element1 img{
+        max-height: 220px;
+    }
+
+    .myintroduction h1{
+        margin-top: 30px;
+        margin-bottom: 17px;
+    }
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2{
+        margin-left: 30px;
+        margin-right: 260px;
+    }
+
+    .myintroduction h1{
+        font-size: 17px;
+    }
+
+    .backgroundpic img{
+        height: 420px;
+        margin-bottom: 13%;
+    }
+
+    .KBakeryName{
+        right: 24%;
+        bottom: 1%;
+    }
+
+    .KBakeryName img{
+        height: 87px;
+    }
+
+    .IGContact{
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:700px){
+
+    .element1{
+        margin-left: 12px;
+    }
+
+    .element1 img{
+        max-height: 200px;
+    }
+
+    .myintroduction h1{
+        margin-top: 25px;
+    }
+
+    .myintroduction h1{
+        margin-right: 180px;
+    }
+
+    .myintroduction p, .myintroductionp2{
+        margin-left: 30px;
+        margin-right: 220px;
+    }
+
+    .myintroduction h1{
+        font-size: 16px;
+    }
+
+    .backgroundpic img{
+        height: 370px;
+        margin-bottom: 15%;
+    }
+
+    .KBakeryName{
+        right: 26%;
+        bottom: 2%;
+    }
+
+    .KBakeryName img{
+        height: 75px;
+    }
+
+    .IGContact{
+        margin-left: 28px;
+        margin-top: 15px;
+    }
+
+    .IGContact img{
+        width: 33px;
+    }
+    
+    .IGname{
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .logo{
+        width: 15%;
+        max-width: 90px;
+        cursor: pointer;
+        padding-left: 20px;
+        background-color: white;
+    }
+    
+    nav ul{
+        width: 100%;
+        background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
+        position: absolute;
+        top: 100%;
+        height: 100vh;
+        right: 0;
+        z-index: 999;
+    }
+
+    nav ul li{
+        background-color: transparent;
+        display: block;
+        margin: 3em 3em 3em;
+    }
+
+    nav ul li a{
+        background-color: transparent;
+        color: #fff;
+        font-size: 16px;
+        font-family: "Montserrat";
+        letter-spacing: 1px;
+    }
+
+    nav ul li a:hover{
+        color:white;
+    }
+
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        transition: width 0.5s;
+    }
+
+    nav ul li a:hover::after{
+        width: 0;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-right: 8%;
+        min-width: 40px;
+        max-width: 65px;
+        cursor: pointer;
+    }
+
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+        padding-right: 10px;
+    }
+
+    .content{
+        margin: 1rem 1rem 1rem;
+    }
+
+    .element1{
+        max-width: auto;
+        width: 100%;
+        margin: 5px;
+    }
+    
+    .element1 img{
+        object-fit: cover;
+        width: 100%;
+        display: block;  
+        margin: 5px;  
+    }
+
+    
+    
+
+    .myintroduction h1, .myintroduction p, .myintroductionp2{
+        margin: 5%;
+    }
+
+    .backgroundpic{
+        display: none;
+    }
+
+    .KBakeryNameformobile{
+        display: flex;
+        align-items: center;
+    }
+
+    .KBakeryNameformobile img{
+        height: 80px;
+        margin: 5px 10px 5px;
+        
+    }
+
+    .KBakeryName{
+        display: none;
+    }
+    
+}
