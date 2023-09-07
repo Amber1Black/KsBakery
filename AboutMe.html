@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/Tart Ring.jpg">
+  <title>K's Bakery</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
+    rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style/AboutMe.css">
+</head>
+
+<body>
+
+    <div class="headingsection">
+        <img class="logo" src="Pictures/Logo6.jpg">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="RecipeSummary.html">Recipe</a></li>
+                    <li><a href="GallerySummary.html">Gallery</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+    </div>
+
+    <div class="content">
+
+
+        <div class="element1">
+            <div class="photodisplay">
+                <img src ="Pictures/Profile Pic 5.jpg">
+            </div>
+
+            <div class="photodisplay3">
+                <img src ="Pictures/Profile Pic 7.jpg">
+            </div>
+            
+        </div>
+
+        <div class="element2">
+            <div class="myintroduction">
+                <div class="KBakeryNameformobile">
+                    <img src = "Pictures/K's Bakery.jpg">
+                </div>
+
+                <h1>"Love to see people's smile when they try my bakeries. Let's embrace the beauty of home-made bakery"</h1>
+
+                <p>I have been self-learning bakery since end-2022, and I really love it. 
+                    
+                    I wish everyone can embrace the beauty of home-made bakery, it's healthy and delicious.
+                    I love art also, I always try to incorporate artistic element into my bakeries, to bake something
+                    that is delicious and looks good.<Br>
+                    <Br>
+                    
+                    <div class="myintroductionp2">I write all the coding of this website, and I made all the graphics and icons. I have been watching lots of youtube regarding web coding (same as baking) to learn about it.
+                        I wish you have a smooth baking journey here. <Br>
+                    <Br>
+                        If you have any comment, feel free to share with me.</div>
+                </p>
+                
+                <div class="IGContact">
+                    <img src = "Pictures/IG icon 2.jpg">
+                    <div class="IGname">
+                        <a href = "https://www.instagram.com/katsolihull/">Instagram: katsolihull</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="backgroundpic">
+            <div class="backgroundpicdisplay">
+                <img src ="Pictures/Tart Ring - Heart Shape Outline 2.jpg">
+            </div>
+
+            <div class="backgroundpicdisplay2">
+                <img src ="Pictures/Tart Ring - Heart Shape Outline 3.jpg">
+            </div>
+
+            
+        </div>
+
+        <div class="KBakeryName">
+            <img src = "Pictures/K's Bakery.jpg">
+        </div>
+
+    </div>
+
+
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "100vh"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/Tart Ring.jpg">
+  <title>K's Bakery</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
+    rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style/(Completed) Madeleine Recipe.css">
+</head>
+
+<body>
+
+    <div class="headingsection">
+        <img class="logo" src="Pictures/Logo6.jpg">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Recipe</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">About Me</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+    </div>
+
+    <div class="contentsection">
+        <div class="element1">
+            <div class="pic1">
+                <img src ="Pictures/Madeleine 1.JPG">
+            </div>
+            <div class="pic2">
+                <img src ="Pictures/Madeleine 4.jpg">
+            </div>
+            
+        </div>
+        <div class="element2">
+            <div class="recipe-category">
+                CAKE
+            </div>
+            <div class="recipe-title">
+                Madeleine
+            </div>
+
+            <div class="recipe-what-you-need">
+                <p>What you need</p>
+            </div>
+      
+            <div class="ingredients">
+                <div class="ingredients-col">
+                    <Br>
+                    <h3>Egg</h3>
+                    <p>70g</p>
+                </div>
+                <div class="ingredients-col">
+                    <h3>Caster<Br>Sugar</h3>
+                    <p>70g</p>
+                </div>
+                <div class="ingredients-col">
+                    <Br>
+                    <h3>Honey</h3>
+                    <p>5g</p>
+                </div>
+                <div class="ingredients-col">
+                    <h3>Vanilla<Br>Extract</h3>
+                    <p>3g</p>
+                </div>
+      
+            </div>
+            <div class="ingredients">
+                <div class="ingredients-col">
+                    <h3>Plain<Br>Flour</h3>
+                    <p>85g</p>
+                </div>
+                <div class="ingredients-col">
+                    <h3>Baking<Br>Powder</h3>
+                    <p>2g</p>
+                </div>
+                <div class="ingredients-col">
+                    <Br><h3>Butter</h3>
+                    <p>85g</p>
+                </div>
+      
+            </div>
+
+            <div class ="recipe-what-to-do">
+                <p>What to do</p>
+                <ul class = "a">
+                    <li>Mix the egg with caster suger</li>
+                    <li>Add honey and vanilla extract and mix them together</li>
+                    <li>Add plain flour and baking powder for mixing, with seiving them</li>
+                    <li>Melt the butter into liquid, before adding to the mixture</li>
+                    <li>After mixing everything well together, freeze it for at least an hour before baking it</li>
+                    <li>Bake for 150 degrees for 12 min</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "800px"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

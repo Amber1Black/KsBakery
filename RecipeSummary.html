@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/Tart Ring.jpg">
+  <title>K's Bakery</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
+    rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style/RecipeSummary.css">
+</head>
+
+<body>
+
+    <div class="headingsection">
+        <img class="logo" src="Pictures/Logo6.jpg">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="RecipeSummary.html">Recipe</a></li>
+                    <li><a href="GallerySummary.html">Gallery</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+    </div>
+    
+    <div class="content">
+
+        <div class="description">
+            <h1>Recipe</h1>
+            <p> I have conducted testing many times, to see how to bake something that's more delicious.
+                I have watched many many youtube to learn from others. I believe everyone's taste is different. 
+                So, I have been altering the recipe to get the flavor I like.
+                <Br><Br>
+                I am not an expert of bakery, I am still a learner.
+                Here is just a sharing on how I bake. I wish everyone can enjoy the happiness of baking at home.
+            
+            </p>
+        </div>
+    
+        <div class="category">
+            <div class="categorygrid">
+                <img src = "Pictures/Cookie6.JPG">
+                <div class="categorybottom">
+                    <h3>Dress Cookie</h3>
+                </div>
+                <button type = "button"><a href="DressCookieRecipe.html">Bake</a></button>
+            </div>
+
+            <div class="categorygrid">
+                <img src = "Pictures/Madeleine 3.jpg">
+                <div class="categorybottom">
+                    <h3>Madeleine</h3>
+                </div>
+                <button type = "button"><a href="MadeleineRecipe.html">Bake</a></button>
+            </div>
+
+            <div class="categorygrid">
+                <img src = "Pictures/Cookie6.JPG">
+                <div class="categorybottom">
+                    <h3>Dress Cookie</h3>
+                </div>
+                <button type = "button"><a href="DressCookieRecipe.html">Bake</a></button>
+            </div>
+
+            <div class="categorygrid">
+                <img src = "Pictures/Madeleine 3.jpg">
+                <div class="categorybottom">
+                    <h3>Dress Cookie</h3>
+                </div>
+                <button type = "button"><a href="MadeleineRecipe.html">Bake</a></button>
+            </div>
+
+            <div class="categorygrid">
+                <img src = "Pictures/Cookie6.JPG">
+                <div class="categorybottom">
+                    <h3>Dress Cookie</h3>
+                </div>
+                <button type = "button"><a href="DressCookieRecipe.html">Bake</a></button>
+            </div>
+
+            <div class="categorygrid">
+                <img src = "Pictures/Madeleine 3.jpg">
+                <div class="categorybottom">
+                    <h3>Dress Cookie</h3>
+                </div>
+                <button type = "button"><a href="MadeleineRecipe.html">Bake</a></button>
+            </div>
+
+        
+
+            
+
+            
+        </div>
+
+    </div>
+   
+
+    
+        
+
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "100vh"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+

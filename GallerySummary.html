@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/Tart Ring.jpg">
+  <title>K's Bakery</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
+    rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style/GallerySummary.css">
+</head>
+
+<body>
+
+    <div class="headingsection">
+        <img class="logo" src="Pictures/Logo6.jpg">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="RecipeSummary.html">Recipe</a></li>
+                    <li><a href="GallerySummary.html">Gallery</a></li>
+                    <li><a href="">About Me</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+    </div>
+    
+    <div class="content">
+
+        <div class="description">
+            <h1>Bakeries Gallery</h1>
+            <p>When look back at the pics of what I have baked, I realized I did bake a lot.
+                So I think it's not a bad idea to place them all together here to view at one-go, as a record of what I have baked.
+                Less than a year ago, I was still a layman of baking.
+                After keep practising almost daily this year, I think I have a little progress on it =)
+                <Br><Br>
+                I always surf for new ideas of what to bake, I hope you can get some idea of what to bake here also.
+                Baking varieties are limitless, we can create our own style!
+            
+            </p>
+        </div>
+    
+        <div class="category">
+            <div class="categorygrid">
+                <img src = "Pictures/Tart Ring.jpg">
+                <button type = "button"><a href="TartGallery.html">View</a></button>
+                <div class="categorybottom">
+                    <h3>Tart</h3>
+                </div>
+            </div>
+
+            <div class="categorygrid">
+                <img src = "Pictures/Crown Cake.jpg">
+                <button type = "button"><a href="CakeGallery.html">View</a></button>
+                <div class="categorybottom">
+                    <h3>Cake</h3>
+                </div>
+            </div>
+
+            <div class="categorygrid">
+                <img src = "Pictures/Ribbon Bread.JPG">
+                <button type = "button"><a href="BreadGallery.html">View</a></button>
+                <div class="categorybottom">
+                    <h3>Bread</h3>
+                </div>
+            </div>
+
+            <div class="categorygrid">
+                <img src = "Pictures/Choco Cream Puff.JPG">
+                <button type = "button"><a href="PastryGallery.html">View</a></button>
+                <div class="categorybottom">
+                    <h3>Pastry</h3>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+
+    </div>
+   
+
+    
+        
+
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "100vh"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
