@@ -6,29 +6,23 @@
 }
 
 
-.container{
-    width: 100%;
-    min-height: 100vh;
-    padding-top: 1%;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+/*headings section*/
 
-
-/*Headings section*/
-
-.navbar{
-    width:100%;
-    padding-left: 5%;
+.headingsection{
+    height: 88%;
     display: flex;
-    align-items: center;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .logo{
-    width: 15%;
-    min-width: 40px;
-    max-width: 65px;
-    cursor: pointer;
+    width: 20%;
+    min-width: 65px;
+    max-width: 70px;
+    margin-left: 70px;
+    margin-top: 14px;
 }
 
 .menu-icon{
@@ -42,19 +36,27 @@
 nav{
     flex: 1;
     text-align: right;
-    padding-right: 8%;
+    padding-right: 5%;
+    background-color: white;
+}
+
+nav ul{
+    background-color: white;
 }
 
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 3%;
+    margin-right: 2em;
+    background-color: white;
+    
 }
 
 nav ul li a{
     text-decoration: none;
     color: #707070;
     font-size: 14px;
+    background-color: white;
     position: relative;
 }
 
@@ -70,7 +72,7 @@ nav ul li a::after{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgb(119, 118, 118);
+    background: rgb(107, 107, 107);
     transition: width 0.3s;
 }
 
@@ -115,6 +117,7 @@ nav ul li a:hover::after{
 
 }
 
+
 .col-1 h2{
     font-size: 54px;
     font-family: sans-serif;
@@ -141,6 +144,7 @@ button{
     max-width: 11rem;
     font-family: Montserrat;
     font-size: 15px;
+    letter-spacing: 1px; 
     align-items: center;
     border: 0;
     margin-top: 10px;
@@ -183,13 +187,26 @@ button a{
     border-radius: 10px 0 0 20px;
     height: 25%;
     width: 48%;
-    z-index: -1;
+    z-index: -100;
     display: none;
     
 }
 
+/*copyright*/
+
+.copyright{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 11px;
+    color: grey;
+    bottom: 2%;
+}
+
 
 @media only screen and (max-width:950px){
+    .logo{
+        margin-left: 40px;
+    }
 
     .row{
         margin: 20px 0;
@@ -230,28 +247,56 @@ button a{
 
 
 @media only screen and (max-width:600px){
+    .logo{
+        width: 12%;
+        max-width: 50px;
+        margin-left: 20px;
+        margin-top: 7px;
+    }
+    
     nav ul{
         width: 100%;
         background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
         position: absolute;
-        top: 10%;
-        height: 60%;
+        top: 100%;
+        height: 100vh;
         right: 0;
-        z-index: 2;
+        z-index: 9999999;
     }
 
     nav ul li{
+        background-color: transparent;
         display: block;
         margin: 3em 3em 3em;
     }
 
     nav ul li a{
+        background-color: transparent;
         color: #fff;
         font-size: 16px;
-        letter-spacing: 2px;
         font-family: "Montserrat";
+        letter-spacing: 1px;
     }
 
+    nav ul li a:hover{
+        color:white;
+    }
+
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        transition: width 0.5s;
+    }
+
+    nav ul li a:hover::after{
+        width: 0;
+    }
 
     .menu-icon{
         display: block;
@@ -298,5 +343,26 @@ button a{
 
     .col-1 h3{
         font-size: 25px;
+    }
+
+    .row, .col-1{
+        z-index: -100;
+    }
+
+    button, button a, button:hover{
+        z-index: 1;
+        position: absolute;
+    }
+
+    button{
+        width: 170px;
+        height: 40px;
+        font-size: 15px;
+        margin-top: 10px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 25px;
+        padding-right: 105px;
+        letter-spacing: 1px;   
     }
 }
