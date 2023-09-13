@@ -3,7 +3,6 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
-    
 }
 
 /*headings section*/
@@ -19,9 +18,10 @@
 
 .logo{
     width: 20%;
-    min-width: 5em;
-    max-width: 6.5em;
-    padding-left: 40px;
+    min-width: 65px;
+    max-width: 70px;
+    margin-left: 70px;
+    margin-top: 14px;
 }
 
 .menu-icon{
@@ -46,7 +46,7 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 1.8em;
+    margin-right: 2em;
     background-color: white;
     
 }
@@ -212,6 +212,17 @@ nav ul li a:hover::after{
 }
 
 
+/*copyright*/
+
+.copyright{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 11px;
+    color: grey;
+    bottom: 2%;
+}
+
+
 @media only screen and (max-width:1350px){
     .backgroundpic img{
         height: 500px; 
@@ -235,7 +246,10 @@ nav ul li a:hover::after{
 }
 
 @media only screen and (max-width:1250px){
-    
+    .logo{
+        margin-left: 50px;
+    }
+
     .element1 img{
         margin-left: 30px;
     }
@@ -345,7 +359,10 @@ nav ul li a:hover::after{
     }
 }
 
-@media only screen and (max-width:970px){
+@media only screen and (max-width:950px){
+    .logo{
+        margin-left: 40px;
+    }
     
     .element1 img{
         margin-left: 20px;
@@ -391,6 +408,12 @@ nav ul li a:hover::after{
 }
 
 @media only screen and (max-width:900px){
+    .logo{
+        width: 15%;
+        max-width: 90px;
+        margin-left: 35px;
+    }
+    
     .content{
         flex-wrap: wrap;
     }
@@ -417,13 +440,17 @@ nav ul li a:hover::after{
         height: auto;
     }
 
+    .myintroduction h1{
+        font-size: ;
+    }
+
     .myintroduction h1, .myintroduction p, .myintroductionp2{
         margin-left: 30px;
         margin-right: 280px;
     }
 
     .myintroduction p, .myintroductionp2{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .backgroundpic img{
@@ -460,6 +487,7 @@ nav ul li a:hover::after{
     .myintroduction h1{
         margin-top: 30px;
         margin-bottom: 17px;
+        font-size: ;
     }
 
     .myintroduction h1, .myintroduction p, .myintroductionp2{
@@ -549,11 +577,10 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:600px){
     .logo{
-        width: 15%;
-        max-width: 90px;
-        cursor: pointer;
-        padding-left: 20px;
-        background-color: white;
+        width: 12%;
+        max-width: 50px;
+        margin-left: 20px;
+        margin-top: 7px;
     }
     
     nav ul{
@@ -563,7 +590,7 @@ nav ul li a:hover::after{
         top: 100%;
         height: 100vh;
         right: 0;
-        z-index: 999;
+        z-index: 9999999;
     }
 
     nav ul li{
@@ -631,9 +658,6 @@ nav ul li a:hover::after{
         margin: 5px;  
     }
 
-    
-    
-
     .myintroduction h1, .myintroduction p, .myintroductionp2{
         margin: 5%;
     }
@@ -655,6 +679,10 @@ nav ul li a:hover::after{
 
     .KBakeryName{
         display: none;
+    }
+
+    .content{
+        padding-bottom: 80px;
     }
     
 }
