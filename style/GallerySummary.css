@@ -19,9 +19,10 @@
 
 .logo{
     width: 20%;
-    min-width: 5em;
-    max-width: 6.5em;
-    padding-left: 40px;
+    min-width: 65px;
+    max-width: 70px;
+    margin-left: 70px;
+    margin-top: 14px;
 }
 
 .menu-icon{
@@ -46,7 +47,7 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 1.3em;
+    margin-right: 2em;
     background-color: white;
     
 }
@@ -90,8 +91,8 @@ nav ul li a:hover::after{
  /*message on top*/
 
 .description{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 12%;
+    margin-right: 12%;
     margin-top: 50px;
     margin-bottom: 0px;
 }
@@ -105,50 +106,50 @@ nav ul li a:hover::after{
 
 .description p{
     text-align: justify;
-    margin-top: 10px;
+    margin-top: 25px;
     color: grey;
     font-size: 15px;
+    margin-bottom: 20px;
 }
 
- /*The 4 gallery category*/
+ /*The 5 gallery category*/
  
 .category{
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 0;
-    
 }
 
 .categorygrid{
-    margin: 40px 30px;
-    height: 335px;
-    width: 280px;
-    max-width: ;
+    margin: 20px 10px;
+    height: 316px;
+    max-width: 250px;
     background-color: hsl(33, 34%, 89%);
     border-radius: 15px;
     text-align: center;  
     padding: 6px; 
+    
 }
 
 .categorygrid img{
     height: 180px;
     width: 180px;
     object-fit: cover;
-    margin: 16px 20px;
+    margin: 10px 5px;
     border-radius: 50%;
-    background: white;  
-    padding: 6px;
+    background: white;
+    padding: 8px;
 }
 
 .categorybottom{
     background: white;
     color: #999;
-    padding: 20px 10px;
+    padding: 18px 10px;
     border-radius: 10px 10px 10px 10px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-bottom: ;
+    margin-bottom: 5px;
 }
 
 .categorybottom h3{
@@ -163,7 +164,7 @@ nav ul li a:hover::after{
     border: none;
     outline: none;
     box-shadow: 0 2px 8px rgba(75, 74, 74, 0.5);
-    padding: 10px 40px;
+    padding: 10px 30px;
     cursor: pointer;
     border-radius: 30px;
     margin-bottom: -100px;
@@ -178,38 +179,53 @@ nav ul li a:hover::after{
     color: #6e6e6e;
 }
 
+/*copyright*/
 
+.copyright{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 11px;
+    color: grey;
+    bottom: 2%;
+}
 
 
 @media only screen and (max-width:1200px){
+    .description{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 40px;
+        margin-bottom: ;
+    }
+
+    .category{
+        flex-wrap: wrap;
+    }
+    
     .categorygrid{
-        margin: 40px 20px;
-        height: 330px;
-        width: 300px;
-        max-width: ;
+        margin: 20px 30px 30px 10px;
+        height: 335px;
+        max-width: 280px;
+    }
+
+    .categorygrid img{
+        height: 200px;
+        width: 200px;
     }
    
 }
 
 @media only screen and (max-width:1080px){
-    .description{
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 50px;
-        margin-bottom: 0px;
-    }
     
-    .categorygrid{
-        margin: 40px 10px;
-        height: 333px;
-        width: 350px;
-        max-width: 320px;
-    }
    
 }
 
 
-@media only screen and (max-width:1010px){
+@media only screen and (max-width:950px){
+    .logo{
+        margin-left: 40px;
+    }
+
     .description{
         margin-left: 10%;
         margin-right: 10%;
@@ -218,10 +234,9 @@ nav ul li a:hover::after{
     }
     
     .categorygrid{
-        margin: 20px 20px;
-        height: 331px;
-        width: 340px;
-        max-width: 320px;
+        margin: 20px 10px;
+        height: 325px;
+        max-width: 260px;
 
     }
 
@@ -243,49 +258,20 @@ nav ul li a:hover::after{
     }
 }
 
-@media only screen and (max-width:725px){
-    .description{
-        margin-left: 8%;
-        margin-right: 8%;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-    
-    .categorygrid{
-        margin: 20px 15px;
-        height: 320px;
-        width: 250px;
-        max-width: 250px;
-    }
-
-    .categorygrid img{
-        height: 170px;
-        width: 170px;
-        object-fit: cover;
-        margin: 15px 10px;
-    }
-    
-    .description p{
-        font-size: 14px;
-    }
-
-    .category{
-        display: flex;
-        flex-wrap: wrap;
-        
+@media only screen and (max-width:850px){
+    .logo{
+        margin-left: 40px;
     }
 }
-
 
 
 @media only screen and (max-width:605px){
 
     .logo{
-        width: 15%;
-        max-width: 90px;
-        cursor: pointer;
-        padding-left: 20px;
-        background-color: white;
+        width: 12%;
+        max-width: 50px;
+        margin-left: 20px;
+        margin-top: 7px;
     }
     
     nav ul{
@@ -354,13 +340,11 @@ nav ul li a:hover::after{
     }
     
     .categorygrid{
-        margin-top: 20px;
+        margin-top: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        height: 320px;
-        width: 230px;
-        max-width: ;
-        background-color: hsl(33, 34%, 89%);
+        height: 325px;
+        max-width: 230px;
         border-radius: 15px;
         text-align: center;  
         padding: 6px; 
@@ -369,7 +353,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:500px){
 
-   
     .description{
         margin-left: 10%;
         margin-right: 10%;
@@ -381,21 +364,19 @@ nav ul li a:hover::after{
         margin-top: 30px;
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom: 0px;
-        height: 350px;
-        width: 400px;
+        margin-bottom: 10px;
+        height: 345px;
+        max-width: 300px;
         max-width: ;
-        background-color: hsl(33, 34%, 89%);
-        border-radius: 15px;
-        text-align: center;  
         padding: 6px; 
+        
     }
 
     .categorygrid img{
         height: 200px;
         width: 200px;
         object-fit: cover;
-        margin: 15px 20px;
+        margin: 15px 30px;
     }
 
     .categorybottom h3{
