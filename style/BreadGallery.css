@@ -108,7 +108,7 @@ nav ul li a:hover::after{
 
 .KBakeryName{
     position: fixed;
-    top: 280px;
+    top: 320px;
     left: 40px;
     mix-blend-mode: multiply;
 }
@@ -119,8 +119,8 @@ nav ul li a:hover::after{
 
 .CakePicOutline{
     position: fixed;
-    top: 380px;
-    margin-left: 180px;
+    top: 420px;
+    margin-left: 200px;
     mix-blend-mode: multiply;
 }
 
@@ -209,8 +209,8 @@ nav ul li a:hover::after{
     }
 
     .CakePicOutline{
-        top: 400px;
-        margin-left: 130px;
+        top: 420px;
+        margin-left: 150px;
     }
     
     .CakePicOutline img{
@@ -228,7 +228,7 @@ nav ul li a:hover::after{
     }
 
     .KBakeryName{
-        top: 300px;
+        top: 330px;
         left: 40px;
     }
     
@@ -237,8 +237,8 @@ nav ul li a:hover::after{
     }
 
     .CakePicOutline{
-        top: 420px;
-        margin-left: 120px;
+        top: 440px;
+        margin-left: 140px;
     }
     
     .CakePicOutline img{
@@ -311,7 +311,7 @@ nav ul li a:hover::after{
     }
 
     .KBakeryName{
-        top: 320px;
+        top: 350px;
         left: 20px;
     }
     
@@ -320,7 +320,7 @@ nav ul li a:hover::after{
     }
 
     .CakePicOutline{
-        top: 450px;
+        top: 470px;
         margin-left: 90px;
     }
     
@@ -355,7 +355,7 @@ nav ul li a:hover::after{
     }
 
     .KBakeryName{
-        top: 320px;
+        top: 350px;
         left: 20px;
     }
     
@@ -364,8 +364,8 @@ nav ul li a:hover::after{
     }
 
     .CakePicOutline{
-        top: 450px;
-        margin-left: 50px;
+        top: 470px;
+        margin-left: 70px;
     }
     
     .CakePicOutline img{
@@ -502,7 +502,7 @@ nav ul li a:hover::after{
         width: 100%;
         max-width: none;
         position: relative;
-        top: 40px;
+        top: 35px;
         left: 5%;
         margin-right: 10px;
         padding-right: ;
@@ -551,7 +551,7 @@ nav ul li a:hover::after{
     
     .gallery{
         grid-template-columns: 1fr 1fr;
-        margin-top: 90px;
+        margin-top: 70px;
         margin-left: 5%;
         margin-right: 5%;
         align-items: top;
