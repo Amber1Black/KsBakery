@@ -112,7 +112,7 @@ nav ul li a:hover::after{
 
 .col-1{
     flex-basis: 90%;
-    position: ;
+    position: relative;
     margin-left: 5%;
     margin-right: 5%;
 
@@ -336,6 +336,7 @@ button a{
 
     .col-1{
         flex-basis: 100%;
+        position:inherit
     }
 
     .col-1 h2{
