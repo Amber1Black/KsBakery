@@ -135,8 +135,8 @@ nav ul li a:hover::after{
     margin-left: 45%;
     margin-right: 2%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    column-gap: 15px;
     align-items: top;
     justify-content: center;
     
@@ -177,6 +177,23 @@ nav ul li a:hover::after{
 }
 
 
+/*back button*/
+
+.backbutton{
+    text-align: right;
+    margin-top: 50px;
+    bottom: 2%;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.backbutton a{
+    font-size: 13px;
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+}
+
+
 /*copyright*/
 
 .copyright{
@@ -193,7 +210,7 @@ nav ul li a:hover::after{
     
     .gallery{
         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-        column-gap: 0px;
+        column-gap: 15px;
         row-gap: 3px;
     }
    
@@ -245,8 +262,8 @@ nav ul li a:hover::after{
 @media only screen and (max-width:1000px){
    
     .gallery{
-        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+
     }
 
     .category p{
@@ -296,7 +313,7 @@ nav ul li a:hover::after{
    
     .gallery{
         grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-        column-gap: 5px;
+        column-gap: 15px;
     }
 
     .category p{
@@ -340,7 +357,7 @@ nav ul li a:hover::after{
    
     .gallery{
         grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-        column-gap: 5px;
+        column-gap: 15px;
     }
 
     .category p{
@@ -381,18 +398,14 @@ nav ul li a:hover::after{
 }
 
 @media only screen and (max-width:700px){
-    .logo{
-        margin-left: 40px;
-    }
-   
     .gallery{
-        grid-template-columns: repeat(auto-fit, minmax(13rem, 0fr));
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 0fr));
         right: 1%;
     }
 
     .category p{
         font-size: 14px;
-        max-width: 250px;
+        max-width: 220px;
         margin-top: ;
         margin-left: ;
     }
@@ -403,7 +416,7 @@ nav ul li a:hover::after{
     }
     
     .KBakeryName img{
-        max-width: 310px;
+        max-width: 270px;
     }
 
     .CakePicOutline{
@@ -412,7 +425,7 @@ nav ul li a:hover::after{
     }
     
     .CakePicOutline img{
-        max-width: 270px;
+        max-width: 250px;
     }
 
     .gallery img{
@@ -498,7 +511,7 @@ nav ul li a:hover::after{
         width: 100%;
         max-width: none;
         position: relative;
-        top: 40px;
+        top: 30px;
         left: 5%;
         margin-right: 10px;
         padding-right: ;
@@ -520,8 +533,6 @@ nav ul li a:hover::after{
         padding-right: 45px;
         margin-top: 0;
         margin-bottom: ;
-    
-        
     }
 
     .CakePicOutline{
@@ -547,7 +558,7 @@ nav ul li a:hover::after{
     
     .gallery{
         grid-template-columns: 1fr 1fr;
-        margin-top: 90px;
+        margin-top: 60px;
         margin-left: 5%;
         margin-right: 5%;
         align-items: top;
@@ -555,15 +566,15 @@ nav ul li a:hover::after{
         column-gap: 10px;     
     }
 
-   
-
     .gallery img{
         max-width: 10.6rem;
         max-height: 12rem;
     }
 
-    .cakedescription{
+    .cakedescription p{
         max-width: 10rem;
+        font-size: 13px;
     }
+    
     
 }
