@@ -135,8 +135,8 @@ nav ul li a:hover::after{
     margin-left: 45%;
     margin-right: 2%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    column-gap: 15px;
     align-items: top;
     justify-content: center;
     
@@ -179,6 +179,21 @@ nav ul li a:hover::after{
     
 }
 
+/*back button*/
+
+.backbutton{
+    text-align: right;
+    margin-top: 50px;
+    bottom: 2%;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.backbutton a{
+    font-size: 13px;
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+}
 
 /*copyright*/
 
@@ -197,7 +212,7 @@ nav ul li a:hover::after{
     
     .gallery{
         grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-        column-gap: 0px;
+        column-gap: 15px;
         row-gap: 3px;
     }
    
@@ -262,7 +277,7 @@ nav ul li a:hover::after{
 
     .KBakeryName{
         top: 320px;
-        left: 20px;
+        left: 50px;
     }
     
     .KBakeryName img{
@@ -299,8 +314,8 @@ nav ul li a:hover::after{
 @media only screen and (max-width:890px){
    
     .gallery{
-        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-        column-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+        column-gap: 15px;
     }
 
     .category p{
@@ -312,11 +327,11 @@ nav ul li a:hover::after{
 
     .KBakeryName{
         top: 350px;
-        left: 20px;
+        left: 40px;
     }
     
     .KBakeryName img{
-        max-width: 310px;
+        max-width: 300px;
     }
 
     .CakePicOutline{
@@ -344,7 +359,7 @@ nav ul li a:hover::after{
    
     .gallery{
         grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-        column-gap: 5px;
+        column-gap: 15px;
     }
 
     .category p{
@@ -385,10 +400,6 @@ nav ul li a:hover::after{
 }
 
 @media only screen and (max-width:700px){
-    .logo{
-        margin-left: 40px;
-    }
-   
     .gallery{
         grid-template-columns: repeat(auto-fit, minmax(13rem, 0fr));
         right: 1%;
@@ -524,8 +535,6 @@ nav ul li a:hover::after{
         padding-right: 45px;
         margin-top: 0;
         margin-bottom: ;
-    
-        
     }
 
     .CakePicOutline{
@@ -538,7 +547,6 @@ nav ul li a:hover::after{
     
     .CakePicOutline img{
         max-width: ;
-        
     }
 
     .KBakeryName{
@@ -551,15 +559,13 @@ nav ul li a:hover::after{
     
     .gallery{
         grid-template-columns: 1fr 1fr;
-        margin-top: 70px;
+        margin-top: 60px;
         margin-left: 5%;
         margin-right: 5%;
         align-items: top;
         justify-content: center;
         column-gap: 10px;     
     }
-
-   
 
     .gallery img{
         max-width: 10.6rem;
