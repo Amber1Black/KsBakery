@@ -464,6 +464,7 @@ nav ul li a:hover::after{
         margin-left: 10px;
         margin-right: 10px;
         justify-content: center;
+        column-gap: 15px;
     }
 
     .bakerypic{
