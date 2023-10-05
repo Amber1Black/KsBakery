@@ -94,6 +94,7 @@ nav ul li a:hover::after{
 
 .element1 img{
     height: 80vh;
+    max-width: 400px;
     object-fit: cover;
     border-radius: 10px;
     margin-left: 60px;
@@ -111,14 +112,10 @@ nav ul li a:hover::after{
     height: 90vh;
 }
 
-.myintroduction{
-    height: 60vh;
-}
-
 .myintroduction h1{
     margin-top: 70px;
     margin-left: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-right: 400px;
     color: #888888;
     font-size: 22px;
@@ -127,12 +124,6 @@ nav ul li a:hover::after{
     text-align: justify;
 }
 
-.myintroduction h2{
-    margin-top: ;
-    margin-left: ;
-    margin-bottom: ;
-    color:;
-}
 
 .myintroduction p{
     margin-left: 70px;
@@ -144,27 +135,17 @@ nav ul li a:hover::after{
     text-shadow: 1px 1px 2px white;
 }
 
-.myintroductionp2{
-    margin-left: 70px;
-    margin-right: 400px;
-    font-size: 14px;
-    color:rgb(122, 122, 122);
-    text-align: justify;
-    z-index: 100;
-}
-
-
 .backgroundpic{
     position: absolute;
     right: 0%;
-    bottom: 0%;
+    top: 30%;
     z-index: -1;
     mix-blend-mode: multiply;
 }
 
 .backgroundpic img{
     object-fit: cover;
-    height: 530px;
+    height: 500px;
     opacity: 0.9;  
 }
 
@@ -174,15 +155,15 @@ nav ul li a:hover::after{
 
 .KBakeryName{
     position: absolute;
-    right: 24%;
-    bottom: 7%;
+    left: 45%;
+    top: 530px;
     z-index: 1;
     mix-blend-mode: multiply;
 }
 
 .KBakeryName img{
     object-fit: cover;
-    height: 130px;
+    height: 110px;
 }
 
 .KBakeryNameformobile{
@@ -191,17 +172,17 @@ nav ul li a:hover::after{
 
 .IGContact{
     margin-left: 70px;
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
 }
 
 .IGContact img{
-    width: 35px;
+    width: 28px;
 }
 
 .IGname{
     margin-left: 5px;
-    margin-top: 7px;
+    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -223,139 +204,152 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:1350px){
-    .backgroundpic img{
-        height: 500px; 
-    }
-
-    .backgroundpic{
-        bottom: 2%;
-    }
-
-    .myintroduction h1, .myintroduction p, .myintroductionp2{
-        margin-right: 350px;
-    }
-
-    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
+@media only screen and (max-width:1300px){
+    .myintroduction h1, .myintroduction p, .IGContact{
         margin-left: 40px;
-    }
-
-    .KBakeryName img{
-        height: 110px;
-    }
-}
-
-@media only screen and (max-width:1250px){
-    .logo{
-        margin-left: 50px;
-    }
-
-    .element1 img{
-        margin-left: 30px;
-    }
-
-    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
-        margin-left: 20px;
-    }
-
-    .myintroduction h1{
-        margin-right: 200px;
-    }
-    
-    .myintroduction p, .myintroductionp2{
         margin-right: 300px;
     }
 
-    .backgroundpic img{
-        height: 480px; 
-    }
-}
-
-@media only screen and (max-width:1120px){
-    
-    .element1 img{
-        margin-left: 30px;
-    }
-
-    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
-        margin-left: 20px;
-    }
-
-    .myintroduction h1{
-        margin-right: 130px;
-        margin-top: 60px;
-        margin-bottom: 30px;
-        font-size: 20px;
-    }
-    
-    .myintroduction p, .myintroductionp2{
-        margin-right: 280px;
+    .backgroundpic{
+        top: 30%;
     }
 
     .backgroundpic img{
-        height: 480px; 
-    }
-
-    .backgroundpicdisplay{
-        display: none;
-    }
-
-    .backgroundpicdisplay2{
-        display: flex;
-    }
-
-    .KBakeryName img{
-        height: 100px;
-    }
-
-    .IGContact{
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-}
-
-@media only screen and (max-width:1040px){
-    
-    .element1 img{
-        margin-left: 30px;
-    }
-
-    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
-        margin-left: 20px;
-    }
-
-    .myintroduction h1{
-        margin-right: 100px;
-        margin-top: 50px;
-        margin-bottom: 35px;
-        font-size: 18px;
-    }
-    
-    .myintroduction p{
-        margin-right: 170px;
-    }
-    
-    .myintroductionp2{
-        margin-right: 280px;
-    }
-
-    .backgroundpic img{
-        height: 430px;
-        margin-bottom: 7%; 
+        height: 450px;
     }
 
     .KBakeryName{
-        right: 22%;
-        bottom: 5%;
+        left: 45%;
+        top: 550px;
+    }
+    
+    .KBakeryName img{
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:1170px){
+    
+    .element1 img{
+        height: ;
+        max-width: 380px;
+        margin-left: 40px;
+        margin-top: 5px;
+        margin-right: 10px;
+        
+    }
+    
+    .myintroduction h1{
+        margin-left: 25px;
+        margin-top: 40px;
+        margin-right: 130px;
+        margin-bottom: 30px;
     }
 
+    .myintroduction p, .IGContact{
+        margin-left: 25px;
+        margin-right: 280px;
+    }
+
+    .backgroundpic{
+        top: 40%;
+    }
+
+    .backgroundpic img{
+        height: 420px;
+    }
+
+    .KBakeryName{
+        left: 45%;
+        top: 550px;
+    }
+    
     .KBakeryName img{
         height: 90px;
     }
+}
 
-    .IGContact{
+@media only screen and (max-width:1050px){
+    
+    .element1 img{
+        height: ;
+        max-width: 340px;
+        margin-left: 35px;
+        margin-top: 5px;
+        margin-right: 10px;
+        
+    }
+    
+    .myintroduction h1{
         margin-left: 20px;
-        margin-top: 20px;
+        margin-top: 40px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .myintroduction p, .IGContact{
+        margin-left: 20px;
+        margin-right: 260px;
+    }
+
+    .backgroundpic{
+        top: 38%;
+    }
+
+    .backgroundpic img{
+        height: 380px;
+    }
+
+    .KBakeryName{
+        left: 45%;
+        top: 560px;
+    }
+    
+    .KBakeryName img{
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    
+    .element1 img{
+        height: ;
+        max-width: 340px;
+        margin-left: 35px;
+        margin-top: 5px;
+        margin-right: 10px;
+        
+    }
+    
+    .myintroduction h1{
+        margin-left: 20px;
+        margin-top: 40px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .myintroduction p, .IGContact{
+        margin-left: 20px;
+        margin-right: 240px;
+    }
+
+    .backgroundpic{
+        top: 38%;
+    }
+
+    .backgroundpic img{
+        height: 360px;
+    }
+
+    .KBakeryName{
+        left: 45%;
+        top: 560px;
+    }
+    
+    .KBakeryName img{
+        height: 80px;
     }
 }
 
@@ -365,67 +359,145 @@ nav ul li a:hover::after{
     }
     
     .element1 img{
-        margin-left: 20px;
+        height: ;
+        max-width: 360px;
+        margin-left: 40px;
+        margin-top: 5px;
+        margin-right: 10px;
+        
     }
-
-    .myintroduction h1, .myintroduction p, .myintroductionp2, .IGContact{
-        margin-left: 15px;
-    }
-
+    
     .myintroduction h1{
-        margin-right: 50px;
         margin-top: 50px;
-        margin-bottom: 28px;
-        font-size: 18px;
+        margin-right: ;
+        margin-bottom: 40px;
+        font-size: 20px;
     }
-    
-    .myintroduction p{
+
+    .myintroduction p, .IGContact{
+        margin-left: 25px;
         margin-right: 50px;
     }
-    
-    .myintroductionp2{
-        margin-right: 250px;
+
+    .backgroundpic{
+        top: ;
     }
 
     .backgroundpic img{
-        height: 400px;
-        margin-bottom: 7%; 
+        display: none;
     }
 
     .KBakeryName{
-        right: 22%;
-        bottom: 5%;
+        left: 58%;
+        top: 550px;
+    }
+    
+    .KBakeryName img{
+        height: 90px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:850px){
+    
+    
+    .element1 img{
+        margin-left: 25px;
+        max-width: 330px;
+    }
+
+    .myintroduction h1{
+        margin-right: 60px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .myintroduction p, .IGContact{
+        margin-right: 50px;
+    }
+
+    .backgroundpic img{
+        display: none;
+    }
+
+    .KBakeryName{
+        left: 56%;
+        top: 560px;
     }
 
     .KBakeryName img{
         height: 80px;
     }
+}
 
+@media only screen and (max-width:765px){
+    
+    
+    .element1 img{
+        margin-left: 25px;
+        max-width: 320px;
+    }
+
+    .myintroduction h1{
+        margin-right: 40px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+
+    .myintroduction p{
+        margin-right: 40px;
+    }
+    
     .IGContact{
-        margin-left: 20px;
-        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    .backgroundpic img{
+        display: none;
+    }
+
+    .KBakeryName{
+        left: 58%;
+        top: 580px;
+    }
+
+    .KBakeryName img{
+        height: 70px;
     }
 }
 
-@media only screen and (max-width:900px){
-    .logo{
-        width: 15%;
-        max-width: 90px;
-        margin-left: 35px;
-    }
-    
+
+
+
+
+@media only screen and (max-width:720px){
     .content{
-        flex-wrap: wrap;
+        margin: 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
     }
     
     .element1{
-        height: auto;
-        margin-left: 15px;
+        max-width: 2000px;
+        width: 100%;
+        margin: 5px;
+        
     }
-
+    
     .element1 img{
-        max-height: 250px;
-        height: auto;
+        object-fit: cover;
+        max-width: 720px;
+        width: 100%;
+        max-height: 250px; 
+        display: block;  
+        margin: 5px;  
     }
 
     .photodisplay{
@@ -434,146 +506,32 @@ nav ul li a:hover::after{
 
     .photodisplay3{
         display: flex;
-    }
-
-    .element2{
-        height: auto;
-    }
-
-    .myintroduction h1{
-        font-size: ;
-    }
-
-    .myintroduction h1, .myintroduction p, .myintroductionp2{
-        margin-left: 30px;
-        margin-right: 280px;
-    }
-
-    .myintroduction p, .myintroductionp2{
-        font-size: 12px;
-    }
-
-    .backgroundpic img{
-        height: 470px;
-        margin-bottom: 7%;
+        width: 100%;
     }
 
     .KBakeryName{
-        right: 24%;
-        bottom: 0%;
-    }
-
-    .KBakeryName img{
-        height: 100px;
-    }
-
-    .IGContact{
-        margin-left: 30px;
-        margin-top: 15px;
-    }
-}
-
-@media only screen and (max-width:800px){
-
-    .element1{
-        height: auto;
-        margin-left: 15px;
-    }
-
-    .element1 img{
-        max-height: 220px;
-    }
-
-    .myintroduction h1{
-        margin-top: 30px;
-        margin-bottom: 17px;
-        font-size: ;
-    }
-
-    .myintroduction h1, .myintroduction p, .myintroductionp2{
-        margin-left: 30px;
-        margin-right: 260px;
-    }
-
-    .myintroduction h1{
-        font-size: 17px;
-    }
-
-    .backgroundpic img{
-        height: 420px;
-        margin-bottom: 13%;
-    }
-
-    .KBakeryName{
-        right: 24%;
-        bottom: 1%;
-    }
-
-    .KBakeryName img{
-        height: 87px;
-    }
-
-    .IGContact{
-        margin-left: 30px;
-        margin-top: 15px;
-    }
-}
-
-@media only screen and (max-width:700px){
-
-    .element1{
-        margin-left: 12px;
-    }
-
-    .element1 img{
-        max-height: 200px;
-    }
-
-    .myintroduction h1{
-        margin-top: 25px;
-    }
-
-    .myintroduction h1{
-        margin-right: 180px;
-    }
-
-    .myintroduction p, .myintroductionp2{
-        margin-left: 30px;
-        margin-right: 220px;
-    }
-
-    .myintroduction h1{
-        font-size: 16px;
-    }
-
-    .backgroundpic img{
-        height: 370px;
-        margin-bottom: 15%;
-    }
-
-    .KBakeryName{
-        right: 26%;
-        bottom: 2%;
-    }
-
-    .KBakeryName img{
-        height: 75px;
-    }
-
-    .IGContact{
-        margin-left: 28px;
-        margin-top: 15px;
-    }
-
-    .IGContact img{
-        width: 33px;
+        display: none;
     }
     
-    .IGname{
-        font-size: 14px;
+    .KBakeryNameformobile{
+        display: flex;
+    }
+
+    .KBakeryNameformobile img{
+        object-fit: cover;
+        height: 100px;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+
+    .myintroduction h1{
+        margin-right: 40px;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 20px;
     }
 }
-
+    
 
 @media only screen and (max-width:600px){
     .logo{
@@ -641,6 +599,9 @@ nav ul li a:hover::after{
         padding-right: 10px;
     }
 
+
+    /*content*/
+
     .content{
         margin: 1rem 1rem 1rem;
     }
@@ -656,6 +617,7 @@ nav ul li a:hover::after{
         width: 100%;
         display: block;  
         margin: 5px;  
+        max-height: 200px;
     }
 
     .myintroduction h1, .myintroduction p, .myintroductionp2{
@@ -673,7 +635,7 @@ nav ul li a:hover::after{
 
     .KBakeryNameformobile img{
         height: 80px;
-        margin: 5px 10px 5px;
+        margin: 5px 50px 5px;
         
     }
 
