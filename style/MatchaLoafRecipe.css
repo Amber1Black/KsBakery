@@ -232,13 +232,14 @@ li{
 
 /*pictures at the bottom*/
 .stepspic{
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 30px;
     margin-right: 50px;
+    margin-bottom: 20px;
 }
 
 .stepspic img{
-    max-height: 200px;
+    max-height: 220px;
     min-width: 150px;
     width: 20%;
     object-fit: cover;
@@ -522,55 +523,10 @@ li{
     }
 }
 
-@media only screen and (max-width:830px){
-    .logo{
-        margin-left: 40px;
-    }
-
-    .recipebakerypic{
-        top: 25%;
-        margin-left: 30px;
-    }
-    
-    .recipebakerypic img{
-        max-width: 280px;;
-        height: 65vh;
-    }
-    
-    .recipecontent{
-        margin-left: 43%;
-        margin-top: ;
-        
-    }
-
-    .recipe-what-you-need{;
-        margin-right: 40px;
-    }
-
-    .ingredients{
-        margin-left: 0px;
-        margin-right: 10px;
-
-    }
-
-    li{
-        margin-right: 50px;
-    }
-
-    .stepspic{
-        margin-top: ;
-        margin-left: 20px;
-        margin-right: 30px;
-    }
-
-    .stepspic img{
-        margin-right: 30px;
-    }
-}
 
 /*change the layout to 1 column, for mobile*/
 
-@media only screen and (max-width:770px){
+@media only screen and (max-width:850px){
     *{
         background-color: hsl(30, 38%, 92%);
     }
@@ -603,7 +559,7 @@ li{
         width: 100%;
         display: block;
         border-radius: 10px 10px 0 0;
-        max-height: 400px;
+        max-height: 500px;
     }
 
     .bodysection{
@@ -649,8 +605,8 @@ li{
     }
     
     .ingredients{
-        display: flex;
-        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .ingredients h3{
@@ -679,8 +635,8 @@ li{
     }
 
     .stepspic{
-        margin-bottom: 80px;
-        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-top: px;
         margin-right: -50px;
         
     }
@@ -711,26 +667,22 @@ li{
     }
 
     .stepspic{
-        margin-bottom: 80px;
+        margin-bottom: 30px;
         margin-top: 0px;
         margin-right: -40px;
-        margin-left: 20px;
-    }
-
-
-}
-
-@media only screen and (max-width:650px){
-    .stepspic{
-        margin-bottom: ;
-        margin-top: 0px;
-        margin-right: ;
-        margin-left: 5px;
-        
+        margin-left: 40px;
     }
 
     .stepspic img{
-        margin-right: 8px;
+        margin-right: 20px;
+
+    }
+}
+
+@media only screen and (max-width:650px){
+    .ingredients{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .backbutton{
@@ -738,19 +690,6 @@ li{
     }
 }
 
-
-@media only screen and (max-width:630px){
-    .stepspic{
-        margin-bottom: ;
-        margin-top: 0px;
-        margin-right: ;
-        margin-left: -12px;   
-    }
-
-    .stepspic img{
-        margin-right: 4px;
-    }
-}
 
 @media only screen and (max-width:600px){
 
@@ -833,15 +772,7 @@ li{
     }
 
     .stepspic{
-        margin-bottom: ;
-        margin-top: 0px;
-        margin-right: 20px;
-        margin-left: 60px;
-        text-align: center;
-    }
-
-    .stepspic img{
-        margin-right: 25px;
+        margin-right: 0px;
     }
 
     .backbutton{
@@ -916,7 +847,7 @@ li{
         margin-bottom: ;
         margin-top: 0px;
         margin-right: -15px;
-        margin-left: -10px;
+        margin-left: 0px;
     }
 
     .stepspic img{
