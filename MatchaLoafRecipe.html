@@ -64,40 +64,38 @@
           <img src="Pictures/Recipe - Matcha Loaf 11.jpg">
         </div>
         
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+            }
+        </script>
     </div>
 
-    <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div>
-    <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 3500); // Change image every 3.5 seconds
-        }
-    </script>
-
-
-<div class="recipebakerypicformobile">
+    <div class="recipebakerypicformobile">
           <img src="Pictures/Recipe - Matcha Loaf Mobile.gif">
         
-</div>
+    </div>
 
 
     <!-- right hand side-->
@@ -168,8 +166,7 @@
                         <Br><Br><span class = "note">[The adding volume of every type of powder may vary, add until you feel enough with it.]</span></li>
                         
                         <div class="stepspic">
-                            <img src = "Pictures/Recipe - Matcha Loaf 1.jpg">
-                            <img src = "Pictures/Recipe - Matcha Loaf 2.jpg">   
+                            <img src = "Pictures/Recipe - Matcha Loaf 15.gif"> 
                         </div>
                     
                     <li>Let it rise under a warm condition until its size is doubled.
@@ -178,24 +175,20 @@
                     <li>Press the dough gently to push out any air inside. Then knead into round dough again and let it rest for 20 minutes.</li>
                     <li>Do the formation as below :</li>
                         <div class="stepspic">
-                            <img src = "Pictures/Recipe - Matcha Loaf 3.jpg">
-                            <img src = "Pictures/Recipe - Matcha Loaf 4.jpg">
-                            <img src = "Pictures/Recipe - Matcha Loaf 5.jpg">
+                            <img src = "Pictures/Recipe - Matcha Loaf 17.gif">
                         </div>   
                     <li>Let it proof for 30 minutes at least, the size should be 80% more (ideally it's doubled).
                         <Br><Br><span class = "note">[The last proofing time depends on weather also. In Summer it can be 30 minutes, in Winter it can be 1 hour.]</span>
                     </li>
                         <div class="stepspic">
-                            <img src = "Pictures/Recipe - Matcha Loaf 6.jpg">
-                            <img src = "Pictures/Recipe - Matcha Loaf 7.jpg">
+                            <img src = "Pictures/Recipe - Matcha Loaf 16.gif">
                         </div>
                     <li>Brush some milk on top of it before baking, to let it looks better after coming out of the oven.</li>
                     <li>Bake it for 20 minutes, at 180&#8451.
                         <Br><Br><span class = "note">[If there's fan option with the oven, please choose it. Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
                     </li>
                         <div class="stepspic">
-                            <img src = "Pictures/Recipe - Matcha Loaf 8.jpg">
-                            <img src = "Pictures/Bread - Matcha Loaf.jpg">
+                            <img src = "Pictures/Recipe - Matcha Loaf 18.gif">
                         </div>
                 </ul>
                 
@@ -234,6 +227,7 @@
 </body>
 
 </html>
+
 
 
 
