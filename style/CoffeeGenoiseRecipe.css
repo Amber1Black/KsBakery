@@ -229,7 +229,7 @@ li{
     
 }
 
-/*pictures at the bottom*/
+/*pictures*/
 .stepspic{
     margin-top: 0px;
     margin-left: 50px;
@@ -238,8 +238,8 @@ li{
 }
 
 .stepspic img{
-    max-height: 220px;
-    min-width: 150px;
+    max-height: 280px;
+    min-width: 200px;
     width: 20%;
     object-fit: cover;
     border-radius: 15px;
