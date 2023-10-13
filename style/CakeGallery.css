@@ -153,6 +153,16 @@ nav ul li a:hover::after{
     grid-template-columns: 1fr 30px;
 }
 
+.descriptionboxsingle{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.descriptionboxcomplete{
+    display: grid;
+    grid-template-columns: 1fr 25px 25px;
+}
+
 .bakerydescription{
     max-width: 192px;
     margin-top: 10px;
@@ -161,15 +171,31 @@ nav ul li a:hover::after{
     color: grey;
 }
 
-.bakerydescription h3{
+.bakerydescription h3, .bakerydescriptionsingle h3, .bakerydescriptioncomplete h3{
     margin-bottom: 7px;
     font-size: 17px;
 }
 
-.bakerydescription p{
+.bakerydescription p, .bakerydescriptionsingle p, .bakerydescriptioncomplete p{
     margin-bottom: 10px;
     font-size: 14px;
     text-align: ;
+}
+
+.bakerydescriptionsingle{
+    max-width: 215px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.bakerydescriptioncomplete{
+    max-width: 155px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    color: grey;
 }
 
 .igreel{
@@ -178,6 +204,11 @@ nav ul li a:hover::after{
     margin-top: 8px;
 }
 
+.recipeicon{
+    width: 23px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
 
 
 /*back button*/
@@ -271,11 +302,19 @@ nav ul li a:hover::after{
     }
 }
 
-@media only screen and (max-width:760px){
+@media only screen and (max-width:800px){
+    .gallerydisplay{
+        margin-left: 60%;
+        margin-right: 10px;
+        justify-content: ;
+    }
+}
+
+@media only screen and (max-width:730px){
    
     .category p{
         font-size: 14px;
-        max-width: 280px;
+        max-width: 320px;
         margin-top: ;
         margin-left: ;
     }
@@ -290,12 +329,12 @@ nav ul li a:hover::after{
     }
 
     .CakePicOutline{
-        top: 470px;
+        top: 420px;
         margin-left: 85px;
     }
     
     .CakePicOutline img{
-        max-width: 280px;
+        max-width: 340px;
     }
 
     .bakerypic{
@@ -316,18 +355,42 @@ nav ul li a:hover::after{
         color: grey;
     }
 
+    .bakerydescriptioncomplete{
+        max-width: 145px;
+    }
+
+    .bakerydescriptionsingle{
+        max-width: 190px;
+    }
+
     .igreel{
         width: 22px;
         margin-right: 4px;
         margin-top: 8px;
     }
+
+    .recipeicon{
+        width: 22px;
+        margin-right: 3px;
+        margin-top: ;
+    }
     
 }
 
 @media only screen and (max-width:660px){
+    .category p{
+        max-width: 310px;
+        margin-top: ;
+        margin-left: ;
+    }
+
     .gallerydisplay{
         justify-content: right;
-        margin-right: 40px;
+        margin-right: 20px;
+    }
+
+    .CakePicOutline img{
+        max-width: 300px;
     }
 }
     
@@ -464,11 +527,11 @@ nav ul li a:hover::after{
         margin-left: 10px;
         margin-right: 10px;
         justify-content: center;
-        column-gap: 10px;
+        column-gap: 8px;
     }
 
     .bakerypic{
-        width: 175px;
+        width: 180px;
         max-height: 220px;
         object-fit: cover;
         border-radius: 15px;
@@ -492,9 +555,52 @@ nav ul li a:hover::after{
         font-family: ;
     }
 
+    .descriptionboxcomplete{
+        display: grid;
+        grid-template-columns: 1fr 23px 23px;
+    }
+
+    .bakerydescriptionsingle{
+        max-width: 175px;
+    }
+    
+    .bakerydescriptioncomplete{
+        max-width: 130px;
+    }
+
     .igreel{
         width: 20px;
         margin-right: 5px;
         margin-top: 8px;
+    }
+
+    .recipeicon{
+        width: 20px;
+        margin-right: 2px;
+    }
+    
+    }
+
+
+@media only screen and (max-width:390px){
+    .bakerypic{
+        width: 160px;
+        max-height: 220px;
+    }
+
+    .gallerydisplay{
+        column-gap: 5px;
+    }
+
+    .bakerydescriptioncomplete{
+        max-width: 110px;
+    }
+
+    .bakerydescriptionsingle{
+        max-width: 150px;
+    }
+
+    .bakerydescription{
+        max-width: 130px;
     }
 }
