@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RF94ND0HKD');
+    </script>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="K's Bakery, with Pokemon Poke Ball Cookie Recipe. The cookie is too cute to be eaten.">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/Tart Ring - Heart Shape Outline.jpg">
+
+  <title>K's Bakery</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
+    rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style/MushroomCookieRecipe.css">
+</head>
+
+<body>
+
+    <div class="headingsection">
+        <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
+            <nav>
+                <ul id="menulist">
+                    <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
+                    <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
+                    <li><a href="https://www.k-bakery.com/Shop">Shop</a></li>
+                    <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+    </div>
+    
+
+<div class="bodysection">
+
+    <!-- left hand side images-->
+
+    <div class="recipebakerypic">
+        <img src="Pictures/Recipe - Mushroom Cookie.jpg">
+    </div>
+
+    <div class="recipebakerypicformobile">
+        <img src="Pictures/Recipe - Mushroom Cookie for mobile.jpg">
+    </div>
+
+
+    <!-- right hand side-->
+
+    <div class="recipecontent">
+        <div class="recipe">
+            <h3>COOKIE</h3>
+            <h1>Mario Mushroom</h1>
+            <a href="https://www.instagram.com/p/Cxbs2GwIJFT/" target="_blank"><img class = "igreel" src = "Pictures/IG Reel Icon.jpg"></a>
+        </div>
+
+        <div class="recipe-what-you-need">
+            <h2>What you need</h2>
+
+            <div class="ingredients">
+                <div class="ingredients-col">
+                    <h3>Butter</h3>
+                    <p>240g</p>
+                </div>
+                <div class="ingredients-col">
+                    <h3>Caster<Br>Sugar</h3>
+                    <p>80g</p>
+                </div>
+                <div class="ingredients-col">
+                    <h3>Egg</h3>
+                    <p>1</p>
+                </div>
+                <div class="ingredients-col">
+                    <h3>Flour</h3>
+                    <p>370g</p>
+                </div>
+                <div class="ingredients-col">
+                    <h3>Color<Br>Gel</h3>
+                    <p>Little</p>
+                </div>
+            </div>
+           
+        </div>
+
+        <div class ="recipe-what-to-do">
+                <h2>What to do</h2>
+                <ul class = "a">
+                    <li>Take the butter out from the fridge to let it soften</li>
+                    <li>Mix butter with the sugar by batches</li>
+                    <li>Add eggs to the mixture by batches</li>
+                    <li>Add flour by batches, with seiving it</li>
+                    <li>After mixing everything well together, divide the dough into 2 portion and add color gel (red and yellow).
+                        Then roll them into large plain dough, and freeze it.</li>
+                        <div class="stepspic">
+                            <img src = "Pictures/Recipe - Mushroom Cookie 2.gif"> 
+                        </div>
+                    <li>When the dough became hard after freezing for few hours, do the formation as below :</li>
+                        <div class="stepspic">
+                            <img src = "Pictures/Recipe - Mushroom Cookie 3.gif"> 
+                        </div>
+                    <li>Bake for 150 degrees for 15 min
+                        <Br><Br><span class = "note">[Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
+                    </li>
+                    <li>After the cookie has cooled down, melt the chocolate to add eyes for the mushroom and stars :</li>
+                        <div class="stepspic">
+                            <img src = "Pictures/Recipe - Mushroom Cookie 4.gif"> 
+                        </div>
+                    <li>The mario mushroom and star cookies are ready!</li>   
+                        <div class="stepspic">
+                            <img src = "Pictures/Cookie - Mushroom.jpg"> 
+                        </div>     
+                    
+                </ul>
+                
+        </div>
+ 
+    </div>    
+    
+</div>
+
+
+    <div class="backbutton">
+        <a href="https://www.k-bakery.com/RecipeSummary">Back &#8629</a>
+    </div>
+
+    <div class="copyright">
+        Copyright &#169 2023 K's Bakery
+    </div>
+        
+
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "100vh"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
