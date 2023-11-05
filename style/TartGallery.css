@@ -389,6 +389,10 @@ nav ul li a:hover::after{
     .cakedescription{
         max-width: 15rem;
     }
+
+    .backbutton{
+        margin-right: 50px;
+    }
     
 }
 
@@ -421,9 +425,11 @@ nav ul li a:hover::after{
     .gallery img{
         max-width: 14rem;
         max-height: 14rem;
-        
     }
     
+    .backbutton{
+        margin-right: 40px;
+    }
 }
     
 
@@ -634,6 +640,10 @@ nav ul li a:hover::after{
 
     .bakerydescription{
         max-width: 165px;
+    }
+
+    .backbutton{
+        margin-right: 20px;
     }
 
 }
