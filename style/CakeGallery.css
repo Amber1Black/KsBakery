@@ -411,7 +411,10 @@ nav ul li a:hover::after{
     .gallery img{
         max-width: 14rem;
         max-height: 14rem;
-        
+    }
+
+    .backbutton{
+        margin-right: 40px;
     }
     
 }
@@ -626,4 +629,7 @@ nav ul li a:hover::after{
         max-width: 165px;
     }
 
+    .backbutton{
+        margin-right: 20px;
+    }
 }
