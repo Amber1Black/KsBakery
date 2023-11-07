@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    
+}
+
+/*headings section*/
+
+.headingsection{
+    height: 88%;
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.logo{
+    width: 20%;
+    min-width: 65px;
+    max-width: 70px;
+    margin-left: 70px;
+    margin-top: 14px;
+}
+
+.menu-icon{
+    width: 15%;
+    min-width: 60px;
+    max-width: 90px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    padding-right: 5%;
+    background-color: white;
+}
+
+nav ul{
+    background-color: white;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 2em;
+    background-color: white;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #707070;
+    font-size: 14px;
+    background-color: white;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: grey;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(107, 107, 107);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+/* content section */
+
+.content{
+    margin-left: 3%;
+    display: flex;
+}
+
+/*column left*/
+
+.col-left{
+    margin-top: 16%;
+    flex-basis: 40%;
+    margin-left: 80px;
+    position: relative;
+}
+
+.mobilepic{
+    display: none;
+}
+
+.col-left h2{
+    font-size: 54px;
+    font-family: sans-serif;
+    color: #707070;
+}
+
+.col-left h3{
+    font-size: 25px;
+    color: #707070;
+    font-weight: 100;
+    margin: 10px 0 10px;
+}
+
+.col-left p{
+    font-size: 16px;
+    font-family: Montserrat;
+    color: #aaaaaa;
+    font-weight: 100;
+    margin: 10px 0 10px;
+}
+
+button{
+    width: 60%;
+    max-width: 11rem;
+    font-family: Montserrat;
+    font-size: 15px;
+    letter-spacing: 1px; 
+    align-items: center;
+    border: 0;
+    margin-top: 10px;
+    padding: 10px 10px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.col-left::after{
+    content: '';
+    width: 10px;
+    height: 30%;
+    background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
+    position: absolute;
+    left: -40px;
+    top:8px;
+}
+
+
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 3%;
+    background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
+    border-radius: 10px 0 0 20px;
+    height: 25%;
+    width: 48%;
+    z-index: -100;
+    display: none;
+    
+}
+
+
+/*column right*/
+
+.col-right{
+    flex-basis: 58%;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 10px;
+    height: ;
+}
+
+.bakerypic{
+    width: 100%;
+    margin-left: 20px;
+}
+
+.bakerypic1{
+    display: none;
+}
+
+
+
+/*copyright*/
+
+.copyright{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 11px;
+    color: grey;
+    bottom: 1%;
+}
+
+
+@media only screen and (max-width:1220px){
+    .col-left{
+        flex-basis: 35%;
+    }
+}
+
+@media only screen and (max-width:1050px){
+    .col-left{
+        flex-basis: 60%;
+        margin-top: 18%;
+    }
+    
+    .bakerypic{
+        display: none;
+    }
+    
+    .bakerypic1{
+        display: block;
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .col-left{
+        flex-basis: 50%;
+        margin-top: 20%;   
+    }
+}
+
+
+@media only screen and (max-width:950px){
+    .logo{
+        margin-left: 40px;
+    }
+
+    .col-left h2{
+        font-size: 48px;
+    }
+
+    .col-left h3{
+        font-size: 22px;
+    }
+}
+
+
+
+@media only screen and (max-width:860px){
+    .content{
+        display: block;
+        margin-left: 0;
+        margin-right:;
+    }
+
+    .bakerypic1{
+        display: none;
+    }
+
+    .mobilepic{
+        display: block;
+        width: 100%;
+        max-height: 60vh;
+        object-fit: cover;
+    }
+
+    .col-left{
+        flex-basis: 100%;
+        margin-top: 10%;
+        margin-left: 100px;
+        margin-right: 60px;
+    }
+
+    .col-left::after{
+        height: 45%;
+    }
+
+    .copyright{
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width:680px){
+    .mobilepic{
+        max-height: 65vh;
+    }
+}
+
+@media only screen and (max-width:630px){
+    .col-left{
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    .logo{
+        width: 12%;
+        max-width: 50px;
+        margin-left: 30px;
+        margin-top: 7px;
+    }
+    
+    nav{
+        text-align: left;
+    }
+
+    nav ul{
+        width: 100%;
+        background: linear-gradient(to left, rgb(194, 197, 185), rgb(102, 97, 73));
+        position: absolute;
+        top: 100%;
+        height: 100vh;
+        right: 0;
+        z-index: 999;
+    }
+
+    nav ul li{
+        background-color: transparent;
+        display: block;
+        margin: 3em 3em 3em;
+    }
+
+    nav ul li a{
+        background-color: transparent;
+        color: #fff;
+        font-size: 16px;
+        font-family: "Montserrat";
+        letter-spacing: 1px;
+    }
+
+    nav ul li a:hover{
+        color:white;
+    }
+
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        transition: width 0.5s;
+    }
+
+    nav ul li a:hover::after{
+        width: 0;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-right: 8%;
+        min-width: 40px;
+        max-width: 65px;
+        cursor: pointer;
+    }
+
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+        padding-right: 10px;
+    }
+    
+    .col-left{
+        margin-left: 60px;
+        margin-right: 60px;
+        position: inherit;
+    }
+
+    .col-left h2{
+        font-size: 40px;
+    }
+
+    .col-left h3{
+        font-size: 18px;
+    }
+
+    .col-left p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .col-left{
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+    
+    .col-left h2{
+        font-size: 38px;
+    }
+
+    .col-left h3{
+        font-size: 20px;
+    }
+
+    .col-left p{
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .col-left{
+        margin-left: 50px;
+        margin-right: 40px;
+    }
+
+    .col-left h2{
+        font-size: 30px;
+    }
+
+    button{
+        margin-top: 20px;
+    }
+}
