@@ -238,8 +238,8 @@ li{
 }
 
 .stepspic img{
-    max-height: 300px;
-    min-width: 200px;
+    max-height: 220px;
+    min-width: 150px;
     width: 20%;
     object-fit: cover;
     border-radius: 15px;
@@ -276,7 +276,34 @@ li{
 }
 
 
-@media only screen and (max-width:1150px){
+
+@media only screen and (max-width:1280px){
+    .recipebakerypic{
+        top: 15%;
+        margin-left: 60px;
+    }
+    
+    .recipebakerypic img{
+        max-width: 450px;;
+        height: 75vh;
+    }
+    
+    .recipecontent{
+        margin-left: 48%;
+        margin-top: ;
+        
+    }
+
+    .recipe-what-you-need{
+        margin-right: 120px;
+    }
+
+    li{
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width:1120px){
     .recipebakerypic{
         top: 15%;
         margin-left: 60px;
@@ -284,7 +311,7 @@ li{
     
     .recipebakerypic img{
         max-width: 420px;;
-        height: 80vh;
+        height: ;
     }
     
     .recipecontent{
@@ -316,7 +343,7 @@ li{
     
     .recipebakerypic img{
         max-width: 370px;;
-        height: 80vh;
+        height: ;
     }
     
     .recipecontent{
@@ -348,7 +375,7 @@ li{
     
     .recipebakerypic img{
         max-width: 360px;;
-        height: 80vh;
+        height: ;
     }
     
     .recipecontent{
@@ -378,7 +405,7 @@ li{
     }
 
     .recipebakerypic{
-        top: 20%;
+        top: 16%;
         margin-left: 35px;
     }
     
@@ -415,13 +442,13 @@ li{
     }
 
     .recipebakerypic{
-        top: 25%;
+        top: 16%;
         margin-left: 35px;
     }
     
     .recipebakerypic img{
         max-width: 300px;;
-        height: 65vh;
+        height: 70vh;
     }
     
     .recipecontent{
@@ -482,7 +509,7 @@ li{
         width: 100%;
         display: block;
         border-radius: 10px 10px 0 0;
-        max-height: 500px;
+        max-height: 400px;
     }
 
     .bodysection{
@@ -578,12 +605,19 @@ li{
     .recipe-what-to-do{
         margin-left: 30px;
         margin-right: 30px;
-        
+    }
+
+    .recipebakerypicformobile img{
+        max-height: 350px;
     }
 
 }
 
 @media only screen and (max-width:650px){
+    .recipebakerypicformobile img{
+        max-height: 300px;
+    }
+    
     .ingredients{
         margin-left: 10px;
         margin-right: 10px;
@@ -675,6 +709,9 @@ li{
         
     }
 
+    .recipebakerypicformobile img{
+        max-height: 300px;
+    }
 
     .backbutton{
         margin-right: 30px;
@@ -694,6 +731,10 @@ li{
 }
 
 @media only screen and (max-width:480px){
+    .recipebakerypicformobile img{
+        max-height: 250px;
+    }
+    
     .recipe-what-you-need{;
         margin-right: 0px;
     }
