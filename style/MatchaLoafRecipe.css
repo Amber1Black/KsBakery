@@ -136,10 +136,6 @@ nav ul li a:hover::after{
     align-items: center;
 }
 
-.recipe-what-you-need{
-    margin-right: 180px;
-}
-
 .recipe-what-you-need h2{
     background-color: ;
     font-size: 20px;
@@ -153,6 +149,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     margin-left: 50px;
+    margin-right: 170px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
@@ -291,11 +288,11 @@ li{
     .recipecontent{
         margin-left: 48%;
         margin-top: ;
-        
     }
 
-    .recipe-what-you-need{
-        margin-right: 120px;
+    .ingredients{
+        margin-left: 30px;
+        margin-right: 130px;
     }
 
     li{
@@ -319,16 +316,12 @@ li{
         margin-top: ;
     }
 
-    .recipe-what-you-need{
-        margin-right: 80px;
-    }
-
     .ingredients{
-        margin-right: 30px;
+        margin-right: 100px;
     }
 
     li{
-        margin-right: 100px;
+        margin-right: 80px;
     }
 
 }
@@ -349,12 +342,9 @@ li{
         margin-top: ;
     }
 
-    .recipe-what-you-need{
-        margin-right: 80px;
-    }
-
     .ingredients{
-        margin-right: 30px;
+        margin-left: 15px;
+        margin-right: 90px;
 
     }
 
@@ -381,13 +371,9 @@ li{
         
     }
 
-    .recipe-what-you-need{
-        margin-right: 80px;
-    }
-
     .ingredients{
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 10px;
+        margin-right: 90px;
     }
 
     li{
@@ -416,13 +402,9 @@ li{
         margin-top: ;
     }
 
-    .recipe-what-you-need{;
-        margin-right: 40px;
-    }
-
     .ingredients{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 60px;
     }
 
     li{
@@ -447,17 +429,13 @@ li{
         margin-top: ;
     }
 
-    .recipe-what-you-need{;
-        margin-right: 40px;
-    }
-
     .ingredients{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 50px;
     }
 
     li{
-        margin-right: 70px;
+        margin-right: 60px;
     }
 
 }
@@ -547,15 +525,12 @@ li{
 
     .ingredients h3{
         font-size: 15px;;
-        ;
     }
 
     .ingredients p{
         font-size: 15px;
         background-color: white;
         margin-top: 0px;
-        
-    
     }
     
     .recipe-what-to-do p{
@@ -581,6 +556,13 @@ li{
 
 }
 
+@media only screen and (max-width:770px){
+    .ingredients{
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+}
+
 @media only screen and (max-width:700px){
     .bodysection,
     .recipecontent, 
@@ -589,6 +571,11 @@ li{
     .recipe-what-to-do{
         margin-left: 30px;
         margin-right: 30px;
+    }
+
+    .ingredients{
+        margin-left: 10px;
+        margin-right: 20px;
     }
 }
 
@@ -696,6 +683,10 @@ li{
         max-height: 400px;
     }
 
+    .recipe-what-to-do p{
+        font-size: 17px;
+    }
+
     .backbutton{
         margin-right: 30px;
     }
@@ -703,10 +694,6 @@ li{
 
 
 @media only screen and (max-width:500px){
-    .recipe-what-you-need{;
-        margin-right: 10px;
-    }
-
     .stepspic{
         margin-left: 30px;
     }
@@ -729,6 +716,10 @@ li{
 
     li{
         margin-left: 20px;
+    }
+
+    .recipe-what-to-do p{
+        font-size: 16px;
     }
 
 
