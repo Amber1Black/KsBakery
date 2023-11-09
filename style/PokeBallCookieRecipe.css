@@ -185,7 +185,7 @@ nav ul li a:hover::after{
     background: rgb(103, 103, 105);
     position: absolute;
     align-items: center;
-    top: 30px;
+    top: 20px;
     right: 0;
 }
   
