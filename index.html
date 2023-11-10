@@ -14,11 +14,8 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="K's Bakery, I would like to share my bakery with everyone, with a webpage written by myself.">      
-
   <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
-
+  
   <title>K's Bakery</title>
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,108 +24,89 @@
     href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
     rel="stylesheet">
   <!-- My CSS -->
-  <link rel="stylesheet" href="style/AboutMe.css">
+  <link rel="stylesheet" href="style/NewIndex.css">
 </head>
 
 <body>
 
     <div class="headingsection">
-        <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
+        <a href="index.html"><img class="logo" src="Pictures/Logo6.jpg"></a>
             <nav>
                 <ul id="menulist">
-                    <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
-                    <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
-                    <li><a href="https://www.k-bakery.com/Shop">Shop</a></li>
-                    <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+                    <li><a href="GallerySummary.html">Gallery</a></li>
+                    <li><a href="RecipeSummary.html">Recipe</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
                 </ul>
             </nav>
             <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
     </div>
 
-    <div class="contentfordesktop">
-        <div class="element1">
-            <div class="photodisplay">
-                <img src ="Pictures/Profile Pic 5.jpg">
-            </div>
-
-            <div class="photodisplay3">
-                <img src ="Pictures/Profile Pic 7.jpg">
-            </div>
+    <div class="content">
+        <div class="col-left">
+            <h2>K's Bakery</h2>
+            <h3>Embrace the beauty of home-made bakeries</h3>
+            <p>Love to see people's smile when they enjoy my bakeries</p>
             
+            <button type = "button"><a href="GallerySummary.html">Let's Explore!</a></button>
         </div>
 
-        <div class="element2">
-            <div class="myintroduction">
-                <h1>"Love to see people's smile when they try my bakeries. Let's embrace the beauty of home-made bakery"</h1>
-
-                <p>After moving from HK to UK near the end of 2022, I have been self-learning bakery, and I really love it. 
-                   In the summer of 2023, I started to learn how to write coding for webpage also. 
-                   So, I have created this blog to share what I have been doing. I wish everyone can enjoy the beauty of home-made bakery, it's healthy and delicious.
-                    <Br><Br>
-                    It's still at the very beginning, I would keep on adding and enriching the content here.
-                    I wish you have a smooth baking journey here. <Br>
-                    <Br>
-                        If you have anything that would like to share with me, you may try the below.</div>
-                </p>
-                
-                <div class="IGContact">
-                    <img src = "Pictures/IG icon 3.jpg">
-                    <div class="IGname">
-                        <a href = "https://www.instagram.com/katsolihull/">Instagram: katsolihull</a>
-                    </div>
-                    
+        <div class="col-right" >
+            <h4>What's your favorite bakery?</h4>
+                <div class="favbakerylist">
+                    &nbsp &nbspTart &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp Cake &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp Bread &nbsp&nbsp &nbsp&nbsp&nbsp&nbspCookie&nbsp &nbsp&nbsp&nbsp&nbsp Pastry &nbsp
                 </div>
-
-            </div>
-
+                <div class="favbakery">
+                    <button onClick = "Tart()" class = "buttontart"></button>
+                    &nbsp &nbsp &nbsp &nbsp
+                    <button onClick = "Cake()" class = "buttoncake"></button>
+                    &nbsp &nbsp &nbsp &nbsp
+                    <button onClick = "Bread()" class = "buttonbread"></button>
+                    &nbsp &nbsp &nbsp &nbsp
+                    <button onClick = "Cookie()" class = "buttoncookie"></button>
+                    &nbsp &nbsp &nbsp &nbsp
+                    <button onClick = "Pastry()" class = "buttonpastry"></button>
+                </div>
+            <img id = "bakerypictureshown" src = "Pictures/Tart Ring - Heart Shape Outline.jpg">
         </div>
-
-        <div class="backgroundpic">
-            <div class="backgroundpicdisplay">
-                <img src ="Pictures/Tart Ring - Heart Shape Outline 2.jpg">
-            </div>
-
-            <div class="backgroundpicdisplay1">
-                <img src ="Pictures/Tart Ring - Heart Shape Outline.jpg">
-            </div>
-
-            <div class="backgroundpicdisplay2">
-                <img src ="Pictures/Tart Ring - Heart Shape Outline 3.jpg">
-            </div>
-
-            
-        </div>
-
-        <div class="KBakeryName">
-            <img src = "Pictures/K's Bakery.jpg">
-        </div>
-
+        
     </div>
-
-    <div class="contentformobile">
-        <div class="profile-card">
-            <img src = "Pictures/Cookie7.png" class = "cover-pic">
-            <img src = "Pictures/Tart Ring for About Me.jpg" class = "profile-pic">
-            <h1>K's Bakery</h1>
-            <h2>"Love to see people's smile when they try my bakeries. Let's embrace the beauty of home-made bakery"</h2>
-            <a href="https://www.instagram.com/katsolihull" target="_blank"><img class = "igreelicon" src = "Pictures/AboutMeIG.png"></a>
-            <p>After moving from HK to UK near the end of 2022, I have been self-learning bakery, and I really love it. 
-                   In the summer of 2023, I started to learn how to write coding for webpage also. 
-                   So, I have created this blog to share what I have been doing. I wish everyone can enjoy the beauty of home-made bakery, it's healthy and delicious.
-                    <Br><Br>
-                    It's still at the very beginning, I would keep on adding and enriching the content here.
-                    I wish you have a smooth baking journey here. <Br>
-                <Br>
-                    
-        </div>
-    </div>
-
+   
 
     <div class="copyright">
         Copyright &#169 2023 K's Bakery
     </div>
-
     
+    <script>
+        var bakerypic = document.querySelector("#bakerypictureshown");
+
+        function Tart()
+        {
+            bakerypic.src = "Pictures/Cover - Tart Ring.jpg";
+        }
+
+        function Cake()
+        {
+            bakerypic.src = "Pictures/Cover - Crown Cake.jpg";
+        }
+
+        function Bread()
+        {
+            bakerypic.src = "Pictures/Cover - Ribbon Bread.jpg";
+        }
+
+        function Cookie()
+        {
+            bakerypic.src = "Pictures/Cover - Cookie.jpg";
+        }
+
+        function Pastry()
+        {
+            bakerypic.src = "Pictures/Cover - Macaron.jpg";
+        }
+
+    </script>
+
     <script>
         var menulist = document.getElementById("menulist");
 
@@ -145,8 +123,6 @@
             }
         }
     </script>
-
 </body>
 
 </html>
-
