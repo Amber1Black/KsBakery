@@ -1,73 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-<head>
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            gtag('config', 'G-RF94ND0HKD');
+            </script>
 
-        gtag('config', 'G-RF94ND0HKD');
-        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
-  
-  <title>K's Bakery</title>
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
-  <!-- My CSS -->
-  <link rel="stylesheet" href="style/NewNewIndex.css">
-</head>
+        <meta name="description" content="K's Bakery, where I would share all my bakeries and recipes, I wish everyone embrace the beauty of home-made bakery.">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
+
+        <title>K's Bakery</title>
+        <link rel="stylesheet" href="style/NewNewIndex.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    </head>
 
 <body>
 
     <div class="headingsection">
-        <a href="index.html"><img class="logo" src="Pictures/Logo6.jpg"></a>
+        <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
             <nav>
                 <ul id="menulist">
-                    <li><a href="GallerySummary.html">Gallery</a></li>
-                    <li><a href="RecipeSummary.html">Recipe</a></li>
-                    <li><a href="Shop.html">Shop</a></li>
-                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
+                <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
+                <li><a href="https://www.k-bakery.com/Shop">Shop</a></li>
+                <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
                 </ul>
             </nav>
             <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
     </div>
 
     <div class="content">
+        <img class = "mobilepic" src = "Pictures/MobileCover.gif">
         <div class="col-left">
+            
             <h2>K's Bakery</h2>
             <h3>Embrace the beauty of home-made bakeries</h3>
             <p>Love to see people's smile when they enjoy my bakeries</p>
             
-            <button type = "button"><a href="GallerySummary.html">Let's Explore!</a></button>
+            <button type = "button"><a href="https://www.k-bakery.com/GallerySummary">Let's Explore!</a></button>
         </div>
 
-        <div class="col-right" >
-            <h4>What's your favorite bakery?</h4>
-                <div class="favbakerylist">
-                    &nbsp &nbspTart &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp Cake &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp Bread &nbsp&nbsp &nbsp&nbsp&nbsp&nbspCookie&nbsp &nbsp&nbsp&nbsp&nbsp Pastry &nbsp
-                </div>
-                <div class="favbakery">
-                    <button onClick = "Tart()" class = "buttontart"></button>
-                    &nbsp &nbsp &nbsp &nbsp
-                    <button onClick = "Cake()" class = "buttoncake"></button>
-                    &nbsp &nbsp &nbsp &nbsp
-                    <button onClick = "Bread()" class = "buttonbread"></button>
-                    &nbsp &nbsp &nbsp &nbsp
-                    <button onClick = "Cookie()" class = "buttoncookie"></button>
-                    &nbsp &nbsp &nbsp &nbsp
-                    <button onClick = "Pastry()" class = "buttonpastry"></button>
-                </div>
-            <img id = "bakerypictureshown" src = "Pictures/Tart Ring - Heart Shape Outline.jpg">
+        <div class="col-right">
+            <img class = "bakerypic" src = "Pictures/Index Pic.gif">
+            <img class = "bakerypic1" src = "Pictures/Index Pic 2.gif">
+
         </div>
         
     </div>
@@ -77,36 +64,6 @@
         Copyright &#169 2023 K's Bakery
     </div>
     
-    <script>
-        var bakerypic = document.querySelector("#bakerypictureshown");
-
-        function Tart()
-        {
-            bakerypic.src = "Pictures/Cover - Tart Ring.jpg";
-        }
-
-        function Cake()
-        {
-            bakerypic.src = "Pictures/Cover - Crown Cake.jpg";
-        }
-
-        function Bread()
-        {
-            bakerypic.src = "Pictures/Cover - Ribbon Bread.jpg";
-        }
-
-        function Cookie()
-        {
-            bakerypic.src = "Pictures/Cover - Cookie.jpg";
-        }
-
-        function Pastry()
-        {
-            bakerypic.src = "Pictures/Cover - Macaron.jpg";
-        }
-
-    </script>
-
     <script>
         var menulist = document.getElementById("menulist");
 
