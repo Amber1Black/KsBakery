@@ -102,7 +102,6 @@ nav ul li a:hover::after{
     max-width: 450px;
     text-align: justify;
     margin-top: 10px;
-    margin-left: 3px;
     color: grey;
 }
 
