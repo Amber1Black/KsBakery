@@ -107,7 +107,7 @@ nav ul li a:hover::after{
 
 .KBakeryName{
     position: fixed;
-    top: 320px;
+    top: 300px;
     left: 40px;
     mix-blend-mode: multiply;
 }
@@ -118,13 +118,13 @@ nav ul li a:hover::after{
 
 .CakePicOutline{
     position: fixed;
-    top: 440px;
-    margin-left: 200px;
+    top: 420px;
+    margin-left: 185px;
     mix-blend-mode: multiply;
 }
 
 .CakePicOutline img{
-    max-width: 380px;
+    max-width: 385px;
 }
 
 /*gallery on right hand side*/
@@ -157,7 +157,6 @@ nav ul li a:hover::after{
     border-radius: 12px;
 }
 
-
 .bakerydescription h3{
     margin-bottom: 7px;
     font-size: 17px;
@@ -179,14 +178,17 @@ nav ul li a:hover::after{
 
 .recipeicon{
     width: 23px;
+    margin-right: 0px;
+    margin-top: 0px;
     margin-left: 3px;
 }
 
 .igreel{
     width: 23px;
+    margin-right: 0px;
+    margin-top: 0px;
     margin-left: 3px;
 }
-
 
 
 /*back button*/
@@ -227,26 +229,35 @@ nav ul li a:hover::after{
     }
 }
 
-@media only screen and (max-width:1150px){
+@media only screen and (max-width:1130px){
 
     .gallerydisplay{
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
         grid-auto-rows: 280px auto auto;
         margin-left: 52%;
-        margin-right: 30px;
+        margin-right: 20px;
         justify-content: center;
+    }
+
+    .KBakeryName{
+        top: 300px;
+        left: 35px;
+    }
+    
+    .KBakeryName img{
+        max-width: 330px;
     }
 
     .CakePicOutline{
         position: fixed;
-        top: 430px;
-        margin-left: 160px;
+        top: 420px;
+        margin-left: 210px;
         mix-blend-mode: multiply;
     }
     
     .CakePicOutline img{
-        max-width: 380px;
+        max-width: 330px;
     }
 }
 
@@ -280,10 +291,11 @@ nav ul li a:hover::after{
 
     .CakePicOutline{
         margin-left: 110px;
+        top: 440px;
     }
     
     .CakePicOutline img{
-        max-width: 330px;
+        max-width: 350px;
     }
 
 
@@ -311,14 +323,14 @@ nav ul li a:hover::after{
     }
 
     .bakerypic{
-        width: 210px;
+        width: 220px;
         max-height: 280px;
         object-fit: cover;
         border-radius: 12px;
     }
 
     .bakerydescription{
-        max-width: 210px;
+        max-width: 213px;
     }
 
     .KBakeryName img{
@@ -326,7 +338,8 @@ nav ul li a:hover::after{
     }
 
     .CakePicOutline{
-        margin-left: 150px;
+        margin-left: 145px;
+        top: 410px;
     }
 
     .CakePicOutline img{
@@ -344,13 +357,13 @@ nav ul li a:hover::after{
 
     .category p{
         font-size: 14px;
-        max-width: 320px;
+        max-width: 330px;
         margin-top: ;
         margin-left: ;
     }
 
     .KBakeryName{
-        top: 310px;
+        top: 290px;
         left: 30px;
     }
     
@@ -359,8 +372,8 @@ nav ul li a:hover::after{
     }
 
     .CakePicOutline{
-        top: 430px;
-        margin-left: 100px;
+        top: 420px;
+        margin-left: 90px;
     }
     
     .CakePicOutline img{
@@ -375,51 +388,51 @@ nav ul li a:hover::after{
     .cakedescription{
         max-width: 15rem;
     }
+
+    .backbutton{
+        margin-right: 50px;
+    }
     
 }
 
-@media only screen and (max-width:670px){
-   
-    .category h1{
-        letter-spacing: 3px;
-    }
-
+@media only screen and (max-width:660px){
     .category p{
         font-size: 14px;
-        max-width: 290px;
+        max-width: 300px;
         margin-top: ;
         margin-left: ;
     }
 
     .KBakeryName{
         top: 310px;
-        left: 30px;
+        left: 40px;
     }
     
     .KBakeryName img{
-        max-width: 290px;
+        max-width: 280px;
     }
 
     .CakePicOutline{
-        top: 440px;
-        margin-left: 70px;
+        top: 435px;
+        margin-left: 85px;
     }
     
     .CakePicOutline img{
-        max-width: 300px;
+        max-width: 290px;
     }
 
     .gallery img{
         max-width: 14rem;
         max-height: 14rem;
-        
-    }
-
-    .cakedescription{
-        max-width: 15rem;
     }
     
+    .backbutton{
+        margin-right: 40px;
+    }
 }
+    
+
+
 
 @media only screen and (max-width:600px){
 
@@ -429,11 +442,11 @@ nav ul li a:hover::after{
         margin-left: 20px;
         margin-top: 7px;
     }
-
+    
     nav{
         text-align: left;
     }
-    
+
     nav ul{
         width: 100%;
         background: linear-gradient(to left, rgb(194, 197, 185), rgb(102, 97, 73));
@@ -442,12 +455,14 @@ nav ul li a:hover::after{
         height: 100vh;
         right: 0;
         z-index: 999;
+        
     }
 
     nav ul li{
         background-color: transparent;
         display: block;
         margin: 3em 3em 3em;
+        
     }
 
     nav ul li a{
@@ -456,6 +471,7 @@ nav ul li a:hover::after{
         font-size: 16px;
         font-family: "Montserrat";
         letter-spacing: 1px;
+        
     }
 
     nav ul li a:hover{
@@ -484,12 +500,14 @@ nav ul li a:hover::after{
         min-width: 40px;
         max-width: 65px;
         cursor: pointer;
+        mix-blend-mode: multiply;
     }
 
     #menulist{
         overflow: hidden;
         transition: 0.5s;
         padding-right: 10px;
+        
     }
    
     .category{
@@ -519,7 +537,6 @@ nav ul li a:hover::after{
     }
 
     .category p{
-        width: ;
         max-width: 550px;
         margin-left: 10px;
         margin-right: 10px;
@@ -529,6 +546,13 @@ nav ul li a:hover::after{
         color: rgb(65, 64, 64);
         font-size: 13px;
     }
+
+    .bakerydescription h3{
+        font-size: 15px;
+        font-weight: bolder;
+        color: rgb(95, 95, 95);
+    }
+
 
     .CakePicOutline{
         position: ;
@@ -585,13 +609,13 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:480px){
     .gallerydisplay{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
         column-gap: 5px;
     }
 
     .bakerypic{
-        width: 180px;
+        width: 190px;
         max-height: 240px;
     }
 
@@ -600,7 +624,7 @@ nav ul li a:hover::after{
     }
 }
 
-@media only screen and (max-width:410px){
+@media only screen and (max-width:420px){
     
     .gallerydisplay{
         column-gap: 5px;
@@ -615,6 +639,10 @@ nav ul li a:hover::after{
 
     .bakerydescription{
         max-width: 165px;
+    }
+
+    .backbutton{
+        margin-right: 20px;
     }
 
 }
