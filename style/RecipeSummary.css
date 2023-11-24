@@ -181,9 +181,10 @@ nav ul li a:hover::after{
     outline: none;
     box-shadow: 0 2px 8px rgba(75, 74, 74, 0.3);
     padding: 10px 30px;
-    cursor: pointer;
+    
     border-radius: 20px;
     margin-bottom: 10px;
+    transition: transform 500ms;
 }
 
 .categorygrid a{
@@ -192,7 +193,21 @@ nav ul li a:hover::after{
     font-size: 15px;
     letter-spacing: 3px;
     color: #6e6e6e;
+    cursor: pointer;
 }
+
+.categorygrid button:hover{
+    transform: translateY(-0.5rem);
+    transition: transform 500ms;
+    background: #ffaeae;
+}
+
+.categorygrid a:hover{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 1000;
+}
+
 
 /*copyright*/
 
