@@ -203,9 +203,10 @@ nav ul li a:hover::after{
 }
 
 .categorygrid a:hover{
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 1000;
+    color: #e29292;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 2000;
 }
 
 
