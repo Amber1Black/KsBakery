@@ -371,7 +371,7 @@ button a{
     width: 650px;
     height: 570px;
     margin-left: 0px;
-    background: linear-gradient(to right, rgb(97, 179, 182), rgb(28, 115, 119));
+    background: linear-gradient(to right, hsl(33, 19%, 81%), hsl(35, 46%, 95%));
     grid-column: 1/4;
     z-index: -2;
     opacity: 95%;
