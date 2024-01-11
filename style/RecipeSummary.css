@@ -15,6 +15,7 @@
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 100;
 }
 
 .logo{
@@ -90,23 +91,23 @@ nav ul li a:hover::after{
  /*message on top*/
 
 .description{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 18%;
+    margin-right: 18%;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
 .description h1{
-    font-size: 30px;
-    font-family: Fraunces;
+    font-size: 45px;
+    font-family: sans-serif;
+    color: #707070;
     letter-spacing: 5px;
-    color: rgb(78, 77, 77);
 }
 
 .description p{
     text-align: justify;
-    margin-top: 10px;
-    color: grey;
+    margin-top: 20px;
+    color: #838282;;
     font-size: 15px;
 }
 
@@ -135,13 +136,11 @@ nav ul li a:hover::after{
 .btn{
     border: none;
     outline: none;
-    padding: 8px 15px;
+    padding: 8px 18px;
     cursor: pointer;
-    margin-left: 5px;
-    margin-top: 0px;
     background-color: #ffffff;
-    color: rgb(96, 106, 107);
-    font-size: 17px;
+    color: #707070;;
+    font-size: 18px;
     font-weight: 900;
     letter-spacing: 1px;
 }
@@ -168,13 +167,13 @@ nav ul li a:hover::after{
 
 .category{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 15px;
+    row-gap: 30px;
+    column-gap: 18px;
     justify-content: center;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-top: 30px;
 }
 
@@ -184,80 +183,59 @@ nav ul li a:hover::after{
 }
 
 .categorygrid{
-    display: ;
     margin-top: 20px;
     height: 325px;
-    width: 17rem;
-    max-width: ;
-    background-color: hsl(36, 35%, 92%);
-    border-radius: 8px;
+    width: 230px;
     text-align: center;
     justify-content: center;
 }
 
 .categorygrid img{
-    height: 230px;
-    width: 17rem;
+    height: 300px;
+    width: 230px;
     object-fit: cover;
     margin: 0px;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: ;
 }
 
-.categorybottom{
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-bottom: 10px;
-    padding-top: 8px;
-}
-
-.categorybottom h3, .categorybottom h5{
-    font-family: Fraunces;
-    color: rgb(59, 59, 59);
-    letter-spacing: 3px;
-    font-size: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.categorybottom h4{
-    font-family: Fraunces;
-    color: rgb(59, 59, 59);
+.categorybottom h3{
+    color: #707070;
     letter-spacing: 1px;
-    font-size: 19px;
-    margin-top: 0px;
-    margin-bottom: 1px;
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 230px; 
 }
 
-.categorygrid button{
-    background: white;
-    border: none;
-    outline: none;
-    box-shadow: 0 2px 8px rgba(75, 74, 74, 0.3);
-    padding: 8px 27px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    transition: transform 500ms;
-}
-
-.categorygrid a{
-    text-decoration: none;
+.recipeoverlay{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, -30%); 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 230px;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
     font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 3px;
-    color: #6e6e6e;
+    letter-spacing: 1px;
+    padding: 30px;
+    text-align: center;
     cursor: pointer;
 }
 
-.categorygrid button:hover{
-    transform: translateY(-0.5rem);
-    transition: transform 500ms;
+.categorygrid{
+    position: relative;
 }
 
-.categorygrid a:hover{
-    color: #e29292;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 2000;
+.categorygrid:hover .recipeoverlay{
+    opacity: 1;
+}
+
+.recipeoverlay a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -271,86 +249,350 @@ nav ul li a:hover::after{
     bottom: 2%;
 }
 
-@media only screen and (max-width:985px){
+
+@media only screen and (max-width:1300px){
+    .description{
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+
     .category{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .description{
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+    
+    .category{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .categorygrid{
+        height: 310px;
+        width: 210px;
+    }
+
+    .categorygrid img{
+        height: 280px;
+        width: 210px;
+    }
+
+    .recipeoverlay{
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -36%); 
+        width: 210px;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width:1150px){
+    .description{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .category{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .categorygrid img{
+        height: 280px;
+        width: 200px;
+    }
+
+    .recipeoverlay{
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -36%); 
+        width: 200px;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width:1090px){
+    .description{
         margin-left: 150px;
         margin-right: 150px;
     }
-
-}
-
-@media only screen and (max-width:950px){
-    .logo{
-        margin-left: 40px;
+    
+    .category{
+        margin-left: 70px;
+        margin-right: 70px;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     }
 
+    .categorygrid{
+        height: 290px;
+        width: 195px;
+    }
+
+    .categorygrid img{
+        height: 260px;
+        width: 190px;
+    }
+
+    .recipeoverlay{
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -36%); 
+        width: 190px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
 }
 
-@media only screen and (max-width:860px){
+
+@media only screen and (max-width:965px){
+    .description{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
     .category{
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    }
+}
+
+
+@media only screen and (max-width:925px){
+    .category{
+        margin-left: 40px;
+        margin-right: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    }
+
+    .categorygrid{
+        height: 270px;
+        width: 190px;
+    }
+
+    .categorygrid img{
+        height: 250px;
+        width: 180px;
+    }
+
+    .recipeoverlay{
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -25%); 
+        width: 180px;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
+
+    .categorybottom h3{
+        color: #707070;
+        letter-spacing: 1px;
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width:840px){
+    .description{
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .description h1{
+        font-size: 38px;
+    }
+
+    .btn{
+        padding: 8px 13px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .category{
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+        row-gap: 10px;
+    }
+
+    .categorygrid{
+        height: 305px;
+        width: 205px;
+    }
+
+    .categorygrid img{
+        height: 265px;
+        width: 200px;
+    }
+
+    .recipeoverlay{
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -50%); 
+        width: 200px;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
+
+    .categorybottom h3{
+        color: #707070;
+        letter-spacing: 1px;
+        font-size: 17px;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width:715px){
+    .description{
         margin-left: 80px;
         margin-right: 80px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 
+    .description h1{
+        font-size: 28px;
+        letter-spacing: 5px;
+        font-weight: 900;
+    }
+    
+    .description p{
+        margin-top: 10px;
+        color: grey;
+        font-size: 15px;
+    }
+    
+    .btn{
+        padding: 8px 13px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .category{
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    }
+
+    .categorygrid{
+        height: 280px;
+        width: 175px;
+    }
+
+    .categorygrid img{
+        height: 240px;
+        width: 170px;
+    }
+
+    .recipeoverlay{
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, -50%); 
+        width: 170px;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
+
+    .categorybottom h3{
+        color: #707070;
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
 }
 
-@media only screen and (max-width:720px){
-    .categoryfiltering{
-        margin-top: 10px;
-        margin-left: 150px;
-        margin-right: 150px;
+
+@media only screen and (max-width:665px){
+    .description{
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
     
     .category{
         margin-left: 30px;
         margin-right: 30px;
     }
-
 }
 
-@media only screen and (max-width:650px){
-    .categoryfiltering{
-        margin-top: 10px;
-        margin-left: 100px;
-        margin-right: 100px;
+
+@media only screen and (max-width:625px){
+    .btn{
+        padding: 10px 10px;
+        font-size: 17px;
+        font-weight: 700;
     }
 
     .category{
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        row-gap: 20px;
-        column-gap: 15px;
-        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
-    
+
     .categorygrid{
-        margin-top: 20px;
-        height: 295px;
-        width: 15rem;
+        height: 260px;
+        width: 155px;
     }
-    
+
     .categorygrid img{
-        height: 200px;
-        width: 15rem;
-        object-fit: cover;
-        margin: 0px;
-        border-radius: 10px 10px 0px 0px;
-    }  
-    
-    .categorybottom h4{
-        letter-spacing: 0px;
-        font-size: 17px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        height: 220px;
+        width: 150px;
     }
 
-    .categorybottom h5{
+    .recipeoverlay{
+        transform: translate(-50%, -59%); 
+        width: 150px;
+        font-size: 16px;
+        font-weight: 500;
         letter-spacing: 2px;
-        font-size: 20px;
+        padding: 23px;
     }
 
+    .categorybottom h3{
+        color: #707070;
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
 }
 
 
+@media only screen and (max-width:615px){
+    .btn{
+        padding: 10px 8px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .category{
+        margin-left: 40px;
+        margin-right: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+}
 
 
 @media only screen and (max-width:600px){
@@ -423,182 +665,208 @@ nav ul li a:hover::after{
         padding-right: 10px;
     }
 
+    .description p{
+        font-size: 14px;
+    }    
+
+    .category{
+        column-gap: 10px;
+    }
+
+    .btn{
+        padding: 10px 10px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+
+@media only screen and (max-width:580px){
     .description{
-        margin-left: 8%;
-        margin-right: 8%;
-        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
         margin-bottom: 30px;
+    }
+    
+    .category{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media only screen and (max-width:540px){
+    .description{
+        margin-left: 60px;
+        margin-right: 60px;
     }
 
     .description h1{
         font-size: 28px;
         letter-spacing: 5px;
+        font-weight: 900;
     }
     
     .description p{
-        text-align: justify;
-        margin-top: 10px;
-        font-size: 14px;
+        margin-top: 20px;
     }
     
     .categoryfiltering{
         margin-top: 10px;
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
     .btn{
-        padding: 8px 15px;
-        margin-left: 5px;
-        margin-top: 0px;
-        color: rgb(96, 106, 107);
-        font-size: 16px;
-        font-weight: 900;
-        letter-spacing: 1px;
+        padding: 8px 13px;
+        font-size: 17px;
+        font-weight: 700;
     }
 
     .category{
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 60px;
+        margin-right: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     }
 
     .categorygrid{
-        margin: 8px 3px;
-        height: 255px;
-        max-width: 225px;
+        height: 280px;
+        width: 185px;
     }
-    
+
     .categorygrid img{
-        height: 170px;
-        width: 225px;
-        object-fit: cover;
-        margin: 0px;
-        border-radius: 10px 10px 0px 0px;
-    }  
-    
-    .categorybottom h3{
-        letter-spacing: 1px;
-        font-size: 18px;
-        margin-top: 0px;
-        margin-bottom: -2px;
+        height: 240px;
+        width: 175px;
     }
 
-    .categorybottom h4{
-        letter-spacing: 0px;
-        font-size: 16px;
-    }
-
-    .categorybottom h5{
-        letter-spacing: 1px;
-        font-size: 18px;
-    }
-
-    .categorygrid button{
-        padding: 7px 26px;
-        border-radius: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .categorygrid a{
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
+    .recipeoverlay{
+        transform: translate(-50%, -50%); 
+        width: 175px;
+        font-size: 17px;
+        font-weight: 500;
         letter-spacing: 2px;
-        color: #6e6e6e;
+        padding: 30px;
     }
+
 }
 
-@media only screen and (max-width:505px){
-    .categoryfiltering{
-        margin-top: 10px;
+
+@media only screen and (max-width:490px){
+    .description{
         margin-left: 50px;
         margin-right: 50px;
     }
-
+    
+    .categoryfiltering{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
     .category{
-        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-        row-gap: 20px;
-        column-gap: 5px;
-        margin-top: 30px;
-    }
-    
-    .categorygrid{
-        margin-top: 20px;
-        height: 255px;
-        width: 206px;
-    }
-    
-    .categorygrid img{
-        height: 170px;
-        width: 206px;
-        object-fit: cover;
-        margin: 0px;
-        border-radius: 10px 10px 0px 0px;
-    } 
-
-    .categorybottom h4{
-        letter-spacing: 0px;
-        font-size: 15px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
 
-@media only screen and (max-width:430px){
+
+@media only screen and (max-width:450px){
+    .description{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     .categoryfiltering{
-        margin-top: 10px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .category{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media only screen and (max-width:410px){
+    .category{
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .categorygrid{
+        height: 280px;
+        width: 165px;
+    }
+
+    .categorygrid img{
+        height: 235px;
+        width: 160px;
+    }
+
+    .categoryfiltering{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .btn{
+        padding: 8px 13px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .recipeoverlay{
+        transform: translate(-50%, -44%); 
+        width: 160px;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width:390px){
+    .description{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .category{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .categorygrid{
+        height: 280px;
+        width: 165px;
+    }
+
+    .categorygrid img{
+        height: 235px;
+        width: 155px;
+    }
+
+    .categoryfiltering{
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .category{
-        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-        row-gap: 15px;
-        column-gap: 5px;
-        margin-top: 30px;
-    }
-    
-    .categorygrid{
-        margin-top: 20px;
-        height: 255px;
-        width: 11rem;
-    }
-    
-    .categorygrid img{
-        height: 170px;
-        width: 11rem;
-    }
-
-    .categorybottom h3{
-        letter-spacing: 1px;
-        font-size: 17px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .categorybottom h4{
-        letter-spacing: 1px;
-        font-size: 15px;
-        margin-top: -5px;
-        margin-bottom: -5px;
-    }
-
-    .categorybottom h5{
-        letter-spacing: 0.5px;
+    .btn{
+        padding: 8px 13px;
         font-size: 16px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        font-weight: 700;
     }
 
-    .categorygrid button{
-        padding: 6px 25px;
-        border-radius: 20px;
-        margin-bottom: 10px;
-        transition: transform 500ms;
-    }
-
-    .categorygrid a{
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
+    .recipeoverlay{
+        transform: translate(-50%, -44%); 
+        width: 155px;
+        font-size: 17px;
+        font-weight: 500;
         letter-spacing: 2px;
+        padding: 30px;
     }
+
 }
