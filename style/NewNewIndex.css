@@ -1908,8 +1908,8 @@ button a{
     }
 
     .secondpartwordings{
-        margin-right: 70px;
-        margin-left: 70px;
+        margin-right: 100px;
+        margin-left: 100px;
     }
 
     .secondpartwordings h1{
@@ -2645,6 +2645,13 @@ button a{
     .firstpartimagecolumn{
         margin-left: 500px;
     }
+
+    /*Second Section*/
+
+    .secondpartwordings{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
 }
 
 
@@ -2934,6 +2941,11 @@ button a{
         border-radius: 5px;
     }
 
+    .secondpartwordings{
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
     
     /*Third Section*/
 
@@ -2944,6 +2956,17 @@ button a{
 
     .thirdmessage{
         margin-right: -250px;
+    }
+
+    .recipebutton{
+        max-width: 9.5rem;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px; 
+        margin-top: 25px;
+        margin-left: 0px;
+        padding: 11px 5px 11px;
+        border-radius: 25px;
     }
 
 }
@@ -3547,13 +3570,13 @@ button a{
     }
 
     .thirdmessage{
-        margin-left: 60px;
-        margin-right: -190px;
+        margin-left: 50px;
+        margin-right: -200px;
         margin-top: 40px;
     }
 
     .thirdmessage h1{
-        font-size: 33px;
+        font-size: 31px;
     }
 
     .thirdmessage p{
@@ -3717,16 +3740,6 @@ button a{
         width: 170px;
     }
 
-    .thirdmessage{
-        margin-left: 60px;
-        margin-right: -180px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 33px;
-    }
-
     .thirdmessage p{
         font-size: 15px;
     }
@@ -3791,11 +3804,6 @@ button a{
         transform: translate(-138%, -155%);
     }
 
-    .secondpartwordings{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
     .secondpartwordings h1{
         font-size: 27px;
     }
@@ -3848,12 +3856,13 @@ button a{
     /*Second Section*/
 
     .secondpartwordings h1{
-        font-size: 27px;
+        font-size: 25px;
     }
 }
 
 
 @media only screen and (max-width:450px){
+    
     /*Third Section*/
 
     .thirdpart{
@@ -3911,17 +3920,8 @@ button a{
     }
 
     .thirdmessage{
-        margin-left: 60px;
-        margin-right: -180px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 33px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
+        margin-left: 50px;
+        margin-right: -190px;
     }
 }
 
@@ -4049,20 +4049,6 @@ button a{
         transform: translate(-121%, -112%);
         width: 155px;
     }
-
-    .thirdmessage{
-        margin-left: 60px;
-        margin-right: -150px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 30px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-    }
 }
 
 
@@ -4157,8 +4143,8 @@ button a{
     }
 
     .thirdmessage{
-        margin-left: 60px;
-        margin-right: -170px;
+        margin-left: 40px;
+        margin-right: -190px;
     }
 }
 
@@ -4336,9 +4322,6 @@ button a{
         font-size: 30px;
     }
 
-    .thirdmessage p{
-        font-size: 15px;
-    }
 }
 
 @media only screen and (max-width:385px){
@@ -4446,16 +4429,12 @@ button a{
 
     .thirdmessage{
         margin-left: 40px;
-        margin-right: -160px;
+        margin-right: -170px;
         margin-top: 40px;
     }
 
     .thirdmessage h1{
         font-size: 28px;
-    }
-
-    .thirdmessage p{
-        font-size: 14px;
     }
 }
 
