@@ -94,7 +94,7 @@ nav ul li a:hover::after{
     margin-left: 18%;
     margin-right: 18%;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .description h1{
@@ -128,34 +128,36 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    margin-left: 30px;
-    margin-right: 30px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .btn{
     border: none;
     outline: none;
-    padding: 8px 18px;
+    padding: 5px 25px;
     cursor: pointer;
     background-color: #ffffff;
-    color: #707070;;
+    color: #ffffff;;
     font-size: 18px;
     font-weight: 900;
     letter-spacing: 1px;
 }
+
+.categoryfiltering, .btn, .btn:hover, .btn.active, .btn:hover::after{
+    background-color: rgb(255, 183, 183);
+}
   
 .btn:hover{
-    color: rgb(156, 154, 154);
+    color: hsl(33, 34%, 89%);
 }
 
 .btn:hover::after{
     width: 100%;
 }
   
-.btn.active {
-    background-color: white;
-    color: rgb(151, 150, 150);
+.btn.active{
+    color: rgb(255, 255, 255);
     text-decoration: underline;
     font-size: 17px;
     font-weight: bolder;
@@ -541,7 +543,7 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:625px){
     .btn{
-        padding: 10px 10px;
+        padding: 8px 10px;
         font-size: 17px;
         font-weight: 700;
     }
@@ -582,9 +584,13 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:615px){
     .btn{
-        padding: 10px 8px;
-        font-size: 17px;
-        font-weight: 700;
+        padding: 8px 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .btn.active{
+        font-size: 16px;
     }
 
     .category{
@@ -673,11 +679,6 @@ nav ul li a:hover::after{
         column-gap: 10px;
     }
 
-    .btn{
-        padding: 10px 10px;
-        font-size: 15px;
-        font-weight: 700;
-    }
 }
 
 
@@ -710,18 +711,6 @@ nav ul li a:hover::after{
     
     .description p{
         margin-top: 20px;
-    }
-    
-    .categoryfiltering{
-        margin-top: 10px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    .btn{
-        padding: 8px 13px;
-        font-size: 17px;
-        font-weight: 700;
     }
 
     .category{
@@ -758,11 +747,6 @@ nav ul li a:hover::after{
         margin-right: 50px;
     }
     
-    .categoryfiltering{
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-    
     .category{
         margin-left: 40px;
         margin-right: 40px;
@@ -776,11 +760,11 @@ nav ul li a:hover::after{
         margin-right: 40px;
     }
 
-    .categoryfiltering{
-        margin-left: 60px;
-        margin-right: 60px;
+    .btn{
+        padding: 7px 8px;
+        font-weight: 600;
     }
-    
+
     .category{
         margin-left: 20px;
         margin-right: 20px;
@@ -789,6 +773,12 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:410px){
+    .btn{
+        padding: 7px 10px;
+        font-weight: 550;
+        letter-spacing: 0px;
+    }
+    
     .category{
         margin-left: 20px;
         margin-right: 20px;
@@ -803,17 +793,6 @@ nav ul li a:hover::after{
     .categorygrid img{
         height: 235px;
         width: 160px;
-    }
-
-    .categoryfiltering{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .btn{
-        padding: 8px 13px;
-        font-size: 16px;
-        font-weight: 700;
     }
 
     .recipeoverlay{
@@ -834,6 +813,11 @@ nav ul li a:hover::after{
         margin-right: 30px;
     }
     
+    .btn{
+        padding: 7px 9px;
+        font-weight: 520;
+    }
+
     .category{
         margin-left: 15px;
         margin-right: 15px;
@@ -849,17 +833,6 @@ nav ul li a:hover::after{
         width: 155px;
     }
 
-    .categoryfiltering{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .btn{
-        padding: 8px 13px;
-        font-size: 16px;
-        font-weight: 700;
-    }
-
     .recipeoverlay{
         transform: translate(-50%, -44%); 
         width: 155px;
@@ -869,4 +842,12 @@ nav ul li a:hover::after{
         padding: 30px;
     }
 
+}
+
+
+@media only screen and (max-width:365px){
+    .btn{
+        padding: 7px 8px;
+        font-weight: 500;
+    }
 }
