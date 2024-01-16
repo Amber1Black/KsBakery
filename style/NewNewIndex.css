@@ -111,6 +111,7 @@ nav ul li a:hover::after{
     font-size: 54px;
     font-family: sans-serif;
     color: #707070;
+    letter-spacing: 2px;
 }
 
 .firstmessage h2{
@@ -129,12 +130,12 @@ nav ul li a:hover::after{
 
 .titleverticalbar{
     width: 17px;
-    height: 120px;
+    height: 118px;
     margin-left: 100px;
     background: linear-gradient(to right, rgb(230, 231, 228), rgb(102, 97, 73));
     grid-column: 1/4;
     align-self: center;
-    margin-top: -70px;
+    margin-top: -75px;
 }
 
 .pinkbox{
@@ -193,7 +194,6 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     justify-content: center;
-    column-gap: 20px;
     margin-top: 50px;
     margin-bottom: 30px;   
 }
@@ -210,8 +210,8 @@ nav ul li a:hover::after{
 .gallerydisplay img{
     object-fit: cover;
     border-radius: 100%;
-    background: hsl(33, 34%, 89%);
-    padding: 10px;
+    padding: 7px;
+    box-shadow: 0px 0px 3px rgb(188, 189, 179);
 }
 
 .gallerycontainer1 img{
@@ -220,27 +220,29 @@ nav ul li a:hover::after{
 }
 
 .gallerycontainer2 img{
-    margin-top: 80px;
-    width: 200px;
-    height: 200px;
-}
-
-.gallerycontainer3 img{
-    margin-top: -20px;
+    margin-top: 100px;
     width: 220px;
     height: 220px;
 }
 
+.gallerycontainer3 img{
+    margin-top: -20px;
+    width: 250px;
+    height: 250px;
+    margin-left: 0px;
+}
+
 .gallerycontainer4 img{
-    margin-top: 40px;
-    width: 180px;
-    height: 180px;
+    margin-top: 60px;
+    width: 190px;
+    height: 190px;
+    margin-left: 5px;
 }
 
 .gallerycontainer5 img{
-    margin-top: 60px;
-    width: 210px;
-    height: 210px;
+    margin-top: 90px;
+    width: 220px;
+    height: 220px;
 }
 
 .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
@@ -264,19 +266,19 @@ nav ul li a:hover::after{
 }
 
 .overlay2{
-    transform: translate(-50%, -150%);
-}
-
-.overlay3{
     transform: translate(-50%, -160%);
 }
 
+.overlay3{
+    transform: translate(-50%, -171%);
+}
+
 .overlay4{
-    transform: translate(-50%, -140%);
+    transform: translate(-48%, -144%);
 }
 
 .overlay5{
-    transform: translate(-50%, -150%);
+    transform: translate(-51%, -158%);
 }
 
 .overlay1 a, .overlay2 a, .overlay3 a, .overlay4 a, .overlay5 a{
@@ -290,64 +292,41 @@ nav ul li a:hover::after{
 }
 
 .secondpartmessage{
-    display: grid;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
-.ksbakery, .secondpartwordings{
-    grid-row: 1/2;
-}
-
-.ksbakery img{
-    width: 400px;
-    margin-left: 100px;
-    margin-top: 40px;
-}
-
-.secondpartwordings{
-    margin-left: 20px;
-    margin-right: 80px;
-}
-
-.secondpartwordings h1{
-    margin-bottom: 25px;
-    font-size: 45px;
-    font-family: sans-serif;
-    letter-spacing: 1px;
+.secondpartmessage h1{
+    font-size: 40px;
     color: #707070;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 10px 0 10px;
 }
 
-.secondpartwordings p{
+.secondpartmessage p{
     color:rgb(138, 137, 137);
     text-align: justify;
-    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
-button{
-    width: 60%;
-    max-width: 11rem;
-    font-family: Montserrat;
-    font-size: 15px;
-    letter-spacing: 1px; 
-    align-items: center;
-    border: 0;
-    margin-top: 25px;
-    padding: 13px 10px 13px;
-    outline: none;
-    color: #fff;
-    background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.1s;
+.secondpartredirection{
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration-color: rgb(138, 137, 137);
 }
 
-button:hover{
+.secondpartredirection:hover{
     font-weight: bold;
     cursor: pointer;
 }
 
-button a{
+.secondpartredirection a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(163, 160, 160);
 }
 
 
@@ -363,90 +342,72 @@ button a{
     overflow-y: hidden;
 }
 
-.greenbox, .recipecontainer, .thirdmessage{
+.recipecontainer, .thirdmessage{
     grid-row: 1/2;
-}
-
-.greenbox{
-    width: 650px;
-    height: 570px;
-    margin-left: 0px;
-    background: linear-gradient(to right, hsl(33, 19%, 81%), hsl(35, 46%, 95%));
-    grid-column: 1/4;
-    z-index: -2;
-    opacity: 95%;
 }
 
 .recipecontainer{
     position: relative;
 }
 
-.thirdpartimage1{
+.thirdpartimage1, .thirdpartimage2, .thirdpartimage3{
     display: block;
-    height: 290px;
-    width: 220px;
     object-fit: cover;
-    margin-left: -600px;
-    margin-top: 50px;
     z-index: -1;
-    padding: 11px;
-    background: white;
+    border-style: double;
+    border-width: 8px;
+    border-color: rgb(212, 212, 203);
+}
+
+.thirdpartimage1{
+    height: 280px;
+    width: 210px;
+    margin-left: 70px;
+    margin-top: 50px;
 }
 
 .thirdpartimage2{
-    display: block;
-    height: 310px;
-    width: 240px;
-    object-fit: cover;
+    height: 320px;
+    width: 230px;
     margin-top: 230px;
-    margin-left: -420px;
-    z-index: -1;
-    padding: 11px;
-    background: white;
+    margin-left: -30px;
 }
 
 .thirdpartimage3{
-    display: block;
-    height: 320px;
+    height: 340px;
     width: 240px;
-    object-fit: cover;
-    margin-top: 130px;
-    margin-left: -150px;
-    z-index: -1;
-    padding: 11px;
-    background: white;
+    margin-top: 100px;
+    margin-left:10px;
 }
 
 .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%); 
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1; 
     width: 100%;
     transition: .5s ease;
     opacity:0;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 35px;
     text-align: center;
     cursor: pointer;
 }
 
 .recipeoverlay1{
-    transform: translate(-315%, -114%);
-    width: 187px;
+    transform: translate(40%, -107%);
+    width: 194px;
 }
 
 .recipeoverlay2{
-    transform: translate(-188%, -111%);
-    width: 217px;
+    transform: translate(-10%, -105%);
+    width: 214px;
 }
 
 .recipeoverlay3{
-    transform: translate(-84.5%, -113%);
-    width: 217px;
+    transform: translate(8%, -107%);
+    width: 224px;
 }
 
 .recipecontainer:hover .recipeoverlay1, .recipecontainer:hover .recipeoverlay2, .recipecontainer:hover .recipeoverlay3{
@@ -458,57 +419,43 @@ button a{
     color: white;
 }
 
-.thirdmessage{
+.thirdpartmessage{
     margin-left: 60px;
     margin-right: 110px;
     align-self: center;
 }
 
-.thirdmessage h1{
-    margin-left: ;
-    margin-bottom: 20px;
-    font-size: 45px;
-    letter-spacing: 1px;
-    font-family: sans-serif;
+.thirdpartmessage h1{
+    font-size: 40px;
     color: #707070;
-}
-
-.thirdmessage p{
-    color:rgb(122, 122, 122);
-    text-align: justify;
-    margin-top: 25px;
-    margin-bottom: 15px;
-}
-
-.recipebutton{
-    width: 60%;
-    max-width: 10rem;
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 450;
-    letter-spacing: 1px; 
-    align-items: center;
-    border: 0;
-    margin-top: 25px;
-    margin-left: 0px;
-    padding: 13px 5px 13px;
-    outline: none;
-    color: #fff;
-    background: linear-gradient(to right, rgb(175, 177, 171), rgb(102, 97, 73));
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.1s;
-}
-
-.recipebutton:hover{
     font-weight: 900;
-    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 10px 0 10px;
+}
+
+.thirdpartmessage p{
+    color:rgb(138, 137, 137);
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.thirdpartredirection{
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration-color: rgb(138, 137, 137);
+}
+
+.thirdpartredirection:hover{
+    font-weight: bold;
     cursor: pointer;
 }
 
-.recipebutton a{
+.thirdpartredirection a{
     text-decoration: none;
-    color: #fff;
+    color: rgb(163, 160, 160);
 }
 
 
@@ -552,6 +499,8 @@ button a{
 }
 
 
+
+
 @media only screen and (max-width:1330px){
     /*First Section*/
 
@@ -565,60 +514,10 @@ button a{
     }
 
     /*Second Section*/
-    .gallerydisplay{
-        column-gap: 15px;
-    }
 
-    .secondpartwordings p{
-        margin-right: 10px;
-    }
-
-    /*Third Section*/
-
-    .greenbox{
-        width: 600px;
-        height: 570px;
-    }
-
-    .thirdpartimage1{
-        height: 270px;
-        width: 200px;
-        margin-left: -550px;
-        margin-top: 50px;
-    }
-    
-    .thirdpartimage2{
-        height: 300px;
-        width: 230px;
-        margin-top: 230px;
-        margin-left: -390px;
-    }
-    
-    .thirdpartimage3{
-        height: 310px;
-        width: 230px;
-        margin-top: 130px;
-        margin-left: -140px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-303%, -113%);
-        width: 178px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-182.5%, -111%);
-        width: 207.5px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-84%, -113.5%);
-        width: 207px;
-    }
-
-    .thirdmessage{
-        margin-left: 50px;
-        margin-right: 100px;
+    .secondpartmessage{
+        margin-left: 150px;
+        margin-right: 150px;
     }
 
 }
@@ -654,27 +553,99 @@ button a{
 
     /*Second Section*/
 
-    .gallerydisplay{
-        column-gap: 7px;
+    .gallerycontainer1 img{
+        width: 250px;
+        height: 250px;
     }
 
-    .ksbakery img{
-        width: 410px;
-        margin-left: 90px;
-        margin-top: 40px;
+    .gallerycontainer2 img{
+        margin-top: 100px;
+        width: 210px;
+        height: 210px;
+        margin-left: -5px;
     }
 
-    .secondpartwordings{
-        margin-left: 30px;
-        margin-right: 100px;
+    .gallerycontainer3 img{
+        margin-top: -20px;
+        width: 240px;
+        height: 240px;
+        margin-left: -15px;
     }
 
-    .secondpartwordings h1{
-        font-size: 40px;
+    .gallerycontainer4 img{
+        margin-top: 60px;
+        width: 175px;
+        height: 175px;
+        margin-left: 3px;
     }
 
-    .secondpartwordings p{
-        margin-right: 0px;
+    .gallerycontainer5 img{
+        margin-top: 90px;
+        width: 210px;
+        height: 210px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -175%);
+    }
+
+    .overlay2{
+        transform: translate(-50%, -155%);
+    }
+
+    .overlay3{
+        transform: translate(-55%, -171%);
+    }
+
+    .overlay4{
+        transform: translate(-50%, -140%);
+    }
+
+    .overlay5{
+        transform: translate(-51%, -155%);
+    }
+    
+    .secondpartmessage{
+        margin-left: 140px;
+        margin-right: 130px;
+    }
+
+    /*Third Section*/
+    
+    .thirdpartimage1{
+        height: 280px;
+        width: 200px;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    
+    .thirdpartimage2{
+        height: 300px;
+        width: 210px;
+        margin-top: 230px;
+        margin-left: -35px;
+    }
+    
+    .thirdpartimage3{
+        height: 320px;
+        width: 220px;
+        margin-top: 120px;
+        margin-left: 8px;
+    }
+
+    .recipeoverlay1{
+        transform: translate(42%, -107%);
+        width: 184px;
+    }
+    
+    .recipeoverlay2{
+        transform: translate(-14%, -105%);
+        width: 194px;
+    }
+    
+    .recipeoverlay3{
+        transform: translate(8%, -106%);
+        width: 203px;
     }
 }
 
@@ -709,141 +680,90 @@ button a{
 
     /*Second Section*/
 
-    .secondpart{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .gallerydisplay{
-        column-gap: 3px;
-    }
-
-    .gallerycontainer1 img{
-        width: 230px;
-        height: 230px;
-    }
-    
-    .gallerycontainer2 img{
-        margin-top: 80px;
-        width: 180px;
-        height: 180px;
-    }
-    
-    .gallerycontainer3 img{
-        margin-top: -20px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 40px;
-        width: 170px;
-        height: 170px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 60px;
-        width: 190px;
-        height: 190px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -170%);
-    }
-    
-    .overlay2{
-        transform: translate(-50%, -140%);
-    }
-    
-    .overlay3{
-        transform: translate(-50%, -160%);
-    }
-    
-    .overlay4{
-        transform: translate(-50%, -135%);
-    }
-    
-    .overlay5{
-        transform: translate(-50%, -145%);
-    }
-
-    .ksbakery img{
-        width: 380px;
-        margin-left: 90px;
-        margin-top: 40px;
-    }
-
-    /*Third Section*/
-
-    .thirdmessage{
-        margin-left: 30px;
-        margin-right: 80px;
-    }
-}
-
-@media only screen and (max-width:1200px){
-    /*Second Section*/
-    
-    .ksbakery img{
-        width: 360px;
-        margin-left: 90px;
-        margin-top: 40px;
-    }
-
-    .secondpartwordings{
-        margin-left: 20px;
+    .secondpartmessage{
+        margin-left: 120px;
         margin-right: 100px;
     }
 
     /*Third Section*/
 
-    .greenbox{
-        width: 550px;
-        height: 570px;
-    }
-
-    .thirdpartimage1{
-        height: 255px;
-        width: 185px;
-        margin-left: -520px;
-        margin-top: 45px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 290px;
-        width: 210px;
-        margin-top: 250px;
-        margin-left: -380px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 300px;
-        width: 215px;
-        margin-top: 130px;
-        margin-left: -157px;
-        padding: 10px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-309%, -112%);
-        width: 165px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-195%, -109%);
-        width: 190px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-90%, -112%);
-        width: 195px;
-    }
-
     .thirdmessage{
-        margin-left: 40px;
-        margin-right: 90px;
+        margin-left: 50px;
+        margin-right: 80px;
     }
 }
+
+
+
+@media only screen and (max-width:1200px){
+    /*Second Section*/
+
+    .secondpart{
+        margin-top: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px; 
+    }
+
+    .gallerycontainer1 img{
+        width: 225px;
+        height: 225px;
+    }
+
+    .gallerycontainer2 img{
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+        margin-left: -10px;
+    }
+
+    .gallerycontainer3 img{
+        margin-top: -20px;
+        width: 230px;
+        height: 230px;
+        margin-left: -20px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 60px;
+        width: 170px;
+        height: 170px;
+        margin-left: 0px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 90px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -168%);
+    }
+
+    .overlay2{
+        transform: translate(-51%, -152%);
+    }
+
+    .overlay3{
+        transform: translate(-57%, -165%);
+    }
+
+    .overlay4{
+        transform: translate(-50%, -136%);
+    }
+
+    .overlay5{
+        transform: translate(-50%, -150%);
+    }
+    
+    .secondpartmessage{
+        margin-left: 140px;
+        margin-right: 120px;
+    }
+
+}
+
 
 @media only screen and (max-width:1170px){
     /*First Section*/
@@ -876,16 +796,22 @@ button a{
 
     /*Second Section*/
 
-    .gallerydisplay{
-        column-gap: 3px;
-    }
-
-    .ksbakery img{
-        width: 340px;
-        margin-left: 70px;
-        margin-top: 50px;
+    .secondpartmessage{
+        margin-left: 130px;
+        margin-right: 110px;
     }
 }
+
+
+@media only screen and (max-width:1140px){
+    /*Second Section*/
+
+    .secondpartmessage{
+        margin-left: 100px;
+        margin-right: 90px;
+    }
+}
+
 
 @media only screen and (max-width:1110px){
     /*First Section*/
@@ -893,6 +819,10 @@ button a{
     .firstmessage{
         margin-left: 100px;
         max-width: 320px;
+    }
+
+    .firstmessage h1{
+        letter-spacing: 1px;
     }
 
     .firstmessage h2{
@@ -918,69 +848,74 @@ button a{
         margin-left: 890px;
     }
 
-    /*Second Section*/
-
-    .gallerycontainer3 img{
-        margin-top: -20px;
-        width: 200px;
-        height: 200px;
-    }
-
-    .overlay3{
-        transform: translate(-50%, -150%);
-    }
-
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 23px;
-        font-family: Fraunces;
-        letter-spacing: 1px;
-    }
-
-    .secondpartwordings{
-        margin-right: 70px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 36px;
-    }
-
-    .secondpartwordings p{
-        font-size: 16px;
-    }
-
-    /*Third Section*/
-    .thirdmessage{
-        margin-left: 30px;
-        margin-right: 70px;
-    }
 }
 
 
-@media only screen and (max-width:1070px){
+@media only screen and (max-width:1100px){
     /*Second Section*/
 
     .secondpart{
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-top: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 100px; 
     }
 
-    .secondpartwordings{
-        margin-right: 100px;
+    .gallerycontainer1 img{
+        width: 210px;
+        height: 210px;
     }
 
-    .gallerydisplay{
-        column-gap: 0px;
+    .gallerycontainer2 img{
+        margin-top: 100px;
+        width: 190px;
+        height: 190px;
+        margin-left: -15px;
     }
-    
+
     .gallerycontainer3 img{
         margin-top: -20px;
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
+        margin-left: -25px;
     }
 
-    /*Third Section*/
-    .thirdmessage h1{
-        font-size: 40px;
+    .gallerycontainer4 img{
+        margin-top: 60px;
+        width: 170px;
+        height: 170px;
+        margin-left: 0px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 90px;
+        width: 195px;
+        height: 195px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -157%);
+    }
+
+    .overlay2{
+        transform: translate(-55%, -145%);
+    }
+
+    .overlay3{
+        transform: translate(-57%, -160%);
+    }
+
+    .overlay4{
+        transform: translate(-50%, -135%);
+    }
+
+    .overlay5{
+        transform: translate(-50%, -148%);
+    }
+    
+    .secondpartmessage{
+        margin-left: 155px;
+        margin-right: 155px;
     }
 }
 
@@ -994,164 +929,9 @@ button a{
 
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 200px;
-        height: 200px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -155%);
-    }
-
-    .secondpartwordings{
-        margin-right: 90px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 33px;
-    }
-
-    /*Third Section*/
-
-    .greenbox{
-        width: 480px;
-        height: 550px;
-    }
-
-    .thirdpartimage1{
-        height: 250px;
-        width: 180px;
-        margin-left: -450px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 280px;
-        width: 200px;
-        margin-top: 250px;
-        margin-left: -380px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 300px;
-        width: 215px;
-        margin-top: 130px;
-        margin-left: -165px;
-        padding: 10px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-275%, -112%);
-        width: 160px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-205.5%, -109%);
-        width: 180px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-92%, -112%);
-        width: 195px;
-    }
-
-    .thirdmessage{
-        margin-left: 30px;
-        margin-right: 70px;
-    }
-
-    .thirdmessage h1{
-        font-size: 38px;
-    }
-
-    .recipebutton{
-        margin-top: 18px;
-    }
-}
-
-
-@media only screen and (max-width:1000px){
-    /*Second Section*/
-
-    .secondpart{
-        margin-top: 150px;
-    }
-
-    .gallerycontainer1 img{
-        width: 230px;
-        height: 230px;
-    }
-    
-    .gallerycontainer2 img{
-        margin-top: 125px;
-        margin-left: -20px;
-        width: 180px;
-        height: 180px;
-    }
-    
-    .gallerycontainer3 img{
-        margin-top: -20px;
-        margin-left: -50px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 40px;
-        width: 170px;
-        height: 170px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 70px;
-        width: 190px;
-        height: 190px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -170%);
-    }
-    
-    .overlay2{
-        transform: translate(-58%, -143%);
-    }
-    
-    .overlay3{
-        transform: translate(-70%, -160%);
-    }
-    
-    .overlay4{
-        transform: translate(-50%, -142%);
-    }
-    
-    .overlay5{
-        transform: translate(-50%, -148%);
-    }
-
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        color: black;
-        font-size: 23px;
-        font-family: Fraunces;
-        letter-spacing: 1px;
-    }
-
-    .ksbakery img{
-        width: 310px;
-        margin-left: 60px;
-        margin-top: 50px;
-    }
-
-    .secondpartwordings{
-        margin-right: 70px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 34px;
-        
-    }
-
-    .secondpartwordings p{
-        font-size: 15px;
+    .secondpartmessage{
+        margin-left: 120px;
+        margin-right: 120px;
     }
 }
 
@@ -1205,6 +985,75 @@ button a{
         margin-bottom: 15px;
     }
 
+
+    /*Second Section*/
+
+    .secondpart{
+        margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px; 
+    }
+
+    .gallerycontainer1 img{
+        width: 200px;
+        height: 200px;
+        margin-top: -10px;
+    }
+
+    .gallerycontainer2 img{
+        margin-top: 130px;
+        width: 180px;
+        height: 180px;
+        margin-left: -45px;
+    }
+
+    .gallerycontainer3 img{
+        margin-top: -30px;
+        width: 220px;
+        height: 220px;
+        margin-left: -50px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 40px;
+        width: 160px;
+        height: 160px;
+        margin-left: 2px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+        margin-left: -15px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -155%);
+    }
+
+    .overlay2{
+        transform: translate(-65%, -143%);
+    }
+
+    .overlay3{
+        transform: translate(-66%, -160%);
+    }
+
+    .overlay4{
+        transform: translate(-49%, -131%);
+    }
+
+    .overlay5{
+        transform: translate(-55%, -148%);
+    }
+    
+    .secondpartmessage{
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+
 }
 
 
@@ -1217,65 +1066,11 @@ button a{
 
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 210px;
-        height: 210px;
-    }
-    
-    .gallerycontainer2 img{
-        margin-top: 125px;
-        margin-left: -20px;
-        width: 170px;
-        height: 170px;
-    }
-    
-    .gallerycontainer3 img{
-        margin-top: -20px;
-        margin-left: -50px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 30px;
-        margin-left: 0px;
-        width: 170px;
-        height: 170px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 110px;
-        margin-left: -15px;
-        width: 190px;
-        height: 190px;
+    .secondpartmessage{
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
-    .overlay1{
-        transform: translate(-50%, -160%);
-    }
-    
-    .overlay2{
-        transform: translate(-58%, -143%);
-    }
-    
-    .overlay3{
-        transform: translate(-70%, -157%);
-    }
-    
-    .overlay4{
-        transform: translate(-52%, -142%);
-    }
-    
-    .overlay5{
-        transform: translate(-52%, -148%);
-    }
-
-    .secondpartwordings{
-        margin-right: 60px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 33px;
-        margin-bottom: 15px;
-    }
 }
 
 
@@ -1296,6 +1091,7 @@ button a{
 
     .firstmessage h1{
         font-size: 48px;
+        letter-spacing: 0px;
     }
 
     .firstmessage h2{
@@ -1329,17 +1125,9 @@ button a{
         margin-bottom: 15px;
     }
 
-    /*Second Section*/
-
-    .secondpartwordings{
-        margin-right: 50px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 32px;
-        
-    }
+    
 }
+
 
 @media only screen and (max-width:915px){
     /*First Section*/
@@ -1348,126 +1136,8 @@ button a{
         margin-left: 780px;
     }
 
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 190px;
-        height: 190px;
-    }
-    
-    .gallerycontainer2 img{
-        margin-top: 125px;
-        margin-left: -35px;
-        width: 170px;
-        height: 170px;
-    }
-    
-    .gallerycontainer3 img{
-        margin-top: -25px;
-        margin-left: -50px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 30px;
-        margin-left: 0px;
-        width: 160px;
-        height: 160px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 110px;
-        margin-left: -20px;
-        width: 190px;
-        height: 190px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -150%);
-    }
-    
-    .overlay2{
-        transform: translate(-63%, -143%);
-    }
-    
-    .overlay3{
-        transform: translate(-70%, -157%);
-    }
-    
-    .overlay4{
-        transform: translate(-51%, -136%);
-    }
-    
-    .overlay5{
-        transform: translate(-57%, -148%);
-    }
-
-    .secondpartmessage{
-        margin-top: -10px;
-    }
-
-    .ksbakery img{
-        width: 270px;
-    }
-
-    /*Third Section*/
-
-    .greenbox{
-        width: 400px;
-        height: 550px;
-    }
-
-    .thirdpartimage1{
-        height: 240px;
-        width: 180px;
-        margin-left: -380px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 280px;
-        width: 200px;
-        margin-top: 250px;
-        margin-left: -350px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 300px;
-        width: 210px;
-        margin-top: 130px;
-        margin-left: -140px;
-        padding: 10px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-231.5%, -112%);
-        width: 160px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-189%, -109%);
-        width: 180px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-86.5%, -112%);
-        width: 190px;
-    }
-
-    .thirdmessage{
-        margin-left: 20px;
-        margin-right: 50px;
-    }
-
-    .thirdmessage h1{
-        font-size: 40px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-    }
 }
+
 
 @media only screen and (max-width:900px){
     /*First Section*/
@@ -1520,8 +1190,76 @@ button a{
     }
 
     /*Second Section*/
-    .gallerydisplay img{
-        padding: 8px;
+
+    .secondpart{
+        margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px; 
+    }
+
+    .gallerycontainer1 img{
+        width: 195px;
+        height: 195px;
+        margin-top: -10px;
+    }
+
+    .gallerycontainer2 img{
+        margin-top: 150px;
+        width: 175px;
+        height: 175px;
+        margin-left: -60px;
+    }
+
+    .gallerycontainer3 img{
+        margin-top: -45px;
+        width: 215px;
+        height: 215px;
+        margin-left: -83px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 5px;
+        width: 160px;
+        height: 160px;
+        margin-left: 8px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 95px;
+        width: 190px;
+        height: 190px;
+        margin-left: -26px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -152%);
+    }
+
+    .overlay2{
+        transform: translate(-70%, -140%);
+    }
+
+    .overlay3{
+        transform: translate(-78%, -160%);
+    }
+
+    .overlay4{
+        transform: translate(-47%, -131%);
+    }
+
+    .overlay5{
+        transform: translate(-58%, -145%);
+    }
+    
+    .secondpartmessage{
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+
+    .secondpartmessage h1{
+        font-size: 35px;
     }
 }
 
@@ -1543,73 +1281,6 @@ button a{
         margin-left: 535px;
     }
 
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 185px;
-        height: 185px;
-    }
-    
-    .gallerycontainer2 img{
-        margin-top: 135px;
-        margin-left: -40px;
-        width: 165px;
-        height: 165px;
-    }
-    
-    .gallerycontainer3 img{
-        margin-top: -25px;
-        margin-left: -60px;
-        width: 200px;
-        height: 200px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 25px;
-        margin-left: 5px;
-        width: 155px;
-        height: 155px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 110px;
-        margin-left: -25px;
-        width: 190px;
-        height: 190px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -150%);
-    }
-    
-    .overlay2{
-        transform: translate(-65%, -143%);
-    }
-    
-    .overlay3{
-        transform: translate(-72%, -157%);
-    }
-    
-    .overlay4{
-        transform: translate(-48%, -134%);
-    }
-    
-    .overlay5{
-        transform: translate(-60%, -148%);
-    }
-
-    .secondpartmessage h1{
-        font-size: 34px;
-    }
-
-    .secondpartmessage p{
-        font-size: 15px;
-    }
-
-    .ksbakery img{
-        width: 265px;
-        margin-left: 30px;
-    }
 }
 
 
@@ -1656,7 +1327,6 @@ button a{
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
 }
 
 
@@ -1689,37 +1359,79 @@ button a{
         margin-left: 725px;
     }
 
+
     /*Second Section*/
 
+    .secondpart{
+        margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px; 
+    }
+
+    .gallerycontainer1 img{
+        width: 195px;
+        height: 195px;
+        margin-top: -15px;
+    }
+
+    .gallerycontainer2 img{
+        margin-top: 145px;
+        width: 175px;
+        height: 175px;
+        margin-left: -65px;
+    }
+
+    .gallerycontainer3 img{
+        margin-top: -45px;
+        width: 215px;
+        height: 215px;
+        margin-left: -83px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 0px;
+        width: 160px;
+        height: 160px;
+        margin-left: 5px;
+    }
+
     .gallerycontainer5 img{
-        margin-top: 110px;
-        margin-left: -25px;
-        width: 180px;
-        height: 180px;
+        margin-top: 125px;
+        width: 190px;
+        height: 190px;
+        margin-left: -60px;
     }
-    
+
+    .overlay1{
+        transform: translate(-50%, -152%);
+    }
+
+    .overlay2{
+        transform: translate(-73%, -138%);
+    }
+
+    .overlay3{
+        transform: translate(-78%, -160%);
+    }
+
+    .overlay4{
+        transform: translate(-48%, -131%);
+    }
+
     .overlay5{
-        transform: translate(-60%, -145%);
+        transform: translate(-70%, -145%);
     }
     
-    .ksbakery img{
-        width: 250px;
-        transform: rotate(-5deg);
-        margin-left: 30px;
+    .secondpartmessage{
+        margin-left: 90px;
+        margin-right: 90px;
     }
 
-    .secondpartwordings{
-        margin-right: 60px;
-        margin-left: 20px;
+    .secondpartmessage h1{
+        font-size: 33px;
     }
-
-    .secondpartwordings h1{
-        font-size: 32px;
-    }
-
-    .secondpartwordings p{
-        font-size: 15px;
-    }
+   
 }
 
 
@@ -1735,86 +1447,7 @@ button a{
         height: 85px;
     }
 
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 180px;
-        height: 180px;
-    }
     
-    .gallerycontainer2 img{
-        margin-top: 136x;
-        margin-left: -50px;
-        width: 165px;
-        height: 165px;
-    }
-    
-    .gallerycontainer3 img{
-        margin-top: -25px;
-        margin-left: -65px;
-        width: 190px;
-        height: 190px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 25px;
-        margin-left: 5px;
-        width: 150px;
-        height: 150px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 120px;
-        margin-left: -30px;
-        width: 180px;
-        height: 180px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -150%);
-    }
-    
-    .overlay2{
-        transform: translate(-67%, -143%);
-    }
-    
-    .overlay3{
-        transform: translate(-74%, -157%);
-    }
-    
-    .overlay4{
-        transform: translate(-48%, -134%);
-    }
-    
-    .overlay5{
-        transform: translate(-60%, -148%);
-    }
-
-    .ksbakery img{
-        width: 250px;
-        transform: rotate(-10deg);
-        margin-left: 30px;
-        margin-top: 50px;
-    }
-
-    .secondpartwordings{
-        margin-right: 50px;
-        margin-left: 20px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 31px;
-    }
-
-    .secondpartwordings p{
-        font-size: 15px;
-    }
-
-    /*Third Section*/
-
-    .thirdmessage h1{
-        font-size: 40px;
-    }
 }
 
 
@@ -1848,7 +1481,7 @@ button a{
 
     .firstmessage{
         margin-top: 50px;
-        margin-left: 130px;
+        margin-left: 120px;
         max-width: initial;
         margin-right: 70px;
     }
@@ -1856,12 +1489,13 @@ button a{
     .titleverticalbar{
         width: 15px;
         height: 80px;
-        margin-left: 90px;
+        margin-left: 80px;
         margin-top: -5px;
     }
 
     .firstmessage h1{
         font-size: 45px;
+        letter-spacing: 2px;
     }
 
     .firstmessage h2{
@@ -1885,317 +1519,157 @@ button a{
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
-    /*Second Section*/
-
-    .gallerycontainer5 img{
-        margin-top: 140px;
-        margin-left: -50px;
-        width: 175px;
-        height: 175px;
-    }
-    
-    .overlay5{
-        transform: translate(-69%, -146%);
-    }
-
-    .secondpartmessage{
-        display: initial;
-    }
-
-    .ksbakery img{
-        display: none;
-    }
-
-    .secondpartwordings{
-        margin-right: 100px;
-        margin-left: 100px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 35px;
-    }
-
-    .secondpartwordings p{
-        font-size: 15px;
-    }
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 200px;
-        grid-template-columns: initial;
-    }
-
-    .thirdmessage{
-        grid-row: initial;
-    }
-
-    .greenbox{
-        width: 680px;
-        height: 380px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 250px;
-        width: 200px;
-        margin-left: -750px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 260px;
-        width: 220px;
-        margin-top: 70px;
-        margin-left: -520px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 310px;
-        width: 240px;
-        margin-top: 40px;
-        margin-left: -270px;
-        padding: 10px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-411%, -112%);
-        width: 180px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-255%, -109%);
-        width: 200px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-118%, -112%);
-        width: 220px;
-    }
-
-    .thirdmessage{
-        margin-left: 110px;
-        margin-right: -320px;
-        margin-top: 50px;
-    }
-
-    .thirdmessage h1{
-        font-size: 42px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
 }
 
 
-@media only screen and (max-width:770px){
+@media only screen and (max-width:780px){
     /*Second Section*/
 
     .secondpart{
+        margin-top: 200px;
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 100px; 
     }
 
     .gallerycontainer1 img{
-        width: 170px;
-        height: 170px;
+        width: 195px;
+        height: 195px;
+        margin-top: -15px;
     }
-    
+
     .gallerycontainer2 img{
         margin-top: 150px;
-        width: 145px;
-        height: 145px;
-        margin-left: -55px;
+        width: 175px;
+        height: 175px;
+        margin-left: -70px;
     }
-    
+
     .gallerycontainer3 img{
-        margin-top: -20px;
+        margin-top: -45px;
+        width: 215px;
+        height: 215px;
+        margin-left: -90px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 0px;
+        width: 160px;
+        height: 160px;
+        margin-left: 5px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 140px;
         width: 190px;
         height: 190px;
-        margin-left: -75px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 40px;
-        width: 135px;
-        height: 135px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 87px;
-        width: 170px;
-        height: 170px;
-        margin-left: -10px;
+        margin-left: -80px;
     }
 
     .overlay1{
-        transform: translate(-50%, -138%);
+        transform: translate(-50%, -152%);
     }
-    
+
     .overlay2{
-        transform: translate(-72%, -126%);
+        transform: translate(-73%, -138%);
     }
-    
+
     .overlay3{
-        transform: translate(-77%, -148%);
+        transform: translate(-81%, -155%);
     }
-    
+
     .overlay4{
-        transform: translate(-49%, -123%);
+        transform: translate(-47%, -131%);
     }
-    
+
     .overlay5{
-        transform: translate(-53%, -138%);
-    }
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 200px;
-    }
-
-    .greenbox{
-        width: 650px;
-        height: 370px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 240px;
-        width: 190px;
-        margin-left: -720px;
-        margin-top: 30px;
-        padding: 10px;
+        transform: translate(-78%, -145%);
     }
     
-    .thirdpartimage2{
-        height: 250px;
-        width: 200px;
-        margin-top: 70px;
-        margin-left: -500px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 300px;
-        width: 230px;
-        margin-top: 40px;
-        margin-left: -270px;
-        padding: 10px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-418%, -112%);
-        width: 170px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-272%, -109%);
-        width: 180px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-124%, -112%);
-        width: 210px;
+    .secondpartmessage{
+        margin-left: 70px;
+        margin-right: 70px;
     }
 
-    .thirdmessage{
-        margin-left: 110px;
-        margin-right: -310px;
-        margin-top: 50px;
+    .secondpartmessage h1{
+        font-size: 33px;
     }
-
-    .thirdmessage h1{
-        font-size: 42px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
 }
 
 
-@media only screen and (max-width:750px){
-    
-    /*Third Section*/
+@media only screen and (max-width:740px){
+    /*Second Section*/
 
-    .thirdpart{
+    .secondpart{
         margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px; 
     }
 
-    .greenbox{
-        width: 610px;
-        height: 365px;
-        margin-left: 0px;
+    .gallerycontainer1 img{
+        width: 195px;
+        height: 195px;
+        margin-top: -15px;
     }
 
-    .thirdpartimage1{
-        height: 230px;
-        width: 180px;
-        margin-left: -680px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 240px;
-        width: 190px;
-        margin-top: 70px;
-        margin-left: -480px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 285px;
-        width: 220px;
-        margin-top: 45px;
-        margin-left: -270px;
-        padding: 10px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-419%, -112%);
-        width: 160px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-276.5%, -108%);
+    .gallerycontainer2 img{
+        margin-top: 150px;
         width: 170px;
+        height: 170px;
+        margin-left: -70px;
+    }
+
+    .gallerycontainer3 img{
+        margin-top: -45px;
+        width: 215px;
+        height: 215px;
+        margin-left: -90px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 0px;
+        width: 160px;
+        height: 160px;
+        margin-left: 5px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 160px;
+        width: 190px;
+        height: 190px;
+        margin-left: -120px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -152%);
+    }
+
+    .overlay2{
+        transform: translate(-73%, -138%);
+    }
+
+    .overlay3{
+        transform: translate(-81%, -155%);
+    }
+
+    .overlay4{
+        transform: translate(-47%, -131%);
+    }
+
+    .overlay5{
+        transform: translate(-92%, -145%);
     }
     
-    .recipeoverlay3{
-        transform: translate(-130%, -112%);
-        width: 200px;
+    .secondpartmessage{
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: -10px;
     }
 
-    .thirdmessage{
-        margin-left: 110px;
-        margin-right: -310px;
-        margin-top: 50px;
+    .secondpartmessage h1{
+        font-size: 33px;
     }
-
-    .thirdmessage h1{
-        font-size: 40px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
 }
 
 
@@ -2206,77 +1680,18 @@ button a{
         margin-left: 580px;
     }
 
-}
-
-
-@media only screen and (max-width:710px){
-    
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 200px;
+    .firstmessage{
+        margin-top: 50px;
+        margin-left: 110px;
+        max-width: initial;
+        margin-right: 70px;
     }
 
-    .greenbox{
-        width: 570px;
-        height: 360px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 230px;
-        width: 170px;
-        margin-left: -650px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 240px;
-        width: 180px;
-        margin-top: 70px;
-        margin-left: -465px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 285px;
-        width: 210px;
-        margin-top: 45px;
-        margin-left: -270px;
-        padding: 10px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-427%, -112%);
-        width: 150px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-284.5%, -108%);
-        width: 160px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-137%, -112%);
-        width: 190px;
-    }
-
-    .thirdmessage{
-        margin-left: 90px;
-        margin-right: -290px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 40px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+    .titleverticalbar{
+        width: 15px;
+        height: 80px;
+        margin-left: 70px;
+        margin-top: -5px;
     }
 
 }
@@ -2289,79 +1704,77 @@ button a{
         margin-left: 560px;
     }
 
-    .titleverticalbar{
-        width: 14px;
-        height: 85px;
-        margin-left: 70px;
-    }
+     /*Second Section*/
 
-    .firstmessage{
-        margin-left: 110px;
-        margin-right: 60px;
+     .secondpart{
+        margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px; 
     }
-
-    /*Second Section*/
 
     .gallerycontainer1 img{
-        width: 160px;
-        height: 160px;
+        width: 195px;
+        height: 195px;
+        margin-top: -15px;
     }
-    
+
     .gallerycontainer2 img{
-        margin-top: 140px;
-        width: 130px;
-        height: 130px;
-        margin-left: -45px;
+        margin-top: 155px;
+        width: 170px;
+        height: 170px;
+        margin-left: -70px;
     }
-    
+
     .gallerycontainer3 img{
-        margin-top: -20px;
-        width: 180px;
-        height: 180px;
-        margin-left: -75px;
+        margin-top: -45px;
+        width: 215px;
+        height: 215px;
+        margin-left: -95px;
     }
-    
+
     .gallerycontainer4 img{
-        margin-top: 30px;
-        width: 130px;
-        height: 130px;
-        margin-left: 3px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 95px;
+        margin-top: 0px;
         width: 160px;
         height: 160px;
-        margin-left: -15px;
+        margin-left: 5px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 165px;
+        width: 190px;
+        height: 190px;
+        margin-left: -150px;
     }
 
     .overlay1{
-        transform: translate(-50%, -135%);
+        transform: translate(-50%, -152%);
     }
-    
+
     .overlay2{
-        transform: translate(-68%, -123%);
+        transform: translate(-73%, -138%);
     }
-    
+
     .overlay3{
-        transform: translate(-79%, -143%);
+        transform: translate(-81%, -155%);
     }
-    
+
     .overlay4{
-        transform: translate(-49%, -123%);
+        transform: translate(-47%, -131%);
+    }
+
+    .overlay5{
+        transform: translate(-100%, -143%);
     }
     
-    .overlay5{
-        transform: translate(-55%, -133%);
+    .secondpartmessage{
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: -10px;
     }
 
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 22px;
-        letter-spacing: 1px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 32px;
+    .secondpartmessage h1{
+        font-size: 33px;
     }
 }
 
@@ -2395,73 +1808,6 @@ button a{
     }
 
 
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 200px;
-    }
-
-    .greenbox{
-        width: 555px;
-        height: 350px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 215px;
-        width: 155px;
-        margin-left: -620px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 230px;
-        width: 165px;
-        margin-top: 70px;
-        margin-left: -450px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 275px;
-        width: 200px;
-        margin-top: 45px;
-        margin-left: -270px;
-        padding: 10px;
-    }
-    
-    .recipeoverlay1{
-        transform: translate(-455%, -112%);
-        width: 134px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-303%, -108%);
-        width: 145px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-145%, -112%);
-        width: 179px;
-    }
-
-    .thirdmessage{
-        margin-left: 70px;
-        margin-right: -295px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 40px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
 
 }
 
@@ -2483,149 +1829,100 @@ button a{
         margin-left: 520px;
     }
 
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 160px;
-        height: 160px;
-    }
-    
-    .gallerycontainer2 img{
-        margin-top: 140px;
-        width: 140px;
-        height: 140px;
-        margin-left: -45px;
-    }
-    
-    .gallerycontainer3 img{
-        margin-top: -25px;
-        width: 180px;
-        height: 180px;
-        margin-left: -78px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 20px;
-        width: 130px;
-        height: 130px;
-        margin-left: 3px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 130px;
-        width: 160px;
-        height: 160px;
-        margin-left: -60px;
+    .titleverticalbar{
+        width: 14px;
+        height: 80px;
+        margin-left: 52px;
+        margin-top: -8px;
     }
 
-    .overlay1{
-        transform: translate(-51%, -139%);
-    }
-    
-    .overlay2{
-        transform: translate(-67%, -128%);
-    }
-    
-    .overlay3{
-        transform: translate(-80%, -148%);
-    }
-    
-    .overlay4{
-        transform: translate(-48%, -122%);
-    }
-    
-    .overlay5{
-        transform: translate(-72%, -138%);
-    }
+    .firstmessage{
+        margin-left: 90px;
+        margin-right: 50px;
+    }    
 
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 180px;
-    }
-
-    .greenbox{
-        width: 530px;
-        height: 345px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 210px;
-        width: 150px;
-        margin-left: -595px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 225px;
-        width: 165px;
-        margin-top: 70px;
-        margin-left: -430px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 270px;
-        width: 200px;
-        margin-top: 45px;
-        margin-left: -250px;
-        padding: 10px;
-    }
-
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 10px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(-450%, -114%);
-        width: 130px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-290%, -109%);
-        width: 145px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-133%, -115%);
-        width: 180px;
-    }
-
-    .thirdmessage{
-        margin-left: 70px;
-        margin-right: -285px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 38px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+    .firstmessage h2{
+        font-size: 21px;
+        font-weight: 500;
+        margin: 15px 0 15px;
     }
 }
 
 
 @media only screen and (max-width:660px){
-    /*First Section*/
+    /*Second Section*/
 
-    .titleverticalbar{
-        width: 14px;
-        height: 108px;
-        margin-left: 70px;
+    .secondpart{
+        margin-top: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px; 
+    }
+
+    .gallerycontainer1 img{
+        width: 195px;
+        height: 195px;
+        margin-top: -15px;
+    }
+
+    .gallerycontainer2 img{
+        margin-top: 155px;
+        width: 170px;
+        height: 170px;
+        margin-left: -70px;
+    }
+
+    .gallerycontainer3 img{
+        margin-top: -45px;
+        width: 215px;
+        height: 215px;
+        margin-left: -95px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 0px;
+        width: 160px;
+        height: 160px;
+        margin-left: 5px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 165px;
+        width: 190px;
+        height: 190px;
+        margin-left: -220px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -152%);
+    }
+
+    .overlay2{
+        transform: translate(-75%, -138%);
+    }
+
+    .overlay3{
+        transform: translate(-83%, -155%);
+    }
+
+    .overlay4{
+        transform: translate(-47%, -131%);
+    }
+
+    .overlay5{
+        transform: translate(-137%, -143%);
+    }
+    
+    .secondpartmessage{
+        margin-left: 60px;
+        margin-right: 60px;
         margin-top: -10px;
     }
 
-    .firstmessage{
-        margin-left: 110px;
-        margin-right: 80px;
+    .secondpartmessage h1{
+        font-size: 33px;
     }
+    
 }
 
 
@@ -2646,12 +1943,6 @@ button a{
         margin-left: 500px;
     }
 
-    /*Second Section*/
-
-    .secondpartwordings{
-        margin-right: 80px;
-        margin-left: 80px;
-    }
 }
 
 
@@ -2686,91 +1977,75 @@ button a{
 
     /*Second Section*/
 
-    .gallerycontainer5 img{
-        margin-top: 135px;
-        width: 150px;
-        height: 150px;
+    .secondpart{
+        margin-top: 150px;
+    }
+
+    .gallerycontainer1 img{
+        width: 185px;
+        height: 185px;
+        margin-top: 0px;
+    }
+
+    .gallerycontainer2 img{
+        margin-top: 160px;
+        width: 170px;
+        height: 170px;
         margin-left: -70px;
     }
-    
-    .overlay5{
-        transform: translate(-77%, -132%);
+
+    .gallerycontainer3 img{
+        margin-top: -45px;
+        width: 215px;
+        height: 215px;
+        margin-left: -95px;
     }
 
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 180px;
-    }
-
-    .greenbox{
-        width: 530px;
-        height: 345px;
+    .gallerycontainer4 img{
+        margin-top: 35px;
+        width: 150px;
+        height: 150px;
         margin-left: 0px;
     }
 
-    .thirdpartimage1{
-        height: 210px;
-        width: 150px;
-        margin-left: -565px;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage2{
-        height: 220px;
-        width: 165px;
-        margin-top: 70px;
-        margin-left: -400px;
-        padding: 10px;
-    }
-    
-    .thirdpartimage3{
-        height: 270px;
+    .gallerycontainer5 img{
+        margin-top: 180px;
         width: 190px;
-        margin-top: 45px;
-        margin-left: -220px;
-        padding: 10px;
+        height: 190px;
+        margin-left: -230px;
     }
 
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 10px;
-        font-size: 16px;
+    .overlay1{
+        transform: translate(-50%, -147%);
     }
 
-    .recipeoverlay1{
-        transform: translate(-427%, -116%);
-        width: 130px;
+    .overlay2{
+        transform: translate(-75%, -138%);
+    }
+
+    .overlay3{
+        transform: translate(-83%, -155%);
+    }
+
+    .overlay4{
+        transform: translate(-49%, -126%);
+    }
+
+    .overlay5{
+        transform: translate(-143%, -143%);
     }
     
-    .recipeoverlay2{
-        transform: translate(-269%, -112%);
-        width: 145px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-123.5%, -117%);
-        width: 170px;
-    }
-
-    .thirdmessage{
-        margin-left: 70px;
-        margin-right: -285px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 35px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
+    .secondpartmessage{
+        margin-left: 50px;
+        margin-right: 50px;
         margin-top: 0px;
-        margin-bottom: 0px;
     }
-}
 
+    .secondpartmessage h1{
+        font-size: 30px;
+    }
+    
+}
 
 
 @media only screen and (max-width:600px){
@@ -2859,298 +2134,91 @@ button a{
     .titleverticalbar{
         width: 14px;
         height: 108px;
-        margin-left: 60px;
+        margin-left: 55px;
     }
 
     .firstmessage{
-        margin-right: 50px;
-        margin-left: 100px;
+        margin-right: 40px;
+        margin-left: 90px;
     }
 
     .firstpartimagecolumn{
         margin-left: 460px;
-    }
-
-    /*Second Section*/
-
-    .secondpart{
-        margin-top: 130px;
-    }
-
-    .gallerycontainer1 img{
-        width: 180px;
-        height: 180px;
-    }
-    
-    .gallerycontainer2 img{
-        margin-top: 160px;
-        width: 150px;
-        height: 150px;
-        margin-left: -45px;
-    }
-    
-    .gallerycontainer3 img{
-        margin-top: -20px;
-        width: 195px;
-        height: 195px;
-        margin-left: -85px;
-    }
-    
-    .gallerycontainer4 img{
-        margin-top: 15px;
-        width: 130px;
-        height: 130px;
-        margin-left: 10px;
-    }
-    
-    .gallerycontainer5 img{
-        margin-top: 155px;
-        width: 180px;
-        height: 180px;
-        margin-left: -200px;
-    }
-
-    .overlay1{
-        transform: translate(-49%, -142%);
-    }
-    
-    .overlay2{
-        transform: translate(-67%, -128%);
-    }
-    
-    .overlay3{
-        transform: translate(-83%, -150%);
-    }
-    
-    .overlay4{
-        transform: translate(-46%, -122%);
-    }
-
-    .overlay5{
-        transform: translate(-135%, -145%);
-    }
-
-    button{
-        width: 60%;
-        max-width: 10rem;
-        font-size: 14px;
-        letter-spacing: 1px; 
-        margin-top: 20px;
-        padding: 10px 10px 10px;
-        background: linear-gradient(to right, rgb(194, 197, 185), rgb(102, 97, 73));
-        border-radius: 5px;
-    }
-
-    .secondpartwordings{
-        margin-right: 60px;
-        margin-left: 60px;
-    }
-
-    
-    /*Third Section*/
-
-    .greenbox{
-        width: 500px;
-        height: 345px;
-    }
-
-    .thirdmessage{
-        margin-right: -250px;
-    }
-
-    .recipebutton{
-        max-width: 9.5rem;
-        font-size: 15px;
-        font-weight: 400;
-        letter-spacing: 1px; 
-        margin-top: 25px;
-        margin-left: 0px;
-        padding: 11px 5px 11px;
-        border-radius: 25px;
-    }
-
+    }   
 }
 
 
 @media only screen and (max-width:580px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 440px;
-        margin-left: 250px;
-    }
-
-    .IconOutline{
-        width: 420px;
-        margin-left: 40px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 450px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 95px;
-        width: 95px;
-    }
-
-    .titleverticalbar{
-        width: 14px;
-        height: 101px;
-        margin-left: 60px;
-        margin-top: -25px;
-    }
-
-    .firstmessage{
-        margin-right: 60px;
-        margin-left: 100px;
-    }
-
-    .firstmessage h2{
-        font-size: 20px;
-    }
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 180px;
-    }
-
-    .greenbox{
-        width: 460px;
-        height: 345px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 190px;
-        width: 140px;
-        margin-left: -530px;
-        margin-top: 30px;
-        padding: 8px;
-    }
-    
-    .thirdpartimage2{
-        height: 210px;
-        width: 155px;
-        margin-top: 110px;
-        margin-left: -378px;
-        padding: 8px;
-    }
-    
-    .thirdpartimage3{
-        height: 240px;
-        width: 170px;
-        margin-top: 45px;
-        margin-left: -210px;
-        padding: 8px;
-    }
-
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(-421%, -113%);
-        width: 124px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-266%, -108%);
-        width: 139px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-131%, -113%);
-        width: 154px;
-    }
-
-    .thirdmessage{
-        margin-left: 70px;
-        margin-right: -230px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 35px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-}
-
-
-@media only screen and (max-width:560px){
     /*Second Section*/
 
     .gallerycontainer1 img{
-        width: 170px;
-        height: 170px;
-        margin-top: 10px;
+        width: 185px;
+        height: 185px;
+        margin-top: 20px;
     }
 
     .gallerycontainer2 img{
-        margin-top: 160px;
-        width: 150px;
-        height: 150px;
-        margin-left: -45px;
+        margin-top: 180px;
+        width: 170px;
+        height: 170px;
+        margin-left: -70px;
     }
 
     .gallerycontainer3 img{
-        margin-top: -20px;
-        width: 190px;
-        height: 190px;
-        margin-left: -100px;
+        margin-top: -45px;
+        width: 200px;
+        height: 200px;
+        margin-left: -103px;
     }
 
     .gallerycontainer4 img{
-        margin-top: 15px;
-        width: 130px;
-        height: 130px;
-        margin-left: 5px;
+        margin-top: 65px;
+        width: 150px;
+        height: 150px;
+        margin-left: -15px;
     }
 
     .gallerycontainer5 img{
-        margin-top: 155px;
-        width: 180px;
-        height: 180px;
-        margin-left: -200px;
+        margin-top: 220px;
+        width: 190px;
+        height: 190px;
+        margin-left: -228px;
     }
 
     .overlay1{
-        transform: translate(-49%, -145%);
+        transform: translate(-50%, -147%);
     }
 
     .overlay2{
-        transform: translate(-67%, -132%);
+        transform: translate(-75%, -138%);
     }
 
     .overlay3{
-        transform: translate(-90%, -160%);
+        transform: translate(-85%, -150%);
     }
 
     .overlay4{
-        transform: translate(-48%, -125%);
+        transform: translate(-55%, -126%);
     }
 
     .overlay5{
-        transform: translate(-142%, -150%);
+        transform: translate(-141%, -143%);
+    }
+    
+    .secondpartmessage{
+        margin-left: 45px;
+        margin-right: 45px;
+        margin-top: 0px;
     }
 
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 20px;
+    .secondpartmessage h1{
+        font-size: 29px;
         letter-spacing: 1px;
     }
 }
 
 
-
-@media only screen and (max-width:555px){
+@media only screen and (max-width:560px){
     /*First Section*/
 
     .pinkbox{
@@ -3172,88 +2240,17 @@ button a{
         width: 95px;
     }
 
+    .titleverticalbar{
+        width: 14px;
+        height: 105px;
+        margin-left: 55px;
+        margin-top: -25px;
+    }
+
     .firstmessage{
-        margin-right: 50px;
+        margin-right: 45px;
     }
 
-    /*Second Section*/
-    .secondpartwordings{
-        margin-left: 40px;
-        margin-right: 50px;
-    }
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 180px;
-    }
-
-    .greenbox{
-        width: 430px;
-        height: 410px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 180px;
-        width: 150px;
-        margin-left: -490px;
-        margin-top: 25px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage2{
-        height: 200px;
-        width: 155px;
-        margin-top: 185px;
-        margin-left: -415px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage3{
-        height: 270px;
-        width: 190px;
-        margin-top: 55px;
-        margin-left: -250px;
-        padding: 7px;
-    }
-
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(-355%, -111%);
-        width: 136px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-289%, -106%);
-        width: 141px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-138%, -112%);
-        width: 176px;
-    }
-
-    .thirdmessage{
-        margin-left: 60px;
-        margin-right: -230px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 33px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
 }
 
 
@@ -3282,83 +2279,86 @@ button a{
     .firstmessage{
         margin-right: 50px;
     }
-}
 
+    /*Second Section*/
 
-@media only screen and (max-width:535px){
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 180px;
+    .gallerycontainer1 img{
+        width: 175px;
+        height: 175px;
+        margin-top: 45px;
     }
 
-    .greenbox{
-        width: 430px;
-        height: 410px;
-        margin-left: 0px;
+    .gallerycontainer2 img{
+        margin-top: 200px;
+        width: 160px;
+        height: 160px;
+        margin-left: -70px;
     }
 
-    .thirdpartimage1{
-        height: 180px;
+    .gallerycontainer3 img{
+        margin-top: -45px;
+        width: 190px;
+        height: 190px;
+        margin-left: -103px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 75px;
         width: 150px;
-        margin-left: -470px;
-        margin-top: 25px;
-        padding: 7px;
+        height: 150px;
+        margin-left: -25px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 230px;
+        width: 180px;
+        height: 180px;
+        margin-left: -208px;
+    }
+
+    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
+        font-size: 23px;
+        letter-spacing: 2px;
+        font-weight: 800;
+        padding: 20px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -147%);
+    }
+
+    .overlay2{
+        transform: translate(-75%, -138%);
+    }
+
+    .overlay3{
+        transform: translate(-87%, -150%);
+    }
+
+    .overlay4{
+        transform: translate(-58%, -129%);
+    }
+
+    .overlay5{
+        transform: translate(-135%, -143%);
     }
     
-    .thirdpartimage2{
-        height: 200px;
-        width: 155px;
-        margin-top: 185px;
-        margin-left: -395px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage3{
-        height: 265px;
-        width: 185px;
-        margin-top: 65px;
-        margin-left: -230px;
-        padding: 7px;
-    }
-
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(-340%, -111%);
-        width: 136px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-275%, -106.5%);
-        width: 141px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-131%, -112%);
-        width: 170px;
-    }
-
-    .thirdmessage{
-        margin-left: 60px;
-        margin-right: -220px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 33px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-        margin-right: 0px;
+    .secondpartmessage{
+        margin-left: 45px;
+        margin-right: 45px;
         margin-top: 0px;
-        margin-bottom: 0px;
+    }
+
+    .secondpartmessage h1{
+        font-size: 27px;
+        letter-spacing: 1px;
+    }
+
+    .secondpartmessage p{
+        font-size: 15px;
     }
 }
+
 
 
 @media only screen and (max-width:520px){
@@ -3387,82 +2387,7 @@ button a{
         margin-right: 65px;
     }
 
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 160px;
-        height: 160px;
-        margin-top: 30px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 160px;
-        width: 150px;
-        height: 150px;
-        margin-left: -50px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -35px;
-        width: 190px;
-        height: 190px;
-        margin-left: -102px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 48px;
-        width: 120px;
-        height: 120px;
-        margin-left: -4px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 165px;
-        width: 180px;
-        height: 180px;
-        margin-left: -200px;
-    }
-
-    .overlay1{
-        transform: translate(-49%, -145%);
-    }
-
-    .overlay2{
-        transform: translate(-70%, -135%);
-    }
-
-    .overlay3{
-        transform: translate(-93%, -160%);
-    }
-
-    .overlay4{
-        transform: translate(-52%, -125%);
-    }
-
-    .overlay5{
-        transform: translate(-144%, -155%);
-    }
-
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 19px;
-        letter-spacing: 1px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 30px;
-    }
-
-    /*Third Section*/
-
-    .greenbox{
-        width: 410px;
-        height: 410px;
-        margin-left: 0px;
-    }
-
-    .thirdmessage{
-        margin-right: -210px;
-    }
+   
 }
 
 
@@ -3481,7 +2406,7 @@ button a{
 
     .titleverticalbar{
         width: 14px;
-        height: 100px;
+        height: 98px;
         margin-left: 50px;
     }
 
@@ -3509,139 +2434,91 @@ button a{
 
     /*Second Section*/
 
-    .secondpartwordings h1{
-        font-size: 28px;
-    }
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 170px;
-    }
-
-    .greenbox{
-        width: 390px;
-        height: 410px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 180px;
-        width: 150px;
-        margin-left: -450px;
-        margin-top: 25px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage2{
-        height: 200px;
-        width: 155px;
-        margin-top: 185px;
-        margin-left: -395px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage3{
-        height: 265px;
-        width: 185px;
-        margin-top: 65px;
-        margin-left: -230px;
-        padding: 7px;
-    }
-
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(-326%, -111%);
-        width: 136px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-275%, -106.5%);
-        width: 141px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-131%, -112%);
+    .gallerycontainer1 img{
         width: 170px;
-    }
-
-    .thirdmessage{
-        margin-left: 50px;
-        margin-right: -200px;
+        height: 170px;
         margin-top: 40px;
     }
 
-    .thirdmessage h1{
-        font-size: 31px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-    }
-}
-
-
-@media only screen and (max-width:485px){
-    /*Second Section*/
-    
-    .gallerycontainer1 img{
-        width: 160px;
-        height: 160px;
-        margin-top: 30px;
-    }
-
     .gallerycontainer2 img{
-        margin-top: 160px;
-        width: 145px;
-        height: 145px;
-        margin-left: -56px;
+        margin-top: 205px;
+        width: 150px;
+        height: 150px;
+        margin-left: -90px;
     }
 
     .gallerycontainer3 img{
-        margin-top: -50px;
-        width: 185px;
-        height: 185px;
-        margin-left: -100px;
+        margin-top: -45px;
+        width: 190px;
+        height: 190px;
+        margin-left: -70px;
     }
 
     .gallerycontainer4 img{
-        margin-top: 65px;
-        width: 120px;
-        height: 120px;
-        margin-left: -15px;
+        margin-top: 115px;
+        width: 145px;
+        height: 145px;
+        margin-left: -60px;
     }
 
     .gallerycontainer5 img{
-        margin-top: 195px;
-        width: 175px;
-        height: 175px;
-        margin-left: -188px;
+        margin-top: 260px;
+        width: 180px;
+        height: 180px;
+        margin-left: -210px;
+    }
+
+    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
+        font-size: 23px;
+        letter-spacing: 2px;
+        font-weight: 800;
+        padding: 20px;
     }
 
     .overlay1{
-        transform: translate(-49%, -145%);
+        transform: translate(-50%, -143%);
     }
 
     .overlay2{
-        transform: translate(-75%, -135%);
+        transform: translate(-82%, -130%);
     }
 
     .overlay3{
-        transform: translate(-93%, -160%);
+        transform: translate(-75%, -150%);
     }
 
     .overlay4{
-        transform: translate(-57%, -125%);
+        transform: translate(-71%, -129%);
     }
 
     .overlay5{
-        transform: translate(-138%, -155%);
+        transform: translate(-137%, -143%);
     }
+    
+    .secondpartmessage{
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 0px;
+    }
+
+    .secondpartmessage h1{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .secondpartmessage p{
+        font-size: 15px;
+    }
+
+    .secondpartredirection{
+        margin-top: 12px;
+        letter-spacing: 1px;
+        font-size: 17px;
+        font-weight: 900;
+    }
+
 }
+
 
 
 @media only screen and (max-width:480px){
@@ -3649,7 +2526,7 @@ button a{
 
     .pinkbox{
         height: 350px;
-        margin-left: 200px;
+        margin-left: 202px;
     }
 
     .IconOutline{
@@ -3666,6 +2543,15 @@ button a{
         width: 85px;
     }
 
+    .titleverticalbar{
+        margin-left: 40px;
+    }
+
+    .firstmessage{
+        margin-left: 75px;
+        margin-right: 40px;
+    }
+
     .firstmessage h1{
         font-size: 40px;
     }
@@ -3674,143 +2560,12 @@ button a{
         font-size: 19px;
     }
 
-    /*Second Section*/
-
-    .secondpartwordings h1{
-        font-size: 26px;
-    }
-
-    .secondpartwordings p{
-        font-size: 15px;
-    }
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 170px;
-    }
-
-    .greenbox{
-        width: 375px;
-        height: 410px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 180px;
-        width: 150px;
-        margin-left: -420px;
-        margin-top: 25px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage2{
-        height: 200px;
-        width: 155px;
-        margin-top: 185px;
-        margin-left: -385px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage3{
-        height: 260px;
-        width: 185px;
-        margin-top: 70px;
-        margin-left: -220px;
-        padding: 7px;
-    }
-
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(-304%, -111%);
-        width: 136px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-268%, -106.5%);
-        width: 141px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-125%, -112%);
-        width: 170px;
-    }
-
-    .thirdmessage p{
-        font-size: 15px;
-    }
+   
 }
 
 
+   
 @media only screen and (max-width:460px){
-    /*Second Section*/
-    
-    .gallerycontainer1 img{
-        width: 160px;
-        height: 160px;
-        margin-top: 90px;
-        margin-left: ;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 250px;
-        width: 140px;
-        height: 140px;
-        margin-left: -85px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -50px;
-        width: 185px;
-        height: 185px;
-        margin-left: -100px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 60px;
-        width: 120px;
-        height: 120px;
-        margin-left: -15px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 180px;
-        width: 175px;
-        height: 175px;
-        margin-left: -190px;
-    }
-
-    .overlay1{
-        transform: translate(-49%, -145%);
-    }
-
-    .overlay2{
-        transform: translate(-85%, -135%);
-    }
-
-    .overlay3{
-        transform: translate(-93%, -160%);
-    }
-
-    .overlay4{
-        transform: translate(-57%, -125%);
-    }
-
-    .overlay5{
-        transform: translate(-138%, -155%);
-    }
-
-    .secondpartwordings h1{
-        font-size: 27px;
-    }
-}
-
-    
-@media only screen and (max-width:455px){
     /*First Section*/
 
     .pinkbox{
@@ -3821,12 +2576,6 @@ button a{
     .IconOutline{
         width: 300px;
         margin-left: 35px;
-    }
-
-    .titleverticalbar{
-        width: 14px;
-        height: 92px;
-        margin-left: 50px;
     }
 
     .firstpartimagecolumn{
@@ -3840,253 +2589,165 @@ button a{
         margin-bottom: 8px;
     }
 
-    .firstmessage{
-        margin-right: 60px;
-        margin-left: 90px;
-    }
 
-    .firstmessage h1{
-        font-size: 38px;
-    }
-
-    .firstmessage h2{
-        font-size: 18px;
-    }
-
-    /*Second Section*/
-
-    .secondpartwordings h1{
-        font-size: 25px;
-    }
-}
-
-
-@media only screen and (max-width:450px){
-    
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 170px;
-    }
-
-    .greenbox{
-        width: 365px;
-        height: 400px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 180px;
-        width: 150px;
-        margin-left: -405px;
-        margin-top: 25px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage2{
-        height: 190px;
-        width: 150px;
-        margin-top: 185px;
-        margin-left: -370px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage3{
-        height: 240px;
-        width: 175px;
-        margin-top: 70px;
-        margin-left: -205px;
-        padding: 7px;
-    }
-
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(-293%, -111%);
-        width: 136px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-267%, -106.5%);
-        width: 136px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-123.5%, -112%);
-        width: 160px;
-    }
-
-    .thirdmessage{
-        margin-left: 50px;
-        margin-right: -190px;
-    }
-}
-
-
-@media only screen and (max-width:435px){
-   
     /*Second Section*/
 
     .gallerycontainer1 img{
         width: 160px;
         height: 160px;
-        margin-top: 95px;
-        margin-left: ;
+        margin-top: 40px;
     }
 
     .gallerycontainer2 img{
-        margin-top: 250px;
+        margin-top: 195px;
+        width: 145px;
+        height: 145px;
+        margin-left: -95px;
+    }
+
+    .gallerycontainer3 img{
+        margin-top: -45px;
+        width: 180px;
+        height: 180px;
+        margin-left: -60px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 120px;
+        width: 135px;
+        height: 135px;
+        margin-left: -75px;
+    }
+
+    .gallerycontainer5 img{
+        margin-top: 260px;
+        width: 180px;
+        height: 180px;
+        margin-left: -195px;
+    }
+
+    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 800;
+        padding: 20px;
+    }
+
+    .overlay1{
+        transform: translate(-50%, -140%);
+    }
+
+    .overlay2{
+        transform: translate(-88%, -130%);
+    }
+
+    .overlay3{
+        transform: translate(-74%, -145%);
+    }
+
+    .overlay4{
+        transform: translate(-78%, -123%);
+    }
+
+    .overlay5{
+        transform: translate(-132%, -143%);
+    }
+    
+    .secondpartmessage{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 0px;
+    }
+
+    .secondpartmessage h1{
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .secondpartmessage p{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width:420px){
+    /*Second Section*/
+
+    .gallerycontainer1 img{
+        width: 160px;
+        height: 160px;
+        margin-top: 30px;
+    }
+
+    .gallerycontainer2 img{
+        margin-top: 190px;
+        width: 140px;
+        height: 140px;
+        margin-left: -110px;
+    }
+
+    .gallerycontainer3 img{
+        margin-top: -45px;
+        width: 180px;
+        height: 180px;
+        margin-left: -35px;
+    }
+
+    .gallerycontainer4 img{
+        margin-top: 130px;
         width: 130px;
         height: 130px;
         margin-left: -95px;
     }
 
-    .gallerycontainer3 img{
-        margin-top: -50px;
-        width: 175px;
-        height: 175px;
-        margin-left: -100px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 55px;
-        width: 120px;
-        height: 120px;
-        margin-left: -15px;
-    }
-
     .gallerycontainer5 img{
-        margin-top: 170px;
-        width: 160px;
-        height: 160px;
+        margin-top: 260px;
+        width: 170px;
+        height: 170px;
         margin-left: -190px;
     }
 
+    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 800;
+        padding: 20px;
+    }
+
     .overlay1{
-        transform: translate(-49%, -145%);
+        transform: translate(-50%, -140%);
     }
 
     .overlay2{
-        transform: translate(-91%, -132%);
+        transform: translate(-93%, -127%);
     }
 
     .overlay3{
-        transform: translate(-93%, -153%);
+        transform: translate(-64%, -145%);
     }
 
     .overlay4{
-        transform: translate(-57%, -125%);
+        transform: translate(-87%, -121%);
     }
 
     .overlay5{
-        transform: translate(-145%, -148%);
-    }
-
-    .secondpartwordings{
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 26px;
-    }
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 170px;
-    }
-
-    .greenbox{
-        width: 350px;
-        height: 400px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 180px;
-        width: 150px;
-        margin-left: -390px;
-        margin-top: 25px;
-        padding: 7px;
+        transform: translate(-133%, -141%);
     }
     
-    .thirdpartimage2{
-        height: 190px;
-        width: 150px;
-        margin-top: 185px;
-        margin-left: -360px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage3{
-        height: 240px;
-        width: 170px;
-        margin-top: 70px;
-        margin-left: -195px;
-        padding: 7px;
+    .secondpartmessage{
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: -5px;
     }
 
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
+    .secondpartmessage h1{
+        font-size: 23px;
+        letter-spacing: 0px;
     }
 
-    .recipeoverlay1{
-        transform: translate(-282%, -111%);
-        width: 136px;
+    .secondpartmessage p{
+        font-size: 15px;
     }
-    
-    .recipeoverlay2{
-        transform: translate(-260%, -106.5%);
-        width: 136px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-121%, -112%);
-        width: 155px;
-    }
-}
-
-
-@media only screen and (max-width:430px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 330px;
-        margin-left: 175px;
-    }
-
-    .IconOutline{
-        width: 290px;
-        margin-left: 30px;
-    }
-
-    .titleverticalbar{
-        width: 12px;
-        height: 90px;
-        margin-left: 45px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 320px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 80px;
-        width: 80px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    .firstmessage{
-        margin-right: 50px;
-        margin-left: 80px;
-    }
-
 }
 
 
@@ -4103,13 +2764,6 @@ button a{
         margin-left: 30px;
     }
 
-    .titleverticalbar{
-        width: 12px;
-        height: 90px;
-        margin-left: 45px;
-        margin-top: -45px;
-    }
-
     .firstpartimagecolumn{
         margin-left: 310px;
     }
@@ -4120,32 +2774,7 @@ button a{
         margin-top: 8px;
         margin-bottom: 8px;
     }
-
-    .firstmessage{
-        margin-right: 50px;
-        margin-left: 80px;
-    }
-
-    /*Second Section*/
-
-    .secondpartwordings h1{
-        font-size: 25px;
-    }
-
-    .secondpartwordings p{
-        font-size: 14px;
-    }
-
-    /*Third Section*/
-
-    .thirdmessage p{
-        font-size: 14px;
-    }
-
-    .thirdmessage{
-        margin-left: 40px;
-        margin-right: -190px;
-    }
+  
 }
 
 
@@ -4164,9 +2793,9 @@ button a{
 
     .titleverticalbar{
         width: 11px;
-        height: 90px;
+        height: 95px;
         margin-left: 30px;
-        margin-top: -25px;
+        margin-top: -22px;
     }
 
     .firstpartimagecolumn{
@@ -4185,143 +2814,84 @@ button a{
         margin-left: 60px;
     }
 
+    
     /*Second Section*/
 
     .gallerycontainer1 img{
         width: 155px;
         height: 155px;
-        margin-top: 100px;
-        margin-left: ;
+        margin-top: 20px;
     }
 
     .gallerycontainer2 img{
-        margin-top: 255px;
-        width: 130px;
-        height: 130px;
-        margin-left: -100px;
+        margin-top: 180px;
+        width: 140px;
+        height: 140px;
+        margin-left: -115px;
     }
 
     .gallerycontainer3 img{
-        margin-top: -50px;
+        margin-top: -45px;
         width: 170px;
         height: 170px;
-        margin-left: -100px;
+        margin-left: -30px;
     }
 
     .gallerycontainer4 img{
-        margin-top: 50px;
-        width: 115px;
-        height: 115px;
-        margin-left: -15px;
+        margin-top: 126px;
+        width: 130px;
+        height: 130px;
+        margin-left: -105px;
     }
 
     .gallerycontainer5 img{
-        margin-top: 160px;
-        width: 160px;
-        height: 160px;
-        margin-left: -190px;
+        margin-top: 257px;
+        width: 165px;
+        height: 165px;
+        margin-left: -183px;
+    }
+
+    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
+        font-size: 22px;
+        letter-spacing: 1px;
+        font-weight: 800;
+        padding: 20px;
     }
 
     .overlay1{
-        transform: translate(-49%, -145%);
+        transform: translate(-50%, -136%);
     }
 
     .overlay2{
-        transform: translate(-91%, -132%);
+        transform: translate(-96%, -127%);
     }
 
     .overlay3{
-        transform: translate(-93%, -153%);
+        transform: translate(-62%, -140%);
     }
 
     .overlay4{
-        transform: translate(-57%, -120%);
+        transform: translate(-90%, -121%);
     }
 
     .overlay5{
-        transform: translate(-145%, -148%);
-    }
-
-    .gallerydisplay{
-        margin-bottom: 20px;
-    }
-
-    .secondpartwordings{
-        margin-left: 23px;
-        margin-right: 23px;
-    }
-
-    .secondpartwordings h1{
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 170px;
-    }
-
-    .greenbox{
-        width: 315px;
-        height: 400px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 180px;
-        width: 140px;
-        margin-left: -370px;
-        margin-top: 25px;
-        padding: 7px;
+        transform: translate(-129%, -138%);
     }
     
-    .thirdpartimage2{
-        height: 190px;
-        width: 140px;
-        margin-top: 185px;
-        margin-left: -340px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage3{
-        height: 240px;
-        width: 165px;
-        margin-top: 70px;
-        margin-left: -190px;
-        padding: 7px;
+    .secondpartmessage{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -5px;
     }
 
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
+    .secondpartmessage h1{
+        font-size: 23px;
+        letter-spacing: 0px;
     }
 
-    .recipeoverlay1{
-        transform: translate(-288%, -111%);
-        width: 126px;
+    .secondpartmessage p{
+        font-size: 15px;
     }
-    
-    .recipeoverlay2{
-        transform: translate(-264%, -106.5%);
-        width: 126px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-122%, -112%);
-        width: 150px;
-    }
-
-    .thirdmessage{
-        margin-left: 40px;
-        margin-right: -160px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 30px;
-    }
-
 }
 
 @media only screen and (max-width:385px){
@@ -4371,71 +2941,7 @@ button a{
         font-size: 14px;
     }
     
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 170px;
-    }
-
-    .greenbox{
-        width: 315px;
-        height: 400px;
-        margin-left: 0px;
-    }
-
-    .thirdpartimage1{
-        height: 180px;
-        width: 140px;
-        margin-left: -355px;
-        margin-top: 25px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage2{
-        height: 190px;
-        width: 140px;
-        margin-top: 185px;
-        margin-left: -335px;
-        padding: 7px;
-    }
-    
-    .thirdpartimage3{
-        height: 240px;
-        width: 165px;
-        margin-top: 70px;
-        margin-left: -185px;
-        padding: 7px;
-    }
-
-    .recipeoverlay1, .recipeoverlay2, .recipeoverlay3{
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(-276%, -111%);
-        width: 126px;
-    }
-    
-    .recipeoverlay2{
-        transform: translate(-260.5%, -106.5%);
-        width: 126px;
-    }
-    
-    .recipeoverlay3{
-        transform: translate(-118.5%, -112%);
-        width: 150px;
-    }
-
-    .thirdmessage{
-        margin-left: 40px;
-        margin-right: -170px;
-        margin-top: 40px;
-    }
-
-    .thirdmessage h1{
-        font-size: 28px;
-    }
+  
 }
 
 
@@ -4487,8 +2993,4 @@ button a{
         font-size: 13px;
     }
 
-    /*Second Section*/
-    .secondpartmessage h1{
-        font-size: 23px;
-    }
 }
