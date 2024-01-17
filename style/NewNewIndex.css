@@ -1074,6 +1074,13 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:950px){
+    .logo{
+        margin-left: 40px;
+    }
+}
+
+
 @media only screen and (max-width:940px){
     /*First Section*/
     
@@ -1446,8 +1453,6 @@ nav ul li a:hover::after{
         width: 85px;
         height: 85px;
     }
-
-    
 }
 
 
@@ -1466,13 +1471,13 @@ nav ul li a:hover::after{
     /*First Section*/
     
     .pinkbox{
-        height: 500px;
-        margin-left: 330px;
+        height: 480px;
+        margin-left: 320px;
     }
 
     .IconOutline{
-        width: 470px;
-        margin-left: 100px;
+        width: 480px;
+        margin-left: 80px;
     }
 
     .firstmessage, .titleverticalbar{
@@ -1488,9 +1493,9 @@ nav ul li a:hover::after{
 
     .titleverticalbar{
         width: 15px;
-        height: 80px;
+        height: 75px;
         margin-left: 80px;
-        margin-top: -5px;
+        margin-top: -2px;
     }
 
     .firstmessage h1{
@@ -1501,7 +1506,7 @@ nav ul li a:hover::after{
     .firstmessage h2{
         font-size: 22px;
         font-weight: bold;
-        margin: 15px 0 15px;
+        margin: 10px 0 10px;
     }
 
     .firstmessage p{
@@ -1516,8 +1521,8 @@ nav ul li a:hover::after{
         width: 110px;
         height: 110px;
         padding: 6px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 12px;
+        margin-bottom: 12px;
     }
 }
 
@@ -1597,7 +1602,31 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:770px){
+    /*First Section*/
+    
+    .firstpartimagecolumn{
+        margin-left: 580px;
+    }
+
+}
+
+
 @media only screen and (max-width:740px){
+    /*First Section*/
+    
+    .firstpartimagecolumn{
+        margin-left: 565px;
+    }
+
+    .firstpartimagecolumn img{
+        width: 110px;
+        height: 110px;
+        padding: 6px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
     /*Second Section*/
 
     .secondpart{
@@ -1673,11 +1702,24 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:720px){
+@media only screen and (max-width:700px){
     /*First Section*/
-    
-    .firstpartimagecolumn{
-        margin-left: 580px;
+
+    .pinkbox{
+        height: 460px;
+        margin-left: 285px;
+    }
+
+    .IconOutline{
+        width: 450px;
+        margin-left: 60px;
+    }
+
+    .titleverticalbar{
+        width: 15px;
+        height: 73px;
+        margin-left: 70px;
+        margin-top: -2px;
     }
 
     .firstmessage{
@@ -1687,21 +1729,31 @@ nav ul li a:hover::after{
         margin-right: 70px;
     }
 
-    .titleverticalbar{
-        width: 15px;
-        height: 80px;
-        margin-left: 70px;
-        margin-top: -5px;
+    .firstmessage h1{
+        font-size: 45px;
+        letter-spacing: 2px;
     }
 
-}
+    .firstmessage h2{
+        font-size: 22px;
+        font-weight: 500;
+        margin: 10px 0 10px;
+    }
 
-
-@media only screen and (max-width:700px){
-    /*First Section*/
+    .firstmessage p{
+        font-size: 15px;
+    }
 
     .firstpartimagecolumn{
-        margin-left: 560px;
+        margin-left: 530px;
+    }
+
+    .firstpartimagecolumn img{
+        width: 110px;
+        height: 110px;
+        padding: 6px;
+        margin-top: 12px;
+        margin-bottom: 12px;
     }
 
      /*Second Section*/
@@ -1779,77 +1831,72 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:685px){
+@media only screen and (max-width:680px){
     /*First Section*/
-
-    .pinkbox{
-        height: 490px;
-        margin-left: 300px;
-    }
-
-    .IconOutline{
-        width: 470px;
-        margin-left: 70px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 540px;
-    }
-
-    .titleverticalbar{
-        width: 14px;
-        height: 85px;
-        margin-left: 60px;
-    }
-
-    .firstmessage{
-        margin-left: 100px;
-        margin-right: 50px;
-    }
-
-
-
-}
-
-
-@media only screen and (max-width:665px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 460px;
-        margin-left: 280px;
-    }
-
-    .IconOutline{
-        width: 450px;
-        margin-left: 60px;
-    }
 
     .firstpartimagecolumn{
         margin-left: 520px;
     }
 
     .titleverticalbar{
-        width: 14px;
-        height: 80px;
-        margin-left: 52px;
-        margin-top: -8px;
+        width: 15px;
+        height: 73px;
+        margin-left: 65px;
+        margin-top: -1px;
     }
 
     .firstmessage{
-        margin-left: 90px;
-        margin-right: 50px;
-    }    
+        margin-top: 50px;
+        margin-left: 105px;
+        margin-right: 70px;
+    }
+
+    .firstmessage h1{
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
 
     .firstmessage h2{
         font-size: 21px;
         font-weight: 500;
-        margin: 15px 0 15px;
+        margin: 10px 0 10px;
     }
+
+
 }
 
 
 @media only screen and (max-width:660px){
+    /*First Section*/
+
+    .firstpartimagecolumn{
+        margin-left: 510px;
+    }
+
+    .titleverticalbar{
+        width: 15px;
+        height: 72px;
+        margin-left: 60px;
+        margin-top: -1px;
+    }
+
+    .firstmessage{
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 70px;
+    }
+
+    .firstmessage h1{
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
+
+    .firstmessage h2{
+        font-size: 19px;
+        font-weight: 400;
+        margin: 10px 0 10px;
+    }
+
     /*Second Section*/
 
     .secondpart{
@@ -1926,53 +1973,39 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:645px){
+@media only screen and (max-width:640px){
     /*First Section*/
 
     .pinkbox{
-        height: 460px;
-        margin-left: 280px;
+        height: 450px;
+        margin-left: 265px;
     }
 
     .IconOutline{
-        width: 450px;
-        margin-left: 60px;
+        width: 440px;
+        margin-left: 50px;
     }
-
+    
     .firstpartimagecolumn{
-        margin-left: 500px;
+        margin-left: 490px;
     }
 
+    .firstpartimagecolumn img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .firstmessage{
+        margin-right: 50px;
+    }
 }
 
 
 @media only screen and (max-width:620px){
     /*First Section*/
 
-    .pinkbox{
-        height: 460px;
-        margin-left: 260px;
-    }
-
-    .IconOutline{
-        width: 450px;
-        margin-left: 40px;
-    }
-
-    .titleverticalbar{
-        width: 14px;
-        height: 107px;
-        margin-top: -5px;
-        margin-left: 60px;
-    }
-
-    .firstmessage{
-        margin-left: 100px;
-        margin-right: 50px;
-    }
-
     .firstpartimagecolumn{
-        margin-left: 480px;
+        margin-left: 485px;
     }
 
     /*Second Section*/
@@ -2053,8 +2086,8 @@ nav ul li a:hover::after{
     .logo{
         width: 12%;
         max-width: 50px;
-        margin-left: 30px;
-        margin-top: 7px;
+        margin-left: 20px;
+        margin-top: 10px;
     }
 
     nav{
@@ -2122,33 +2155,66 @@ nav ul li a:hover::after{
     /*First Section*/
 
     .pinkbox{
-        height: 460px;
-        margin-left: 250px;
+        height: 405px;
+        margin-left: 245px;
     }
 
     .IconOutline{
-        width: 430px;
+        width: 410px;
         margin-left: 40px;
+    }
+    
+    .firstpartimagecolumn{
+        margin-left: 455px;
+    }
+
+    .firstpartimagecolumn img{
+        width: 90px;
+        height: 90px;
     }
 
     .titleverticalbar{
-        width: 14px;
-        height: 108px;
-        margin-left: 55px;
+        width: 15px;
+        height: 95px;
+        margin-left: 70px;
+        margin-top: 0px;
     }
 
     .firstmessage{
+        margin-top: 50px;
+        margin-left: 110px;
         margin-right: 40px;
-        margin-left: 90px;
     }
 
-    .firstpartimagecolumn{
-        margin-left: 460px;
-    }   
+    .firstmessage h1{
+        font-size: 43px;
+        letter-spacing: 1px;
+    }
+
+    .firstmessage h2{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0 10px;
+    }
 }
 
 
 @media only screen and (max-width:580px){
+    /*First Section*/
+    
+    .titleverticalbar{
+        width: 15px;
+        height: 95px;
+        margin-left: 60px;
+        margin-top: -20px;
+    }
+
+    .firstmessage{
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 55px;
+    }
+    
     /*Second Section*/
 
     .gallerycontainer1 img{
@@ -2222,62 +2288,42 @@ nav ul li a:hover::after{
     /*First Section*/
 
     .pinkbox{
-        height: 420px;
-        margin-left: 235px;
+        height: 405px;
+        margin-left: 232px;
     }
 
     .IconOutline{
         width: 400px;
-        margin-left: 40px;
+        margin-left: 35px;
     }
-
+    
     .firstpartimagecolumn{
         margin-left: 435px;
     }
 
     .firstpartimagecolumn img{
-        height: 95px;
-        width: 95px;
-    }
-
-    .titleverticalbar{
-        width: 14px;
-        height: 105px;
-        margin-left: 55px;
-        margin-top: -25px;
-    }
-
-    .firstmessage{
-        margin-right: 45px;
+        width: 90px;
+        height: 90px;
     }
 
 }
 
 
 @media only screen and (max-width:540px){
-    /*First Section*/
+     /*First Section*/
 
-    .pinkbox{
-        height: 400px;
-        margin-left: 220px;
+     .pinkbox{
+        height: 390px;
+        margin-left: 218px;
     }
 
     .IconOutline{
         width: 380px;
-        margin-left: 35px;
+        margin-left: 30px;
     }
-
+    
     .firstpartimagecolumn{
-        margin-left: 415px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 95px;
-        width: 95px;
-    }
-
-    .firstmessage{
-        margin-right: 50px;
+        margin-left: 410px;
     }
 
     /*Second Section*/
@@ -2364,29 +2410,9 @@ nav ul li a:hover::after{
 @media only screen and (max-width:520px){
     /*First Section*/
 
-    .pinkbox{
-        height: 380px;
-        margin-left: 220px;
-    }
-
-    .IconOutline{
-        width: 370px;
-        margin-left: 35px;
-    }
-
     .firstpartimagecolumn{
         margin-left: 400px;
     }
-
-    .firstpartimagecolumn img{
-        height: 90px;
-        width: 90px;
-    }
-
-    .firstmessage{
-        margin-right: 65px;
-    }
-
    
 }
 
@@ -2400,14 +2426,8 @@ nav ul li a:hover::after{
     }
 
     .IconOutline{
-        width: 350px;
-        margin-left: 35px;
-    }
-
-    .titleverticalbar{
-        width: 14px;
-        height: 98px;
-        margin-left: 50px;
+        width: 360px;
+        margin-left: 30px;
     }
 
     .firstpartimagecolumn{
@@ -2415,22 +2435,24 @@ nav ul li a:hover::after{
     }
 
     .firstpartimagecolumn img{
-        height: 90px;
-        width: 90px;
+        height: 85px;
+        width: 85px;
+        padding: 5px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .titleverticalbar{
+        width: 13px;
+        height: 92px;
+        margin-left: 45px;
     }
 
     .firstmessage{
-        margin-right: 70px;
-        margin-left: 90px;
+        margin-right: 50px;
+        margin-left: 80px;
     }
 
-    .firstmessage h1{
-        font-size: 42px;
-    }
-
-    .firstmessage h2{
-        font-size: 20px;
-    }
 
     /*Second Section*/
 
@@ -2526,43 +2548,26 @@ nav ul li a:hover::after{
 
     .pinkbox{
         height: 350px;
-        margin-left: 202px;
+        margin-left: 200px;
     }
 
     .IconOutline{
-        width: 330px;
-        margin-left: 35px;
+        width: 350px;
+        margin-left: 30px;
     }
 
     .firstpartimagecolumn{
-        margin-left: 360px;
+        margin-left: 370px;
     }
 
     .firstpartimagecolumn img{
-        height: 85px;
-        width: 85px;
+        height: 80px;
+        width: 80px;
+        padding: 5px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
-
-    .titleverticalbar{
-        margin-left: 40px;
-    }
-
-    .firstmessage{
-        margin-left: 75px;
-        margin-right: 40px;
-    }
-
-    .firstmessage h1{
-        font-size: 40px;
-    }
-
-    .firstmessage h2{
-        font-size: 19px;
-    }
-
-   
 }
-
 
    
 @media only screen and (max-width:460px){
@@ -2574,21 +2579,21 @@ nav ul li a:hover::after{
     }
 
     .IconOutline{
-        width: 300px;
-        margin-left: 35px;
+        width: 330px;
+        margin-left: 25px;
     }
 
     .firstpartimagecolumn{
-        margin-left: 340px;
+        margin-left: 350px;
     }
 
     .firstpartimagecolumn img{
         height: 80px;
         width: 80px;
+        padding: 5px;
         margin-top: 8px;
         margin-bottom: 8px;
-    }
-
+    }    
 
     /*Second Section*/
 
@@ -2661,7 +2666,7 @@ nav ul li a:hover::after{
 
     .secondpartmessage h1{
         font-size: 24px;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
     }
 
     .secondpartmessage p{
@@ -2670,7 +2675,87 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:440px){
+    /*First Section*/
+
+    .pinkbox{
+        height: 330px;
+        margin-left: 180px;
+    }
+
+    .IconOutline{
+        width: 320px;
+        margin-left: 20px;
+    }
+
+    .firstpartimagecolumn{
+        margin-left: 330px;
+    }
+
+    .firstpartimagecolumn img{
+        height: 80px;
+        width: 80px;
+        padding: 5px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }   
+
+    .firstmessage{
+        margin-right: 40px;
+    }
+}
+
+
 @media only screen and (max-width:420px){
+    /*First Section*/
+
+    .pinkbox{
+        height: 325px;
+        margin-left: 170px;
+    }
+
+    .IconOutline{
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    .firstpartimagecolumn{
+        margin-left: 320px;
+    }
+
+    .firstpartimagecolumn img{
+        height: 75px;
+        width: 75px;
+        padding: 5px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }   
+
+    .titleverticalbar{
+        width: 13px;
+        height: 87px;
+        margin-left: 35px;
+        margin-top: -13px;
+    }
+
+    .firstmessage{
+        margin-right: 40px;
+        margin-left: 70px;
+    }
+
+    .firstmessage h1{
+        font-size: 40px;
+    }
+
+    .firstmessage h2{
+        font-size: 18px;
+    }
+
+    .firstmessage p{
+        font-size: 14px;
+    }
+
+
     /*Second Section*/
 
     .gallerycontainer1 img{
@@ -2751,70 +2836,35 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:410px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 320px;
-        margin-left: 170px;
-    }
-
-    .IconOutline{
-        width: 280px;
-        margin-left: 30px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 310px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 80px;
-        width: 80px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-  
-}
-
-
 @media only screen and (max-width:400px){
     /*First Section*/
 
     .pinkbox{
-        height: 340px;
-        margin-left: 160px;
+        height: 325px;
+        margin-left: 157px;
     }
 
     .IconOutline{
-        width: 290px;
-        margin-left: 18px;
-    }
-
-    .titleverticalbar{
-        width: 11px;
-        height: 95px;
-        margin-left: 30px;
-        margin-top: -22px;
+        width: 300px;
+        margin-left: 10px;
     }
 
     .firstpartimagecolumn{
-        margin-left: 295px;
+        margin-left: 300px;
     }
 
     .firstpartimagecolumn img{
-        height: 80px;
-        width: 80px;
-        margin-top: 8px;
-        margin-bottom: 8px;
+        height: 75px;
+        width: 75px;
+        padding: 5px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }   
+
+    .firstmessage p{
+        font-size: 14px;
     }
 
-    .firstmessage{
-        margin-right: 40px;
-        margin-left: 60px;
-    }
-
-    
     /*Second Section*/
 
     .gallerycontainer1 img{
@@ -2894,103 +2944,29 @@ nav ul li a:hover::after{
     }
 }
 
-@media only screen and (max-width:385px){
+
+@media only screen and (max-width:380px){
     /*First Section*/
 
     .pinkbox{
-        height: 320px;
-        margin-left: 158px;
+        height: 325px;
+        margin-left: 142px;
     }
 
     .IconOutline{
-        width: 285px;
-        margin-left: 20px;
-    }
-
-    .titleverticalbar{
-        width: 10px;
-        height: 85px;
-        margin-left: 38px;
+        width: 290px;
+        margin-left: 0px;
     }
 
     .firstpartimagecolumn{
-        margin-left: 290px;
+        margin-left: 285px;
     }
 
     .firstpartimagecolumn img{
-        height: 80px;
-        width: 80px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    .firstmessage{
-        margin-right: 50px;
-        margin-left: 66px;
-    }
-
-    .firstmessage h1{
-        font-size: 35px;
-    }
-
-    .firstmessage h2{
-        font-size: 16px;
-    }
-
-    .firstmessage p{
-        font-size: 14px;
-    }
-    
-  
-}
-
-
-@media only screen and (max-width:375px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 310px;
-        margin-left: 150px;
-    }
-
-    .IconOutline{
-        width: 270px;
-        margin-left: 20px;
-    }
-
-    .titleverticalbar{
-        width: 10px;
-        height: 85px;
-        margin-left: 40px;
-        margin-top: -15px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 278px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 78px;
-        width: 78px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    .firstmessage{
-        margin-right: 50px;
-        margin-left: 68px;
-    }
-
-    .firstmessage h1{
-        font-size: 33px;
-    }
-
-    .firstmessage h2{
-        font-size: 16px;
-    }
-
-    .firstmessage p{
-        font-size: 13px;
-    }
-
+        height: 75px;
+        width: 75px;
+        padding: 5px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }   
 }
