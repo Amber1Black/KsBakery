@@ -3549,7 +3549,7 @@ nav ul li a:hover::after{
     /*First Section*/
 
     .pinkbox{
-        height: 325px;
+        height: 345px;
         margin-left: 157px;
     }
 
@@ -3655,26 +3655,26 @@ nav ul li a:hover::after{
     /*Third Section*/
 
     .smallerrecipe1 img{
-        width: 170px;
-        height: 230px;
+        width: 230px;
+        height: 270px;
     }
 
     .smallerrecipe2 img{
-        width: 170px;
-        height: 230px;
+        width: 230px;
+        height: 270px;
     }
 
     .smallerrecipeoverlay1{
-        transform: translate(5%, -110%);
-        width: 154px;
+        transform: translate(16%, -112%);
+        width: 192px;
         padding: 30px;
         font-size: 16px;
         letter-spacing: 2px;
     }
 
     .smallerrecipeoverlay2{
-        transform: translate(6%, -109%);
-        width: 154px;
+        transform: translate(5%, -110.5%);
+        width: 192px;
         padding: 25px;
         font-size: 16px;
         letter-spacing: 2px;
@@ -3702,7 +3702,7 @@ nav ul li a:hover::after{
     /*First Section*/
 
     .pinkbox{
-        height: 325px;
+        height: 335px;
         margin-left: 142px;
     }
 
