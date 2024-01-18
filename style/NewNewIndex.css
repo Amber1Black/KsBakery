@@ -184,9 +184,6 @@ nav ul li a:hover::after{
 
 .secondpart{
     margin-top: 200px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 100px; 
     overflow-x: hidden;
 }
 
@@ -215,8 +212,8 @@ nav ul li a:hover::after{
 }
 
 .gallerycontainer1 img{
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
 }
 
 .gallerycontainer2 img{
@@ -227,8 +224,8 @@ nav ul li a:hover::after{
 
 .gallerycontainer3 img{
     margin-top: -20px;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     margin-left: 0px;
 }
 
@@ -241,8 +238,8 @@ nav ul li a:hover::after{
 
 .gallerycontainer5 img{
     margin-top: 90px;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
 }
 
 .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
@@ -270,7 +267,7 @@ nav ul li a:hover::after{
 }
 
 .overlay3{
-    transform: translate(-50%, -171%);
+    transform: translate(-50%, -190%);
 }
 
 .overlay4{
@@ -278,7 +275,7 @@ nav ul li a:hover::after{
 }
 
 .overlay5{
-    transform: translate(-51%, -158%);
+    transform: translate(-51%, -170%);
 }
 
 .overlay1 a, .overlay2 a, .overlay3 a, .overlay4 a, .overlay5 a{
@@ -298,14 +295,14 @@ nav ul li a:hover::after{
 
 .secondpartmessage h1{
     font-size: 40px;
-    color: #707070;
+    color: #575555;
     font-weight: 900;
     letter-spacing: 2px;
     margin: 10px 0 10px;
 }
 
 .secondpartmessage p{
-    color:rgb(138, 137, 137);
+    color: #707070;
     text-align: justify;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -316,7 +313,7 @@ nav ul li a:hover::after{
     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 900;
-    text-decoration-color: rgb(138, 137, 137);
+    text-decoration-color: #707070;
 }
 
 .secondpartredirection:hover{
@@ -326,101 +323,48 @@ nav ul li a:hover::after{
 
 .secondpartredirection a{
     text-decoration: none;
-    color: rgb(163, 160, 160);
+    color: #707070;
 }
 
 
 /*Third Section*/
 
 .thirdpart{
-    margin-top: 250px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    margin-top: 200px;
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
-.imagesforsmallerscreen{
-    display: none;
+.thirdpartpictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.recipe1, .recipe2{
-    position: relative;
-}
-
-.recipe1 img, .recipe2 img{
+.recipe1 img, .recipe2 img, .recipe3 img{
+    width: 430px;
+    height: 430px;
     object-fit: cover;
-    padding: 8px;
-    background-color: white;
-    box-shadow: 1px 1px 3px rgb(148, 148, 131);
-}
-
-.recipe1 img{
-    margin-top: 5px;
-    margin-left: 50px;
-    width: 350px;
-    height: 500px;
-}
-
-.recipe2 img{
-    margin-top: 5px;
-    margin-left: 1px;
-    width: 350px;
-    height: 500px;
-}
-
-.recipeoverlay1, .recipeoverlay2, .smallerrecipeoverlay1, .smallerrecipeoverlay2{
-    position: absolute;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
-    font-size: 25px;
-    letter-spacing: 2px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.recipeoverlay1, .smallerrecipeoverlay1{
-    transform: translate(17.5%, -105%);
-    width: 334px;
-    padding: 80px;
-}
-
-.recipeoverlay2, .smallerrecipeoverlay2{
-    transform: translate(2.5%, -105%);
-    width: 334px;
-    padding: 73px;
-}
-
-.recipe1:hover .recipeoverlay1, .recipe2:hover .recipeoverlay2, .smallerrecipe1:hover .smallerrecipeoverlay1, .smallerrecipe2:hover .smallerrecipeoverlay2{
-    opacity: 1;
-}
-
-.recipeoverlay1 a, .recipeoverlay2 a, .smallerrecipeoverlay1 a, .smallerrecipeoverlay2 a{
-    text-decoration: none;
-    color: white;
+    padding: 10px;
 }
 
 .thirdpartmessage{
-    margin-left: 60px;
-    margin-right: 130px;
-    align-self: center;
+    margin-top: 40px;
+    margin-left: 250px;
+    margin-right: 150px;
 }
 
 .thirdpartmessage h1{
     font-size: 40px;
-    color: #707070;
+    color: #575555;
     font-weight: 900;
     letter-spacing: 2px;
     margin: 10px 0 10px;
 }
 
 .thirdpartmessage p{
-    color:rgb(138, 137, 137);
+    color: #707070;
     text-align: justify;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -431,7 +375,7 @@ nav ul li a:hover::after{
     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 900;
-    text-decoration-color: rgb(138, 137, 137);
+    text-decoration-color: #707070;
 }
 
 .thirdpartredirection:hover{
@@ -441,7 +385,7 @@ nav ul li a:hover::after{
 
 .thirdpartredirection a{
     text-decoration: none;
-    color: rgb(163, 160, 160);
+    color: #707070;
 }
 
 
@@ -508,41 +452,7 @@ nav ul li a:hover::after{
         margin-right: 150px;
     }
 
-    /*Third Section*/
-
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 50px;
-        width: 320px;
-        height: 450px;
-    }
-
-    .recipe2 img{
-        margin-top: 5px;
-        margin-left: 1px;
-        width: 320px;
-        height: 450px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(19%, -105%);
-        width: 304px;
-        font-size: 25px;
-        padding: 70px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(3%, -105%);
-        width: 304px;
-        font-size: 25px;
-        padding: 56px;
-    }
-
-    .thirdpartmessage{
-        margin-left: 60px;
-        margin-right: 120px;
-    }
-
+    
 }
 
 
@@ -633,7 +543,19 @@ nav ul li a:hover::after{
         margin-right: 130px;
     }
 
-    
+    /*Third Section*/
+
+    .recipe1 img, .recipe2 img, .recipe3 img{
+        width: 400px;
+        height: 400px;
+        padding: 8px;
+    }
+
+    .thirdpartmessage{
+        margin-top: 40px;
+        margin-left: 250px;
+        margin-right: 150px;
+    }
 }
 
 
@@ -672,40 +594,7 @@ nav ul li a:hover::after{
         margin-right: 100px;
     }
 
-    /*Third Section*/
-
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 50px;
-        width: 300px;
-        height: 430px;
-    }
-
-    .recipe2 img{
-        margin-top: 5px;
-        margin-left: 1px;
-        width: 300px;
-        height: 430px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(20.2%, -105%);
-        width: 285px;
-        font-size: 25px;
-        padding: 70px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(3%, -105%);
-        width: 285px;
-        font-size: 25px;
-        padding: 56px;
-    }
-
-    .thirdpartmessage{
-        margin-left: 50px;
-        margin-right: 100px;
-    }
+    
 }
 
 
@@ -777,6 +666,7 @@ nav ul li a:hover::after{
         margin-right: 120px;
     }
 
+
 }
 
 
@@ -818,37 +708,16 @@ nav ul li a:hover::after{
 
     /*Third Section*/
 
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 50px;
-        width: 280px;
-        height: 430px;
-    }
-
-    .recipe2 img{
-        margin-top: 5px;
-        margin-left: 1px;
-        width: 280px;
-        height: 430px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(22%, -105%);
-        width: 264px;
-        font-size: 25px;
-        padding: 60px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(3.5%, -105%);
-        width: 264px;
-        font-size: 25px;
-        padding: 45px;
+    .recipe1 img, .recipe2 img, .recipe3 img{
+        width: 380px;
+        height: 380px;
+        padding: 7px;
     }
 
     .thirdpartmessage{
-        margin-left: 40px;
-        margin-right: 80px;
+        margin-top: 40px;
+        margin-left: 170px;
+        margin-right: 150px;
     }
 }
 
@@ -968,40 +837,7 @@ nav ul li a:hover::after{
         margin-right: 155px;
     }
 
-    /*Third Section*/
-
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 50px;
-        width: 265px;
-        height: 420px;
-    }
-
-    .recipe2 img{
-        margin-top: 5px;
-        margin-left: 1px;
-        width: 265px;
-        height: 420px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(23%, -106%);
-        width: 249px;
-        font-size: 25px;
-        padding: 60px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(3.5%, -106%);
-        width: 249px;
-        font-size: 25px;
-        padding: 45px;
-    }
-
-    .thirdpartmessage{
-        margin-left: 30px;
-        margin-right: 60px;
-    }
+    
 }
 
 
@@ -1021,77 +857,20 @@ nav ul li a:hover::after{
 
     /*Third Section*/
 
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 40px;
-        width: 250px;
-        height: 400px;
-    }
-
-    .recipe2 img{
-        margin-top: 5px;
-        margin-left: 1px;
-        width: 250px;
-        height: 400px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(20.7%, -106%);
-        width: 234px;
-        font-size: 23px;
-        padding: 55px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(4%, -106%);
-        width: 234px;
-        font-size: 23px;
-        padding: 40px;
+    .recipe1 img, .recipe2 img, .recipe3 img{
+        width: 350px;
+        height: 350px;
+        padding: 6px;
     }
 
     .thirdpartmessage{
-        margin-left: 30px;
-        margin-right: 60px;
+        margin-top: 40px;
+        margin-left: 150px;
+        margin-right: 130px;
     }
+    
 }
 
-
-@media only screen and (max-width:1000px){
-    /*Third Section*/
-
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 30px;
-        width: 265px;
-        height: 380px;
-    }
-
-    .recipe2 img{
-        margin-top: 150px;
-        margin-left: -50px;
-        width: 265px;
-        height: 380px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(15.5%, -106.5%);
-        width: 249px;
-        font-size: 21px;
-        padding: 55px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(-17%, -106.5%);
-        width: 249px;
-        font-size: 21px;
-        padding: 43px;
-    }
-
-    .thirdpartmessage{
-        margin-left: 20px;
-        margin-right: 50px;
-    }
-}
 
 
 @media only screen and (max-width:990px){
@@ -1212,6 +991,19 @@ nav ul li a:hover::after{
         margin-right: 130px;
     }
 
+    /*Third Section*/
+
+    .recipe1 img, .recipe2 img, .recipe3 img{
+        width: 320px;
+        height: 320px;
+        padding: 5px;
+    }
+
+    .thirdpartmessage{
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-right: 80px;
+    }
 }
 
 
@@ -1237,40 +1029,7 @@ nav ul li a:hover::after{
         margin-left: 40px;
     }
 
-    /*Third Section*/
-
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 30px;
-        width: 240px;
-        height: 340px;
-    }
-
-    .recipe2 img{
-        margin-top: 130px;
-        margin-left: -50px;
-        width: 240px;
-        height: 340px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(17%, -107%);
-        width: 224px;
-        font-size: 21px;
-        padding: 45px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(-18.5%, -106.5%);
-        width: 224px;
-        font-size: 21px;
-        padding: 32px;
-    }
-
-    .thirdpartmessage{
-        margin-left: 0px;
-        margin-right: 40px;
-    }
+    
 }
 
 
@@ -1461,41 +1220,16 @@ nav ul li a:hover::after{
 
     /*Third Section*/
 
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 30px;
-        width: 225px;
-        height: 320px;
-    }
-
-    .recipe2 img{
-        margin-top: 130px;
-        margin-left: -45px;
-        width: 225px;
-        height: 320px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(18.3%, -107%);
-        width: 209px;
-        font-size: 21px;
-        padding: 45px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(-17.5%, -107%);
-        width: 209px;
-        font-size: 21px;
-        padding: 32px;
+    .recipe1 img, .recipe2 img, .recipe3 img{
+        width: 300px;
+        height: 300px;
+        padding: 4px;
     }
 
     .thirdpartmessage{
-        margin-left: 0px;
-        margin-right: 39px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 35px;
+        margin-top: 40px;
+        margin-left: 80px;
+        margin-right: 50px;
     }
 }
 
@@ -1566,42 +1300,17 @@ nav ul li a:hover::after{
 
     /*Third Section*/
 
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 30px;
-        width: 210px;
+    .recipe1 img, .recipe2 img, .recipe3 img{
+        width: 280px;
         height: 280px;
-    }
-
-    .recipe2 img{
-        margin-top: 120px;
-        margin-left: -60px;
-        width: 210px;
-        height: 280px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(19.5%, -108.5%);
-        width: 194px;
-        font-size: 19px;
-        padding: 35px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(-27%, -108%);
-        width: 194px;
-        font-size: 19px;
-        padding: 32px;
+        padding: 3px;
     }
 
     .thirdpartmessage{
-        margin-left: -25px;
-        margin-right: 43px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 35px;
-    }
+        margin-top: 40px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }   
 }
 
 
@@ -1722,44 +1431,7 @@ nav ul li a:hover::after{
         height: 85px;
     }
 
-    /*Third Section*/
-
-    .recipe1 img{
-        margin-top: 5px;
-        margin-left: 30px;
-        width: 200px;
-        height: 280px;
-    }
-
-    .recipe2 img{
-        margin-top: 120px;
-        margin-left: -60px;
-        width: 200px;
-        height: 280px;
-    }
-
-    .recipeoverlay1{
-        transform: translate(22%, -108.5%);
-        width: 170px;
-        font-size: 19px;
-        padding: 35px;
-    }
-
-    .recipeoverlay2{
-        transform: translate(-28%, -108%);
-        width: 184px;
-        font-size: 19px;
-        padding: 32px;
-    }
-
-    .thirdpartmessage{
-        margin-left: -25px;
-        margin-right: 40px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 35px;
-    }
+    
 }
 
 
@@ -1838,86 +1510,7 @@ nav ul li a:hover::after{
         margin-bottom: 50px;
     }
 
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 200px;
-        display: initial;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .recipe1, .recipe2{
-        display: none;
-    }
-
-    .imagesforsmallerscreen{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .smallerrecipe1, .smallerrecipe2{
-        position: relative;
-    }
-
-    .smallerrecipe1 img, .smallerrecipe2 img{
-        object-fit: cover;
-        padding: 8px;
-        background-color: white;
-        box-shadow: 1px 1px 3px rgb(148, 148, 131);
-    }
-
-    .smallerrecipe1 img{
-        margin-top: 5px;
-        margin-left: 0px;
-        width: 340px;
-        height: 340px;
-    }
-
-    .smallerrecipe2 img{
-        margin-top: 45px;
-        margin-left: 1px;
-        width: 340px;
-        height: 340px;
-    }
-
-    .smallerrecipeoverlay1{
-        transform: translate(2.5%, -109%);
-        width: 324px;
-        padding: 43px;
-        font-size: 23px;
-        letter-spacing: 2px;
-    }
-
-    .smallerrecipeoverlay2{
-        transform: translate(3%, -109%);
-        width: 324px;
-        padding: 41px;
-        font-size: 22px;
-        letter-spacing: 2px;
-    }
-
-    .thirdpartmessage{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 20px;
-        margin-left: 100px;
-        margin-right: 100px;
-        align-self: center;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 38px;
-    }
-
-    .thirdpartmessage p{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .thirdpartredirection{
-        margin-top: 10px;
-    }
+    
 
 }
 
@@ -2005,63 +1598,6 @@ nav ul li a:hover::after{
     }
 }
 
-
-@media only screen and (max-width:750px){
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 200px;
-    }
-
-    .smallerrecipe1 img{
-        margin-top: 5px;
-        margin-left: 0px;
-        width: 310px;
-        height: 320px;
-    }
-
-    .smallerrecipe2 img{
-        margin-top: 45px;
-        margin-left: 1px;
-        width: 310px;
-        height: 320px;
-    }
-
-    .smallerrecipeoverlay1{
-        transform: translate(2.5%, -108.1%);
-        width: 294px;
-        padding: 52px;
-        font-size: 23px;
-        letter-spacing: 2px;
-    }
-
-    .smallerrecipeoverlay2{
-        transform: translate(3%, -108%);
-        width: 294px;
-        padding: 41px;
-        font-size: 22px;
-        letter-spacing: 2px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 15px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 38px;
-    }
-
-    .thirdpartmessage p{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .thirdpartredirection{
-        margin-top: 10px;
-    }
-}
 
 
 @media only screen and (max-width:740px){
@@ -2151,6 +1687,24 @@ nav ul li a:hover::after{
     .secondpartmessage h1{
         font-size: 33px;
     }
+
+    /*Third Section*/
+
+    .recipe2{
+        display: none;
+    }
+
+    .recipe1 img, .recipe3 img{
+        width: 350px;
+        height: 350px;
+        padding: 8px;
+    }
+
+    .thirdpartmessage{
+        margin-top: 40px;
+        margin-left: 100px;
+        margin-right: 100px;
+    } 
 }
 
 
@@ -2281,13 +1835,6 @@ nav ul li a:hover::after{
         font-size: 33px;
     }
 
-    /*Third Section*/
-
-    .thirdpartmessage{
-        margin-top: 20px;
-        margin-left: 80px;
-        margin-right: 80px;
-    }
 }
 
 
@@ -2322,56 +1869,6 @@ nav ul li a:hover::after{
         margin: 10px 0 10px;
     }
 
-    /*Third Section*/
-
-    .smallerrecipe1 img{
-        margin-top: 5px;
-        margin-left: 0px;
-        width: 280px;
-        height: 320px;
-    }
-
-    .smallerrecipe2 img{
-        margin-top: 45px;
-        margin-left: 1px;
-        width: 280px;
-        height: 320px;
-    }
-
-    .smallerrecipeoverlay1{
-        transform: translate(3%, -108.1%);
-        width: 264px;
-        padding: 47px;
-        font-size: 22px;
-        letter-spacing: 2px;
-    }
-
-    .smallerrecipeoverlay2{
-        transform: translate(3.5%, -108%);
-        width: 264px;
-        padding: 36px;
-        font-size: 22px;
-        letter-spacing: 2px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 20px;
-        margin-left: 75px;
-        margin-right: 75px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 36px;
-    }
-
-    .thirdpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .thirdpartredirection{
-        margin-top: 10px;
-    }
 }
 
 
@@ -2507,6 +2004,20 @@ nav ul li a:hover::after{
     .firstmessage{
         margin-right: 50px;
     }
+
+    /*Third Section*/
+
+    .recipe1 img, .recipe3 img{
+        width: 330px;
+        height: 330px;
+        padding: 5px;
+    }
+
+    .thirdpartmessage{
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+    } 
 }
 
 
@@ -2587,54 +2098,7 @@ nav ul li a:hover::after{
         font-size: 30px;
     }
 
-    /*Third Section*/
-
-    .smallerrecipe1 img{
-        margin-top: 5px;
-        margin-left: 0px;
-        width: 260px;
-        height: 320px;
-    }
-
-    .smallerrecipe2 img{
-        width: 260px;
-        height: 320px;
-    }
-
-    .smallerrecipeoverlay1{
-        transform: translate(3%, -109%);
-        width: 245px;
-        padding: 44px;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    .smallerrecipeoverlay2{
-        transform: translate(3.5%, -108.3%);
-        width: 245px;
-        padding: 33px;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 20px;
-        margin-left: 70px;
-        margin-right: 70px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 36px;
-    }
-
-    .thirdpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .thirdpartredirection{
-        margin-top: 10px;
-    }
+    
     
 }
 
@@ -2865,55 +2329,7 @@ nav ul li a:hover::after{
         height: 90px;
     }
 
-    /*Third Section*/
-
-    .smallerrecipe1 img{
-        margin-top: 5px;
-        margin-left: 0px;
-        width: 230px;
-        height: 300px;
-    }
-
-    .smallerrecipe2 img{
-        width: 230px;
-        height: 300px;
-    }
-
-    .smallerrecipeoverlay1{
-        transform: translate(4%, -108%);
-        width: 214px;
-        padding: 36px;
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    .smallerrecipeoverlay2{
-        transform: translate(4%, -109%);
-        width: 214px;
-        padding: 33px;
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 15px;
-        margin-left: 55px;
-        margin-right: 55px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 33px;
-    }
-
-    .thirdpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .thirdpartredirection{
-        margin-top: 10px;
-    }
-
+   
 }
 
 
@@ -3013,6 +2429,22 @@ nav ul li a:hover::after{
     }
 
     /*Third Section*/
+
+    .recipe1 img, .recipe3 img{
+        width: 300px;
+        height: 300px;
+        padding: 3px;
+    }
+
+    .thirdpartmessage{
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    } 
+
+    .thirdpartmessage h1{
+        font-size: 33px;
+    }
 
     .thirdpartmessage p{
         font-size: 15px;
@@ -3149,55 +2581,7 @@ nav ul li a:hover::after{
         font-weight: 900;
     }
 
-    /*Third Section*/
-
-    .smallerrecipe1 img{
-        width: 210px;
-        height: 280px;
-    }
-
-    .smallerrecipe2 img{
-        width: 210px;
-        height: 280px;
-    }
-
-    .smallerrecipeoverlay1{
-        transform: translate(4%, -109%);
-        width: 194px;
-        padding: 36px;
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    .smallerrecipeoverlay2{
-        transform: translate(4.5%, -108%);
-        width: 194px;
-        padding: 33px;
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 20px;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 30px;
-        letter-spacing: 1px;
-    }
-
-    .thirdpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .thirdpartredirection{
-        margin-top: 10px;
-        font-size: 17px;
-    }
-
+   
 }
 
 
@@ -3331,57 +2715,23 @@ nav ul li a:hover::after{
     .secondpartmessage p{
         font-size: 15px;
     }
-}
 
-
-@media only screen and (max-width:450px){
     /*Third Section*/
 
-    .smallerrecipe1 img{
-        width: 190px;
-        height: 260px;
-    }
-
-    .smallerrecipe2 img{
-        width: 190px;
-        height: 260px;
-    }
-
-    .smallerrecipeoverlay1{
-        transform: translate(4.5%, -110%);
-        width: 174px;
-        padding: 30px;
-        font-size: 17px;
-        letter-spacing: 2px;
-    }
-
-    .smallerrecipeoverlay2{
-        transform: translate(4.5%, -108%);
-        width: 175px;
-        padding: 30px;
-        font-size: 17px;
-        letter-spacing: 2px;
-    }
-
     .thirdpartmessage{
-        margin-top: 20px;
         margin-left: 40px;
         margin-right: 40px;
     }
 
     .thirdpartmessage h1{
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .thirdpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .thirdpartredirection{
-        margin-top: 10px;
+        font-size: 15px;
     }
 }
+
 
 
 @media only screen and (max-width:440px){
@@ -3412,6 +2762,7 @@ nav ul li a:hover::after{
     .firstmessage{
         margin-right: 40px;
     }
+
 }
 
 
@@ -3652,49 +3003,7 @@ nav ul li a:hover::after{
         font-size: 15px;
     }
 
-    /*Third Section*/
-
-    .smallerrecipe1 img{
-        width: 230px;
-        height: 270px;
-    }
-
-    .smallerrecipe2 img{
-        width: 230px;
-        height: 270px;
-    }
-
-    .smallerrecipeoverlay1{
-        transform: translate(16%, -112%);
-        width: 192px;
-        padding: 30px;
-        font-size: 16px;
-        letter-spacing: 2px;
-    }
-
-    .smallerrecipeoverlay2{
-        transform: translate(5%, -110.5%);
-        width: 192px;
-        padding: 25px;
-        font-size: 16px;
-        letter-spacing: 2px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 20px;
-        margin-left: 35px;
-        margin-right: 35px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 26px;
-    }
-
-    .thirdpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
+    
 }
 
 
@@ -3723,3 +3032,5 @@ nav ul li a:hover::after{
         margin-bottom: 7px;
     }   
 }
+
+
