@@ -100,6 +100,10 @@ nav ul li a:hover::after{
     grid-row: 1/2;
 }
 
+.firstpartimageforsmallerscreen{
+    display: none;
+}
+
 .firstmessage{
     margin-left: 150px;
     grid-column: 1/4;
@@ -1335,7 +1339,7 @@ nav ul li a:hover::after{
     
     .pinkbox{
         height: 80vh;
-        max-height: 700px;
+        max-height: 600px;
         margin-left: 515px;
     }
 
@@ -2459,44 +2463,54 @@ nav ul li a:hover::after{
     .firstpartimagecolumn{
         margin-left: 400px;
     }
-   
+
+    /*Third Section*/
+
+    .recipe3{
+        display: none;
+    }
+    
+    .recipe1 img{
+        width: 525px;
+        height: 360px;
+    }
 }
 
 
 @media only screen and (max-width:500px){
     /*First Section*/
 
-    .pinkbox{
-        height: 360px;
-        margin-left: 210px;
+    .firstpart{
+        display: initial;
     }
 
-    .IconOutline{
-        width: 360px;
-        margin-left: 30px;
+    .pinkbox, .IconOutline, .firstpartimagecolumn{
+        display: none;
     }
 
-    .firstpartimagecolumn{
-        margin-left: 380px;
+    .firstpartimageforsmallerscreen{
+        display: block;
+        width: 100%;
     }
 
-    .firstpartimagecolumn img{
-        height: 85px;
-        width: 85px;
-        padding: 5px;
-        margin-top: 8px;
-        margin-bottom: 8px;
+    .firstpartimageforsmallerscreen img{
+        width: 100%;
+        max-height: 420px;
+        object-fit: cover;
     }
 
     .titleverticalbar{
+        position: relative;
         width: 13px;
         height: 92px;
         margin-left: 45px;
+        top: 75px;
     }
 
     .firstmessage{
         margin-right: 50px;
         margin-left: 80px;
+        margin-top: -20px;
     }
 
 
@@ -2581,63 +2595,16 @@ nav ul li a:hover::after{
         font-weight: 900;
     }
 
-   
-}
+    /*Third Section*/
 
-
-
-@media only screen and (max-width:480px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 350px;
-        margin-left: 200px;
+    .thirdpart{
+        margin-top: 150px;
     }
 
-    .IconOutline{
-        width: 350px;
-        margin-left: 30px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 370px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 80px;
-        width: 80px;
-        padding: 5px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
 }
 
    
 @media only screen and (max-width:460px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 330px;
-        margin-left: 185px;
-    }
-
-    .IconOutline{
-        width: 330px;
-        margin-left: 25px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 350px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 80px;
-        width: 80px;
-        padding: 5px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }    
-
     /*Second Section*/
 
     .gallerycontainer1 img{
@@ -2718,6 +2685,11 @@ nav ul li a:hover::after{
 
     /*Third Section*/
 
+    .recipe1 img{
+        width: 465px;
+        height: 380px;
+    }
+
     .thirdpartmessage{
         margin-left: 40px;
         margin-right: 40px;
@@ -2737,70 +2709,26 @@ nav ul li a:hover::after{
 @media only screen and (max-width:440px){
     /*First Section*/
 
-    .pinkbox{
-        height: 330px;
-        margin-left: 180px;
-    }
-
-    .IconOutline{
-        width: 320px;
-        margin-left: 20px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 330px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 80px;
-        width: 80px;
-        padding: 5px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }   
-
     .firstmessage{
         margin-right: 40px;
     }
-
 }
 
 
 @media only screen and (max-width:420px){
     /*First Section*/
 
-    .pinkbox{
-        height: 325px;
-        margin-left: 170px;
-    }
-
-    .IconOutline{
-        width: 310px;
-        margin-left: 20px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 320px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 75px;
-        width: 75px;
-        padding: 5px;
-        margin-top: 7px;
-        margin-bottom: 7px;
-    }   
-
     .titleverticalbar{
         width: 13px;
-        height: 87px;
+        height: 85px;
         margin-left: 35px;
-        margin-top: -13px;
+        margin-top: -18px;
     }
 
     .firstmessage{
         margin-right: 40px;
         margin-left: 70px;
+        margin-top: -12px;
     }
 
     .firstmessage h1{
@@ -2886,7 +2814,7 @@ nav ul li a:hover::after{
     }
 
     .secondpartmessage h1{
-        font-size: 23px;
+        font-size: 24px;
         letter-spacing: 0px;
     }
 
@@ -2898,28 +2826,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:400px){
     /*First Section*/
-
-    .pinkbox{
-        height: 345px;
-        margin-left: 157px;
-    }
-
-    .IconOutline{
-        width: 300px;
-        margin-left: 10px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 300px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 75px;
-        width: 75px;
-        padding: 5px;
-        margin-top: 7px;
-        margin-bottom: 7px;
-    }   
 
     .firstmessage p{
         font-size: 14px;
@@ -3003,34 +2909,11 @@ nav ul li a:hover::after{
         font-size: 15px;
     }
 
-    
+    /*Third Section*/
+
+    .recipe1 img{
+        width: 405px;
+        height: 350px;
+    }
 }
-
-
-@media only screen and (max-width:380px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 335px;
-        margin-left: 142px;
-    }
-
-    .IconOutline{
-        width: 290px;
-        margin-left: 0px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 285px;
-    }
-
-    .firstpartimagecolumn img{
-        height: 75px;
-        width: 75px;
-        padding: 5px;
-        margin-top: 7px;
-        margin-bottom: 7px;
-    }   
-}
-
 
