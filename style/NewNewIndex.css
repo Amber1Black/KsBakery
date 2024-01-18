@@ -2502,9 +2502,9 @@ nav ul li a:hover::after{
     .titleverticalbar{
         position: relative;
         width: 13px;
-        height: 92px;
+        height: 90px;
         margin-left: 45px;
-        top: 75px;
+        top: 72px;
     }
 
     .firstmessage{
@@ -2711,6 +2711,14 @@ nav ul li a:hover::after{
 
     .firstmessage{
         margin-right: 40px;
+        margin-top: -35px;
+    }
+
+    .titleverticalbar{
+        width: 13px;
+        height: 95px;
+        margin-left: 45px;
+        top: 62px;
     }
 }
 
@@ -2728,7 +2736,7 @@ nav ul li a:hover::after{
     .firstmessage{
         margin-right: 40px;
         margin-left: 70px;
-        margin-top: -12px;
+        margin-top: -25px;
     }
 
     .firstmessage h1{
@@ -2827,6 +2835,10 @@ nav ul li a:hover::after{
 @media only screen and (max-width:400px){
     /*First Section*/
 
+    .firstmessage{
+        margin-top: -25px;
+    }
+
     .firstmessage p{
         font-size: 14px;
     }
@@ -2917,3 +2929,10 @@ nav ul li a:hover::after{
     }
 }
 
+@media only screen and (max-width:390px){
+    /*First Section*/
+
+    .firstmessage{
+        margin-top: -32px;
+    }
+}
