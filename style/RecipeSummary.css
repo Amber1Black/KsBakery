@@ -138,18 +138,18 @@ nav ul li a:hover::after{
     padding: 5px 25px;
     cursor: pointer;
     background-color: #ffffff;
-    color: #ffffff;;
+    color: #575555;
     font-size: 18px;
     font-weight: 900;
     letter-spacing: 1px;
 }
 
-.categoryfiltering, .btn, .btn:hover, .btn.active, .btn:hover::after{
-    background-color: rgb(255, 183, 183);
+.categoryfiltering{
+    box-shadow: 1px 1px 4px #707070;
 }
   
 .btn:hover{
-    color: hsl(33, 34%, 89%);
+    color: #575555;
 }
 
 .btn:hover::after{
@@ -157,7 +157,7 @@ nav ul li a:hover::after{
 }
   
 .btn.active{
-    color: rgb(255, 255, 255);
+    color: #575555;
     text-decoration: underline;
     font-size: 17px;
     font-weight: bolder;
@@ -370,6 +370,13 @@ nav ul li a:hover::after{
         margin-left: 50px;
         margin-right: 50px;
         grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    }
+}
+
+
+@media only screen and (max-width:950px){
+    .logo{
+        margin-left: 40px;
     }
 }
 
@@ -606,7 +613,7 @@ nav ul li a:hover::after{
         width: 12%;
         max-width: 50px;
         margin-left: 20px;
-        margin-top: 7px;
+        margin-top: 10px;
     }
     
     nav{
