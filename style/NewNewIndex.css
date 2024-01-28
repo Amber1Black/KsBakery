@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+
+/* Font choices
+
+font-family: 'DM Serif Display', serif;
+font-family: 'Fraunces', serif;
+font-family: 'Inclusive Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
 /*headings section*/
 
 .headingsection{
@@ -86,17 +100,69 @@ nav ul li a:hover::after{
 
 /*Content*/
 
+/*Common Elements*/
+
+.firstpartforsmallerscreen, .firstpartformobile, 
+.secondpartforsmallerscreen, 
+.thirdpartforsmallerscreen, 
+.fourthpartforsmallerscreen, 
+.fifthpartforsmallerscreen,
+.fifthpartsmallerprofilepic{
+    display: none;
+}
+
+   /*Paragraph Spacing*/ 
+
+.secondpart, .thirdpart, .fourthpart, .fifthpart{
+    margin-top: 150px;
+    overflow-x: hidden;
+}
+
+.secondpartlargermessage h1, .thirdpartlargermessage h1, .fifthpartlargermessage h1{
+    font-family: 'Fraunces', serif;
+    font-size: 43px;
+    color: rgb(20, 20, 20);
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 10px 0 10px;
+}
+
+.secondpartlargermessage p, .thirdpartlargermessage p, .fourthpartlargermessage p, .fifthpartlargermessage p{
+    color: rgb(58, 57, 57);
+    text-align: justify;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-color: #707070;
+}
+
+.secondpartredirection:hover, .thirdpartredirection:hover, .fourthpartredirection:hover, .fifthpartredirection:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.secondpartredirection a, .thirdpartredirection a, .fourthpartredirection a, .fifthpartredirection a{
+    text-decoration: none;
+    color: #707070;
+}
+
+
+
 /*First Section*/
 
-.firstpart{
+.firstpartforlargerscreen{
     display: grid;
-    width: 100%;
-    max-height: 1000px;
     grid-template-columns: repeat(1fr, 1fr, 1fr, 1fr);
     overflow-x: hidden;
 }
 
-.pinkbox, .IconOutline, .titleverticalbar, .firstmessage, .firstpartimagecolumn{
+.pinkbox, .IconOutline, .firstmessage, .firstpartimagecolumn{
     grid-row: 1/2;
 }
 
@@ -105,7 +171,7 @@ nav ul li a:hover::after{
 }
 
 .firstmessage{
-    margin-left: 150px;
+    margin-left: 70px;
     grid-column: 1/4;
     align-self: center;
     max-width: 450px;
@@ -121,25 +187,15 @@ nav ul li a:hover::after{
 .firstmessage h2{
     font-size: 25px;
     color: #707070;
-    font-weight: 100;
+    font-weight: 400;
     margin: 10px 0 10px;
 }
 
 .firstmessage p{
     font-size: 16px;
     font-family: Montserrat;
-    color: #a7a5a5;
+    color: #707070;
     font-weight: 100;
-}
-
-.titleverticalbar{
-    width: 17px;
-    height: 118px;
-    margin-left: 100px;
-    background: linear-gradient(to right, rgb(230, 231, 228), rgb(102, 97, 73));
-    grid-column: 1/4;
-    align-self: center;
-    margin-top: -75px;
 }
 
 .pinkbox{
@@ -164,11 +220,10 @@ nav ul li a:hover::after{
 
 .firstpartimagecolumn{
     grid-column: 1/4;
-    margin-left: 1180px;
-    margin-right: 20px;
     align-self: center;
     display: flex;
     flex-direction: column; 
+    margin-left: 1180px;
 }
 
 .firstpartimagecolumn img{
@@ -186,16 +241,11 @@ nav ul li a:hover::after{
 
 /*Second Section*/
 
-.secondpart{
-    margin-top: 200px;
-    overflow-x: hidden;
-}
-
 .gallerydisplay{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 30px;   
 }
 
@@ -292,57 +342,13 @@ nav ul li a:hover::after{
     opacity: 1;
 }
 
-.secondpartmessage{
+.secondpartlargermessage{
     margin-left: 220px;
     margin-right: 220px;
 }
 
-.secondpartmessage h1{
-    font-size: 40px;
-    color: #575555;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin: 10px 0 10px;
-}
-
-.secondpartmessage h2{
-    display: none;
-}
-
-.secondpartmessage p{
-    color: #707070;
-    text-align: justify;
-    margin-top: 15px;
-    margin-bottom: 25px;
-}
-
-.secondpartredirection{
-    margin-top: 15px;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: 900;
-    text-decoration-color: #707070;
-}
-
-.secondpartredirection:hover{
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.secondpartredirection a{
-    text-decoration: none;
-    color: #707070;
-}
-
 
 /*Third Section*/
-
-.thirdpart{
-    margin-top: 200px;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
 
 .thirdpartpictures{
     display: flex;
@@ -357,51 +363,17 @@ nav ul li a:hover::after{
     padding: 10px;
 }
 
-.thirdpartmessage{
+.thirdpartlargermessage{
     margin-top: 40px;
-    margin-left: 250px;
-    margin-right: 150px;
+    margin-left: 230px;
+    margin-right: 230px;
 }
 
-.thirdpartmessage h1{
-    font-size: 40px;
-    color: #575555;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin: 10px 0 10px;
-}
-
-.thirdpartmessage p{
-    color: #707070;
-    text-align: justify;
-    margin-top: 15px;
-    margin-bottom: 25px;
-}
-
-.thirdpartredirection{
-    margin-top: 15px;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: 900;
-    text-decoration-color: #707070;
-}
-
-.thirdpartredirection:hover{
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.thirdpartredirection a{
-    text-decoration: none;
-    color: #707070;
-}
 
 
 /*Fifth Section*/
 
-.fifthpart{
-    margin-top: 200px;
-    overflow-x: hidden;
+.fifthpartforlargerscreen{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -419,7 +391,7 @@ nav ul li a:hover::after{
     object-fit: cover;
 }
 
-.fifthpartmessage{
+.fifthpartlargermessage{
     margin-top: 200px;
     margin-left: 0px;
     margin-right: 50px;
@@ -429,40 +401,8 @@ nav ul li a:hover::after{
     border-width: 2px 2px 2px 0px;
 }
 
-.fifthpartmessage h1{
-    font-size: 40px;
-    color: #575555;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin: 10px 50px 10px;
-    
-}
-
-.fifthpartmessage p{
-    color: #707070;
-    text-align: justify;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-}
-
-.fifthpartredirection{
-    margin-top: 15px;
-    margin-left: 50px;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: 900;
-    text-decoration-color: #707070;
-}
-
-.fifthpartredirection:hover{
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.fifthpartredirection a{
-    text-decoration: none;
-    color: #707070;
+.fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
+    margin-left: 50px;  
 }
 
 
@@ -478,19 +418,20 @@ nav ul li a:hover::after{
 
 
 
-
-@media only screen and (max-width:1330px){
+@media only screen and (max-width:1350px){
     /*First Section*/
 
     .pinkbox{
-        height: 90vh;
-        margin-left: 835px;
+        margin-left: 800px;
     }
     
-    .firstpartimagecolumn{
-        margin-left: 1150px;
+    .IconOutline{
+        margin-left: 500px;
     }
 
+    .firstpartimagecolumn{
+        margin-left: 1120px;
+    }
 }
 
 
@@ -498,28 +439,19 @@ nav ul li a:hover::after{
     /*First Section*/
 
     .firstmessage{
-        margin-left: 130px;
-        max-width: 375px;
+        max-width: 430px;
     }
 
-    .titleverticalbar{
-        width: 15px;
-        height: 120px;
-        margin-left: 85px;
-    }
-    
     .IconOutline{
-        width: ;
-        margin-left: 480px;
+        margin-left: 430px;
     }
 
     .pinkbox{
-        height: 90vh;
-        margin-left: 780px;
+        margin-left: 730px;
     }
-    
+
     .firstpartimagecolumn{
-        margin-left: 1100px;
+        margin-left: 1040px;
     }
 
     /*Second Section*/
@@ -576,9 +508,9 @@ nav ul li a:hover::after{
         transform: translate(-51%, -155%);
     }
     
-    .secondpartmessage{
+    .secondpartlargermessage{
         margin-left: 200px;
-        margin-right: 130px;
+        margin-right: 200px;
     }
 
     /*Third Section*/
@@ -589,10 +521,10 @@ nav ul li a:hover::after{
         padding: 8px;
     }
 
-    .thirdpartmessage{
+    .thirdpartlargermessage{
         margin-top: 40px;
-        margin-left: 250px;
-        margin-right: 150px;
+        margin-left: 190px;
+        margin-right: 190px;
     }
 
     /*Fifth Section*/
@@ -606,7 +538,7 @@ nav ul li a:hover::after{
         height: 600px;
     }
     
-    .fifthpartmessage{
+    .fifthpartlargermessage{
         margin-top: 200px;
         margin-left: 0px;
         margin-right: 80px;
@@ -616,66 +548,42 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:1250px){
+@media only screen and (max-width:1200px){
+    /*Paragraph Spacing*/
+
+    .secondpart, .thirdpart, .fourthpart, .fifthpart{
+        margin-top: 140px;
+    }
+
     /*First Section*/
 
     .firstmessage{
-        margin-left: 115px;
-        max-width: 340px;
+        max-width: 380px;
+        margin-left: 60px;
     }
 
-    .titleverticalbar{
-        width: 15px;
-        height: 122px;
-        margin-left: 70px;
+    .firstmessage h2{
+        font-size: 24px;
     }
-    
+
     .IconOutline{
-        width: ;
         margin-left: 400px;
     }
 
     .pinkbox{
-        height: 85vh;
-        max-height: 600px;
-        margin-left: 690px;
+        height: 88vh;
+        max-height: 650px;
+        margin-left: 700px;
     }
-    
+
     .firstpartimagecolumn{
-        margin-left: 1020px;
+        margin-left: 1000px;
     }
 
 }
 
 
 @media only screen and (max-width:1170px){
-    /*First Section*/
-
-    .firstmessage{
-        margin-left: 100px;
-        max-width: 330px;
-    }
-
-    .titleverticalbar{
-        width: 15px;
-        height: 118px;
-        margin-left: 60px;
-        margin-top: -73px;
-    }
-    
-    .IconOutline{
-        width: 550px;
-        margin-left: 390px;
-    }
-
-    .pinkbox{
-        height: 85vh;
-        margin-left: 660px;
-    }
-    
-    .firstpartimagecolumn{
-        margin-left: 970px;
-    }
 
     /*Third Section*/
 
@@ -685,11 +593,41 @@ nav ul li a:hover::after{
         padding: 7px;
     }
 
-    .thirdpartmessage{
+    .thirdpartlargermessage{
         margin-top: 40px;
         margin-left: 170px;
-        margin-right: 150px;
+        margin-right: 170px;
     }
+}
+
+
+@media only screen and (max-width:1150px){
+    /*First Section*/
+
+    .firstmessage{
+        margin-left: 60px;
+        max-width: 330px;
+    }
+
+    .IconOutline{
+        margin-left: 340px;
+        width: 570px;
+    }
+
+    .pinkbox{
+        margin-left: 620px;
+        max-height: 630px;
+    }
+
+    .firstpartimagecolumn{
+        margin-left: 930px;
+    }
+
+    .firstpartimagecolumn img{
+        width: 113px;
+        height: 113px;
+    }
+
 }
 
 
@@ -702,14 +640,14 @@ nav ul li a:hover::after{
     }
 
     .gallerycontainer2 img{
-        margin-top: 110px;
+        margin-top: 115px;
         width: 200px;
         height: 200px;
         margin-left: -15px;
     }
 
     .gallerycontainer3 img{
-        margin-top: -40px;
+        margin-top: -28px;
         width: 240px;
         height: 240px;
         margin-left: -33px;
@@ -749,48 +687,17 @@ nav ul li a:hover::after{
         transform: translate(-53%, -155%);
     }
     
-    .secondpartmessage{
-        margin-left: 180px;
-        margin-right: 110px;
-    }
-}
-
-
-@media only screen and (max-width:1110px){
-    /*First Section*/
-
-    .firstmessage{
-        margin-left: 100px;
-        max-width: 320px;
+    .secondpartlargermessage{
+        margin-left: 160px;
+        margin-right: 160px;
     }
 
-    .firstmessage h1{
-        letter-spacing: 1px;
-    }
+    /*Third Section*/
 
-    .firstmessage h2{
-        font-size: 22px;
-        margin: 15px 0 15px;
+    .thirdpartlargermessage{
+        margin-left: 125px;
+        margin-right: 125px;
     }
-
-    .firstmessage p{
-        font-size: 15px;
-    }
-    
-    .IconOutline{
-        width: 500px;
-        margin-left: 365px;
-    }
-
-    .pinkbox{
-        height: 85vh;
-        margin-left: 610px;
-    }
-    
-    .firstpartimagecolumn{
-        margin-left: 890px;
-    }
-
 }
 
 
@@ -807,7 +714,7 @@ nav ul li a:hover::after{
         height: 560px;
     }
     
-    .fifthpartmessage{
+    .fifthpartlargermessage{
         margin-top: 200px;
         margin-left: 0px;
         margin-right: 70px;
@@ -817,12 +724,72 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:1090px){
+    /*First Section*/
+
+    .firstmessage{
+        margin-left: 50px;
+        max-width: 330px;
+    }
+
+    .IconOutline{
+        margin-left: 320px;
+        width: 570px;
+    }
+
+    .pinkbox{
+        margin-left: 600px;
+        max-height: 620px;
+    }
+
+    .firstpartimagecolumn{
+        margin-left: 890px;
+    }
+
+    .firstpartimagecolumn img{
+        width: 110px;
+        height: 110px;
+    }
+
+    /*Second Section*/
+
+    .secondpartlargermessage{
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+}
+
+
 @media only screen and (max-width:1040px){
     /*First Section*/
 
-    .firstpartimagecolumn{
-        margin-left: 860px;
+    .firstmessage{
+        margin-left: 40px;
+        max-width: 330px;
     }
+
+    .IconOutline{
+        margin-left: 310px;
+        width: 570px;
+    }
+
+    .pinkbox{
+        margin-left: 590px;
+        max-height: 620px;
+    }
+
+    .firstpartimagecolumn{
+        margin-left: 870px;
+    }
+
+    .firstpartimagecolumn img{
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
 
     /*Second Section*/
 
@@ -832,14 +799,14 @@ nav ul li a:hover::after{
     }
 
     .gallerycontainer2 img{
-        margin-top: 125px;
+        margin-top: 130px;
         width: 180px;
         height: 180px;
         margin-left: -23px;
     }
 
     .gallerycontainer3 img{
-        margin-top: -40px;
+        margin-top: -28px;
         width: 240px;
         height: 240px;
         margin-left: -38px;
@@ -878,11 +845,7 @@ nav ul li a:hover::after{
     .overlay5{
         transform: translate(-58%, -145%);
     }
-    
-    .secondpartmessage{
-        margin-left: 135px;
-        margin-right: 125px;
-    }
+
 
     /*Third Section*/
 
@@ -892,80 +855,89 @@ nav ul li a:hover::after{
         padding: 6px;
     }
 
-    .thirdpartmessage{
+    .thirdpartlargermessage{
         margin-top: 40px;
-        margin-left: 150px;
-        margin-right: 130px;
+        margin-left: 95px;
+        margin-right: 95px;
     }
     
 }
 
 
 @media only screen and (max-width:1000px){
-
     /*Paragraph Spacing*/
 
-    .secondpart, .thirdpart, .fifthpart{
-        margin-top: 180px;
+    .secondpart, .thirdpart, .fourthpart, .fifthpart{
+        margin-top: 120px;
     }
-}
+    
+    /*Common Elements*/
 
+    .secondpartlargermessage h1, .thirdpartlargermessage h1, .fifthpartlargermessage h1{
+        font-size: 38px;
+        color: rgb(20, 20, 20);
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
 
-@media only screen and (max-width:990px){
+    .secondpartlargermessage p, .thirdpartlargermessage p, .fourthpartlargermessage p, .fifthpartlargermessage p{
+        font-size: 17px;
+    }
+
+    .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
+        letter-spacing: 1px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    
+
     /*First Section*/
 
     .firstmessage{
-        margin-left: 90px;
-        max-width: 310px;
-    }
-
-    .titleverticalbar{
-        width: 14px;
-        height: 113px;
-        margin-left: 50px;
+        margin-left: 40px;
+        max-width: 270px;
     }
 
     .firstmessage h1{
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .firstmessage h2{
-        font-size: 22px;
-        margin: 15px 0 15px;
+        font-size: 20px;
     }
 
     .firstmessage p{
         font-size: 15px;
     }
-    
+
     .IconOutline{
-        width: 480px;
-        margin-left: 350px;
+        margin-left: 270px;
+        width: 560px;
     }
 
     .pinkbox{
-        height: 85vh;
-        max-height: 550px;
-        margin-left: 590px;
+        margin-left: 545px;
+        max-height: 620px;
     }
-    
+
     .firstpartimagecolumn{
-        margin-left: 835px;
+        margin-left: 825px;
     }
 
     .firstpartimagecolumn img{
-        width: 110px;
-        height: 110px;
-        padding: 6px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        width: 108px;
+        height: 108px;
     }
+}
+
+
+@media only screen and (max-width:990px){
 
     /*Second Section*/
 
-    .secondpartmessage{
-        margin-left: 115px;
-        margin-right: 100px;
+    .secondpartlargermessage{
+        margin-left: 110px;
+        margin-right: 110px;
     }
 
     /*Third Section*/
@@ -976,10 +948,10 @@ nav ul li a:hover::after{
         padding: 5px;
     }
 
-    .thirdpartmessage{
+    .thirdpartlargermessage{
         margin-top: 40px;
-        margin-left: 100px;
-        margin-right: 80px;
+        margin-left: 85px;
+        margin-right: 85px;
     }
 
     /*Fifth Section*/
@@ -993,7 +965,7 @@ nav ul li a:hover::after{
         height: 550px;
     }
     
-    .fifthpartmessage{
+    .fifthpartlargermessage{
         margin-top: 200px;
         margin-left: 0px;
         margin-right: 50px;
@@ -1001,21 +973,39 @@ nav ul li a:hover::after{
         border-width: 2px 2px 2px 0px;
     }
 
-    .fifthpartmessage h1, .fifthpartmessage p, .fifthpartredirection{
+    .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
         margin-left: 40px;
     }
 }
 
 
 @media only screen and (max-width:960px){
-    /*First Section*/
     
-    .firstpartimagecolumn{
-        margin-left: 820px;
+    /*First Section*/
+
+    .firstmessage{
+        margin-left: 40px;
+        max-width: 270px;
     }
 
-    /*Second Section*/
+    .IconOutline{
+        margin-left: 265px;
+        width: 550px;
+    }
 
+    .pinkbox{
+        margin-left: 540px;
+        max-height: 600px;
+    }
+
+    .firstpartimagecolumn{
+        margin-left: 805px;
+    }
+
+    .firstpartimagecolumn img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 
@@ -1032,14 +1022,14 @@ nav ul li a:hover::after{
     }
 
     .gallerycontainer2 img{
-        margin-top: 125px;
+        margin-top: 132px;
         width: 180px;
         height: 180px;
         margin-left: -28px;
     }
 
     .gallerycontainer3 img{
-        margin-top: -40px;
+        margin-top: -28px;
         width: 220px;
         height: 220px;
         margin-left: -50px;
@@ -1079,135 +1069,46 @@ nav ul li a:hover::after{
         transform: translate(-58%, -143%);
     }
     
-    .secondpartmessage{
-        margin-top: -10px;
-        margin-left: 150px;
-        margin-right: 150px;
-    }
 }
 
 
-@media only screen and (max-width:940px){
+@media only screen and (max-width:920px){
+    
     /*First Section*/
-    
+
     .firstmessage{
-        margin-left: 90px;
-        max-width: 280px;
+        margin-left: 40px;
+        max-width: 260px;
     }
 
-    .titleverticalbar{
-        width: 14px;
-        height: 106px;
-        margin-left: 50px;
-        margin-top: -95px;
-    }
-
-    .firstmessage h1{
-        font-size: 48px;
-        letter-spacing: 0px;
-    }
-
-    .firstmessage h2{
-        font-size: 21px;
-        margin: 15px 0 15px;
-    }
-
-    .firstmessage p{
-        font-size: 15px;
-    }
-    
     .IconOutline{
-        width: 480px;
-        margin-left: 320px;
+        margin-left: 260px;
+        width: 520px;
     }
 
     .pinkbox{
-        height: 85vh;
-        margin-left: 560px;
-    }
-    
-    .firstpartimagecolumn{
-        margin-left: 800px;
+        margin-left: 520px;
+        max-height: 590px;
     }
 
-    .firstpartimagecolumn img{
-        width: 100px;
-        height: 100px;
-        padding: 6px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-}
-
-
-@media only screen and (max-width:915px){
-    /*First Section*/
-    
-    .firstpartimagecolumn{
-        margin-left: 780px;
-    }
-
-}
-
-
-@media only screen and (max-width:900px){
-    /*First Section*/
-    
-    .titleverticalbar{
-        width: 14px;
-        height: 107px;
-        margin-left: 45px;
-    }
-
-    .firstmessage{
-        margin-left: 80px;
-        max-width: 280px;
-    }
-
-    .firstmessage h1{
-        font-size: 48px;
-    }
-
-    .firstmessage h2{
-        font-size: 20px;
-        margin: 15px 0 15px;
-        font-weight: bold;
-    }
-
-    .firstmessage p{
-        font-size: 15px;
-    }
-    
-    .IconOutline{
-        width: 470px;
-        margin-left: 310px;
-    }
-
-    .pinkbox{
-        height: 85vh;
-        margin-left: 540px;
-    }
-    
     .firstpartimagecolumn{
         margin-left: 770px;
     }
 
-    .firstpartimagecolumn img{
-        width: 100px;
-        height: 100px;
-        padding: 6px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+
+    /*Third Section*/
+
+    .thirdpartlargermessage{
+        margin-left: 140px;
+        margin-right: 140px;
     }
+}
+
+
+
+@media only screen and (max-width:900px){
 
     /*Second Section*/
-
-    .secondpart{
-        margin-top: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 100px; 
-    }
 
     .gallerycontainer1 img{
         width: 195px;
@@ -1216,14 +1117,14 @@ nav ul li a:hover::after{
     }
 
     .gallerycontainer2 img{
-        margin-top: 150px;
+        margin-top: 158px;
         width: 175px;
         height: 175px;
         margin-left: -60px;
     }
 
     .gallerycontainer3 img{
-        margin-top: -45px;
+        margin-top: -28px;
         width: 215px;
         height: 215px;
         margin-left: -83px;
@@ -1263,7 +1164,7 @@ nav ul li a:hover::after{
         transform: translate(-58%, -145%);
     }
     
-    .secondpartmessage{
+    .secondpartlargermessage{
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -1276,11 +1177,6 @@ nav ul li a:hover::after{
         padding: 4px;
     }
 
-    .thirdpartmessage{
-        margin-top: 40px;
-        margin-left: 80px;
-        margin-right: 50px;
-    }
 
     /*Fifth Section*/
 
@@ -1293,7 +1189,7 @@ nav ul li a:hover::after{
         height: 510px;
     }
     
-    .fifthpartmessage{
+    .fifthpartlargermessage{
         margin-top: 200px;
         margin-left: 0px;
         margin-right: 40px;
@@ -1301,65 +1197,31 @@ nav ul li a:hover::after{
         border-width: 2px 2px 2px 0px;
     }
 
-    .fifthpartmessage h1, .fifthpartmessage p, .fifthpartredirection{
+    .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
         margin-left: 35px;
     }
 }
 
 
 @media only screen and (max-width:880px){
-    /*First Section*/
     
-    .firstpartimagecolumn{
-        margin-left: 750px;
-    }
-
-    .IconOutline{
-        width: 460px;
-        margin-left: 305px;
-    }
-
-    .pinkbox{
-        height: 85vh;
-        max-height: 530px;
-        margin-left: 535px;
-    }
-
-}
-
-
-@media only screen and (max-width:860px){
     /*First Section*/
-    
+
     .firstmessage{
-        margin-left: 80px;
-        max-width: 250px;
+        margin-left: 40px;
+        max-width: 260px;
     }
 
-    .firstmessage h1{
-        font-size: 47px;
-    }
-
-    .firstmessage h2{
-        font-size: 20px;
-        margin: 15px 0 15px;
-    }
-
-    .firstmessage p{
-        font-size: 15px;
-    }
-    
     .IconOutline{
-        width: 440px;
-        margin-left: 315px;
+        margin-left: 265px;
+        width: 480px;
     }
 
     .pinkbox{
-        height: 85vh;
-        max-height: 510px;
-        margin-left: 535px;
+        margin-left: 505px;
+        max-height: 550px;
     }
-    
+
     .firstpartimagecolumn{
         margin-left: 740px;
     }
@@ -1367,10 +1229,23 @@ nav ul li a:hover::after{
     .firstpartimagecolumn img{
         width: 90px;
         height: 90px;
-        padding: 6px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 9px;
+        margin-bottom: 9px;
     }
+}
+
+
+@media only screen and (max-width:870px){
+    /*Second Section*/
+
+    .secondpartlargermessage{
+        margin-left: 85px;
+        margin-right: 85px;
+    }
+}
+
+
+@media only screen and (max-width:860px){
 
     /*Third Section*/
 
@@ -1379,53 +1254,45 @@ nav ul li a:hover::after{
         height: 280px;
         padding: 3px;
     }
+ 
+}
 
-    .thirdpartmessage{
-        margin-top: 40px;
-        margin-left: 120px;
-        margin-right: 120px;
-    }   
+
+@media only screen and (max-width:850px){
+    
+    /*First Section*/
+
+    .firstmessage{
+        margin-left: 40px;
+        max-width: 260px;
+    }
+
+    .IconOutline{
+        margin-left: 265px;
+        width: 460px;
+    }
+
+    .pinkbox{
+        margin-left: 490px;
+        max-height: 530px;
+    }
+
+    .firstpartimagecolumn{
+        margin-left: 715px;
+    }
+
+    .firstpartimagecolumn img{
+        width: 90px;
+        height: 90px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
 }
 
 
 @media only screen and (max-width:840px){
-    /*First Section*/
-    
-    .firstmessage{
-        margin-left: 72px;
-        max-width: 280px;
-    }
-
-    .titleverticalbar{
-        width: 13px;
-        height: 105px;
-        margin-left: 37px;
-    }
-
-    .IconOutline{
-        width: 435px;
-        margin-left: 297px;
-    }
-    
-    .pinkbox{
-        height: 80vh;
-        max-height: 500px;
-        margin-left: 515px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 725px;
-    }
-
 
     /*Second Section*/
-
-    .secondpart{
-        margin-top: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 100px; 
-    }
 
     .gallerycontainer1 img{
         width: 195px;
@@ -1434,14 +1301,14 @@ nav ul li a:hover::after{
     }
 
     .gallerycontainer2 img{
-        margin-top: 145px;
+        margin-top: 158px;
         width: 175px;
         height: 175px;
         margin-left: -65px;
     }
 
     .gallerycontainer3 img{
-        margin-top: -45px;
+        margin-top: -28px;
         width: 215px;
         height: 215px;
         margin-left: -83px;
@@ -1480,114 +1347,175 @@ nav ul li a:hover::after{
     .overlay5{
         transform: translate(-70%, -145%);
     }
-    
-    .secondpartmessage{
-        margin-left: 90px;
-        margin-right: 90px;
+
+    .secondpartlargermessage{
+        margin-left: 65px;
+        margin-right: 60px;
     }
 
-
-   
 }
 
 
-@media only screen and (max-width:825px){
-    /*First Section*/
+@media only screen and (max-width:830px){
     
+    /*First Section*/
+
+    .firstmessage{
+        margin-left: 30px;
+        max-width: 260px;
+    }
+
+    .IconOutline{
+        margin-left: 260px;
+        width: 450px;
+    }
+
+    .pinkbox{
+        margin-left: 480px;
+        max-height: 520px;
+    }
+
     .firstpartimagecolumn{
-        margin-left: 715px;
+        margin-left: 700px;
     }
 
     .firstpartimagecolumn img{
         width: 85px;
         height: 85px;
-    }
-
-    
-}
-
-
-@media only screen and (max-width:810px){
-    /*First Section*/
-    
-    .firstpartimagecolumn{
-        margin-left: 710px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 }
 
 
-/*Move the first part and third part message to bottom*/
+/*Layout for smaller screen*/
+/*Fifth part can keep the larger screen layout*/
 
 @media only screen and (max-width:800px){
+    /*Common Elements*/
+
+    .firstpartforlargerscreen, .secondpartforlargerscreen, .thirdpartforlargerscreen, .fourthpartforlargerscreen{
+        display: none;
+    }
+
+    .firstpartforsmallerscreen, .secondpartforsmallerscreen, .thirdpartforsmallerscreen, .fourthpartforsmallerscreen{
+        display: initial;
+    }
+
+    .secondpartsmallermessage h1, .thirdpartsmallermessage h1{
+        font-family: 'Fraunces', serif;
+        font-size: 35px;
+        color: rgb(20, 20, 20);
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin: 10px 0 10px;
+    }
+    
+    .secondpartsmallermessage p, .thirdpartsmallermessage p, .fourthpartsmallermessage p{
+        color: rgb(58, 57, 57);
+        text-align: justify;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    
+    .secondpartredirection, .thirdpartredirection, .fourthpartredirection{
+        letter-spacing: 1px;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration-color: #707070;
+    }
 
     /*Paragraph Spacing*/
 
     .secondpart, .thirdpart, .fifthpart{
-        margin-top: 170px;
+        margin-top: 130px;
     }
 
     /*First Section*/
-    
-    .pinkbox{
-        height: 480px;
-        margin-left: 320px;
+
+    .firstpartforsmallerscreen{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
     }
 
-    .IconOutline{
-        width: 480px;
-        margin-left: 80px;
+    .firstpartimageforsmallerscreen{
+        display: flex;
+        justify-content: center;
     }
 
-    .firstmessage, .titleverticalbar{
-        grid-row: 2/2;
+    .firstpartforsmallerscreen h2{
+        letter-spacing: 5px;
+        font-weight: 600;
+        align-self: center;
+        text-align: center;
+        font-size: 30px;
+        color: #707070;
+        margin: 20px 30px 20px 30px;
     }
 
-    .firstmessage{
-        margin-top: 50px;
-        margin-left: 120px;
-        max-width: initial;
-        margin-right: 70px;
+    .firstpartimageforsmallerscreen img{
+        width: 100%;
+        object-fit: cover;
     }
 
-    .titleverticalbar{
-        width: 15px;
-        height: 75px;
-        margin-left: 80px;
-        margin-top: -2px;
+    .firstpartsmallermessage{
+        align-self: center;
+        text-align: center;
     }
 
-    .firstmessage h1{
-        font-size: 45px;
+    .firstpartsmallermessage h1{
+        font-size: 50px;
+        font-family: sans-serif;
+        color: #575555;
         letter-spacing: 2px;
     }
-
-    .firstmessage h2{
-        font-size: 22px;
-        font-weight: bold;
-        margin: 10px 0 10px;
-    }
-
-    .firstmessage p{
-        font-size: 15px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 600px;
-    }
-
-    .firstpartimagecolumn img{
-        width: 110px;
-        height: 110px;
-        padding: 6px;
-        margin-top: 12px;
-        margin-bottom: 12px;
+    
+    .firstpartsmallermessage p{
+        margin: 20px 60px 0px 60px;
+        font-size: 17px;
+        font-family: Montserrat;
+        color: #707070;
+        font-weight: 300;
     }
 
 
+    /*Second Section*/
+
+    .secondpartsmallerimage img{
+        max-height: 430px;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .secondpartsmallermessage{
+        margin: 40px 120px 0px 120px;
+    }
+
+
+    /*Third Section*/
+
+    .recipe1 img, .recipe3 img{
+        width: 350px;
+        height: 350px;
+        padding: 8px;
+    }
+
+    .thirdpartsmallermessage{
+        margin-top: 30px;
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+    
     /*Fifth Section*/
 
     .fifthpartprofilepic{
-        margin-left: 20px;
+        margin-left: 30px;
     }
     
     .fifthpartprofilepic img{
@@ -1595,20 +1523,16 @@ nav ul li a:hover::after{
         height: 480px;
     }
     
-    .fifthpartmessage{
-        margin-top: 200px;
+    .fifthpartlargermessage{
+        margin-top: 160px;
         margin-left: 0px;
-        margin-right: 20px;
+        margin-right: 30px;
         padding: 40px 40px 40px 0px;
-        border-width: 2px 2px 2px 0px;
+        border-width: 1px 1px 1px 0px;
     }
 
-    .fifthpartmessage h1, .fifthpartmessage p, .fifthpartredirection{
+    .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
         margin-left: 30px;
-    }
-
-    .fifthpartmessage h1{
-        font-size: 35px;
     }
 
     .fifthpartredirection{
@@ -1617,295 +1541,43 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:780px){
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 195px;
-        height: 195px;
-        margin-top: -15px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 150px;
-        width: 175px;
-        height: 175px;
-        margin-left: -70px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 215px;
-        height: 215px;
-        margin-left: -90px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 0px;
-        width: 160px;
-        height: 160px;
-        margin-left: 5px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 140px;
-        width: 190px;
-        height: 190px;
-        margin-left: -80px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -152%);
-    }
-
-    .overlay2{
-        transform: translate(-73%, -138%);
-    }
-
-    .overlay3{
-        transform: translate(-81%, -155%);
-    }
-
-    .overlay4{
-        transform: translate(-47%, -131%);
-    }
-
-    .overlay5{
-        transform: translate(-78%, -145%);
-    }
-
-    .secondpartmessage h1{
-        font-size: 36px;
-    }
-}
-
-
-@media only screen and (max-width:770px){
+@media only screen and (max-width:775px){
     /*First Section*/
-    
-    .firstpartimagecolumn{
-        margin-left: 580px;
+
+    .firstpartsmallermessage h1{
+        font-size: 47px;
+    }
+
+    .firstpartsmallermessage p{
+        margin: 20px 75px 0px 75px;
     }
 }
 
-
-
-@media only screen and (max-width:740px){
-    /*First Section*/
-    
-    .firstpartimagecolumn{
-        margin-left: 565px;
-    }
-
-    .firstpartimagecolumn img{
-        width: 110px;
-        height: 110px;
-        padding: 6px;
-        margin-top: 12px;
-        margin-bottom: 12px;
-    }
-
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 195px;
-        height: 195px;
-        margin-top: -15px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 150px;
-        width: 170px;
-        height: 170px;
-        margin-left: -70px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 215px;
-        height: 215px;
-        margin-left: -90px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 0px;
-        width: 160px;
-        height: 160px;
-        margin-left: 5px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 160px;
-        width: 190px;
-        height: 190px;
-        margin-left: -120px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -152%);
-    }
-
-    .overlay2{
-        transform: translate(-73%, -138%);
-    }
-
-    .overlay3{
-        transform: translate(-81%, -155%);
-    }
-
-    .overlay4{
-        transform: translate(-47%, -131%);
-    }
-
-    .overlay5{
-        transform: translate(-92%, -145%);
-    }
-    
-    .secondpartmessage{
-        margin-left: 70px;
-        margin-right: 70px;
-        margin-top: -10px;
-    }
-
-
-    /*Third Section*/
-
-    .recipe2{
-        display: none;
-    }
-
-    .recipe1 img, .recipe3 img{
-        width: 350px;
-        height: 350px;
-        padding: 8px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 40px;
-        margin-left: 100px;
-        margin-right: 100px;
-    } 
-}
 
 
 @media only screen and (max-width:700px){
     /*First Section*/
 
-    .pinkbox{
-        height: 460px;
-        margin-left: 285px;
+    .firstpartforsmallerscreen h2{
+        font-size: 28px;
     }
 
-    .IconOutline{
-        width: 450px;
-        margin-left: 60px;
+    .firstpartsmallermessage h1{
+        font-size: 40px;
     }
 
-    .titleverticalbar{
-        width: 15px;
-        height: 73px;
-        margin-left: 70px;
-        margin-top: -2px;
+    .firstpartsmallermessage p{
+        margin: 20px 50px 0px 50px;
     }
 
-    .firstmessage{
-        margin-top: 50px;
-        margin-left: 110px;
-        max-width: initial;
-        margin-right: 70px;
+    /*Second Section*/
+
+    .secondpartsmallerimage img{
+        max-height: 390px;
     }
 
-    .firstmessage h1{
-        font-size: 45px;
-        letter-spacing: 2px;
-    }
-
-    .firstmessage h2{
-        font-size: 22px;
-        font-weight: 500;
-        margin: 10px 0 10px;
-    }
-
-    .firstmessage p{
-        font-size: 15px;
-    }
-
-    .firstpartimagecolumn{
-        margin-left: 530px;
-    }
-
-    .firstpartimagecolumn img{
-        width: 110px;
-        height: 110px;
-        padding: 6px;
-        margin-top: 12px;
-        margin-bottom: 12px;
-    }
-
-     /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 195px;
-        height: 195px;
-        margin-top: -15px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 155px;
-        width: 170px;
-        height: 170px;
-        margin-left: -70px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 215px;
-        height: 215px;
-        margin-left: -95px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 0px;
-        width: 160px;
-        height: 160px;
-        margin-left: 5px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 165px;
-        width: 190px;
-        height: 190px;
-        margin-left: -150px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -152%);
-    }
-
-    .overlay2{
-        transform: translate(-73%, -138%);
-    }
-
-    .overlay3{
-        transform: translate(-81%, -155%);
-    }
-
-    .overlay4{
-        transform: translate(-47%, -131%);
-    }
-
-    .overlay5{
-        transform: translate(-100%, -143%);
-    }
-    
-    .secondpartmessage{
-        margin-left: 70px;
-        margin-right: 70px;
-        margin-top: -10px;
-    }
-
-    .secondpartmessage h1{
-        font-size: 34px;
+    .secondpartsmallermessage{
+        margin: 40px 100px 0px 100px;
     }
 
     /*Fifth Section*/
@@ -1919,289 +1591,44 @@ nav ul li a:hover::after{
         height: 480px;
     }
     
-    .fifthpartmessage{
-        margin-top: 180px;
-        margin-left: 0px;
+    .fifthpartlargermessage{
+        margin-top: 160px;
         margin-right: 20px;
         padding: 30px 40px 30px 0px;
-        border-width: 2px 2px 2px 0px;
-    }
-
-
-}
-
-
-@media only screen and (max-width:680px){
-    /*First Section*/
-
-    .firstpartimagecolumn{
-        margin-left: 520px;
-    }
-
-    .titleverticalbar{
-        width: 15px;
-        height: 73px;
-        margin-left: 65px;
-        margin-top: -1px;
-    }
-
-    .firstmessage{
-        margin-top: 50px;
-        margin-left: 105px;
-        margin-right: 70px;
-    }
-
-    .firstmessage h1{
-        font-size: 45px;
-        letter-spacing: 1px;
-    }
-
-    .firstmessage h2{
-        font-size: 21px;
-        font-weight: 500;
-        margin: 10px 0 10px;
     }
 
 }
 
 
 @media only screen and (max-width:660px){
-    /*First Section*/
-
-    .firstpartimagecolumn{
-        margin-left: 510px;
-    }
-
-    .titleverticalbar{
-        width: 15px;
-        height: 72px;
-        margin-left: 60px;
-        margin-top: -1px;
-    }
-
-    .firstmessage{
-        margin-top: 50px;
-        margin-left: 100px;
-        margin-right: 70px;
-    }
-
-    .firstmessage h1{
-        font-size: 45px;
-        letter-spacing: 1px;
-    }
-
-    .firstmessage h2{
-        font-size: 19px;
-        font-weight: 400;
-        margin: 10px 0 10px;
-    }
-
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 195px;
-        height: 195px;
-        margin-top: -15px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 155px;
-        width: 170px;
-        height: 170px;
-        margin-left: -70px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 215px;
-        height: 215px;
-        margin-left: -95px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 0px;
-        width: 160px;
-        height: 160px;
-        margin-left: 5px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 165px;
-        width: 190px;
-        height: 190px;
-        margin-left: -220px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -152%);
-    }
-
-    .overlay2{
-        transform: translate(-75%, -138%);
-    }
-
-    .overlay3{
-        transform: translate(-83%, -155%);
-    }
-
-    .overlay4{
-        transform: translate(-47%, -131%);
-    }
-
-    .overlay5{
-        transform: translate(-137%, -143%);
-    }
-    
-    .secondpartmessage{
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-top: -10px;
-    }
-
-    .secondpartmessage h1{
-        font-size: 33px;
-    }
-    
-    /*Fifth Section*/
-
-    .fifthpartprofilepic{
-        margin-left: 0px;
-    }
-    
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 450px;
-    }
-    
-    .fifthpartmessage{
-        margin-top: 150px;
-        margin-left: 0px;
-        margin-right: 15px;
-        padding: 30px 40px 30px 0px;
-        border-width: 2px 2px 2px 0px;
-    }
-
-    .fifthpartmessage h1, .fifthpartmessage p, .fifthpartredirection{
-        margin-left: 26px;
-    }
-
-    .fifthpartmessage h1{
-        font-size: 35px;
-    }
-}
-
-
-@media only screen and (max-width:640px){
-    /*First Section*/
-
-    .pinkbox{
-        height: 450px;
-        margin-left: 265px;
-    }
-
-    .IconOutline{
-        width: 440px;
-        margin-left: 50px;
-    }
-    
-    .firstpartimagecolumn{
-        margin-left: 490px;
-    }
-
-    .firstpartimagecolumn img{
-        width: 100px;
-        height: 100px;
-    }
-
-    .firstmessage{
-        margin-right: 50px;
+    .secondpartsmallerimage img{
+        max-height: 370px;
     }
 
     /*Third Section*/
 
-    .recipe1 img, .recipe3 img{
-        width: 330px;
-        height: 330px;
-        padding: 5px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 40px;
-        margin-left: 70px;
-        margin-right: 70px;
+    .thirdpartsmallermessage{
+        margin-left: 80px;
+        margin-right: 80px;
     } 
-}
-
-
-@media only screen and (max-width:620px){
-    /*First Section*/
-
-    .firstpartimagecolumn{
-        margin-left: 485px;
-    }
-
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 185px;
-        height: 185px;
-        margin-top: 0px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 160px;
-        width: 170px;
-        height: 170px;
-        margin-left: -70px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 215px;
-        height: 215px;
-        margin-left: -95px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 35px;
-        width: 150px;
-        height: 150px;
-        margin-left: 0px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 180px;
-        width: 190px;
-        height: 190px;
-        margin-left: -230px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -147%);
-    }
-
-    .overlay2{
-        transform: translate(-75%, -138%);
-    }
-
-    .overlay3{
-        transform: translate(-83%, -155%);
-    }
-
-    .overlay4{
-        transform: translate(-49%, -126%);
-    }
-
-    .overlay5{
-        transform: translate(-143%, -143%);
+    
+    /*Fifth Section*/
+    
+    .fifthpartprofilepic img{
+        height: 450px;
     }
     
-    .secondpartmessage{
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 0px;
+    .fifthpartlargermessage{
+        margin-top: 150px;
+        margin-right: 15px;
+        padding: 30px 40px 30px 0px;
     }
-    
+
+    .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
+        margin-left: 26px;
+    }
 }
 
 
@@ -2220,8 +1647,10 @@ nav ul li a:hover::after{
     
     nav ul{
         width: 100%;
-        background: linear-gradient(to left, rgb(194, 197, 185), rgb(102, 97, 73));
+        background: white;
+        opacity: 0.98;
         position: absolute;
+        align-self: center;
         top: 100%;
         height: 100vh;
         right: 0;
@@ -2236,14 +1665,15 @@ nav ul li a:hover::after{
 
     nav ul li a{
         background-color: transparent;
-        color: #fff;
-        font-size: 16px;
+        color: rgb(20, 20, 20);
+        font-size: 18px;
         font-family: "Montserrat";
-        letter-spacing: 1px;
+        letter-spacing: 2px;
+        font-weight: 700;
     }
 
     nav ul li a:hover{
-        color:white;
+        color:black;
     }
 
     nav ul li a::after{
@@ -2254,7 +1684,7 @@ nav ul li a:hover::after{
         bottom: -5px;
         left: 50%;
         transform: translateX(-50%);
-        background: white;
+        background: black;
         transition: width 0.5s;
     }
 
@@ -2284,507 +1714,235 @@ nav ul li a:hover::after{
 
     /*First Section*/
 
-    .pinkbox{
-        height: 405px;
-        margin-left: 245px;
+    .firstpartforsmallerscreen h2{
+        font-size: 23px;
     }
 
-    .IconOutline{
-        width: 410px;
-        margin-left: 40px;
-    }
-    
-    .firstpartimagecolumn{
-        margin-left: 455px;
+    .firstpartsmallermessage h1{
+        font-size: 35px;
     }
 
-    .firstpartimagecolumn img{
-        width: 90px;
-        height: 90px;
-    }
-
-    .titleverticalbar{
-        width: 15px;
-        height: 95px;
-        margin-left: 70px;
-        margin-top: 0px;
-    }
-
-    .firstmessage{
-        margin-top: 50px;
-        margin-left: 110px;
-        margin-right: 40px;
-    }
-
-    .firstmessage h1{
-        font-size: 43px;
-        letter-spacing: 1px;
-    }
-
-    .firstmessage h2{
-        font-size: 20px;
-        font-weight: 500;
-        margin: 10px 0 10px;
-    }
-
-    /*Second Section*/
-
-    .secondpartmessage{
-        margin-left: 70px;
-        margin-right: 70px;
-        margin-top： -20px;
-    }
-
-    .secondpartmessage h1{
-        display: none;
-    }
-
-    .secondpartmessage h2{
-        display: initial;
-        font-size: 40px;
-        color: #575555;
-        font-weight: 900;
-        letter-spacing: 2px;
-        margin: 10px 0 10px;
+    .firstpartsmallermessage p{
+        margin: 20px 30px 0px 30px;
+        font-size: 16px;
     }
 
     /*Fifth Section*/
 
-    .fifthpart{
+    .fifthpartforlargerscreen{
         display: block;
     }
 
     .fifthpartprofilepic{
-        margin-left: 40px;
-        margin-right: 40px;
+        display: none;
     }
 
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 470px;
-    }
-
-    .fifthpartmessage{
-        margin-top: -20px;
+    .fifthpartsmallerprofilepic{
         margin-left: 60px;
+        margin-right: 60px;
+        display: block;
+    }
+
+    .fifthpartsmallerprofilepic img{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .fifthpartlargermessage{
+        margin-top: -20px;
+        margin-left: 80px;
         margin-right: 100px;
-        padding: 30px 70px 30px 50px;
+        padding: 30px 50px 30px 50px;
         border-width: 0px 1px 1px 1px;
     }
 
-    .fifthpartmessage h1{
-        font-size: 35px;
+    .fifthpartlargermessage h1{
         margin-left: 0px;
     }
 
-    .fifthpartmessage p{
+    .fifthpartlargermessage p{
         margin-top: 15px;
         margin-bottom: 25px;
         margin-left: 0px;
     }
 
     .fifthpartredirection{
-        font-size: 18px;
         margin-left: 0px;
     }
 
 }
 
-
-@media only screen and (max-width:580px){
-    /*First Section*/
-    
-    .titleverticalbar{
-        width: 15px;
-        height: 95px;
-        margin-left: 60px;
-        margin-top: -20px;
-    }
-
-    .firstmessage{
-        margin-top: 50px;
-        margin-left: 100px;
-        margin-right: 55px;
-    }
-    
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 185px;
-        height: 185px;
-        margin-top: 20px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 180px;
-        width: 170px;
-        height: 170px;
-        margin-left: -70px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 200px;
-        height: 200px;
-        margin-left: -103px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 65px;
-        width: 150px;
-        height: 150px;
-        margin-left: -15px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 220px;
-        width: 190px;
-        height: 190px;
-        margin-left: -228px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -147%);
-    }
-
-    .overlay2{
-        transform: translate(-75%, -138%);
-    }
-
-    .overlay3{
-        transform: translate(-85%, -150%);
-    }
-
-    .overlay4{
-        transform: translate(-55%, -126%);
-    }
-
-    .overlay5{
-        transform: translate(-141%, -143%);
-    }
-    
-}
 
 
 @media only screen and (max-width:560px){
     /*First Section*/
 
-    .pinkbox{
-        height: 405px;
-        margin-left: 232px;
+    .firstpartforsmallerscreen h2{
+        font-size: 21px;
+        margin: 15px;
     }
 
-    .IconOutline{
-        width: 400px;
-        margin-left: 35px;
-    }
-    
-    .firstpartimagecolumn{
-        margin-left: 435px;
+    .firstpartsmallermessage h1{
+        font-size: 32px;
     }
 
-    .firstpartimagecolumn img{
-        width: 90px;
-        height: 90px;
-    }
-
-    /*Fifth Section*/
-
-    .fifthpartprofilepic{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 460px;
-    }
-
-    .fifthpartmessage{
-        margin-top: -20px;
-        margin-left: 55px;
-        margin-right: 90px;
-        padding: 30px 40px 30px 40px;
-        border-width: 0px 1px 1px 1px;
-    }
-
-    .fifthpartmessage h1{
-        font-size: 33px;
-        margin-left: 0px;
-    }
-
-    .fifthpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 15px;
-        margin-left: 0px;
-    }
-
-    .fifthpartredirection{
-        font-size: 18px;
-        margin-left: 0px;
-    }
-}
-
-
-@media only screen and (max-width:540px){
-     /*First Section*/
-
-     .pinkbox{
-        height: 390px;
-        margin-left: 218px;
-    }
-
-    .IconOutline{
-        width: 380px;
-        margin-left: 30px;
-    }
-    
-    .firstpartimagecolumn{
-        margin-left: 410px;
+    .firstpartsmallermessage p{
+        margin: 20px 30px 0px 30px;
+        font-size: 15px;
     }
 
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 175px;
-        height: 175px;
-        margin-top: 45px;
+    .secondpartsmallerimage img{
+        max-height: 330px;
     }
 
-    .gallerycontainer2 img{
-        margin-top: 200px;
-        width: 160px;
-        height: 160px;
-        margin-left: -70px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 190px;
-        height: 190px;
-        margin-left: -103px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 75px;
-        width: 150px;
-        height: 150px;
-        margin-left: -25px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 230px;
-        width: 180px;
-        height: 180px;
-        margin-left: -208px;
-    }
-
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 23px;
-        letter-spacing: 2px;
-        font-weight: 800;
-        padding: 20px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -147%);
-    }
-
-    .overlay2{
-        transform: translate(-75%, -138%);
-    }
-
-    .overlay3{
-        transform: translate(-87%, -150%);
-    }
-
-    .overlay4{
-        transform: translate(-58%, -129%);
-    }
-
-    .overlay5{
-        transform: translate(-135%, -143%);
-    }
-    
-    .secondpartmessage{
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 0px;
-    }
-
-    .secondpartmessage h1{
-        font-size: 33px;
-    }
-
-    .secondpartmessage p{
-        font-size: 15px;
-    }
-
-    /*Third Section*/
-
-    .recipe1 img, .recipe3 img{
-        width: 300px;
-        height: 300px;
-        padding: 3px;
-    }
-
-    .thirdpartmessage{
-        margin-top: 40px;
-        margin-left: 50px;
-        margin-right: 50px;
-    } 
-
-    .thirdpartmessage h1{
-        font-size: 33px;
-    }
-
-    .thirdpartmessage p{
-        font-size: 15px;
+    .secondpartsmallermessage{
+        margin: 40px 80px 0px 80px;
     }
 
     /*Fifth Section*/
 
-    .fifthpartmessage p{
-        font-size: 15px;
+    .fifthpartsmallerprofilepic{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .fifthpartsmallerprofilepic img{
+        height: 430px;
+    }
+
+    .fifthpartlargermessage{
+        margin-top: -20px;
+        margin-left: 70px;
+        margin-right: 90px;
+        padding: 30px 40px 30px 40px;
     }
 }
 
 
-
 @media only screen and (max-width:520px){
-    /*First Section*/
-
-    .firstpart{
-        display: initial;
-    }
-
-    .pinkbox, .IconOutline, .firstpartimagecolumn{
-        display: none;
-    }
-
-    .firstpartimageforsmallerscreen{
-        display: block;
-        margin-left: 32px;
-        margin-right: 32px;
-    }
-
-    .firstpartimageforsmallerscreen img{
-        width: 100%;
-        max-height: 480px;
-        object-fit: cover;
-    }
-
-    .titleverticalbar{
-        display: none;
-    }
-
-    .firstmessage{
-        margin-right: 18px;
-        margin-left: 18px;
-        margin-top: -75px;
-        padding: 120px 50px 40px 50px;
-        border-width: 1px 1px 1px 1px;
-        border-style: solid;
-    }
-
-
     /*Third Section*/
 
     .recipe3{
         display: none;
     }
-
-    .thirdpartpictures{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
     
     .recipe1 img{
         width: 100%;
-        height: 450px;
+        height: 420px;
     }
 
-    
+    .thirdpartsmallermessage{
+        margin: 20px 70px 0px 70px;
+    }
+
+    /*Fifth Section*/
+
+    .fifthpartsmallerprofilepic{
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .fifthpartsmallerprofilepic img{
+        height: 420px;
+    }
+
+    .fifthpartlargermessage{
+        margin-top: -20px;
+        margin-left: 65px;
+        margin-right: 90px;
+        padding: 30px 35px 30px 35px;
+    }
 }
 
 
 @media only screen and (max-width:500px){
+    /*Common Elements*/
 
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 170px;
-        height: 170px;
-        margin-top: 40px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 205px;
-        width: 150px;
-        height: 150px;
-        margin-left: -90px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 190px;
-        height: 190px;
-        margin-left: -70px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 115px;
-        width: 145px;
-        height: 145px;
-        margin-left: -60px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 260px;
-        width: 180px;
-        height: 180px;
-        margin-left: -210px;
-    }
-
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 23px;
-        letter-spacing: 2px;
-        font-weight: 800;
-        padding: 20px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -143%);
-    }
-
-    .overlay2{
-        transform: translate(-82%, -130%);
-    }
-
-    .overlay3{
-        transform: translate(-75%, -150%);
-    }
-
-    .overlay4{
-        transform: translate(-71%, -129%);
-    }
-
-    .overlay5{
-        transform: translate(-137%, -143%);
+    .secondpartsmallermessage h1, .thirdpartsmallermessage h1, .fifthpartlargermessage h1{
+        font-size: 32px;
     }
     
-    .secondpartmessage{
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-top: -20px;
+    .secondpartsmallermessage p, .thirdpartsmallermessage p, .fourthpartsmallermessage p, .fifthpartlargermessage p{
+        font-size: 15px;
+    }
+    
+    .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
+        font-size: 15px;
     }
 
-    .secondpartredirection{
-        margin-top: 12px;
-        letter-spacing: 1px;
-        font-size: 17px;
-        font-weight: 900;
+    /*First Section, layout for mobile*/
+
+    .firstpartforsmallerscreen{
+        display: none;
     }
+
+    .firstpartformobile{
+        display: initial;
+    }
+
+    .firstpartmobilemessage{
+        margin: 50px 40px 30px 40px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .firstpartmobilemessage h1{
+        font-size: 40px;
+        font-family: sans-serif;
+        color: #575555;
+        letter-spacing: 2px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .firstpartmobilemessage h2{
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #707070;
+        margin: 20px 30px 20px 30px;
+    }
+
+    .firstpartformobilecontent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .firstpartformobilecontent p1{
+        align-self: center;
+        text-align: center;
+        margin: 20px;
+        border-style: solid;
+        padding: 50px 30px 50px 30px;
+        border-width: 1px 0px 1px 1px;
+        border-color: rgb(177, 175, 175);
+        color: #707070;
+    }
+
+    .firstpartformobilecontent p2{
+        align-self: center;
+        text-align: center;
+        margin: 20px;
+        border-style: solid;
+        padding: 50px 40px 50px 40px;
+        border-width: 1px 1px 1px 0px;
+        border-color: rgb(177, 175, 175);
+        color: #707070;
+    }
+    
+    /*Second Section*/
+
+    .secondpartsmallerimage img{
+        max-height: 300px;
+    }
+
+    .secondpartsmallermessage{
+        margin: 40px 60px 0px 60px;
+    }
+
 
     /*Third Section*/
 
@@ -2792,419 +1950,199 @@ nav ul li a:hover::after{
         margin-top: 150px;
     }
 
+}
+
+
+@media only screen and (max-width:480px){
+    /*Third Section*/
+
+    .recipe1 img{
+        height: 400px;
+    }
+
+    .thirdpartsmallermessage{
+        margin: 20px 60px 0px 60px;
+    }
+}
+
+
+@media only screen and (max-width:470px){
+    
+    /*First Section*/
+
+    .firstpartmobilemessage h2{
+        margin: 20px 10px 20px 10px;
+    }
+
+    .firstpartformobilecontent p1{
+        margin: 20px;
+        padding: 50px 20px 50px 20px;
+    }
+
+    .firstpartformobilecontent p2{
+        margin: 20px;
+        padding: 50px 30px 50px 30px;
+    }
+
     /*Fifth Section*/
 
-    .fifthpartprofilepic{
+    .fifthpartsmallerprofilepic{
         margin-left: 30px;
         margin-right: 30px;
     }
 
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 430px;
+    .fifthpartsmallerprofilepic img{
+        height: 400px;
     }
 
-    .fifthpartmessage{
+    .fifthpartlargermessage{
         margin-top: -20px;
         margin-left: 50px;
         margin-right: 70px;
-        padding: 25px 35px 25px 35px;
-        border-width: 0px 1px 1px 1px;
+        padding: 30px 35px 30px 35px;
     }
-
-    .fifthpartmessage h1{
-        font-size: 31px;
-        margin-left: 0px;
-    }
-
-    .fifthpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 15px;
-        margin-left: 0px;
-    }
-
-    .fifthpartredirection{
-        font-size: 17px;
-    }
-}
+} 
 
 
-@media only screen and (max-width:490px){
-    /*First Section*/
-
-    .firstpartimageforsmallerscreen{
-        margin-left: 32px;
-        margin-right: 32px;
-    }
-
-    .firstpartimageforsmallerscreen img{
-        width: 100%;
-        max-height: 480px;
-    }
-
-    .firstmessage{
-        margin-right: 18px;
-        margin-left: 18px;
-        margin-top: -75px;
-        padding: 110px 40px 40px 45px;
-        border-width: 1px 1px 1px 1px;
-    }
-}
-
-   
 @media only screen and (max-width:460px){
+
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 160px;
-        height: 160px;
-        margin-top: 40px;
+    .secondpartsmallerimage img{
+        width: 100%;
     }
 
-    .gallerycontainer2 img{
-        margin-top: 195px;
-        width: 145px;
-        height: 145px;
-        margin-left: -95px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 180px;
-        height: 180px;
-        margin-left: -60px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 120px;
-        width: 135px;
-        height: 135px;
-        margin-left: -75px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 260px;
-        width: 180px;
-        height: 180px;
-        margin-left: -195px;
-    }
-
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 22px;
-        letter-spacing: 1px;
-        font-weight: 800;
-        padding: 20px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -140%);
-    }
-
-    .overlay2{
-        transform: translate(-88%, -130%);
-    }
-
-    .overlay3{
-        transform: translate(-74%, -145%);
-    }
-
-    .overlay4{
-        transform: translate(-78%, -123%);
-    }
-
-    .overlay5{
-        transform: translate(-132%, -143%);
-    }
-    
-    .secondpartmessage{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .secondpartmessage p{
-        font-size: 15px;
-    }
-
-    /*Third Section*/
-
-    .thirdpartmessage{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .thirdpartmessage h1{
-        font-size: 32px;
-    }
-
-    .thirdpartmessage p{
-        font-size: 15px;
-    }
-
-    
-}
-
-
-@media only screen and (max-width:450px){
-    /*First Section*/
-
-    .firstmessage h1{
-        font-size: 40px;
-    }
-
-    .firstmessage{
-        margin-right: 18px;
-        margin-left: 18px;
-        margin-top: -75px;
-        padding: 110px 45px 40px 50px;
-        border-width: 1px 1px 1px 1px;
+    .secondpartsmallermessage{
+        margin: 40px 60px 0px 60px;
     }
 }
 
 
 @media only screen and (max-width:440px){
+
+    /*First Section*/
+
+    .firstpartmobilemessage h2{
+        margin: 10px 10px 40px 10px;
+    }
+
+    .firstpartformobilecontent p1{
+        margin: 17px;
+        padding: 40px 20px 40px 20px;
+    }
+
+    .firstpartformobilecontent p2{
+        margin: 17px;
+        padding: 40px 25px 40px 25px;
+    }
+
     /*Third Section*/
 
-    .thirdpartpictures img{
-        height: 400px;
+    .recipe1 img{
+        height: 360px;
     }
+
+    .thirdpartsmallermessage{
+        margin: 20px 65px 0px 65px;
+    }
+
+}
+
+
+@media only screen and (max-width:430px){
 
     /*Fifth Section*/
 
-    .fifthpartprofilepic{
+    .fifthpartsmallerprofilepic{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .fifthpartsmallerprofilepic img{
+        height: 390px;
+    }
+
+    .fifthpartlargermessage{
         margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 410px;
-    }
-
-    .fifthpartmessage{
-        margin-top: -20px;
-        margin-left: 40px;
-        margin-right: 60px;
-        padding: 20px 30px 20px 30px;
-        border-width: 0px 1px 1px 1px;
-    }
-
-    .fifthpartmessage h1{
-        font-size: 30px;
-    }
-
-    .fifthpartmessage p{
-        margin-top: 10px;
-        margin-bottom: 13px;
-    }
-
-    .fifthpartredirection{
-        font-size: 17px;
+        margin-right: 50px;
+        padding: 30px 35px 30px 35px;
     }
 }
 
 
 @media only screen and (max-width:420px){
-    /*First Section*/
 
-    .firstmessage h1{
-        font-size: 38px;
+    /*Common Elements*/
+
+    .secondpartsmallermessage h1, .thirdpartsmallermessage h1, .fifthpartlargermessage h1{
+        font-size: 32px;
+    }
+    
+    .secondpartsmallermessage p, .thirdpartsmallermessage p, .fourthpartsmallermessage p, .fifthpartlargermessage p{
+        font-size: 14px;
+    }
+    
+    .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
+        font-size: 14px;
     }
 
-    .firstmessage{
-        margin-right: 18px;
-        margin-left: 18px;
-        margin-top: -75px;
-        padding: 100px 35px 40px 42px;
-        border-width: 1px 1px 1px 1px;
+    /*First Section*/
+
+    .firstpartmobilemessage h2{
+        margin: 10px 0px 40px 0px;
+        font-size: 18px;
+    }
+
+    .firstpartformobilecontent p1{
+        margin: 15px;
+        padding: 45px 25px 45px 25px;
+        font-size: 14px;
+    }
+
+    .firstpartformobilecontent p2{
+        margin: 15px;
+        padding: 40px 33px 40px 33px;
+        font-size: 14px;
     }
 
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 160px;
-        height: 160px;
-        margin-top: 30px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 190px;
-        width: 140px;
-        height: 140px;
-        margin-left: -110px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 180px;
-        height: 180px;
-        margin-left: -35px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 130px;
-        width: 130px;
-        height: 130px;
-        margin-left: -95px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 260px;
-        width: 170px;
-        height: 170px;
-        margin-left: -190px;
-    }
-
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 22px;
-        letter-spacing: 1px;
-        font-weight: 800;
-        padding: 20px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -140%);
-    }
-
-    .overlay2{
-        transform: translate(-93%, -127%);
-    }
-
-    .overlay3{
-        transform: translate(-64%, -145%);
-    }
-
-    .overlay4{
-        transform: translate(-87%, -121%);
-    }
-
-    .overlay5{
-        transform: translate(-133%, -141%);
-    }
-
-    .secondpartmessage p{
-        font-size: 15px;
+    .secondpartsmallermessage{
+        margin: 40px 40px 0px 40px;
     }
 }
-
 
 
 @media only screen and (max-width:400px){
     /*Paragraph Spacing*/
 
     .secondpart, .thirdpart, .fifthpart{
-        margin-top: 100px;
+        margin-top: 140px;
     }
 
     /*First Section*/
 
-    .firstmessage h1{
-        font-size: 35px;
+    .firstpartformobilecontent p1{
+        margin: 15px;
+        padding: 35px 15px 35px 15px;
+        font-size: 14px;
     }
 
-    .firstmessage h2{
-        font-size: 18px;
-    }
-
-    .firstmessage{
-        margin-right: 18px;
-        margin-left: 18px;
-        margin-top: -35px;
-        padding: 55px 30px 30px 40px;
-        border-width: 1px 1px 1px 1px;
-    }
-
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 155px;
-        height: 155px;
-        margin-top: 20px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 180px;
-        width: 140px;
-        height: 140px;
-        margin-left: -115px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -45px;
-        width: 170px;
-        height: 170px;
-        margin-left: -30px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 126px;
-        width: 130px;
-        height: 130px;
-        margin-left: -105px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 257px;
-        width: 165px;
-        height: 165px;
-        margin-left: -183px;
-    }
-
-    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-        font-size: 22px;
-        letter-spacing: 1px;
-        font-weight: 800;
-        padding: 20px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -136%);
-    }
-
-    .overlay2{
-        transform: translate(-96%, -127%);
-    }
-
-    .overlay3{
-        transform: translate(-62%, -140%);
-    }
-
-    .overlay4{
-        transform: translate(-90%, -121%);
-    }
-
-    .overlay5{
-        transform: translate(-129%, -138%);
-    }
-    
-    .secondpartmessage{
-        margin-left: 35px;
-        margin-right: 35px;
+    .firstpartformobilecontent p2{
+        margin: 15px;
+        padding: 35px 25px 35px 25px;
+        font-size: 14px;
     }
 
     /*Third Section*/
 
-    .thirdpartmessage{
-        margin-top: 20px;
+    .recipe1 img{
+        height: 350px;
     }
+
+    .thirdpartsmallermessage{
+        margin: 20px 50px 0px 50px;
+    }
+    
 }
 
-
-@media only screen and (max-width:386px){
-    /*First Section*/
-
-    .firstmessage h1{
-        font-size: 33px;
-    }
-
-    .firstmessage h2{
-        font-size: 18px;
-    }
-
-    .firstmessage{
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-top: -35px;
-        padding: 60px 35px 30px 50px;
-        border-width: 1px 1px 1px 1px;
-    }
-}
