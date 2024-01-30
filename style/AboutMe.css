@@ -102,16 +102,14 @@ nav ul li a:hover::after{
 }
 
 .photodisplay img{
-    width: 100%;
+    width: 85%;
     height: 82vh;
     max-height: 600px;
     object-fit: cover;
 }
 
 .myintroduction{
-    margin-top: 110px;
-    margin-left: 0px;
-    margin-right: 100px;
+    margin: 110px 100px 0px -50px;
     align-items: center;
     padding: 70px 100px 70px 20px;
     border-style: solid;
@@ -130,9 +128,7 @@ nav ul li a:hover::after{
 .myintroduction p{
     color: #707070;
     text-align: justify;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    margin-left: 50px;
+    margin: 15px 0px 25px 50px;
 }
 
 .IGContact{
@@ -186,6 +182,13 @@ nav ul li a:hover::after{
         border-style: solid;
         border-width: 1px 1px 1px 0px;
     }
+
+    .photodisplay img{
+        width: 95%;
+        height: 82vh;
+        max-height: 600px;
+        object-fit: cover;
+    }
 }
 
 
@@ -202,6 +205,33 @@ nav ul li a:hover::after{
         padding: 70px 80px 70px 15px;
         border-style: solid;
         border-width: 1px 1px 1px 0px;
+    }
+
+    .photodisplay img{
+        width: 100%;
+        height: 80vh;
+        max-height: 600px;
+        object-fit: cover;
+    }
+}
+
+
+@media only screen and (max-width:1200px){
+
+    .photodisplay img{
+        width: 100%;
+        height: 80vh;
+        max-height: 550px;
+        object-fit: cover;
+    }
+
+    .myintroduction{
+        margin: 110px 90px 0px 0px;
+        padding: 60px 80px 60px 15px;
+    }
+
+    .myintroduction h1{
+        font-size: 36px;
     }
 }
 
@@ -268,7 +298,7 @@ nav ul li a:hover::after{
     }
 
     .myintroduction h1{
-        font-size: 35px;
+        font-size: 33px;
     }
 }
 
@@ -532,21 +562,23 @@ nav ul li a:hover::after{
         width: 12%;
         max-width: 50px;
         margin-left: 20px;
-        margin-top: 7px;
+        margin-top: 10px;
     }
-    
+
     nav{
         text-align: left;
     }
-
+    
     nav ul{
         width: 100%;
-        background: linear-gradient(to left, rgb(194, 197, 185), rgb(102, 97, 73));
+        background: white;
+        opacity: 0.98;
         position: absolute;
+        align-self: center;
         top: 100%;
         height: 100vh;
         right: 0;
-        z-index: 9999999;
+        z-index: 999;
     }
 
     nav ul li{
@@ -557,14 +589,15 @@ nav ul li a:hover::after{
 
     nav ul li a{
         background-color: transparent;
-        color: #fff;
-        font-size: 16px;
+        color: rgb(20, 20, 20);
+        font-size: 18px;
         font-family: "Montserrat";
-        letter-spacing: 1px;
+        letter-spacing: 2px;
+        font-weight: 700;
     }
 
     nav ul li a:hover{
-        color:white;
+        color:black;
     }
 
     nav ul li a::after{
@@ -575,7 +608,7 @@ nav ul li a:hover::after{
         bottom: -5px;
         left: 50%;
         transform: translateX(-50%);
-        background: white;
+        background: black;
         transition: width 0.5s;
     }
 
