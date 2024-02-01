@@ -5,20 +5,6 @@
     box-sizing: border-box;
 }
 
-
-/* Font choices
-
-font-family: 'DM Serif Display', serif;
-font-family: 'Fraunces', serif;
-font-family: 'Inclusive Sans', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-*/
-
-
 /*headings section*/
 
 .headingsection{
@@ -233,9 +219,6 @@ nav ul li a:hover::after{
     object-fit: cover;
     object-position: 10% 75%;
 }
-
-
-
 
 /*copyright*/
 
@@ -723,10 +706,10 @@ nav ul li a:hover::after{
     nav ul li a{
         background-color: transparent;
         color: rgb(20, 20, 20);
-        font-size: 18px;
-        font-family: "Montserrat";
-        letter-spacing: 2px;
-        font-weight: 700;
+        font-size: 16px;
+        margin-left: 10px;
+        letter-spacing: 3px;
+        font-weight: 500;
     }
 
     nav ul li a:hover{
