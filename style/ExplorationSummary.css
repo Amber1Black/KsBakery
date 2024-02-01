@@ -1,0 +1,957 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Font choices
+
+font-family: 'DM Serif Display', serif;
+font-family: 'Fraunces', serif;
+font-family: 'Inclusive Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
+/*headings section*/
+
+.headingsection{
+    height: 88%;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.logo{
+    width: 20%;
+    min-width: 65px;
+    max-width: 70px;
+    margin-left: 70px;
+    margin-top: 14px;
+}
+
+.menu-icon{
+    width: 15%;
+    min-width: 60px;
+    max-width: 90px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    padding-right: 5%;
+    background-color: white;
+}
+
+nav ul{
+    background-color: white;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 2em;
+    background-color: white;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 14px;
+    background-color: white;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: rgb(99, 99, 99);
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(107, 107, 107);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+/*Content*/
+
+.topdisplayforsmallerscreen, .topdisplayformobile, .contentformobile{
+    display: none;
+}
+
+.topdisplay{
+    margin: 50px 20px 0px 20px;
+    overflow-x: hidden;
+}
+
+.imagesdisplayrow1, .imagesdisplayrow2{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    justify-content: center;
+}
+
+.imagedisplay1, .imagedisplay2, .imagedisplay3, .imagedisplay4, .imagedisplay5{
+    width: 100%;
+    object-fit: cover;
+}
+
+.topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(58, 57, 57);
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-style: solid;
+}
+
+.topdisplay p1{
+    border-width: 1px 0px 0px 0px;
+    padding: 90px 0px 90px 0px;
+}
+
+.topdisplay p2{
+    border-width: 1px 0px 0px 0px;
+    padding: 90px 0px 90px 0px;
+}
+
+.topdisplay p3{
+    margin: 0px;
+    border-width: 0px 0px 1px 1px;
+    padding: 90px 40px 90px 40px;
+}
+
+.topdisplay p4{
+    border-width: 0px 0px 1px 0px;
+    padding: 90px 0px 90px 0px;
+}
+
+.topdisplay p5{
+    margin: 0px;
+    border-width: 0px 1px 1px 0px;
+    padding: 90px 0px 90px 0px;
+}
+
+.Topmessage{
+    margin: 80px 200px 30px 200px;
+}
+
+.Topmessage h1{
+    font-family: 'Fraunces', serif;
+    font-size: 43px;
+    color: rgb(20, 20, 20);
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.Topmessage p{
+    color: rgb(58, 57, 57);
+    text-align: justify;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.display1, .display2{
+    background-color: hsl(30, 22%, 96%);
+}
+
+.display1{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    align-items: center;
+    margin: 100px 50px 0px 50px;
+    
+}
+
+.display2{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    align-items: center;
+    margin: 100px 50px 0px 50px;
+}
+
+
+.displaylocation1 h2,
+.displaylocation2 h2{
+    align-self: center;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: rgb(20, 20, 20);
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.displaylocation1 h3,
+.displaylocation2 h3{
+    align-self: center;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: rgb(99, 99, 99);
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-top: 25px;
+}
+
+.displayimages1{
+    max-height: 550px;
+    width: 100%; 
+    object-fit: cover;
+    object-position: 10% 70%;
+    justify-self: right;
+}
+
+.displayimages2{
+    max-height: 550px;
+    width: 100%; 
+    object-fit: cover;
+    object-position: 10% 75%;
+}
+
+
+
+
+/*copyright*/
+
+.copyright{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 11px;
+    color: grey;
+    bottom: 2%;
+}
+
+
+@media only screen and (max-width:1300px){
+
+    .imagesdisplayrow1, .imagesdisplayrow2{
+        grid-template-columns: 220px 220px 220px 220px 220px;
+    }
+
+    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
+        font-size: 25px;
+    }
+
+    .Topmessage{
+        margin: 60px 180px 30px 180px;
+    }
+    
+    .Topmessage h1{
+        font-size: 36px;
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+}
+
+
+@media only screen and (max-width:1250px){
+
+    .Topmessage{
+        margin: 60px 140px 30px 140px;
+    }
+}
+
+
+@media only screen and (max-width:1200px){
+
+    .display1{
+        grid-template-columns: 420px 1fr;
+        
+    }
+    
+    .display2{
+        grid-template-columns: 1fr 420px;
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+}
+
+
+@media only screen and (max-width:1150px){
+
+    .imagesdisplayrow1, .imagesdisplayrow2{
+        grid-template-columns: 200px 200px 200px 200px 200px;
+    }
+
+    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
+        font-size: 22px;
+        padding: 75px 0px 75px 0px;
+    }
+
+    .Topmessage{
+        margin: 60px 130px 30px 130px;
+    }
+
+    .Topmessage h1{
+        font-size: 35px;
+    }
+
+    .Topmessage p{
+        font-size: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width:1100px){
+
+    .display1{
+        grid-template-columns: 380px 1fr;
+        
+    }
+    
+    .display2{
+        grid-template-columns: 1fr 380px;
+    }
+
+    .displaylocation1, .displaylocation2{
+        margin: 0px 30px 0px 30px;
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-size: 26px;
+        letter-spacing: 3px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .displayimages1,
+    .displayimages2{
+        max-height: 500px;
+    }
+}
+
+
+@media only screen and (max-width:1080px){
+    .Topmessage{
+        margin: 60px 100px 30px 100px;
+    }
+}
+
+
+@media only screen and (max-width:1050px){
+    
+    .imagesdisplayrow1, .imagesdisplayrow2{
+        grid-template-columns: 180px 180px 180px 180px 180px;
+    }
+
+    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
+        font-size: 20px;
+        padding: 70px 0px 70px 0px;
+    }
+    
+    .Topmessage{
+        margin: 50px 100px 30px 100px;
+    }
+
+    .Topmessage h1{
+        font-size: 30px;
+    }    
+
+
+}
+
+
+@media only screen and (max-width:1020px){
+    .Topmessage{
+        margin: 60px 80px 30px 80px;
+    }
+}
+
+
+@media only screen and (max-width:1000px){
+
+    .display1{
+        grid-template-columns: 330px 1fr;
+        
+    }
+    
+    .display2{
+        grid-template-columns: 1fr 330px;
+    }
+
+    .displaylocation1, .displaylocation2{
+        margin: 0px 30px 0px 30px;
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin-top: 15px;
+    }
+
+    .displayimages1,
+    .displayimages2{
+        max-height: 460px;
+    }
+}
+
+
+@media only screen and (max-width:980px){
+    .Topmessage{
+        margin: 50px 110px 30px 110px;
+    }
+
+    .Topmessage p{
+        margin-top: 18px;
+    }
+}
+
+
+@media only screen and (max-width:950px){
+    .logo{
+        margin-left: 40px;
+    }
+
+    .imagesdisplayrow1, .imagesdisplayrow2{
+        grid-template-columns: 160px 160px 160px 160px 160px;
+    }
+
+    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
+        font-size: 18px;
+        padding: 60px 0px 60px 0px;
+    }
+    
+    .Topmessage h1{
+        font-size: 28px;
+    }    
+
+    .Topmessage p{
+        margin-top: 15px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:900px){
+
+    .display1{
+        grid-template-columns: 280px 1fr;
+        margin: 100px 30px 0px 30px;
+    }
+    
+    .display2{
+        grid-template-columns: 1fr 280px;
+        margin: 100px 30px 0px 30px;
+    }
+
+    .displaylocation1, .displaylocation2{
+        margin: 0px 30px 0px 30px;
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin-top: 15px;
+    }
+
+    .displayimages1,
+    .displayimages2{
+        max-height: 460px;
+    }
+}
+
+
+@media only screen and (max-width:850px){
+
+    .imagesdisplayrow1, .imagesdisplayrow2{
+        grid-template-columns: 150px 150px 150px 150px 150px;
+    }
+
+    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
+        font-size: 17px;
+        padding: 55px 0px 55px 0px;
+    }
+    
+    .Topmessage{
+        margin: 50px 70px 30px 70px;
+    }
+
+    .Topmessage h1{
+        font-size: 25px;
+    }    
+}
+
+
+
+
+@media only screen and (max-width:800px){
+
+    .topdisplayforsmallerscreen{
+        display: initial;
+        margin: 100px 20px 0px 20px;
+        overflow-x: hidden;
+    }
+
+    .topdisplay{
+        display: none;
+    }
+    
+    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
+        display: grid;
+        grid-template-columns: 210px 210px 210px;
+        justify-content: center;
+        margin: 0px 20px 0px 20px;
+    }
+    
+    .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        font-size: 22px;
+        color: rgb(58, 57, 57);
+        font-weight: 600;
+        letter-spacing: 3px;
+        border-style: solid;
+    }
+    
+    .topdisplayforsmallerscreen p1{
+        border-width: 1px 0px 0px 1px;
+        padding: 80px 0px 80px 0px;
+    }
+    
+    .topdisplayforsmallerscreen p2{
+        border-width: 1px 1px 0px 0px;
+        padding: 80px 0px 80px 0px;
+    }
+    
+    .topdisplayforsmallerscreen p3{
+        border-width: 0px 0px 0px 0px;
+        padding: 80px 0px 80px 0px;
+    }
+    
+    .topdisplayforsmallerscreen p4{
+        border-width: 0px 0px 1px 1px;
+        padding: 80px 0px 80px 0px;
+    }
+    
+    .topdisplayforsmallerscreen p5{
+        border-width: 0px 1px 1px 0px;
+        padding: 80px 0px 80px 0px;
+    }
+
+    .Topmessage{
+        margin: 60px 100px 30px 100px;
+    }
+
+    .Topmessage h1{
+        font-size: 28px;
+    }
+
+    .display1{
+        grid-template-columns: 250px 1fr;
+        margin: 100px 30px 0px 30px;
+    }
+    
+    .display2{
+        grid-template-columns: 1fr 250px;
+        margin: 100px 30px 0px 30px;
+    }
+
+    .displaylocation1, .displaylocation2{
+        margin: 0px 30px 0px 30px;
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-size: 17px;
+        letter-spacing: 3px;
+        margin-top: 15px;
+    }
+
+    .displayimages1,
+    .displayimages2{
+        max-height: 460px;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+
+    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
+        grid-template-columns: 190px 190px 190px;
+    }
+    
+    .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
+        font-size: 20px;
+        padding: 70px 0px 70px 0px;
+    }
+
+    .Topmessage{
+        margin: 60px 90px 30px 90px;
+    }
+
+    .display1{
+        grid-template-columns: 220px 1fr;
+        margin: 100px 20px 0px 20px;
+    }
+    
+    .display2{
+        grid-template-columns: 1fr 220px;
+        margin: 100px 20px 0px 20px;
+    }
+
+    .displaylocation1, .displaylocation2{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-size: 17px;
+        letter-spacing: 3px;
+        margin-top: 15px;
+    }
+
+    .displayimages1,
+    .displayimages2{
+        max-height: 440px;
+    }
+
+}
+
+
+@media only screen and (max-width:600px){
+
+    .logo{
+        width: 12%;
+        max-width: 50px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    nav{
+        text-align: left;
+    }
+    
+    nav ul{
+        width: 100%;
+        background: white;
+        opacity: 0.98;
+        position: absolute;
+        align-self: center;
+        top: 100%;
+        height: 100vh;
+        right: 0;
+        z-index: 999;
+    }
+
+    nav ul li{
+        background-color: transparent;
+        display: block;
+        margin: 3em 3em 3em;
+    }
+
+    nav ul li a{
+        background-color: transparent;
+        color: rgb(20, 20, 20);
+        font-size: 18px;
+        font-family: "Montserrat";
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+
+    nav ul li a:hover{
+        color:black;
+    }
+
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: black;
+        transition: width 0.5s;
+    }
+
+    nav ul li a:hover::after{
+        width: 0;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-right: 8%;
+        min-width: 40px;
+        max-width: 65px;
+        cursor: pointer;
+    }
+
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+        padding-right: 10px;
+    }
+
+    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
+        grid-template-columns: 170px 170px 170px;
+    }
+    
+    .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
+        font-size: 18px;
+        padding: 60px 0px 60px 0px;
+    }
+
+    .Topmessage{
+        margin: 40px 70px 30px 70px;
+    }
+
+    .Topmessage h1{
+        font-size: 27px;   
+    }
+    
+    .Topmessage p{
+        font-size: 14px;
+        margin-bottom: 80px;
+    }
+
+    .content{
+        display: none;
+    }
+
+    .contentformobile{
+        display: initial;
+        overflow: hidden;
+    }
+
+    .display1, .display2{
+        display: block;
+        margin: 0px 0px 100px 0px;
+        width: 100%;
+        background-color: unset;
+    }
+
+    .displayimages1, .displayimages2{
+        width: 100%;
+        margin: 0px;
+        object-fit: cover;
+        max-height: 480px;
+    }
+
+    .displaylocation1,
+    .displaylocation2{
+        margin: 20px 50px 50px 50px;
+        text-align: center;
+        
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-family: 'Fraunces', serif;
+        font-size: 22px;
+        color: rgb(20, 20, 20);
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-family: 'Fraunces', serif;
+        font-size: 17px;
+        color: rgb(99, 99, 99);
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-top: 15px;
+    }
+
+    
+}
+
+@media only screen and (max-width:550px){
+
+    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
+        grid-template-columns: 160px 160px 160px;
+    }
+    
+    .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
+        font-size: 17px;
+    }
+
+    .Topmessage{
+        margin: 40px 60px 30px 60px;
+    }
+}
+
+
+@media only screen and (max-width:500px){
+
+    .topdisplayformobile{
+        display: initial;
+        margin: 80px 30px 0px 30px;
+        overflow-x: hidden;
+    }
+
+    .topdisplayforsmallerscreen{
+        display: none;
+    }
+    
+    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
+        display: grid;
+        grid-template-columns:  200px 200px;
+        justify-content: center;
+        margin: 0px 20px 0px 20px;
+    }
+    
+    .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3{
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        font-size: 18px;
+        color: rgb(58, 57, 57);
+        font-weight: 600;
+        letter-spacing: 3px;
+        border-style: solid;
+    }
+    
+    .topdisplayformobile p1{
+        border-width: 1px 0px 0px 1px;
+        padding: 70px 0px 70px 0px;
+    }
+    
+    .topdisplayformobile p2{
+        border-width: 0px 1px 0px 0px;
+        padding: 70px 0px 70px 0px;
+    }
+    
+    .topdisplayformobile p3{
+        border-width: 0px 0px 1px 1px;
+        padding: 70px 0px 70px 0px;
+    }
+
+    .Topmessage{
+        margin: 50px 60px 0px 60px;
+    }
+
+    .Topmessage h1{
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:450px){
+    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3, .imagesdisplayrow4, .imagesdisplayrow5{
+        grid-template-columns:  180px 180px;
+    }
+    
+    .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3, .topdisplayformobile p4, .topdisplayformobile p5{
+        font-size: 18px;
+        padding: 60px 0px 60px 0px;
+    }
+
+    .Topmessage{
+        margin: 50px 50px 0px 50px;
+    }
+
+    .displaylocation1 h2,
+    .displaylocation2 h2{
+        font-size: 20px;
+    }
+
+    .displaylocation1 h3,
+    .displaylocation2 h3{
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width:400px){
+    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3, .imagesdisplayrow4, .imagesdisplayrow5{
+        grid-template-columns:  170px 170px;
+    }
+    
+    .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3, .topdisplayformobile p4, .topdisplayformobile p5{
+        font-size: 18px;
+        padding: 55px 0px 55px 0px;
+    }
+
+    .Topmessage{
+        margin: 50px 40px 0px 40px;
+    }
+
+    
+}
