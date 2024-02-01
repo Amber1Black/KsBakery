@@ -120,24 +120,23 @@ nav ul li a:hover::after{
 
 .secondpartlargermessage h1, .thirdpartlargermessage h1, .fourthpartlargermessage h1, .fifthpartlargermessage h1{
     font-family: 'Fraunces', serif;
-    font-size: 43px;
+    font-size: 35px;
     color: rgb(20, 20, 20);
     font-weight: 600;
     letter-spacing: 4px;
-    margin: 10px 0 10px;
+    margin: 5px 0px 5px 0px;
 }
 
 .secondpartlargermessage p, .thirdpartlargermessage p, .fourthpartlargermessage p, .fifthpartlargermessage p{
     color: rgb(58, 57, 57);
     text-align: justify;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    font-size: 18px;
+    margin: 20px 0px 25px 0px;
+    font-size: 16px;
 }
 
 .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration-color: #707070;
 }
@@ -343,8 +342,9 @@ nav ul li a:hover::after{
 }
 
 .secondpartlargermessage{
-    margin-left: 220px;
-    margin-right: 220px;
+    display: grid;
+    justify-content: center;
+    margin: 0px 20px 0px 20px;
 }
 
 
@@ -364,9 +364,9 @@ nav ul li a:hover::after{
 }
 
 .thirdpartlargermessage{
-    margin-top: 40px;
-    margin-left: 230px;
-    margin-right: 230px;
+    display: grid;
+    justify-content: center;
+    margin: 40px 20px 0px 20px;
 }
 
 /*Fourth Section*/
@@ -387,7 +387,7 @@ nav ul li a:hover::after{
 
 .fourthpartlargerpictures p1, .fourthpartlargerpictures p2{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(58, 57, 57);
     font-weight: 600;
     letter-spacing: 3px;
@@ -397,12 +397,14 @@ nav ul li a:hover::after{
 .fourthpartlargerpictures p1 {
     border-width: 1px 1px 0px 0px;
     padding: 120px 35px 120px 25px;
+    border-color: grey;
     margin: 10px;
 }
 
 .fourthpartlargerpictures p2 {
     border-width: 0px 0px 1px 1px;
     padding: 120px 35px 120px 45px;
+    border-color: grey;
     margin: 10px;
 }
 
@@ -453,7 +455,7 @@ nav ul li a:hover::after{
     align-items: center;
     padding: 80px 70px 80px 0px;
     border-style: solid;
-    border-width: 2px 2px 2px 0px;
+    border-width: 1px 1px 1px 0px;
 }
 
 .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
@@ -563,10 +565,6 @@ nav ul li a:hover::after{
         transform: translate(-51%, -155%);
     }
     
-    .secondpartlargermessage{
-        margin-left: 200px;
-        margin-right: 200px;
-    }
 
     /*Third Section*/
 
@@ -576,11 +574,6 @@ nav ul li a:hover::after{
         padding: 8px;
     }
 
-    .thirdpartlargermessage{
-        margin-top: 40px;
-        margin-left: 190px;
-        margin-right: 190px;
-    }
 
     /*Fifth Section*/
 
@@ -594,11 +587,8 @@ nav ul li a:hover::after{
     }
     
     .fifthpartlargermessage{
-        margin-top: 200px;
-        margin-left: 0px;
-        margin-right: 80px;
+        margin-top: 200px 80px 0px 0px;
         padding: 80px 70px 80px 0px;
-        border-width: 2px 2px 2px 0px;
     }
 }
 
@@ -612,7 +602,7 @@ nav ul li a:hover::after{
     }
 
     .fourthpartlargerpictures p1, .fourthpartlargerpictures p2{
-        font-size: 27px;
+        font-size: 25px;
         font-weight: 600;
         letter-spacing: 3px;
     }
@@ -650,20 +640,7 @@ nav ul li a:hover::after{
     /*Common Elements*/
 
     .secondpartlargermessage h1, .thirdpartlargermessage h1, .fourthpartlargermessage h1, .fifthpartlargermessage h1{
-        font-size: 35px;
-        color: rgb(20, 20, 20);
-        font-weight: 600;
-        letter-spacing: 3px;
-    }
-
-    .secondpartlargermessage p, .thirdpartlargermessage p, .fourthpartlargermessage p, .fifthpartlargermessage p{
-        font-size: 17px;
-    }
-
-    .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
-        letter-spacing: 1px;
-        font-size: 17px;
-        font-weight: 500;
+        font-size: 30px;
     }
 
     /*First Section*/
@@ -691,6 +668,7 @@ nav ul li a:hover::after{
         margin-left: 1000px;
     }
 
+
 }
 
 
@@ -704,9 +682,6 @@ nav ul li a:hover::after{
         padding: 7px;
     }
 
-    .thirdpartlargermessage{
-        margin: 40px 160px 0px 160px;
-    }
 }
 
 
@@ -736,7 +711,6 @@ nav ul li a:hover::after{
         width: 113px;
         height: 113px;
     }
-
 }
 
 
@@ -807,10 +781,6 @@ nav ul li a:hover::after{
         margin-right: 40px;
     }
 
-    .fourthpartlargermessage h1{
-        font-size: 38px;
-    }
-
     .fourthpartlargermessage{
         margin: 0px 50px 0px 50px;
     }
@@ -844,11 +814,8 @@ nav ul li a:hover::after{
     }
     
     .fifthpartlargermessage{
-        margin-top: 200px;
-        margin-left: 0px;
-        margin-right: 70px;
+        margin-top: 200px 70px 0px 0px;
         padding: 80px 70px 80px 0px;
-        border-width: 2px 2px 2px 0px;
     }
 }
 
@@ -879,20 +846,6 @@ nav ul li a:hover::after{
         width: 110px;
         height: 110px;
     }
-
-    /*Second Section*/
-
-    .secondpartlargermessage{
-        margin-left: 140px;
-        margin-right: 140px;
-    }
-
-    /*Third Section*/
-
-    .thirdpartlargermessage{
-        margin: 40px 140px 0px 140px;
-    }
-
 }
 
 
@@ -989,10 +942,6 @@ nav ul li a:hover::after{
         height: 350px;
         padding: 6px;
     }
-
-    .thirdpartlargermessage{
-        margin: 40px 125px 0px 125px;
-    }
     
 }
 
@@ -1007,16 +956,16 @@ nav ul li a:hover::after{
     /*Common Elements*/
 
     .secondpartlargermessage h1, .thirdpartlargermessage h1, .fourthpartlargermessage h1, .fifthpartlargermessage h1{
-        font-size: 33px;
+        font-size: 28px;
         letter-spacing: 3px;
     }
 
     .secondpartlargermessage p, .thirdpartlargermessage p, .fourthpartlargermessage p, .fifthpartlargermessage p{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /*First Section*/
@@ -1064,12 +1013,18 @@ nav ul li a:hover::after{
     }
 
     .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 275px;
-        width: 275px;
+        height: 260px;
+        width: 260px;
     }
 
     .fourthpartlargermessage{
         margin: 0px 40px 0px 40px;
+    }
+
+    .fourthpartlargerpictures p1,
+    .fourthpartlargerpictures p2 {
+        font-size: 22px;
+        padding: 100px 35px 100px 45px;
     }
 
 }
@@ -1097,11 +1052,8 @@ nav ul li a:hover::after{
     }
     
     .fifthpartlargermessage{
-        margin-top: 200px;
-        margin-left: 0px;
-        margin-right: 50px;
+        margin-top: 200px 50px 0px 0px;
         padding: 60px 60px 60px 0px;
-        border-width: 2px 2px 2px 0px;
     }
 
     .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
@@ -1138,11 +1090,6 @@ nav ul li a:hover::after{
         height: 100px;
     }
 
-    /*Third Section*/
-
-    .thirdpartlargermessage{
-        margin: 40px 110px 0px 110px;
-    }
 }
 
 
@@ -1210,11 +1157,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:930px){
-    /*Second Section*/
-
-    .secondpartlargermessage{
-        margin: 0px 110px 0px 110px;
-    }
 
     /*Fourth Section*/
 
@@ -1223,22 +1165,14 @@ nav ul li a:hover::after{
     }
 
     .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 255px;
-        width: 248px;
+        height: 240px;
+        width: 240px;
     }
 
-    .fourthpartlargerpictures p1 {
-        border-width: 1px 1px 0px 0px;
-        padding: 100px 30px 100px 20px;
-        font-size: 25px;
-        letter-spacing: 1px;
-    }
-    
+    .fourthpartlargerpictures p1,
     .fourthpartlargerpictures p2 {
-        border-width: 0px 0px 1px 1px;
-        padding: 100px 30px 100px 40px;
-        font-size: 25px;
-        letter-spacing: 1px;
+        font-size: 22px;
+        padding: 90px 30px 90px 30px;
     }
 
     .fourthpartlargermessage{
@@ -1268,12 +1202,6 @@ nav ul li a:hover::after{
 
     .firstpartimagecolumn{
         margin-left: 770px;
-    }
-
-    /*Third Section*/
-
-    .thirdpartlargermessage{
-        margin: 40px 100px 0px 100px;
     }
 
 }
@@ -1346,10 +1274,6 @@ nav ul li a:hover::after{
         padding: 4px;
     }
 
-    .thirdpartlargermessage{
-        margin: 40px 140px 0px 140px;
-    }
-
 
     /*Fifth Section*/
 
@@ -1363,11 +1287,8 @@ nav ul li a:hover::after{
     }
     
     .fifthpartlargermessage{
-        margin-top: 200px;
-        margin-left: 0px;
-        margin-right: 40px;
+        margin-top: 200px 40px 0px 0px;
         padding: 50px 50px 50px 0px;
-        border-width: 2px 2px 2px 0px;
     }
 
     .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
@@ -1408,37 +1329,14 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 250px;
-        width: 240px;
-    }
-
-    .fourthpartlargerpictures p1 {
-        border-width: 1px 1px 0px 0px;
-        padding: 100px 26px 100px 16px;
-    }
-    
-    .fourthpartlargerpictures p2 {
-        border-width: 0px 0px 1px 1px;
-        padding: 100px 26px 100px 36px;
-    }
-
     .fourthpartlargermessage{
         margin: 0px 30px 0px 40px;
     }
 
-    .fourthpartlargermessage h1{
-        font-size: 32px;
-    }
 }
 
 
 @media only screen and (max-width:860px){
-    /*Second Section*/
-
-    .secondpartlargermessage{
-        margin: 0px 90px 0px 90px;
-    }
 
     /*Third Section*/
 
@@ -1541,10 +1439,18 @@ nav ul li a:hover::after{
         transform: translate(-70%, -145%);
     }
 
-    .secondpartlargermessage{
-        margin: 0px 80px 0px 80px;
+    /*Fourth Section*/
+
+    .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
+        height: 220px;
+        width: 220px;
     }
 
+    .fourthpartlargerpictures p1,
+    .fourthpartlargerpictures p2 {
+        font-size: 20px;
+        padding: 80px 30px 80px 30px;
+    }
 }
 
 
@@ -1578,32 +1484,6 @@ nav ul li a:hover::after{
         margin-bottom: 8px;
     }
 
-    /*Fourth Section*/
-
-    .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 250px;
-        width: 235px;
-    }
-
-    .fourthpartlargermessage{
-        margin: 0px 20px 0px 30px;
-    }
-
-    .fourthpartlargermessage h1{
-        font-size: 30px;
-    }
-
-    .fourthpartlargerpictures p1 {
-        border-width: 1px 1px 0px 0px;
-        padding: 100px 26px 100px 16px;
-        font-size: 25px;
-    }
-    
-    .fourthpartlargerpictures p2 {
-        border-width: 0px 0px 1px 1px;
-        padding: 100px 26px 100px 36px;
-        font-size: 25px;
-    }
 }
 
 
@@ -1611,6 +1491,13 @@ nav ul li a:hover::after{
 /*Fifth part can keep the larger screen layout*/
 
 @media only screen and (max-width:800px){
+    
+    /*Paragraph Spacing*/
+
+    .secondpart, .thirdpart, .fifthpart{
+        margin-top: 130px;
+    }
+
     /*Common Elements*/
 
     .firstpartforlargerscreen, .secondpartforlargerscreen, .thirdpartforlargerscreen, .fourthpartforlargerscreen{
@@ -1621,9 +1508,11 @@ nav ul li a:hover::after{
         display: initial;
     }
 
-    .secondpartsmallermessage h1, .thirdpartsmallermessage h1, .fourthpartsmallermessage h1{
+    .secondpartsmallermessage h1, 
+    .thirdpartsmallermessage h1, 
+    .fourthpartsmallermessage h1{
         font-family: 'Fraunces', serif;
-        font-size: 30px;
+        font-size: 27px;
         color: rgb(20, 20, 20);
         font-weight: 600;
         letter-spacing: 3px;
@@ -1631,7 +1520,7 @@ nav ul li a:hover::after{
     }
 
     .fifthpartlargermessage h1{
-        font-size: 30px;
+        font-size: 27px;
     }
     
     .secondpartsmallermessage p, .thirdpartsmallermessage p, .fourthpartsmallermessage p{
@@ -1640,6 +1529,7 @@ nav ul li a:hover::after{
         margin-top: 25px;
         margin-bottom: 30px;
         font-size: 15px;
+        margin: 10px 0px 20px 0px;
     }
 
     .fifthpartlargermessage p, .fifthpartredirection{
@@ -1653,10 +1543,25 @@ nav ul li a:hover::after{
         text-decoration-color: #707070;
     }
 
-    /*Paragraph Spacing*/
+    /*Common Message Spacing*/
 
-    .secondpart, .thirdpart, .fifthpart{
-        margin-top: 130px;
+    .secondpartsmallermessage,
+    .thirdpartsmallermessage,
+    .fourthpartsmallermessage{
+        display: grid;
+        justify-content: center;
+    }
+    
+    .secondpartsmallermessage{
+        margin: 50px 10px 0px 10px;
+    }
+
+    .thirdpartsmallermessage{
+        margin: 50px 110px 0px 110px;
+    }
+
+    .fourthpartsmallermessage{
+        margin: 50px 120px 0px 120px;
     }
 
     /*First Section*/
@@ -1675,13 +1580,13 @@ nav ul li a:hover::after{
     }
 
     .firstpartforsmallerscreen h2{
-        letter-spacing: 5px;
+        letter-spacing: 4px;
         font-weight: 600;
         align-self: center;
         text-align: center;
-        font-size: 30px;
+        font-size: 28px;
         color: #707070;
-        margin: 20px 30px 20px 30px;
+        margin: 20px 50px 20px 50px;
     }
 
     .firstpartimageforsmallerscreen img{
@@ -1727,23 +1632,12 @@ nav ul li a:hover::after{
         width: 100%;
     }
 
-    .secondpartsmallermessage{
-        margin: 40px 140px 0px 140px;
-    }
-
-
     /*Third Section*/
 
     .recipe1 img, .recipe3 img{
         width: 350px;
         height: 350px;
         padding: 8px;
-    }
-
-    .thirdpartsmallermessage{
-        margin-top: 30px;
-        margin-left: 110px;
-        margin-right: 110px;
     }
 
     /*Fourth Section*/
@@ -1753,23 +1647,21 @@ nav ul li a:hover::after{
     }
 
     .fourthpartlargerpictures img{
-        width: 310px;
+        width: 300px;
+        height: 300px;
     }
 
     .fourthpartlargerpictures p1{
-        margin: 0px 90px 0px 10px;
-        padding: 105px 75px 105px 65px;
+        margin: 0px 100px 0px 10px;
+        padding: 120px 60px 120px 60px;
+        font-size: 23px;
     }
 
     .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 90px;
-        padding: 105px 72px 105px 82px;
+        margin: 0px 10px 0px 100px;
+        padding: 120px 67px 120px 67px;
+        font-size: 23px;
     }
-
-    .fourthpartsmallermessage{
-        margin: 50px 130px 0px 130px;
-    }
-
     
     /*Fifth Section*/
 
@@ -1783,11 +1675,8 @@ nav ul li a:hover::after{
     }
     
     .fifthpartlargermessage{
-        margin-top: 160px;
-        margin-left: 0px;
-        margin-right: 30px;
-        padding: 40px 40px 40px 0px;
-        border-width: 1px 1px 1px 0px;
+        margin: 150px 30px 0px 0px;
+        padding: 30px 40px 30px 0px;
     }
 
     .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
@@ -1813,12 +1702,14 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:740px){
+@media only screen and (max-width:730px){
 
-    /*Second Section*/
-
-    .secondpartsmallermessage{
-        margin: 40px 110px 0px 110px;
+    /*Common Message Spacing*/
+    
+    .secondpartsmallermessage,
+    .thirdpartsmallermessage,
+    .fourthpartsmallermessage{
+        margin: 30px 100px 0px 100px;
     }
 }
 
@@ -1838,30 +1729,10 @@ nav ul li a:hover::after{
         margin: 20px 50px 0px 50px;
     }
 
-    /*Fourth Section*/
-
-    .fourthpartlargerpictures img{
-        width: 280px;
-    }
-
-    .fourthpartlargerpictures p1{
-        margin: 0px 90px 0px 10px;
-        padding: 105px 60px 105px 50px;
-    }
-
-    .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 90px;
-        padding: 105px 56px 105px 66px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 50px 100px 0px 100px;
-    }
-
     /*Fifth Section*/
 
     .fifthpartprofilepic{
-        margin-left: 0px;
+        margin-left: 10px;
     }
     
     .fifthpartprofilepic img{
@@ -1870,8 +1741,7 @@ nav ul li a:hover::after{
     }
     
     .fifthpartlargermessage{
-        margin-top: 160px;
-        margin-right: 20px;
+        margin: 150px 10px 0px 0px;
         padding: 30px 40px 30px 0px;
     }
 
@@ -1880,56 +1750,33 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:660px){
 
-    /*Third Section*/
+    /*Fourth Section*/
 
-    .thirdpartsmallermessage{
-        margin-left: 80px;
-        margin-right: 80px;
-    } 
+    .fourthpartlargerpictures img{
+        width: 270px;
+        height: 270px;
+    }
+
+    .fourthpartlargerpictures p1{
+        margin: 0px 100px 0px 10px;
+        padding: 110px 48px 110px 48px;
+        font-size: 21px;
+    }
+
+    .fourthpartlargerpictures p2{
+        margin: 0px 10px 0px 100px;
+        padding: 110px 55px 110px 55px;
+        font-size: 21px;
+    }
     
     /*Fifth Section*/
     
     .fifthpartprofilepic img{
         height: 450px;
     }
-    
-    .fifthpartlargermessage{
-        margin-top: 150px;
-        margin-right: 15px;
-        padding: 30px 40px 30px 0px;
-    }
 
     .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
         margin-left: 26px;
-    }
-}
-
-
-@media only screen and (max-width:630px){
-    /*Second Section*/
-
-    .secondpartsmallermessage{
-        margin: 40px 90px 0px 90px;
-    }
-    
-    /*Fourth Section*/
-
-    .fourthpartsmallermessage{
-        margin: 50px 80px 0px 80px;
-    }
-
-    .fourthpartlargerpictures p1, .fourthpartlargerpictures p2{
-        font-size: 22px;
-    }
-
-    .fourthpartlargerpictures p1{
-        margin: 0px 90px 0px 10px;
-        padding: 105px 67px 105px 57px;
-    }
-
-    .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 90px;
-        padding: 105px 64px 105px 74px;
     }
 }
 
@@ -2014,10 +1861,18 @@ nav ul li a:hover::after{
         margin-top: 130px;
     }
 
+    /*Common Message Spacing*/
+    
+    .secondpartsmallermessage,
+    .thirdpartsmallermessage,
+    .fourthpartsmallermessage{
+        margin: 30px 70px 0px 70px;
+    }
+
     /*Common Elements*/
 
     .secondpartsmallermessage h1, .thirdpartsmallermessage h1, .fourthpartsmallermessage h1, .fifthpartlargermessage h1{
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .secondpartsmallermessage p, .thirdpartsmallermessage p, .fourthpartsmallermessage p, .fifthpartlargermessage p{
@@ -2046,26 +1901,21 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartsmallermessage{
-        margin: 50px 80px 0px 80px;
-    }
-
     .fourthpartlargerpictures img{
-        width: 260px;
-    }
-
-    .fourthpartlargerpictures p1, .fourthpartlargerpictures p2{
-        font-size: 20px;
+        width: 250px;
+        height: 250px;
     }
 
     .fourthpartlargerpictures p1{
-        margin: 0px 90px 0px 10px;
-        padding: 105px 63px 105px 53px;
+        margin: 0px 100px 0px 10px;
+        padding: 100px 40px 100px 40px;
+        font-size: 21px;
     }
 
     .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 90px;
-        padding: 105px 60px 105px 70px;
+        margin: 0px 10px 0px 100px;
+        padding: 100px 48px 100px 48px;
+        font-size: 21px;
     }
 
     /*Fifth Section*/
@@ -2091,9 +1941,7 @@ nav ul li a:hover::after{
     }
 
     .fifthpartlargermessage{
-        margin-top: -20px;
-        margin-left: 80px;
-        margin-right: 100px;
+        margin: -20px 100px 0px 80px;
         padding: 30px 50px 30px 50px;
         border-width: 0px 1px 1px 1px;
     }
@@ -2108,32 +1956,6 @@ nav ul li a:hover::after{
 
     .fifthpartredirection{
         margin-left: 0px;
-    }
-
-}
-
-
-@media only screen and (max-width:570px){
-
-    /*Fourth Section*/
-
-    .fourthpartlargerpictures img{
-        width: 250px;
-        height: 260px;
-    }
-
-    .fourthpartlargerpictures p1{
-        margin: 0px 90px 0px 10px;
-        padding: 105px 58px 105px 48px;
-    }
-
-    .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 90px;
-        padding: 105px 55px 105px 65px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 50px 65px 0px 65px;
     }
 }
 
@@ -2155,12 +1977,6 @@ nav ul li a:hover::after{
         font-size: 15px;
     }
 
-    /*Second Section*/
-
-    .secondpartsmallermessage{
-        margin: 40px 70px 0px 70px;
-    }
-
     /*Fifth Section*/
 
     .fifthpartsmallerprofilepic{
@@ -2180,27 +1996,26 @@ nav ul li a:hover::after{
     }
 }
 
+
 @media only screen and (max-width:530px){
 
     /*Fourth Section*/
 
     .fourthpartlargerpictures img{
-        width: 240px;
-        height: 240px;
+        width: 225px;
+        height: 225px;
     }
 
     .fourthpartlargerpictures p1{
-        margin: 0px 90px 5px 10px;
-        padding: 105px 53px 100px 43px;
+        margin: 0px 100px 0px 10px;
+        padding: 95px 30px 95px 30px;
+        font-size: 20px;
     }
 
     .fourthpartlargerpictures p2{
-        margin: 5px 10px 0px 90px;
-        padding: 100px 50px 105px 60px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 50px 55px 0px 55px;
+        margin: 0px 10px 0px 100px;
+        padding: 95px 38px 95px 38px;
+        font-size: 20px;
     }
 }
 
@@ -2215,11 +2030,7 @@ nav ul li a:hover::after{
     
     .recipe1 img{
         width: 100%;
-        height: 420px;
-    }
-
-    .thirdpartsmallermessage{
-        margin: 20px 70px 0px 70px;
+        height: 450px;
     }
 
     /*Fifth Section*/
@@ -2247,6 +2058,14 @@ nav ul li a:hover::after{
 
     .secondpart, .thirdpart, .fourthpart, .fifthpart{
         margin-top: 110px;
+    }
+
+    /*Common Message Spacing*/
+    
+    .secondpartsmallermessage,
+    .thirdpartsmallermessage,
+    .fourthpartsmallermessage{
+        margin: 30px 50px 0px 50px;
     }
 
     /*Common Elements*/
@@ -2341,47 +2160,12 @@ nav ul li a:hover::after{
         width: 100%;
     }
 
-    .secondpartsmallermessage{
-        margin: 40px 100px 0px 100px;
-    }
     .secondpartmobile img{
         max-height: 420px;
     }
 
     .secondpartsmallerimage img{
         max-height: 300px;
-    }
-
-    .secondpartsmallermessage{
-        margin: 40px 60px 0px 60px;
-    }
-
-
-    /*Third Section*/
-
-    .thirdpart{
-        margin-top: 150px;
-    }
-
-    /*Fourth Section*/
-
-    .fourthpartlargerpictures img{
-        width: 220px;
-        height: 220px;
-    }
-
-    .fourthpartlargerpictures p1{
-        margin: 0px 90px 5px 10px;
-        padding: 90px 43px 90px 33px;
-    }
-
-    .fourthpartlargerpictures p2{
-        margin: 5px 10px 0px 90px;
-        padding: 90px 40px 90px 50px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 50px 55px 0px 55px;
     }
 
 }
@@ -2391,11 +2175,28 @@ nav ul li a:hover::after{
     /*Third Section*/
 
     .recipe1 img{
-        height: 400px;
+        height: 420px;
     }
 
-    .thirdpartsmallermessage{
-        margin: 20px 60px 0px 60px;
+    /*Fourth Section*/
+
+    .fourthpartlargerpictures img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .fourthpartlargerpictures p1{
+        margin: 0px 100px 0px 10px;
+        padding: 85px 24px 85px 24px;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .fourthpartlargerpictures p2{
+        margin: 0px 10px 0px 100px;
+        padding: 85px 25px 85px 35px;
+        font-size: 20px;
+        letter-spacing: 2px;
     }
 }
 
@@ -2438,37 +2239,6 @@ nav ul li a:hover::after{
 } 
 
 
-@media only screen and (max-width:460px){
-
-    /*Second Section*/
-
-    .secondpartsmallermessage{
-        margin: 40px 60px 0px 60px;
-    }
-
-    /*Fourth Section*/
-
-    .fourthpartlargerpictures img{
-        width: 200px;
-        height: 200px;
-    }
-
-    .fourthpartlargerpictures p1{
-        margin: 0px 90px 5px 10px;
-        padding: 80px 33px 80px 23px;
-    }
-
-    .fourthpartlargerpictures p2{
-        margin: 5px 10px 0px 90px;
-        padding: 80px 30px 80px 40px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 50px 55px 0px 55px;
-    }
-}
-
-
 @media only screen and (max-width:440px){
 
     /*First Section*/
@@ -2490,40 +2260,13 @@ nav ul li a:hover::after{
     /*Third Section*/
 
     .recipe1 img{
-        height: 380px;
-    }
-
-    .thirdpartsmallermessage{
-        margin: 20px 65px 0px 65px;
+        height: 400px;
     }
 
 }
 
 
 @media only screen and (max-width:430px){
-
-    /*Fourth Section*/
-
-    .fourthpartlargerpictures img{
-        width: 185px;
-        height: 185px;
-    }
-
-    .fourthpartlargerpictures p1{
-        margin: 0px 90px 5px 10px;
-        padding: 76px 32px 76px 22px;
-        font-size: 18px;
-    }
-
-    .fourthpartlargerpictures p2{
-        margin: 5px 10px 0px 90px;
-        padding: 76px 27px 76px 37px;
-        font-size: 18px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 50px 55px 0px 55px;
-    }
 
     /*Fifth Section*/
 
@@ -2546,6 +2289,14 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:420px){
 
+    /*Common Message Spacing*/
+    
+    .secondpartsmallermessage,
+    .thirdpartsmallermessage,
+    .fourthpartsmallermessage{
+        margin: 30px 35px 0px 35px;
+    }
+
     /*First Section*/
 
     .firstpartmobilemessage h2{
@@ -2565,17 +2316,27 @@ nav ul li a:hover::after{
         font-size: 14px;
     }
 
-    /*Second Section*/
+    /*Fourth Section*/
 
-    .secondpartsmallermessage{
-        margin: 40px 40px 0px 40px;
+    .fourthpartlargerpictures img{
+        width: 180px;
+        height: 180px;
     }
 
-    /*Third Section*/
-
-    .thirdpartsmallermessage{
-        margin: 40px 40px 0px 40px;
+    .fourthpartlargerpictures p1{
+        margin: 0px 100px 0px 10px;
+        padding: 75px 24px 75px 24px;
+        font-size: 18px;
+        letter-spacing: 1px;
     }
+
+    .fourthpartlargerpictures p2{
+        margin: 0px 10px 0px 100px;
+        padding: 75px 25px 75px 35px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
 }
 
 
@@ -2606,36 +2367,4 @@ nav ul li a:hover::after{
         height: 380px;
     }
 
-    .thirdpartsmallermessage{
-        margin: 20px 50px 0px 50px;
-    }
-
-    /*Fourth Section*/
-
-    .fourthpartlargerpictures{
-        margin-left: 8px;
-    }
-
-    .fourthpartlargerpictures img{
-        width: 175px;
-        height: 175px;
-    }
-
-    .fourthpartlargerpictures p1{
-        margin: 0px 38px 5px 10px;
-        padding: 70px 27px 70px 17px;
-        font-size: 18px;
-    }
-
-    .fourthpartlargerpictures p2{
-        margin: 5px 10px 0px 30px;
-        padding: 70px 23px 70px 33px;
-        font-size: 18px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 45px 45px 0px 45px;
-    }
-    
 }
-
