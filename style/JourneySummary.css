@@ -777,29 +777,28 @@ nav ul li a:hover::after{
         overflow: hidden;
     }
 
-    .display1, .display2{
+    .display{
         display: block;
         margin: 0px 0px 100px 0px;
         width: 100%;
         background-color: unset;
     }
 
-    .displayimages1, .displayimages2{
+    .displayimages{
         width: 100%;
         margin: 0px;
         object-fit: cover;
-        max-height: 480px;
+        max-height: 520px;
+        object-position: 10% 80%;
     }
 
-    .displaylocation1,
-    .displaylocation2{
+    .displaylocation{
         margin: 20px 50px 50px 50px;
         text-align: center;
         
     }
 
-    .displaylocation1 h2,
-    .displaylocation2 h2{
+    .displaylocation h2{
         font-family: 'Fraunces', serif;
         font-size: 22px;
         color: rgb(20, 20, 20);
@@ -807,8 +806,7 @@ nav ul li a:hover::after{
         letter-spacing: 2px;
     }
 
-    .displaylocation1 h3,
-    .displaylocation2 h3{
+    .displaylocation h3{
         font-family: 'Fraunces', serif;
         font-size: 17px;
         color: rgb(99, 99, 99);
@@ -908,13 +906,11 @@ nav ul li a:hover::after{
         margin: 50px 50px 0px 50px;
     }
 
-    .displaylocation1 h2,
-    .displaylocation2 h2{
+    .displaylocation{
         font-size: 20px;
     }
 
-    .displaylocation1 h3,
-    .displaylocation2 h3{
+    .displaylocation{
         font-size: 17px;
         margin-top: 10px;
     }
