@@ -377,6 +377,10 @@ nav ul li a:hover::after{
     align-items: center;
 }
 
+.fourthpartmobilepictures{
+    display: none;
+}
+
 .fourthpartlargerpictures{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1883,7 +1887,6 @@ nav ul li a:hover::after{
         font-size: 15px;
     }
 
-
     /*First Section*/
 
     .firstpartforsmallerscreen h2{
@@ -1901,21 +1904,19 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartlargerpictures img{
-        width: 250px;
-        height: 250px;
+    .fourthpartlargerpictures{
+        display: none;
     }
 
-    .fourthpartlargerpictures p1{
-        margin: 0px 100px 0px 10px;
-        padding: 100px 40px 100px 40px;
-        font-size: 21px;
+    .fourthpartmobilepictures{
+        display: grid;
+        justify-content: center;
     }
 
-    .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 100px;
-        padding: 100px 48px 100px 48px;
-        font-size: 21px;
+    .fourthpartmobilepictures img{
+        max-height: 550px;
+        object-fit: cover;
+        width: 100%;
     }
 
     /*Fifth Section*/
@@ -2336,7 +2337,6 @@ nav ul li a:hover::after{
         font-size: 18px;
         letter-spacing: 1px;
     }
-
 }
 
 
@@ -2366,5 +2366,4 @@ nav ul li a:hover::after{
     .recipe1 img{
         height: 380px;
     }
-
 }
