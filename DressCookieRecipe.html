@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-RF94ND0HKD');
-</script>
+        gtag('config', 'G-RF94ND0HKD');
+        </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description" content="K's Bakery, to share my recipe on making cookie, with shaping them in dresses, and adding chocolate to enhance the outlook and taste.">
-  
+
   <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
-  
+
   <title>K's Bakery</title>
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,59 +45,74 @@
             <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
     </div>
 
-    <div class="contentsection">
-        <div class="element1">
-            <div class="pic1">
-                <img src ="Pictures/Cookie - Dress Cookie.jpg">
-            </div>
-            <div class="pic2">
-                <img src ="Pictures/Cookie7.jpg">
-            </div>
-            
+
+    <div class="bodysection">
+
+        <!-- left hand side images-->
+    
+        <div class="recipebakerypic">
+            <img src="Pictures/Cookie - Dress Cookie.jpg">
         </div>
-        <div class="element2">
-            <div class="recipe-category">
-                COOKIE
-            </div>
-            <div class="recipe-title">
-                Dress Cookie with Chocolate
+    
+        <div class="recipebakerypicformobile">
+            <img src="Pictures/Cookie7.png">
+        </div>
+    
+    
+        <!-- right hand side-->
+    
+        <div class="recipecontent">
+            <div class="recipe">
+                <h3>COOKIE</h3>
+                <h1>Dress Cookie with Chocolate</h1>
             </div>
 
             <div class="recipe-what-you-need">
-                <p>What you need</p>
-            </div>
+                <h2>What you need</h2>
       
-            <div class="ingredients">
-                <div class="ingredients-col">
-                    <h3>Butter</h3>
-                    <p>240g</p>
+                <div class="ingredients">
+                    <div class="ingredients-col">
+                        <h3>Butter</h3>
+                        <p>240g</p>
+                    </div>
+                    <div class="ingredients-col">
+                        <h3>Sugar</h3>
+                        <p>80g</p>
+                    </div>
+                    <div class="ingredients-col">
+                        <h3>Egg</h3>
+                        <p>1</p>
+                    </div>
+                    <div class="ingredients-col">
+                        <h3>Flour</h3>
+                        <p>370g</p>
+                    </div>
+                    <div class="ingredients-col">
+                        <h3>Chocolate</h3>
+                        <p>100g</p>
+                    </div>
+        
                 </div>
-                <div class="ingredients-col">
-                    <h3>Sugar</h3>
-                    <p>80g</p>
-                </div>
-                <div class="ingredients-col">
-                    <h3>Egg</h3>
-                    <p>1</p>
-                </div>
-                <div class="ingredients-col">
-                    <h3>Flour</h3>
-                    <p>370g</p>
-                </div>
-      
+
             </div>
 
             <div class ="recipe-what-to-do">
-                <p>What to do</p>
+                <h2>What to do</h2>
                 <ul class = "a">
                     <li>Take the butter out from the fridge to let it soften</li>
                     <li>Mix butter with the sugar by batches</li>
                     <li>Add eggs to the mixture by batches</li>
+                        <div class="stepspic">
+                            <img src = "Pictures/Recipe - Flower Cookie 1.png"> 
+                        </div>
                     <li>Add flour by batches, with seiving it</li>
                     <li>After mixing everything well together, roll them into large plain dough, and freeze it.</li>
                     <li>Cut the dough into dress shape</li>
                     <li>Bake for 150 degrees for 15 min</li>
                     <li>Dip the cookie into chocolate to create any pattern as you wish</li>
+                        <div class="stepspic">
+                            <img src = "Pictures/Cookie3.jpg"> 
+                        </div>
                 </ul>
             </div>
 
@@ -106,9 +121,14 @@
 
     </div>
 
+    <div class="backbutton">
+        <a href="https://www.k-bakery.com/RecipeSummary">Back &#8629</a>
+    </div>
+
     <div class="copyright">
         Copyright &#169 2023 K's Bakery
     </div>
+        
 
     <script>
         var menulist = document.getElementById("menulist");
@@ -126,7 +146,6 @@
             }
         }
     </script>
-
 </body>
 
 </html>
