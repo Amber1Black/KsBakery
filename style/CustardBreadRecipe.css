@@ -135,10 +135,19 @@ nav ul li a:hover::after{
 }
 
 .recipe-what-you-need h2{
+    background-color: ;
     font-size: 20px;
     color: rgb(87, 86, 86);
     font-weight: bold;
     margin: 20px 20px 20px 0px;
+}
+
+.recipe-what-you-need h4{
+    background-color: ;
+    font-size: 17px;
+    color: rgb(87, 86, 86);
+    font-weight: bold;
+    margin: 20px 20px 20px 20px;
 }
 
 .recipe-what-you-need h5{
@@ -157,6 +166,7 @@ nav ul li a:hover::after{
 }
 
 .ingredientsfortop{
+    background-color: ;
     display: flex;
     align-items: center;
     margin: 0px 150px 0px 30px;
@@ -165,22 +175,24 @@ nav ul li a:hover::after{
 }
 
 .ingredients-col{
+    background-color: ;
     flex: 1;
     text-align: center;
-    color: black;
+    color: rgb(87, 86, 86);
     font-size: 13px;
     position: relative;
     padding-top: 10px;
 }
   
 .ingredients-col h3{
-    color: black;
+    background-color: ;
+    color: rgb(87, 86, 86);
     padding-bottom: 0.5rem;
 }
   
 .ingredients-col p{
     background-color: ;
-    color: black;
+    color: rgb(87, 86, 86);
     font-size: 15px;
 }
   
@@ -188,7 +200,7 @@ nav ul li a:hover::after{
     content: '';
     width: 2px;
     height: 25px;
-    background: black;
+    background: rgb(87, 86, 86);
     position: absolute;
     align-items: center;
     top: 30px;
@@ -287,9 +299,8 @@ li{
         margin-left: 650px;
     }
 
-    .ingredientsfordough,
-    .ingredientsfortop{
-        margin: 0px 120px 0px 40px;
+    .ingredients{
+        margin: 0px 170px 0px 40px;
     }
 
     li{
@@ -322,7 +333,7 @@ li{
 
     .ingredientsfordough,
     .ingredientsfortop{
-        margin: 0px 100px 0px 40px;
+        margin: 0px 120px 0px 40px;
     }
 
     li{
@@ -341,7 +352,7 @@ li{
 @media only screen and (max-width:1200px){
     .ingredientsfordough,
     .ingredientsfortop{
-        margin: 0px 90px 0px 20px;
+        margin: 0px 100px 0px 20px;
     }
 }
 
@@ -349,7 +360,7 @@ li{
 @media only screen and (max-width:1150px){
     .ingredientsfordough,
     .ingredientsfortop{
-        margin: 0px 100px 0px 20px;
+        margin: 0px 80px 0px 15px;
     }
 }
 
@@ -366,6 +377,11 @@ li{
     
     .recipecontent{
         margin-left: 520px;
+    }
+
+    .recipe-what-you-need h4{
+        font-size: 17px;
+        margin: 20px 20px 20px 10px;
     }
 
     .ingredientsfordough,
@@ -410,10 +426,6 @@ li{
     .ingredientsfordough,
     .ingredientsfortop{
         margin: 0px 80px 0px 10px;
-    }
-
-    .recipe-what-you-need h5{
-        font-size: 15px;
     }
 
     li{
@@ -510,8 +522,16 @@ li{
         display: flex;
     }
 
+    .recipe-what-you-need h2{
+        background-color: ;
+        font-size: 20px;
+        color: rgb(87, 86, 86);
+        font-weight: bold;
+        margin: 50px 20px 20px 0px;
+    }
+
     .recipe-what-you-need h4{
-        margin-bottom: 5px;
+        margin: 10px 0px 10px 30px;
     }
     
     .ingredientsfordough,
@@ -544,7 +564,7 @@ li{
 
     .stepspic img{
         height: 380px;
-        width: 450px;
+        width: 380px;
         border-radius: 3px;
         margin: 10px 30px 60px 30px;
     }
@@ -576,9 +596,16 @@ li{
         height: 480px;
     }
 
+    .recipe-what-you-need h4{
+        font-size: 17px;
+        color: rgb(87, 86, 86);
+        font-weight: bold;
+        margin: 20px 20px 20px 15px;
+    }
+
     .ingredientsfordough,
     .ingredientsfortop{
-        margin: 0px 20px 0px 20px;
+        margin: 0px 10px 0px 20px;
     }
 }
 
@@ -606,13 +633,6 @@ li{
 }
 
 @media only screen and (max-width:650px){
-
-    .stepspic img{
-        height: 330px;
-        width: 400px;
-        border-radius: 3px;
-        margin: 10px 0px 60px 10px;
-    }
 
     .backbutton{
         margin-right: 50px;
@@ -709,12 +729,6 @@ li{
     .recipebakerypicformobile img{
         height: 400px;
     }
-
-    .recipe h1{
-        letter-spacing: 5px;
-        font-size: 23px;
-        margin: 13px 0px 20px 0px;
-    }
     
     .recipe h3{
         letter-spacing: 5px;
@@ -741,32 +755,15 @@ li{
     }
 
     .stepspic img{
-        height: 300px;
-        width: 380px;
+        height: 350px;
+        width: 350px;
         justify-content: center;
         border-radius: 0px;
-        margin: 10px 5px 40px 5px;
+        margin: 10px 15px 40px 15px;
     }
 
     .backbutton{
         margin-right: 30px;
-    }
-}
-
-
-@media only screen and (max-width:550px){
-    .ingredientsfordough,
-    .ingredientsfortop{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .stepspic img{
-        height: 260px;
-        width: 360px;
-        justify-content: center;
-        border-radius: 0px;
-        margin: 10px 5px 40px 5px;
     }
 }
 
@@ -780,6 +777,15 @@ li{
         height: 360px;
     }
 
+    .recipe-what-you-need h4{
+        margin-left: 5px;
+        font-size: 15px;
+    }
+
+    .recipe-what-you-need h5{
+        font-size: 15px;
+    }
+
     .bodysection,
     .recipecontent, 
     .recipe,
@@ -787,10 +793,6 @@ li{
     .recipe-what-to-do{
         margin-left: 10px;
         margin-right: 10px;
-    }
-
-    .recipe-what-you-need h5{
-        font-size: 14px;
     }
 
     .ingredientsfordough,
@@ -810,16 +812,12 @@ li{
         margin-left: 20px;
     }
 
-    .stepspic{
-        margin-left: 30px;
-    }
-
     .stepspic img{
-        height: 230px;
-        width: 330px;
+        height: 350px;
+        width: 360px;
         justify-content: center;
         border-radius: 0px;
-        margin: 10px 0px 40px 0px;
+        margin: 10px 10px 40px 20px;
     }
     
 }
@@ -830,26 +828,44 @@ li{
         height: 320px;
     }
 
+    .recipe-what-you-need h4{
+        margin-bottom: 10px;
+    }
+
     .stepspic img{
-        height: 220px;
-        width: 300px;
+        height: 320px;
+        width: 320px;
         justify-content: center;
         border-radius: 0px;
-        margin: 10px 20px 30px 0px;
+        margin: 10px -10px 30px 8px;
     }
 }
 
 
 @media only screen and (max-width:400px){
-    .recipebakerypicformobile img{
-        height: 320px;
+
+    .bodysection,
+    .recipecontent, 
+    .recipe,
+    .recipe-what-you-need,
+    .recipe-what-to-do{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .recipe-what-you-need h4{
+        margin-left: 3px;
+    }
+
+    li{
+        margin-left: 15px;
     }
 
     .stepspic img{
-        height: 210px;
-        width: 280px;
+        height: 305px;
+        width: 305px;
         justify-content: center;
         border-radius: 0px;
-        margin: 10px 10px 30px 0px;
+        margin: 10px -10px 30px 0px;
     }
 }
