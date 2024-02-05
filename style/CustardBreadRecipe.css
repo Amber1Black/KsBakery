@@ -157,7 +157,6 @@ nav ul li a:hover::after{
 }
 
 .ingredientsfortop{
-    background-color: ;
     display: flex;
     align-items: center;
     margin: 0px 150px 0px 30px;
@@ -166,7 +165,6 @@ nav ul li a:hover::after{
 }
 
 .ingredients-col{
-    background-color: ;
     flex: 1;
     text-align: center;
     color: black;
@@ -176,7 +174,6 @@ nav ul li a:hover::after{
 }
   
 .ingredients-col h3{
-    background-color: ;
     color: black;
     padding-bottom: 0.5rem;
 }
@@ -415,6 +412,10 @@ li{
         margin: 0px 80px 0px 10px;
     }
 
+    .recipe-what-you-need h5{
+        font-size: 15px;
+    }
+
     li{
         margin-right: 80px;
     }
@@ -543,7 +544,7 @@ li{
 
     .stepspic img{
         height: 380px;
-        width: 380px;
+        width: 450px;
         border-radius: 3px;
         margin: 10px 30px 60px 30px;
     }
@@ -605,6 +606,13 @@ li{
 }
 
 @media only screen and (max-width:650px){
+
+    .stepspic img{
+        height: 330px;
+        width: 400px;
+        border-radius: 3px;
+        margin: 10px 0px 60px 10px;
+    }
 
     .backbutton{
         margin-right: 50px;
@@ -734,10 +742,10 @@ li{
 
     .stepspic img{
         height: 300px;
-        width: 300px;
+        width: 380px;
         justify-content: center;
         border-radius: 0px;
-        margin: 10px 25px 40px 25px;
+        margin: 10px 5px 40px 5px;
     }
 
     .backbutton{
@@ -751,6 +759,14 @@ li{
     .ingredientsfortop{
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .stepspic img{
+        height: 260px;
+        width: 360px;
+        justify-content: center;
+        border-radius: 0px;
+        margin: 10px 5px 40px 5px;
     }
 }
 
@@ -771,6 +787,10 @@ li{
     .recipe-what-to-do{
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .recipe-what-you-need h5{
+        font-size: 14px;
     }
 
     .ingredientsfordough,
@@ -795,11 +815,11 @@ li{
     }
 
     .stepspic img{
-        height: 280px;
-        width: 280px;
+        height: 230px;
+        width: 330px;
         justify-content: center;
         border-radius: 0px;
-        margin: 10px 40px 40px 10px;
+        margin: 10px 0px 40px 0px;
     }
     
 }
@@ -811,10 +831,25 @@ li{
     }
 
     .stepspic img{
-        height: 260px;
-        width: 260px;
+        height: 220px;
+        width: 300px;
         justify-content: center;
         border-radius: 0px;
         margin: 10px 20px 30px 0px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    .recipebakerypicformobile img{
+        height: 320px;
+    }
+
+    .stepspic img{
+        height: 210px;
+        width: 280px;
+        justify-content: center;
+        border-radius: 0px;
+        margin: 10px 10px 30px 0px;
     }
 }
