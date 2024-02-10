@@ -220,7 +220,7 @@ nav ul li a:hover::after{
 /*Second Section*/
 
 .secondpartforlargerscreen{
-    background-image: linear-gradient(to bottom, rgb(240, 140, 140), rgb(238, 141, 129), rgb(238, 141, 129), rgb(238, 187, 129));
+    background-image: linear-gradient(to bottom, rgb(240, 140, 140), rgb(238, 141, 129), rgb(240, 187, 180));
     align-items: center;
 }
 
@@ -282,7 +282,7 @@ nav ul li a:hover::after{
 /*Third Section*/
 
 .thirdpartforlargerscreen{
-    background-image: linear-gradient(to bottom, rgb(238, 187, 129), rgb(248, 158, 142));
+    background-image: linear-gradient(to bottom, rgb(238, 187, 180), rgb(248, 158, 142));
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -2086,7 +2086,7 @@ nav ul li a:hover::after{
     /*Second Section*/
 
     .secondpartforlargerscreen{
-        background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(240, 140, 140), rgb(238, 141, 129), rgb(238, 187, 129));
+        background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(240, 140, 140), rgb(238, 141, 129));
     }
 
     .topimages{
@@ -2118,6 +2118,7 @@ nav ul li a:hover::after{
         font-size: 100px;
         letter-spacing: 5px;
     }
+
 
     /*Third Section*/
 
@@ -2900,4 +2901,3 @@ nav ul li a:hover::after{
     }
 
 }
-
