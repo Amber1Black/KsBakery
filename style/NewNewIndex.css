@@ -96,49 +96,30 @@ nav ul li a:hover::after{
 }
 
 
-
-
 /*Content*/
 
 /*Common Elements*/
 
 .firstpartforsmallerscreen, .firstpartformobile, 
-.secondpartforsmallerscreen, 
-.thirdpartforsmallerscreen, 
-.fourthpartforsmallerscreen, 
-.fifthpartforsmallerscreen,
-.fifthpartsmallerprofilepic{
+.secondpartforsmallerscreen,
+.thirdpartformobile,
+.thirdpartlargermessage p1, 
+.fourthpartformobile,
+.fourthpartlargermessage p1, 
+.fifthpartformobile{
     display: none;
 }
 
-   /*Paragraph Spacing*/ 
-
-.secondpart, .thirdpart, .fourthpart, .fifthpart{
-    margin-top: 150px;
+.firstpart, .secondpart, .thirdpart, .fourthpart, .fifthpart{
     overflow-x: hidden;
-}
-
-.secondpartlargermessage h1, .thirdpartlargermessage h1, .fourthpartlargermessage h1, .fifthpartlargermessage h1{
-    font-family: 'Fraunces', serif;
-    font-size: 35px;
-    color: #3d3d3d;
-    font-weight: 600;
-    letter-spacing: 4px;
-    margin: 5px 0px 5px 0px;
-}
-
-.secondpartlargermessage p, .thirdpartlargermessage p, .fourthpartlargermessage p, .fifthpartlargermessage p{
-    color: rgb(58, 57, 57);
-    text-align: justify;
-    margin: 20px 0px 25px 0px;
-    font-size: 16px;
 }
 
 .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
-    text-decoration-color: #707070;
+    color: white;
+    text-align: center;
 }
 
 .secondpartredirection:hover, .thirdpartredirection:hover, .fourthpartredirection:hover, .fifthpartredirection:hover{
@@ -148,7 +129,7 @@ nav ul li a:hover::after{
 
 .secondpartredirection a, .thirdpartredirection a, .fourthpartredirection a, .fifthpartredirection a{
     text-decoration: none;
-    color: #707070;
+    color: white;
 }
 
 
@@ -177,10 +158,10 @@ nav ul li a:hover::after{
 }
 
 .firstmessage h1{
-    font-size: 54px;
+    font-size: 110px;
     font-family: sans-serif;
     color: #575555;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 .firstmessage h2{
@@ -199,12 +180,11 @@ nav ul li a:hover::after{
 
 .pinkbox{
     height: 90vh;
-    max-height: 700px;
+    max-height: 750px;
     margin-left: 840px;
-    background-color: rgb(255, 170, 170);
+    background-image: linear-gradient(to bottom, rgb(250, 200, 200), rgb(247, 177, 177), rgb(240, 140, 140));
     grid-column: 1/4;
     z-index: -2;
-    opacity: 70%;
 }
 
 .IconOutline{
@@ -237,136 +217,120 @@ nav ul li a:hover::after{
 }
 
 
-
 /*Second Section*/
 
-.gallerydisplay{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;   
+.secondpartforlargerscreen{
+    background-image: linear-gradient(to bottom, rgb(240, 140, 140), rgb(238, 141, 129), rgb(238, 141, 129), rgb(238, 187, 129));
+    align-items: center;
 }
 
-.gallerycontainer1, .gallerycontainer2, .gallerycontainer3, .gallerycontainer4, .gallerycontainer5{
-    position: relative;
-}
-
-.gallerycontainer1:hover, .gallerycontainer2:hover, .gallerycontainer3:hover, .gallerycontainer4:hover, .gallerycontainer5:hover{
-    opacity: 0.95;
-    filter: saturate(160%);
-}
-
-.gallerydisplay img{
+.topimages{
     object-fit: cover;
-    border-radius: 100%;
-    padding: 7px;
-    box-shadow: 0px 0px 3px rgb(188, 189, 179);
-}
-
-.gallerycontainer1 img{
-    width: 270px;
-    height: 270px;
-}
-
-.gallerycontainer2 img{
-    margin-top: 100px;
-    width: 220px;
-    height: 220px;
-}
-
-.gallerycontainer3 img{
-    margin-top: -20px;
-    width: 300px;
-    height: 300px;
-    margin-left: 0px;
-}
-
-.gallerycontainer4 img{
-    margin-top: 60px;
-    width: 190px;
-    height: 190px;
-    margin-left: 5px;
-}
-
-.gallerycontainer5 img{
-    margin-top: 90px;
-    width: 250px;
-    height: 250px;
-}
-
-.overlay1, .overlay2, .overlay3, .overlay4, .overlay5{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s ease;
-    opacity: 0;
-    color: black;
-    font-size: 25px;
-    font-family: Fraunces;
-    letter-spacing: 2px;
-    font-weight: 900;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.overlay1{
-    transform: translate(-50%, -180%);
-}
-
-.overlay2{
-    transform: translate(-50%, -160%);
-}
-
-.overlay3{
-    transform: translate(-50%, -190%);
-}
-
-.overlay4{
-    transform: translate(-48%, -144%);
-}
-
-.overlay5{
-    transform: translate(-51%, -170%);
-}
-
-.overlay1 a, .overlay2 a, .overlay3 a, .overlay4 a, .overlay5 a{
-    text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px rgb(114, 108, 108); 
-}
-  
-.gallerycontainer1:hover .overlay1, .gallerycontainer2:hover .overlay2, .gallerycontainer3:hover .overlay3, .gallerycontainer4:hover .overlay4, .gallerycontainer5:hover .overlay5{
-    opacity: 1;
-}
-
-.secondpartlargermessage{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+    align-items: center;
     margin: 0px 20px 0px 20px;
 }
 
-/*Third Section*/
-
-.thirdpartpictures{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.topimage1 img{
+    width: 400px;
+    margin-top: 200px;
 }
 
-.recipe1 img, .recipe2 img, .recipe3 img{
+.topimage2 img{
+    width: 320px;
+    margin: 180px 0px 0px 40px;
+}
+
+.topimage3 img{
     width: 430px;
-    height: 430px;
+    margin-top: 220px;
+}
+
+.secondpartlargermessage{
+    align-items: center;
+}
+
+.secondpartlargermessage h1{
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+    margin: -20px 0px 30px 0px;
+}
+
+.secondpartlargermessage p{
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.secondpartlargermessage p,
+.secondpartredirection a{
+    font-size: 17px;
+}
+
+.secondpartredirection a{
+    margin: 0px 0px 200px 0px;
+}
+
+
+/*Third Section*/
+
+.thirdpartforlargerscreen{
+    background-image: linear-gradient(to bottom, rgb(238, 187, 129), rgb(248, 158, 142));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lefthandsideimage img{
+    width: 600px;
     object-fit: cover;
-    padding: 10px;
+    margin: 150px -20px 150px 60px;
 }
 
 .thirdpartlargermessage{
-    display: grid;
+    align-self: center;
     justify-content: center;
-    margin: 40px 20px 0px 20px;
+    margin: 0px 100px 0px 0px;
 }
+
+.thirdpartlargermessage h1{
+    font-size: 140px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.thirdpartlargermessage p{
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.thirdpartlargermessage p,
+.thirdpartredirection a{
+    font-size: 17px;
+}
+
+.thirdpartredirection a{
+    margin: 0px 0px 200px 0px;
+}
+
+.butterfly img{
+    width: 80px;
+    object-fit: cover;
+    margin: -80px 0px 0px 550px;
+}
+
 
 /*Fourth Section*/
 
@@ -374,60 +338,60 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    background-image: linear-gradient(to bottom, rgb(248, 158, 142), rgb(241, 175, 175));
 }
 
-.fourthpartmobilepictures{
-    display: none;
+.fourthpartlargermessage h1{
+    font-size: 130px;
+    font-weight: 700;
+    letter-spacing: 9px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+.fourthpartlargermessage p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fourthpartlargermessage p,
+.fourthpartredirection a{
+    font-size: 17px;
 }
 
 .fourthpartlargerpictures{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 100px;
+    margin: 100px 70px 100px 20px;
 }
 
-.fourthpartlargerpictures p1, .fourthpartlargerpictures p2{
-    text-align: center;
-    font-size: 25px;
-    color: rgb(58, 57, 57);
-    font-weight: 600;
-    letter-spacing: 3px;
-    border-style: solid;
-}
-
-.fourthpartlargerpictures p1 {
-    border-width: 1px 1px 0px 0px;
-    padding: 120px 35px 120px 25px;
-    border-color: grey;
-    margin: 10px;
-}
-
-.fourthpartlargerpictures p2 {
-    border-width: 0px 0px 1px 1px;
-    padding: 120px 35px 120px 45px;
-    border-color: grey;
-    margin: 10px;
-}
-
-.fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-    height: 300px;
-    width: 300px;
+.fourthpartlargerpictures img{
+    height: 480px;
     object-fit: cover;
-    display: block;
+    border-radius: 130px;
+    margin-right: 20px;
 }
 
-.fourthpartlargerimage1{
-    justify-self: right;
+.fourthpartlargerpictures1 img{
+    width: 250px;
 }
 
-.fourthpartlargerimage2{
-    justify-self: left;
+.fourthpartlargerpictures2 img{
+    width: 140px;
+}
+
+.fourthpartlargerpictures3 img{
+    width: 140px;
 }
 
 .fourthpartlargermessage{
-    margin: 0px 80px 0px 100px;
+    margin: 0px 50px 0px 50px;
 }
 
 
@@ -437,6 +401,7 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(247, 171, 171), rgb(241, 175, 175),rgb(241, 185, 185), white);
 }
 
 .fifthpartprofilepic{
@@ -446,17 +411,45 @@ nav ul li a:hover::after{
 }
 
 .fifthpartprofilepic img{
-    width: 100%;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
+    margin: 150px 10px 150px 0px;
+    border-radius: 300px;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
 }
 
 .fifthpartlargermessage{
-    margin: 200px 50px 0px 0px;
+    margin: 0px 100px 0px 0px;
     align-items: center;
-    padding: 80px 70px 80px 0px;
+    padding: 70px 70px 70px 0px;
     border-style: solid;
+    border-color: white;
     border-width: 1px 1px 1px 0px;
+}
+
+.fifthpartlargermessage h1{
+    font-size: 110px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.fifthpartlargermessage p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.fifthpartlargermessage p,
+.fifthpartredirection a{
+    font-size: 17px;
 }
 
 .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
@@ -475,7 +468,6 @@ nav ul li a:hover::after{
 }
 
 
-
 @media only screen and (max-width:1350px){
     /*First Section*/
 
@@ -490,6 +482,8 @@ nav ul li a:hover::after{
     .firstpartimagecolumn{
         margin-left: 1120px;
     }
+
+
 }
 
 
@@ -498,6 +492,10 @@ nav ul li a:hover::after{
 
     .firstmessage{
         max-width: 430px;
+    }
+
+    .firstmessage h1{
+        font-size: 100px;
     }
 
     .IconOutline{
@@ -511,138 +509,81 @@ nav ul li a:hover::after{
     .firstpartimagecolumn{
         margin-left: 1040px;
     }
+}
+
+
+@media only screen and (max-width:1280px){
 
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 250px;
-        height: 250px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 100px;
-        width: 210px;
-        height: 210px;
-        margin-left: -5px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -20px;
-        width: 240px;
-        height: 240px;
-        margin-left: -15px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 60px;
-        width: 175px;
-        height: 175px;
-        margin-left: 3px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 90px;
-        width: 210px;
-        height: 210px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -175%);
-    }
-
-    .overlay2{
-        transform: translate(-50%, -155%);
-    }
-
-    .overlay3{
-        transform: translate(-55%, -171%);
-    }
-
-    .overlay4{
-        transform: translate(-50%, -140%);
-    }
-
-    .overlay5{
-        transform: translate(-51%, -155%);
+    .topimage1 img{
+        width: 380px;
+        margin-top: 200px;
     }
     
+    .topimage2 img{
+        width: 300px;
+        margin: 180px 0px 0px 40px;
+    }
+    
+    .topimage3 img{
+        width: 400px;
+        margin-top: 220px;
+    }
+
+    .secondpartforlargerscreen h1{
+        font-size: 130px;
+    }
 
     /*Third Section*/
 
-    .recipe1 img, .recipe2 img, .recipe3 img{
-        width: 400px;
-        height: 400px;
-        padding: 8px;
+    .lefthandsideimage img{
+        width: 550px;
+        margin: 150px -20px 150px 30px;
     }
 
+    .thirdpartlargermessage{
+        margin: 0px 80px 0px 0px;
+    }
+
+    .thirdpartlargermessage h1{
+        font-size: 130px;
+        font-weight: 700;
+        letter-spacing: 4px;
+    }
+
+    .butterfly img{
+        width: 75px;
+        margin: -80px 0px 0px 510px;
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartlargermessage h1{
+        font-size: 110px;
+    }
+
+    .fourthpartlargerpictures1 img{
+        width: 220px;
+    }
 
     /*Fifth Section*/
 
     .fifthpartprofilepic{
         margin-left: 100px;
     }
-    
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 600px;
-    }
-    
+
     .fifthpartlargermessage{
-        margin-top: 200px 80px 0px 0px;
-        padding: 80px 70px 80px 0px;
-    }
-}
-
-
-@media only screen and (max-width:1250px){
-
-    /*Fourth Section*/
-
-    .fourthpartlargerpictures{
-        margin-right: 80px;
+        margin: 0px 60px 0px 0px;
     }
 
-    .fourthpartlargerpictures p1, .fourthpartlargerpictures p2{
-        font-size: 25px;
-        font-weight: 600;
-        letter-spacing: 3px;
-    }
-
-    .fourthpartlargerpictures p1 {
-        border-width: 1px 1px 0px 0px;
-        padding: 120px 35px 120px 25px;
-        margin: 10px;
-    }
-    
-    .fourthpartlargerpictures p2 {
-        border-width: 0px 0px 1px 1px;
-        padding: 120px 35px 120px 45px;
-        margin: 10px;
-    }
-
-    .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 300px;
-        width: 300px;
-    }
-
-    .fourthpartlargermessage{
-        margin: 0px 60px 0px 70px;
+    .fifthpartlargermessage h1{
+        font-size: 110px;
     }
 }
 
 
 @media only screen and (max-width:1200px){
-    /*Paragraph Spacing*/
-
-    .secondpart, .thirdpart, .fourthpart, .fifthpart{
-        margin-top: 140px;
-    }
-
-    /*Common Elements*/
-
-    .secondpartlargermessage h1, .thirdpartlargermessage h1, .fourthpartlargermessage h1, .fifthpartlargermessage h1{
-        font-size: 30px;
-    }
 
     /*First Section*/
 
@@ -660,38 +601,119 @@ nav ul li a:hover::after{
     }
 
     .pinkbox{
-        height: 88vh;
-        max-height: 650px;
+        height: 90vh;
+        max-height: 700px;
         margin-left: 700px;
     }
 
     .firstpartimagecolumn{
         margin-left: 1000px;
     }
-
-
 }
 
 
-@media only screen and (max-width:1170px){
+@media only screen and (max-width:1180px){
+
+    /*Second Section*/
+
+    .topimage1 img{
+        width: 380px;
+        margin-top: 200px;
+    }
+    
+    .topimage2 img{
+        width: 300px;
+        margin: 180px 0px 0px 40px;
+    }
+    
+    .topimage3 img{
+        width: 380px;
+        margin-top: 200px;
+    }
+
+    .secondpartforlargerscreen h1{
+        font-size: 110px;
+    }
 
     /*Third Section*/
 
-    .recipe1 img, .recipe2 img, .recipe3 img{
-        width: 380px;
-        height: 380px;
-        padding: 7px;
+    .lefthandsideimage img{
+        width: 520px;
+        margin: 150px -20px 150px 30px;
     }
 
+    .thirdpartlargermessage{
+        margin: 0px 80px 0px 0px;
+    }
+
+    .thirdpartlargermessage h1{
+        font-size: 110px;
+        letter-spacing: 4px;
+    }
+
+    .butterfly img{
+        width: 70px;
+        margin: -60px 0px 0px 490px;
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartlargermessage h1{
+        font-size: 100px;
+        margin-bottom: 20px;
+    }
+
+    .fourthpartlargermessage p{
+        margin-bottom: 20px;
+    }
+
+    .fourthpartlargerpictures{
+        margin: 100px 40px 100px 20px;
+    }
+
+    .fourthpartlargerpictures1 img{
+        width: 210px;
+    }
+
+    .fourthpartlargerpictures2 img, 
+    .fourthpartlargerpictures3 img{
+        width: 110px;
+        border-radius: 60px;
+    }
+
+    .fourthpartlargermessage{
+        margin: 0px 40px 0px 40px;
+    }
+
+    /*Fifth Section*/
+
+    .fifthpartprofilepic{
+        margin-left: 65px;
+    }
+
+    .fifthpartlargermessage{
+        margin: 0px 50px 0px 0px;
+    }
+
+    .fifthpartlargermessage h1{
+        font-size: 100px;
+    }
 }
+
 
 
 @media only screen and (max-width:1150px){
     /*First Section*/
 
     .firstmessage{
-        margin-left: 60px;
+        margin-left: 55px;
         max-width: 330px;
+    }
+
+    .firstmessage h1{
+        font-size: 90px;
+        letter-spacing: 3px;
+        margin-left: -5px;
     }
 
     .IconOutline{
@@ -701,7 +723,7 @@ nav ul li a:hover::after{
 
     .pinkbox{
         margin-left: 620px;
-        max-height: 630px;
+        max-height: 680px;
     }
 
     .firstpartimagecolumn{
@@ -711,114 +733,101 @@ nav ul li a:hover::after{
     .firstpartimagecolumn img{
         width: 113px;
         height: 113px;
-    }
-}
-
-
-@media only screen and (max-width:1140px){
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 230px;
-        height: 230px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 115px;
-        width: 200px;
-        height: 200px;
-        margin-left: -15px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -28px;
-        width: 240px;
-        height: 240px;
-        margin-left: -33px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 60px;
-        width: 175px;
-        height: 175px;
-        margin-left: -3px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 120px;
-        margin-left: -8px;
-        width: 210px;
-        height: 210px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -167%);
-    }
-
-    .overlay2{
-        transform: translate(-55%, -150%);
-    }
-
-    .overlay3{
-        transform: translate(-60%, -168%);
-    }
-
-    .overlay4{
-        transform: translate(-51%, -136%);
-    }
-
-    .overlay5{
-        transform: translate(-53%, -155%);
-    }
-    
+    }   
 }
 
 
 @media only screen and (max-width:1100px){
+    /*First Section*/
+
+    .firstmessage h1{
+        font-size: 85px;
+        letter-spacing: 2px;
+        margin-left: -5px;
+    }
+
+    /*Second Section*/
+
+    .topimage1 img{
+        width: 340px;
+        margin-top: 200px;
+    }
+    
+    .topimage2 img{
+        width: 270px;
+        margin: 180px 0px 0px 40px;
+    }
+    
+    .topimage3 img{
+        width: 350px;
+        margin-top: 200px;
+    }
+
+    .secondpartforlargerscreen h1{
+        font-size: 100px;
+        letter-spacing: 10px;
+    }
+
+    /*Third Section*/
+
+    .lefthandsideimage img{
+        width: 500px;
+        margin: 150px -10px 150px 20px;
+    }
+
+    .thirdpartlargermessage{
+        margin: 0px 70px 0px 0px;
+    }
+
+    .thirdpartlargermessage h1{
+        font-size: 100px;
+        letter-spacing: 4px;
+        margin-top: 20px;
+    }
+
+    .butterfly img{
+        width: 70px;
+        margin: -20px 0px 0px 410px;
+    }
 
     /*Fourth Section*/
 
-    .fourthpartlargerpictures{
-        margin-right: 40px;
+    .fourthpartlargermessage h1{
+        font-size: 90px;
     }
 
-    .fourthpartlargermessage{
-        margin: 0px 50px 0px 50px;
+    .fourthpartlargerpictures1 img{
+        width: 200px;
     }
 
-    .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 280px;
-        width: 280px;
-    }
-
-    .fourthpartlargerpictures p1 {
-        border-width: 1px 1px 0px 0px;
-        padding: 110px 35px 110px 25px;
-        margin: 10px;
-    }
-    
-    .fourthpartlargerpictures p2 {
-        border-width: 0px 0px 1px 1px;
-        padding: 110px 35px 110px 45px;
-        margin: 10px;
+    .fourthpartlargerpictures2 img, 
+    .fourthpartlargerpictures3 img{
+        width: 100px;
+        border-radius: 60px;
     }
 
     /*Fifth Section*/
 
     .fifthpartprofilepic{
-        margin-left: 90px;
+        margin-left: 50px;
     }
-    
+
     .fifthpartprofilepic img{
-        width: 100%;
-        height: 560px;
+        width: 450px;
+        height: 450px;
+        border-width: 5px;
     }
-    
+
     .fifthpartlargermessage{
-        margin-top: 200px 70px 0px 0px;
-        padding: 80px 70px 80px 0px;
+        margin: 0px 50px 0px -30px;
+        padding: 40px 40px 40px 0px;
+    }
+
+    .fifthpartlargermessage h1{
+        font-size: 90px;
     }
 }
+
 
 
 @media only screen and (max-width:1090px){
@@ -836,7 +845,7 @@ nav ul li a:hover::after{
 
     .pinkbox{
         margin-left: 600px;
-        max-height: 620px;
+        max-height: 680px;
     }
 
     .firstpartimagecolumn{
@@ -846,6 +855,45 @@ nav ul li a:hover::after{
     .firstpartimagecolumn img{
         width: 110px;
         height: 110px;
+    }
+}
+
+
+@media only screen and (max-width:1050px){
+
+    /*Second Section*/
+    
+    .topimage2 img{
+        width: 270px;
+        margin: 180px 0px 0px 30px;
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartlargermessage{
+        margin-right: 0px;
+    }
+
+    .fourthpartlargermessage h1{
+        font-size: 90px;
+    }
+
+    .fourthpartlargerpictures{
+        margin: 80px 10px 80px 0px;
+    }
+
+    .fourthpartlargerpictures1 img{
+        width: 180px;
+    }
+
+    .fourthpartlargerpictures2 img, 
+    .fourthpartlargerpictures3 img{
+        width: 100px;
+        border-radius: 60px;
+    }
+
+    .fourthpartlargermessage{
+        margin: 0px 20px 0px 20px;
     }
 }
 
@@ -865,7 +913,7 @@ nav ul li a:hover::after{
 
     .pinkbox{
         margin-left: 590px;
-        max-height: 620px;
+        max-height: 680px;
     }
 
     .firstpartimagecolumn{
@@ -879,95 +927,11 @@ nav ul li a:hover::after{
         margin-bottom: 10px;
     }
 
-
-    /*Second Section*/
-
-    .gallerycontainer1 img{
-        width: 215px;
-        height: 215px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 130px;
-        width: 180px;
-        height: 180px;
-        margin-left: -23px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -28px;
-        width: 240px;
-        height: 240px;
-        margin-left: -38px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 50px;
-        width: 170px;
-        height: 170px;
-        margin-left: -2px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 130px;
-        margin-left: -20px;
-        width: 195px;
-        height: 195px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -160%);
-    }
-
-    .overlay2{
-        transform: translate(-58%, -140%);
-    }
-
-    .overlay3{
-        transform: translate(-60%, -168%);
-    }
-
-    .overlay4{
-        transform: translate(-51%, -136%);
-    }
-
-    .overlay5{
-        transform: translate(-58%, -145%);
-    }
-
-
-    /*Third Section*/
-
-    .recipe1 img, .recipe2 img, .recipe3 img{
-        width: 350px;
-        height: 350px;
-        padding: 6px;
-    }
     
 }
 
 
 @media only screen and (max-width:1000px){
-    /*Paragraph Spacing*/
-
-    .secondpart, .thirdpart, .fourthpart, .fifthpart{
-        margin-top: 120px;
-    }
-    
-    /*Common Elements*/
-
-    .secondpartlargermessage h1, .thirdpartlargermessage h1, .fourthpartlargermessage h1, .fifthpartlargermessage h1{
-        font-size: 28px;
-        letter-spacing: 3px;
-    }
-
-    .secondpartlargermessage p, .thirdpartlargermessage p, .fourthpartlargermessage p, .fifthpartlargermessage p{
-        font-size: 15px;
-    }
-
-    .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
-        font-size: 15px;
-    }
 
     /*First Section*/
 
@@ -977,7 +941,8 @@ nav ul li a:hover::after{
     }
 
     .firstmessage h1{
-        font-size: 45px;
+        font-size: 80px;
+        letter-spacing: 2px;
     }
 
     .firstmessage h2{
@@ -989,17 +954,17 @@ nav ul li a:hover::after{
     }
 
     .IconOutline{
-        margin-left: 270px;
-        width: 560px;
+        margin-left: 290px;
+        width: 550px;
     }
 
     .pinkbox{
-        margin-left: 545px;
-        max-height: 620px;
+        margin-left: 560px;
+        max-height: 680px;
     }
 
     .firstpartimagecolumn{
-        margin-left: 825px;
+        margin-left: 840px;
     }
 
     .firstpartimagecolumn img{
@@ -1007,60 +972,52 @@ nav ul li a:hover::after{
         height: 108px;
     }
 
-    /*Fourth Section*/
+    /*Second Section*/
 
-    .fourthpartlargerpictures{
-        margin-right: 20px;
+    .topimage1 img{
+        width: 320px;
+        margin-top: 200px;
+    }
+    
+    .topimage2 img{
+        width: 250px;
+        margin: 180px 0px 0px 40px;
+    }
+    
+    .topimage3 img{
+        width: 330px;
+        margin-top: 200px;
     }
 
-    .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 260px;
-        width: 260px;
+    .secondpartforlargerscreen h1{
+        font-size: 100px;
+        letter-spacing: 10px;
     }
-
-    .fourthpartlargermessage{
-        margin: 0px 40px 0px 40px;
-    }
-
-    .fourthpartlargerpictures p1,
-    .fourthpartlargerpictures p2 {
-        font-size: 22px;
-        padding: 100px 35px 100px 45px;
-    }
-
-}
-
-
-@media only screen and (max-width:990px){
 
     /*Third Section*/
 
-    .recipe1 img, .recipe2 img, .recipe3 img{
-        width: 320px;
-        height: 320px;
-        padding: 5px;
+    .lefthandsideimage img{
+        width: 460px;
+        margin: 150px -30px 150px 15px;
     }
 
-    /*Fifth Section*/
-
-    .fifthpartprofilepic{
-        margin-left: 70px;
-    }
-    
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 550px;
-    }
-    
-    .fifthpartlargermessage{
-        margin-top: 200px 50px 0px 0px;
-        padding: 60px 60px 60px 0px;
+    .thirdpartlargermessage{
+        margin: 0px 50px 0px 0px;
     }
 
-    .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
-        margin-left: 40px;
+    .thirdpartlargermessage h1{
+        font-size: 100px;
+        letter-spacing: 4px;
     }
+
+    .butterfly img{
+        width: 70px;
+        margin: -20px 0px 0px 430px;
+    }
+
 }
+
+
 
 
 @media only screen and (max-width:960px){
@@ -1072,18 +1029,22 @@ nav ul li a:hover::after{
         max-width: 270px;
     }
 
+    .firstmessage h1{
+        font-size: 75px;
+    }
+
     .IconOutline{
-        margin-left: 265px;
-        width: 550px;
+        margin-left: 280px;
+        width: 540px;
     }
 
     .pinkbox{
-        margin-left: 540px;
-        max-height: 600px;
+        margin-left: 550px;
+        max-height: 650px;
     }
 
     .firstpartimagecolumn{
-        margin-left: 805px;
+        margin-left: 815px;
     }
 
     .firstpartimagecolumn img{
@@ -1099,85 +1060,115 @@ nav ul li a:hover::after{
         margin-left: 40px;
     }
 
+    /*Common Elements*/
+
+    .thirdpartlargermessage p,
+    .fourthpartlargermessage p{
+        display: none;
+    }
+
+    .thirdpartlargermessage p1,
+    .fourthpartlargermessage p1{
+        display: grid;
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 200px;
-        height: 200px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 132px;
-        width: 180px;
-        height: 180px;
-        margin-left: -28px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -28px;
-        width: 220px;
-        height: 220px;
-        margin-left: -50px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 40px;
-        width: 170px;
-        height: 170px;
-        margin-left: -2px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 130px;
-        margin-left: -23px;
-        width: 185px;
-        height: 185px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -150%);
-    }
-
-    .overlay2{
-        transform: translate(-58%, -140%);
-    }
-
-    .overlay3{
-        transform: translate(-66%, -158%);
-    }
-
-    .overlay4{
-        transform: translate(-51%, -136%);
-    }
-
-    .overlay5{
-        transform: translate(-58%, -143%);
+    .topimage1 img{
+        width: 300px;
+        margin-top: 200px;
     }
     
-}
+    .topimage2 img{
+        width: 230px;
+        margin: 180px 0px 0px 30px;
+    }
+    
+    .topimage3 img{
+        width: 280px;
+        margin-top: 180px;
+    }
 
+    .secondpartforlargerscreen h1{
+        font-size: 100px;
+        letter-spacing: 10px;
+    }
 
-@media only screen and (max-width:930px){
+    /*Third Section*/
+
+    .lefthandsideimage img{
+        width: 430px;
+        margin: 150px -10px 150px 20px;
+    }
+
+    .thirdpartlargermessage{
+        margin: 0px 70px 0px 0px;
+    }
+
+    .thirdpartlargermessage h1{
+        font-size: 90px;
+        letter-spacing: 4px;
+        margin-top: 40px;
+    }
+
+    .butterfly img{
+        width: 70px;
+        margin: -20px 0px 0px 360px;
+    }
 
     /*Fourth Section*/
 
+    .fourthpartlargermessage h1{
+        font-size: 90px;
+    }
+
+    .fourthpartlargermessage p1{
+        margin: 0px 60px 20px 60px;
+    }
+
     .fourthpartlargerpictures{
-        margin-right: 10px;
+        margin: 70px 10px 70px 5px;
     }
 
-    .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 240px;
-        width: 240px;
+    .fourthpartlargerpictures img{
+        margin-right: 15px;
     }
 
-    .fourthpartlargerpictures p1,
-    .fourthpartlargerpictures p2 {
-        font-size: 22px;
-        padding: 90px 30px 90px 30px;
+    .fourthpartlargerpictures1 img{
+        width: 170px;
     }
 
-    .fourthpartlargermessage{
-        margin: 0px 40px 0px 40px;
+    .fourthpartlargerpictures2 img, 
+    .fourthpartlargerpictures3 img{
+        width: 90px;
+        border-radius: 60px;
+    }
+
+
+    /*Fifth Section*/
+
+    .fifthpartprofilepic{
+        margin-left: 40px;
+    }
+
+    .fifthpartprofilepic img{
+        width: 410px;
+        height: 410px;
+    }
+
+    .fifthpartlargermessage{
+        margin: 0px 30px 0px -30px;
+        padding: 40px 40px 40px 0px;
+    }
+
+    .fifthpartlargermessage h1{
+        font-size: 80px;
+        letter-spacing: 8px;
     }
 }
 
@@ -1191,6 +1182,10 @@ nav ul li a:hover::after{
         max-width: 260px;
     }
 
+    .firstmessage h1{
+        font-size: 70px;
+    }
+
     .IconOutline{
         margin-left: 260px;
         width: 520px;
@@ -1198,7 +1193,7 @@ nav ul li a:hover::after{
 
     .pinkbox{
         margin-left: 520px;
-        max-height: 590px;
+        max-height: 650px;
     }
 
     .firstpartimagecolumn{
@@ -1208,92 +1203,24 @@ nav ul li a:hover::after{
 }
 
 
-
 @media only screen and (max-width:900px){
 
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 195px;
-        height: 195px;
-        margin-top: -10px;
-    }
-
-    .gallerycontainer2 img{
-        margin-top: 158px;
-        width: 175px;
-        height: 175px;
-        margin-left: -60px;
-    }
-
-    .gallerycontainer3 img{
-        margin-top: -28px;
-        width: 215px;
-        height: 215px;
-        margin-left: -83px;
-    }
-
-    .gallerycontainer4 img{
-        margin-top: 5px;
-        width: 160px;
-        height: 160px;
-        margin-left: 8px;
-    }
-
-    .gallerycontainer5 img{
-        margin-top: 95px;
-        width: 190px;
-        height: 190px;
-        margin-left: -26px;
-    }
-
-    .overlay1{
-        transform: translate(-50%, -152%);
-    }
-
-    .overlay2{
-        transform: translate(-70%, -140%);
-    }
-
-    .overlay3{
-        transform: translate(-78%, -160%);
-    }
-
-    .overlay4{
-        transform: translate(-47%, -131%);
-    }
-
-    .overlay5{
-        transform: translate(-58%, -145%);
+    .topimage2 img{
+        margin: 180px 0px 0px 20px;
     }
 
     /*Third Section*/
 
-    .recipe1 img, .recipe2 img, .recipe3 img{
-        width: 300px;
-        height: 300px;
-        padding: 4px;
+    .butterfly img{
+        margin: -20px 0px 0px 340px;
     }
 
+    /*Fourth Section*/
 
-    /*Fifth Section*/
-
-    .fifthpartprofilepic{
-        margin-left: 50px;
-    }
-    
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 510px;
-    }
-    
-    .fifthpartlargermessage{
-        margin-top: 200px 40px 0px 0px;
-        padding: 50px 50px 50px 0px;
-    }
-
-    .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
-        margin-left: 35px;
+    .fourthpartlargermessage p1{
+        margin: 0px 40px 20px 40px;
     }
 }
 
@@ -1314,7 +1241,7 @@ nav ul li a:hover::after{
 
     .pinkbox{
         margin-left: 505px;
-        max-height: 550px;
+        max-height: 650px;
     }
 
     .firstpartimagecolumn{
@@ -1327,26 +1254,6 @@ nav ul li a:hover::after{
         margin-top: 9px;
         margin-bottom: 9px;
     }
-
-    /*Fourth Section*/
-
-    .fourthpartlargermessage{
-        margin: 0px 30px 0px 40px;
-    }
-
-}
-
-
-@media only screen and (max-width:860px){
-
-    /*Third Section*/
-
-    .recipe1 img, .recipe2 img, .recipe3 img{
-        width: 280px;
-        height: 280px;
-        padding: 3px;
-    }
- 
 }
 
 
@@ -1366,7 +1273,7 @@ nav ul li a:hover::after{
 
     .pinkbox{
         margin-left: 490px;
-        max-height: 530px;
+        max-height: 650px;
     }
 
     .firstpartimagecolumn{
@@ -1379,80 +1286,102 @@ nav ul li a:hover::after{
         margin-top: 9px;
         margin-bottom: 9px;
     }
-}
-
-
-@media only screen and (max-width:840px){
 
     /*Second Section*/
 
-    .gallerycontainer1 img{
-        width: 195px;
-        height: 195px;
-        margin-top: -15px;
+    .topimage1 img{
+        width: 280px;
+        margin-top: 200px;
+    }
+    
+    .topimage2 img{
+        width: 220px;
+        margin: 180px 0px 0px 15px;
+    }
+    
+    .topimage3 img{
+        width: 270px;
+        margin-top: 180px;
     }
 
-    .gallerycontainer2 img{
-        margin-top: 158px;
-        width: 175px;
-        height: 175px;
-        margin-left: -65px;
+    .secondpartforlargerscreen h1{
+        font-size: 90px;
+        letter-spacing: 10px;
     }
 
-    .gallerycontainer3 img{
-        margin-top: -28px;
-        width: 215px;
-        height: 215px;
-        margin-left: -83px;
+    /*Third Section*/
+
+    .lefthandsideimage img{
+        width: 410px;
+        margin: 150px -10px 150px 15px;
     }
 
-    .gallerycontainer4 img{
-        margin-top: 0px;
-        width: 160px;
-        height: 160px;
-        margin-left: 5px;
+    .thirdpartlargermessage{
+        margin: 0px 70px 0px 0px;
     }
 
-    .gallerycontainer5 img{
-        margin-top: 125px;
-        width: 190px;
-        height: 190px;
-        margin-left: -60px;
+    .thirdpartlargermessage h1{
+        font-size: 85px;
+        letter-spacing: 4px;
+        margin: 40px 0px 20px 0px;
     }
 
-    .overlay1{
-        transform: translate(-50%, -152%);
+    .thirdpartlargermessage p1{
+        margin-bottom: 20px;
     }
 
-    .overlay2{
-        transform: translate(-73%, -138%);
-    }
-
-    .overlay3{
-        transform: translate(-78%, -160%);
-    }
-
-    .overlay4{
-        transform: translate(-48%, -131%);
-    }
-
-    .overlay5{
-        transform: translate(-70%, -145%);
+    .butterfly img{
+        width: 60px;
+        margin: -30px 0px 0px 320px;
     }
 
     /*Fourth Section*/
 
-    .fourthpartlargerimage1 img, .fourthpartlargerimage2 img{
-        height: 220px;
-        width: 220px;
+    .fourthpartlargermessage h1{
+        font-size: 80px;
     }
 
-    .fourthpartlargerpictures p1,
-    .fourthpartlargerpictures p2 {
-        font-size: 20px;
-        padding: 80px 30px 80px 30px;
+    .fourthpartlargerpictures {
+        margin-left: 10px;
+    }
+
+    .fourthpartlargerpictures img{
+        margin-right: 15px;
+        height: 450px;
+    }
+
+    .fourthpartlargerpictures1 img{
+        width: 160px;
+    }
+
+    .fourthpartlargerpictures2 img, 
+    .fourthpartlargerpictures3 img{
+        width: 90px;
+        border-radius: 60px;
+    }
+
+    /*Fifth Section*/
+
+    .fifthpartprofilepic{
+        margin-left: 30px;
+    }
+
+    .fifthpartprofilepic img{
+        width: 400px;
+        height: 400px;
+        border-width: 4px;
+    }
+
+    .fifthpartlargermessage{
+        margin: 0px 30px 0px -30px;
+        padding: 40px 30px 40px 0px;
+    }
+
+    .fifthpartlargermessage h1{
+        font-size: 70px;
     }
 }
+
 
 
 @media only screen and (max-width:830px){
@@ -1471,7 +1400,7 @@ nav ul li a:hover::after{
 
     .pinkbox{
         margin-left: 480px;
-        max-height: 520px;
+        max-height: 650px;
     }
 
     .firstpartimagecolumn{
@@ -1492,229 +1421,247 @@ nav ul li a:hover::after{
 /*Fifth part can keep the larger screen layout*/
 
 @media only screen and (max-width:800px){
-    
-    /*Paragraph Spacing*/
-
-    .secondpart, .thirdpart, .fifthpart{
-        margin-top: 130px;
-    }
-
-    /*Common Elements*/
-
-    .firstpartforlargerscreen, .secondpartforlargerscreen, .thirdpartforlargerscreen, .fourthpartforlargerscreen{
-        display: none;
-    }
-
-    .firstpartforsmallerscreen, .secondpartforsmallerscreen, .thirdpartforsmallerscreen, .fourthpartforsmallerscreen{
-        display: initial;
-    }
-
-    .secondpartsmallermessage h1, 
-    .thirdpartsmallermessage h1, 
-    .fourthpartsmallermessage h1{
-        font-family: 'Fraunces', serif;
-        font-size: 27px;
-        color: #3d3d3d;;
-        font-weight: 600;
-        letter-spacing: 3px;
-        margin: 10px 0 10px;
-    }
-
-    .fifthpartlargermessage h1{
-        font-size: 27px;
-    }
-    
-    .secondpartsmallermessage p, .thirdpartsmallermessage p, .fourthpartsmallermessage p{
-        color: rgb(58, 57, 57);
-        text-align: justify;
-        margin-top: 25px;
-        margin-bottom: 30px;
-        font-size: 15px;
-        margin: 10px 0px 20px 0px;
-    }
-
-    .fifthpartlargermessage p, .fifthpartredirection{
-        font-size: 15px;
-    }
-    
-    .secondpartredirection, .thirdpartredirection, .fourthpartredirection{
-        letter-spacing: 1px;
-        font-size: 15px;
-        font-weight: 500;
-        text-decoration-color: #707070;
-    }
-
-    /*Common Message Spacing*/
-
-    .secondpartsmallermessage,
-    .thirdpartsmallermessage,
-    .fourthpartsmallermessage{
-        display: grid;
-        justify-content: center;
-    }
-    
-    .secondpartsmallermessage{
-        margin: 50px 10px 0px 10px;
-    }
-
-    .thirdpartsmallermessage{
-        margin: 50px 110px 0px 110px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 50px 120px 0px 120px;
-    }
 
     /*First Section*/
 
-    .firstpartforsmallerscreen{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 30px;
-    }
-
-    .firstpartimageforsmallerscreen{
-        display: flex;
-        justify-content: center;
-    }
-
-    .firstpartforsmallerscreen h2{
-        letter-spacing: 4px;
-        font-weight: 600;
-        align-self: center;
-        text-align: center;
-        font-size: 28px;
-        color: #707070;
-        margin: 20px 50px 20px 50px;
-    }
-
-    .firstpartimageforsmallerscreen img{
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .firstpartsmallermessage{
-        align-self: center;
-        text-align: center;
-    }
-
-    .firstpartsmallermessage h1{
-        font-size: 50px;
-        font-family: sans-serif;
-        color: #575555;
-        letter-spacing: 2px;
-    }
-    
-    .firstpartsmallermessage p{
-        margin: 20px 60px 0px 60px;
-        font-size: 17px;
-        font-family: Montserrat;
-        color: #707070;
-        font-weight: 300;
-    }
-
-
-    /*Second Section*/
-
-    .secondpartmobile{
+    .firstpartimagecolumn{
         display: none;
     }
 
-    .secondpartsmallerimage{
-        display: grid;
-        justify-content: center;
+    .firstmessage{
+        margin-left: 40px;
+        max-width: 300px;
     }
 
-    .secondpartsmallerimage img{
-        max-height: 450px;
-        object-fit: cover;
-        width: 100%;
-        border-style: solid;
-        padding: 5px;
-        border-color: grey;
-        border-width: 1px 0px 1px 0px;
+    .IconOutline{
+        margin-left: 285px;
+        width: 480px;
+    }
+
+    .pinkbox{
+        margin-left: 525px;
+        max-height: 650px;
+    }
+    
+    /*Second Section*/
+
+    .topimage1 img{
+        width: 260px;
+        margin-top: 180px;
+    }
+    
+    .topimage2 img{
+        width: 200px;
+        margin: 160px 0px 0px 15px;
+    }
+    
+    .topimage3 img{
+        width: 250px;
+        margin-top: 160px;
+    }
+
+    .secondpartforlargerscreen h1{
+        font-size: 90px;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
+    }
+
+    .secondpartlargermessage p,
+    .secondpartredirection a{
+        font-size: 16px;
     }
 
     /*Third Section*/
 
-    .recipe1 img, .recipe3 img{
-        width: 350px;
-        height: 350px;
-        padding: 8px;
+    .lefthandsideimage img{
+        width: 390px;
+        margin: 130px -10px 130px 15px;
+    }
+
+    .thirdpartlargermessage{
+        margin: 0px 70px 0px 0px;
+    }
+
+    .thirdpartlargermessage h1{
+        font-size: 75px;
+        letter-spacing: 4px;
+        margin: 40px 0px 20px 0px;
+    }
+
+    .thirdpartlargermessage p1,
+    .thirdpartredirection a{
+        font-size: 16px;
+    }
+
+    .butterfly img{
+        width: 60px;
+        margin: -30px 0px 0px 300px;
     }
 
     /*Fourth Section*/
 
+    .fourthpartlargermessage h1{
+        font-size: 80px;
+        letter-spacing: 6px;
+        margin-bottom: 20px;
+    }
+
+    .fourthpartlargermessage p1,
+    .fourthpartredirection a{
+        font-size: 16px;
+    }
+
+    .fourthpartlargermessage p1{
+        margin: 0px 20px 20px 20px;
+    }
+
     .fourthpartlargerpictures{
-        margin-right: 0px;
+        margin: 50px 10px 50px 5px;
     }
 
     .fourthpartlargerpictures img{
-        width: 300px;
-        height: 300px;
+        margin-right: 10px;
+        height: 450px;
     }
 
-    .fourthpartlargerpictures p1{
-        margin: 0px 100px 0px 10px;
-        padding: 120px 60px 120px 60px;
-        font-size: 23px;
+    .fourthpartlargerpictures1 img{
+        width: 145px;
     }
 
-    .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 100px;
-        padding: 120px 67px 120px 67px;
-        font-size: 23px;
+    .fourthpartlargerpictures2 img, 
+    .fourthpartlargerpictures3 img{
+        width: 90px;
+        border-radius: 60px;
     }
-    
+
     /*Fifth Section*/
 
     .fifthpartprofilepic{
-        margin-left: 30px;
+        margin-left: 20px;
     }
-    
+
     .fifthpartprofilepic img{
-        width: 100%;
-        height: 480px;
+        width: 380px;
+        height: 380px;
     }
-    
+
     .fifthpartlargermessage{
-        margin: 150px 30px 0px 0px;
-        padding: 30px 40px 30px 0px;
+        margin: 0px 30px 0px -35px;
+        padding: 40px 20px 40px 0px;
     }
 
-    .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
-        margin-left: 30px;
-    }
-
-    .fifthpartredirection{
-        margin-bottom: 15px;
+    .fifthpartlargermessage h1{
+        font-size: 60px;
     }
 }
 
 
-@media only screen and (max-width:775px){
+@media only screen and (max-width:750px){
     /*First Section*/
 
-    .firstpartsmallermessage h1{
-        font-size: 47px;
+    .firstmessage{
+        margin-left: 25px;
+        max-width: 270px;
     }
 
-    .firstpartsmallermessage p{
-        margin: 20px 75px 0px 75px;
+    .IconOutline{
+        margin-left: 260px;
+        width: 470px;
+    }
+
+    .pinkbox{
+        margin-left: 500px;
+        max-height: 650px;
+    }
+
+    /*Second Section*/
+
+    .topimage2 img{
+        width: 190px;
+        margin: 180px 0px 0px 0px;
+    }
+
+    /*Third Section*/
+
+    .lefthandsideimage img{
+        width: 385px;
+        margin: 150px -10px 150px 10px;
+    }
+
+    .thirdpartlargermessage{
+        margin: 0px 70px 0px 0px;
+    }
+
+    .thirdpartlargermessage h1{
+        font-size: 75px;
+        letter-spacing: 4px;
+        margin: 40px 0px 20px 0px;
+    }
+
+    .thirdpartlargermessage p1,
+    .thirdpartredirection a{
+        font-size: 16px;
+    }
+
+    .butterfly img{
+        width: 50px;
+        margin: -30px 0px 0px 270px;
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartlargermessage h1{
+        font-size: 75px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+
+    /*Fifth Section*/
+
+    .fifthpartprofilepic{
+        margin-left: 15px;
+    }
+
+    .fifthpartprofilepic img{
+        width: 380px;
+        height: 380px;
+    }
+
+    .fifthpartlargermessage{
+        margin: 0px 15px 0px -50px;
+        padding: 40px 20px 40px 0px;
+    }
+
+    .fifthpartlargermessage h1{
+        font-size: 60px;
+        letter-spacing: 6px;
+    }
+
+    .fifthpartlargermessage p,
+    .fifthpartredirection a{
+        font-size: 16px;
     }
 }
 
 
-@media only screen and (max-width:730px){
+@media only screen and (max-width:720px){
+    /*First Section*/
 
-    /*Common Message Spacing*/
-    
-    .secondpartsmallermessage,
-    .thirdpartsmallermessage,
-    .fourthpartsmallermessage{
-        margin: 30px 100px 0px 100px;
+    .IconOutline{
+        margin-left: 245px;
+        width: 465px;
+    }
+
+    .pinkbox{
+        margin-left: 480px;
+        max-height: 650px;
+    }
+
+    /*Third Section*/
+
+    .lefthandsideimage img{
+        width: 375px;
+        margin: 150px -10px 150px 10px;
     }
 }
 
@@ -1722,66 +1669,282 @@ nav ul li a:hover::after{
 @media only screen and (max-width:700px){
     /*First Section*/
 
-    .firstpartforsmallerscreen h2{
-        font-size: 28px;
+    .IconOutline{
+        margin-left: 250px;
+        width: 440px;
     }
 
-    .firstpartsmallermessage h1{
-        font-size: 40px;
+    .pinkbox{
+        margin-left: 470px;
+        max-height: 650px;
     }
 
-    .firstpartsmallermessage p{
-        margin: 20px 50px 0px 50px;
+    /*Second Section*/
+
+    .topimage1 img{
+        width: 250px;
+        margin-top: 200px;
+    }
+    
+    .topimage2 img{
+        width: 170px;
+        margin: 180px 0px 0px 5px;
+    }
+    
+    .topimage3 img{
+        width: 220px;
+        margin-top: 180px;
+    }
+
+    .secondpartforlargerscreen h1{
+        font-size: 85px;
+        letter-spacing: 10px;
+    }
+
+    /*Third Section*/
+
+    .lefthandsideimage img{
+        width: 340px;
+        margin: 150px -15px 150px 0px;
+    }
+
+    .thirdpartlargermessage{
+        margin: 0px 30px 0px 0px;
+    }
+
+    .thirdpartlargermessage h1{
+        font-size: 70px;
+        letter-spacing: 3px;
+        margin: 40px 0px 20px 0px;
+    }
+
+    .butterfly img{
+        width: 50px;
+        margin: -30px 0px 0px 240px;
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartlargermessage h1{
+        font-size: 70px;
+        letter-spacing: 5px;
+    }
+
+    .fourthpartlargermessage p1,
+    .fourthpartredirection a{
+        font-size: 16px;
+    }
+
+    .fourthpartlargermessage p1{
+        margin: 0px 20px 20px 20px;
+    }
+
+    .fourthpartlargerpictures {
+        margin-left: 0px;
+    }
+
+    .fourthpartlargerpictures img{
+        margin-right: 8px;
+        height: 420px;
+    }
+
+    .fourthpartlargerpictures1 img{
+        width: 135px;
+    }
+
+    .fourthpartlargerpictures2 img, 
+    .fourthpartlargerpictures3 img{
+        width: 85px;
+        border-radius: 60px;
     }
 
     /*Fifth Section*/
 
     .fifthpartprofilepic{
-        margin-left: 10px;
-    }
-    
-    .fifthpartprofilepic img{
-        width: 100%;
-        height: 480px;
-    }
-    
-    .fifthpartlargermessage{
-        margin: 150px 10px 0px 0px;
-        padding: 30px 40px 30px 0px;
+        margin: 100px 0px 0px 15px;
+        z-index: 1;
     }
 
+    .fifthpartprofilepic img{
+        width: 360px;
+        height: 360px;
+    }
+
+    .fifthpartlargermessage{
+        margin: -250px 15px 0px -85px;
+        padding: 30px 20px 30px 0px;
+        z-index: 0;
+        border-width: 1px 1px 1px 0px;
+    }
+
+    .fifthpartlargermessage h1{
+        font-size: 60px;
+        letter-spacing: 4px;
+    }
+
+    .fifthpartlargermessage p,
+    .fifthpartredirection a{
+        font-size: 16px;
+    }
 }
 
 
-@media only screen and (max-width:660px){
+@media only screen and (max-width:670px){
+    /*First Section*/
+
+    .firstmessage h1{
+        font-size: 65px;
+    }
+
+    .IconOutline{
+        margin-left: 245px;
+        width: 415px;
+    }
+
+    .pinkbox{
+        margin-left: 455px;
+        max-height: 650px;
+    }
+}
+
+
+@media only screen and (max-width:650px){
+    /*Second Section*/
+
+    .topimage1 img{
+        width: 230px;
+        margin-top: 180px;
+    }
+    
+    .topimage2 img{
+        width: 160px;
+        margin: 160px 0px 0px 0px;
+    }
+    
+    .topimage3 img{
+        width: 210px;
+        margin-top: 160px;
+    }
+
+    .secondpartforlargerscreen h1{
+        font-size: 80px;
+        letter-spacing: 10px;
+    }
+
+    .secondpartlargermessage p,
+    .secondpartredirection a{
+        font-size: 15px;
+    }
+
+    /*Third Section*/
+
+    .lefthandsideimage img{
+        width: 310px;
+        margin: 150px -15px 150px 0px;
+    }
+
+    .thirdpartlargermessage{
+        margin: 0px 25px 0px 0px;
+    }
+
+    .thirdpartlargermessage h1{
+        font-size: 60px;
+        letter-spacing: 1px;
+        margin: 40px 0px 20px 0px;
+    }
+
+    .thirdpartlargermessage p1,
+    .thirdpartredirection a{
+        font-size: 15px;
+    }
+
+    .butterfly img{
+        width: 45px;
+        margin: -10px 0px 0px 220px;
+    }
 
     /*Fourth Section*/
 
-    .fourthpartlargerpictures img{
-        width: 270px;
-        height: 270px;
+    .fourthpartlargermessage h1{
+        font-size: 60px;
+        letter-spacing: 1px;
     }
 
-    .fourthpartlargerpictures p1{
-        margin: 0px 100px 0px 10px;
-        padding: 110px 48px 110px 48px;
-        font-size: 21px;
+    .fourthpartlargermessage p1,
+    .fourthpartredirection a{
+        font-size: 15px;
     }
 
-    .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 100px;
-        padding: 110px 55px 110px 55px;
-        font-size: 21px;
+    .fourthpartlargerpictures1 img{
+        width: 140px;
     }
-    
+
+    .fourthpartlargerpictures2 img, 
+    .fourthpartlargerpictures3 img{
+        width: 80px;
+        border-radius: 60px;
+    }
+
     /*Fifth Section*/
-    
+
     .fifthpartprofilepic img{
-        height: 450px;
+        width: 350px;
+        height: 350px;
     }
 
-    .fifthpartlargermessage h1, .fifthpartlargermessage p, .fifthpartredirection{
-        margin-left: 26px;
+    .fifthpartlargermessage{
+        margin: -250px 15px 0px -100px;
+        padding: 30px 20px 30px 0px;
+        z-index: 0;
+        border-width: 1px 1px 1px 0px;
+    }
+
+    .fifthpartlargermessage h1{
+        font-size: 60px;
+        letter-spacing: 4px;
+    }
+
+    .fifthpartlargermessage p,
+    .fifthpartredirection a{
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width:640px){
+    /*First Section*/
+
+    .firstmessage h1{
+        font-size: 65px;
+    }
+
+    .IconOutline{
+        margin-left: 245px;
+        width: 390px;
+    }
+
+    .pinkbox{
+        margin-left: 440px;
+        max-height: 650px;
+    }
+}
+
+
+@media only screen and (max-width:620px){
+    /*First Section*/
+
+    .firstmessage h1{
+        font-size: 65px;
+    }
+
+    .IconOutline{
+        margin-left: 245px;
+        width: 370px;
+    }
+
+    .pinkbox{
+        margin-left: 432px;
+        max-height: 650px;
     }
 }
 
@@ -1860,110 +2023,306 @@ nav ul li a:hover::after{
         padding-right: 10px;
     }
 
-    /*Paragraph Spacing*/
-
-    .secondpart, .thirdpart, .fourthpart, .fifthpart{
-        margin-top: 130px;
-    }
-
-    /*Common Message Spacing*/
-    
-    .secondpartsmallermessage,
-    .thirdpartsmallermessage,
-    .fourthpartsmallermessage{
-        margin: 30px 70px 0px 70px;
-    }
-
-    /*Common Elements*/
-
-    .secondpartsmallermessage h1, .thirdpartsmallermessage h1, .fourthpartsmallermessage h1, .fifthpartlargermessage h1{
-        font-size: 26px;
-    }
-
-    .secondpartsmallermessage p, .thirdpartsmallermessage p, .fourthpartsmallermessage p, .fifthpartlargermessage p{
-        font-size: 15px;
-    }
-
-    .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
-        font-size: 15px;
-    }
-
     /*First Section*/
 
-    .firstpartforsmallerscreen h2{
-        font-size: 23px;
+    .firstpartforlargerscreen{
+        display: none;
     }
 
-    .firstpartsmallermessage h1{
-        font-size: 35px;
+    .firstpartformobile{
+        display: grid;
+        background-image: linear-gradient(to bottom, rgb(248, 158, 142), rgb(241, 175, 175));
     }
 
-    .firstpartsmallermessage p{
-        margin: 20px 30px 0px 30px;
-        font-size: 16px;
+    .firstpartmobileupperimage{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .firstpartmobileupperimage img{
+        width: 500px;
+        object-fit: cover;
+        margin: 50px 0px 0px 0px;        
+    }
+
+    .firstpartmobilemessage{
+        align-self: center;
+        justify-content: center;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .firstpartmobilemessage h1{
+        font-size: 110px;
+        font-weight: 700;
+        letter-spacing: 9px;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        margin: -100px 0px 20px 0px;
+        text-align: center;
+    }
+
+    .firstpartmobilemessage h2{
+        font-size: 25px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-family: ;
+        color: white;
+        margin: 0px 70px 20px 70px;
+        text-align: center;
+    }
+
+    .firstpartmobilemessage p{
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        font-family: ;
+        color: white;
+        margin: 0px 70px 50px 70px;
+        text-align: center;
+    }
+
+
+    /*Second Section*/
+
+    .secondpartforlargerscreen{
+        background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(240, 140, 140), rgb(238, 141, 129), rgb(238, 187, 129));
+    }
+
+    .topimages{
+        display: block;
+    }
+
+    .topimage1, .topimage2, .topimage3{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .topimage1 img{
+        width: 350px;
+        margin: 50px 150px 0px 10px; 
+    }
+
+    .topimage2 img{
+        width: 280px;
+        margin: -100px 0px 0px 250px; 
+    }
+
+    .topimage3 img{
+        width: 380px;
+        margin: -130px 170px 0px 20px; 
+    }
+
+    .secondpartlargermessage h1{
+        font-size: 100px;
+        letter-spacing: 5px;
+    }
+
+    /*Third Section*/
+
+    .thirdpartforlargerscreen{
+        display: none;
+    }
+
+    .thirdpartformobile{
+        background-image: linear-gradient(to bottom, rgb(238, 187, 129), rgb(248, 158, 142));
+        display: grid;
+    }
+
+    .upperimage{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .upperimage img{
+        width: 450px;
+        object-fit: cover;
+        margin: 150px 0px 30px 0px;        
+    }
+
+    .thirdpartmobilemessage{
+        align-self: center;
+        justify-content: center;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .thirdpartmobilemessage h1,
+    .thirdpartmobilemessage h2{
+        font-size: 95px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .thirdpartmobilemessage h1{
+        margin: -130px 100px 0px 0px;
+    }
+
+    .thirdpartmobilemessage h2{
+        margin: -20px 0px 0px 100px;
+    }
+
+    .thirdpartmobilemessage p{
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        margin: 0px 30px 20px 60px;
+    }
+
+    .thirdpartmobilemessage p,
+    .thirdpartredirection a{
+        font-size: 15px;
+    }
+
+    .thirdpartredirection{
+        margin: 0px 0px 100px 60px;
+    }
+
+    .butterfly img{
+        width: 60px;
+        object-fit: cover;
+        margin: -100px 0px 0px 440px;
+    }
+    
+    .butterfly2 img{
+        width: 50px;
+        object-fit: cover;
+        margin: -100px 0px 0px 50px;
     }
 
     /*Fourth Section*/
 
-    .fourthpartlargerpictures{
+    .fourthpartforlargerscreen{
         display: none;
     }
 
+    .fourthpartformobile{
+        display: grid;
+        align-items: center;
+        background-image: linear-gradient(to bottom, rgb(248, 158, 142), rgb(241, 175, 175));
+    }
+
+    .fourthpartmobilemessage h1{
+        font-size: 90px;
+        font-weight: 700;
+        letter-spacing: 9px;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        margin: 0px 0px 20px 0px;
+        text-align: center;
+        margin: -100px 0px 20px 0px;
+    }
+
+    .fourthpartmobilemessage p{
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        margin: 0px 85px 20px 85px;
+    }
+
+    .fourthpartmobilemessage p,
+    .fourthpartredirection a{
+        font-size: 15px;
+    }
+
     .fourthpartmobilepictures{
-        display: block;
+        display: flex;
         justify-content: center;
-        margin: 0px 50px 0px 50px;
+        align-items: center;
+        margin: 80px 0px 20px 0px;
+        column-gap: 15px;
     }
 
     .fourthpartmobilepictures img{
-        max-height: 550px;
+        height: 380px;
         object-fit: cover;
-        width: 100%;
-        object-position: 10% 70%;
-        border-style: solid;
-        padding: 7px;
-        border-width: 1px 0px 1px 0px;
+        border-radius: 130px;
     }
+
+    .fourthpartmobilepictures1 img{
+        width: 250px;
+    }
+
+    .fourthpartmobilepictures2 img,
+    .fourthpartmobilepictures3 img{
+        width: 120px;
+    }
+
+    .fourthpartmobilemessage{
+        margin: 0px 0px 50px 0px;
+    }
+    
 
     /*Fifth Section*/
 
     .fifthpartforlargerscreen{
-        display: block;
+        display: none;  
+    }
+
+    .fifthpartformobile{
+        display: grid;
+        background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(247, 171, 171), rgb(241, 175, 175),rgb(241, 185, 185), white);
     }
 
     .fifthpartprofilepic{
-        display: none;
+        justify-content: center;
+        align-items: center;
     }
 
-    .fifthpartsmallerprofilepic{
-        margin-left: 60px;
-        margin-right: 60px;
-        display: block;
-    }
-
-    .fifthpartsmallerprofilepic img{
-        width: 100%;
-        height: 450px;
+    .fifthpartprofilepic img{
+        width: 400px;
+        height: 400px;
         object-fit: cover;
+        border-radius: 300px;
+        border-style: solid;
+        border-color: white;
+        border-width: 4px;
+        margin: -130px 0px 0px 20px;
     }
 
-    .fifthpartlargermessage{
-        margin: -20px 100px 0px 80px;
-        padding: 30px 50px 30px 50px;
-        border-width: 0px 1px 1px 1px;
+    .fifthpartmobilemessage{
+        margin: 100px 30px 0px 150px;
+        align-items: center;
+        padding: 30px 25px 50px 30px;
+        border-style: solid;
+        border-color: white;
+        border-width: 1px 1px 1px 0px;
     }
 
-    .fifthpartlargermessage h1{
-        margin-left: 0px;
+    .fifthpartmobilemessage h1{
+        font-size: 80px;
+        letter-spacing: 4px;
+        font-family: 'Lato', sans-serif;
+        color: white;
+        text-align: center;
     }
 
-    .fifthpartlargermessage p{
-        margin: 15px 0px 25px 0px;
+    .fifthpartmobilemessage p{
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        margin: 20px 0px 20px 0px;
     }
 
-    .fifthpartredirection{
-        margin-left: 0px;
+    .fifthpartmobilemessage p,
+    .fifthpartredirection a{
+        font-size: 15px;
     }
+
+    .fifthpartredirection a{
+        margin-bottom: 0px;
+    }
+
+    .fifthpartmobilemessage h1, .fifthpartmobilemessage p, .fifthpartredirection{
+        margin-left: 30px;  
+    }
+
+    
 }
 
 
@@ -1983,233 +2342,246 @@ nav ul li a:hover::after{
         margin: 20px 30px 0px 30px;
         font-size: 15px;
     }
-
-    /*Fifth Section*/
-
-    .fifthpartsmallerprofilepic{
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    .fifthpartsmallerprofilepic img{
-        height: 430px;
-    }
-
-    .fifthpartlargermessage{
-        margin-top: -20px;
-        margin-left: 70px;
-        margin-right: 90px;
-        padding: 30px 40px 30px 40px;
-    }
+    
 }
 
 
 @media only screen and (max-width:550px){
 
-    /*Fourth Section*/
+    /*First Section*/
 
-    .fourthpartmobilepictures{
-        margin: 0px 30px 0px 30px;
+    .firstpartmobilemessage h1{
+        font-size: 100px;
+        letter-spacing: 8px;
     }
 
-    .fourthpartmobilepictures img{
-        max-height: 550px;
+    .firstpartmobilemessage h2{
+        margin: 0px 50px 20px 50px;
     }
-}
 
+    .firstpartmobilemessage p{
+        font-size: 17px;
+        margin: 0px 80px 80px 80px;
+    }
 
-@media only screen and (max-width:520px){
+    /*Second Section*/
+
+    .secondpartlargermessage h1{
+        font-size: 95px;
+    }
+
+    .topimage1 img{
+        width: 320px;
+        margin: 50px 150px 0px 10px; 
+    }
+
+    .topimage2 img{
+        width: 250px;
+        margin: -100px 0px 0px 250px; 
+    }
+
+    .topimage3 img{
+        width: 350px;
+        margin: -110px 170px 0px 20px; 
+    }
 
     /*Third Section*/
 
-    .recipe1{
-        display: none;
+    .butterfly img{
+        width: 60px;
+        object-fit: cover;
+        margin: -100px 0px 0px 400px;
     }
     
-    .recipe3 img{
-        width: 100%;
+    .butterfly2 img{
+        width: 50px;
+        object-fit: cover;
+        margin: -100px 0px 0px 30px;
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartmobilemessage h1{
+        font-size: 100px;
+        letter-spacing: 7px;
+        margin: -100px 0px 20px 0px;
+    }
+
+    .fourthpartmobilemessage p{
+        margin: 0px 60px 20px 60px;
+    }
+
+    .fourthpartmobilepictures{
+        margin: 80px 0px 20px 0px;
+        column-gap: 12px;
+    }
+
+    .fourthpartmobilepictures img{
         height: 380px;
+        border-radius: 130px;
+    }
+
+    .fourthpartmobilepictures1 img{
+        width: 230px;
+    }
+
+    .fourthpartmobilepictures2 img,
+    .fourthpartmobilepictures3 img{
+        width: 100px;
     }
 
     /*Fifth Section*/
 
-    .fifthpartsmallerprofilepic{
-        margin-left: 45px;
-        margin-right: 45px;
+    .fifthpartmobilemessage{
+        margin: 80px 30px 0px 140px;
+        padding: 40px 30px 50px 0px;
     }
 
-    .fifthpartsmallerprofilepic img{
-        height: 420px;
+    .fifthpartmobilemessage h1{
+        letter-spacing: 3px;
     }
 
-    .fifthpartlargermessage{
-        margin-top: -20px;
-        margin-left: 65px;
-        margin-right: 90px;
-        padding: 30px 35px 30px 35px;
+    .fifthpartprofilepic img{
+        width: 380px;
+        height: 380px;
+        border-width: 5px;
+        margin: -130px 0px 0px 15px;
     }
 }
 
 
 @media only screen and (max-width:500px){
-    /*Paragraph Spacing*/
 
-    .secondpart, .thirdpart, .fourthpart, .fifthpart{
-        margin-top: 110px;
-    }
+    /*First Section*/
 
-    /*Common Message Spacing*/
-    
-    .secondpartsmallermessage,
-    .thirdpartsmallermessage,
-    .fourthpartsmallermessage{
-        margin: 30px 50px 0px 50px;
-    }
-
-    /*Common Elements*/
-
-    .secondpartsmallermessage h1, .thirdpartsmallermessage h1, .fourthpartsmallermessage h1, .fifthpartlargermessage h1{
-        font-size: 25px;
-    }
-    
-    .secondpartsmallermessage p, .thirdpartsmallermessage p, .fourthpartsmallermessage p, .fifthpartlargermessage p{
-        font-size: 14px;
-    }
-    
-    .secondpartredirection, .thirdpartredirection, .fourthpartredirection, .fifthpartredirection{
-        font-size: 14px;
-    }
-
-    /*First Section, layout for mobile*/
-
-    .firstpartforsmallerscreen{
-        display: none;
-    }
-
-    .firstpartformobile{
-        display: initial;
-    }
-
-    .firstpartmobilemessage{
-        margin: 50px 40px 30px 40px;
-        align-self: center;
-        text-align: center;
+    .firstpartmobileupperimage img{
+        width: 460px;
+        margin: 50px 0px 30px 0px;        
     }
 
     .firstpartmobilemessage h1{
-        font-size: 40px;
-        font-family: sans-serif;
-        color: #575555;
-        letter-spacing: 2px;
-        margin-top: 0px;
-        margin-bottom: 15px;
+        font-size: 100px;
+        letter-spacing: 4px;
+        margin: -130px 0px 20px 0px;
     }
 
     .firstpartmobilemessage h2{
-        letter-spacing: 3px;
-        font-weight: 400;
-        font-size: 20px;
-        color: #707070;
-        margin: 20px 30px 20px 30px;
+        margin: 0px 40px 20px 40px;
     }
 
-    .firstpartformobilecontent{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .firstpartformobilecontent p1{
-        align-self: center;
-        text-align: center;
-        margin: 20px;
-        border-style: solid;
-        padding: 50px 30px 50px 30px;
-        border-width: 1px 0px 1px 1px;
-        border-color: rgb(177, 175, 175);
-        color: #707070;
-    }
-
-    .firstpartformobilecontent p2{
-        align-self: center;
-        text-align: center;
-        margin: 20px;
-        border-style: solid;
-        padding: 50px 40px 50px 40px;
-        border-width: 1px 1px 1px 0px;
-        border-color: rgb(177, 175, 175);
-        color: #707070;
+    .firstpartmobilemessage p{
+        font-size: 16px;
+        margin: 0px 60px 80px 60px;
     }
     
     /*Second Section*/
 
-    .secondpartforsmallerscreen img{
-        display: none;
+    .secondpartlargermessage h1{
+        font-size: 90px;
+        letter-spacing: 2px;
     }
 
-    .secondpartmobile{
-        display: flex;
-        justify-content: center;
+    .topimage1 img{
+        width: 300px;
+        margin: 50px 150px 0px 10px; 
     }
 
-    .secondpartmobile img{
-        display: initial;
-        max-height: 450px;
-        object-fit: cover;
-        width: 100%;
-        border-style: solid;
-        padding: 5px;
-        border-color: grey;
-        border-width: 1px 0px 1px 0px;
+    .topimage2 img{
+        width: 220px;
+        margin: -100px 30px 0px 250px; 
     }
 
-    .secondpartmobile img{
-        max-height: 420px;
+    .topimage3 img{
+        width: 320px;
+        margin: -100px 130px 0px 20px; 
+    }
+    
+    /*Third Section*/
+
+    .upperimage img{
+        width: 400px;
+        margin: 150px 0px 30px 0px;        
     }
 
-    .secondpartsmallerimage img{
-        max-height: 300px;
-    }
-
-    /*Fourth Section*/
-
-    .fourthpartmobilepictures{
+    .thirdpartmobilemessage{
         margin: 0px 20px 0px 20px;
     }
 
-    .fourthpartmobilepictures img{
-        max-height: 520px;
+    .thirdpartmobilemessage h1,
+    .thirdpartmobilemessage h2{
+        font-size: 90px;
     }
 
-}
+    .thirdpartmobilemessage h1{
+        margin: -130px 50px 0px 0px;
+    }
 
+    .thirdpartmobilemessage h2{
+        margin: -20px 0px 30px 40px;
+    }
 
-@media only screen and (max-width:480px){
-    /*Third Section*/
+    .thirdpartmobilemessage p{
+        margin: -30px 30px 15px 50px;
+    }
 
-    .recipe1 img{
-        height: 420px;
+    .thirdpartredirection{
+        margin: 0px 30px 100px 50px;
+    }
+
+    .butterfly img{
+        width: 60px;
+        margin: -100px 0px 0px 370px;
+    }
+    
+    .butterfly2 img{
+        width: 50px;
+        margin: -100px 0px 0px 30px;
     }
 
     /*Fourth Section*/
 
-    .fourthpartlargerpictures img{
+    .fourthpartmobilemessage h1{
+        font-size: 90px;
+        letter-spacing: 6px;
+        margin: -100px 0px 20px 0px;
+    }
+
+    .fourthpartmobilemessage p{
+        margin: 0px 110px 20px 110px;
+    }
+
+    .fourthpartmobilepictures{
+        margin: 80px 0px 20px 0px;
+        column-gap: 12px;
+    }
+
+    .fourthpartmobilepictures1 img{
         width: 200px;
-        height: 200px;
     }
 
-    .fourthpartlargerpictures p1{
-        margin: 0px 100px 0px 10px;
-        padding: 85px 24px 85px 24px;
-        font-size: 20px;
-        letter-spacing: 2px;
+    .fourthpartmobilepictures2 img,
+    .fourthpartmobilepictures3 img{
+        width: 80px;
     }
 
-    .fourthpartlargerpictures p2{
-        margin: 0px 10px 0px 100px;
-        padding: 85px 25px 85px 35px;
-        font-size: 20px;
-        letter-spacing: 2px;
+    /*Fifth Section*/
+
+    .fifthpartmobilemessage{
+        margin: 80px 20px 0px 110px;
+        padding: 40px 20px 50px 0px;
     }
+
+    .fifthpartmobilemessage h1{
+        letter-spacing: 3px;
+    }
+
+    .fifthpartprofilepic img{
+        width: 360px;
+        height: 360px;
+        border-width: 4px;
+        margin: -130px 0px 0px 5px;
+    }
+
 }
 
 
@@ -2231,150 +2603,301 @@ nav ul li a:hover::after{
         padding: 50px 30px 50px 30px;
     }
 
-    /*Fifth Section*/
-
-    .fifthpartsmallerprofilepic{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .fifthpartsmallerprofilepic img{
-        height: 400px;
-    }
-
-    .fifthpartlargermessage{
-        margin-top: -20px;
-        margin-left: 50px;
-        margin-right: 70px;
-        padding: 30px 35px 30px 35px;
-    }
+    
 } 
 
 
-@media only screen and (max-width:440px){
+@media only screen and (max-width:450px){
 
     /*First Section*/
 
+    .firstpartmobileupperimage img{
+        width: 420px;
+        margin: 50px 0px 30px 0px;        
+    }
+
+    .firstpartmobilemessage h1{
+        font-size: 90px;
+        letter-spacing: 2px;
+        margin: -120px 0px 20px 0px;
+    }
+
     .firstpartmobilemessage h2{
-        margin: 10px 10px 40px 10px;
+        font-size: 22px;
+        margin: 0px 20px 20px 20px;
     }
 
-    .firstpartformobilecontent p1{
-        margin: 17px;
-        padding: 40px 20px 40px 20px;
+    .firstpartmobilemessage p{
+        font-size: 16px;
+        margin: 0px 35px 80px 35px;
     }
 
-    .firstpartformobilecontent p2{
-        margin: 17px;
-        padding: 40px 25px 40px 25px;
+    /*Second Section*/
+
+    .secondpartlargermessage h1{
+        font-size: 80px;
+        letter-spacing: 2px;
+    }
+
+    .topimage1 img{
+        width: 280px;
+        margin: 50px 150px 0px 20px; 
+    }
+
+    .topimage2 img{
+        width: 200px;
+        margin: -80px 30px 0px 220px; 
+    }
+
+    .topimage3 img{
+        width: 300px;
+        margin: -90px 110px 0px 20px; 
     }
 
     /*Third Section*/
 
-    .recipe1 img{
-        height: 400px;
+    .upperimage img{
+        width: 370px;
+        margin: 150px 0px 30px 0px;        
+    }
+
+    .thirdpartmobilemessage{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .thirdpartmobilemessage h1,
+    .thirdpartmobilemessage h2{
+        font-size: 80px;
+        letter-spacing: 2px;
+    }
+
+    .thirdpartmobilemessage h1{
+        margin: -110px 50px 0px 0px;
+    }
+
+    .thirdpartmobilemessage h2{
+        margin: -30px 0px 30px 50px;
+    }
+
+    .thirdpartmobilemessage p{
+        margin: -30px 25px 15px 40px;
+    }
+
+    .thirdpartredirection{
+        margin: 0px 25px 70px 40px;
+    }
+
+    .butterfly img{
+        width: 60px;
+        margin: -60px 0px 0px 320px;
+    }
+    
+    .butterfly2 img{
+        width: 50px;
+        margin: -100px 0px 0px 20px;
     }
 
     /*Fourth Section*/
 
-    .fourthpartmobilepictures{
-        margin: 0px 10px 0px 10px;
+    .fourthpartmobilemessage p{
+        margin: 0px 85px 20px 85px;
     }
-
-    .fourthpartmobilepictures img{
-        max-height: 500px;
-    }
-
-}
-
-
-@media only screen and (max-width:430px){
 
     /*Fifth Section*/
 
-    .fifthpartsmallerprofilepic{
-        margin-left: 20px;
-        margin-right: 20px;
+    .fifthpartmobilemessage{
+        margin: 80px 15px 0px 90px;
+        padding: 40px 15px 50px 15px;
     }
 
-    .fifthpartsmallerprofilepic img{
-        height: 390px;
+    .fifthpartmobilemessage h1{
+        font-size: 80px;
+        letter-spacing: 3px;
     }
 
-    .fifthpartlargermessage{
-        margin-left: 30px;
-        margin-right: 50px;
-        padding: 30px 35px 30px 35px;
+    .fifthpartprofilepic img{
+        width: 330px;
+        height: 330px;
+        border-width: 4px;
+        margin: -140px 0px 0px 5px;
     }
 }
 
 
 @media only screen and (max-width:420px){
 
-    /*Common Message Spacing*/
-    
-    .secondpartsmallermessage,
-    .thirdpartsmallermessage,
-    .fourthpartsmallermessage{
-        margin: 30px 35px 0px 35px;
-    }
-
     /*First Section*/
 
+    .firstpartmobileupperimage img{
+        width: 400px;
+        margin: 30px 0px 30px 0px;        
+    }
+
+    .firstpartmobilemessage h1{
+        font-size: 80px;
+        letter-spacing: 2px;
+        margin: -120px 0px 20px 0px;
+    }
+
     .firstpartmobilemessage h2{
-        margin: 10px 0px 40px 0px;
-        font-size: 18px;
+        font-size: 20px;
+        margin: 0px 20px 20px 20px;
     }
 
-    .firstpartformobilecontent p1{
-        margin: 15px;
-        padding: 45px 25px 45px 25px;
-        font-size: 14px;
+    .firstpartmobilemessage p{
+        font-size: 15px;
+        margin: 0px 35px 80px 35px;
     }
 
-    .firstpartformobilecontent p2{
-        margin: 15px;
-        padding: 40px 33px 40px 33px;
-        font-size: 14px;
+    /*Third Section*/
+
+    .butterfly img{
+        width: 55px;
+        margin: -60px 0px 0px 300px;
+    }
+    
+    .butterfly2 img{
+        width: 45px;
+        margin: -100px 0px 0px 0px;
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartmobilemessage h1{
+        font-size: 85px;
+        letter-spacing: 5px;
+        margin: -100px 0px 20px 0px;
+    }
+
+    .fourthpartmobilepictures{
+        margin: 80px 0px 20px 0px;
+        column-gap: 10px;
+    }
+    
+    .fourthpartmobilepictures1 img{
+        width: 180px;
+    }
+
+    .fourthpartmobilepictures2 img,
+    .fourthpartmobilepictures3 img{
+        width: 75px;
+    }
+
+    /*Fifth Section*/
+
+    .fifthpartmobilemessage{
+        margin: 100px 15px 0px 70px;
+        padding: 35px 15px 50px 15px;
+    }
+
+    .fifthpartmobilemessage h1{
+        font-size: 75px;
+        letter-spacing: 2px;
+    }
+
+    .fifthpartprofilepic img{
+        width: 320px;
+        height: 320px;
+        border-width: 4px;
+        margin: -145px 0px 0px 0px;
     }
 
 }
 
 
 @media only screen and (max-width:400px){
-    /*Paragraph Spacing*/
-
-    .secondpart, .thirdpart, .fourthpart, .fifthpart{
-        margin-top: 110px;
-    }
 
     /*First Section*/
 
-    .firstpartformobilecontent p1{
-        margin: 15px;
-        padding: 35px 15px 35px 15px;
-        font-size: 14px;
+    .firstpartmobileupperimage img{
+        width: 380px;
+        margin: 25px 0px 30px 0px;        
     }
 
-    .firstpartformobilecontent p2{
-        margin: 15px;
-        padding: 35px 25px 35px 25px;
-        font-size: 14px;
+    .firstpartmobilemessage h1{
+        font-size: 75px;
+        letter-spacing: 2px;
+        margin: -110px 0px 15px 0px;
+    }
+
+    .firstpartmobilemessage h2{
+        font-size: 18px;
+        margin: 0px 13px 15px 13px;
+    }
+
+    .firstpartmobilemessage p{
+        font-size: 15px;
+        margin: 0px 18px 80px 18px;
+    }
+
+    /*Second Section*/
+
+    .secondpartlargermessage h1{
+        font-size: 75px;
+        letter-spacing: 1px;
+    }
+
+    .topimage1 img{
+        width: 250px;
+        margin: 50px 120px 0px 20px; 
+    }
+
+    .topimage2 img{
+        width: 170px;
+        margin: -70px 30px 0px 180px; 
+    }
+
+    .topimage3 img{
+        width: 270px;
+        margin: -80px 70px 0px 20px; 
     }
 
     /*Third Section*/
 
-    .recipe1 img{
-        height: 380px;
+    .upperimage img{
+        width: 360px;
+        margin: 150px 0px 30px 0px;        
+    }
+
+    .thirdpartmobilemessage{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .thirdpartmobilemessage h1,
+    .thirdpartmobilemessage h2{
+        font-size: 80px;
+        letter-spacing: 1px;
+    }
+
+    .thirdpartmobilemessage h1{
+        margin: -110px 50px 0px 0px;
+    }
+
+    .thirdpartmobilemessage h2{
+        margin: -30px 0px 30px 50px;
+    }
+
+    .thirdpartmobilemessage p{
+        margin: -30px 20px 15px 40px;
+    }
+
+    .thirdpartredirection{
+        margin: 0px 20px 50px 40px;
+    }
+
+    .butterfly img{
+        margin: -60px 0px 0px 285px;
+    }
+    
+    .butterfly2 img{
+        margin: -100px 0px 0px 0px;
     }
 
     /*Fourth Section*/
 
-    .fourthpartmobilepictures{
-        margin: 0px 10px 0px 10px;
+    .fourthpartmobilemessage p{
+        margin: 0px 70px 20px 70px;
     }
 
-    .fourthpartmobilepictures img{
-        max-height: 470px;
-    }
 }
+
