@@ -2086,7 +2086,7 @@ nav ul li a:hover::after{
     /*Second Section*/
 
     .secondpartforlargerscreen{
-        background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(240, 140, 140), rgb(238, 141, 129));
+        background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(238, 141, 129), rgb(240, 187, 180));
     }
 
     .topimages{
@@ -2127,7 +2127,7 @@ nav ul li a:hover::after{
     }
 
     .thirdpartformobile{
-        background-image: linear-gradient(to bottom, rgb(238, 187, 129), rgb(248, 158, 142));
+        background-image: linear-gradient(to bottom, rgb(238, 187, 180), rgb(248, 158, 142));
         display: grid;
     }
 
@@ -2901,3 +2901,4 @@ nav ul li a:hover::after{
     }
 
 }
+
