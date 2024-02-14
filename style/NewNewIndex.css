@@ -2031,7 +2031,6 @@ nav ul li a:hover::after{
 
     .firstpartformobile{
         display: grid;
-        background-image: linear-gradient(to bottom, rgb(248, 158, 142), rgb(241, 175, 175));
     }
 
     .firstpartmobileupperimage{
@@ -2041,9 +2040,9 @@ nav ul li a:hover::after{
     }
 
     .firstpartmobileupperimage img{
-        width: 500px;
+        width: 100%;
         object-fit: cover;
-        margin: 50px 0px 0px 0px;        
+        border-radius: 20px;      
     }
 
     .firstpartmobilemessage{
@@ -2053,12 +2052,12 @@ nav ul li a:hover::after{
     }
 
     .firstpartmobilemessage h1{
-        font-size: 110px;
-        font-weight: 700;
-        letter-spacing: 9px;
-        font-family: 'Lato', sans-serif;
-        color: white;
-        margin: -100px 0px 20px 0px;
+        font-size: 80px;
+        font-weight: 900;
+        letter-spacing: 5px;
+        font-family: sans-serif;
+        color: #555454;
+        margin: 40px 0px 0px 0px;
         text-align: center;
     }
 
@@ -2067,8 +2066,8 @@ nav ul li a:hover::after{
         font-weight: 500;
         letter-spacing: 2px;
         font-family: ;
-        color: white;
-        margin: 0px 70px 20px 70px;
+        color: #707070;
+        margin: 20px 0px 20px 0px;
         text-align: center;
     }
 
@@ -2077,8 +2076,8 @@ nav ul li a:hover::after{
         font-weight: 400;
         letter-spacing: 0px;
         font-family: ;
-        color: white;
-        margin: 0px 70px 50px 70px;
+        color: #575757;
+        margin: 0px 20px 100px 20px;
         text-align: center;
     }
 
@@ -2086,40 +2085,82 @@ nav ul li a:hover::after{
     /*Second Section*/
 
     .secondpartforlargerscreen{
-        background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(238, 141, 129), rgb(240, 187, 180));
+        display: none;
     }
 
-    .topimages{
-        display: block;
+    .secondpartformobile{
+        display: initial;
     }
 
-    .topimage1, .topimage2, .topimage3{
-        display: flex;
-        align-self: center;
-        justify-content: center;
+    .secondpartformobile h1{
+        font-size: 105px;
+        letter-spacing: 7px;
+        margin: 10px 0px 15px 0px;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
     }
 
-    .topimage1 img{
+    .secondpartformobile p,
+    .secondpartredirection a{
+        font-size: 15px;
+    }
+
+    .secondpartformobile p{
+        font-weight: 500;
+        color: rgb(44, 43, 43);
+        text-align:justify;
+        margin: 0px 50px 20px 50px;
+    }
+
+    .secondpartredirection{
+        margin: 0px 0px 0px 50px;
+        text-align: unset;
+    }
+
+    .secondpartformobileimagerow1, .secondpartformobileimagerow2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .secondpartformobileimage1 img{
         width: 350px;
-        margin: 50px 150px 0px 10px; 
+        height: 180px;
+        object-fit: cover;
+        border-radius: 0px 15px 15px 0px;
     }
 
-    .topimage2 img{
-        width: 280px;
-        margin: -60px 0px 0px 250px; 
+    .secondpartformobileimage2 img{
+        width: 250px;
+        height: 180px;
+        object-fit: cover;
+        margin: 0px 0px 10px 10px;
+        border-radius: 15px 0px 0px 15px;
     }
 
-    .topimage3 img{
-        width: 380px;
-        margin: -100px 170px 0px 20px; 
+    .secondpartformobileimage3 img{
+        width: 95%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 0px 20px 10px 0px;
     }
 
-    .secondpartlargermessage h1{
-        font-size: 100px;
-        letter-spacing: 5px;
+    .secondpartformobileimage4 img{
+        width: 230px;
+        height: 180px;
+        object-fit: cover;
+        margin: 10px 0px 10px 0px;
+        border-radius: 0px 15px 15px 0px;
     }
 
+    .secondpartformobileimage5 img{
+        width: 360px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 15px 0px 0px 15px;
+        margin: 10px 0px 10px 10px;
+    }
 
+    
     /*Third Section*/
 
     .thirdpartforlargerscreen{
@@ -2127,8 +2168,8 @@ nav ul li a:hover::after{
     }
 
     .thirdpartformobile{
-        background-image: linear-gradient(to bottom, rgb(238, 187, 180), rgb(248, 158, 142));
         display: grid;
+        background-image: linear-gradient(to bottom, white, rgb(255, 159, 159));
     }
 
     .upperimage{
@@ -2140,7 +2181,7 @@ nav ul li a:hover::after{
     .upperimage img{
         width: 450px;
         object-fit: cover;
-        margin: 150px 0px 30px 0px;        
+        margin: 100px 0px 30px 0px;        
     }
 
     .thirdpartmobilemessage{
@@ -2151,36 +2192,41 @@ nav ul li a:hover::after{
 
     .thirdpartmobilemessage h1,
     .thirdpartmobilemessage h2{
-        font-size: 95px;
+        font-size: 110px;
         font-weight: 700;
         letter-spacing: 6px;
         font-family: 'Lato', sans-serif;
         color: white;
-        text-align: center;
     }
 
     .thirdpartmobilemessage h1{
-        margin: -130px 100px 0px 0px;
+        margin: -130px 60px 0px 50px;
     }
 
     .thirdpartmobilemessage h2{
-        margin: -20px 0px 0px 100px;
+        margin: -20px 0px 0px 150px;
     }
 
     .thirdpartmobilemessage p{
         font-weight: 500;
         color: white;
-        text-align: center;
-        margin: 0px 30px 20px 60px;
+        text-align: justify;
+        margin: 0px 40px 20px 40px;
     }
 
     .thirdpartmobilemessage p,
     .thirdpartredirection a{
         font-size: 15px;
+        color: white;
+    }
+
+    .thirdpartredirection a{
+        margin: 0px;
+        text-align: center;
     }
 
     .thirdpartredirection{
-        margin: 0px 0px 100px 60px;
+        margin: 0px 0px 100px 0px;
     }
 
     .butterfly img{
@@ -2204,7 +2250,7 @@ nav ul li a:hover::after{
     .fourthpartformobile{
         display: grid;
         align-items: center;
-        background-image: linear-gradient(to bottom, rgb(248, 158, 142), rgb(241, 175, 175));
+        background-image: linear-gradient(to bottom, rgb(255, 159, 159), rgb(245, 161, 161));
     }
 
     .fourthpartmobilemessage h1{
@@ -2239,7 +2285,7 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmobilepictures img{
-        height: 380px;
+        height: 400px;
         object-fit: cover;
         border-radius: 130px;
     }
@@ -2266,7 +2312,7 @@ nav ul li a:hover::after{
 
     .fifthpartformobile{
         display: grid;
-        background-image: linear-gradient(to bottom, rgb(241, 175, 175), rgb(247, 171, 171), rgb(241, 175, 175),rgb(241, 185, 185), white);
+        background-image: linear-gradient(to bottom, rgb(245, 161, 161), rgb(247, 171, 171), rgb(241, 175, 175),rgb(241, 185, 185), white);
     }
 
     .fifthpartprofilepic{
@@ -2322,82 +2368,51 @@ nav ul li a:hover::after{
     .fifthpartmobilemessage h1, .fifthpartmobilemessage p, .fifthpartredirection{
         margin-left: 30px;  
     }
-
-    
 }
 
-
-@media only screen and (max-width:560px){
-    /*First Section*/
-
-    .firstpartforsmallerscreen h2{
-        font-size: 21px;
-        margin: 15px;
-    }
-
-    .firstpartsmallermessage h1{
-        font-size: 32px;
-    }
-
-    .firstpartsmallermessage p{
-        margin: 20px 30px 0px 30px;
-        font-size: 15px;
-    }
-    
-}
 
 
 @media only screen and (max-width:550px){
 
-    /*First Section*/
+    /*First Secction*/
 
     .firstpartmobilemessage h1{
-        font-size: 100px;
-        letter-spacing: 8px;
+        font-size: 75px;
     }
 
     .firstpartmobilemessage h2{
-        margin: 0px 50px 20px 50px;
+        font-size: 22px;
     }
 
     .firstpartmobilemessage p{
         font-size: 17px;
-        margin: 0px 80px 80px 80px;
     }
 
     /*Second Section*/
 
-    .secondpartlargermessage h1{
-        font-size: 95px;
-    }
-
-    .topimage1 img{
-        width: 320px;
-        margin: 50px 150px 0px 10px; 
-    }
-
-    .topimage2 img{
-        width: 250px;
-        margin: -70px 0px 0px 250px; 
-    }
-
-    .topimage3 img{
-        width: 350px;
-        margin: -90px 170px 0px 20px; 
+    .secondpartformobile h1{
+        font-size: 100px;
+        letter-spacing: 5px;
     }
 
     /*Third Section*/
 
-    .butterfly img{
-        width: 60px;
-        object-fit: cover;
-        margin: -100px 0px 0px 400px;
+    .thirdpartmobilemessage h1{
+        margin: -130px 60px 0px 20px;
     }
-    
+
+    .thirdpartmobilemessage h2{
+        margin: -20px 0px 0px 120px;
+    }
+
+    .thirdpartmobilemessage p{
+        margin: 0px 30px 20px 30px;
+    }
+
     .butterfly2 img{
         width: 50px;
         object-fit: cover;
-        margin: -100px 0px 0px 30px;
+        margin: -100px 0px 0px 0px;
     }
 
     /*Fourth Section*/
@@ -2450,59 +2465,89 @@ nav ul li a:hover::after{
     }
 }
 
+@media only screen and (max-width:520px){
+
+    /*Third Section*/
+
+    .thirdpartmobilemessage h1{
+        margin: -130px 60px 0px 20px;
+        letter-spacing: 2px;
+    }
+
+    .thirdpartmobilemessage h2{
+        margin: -20px 0px 0px 100px;
+    }
+}
+
 
 @media only screen and (max-width:500px){
 
-    /*First Section*/
+    /*Common Parameter*/
 
-    .firstpartmobileupperimage img{
-        width: 460px;
-        margin: 50px 0px 30px 0px;        
+    .secondpartlargermessage p1,
+    .secondpartredirection a,
+    .thirdpartmobilemessage p,
+    .thirdpartredirection a,
+    .fourthpartmobilemessage p,
+    .fourthpartredirection a,
+    .fifthpartmobilemessage p,
+    .fifthpartredirection a{
+        font-size: 14px;
     }
+    
+    /*First Secction*/
 
     .firstpartmobilemessage h1{
-        font-size: 100px;
-        letter-spacing: 4px;
-        margin: -130px 0px 20px 0px;
+        font-size: 70px;
+        letter-spacing: 3px;
     }
 
     .firstpartmobilemessage h2{
-        margin: 0px 40px 20px 40px;
+        font-size: 20px;
+        margin: 15px 20px 15px 20px;
     }
 
     .firstpartmobilemessage p{
         font-size: 16px;
-        margin: 0px 60px 80px 60px;
     }
-    
+
     /*Second Section*/
 
-    .secondpartlargermessage h1{
-        font-size: 90px;
-        letter-spacing: 2px;
+    .secondpartformobile h1{
+        font-size: 88px;
+        letter-spacing: 4px;
+        margin: 10px 0px 15px 0px;
     }
 
-    .topimage1 img{
-        width: 300px;
-        margin: 50px 150px 0px 10px; 
+    .secondpartformobile p{
+        margin: 20px 35px 20px 35px;
     }
 
-    .topimage2 img{
+    .secondpartredirection{
+        margin: 0px 35px 0px 35px;
+    }
+
+    .secondpartformobileimage1 img{
+        width: 280px;
+    }
+
+    .secondpartformobileimage2 img{
         width: 220px;
-        margin: -80px 30px 0px 250px; 
     }
 
-    .topimage3 img{
-        width: 320px;
-        margin: -80px 130px 0px 20px; 
+    .secondpartformobileimage3 img{
+        width: 95%;
+    }
+
+    .secondpartformobileimage4 img{
+        width: 200px;
+    }
+
+    .secondpartformobileimage5 img{
+        width: 300px;
     }
     
     /*Third Section*/
-
-    .upperimage img{
-        width: 400px;
-        margin: 150px 0px 30px 0px;        
-    }
 
     .thirdpartmobilemessage{
         margin: 0px 20px 0px 20px;
@@ -2510,33 +2555,29 @@ nav ul li a:hover::after{
 
     .thirdpartmobilemessage h1,
     .thirdpartmobilemessage h2{
-        font-size: 90px;
+        font-size: 100px;
     }
 
     .thirdpartmobilemessage h1{
-        margin: -130px 50px 0px 0px;
+        margin: -110px 0px 0px 30px;
     }
 
     .thirdpartmobilemessage h2{
-        margin: -20px 0px 30px 40px;
+        margin: -20px 0px 0px 100px;
     }
 
     .thirdpartmobilemessage p{
-        margin: -30px 30px 15px 50px;
-    }
-
-    .thirdpartredirection{
-        margin: 0px 30px 100px 50px;
+        margin: -10px 30px 15px 30px;
     }
 
     .butterfly img{
         width: 60px;
-        margin: -100px 0px 0px 370px;
+        margin: -80px 0px 0px 0px;
     }
     
     .butterfly2 img{
         width: 50px;
-        margin: -100px 0px 0px 30px;
+        margin: -80px 0px 0px 0px;
     }
 
     /*Fourth Section*/
@@ -2587,101 +2628,105 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:470px){
-    
-    /*First Section*/
 
-    .firstpartmobilemessage h2{
-        margin: 20px 10px 20px 10px;
+    /*Third Secction*/
+
+    .thirdpartmobilemessage h1{
+        margin: -110px 0px 0px 20px;
+        letter-spacing: 1px;
     }
 
-    .firstpartformobilecontent p1{
-        margin: 20px;
-        padding: 50px 20px 50px 20px;
+    .thirdpartmobilemessage h2{
+        margin: -20px 0px 0px 80px;
     }
 
-    .firstpartformobilecontent p2{
-        margin: 20px;
-        padding: 50px 30px 50px 30px;
+    .thirdpartmobilemessage p{
+        margin: -10px 20px 20px 20px;
     }
 
-    
-} 
+    .butterfly img{
+        width: 60px;
+        margin: -50px 0px 0px 0px;
+    }
+}
 
 
 @media only screen and (max-width:450px){
-
-    /*First Section*/
-
-    .firstpartmobileupperimage img{
-        width: 420px;
-        margin: 50px 0px 30px 0px;        
-    }
+    /*First Secction*/
 
     .firstpartmobilemessage h1{
-        font-size: 90px;
+        font-size: 65px;
         letter-spacing: 2px;
-        margin: -120px 0px 20px 0px;
     }
 
     .firstpartmobilemessage h2{
-        font-size: 22px;
-        margin: 0px 20px 20px 20px;
+        margin: 15px 0px 15px 0px;
     }
 
     .firstpartmobilemessage p{
-        font-size: 16px;
-        margin: 0px 35px 80px 35px;
+        font-size: 15px;
     }
 
     /*Second Section*/
 
-    .secondpartlargermessage h1{
-        font-size: 80px;
+    .secondpartformobile h1{
+        font-size: 82px;
         letter-spacing: 2px;
+        margin: 10px 0px 15px 0px;
     }
 
-    .topimage1 img{
-        width: 280px;
-        margin: 50px 150px 0px 20px; 
+    .secondpartformobileimage1 img{
+        width: 230px;
+        height: 160px;
     }
 
-    .topimage2 img{
-        width: 200px;
-        margin: -60px 30px 0px 220px; 
+    .secondpartformobileimage2 img{
+        width: 220px;
+        height: 160px;
+        margin-bottom: 5px;
     }
 
-    .topimage3 img{
+    .secondpartformobileimage3 img{
+        width: 95%;
+        height: 150px;
+    }
+
+    .secondpartformobileimage4 img{
+        width: 160px;
+        height: 160px;
+        margin-top: 5px;
+    }
+
+    .secondpartformobileimage5 img{
         width: 300px;
-        margin: -60px 110px 0px 20px; 
+        height: 160px;
+        margin-top: 5px;
+
     }
 
     /*Third Section*/
 
     .upperimage img{
-        width: 370px;
+        width: 400px;
         margin: 150px 0px 30px 0px;        
-    }
-
-    .thirdpartmobilemessage{
-        margin: 0px 20px 0px 20px;
     }
 
     .thirdpartmobilemessage h1,
     .thirdpartmobilemessage h2{
-        font-size: 80px;
+        font-size: 90px;
         letter-spacing: 2px;
     }
 
     .thirdpartmobilemessage h1{
-        margin: -110px 50px 0px 0px;
+        margin: -110px 0px 0px 30px;
     }
 
     .thirdpartmobilemessage h2{
-        margin: -30px 0px 30px 50px;
+        margin: -20px 0px 5px 90px;
     }
 
     .thirdpartmobilemessage p{
-        margin: -30px 25px 15px 40px;
+        margin: -10px 30px 15px 30px;
     }
 
     .thirdpartredirection{
@@ -2690,12 +2735,12 @@ nav ul li a:hover::after{
 
     .butterfly img{
         width: 60px;
-        margin: -60px 0px 0px 320px;
+        margin: -60px 0px 0px 0px;
     }
     
     .butterfly2 img{
         width: 50px;
-        margin: -100px 0px 0px 20px;
+        margin: -100px 0px 0px 0px;
     }
 
     /*Fourth Section*/
@@ -2727,39 +2772,18 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:420px){
 
-    /*First Section*/
-
-    .firstpartmobileupperimage img{
-        width: 400px;
-        margin: 30px 0px 30px 0px;        
-    }
-
-    .firstpartmobilemessage h1{
-        font-size: 80px;
-        letter-spacing: 2px;
-        margin: -120px 0px 20px 0px;
-    }
-
-    .firstpartmobilemessage h2{
-        font-size: 20px;
-        margin: 0px 20px 20px 20px;
-    }
-
-    .firstpartmobilemessage p{
-        font-size: 15px;
-        margin: 0px 35px 80px 35px;
-    }
-
     /*Third Section*/
 
-    .butterfly img{
-        width: 55px;
-        margin: -60px 0px 0px 300px;
+    .thirdpartmobilemessage h1{
+        margin: -110px 0px 0px 20px;
     }
-    
-    .butterfly2 img{
-        width: 45px;
-        margin: -100px 0px 0px 0px;
+
+    .thirdpartmobilemessage h2{
+        margin: -20px 0px 5px 80px;
+    }
+
+    .thirdpartmobilemessage p{
+        margin: -10px 20px 15px 20px;
     }
 
     /*Fourth Section*/
@@ -2807,56 +2831,55 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:400px){
-
-    /*First Section*/
-
-    .firstpartmobileupperimage img{
-        width: 380px;
-        margin: 25px 0px 30px 0px;        
-    }
+    /*First Secction*/
 
     .firstpartmobilemessage h1{
-        font-size: 75px;
+        font-size: 60px;
         letter-spacing: 2px;
-        margin: -110px 0px 15px 0px;
-    }
-
-    .firstpartmobilemessage h2{
-        font-size: 18px;
-        margin: 0px 13px 15px 13px;
-    }
-
-    .firstpartmobilemessage p{
-        font-size: 15px;
-        margin: 0px 18px 80px 18px;
+        margin-top: 35px;
     }
 
     /*Second Section*/
 
-    .secondpartlargermessage h1{
+    .secondpartformobile h1{
         font-size: 75px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
+        margin: 10px 0px 15px 0px;
     }
 
-    .topimage1 img{
-        width: 250px;
-        margin: 50px 120px 0px 20px; 
+    .secondpartformobile p{
+        margin: 20px 30px 20px 30px;
     }
 
-    .topimage2 img{
-        width: 170px;
-        margin: -40px 30px 0px 180px; 
+    .secondpartformobileimage1 img{
+        width: 200px;
+        height: 150px;
     }
 
-    .topimage3 img{
-        width: 270px;
-        margin: -50px 70px 0px 20px; 
+    .secondpartformobileimage2 img{
+        width: 220px;
+        height: 150px;
+    }
+
+    .secondpartformobileimage3 img{
+        width: 95%;
+        height: 140px;
+    }
+
+    .secondpartformobileimage4 img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .secondpartformobileimage5 img{
+        width: 300px;
+        height: 150px;
     }
 
     /*Third Section*/
 
     .upperimage img{
-        width: 360px;
+        width: 370px;
         margin: 150px 0px 30px 0px;        
     }
 
@@ -2871,15 +2894,11 @@ nav ul li a:hover::after{
     }
 
     .thirdpartmobilemessage h1{
-        margin: -110px 50px 0px 0px;
+        margin: -85px 50px 0px 20px;
     }
 
     .thirdpartmobilemessage h2{
-        margin: -30px 0px 30px 50px;
-    }
-
-    .thirdpartmobilemessage p{
-        margin: -30px 20px 15px 40px;
+        margin: -10px 0px 0px 80px;
     }
 
     .thirdpartredirection{
