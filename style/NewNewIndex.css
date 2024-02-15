@@ -2117,6 +2117,10 @@ nav ul li a:hover::after{
         text-align: unset;
     }
 
+    .secondpartredirection a{
+        color: rgb(70,70,70);
+    }
+
     .secondpartformobileimagerow1, .secondpartformobileimagerow2{
         display: grid;
         grid-template-columns: 1fr 1fr;
