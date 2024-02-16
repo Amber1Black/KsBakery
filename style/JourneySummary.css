@@ -751,7 +751,7 @@ nav ul li a:hover::after{
     }
     
     .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
-        font-size: 18px;
+        font-size: 27px;
         padding: 60px 0px 60px 0px;
     }
 
@@ -760,7 +760,9 @@ nav ul li a:hover::after{
     }
 
     .Topmessage h1{
-        font-size: 27px;   
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 50px;   
     }
     
     .Topmessage p{
@@ -779,40 +781,46 @@ nav ul li a:hover::after{
 
     .display{
         display: block;
-        margin: 0px 0px 100px 0px;
+        margin: 0px 0px 20px 0px;
         width: 100%;
-        background-color: unset;
+        border-radius: 15px;
     }
 
     .displayimages{
+        display: flex;
+        justify-content: center;
+    }
+
+    .displayimages img{
         width: 100%;
-        margin: 0px;
+        margin: 0px 0px 0px 0px;
         object-fit: cover;
         max-height: 520px;
         object-position: 10% 80%;
+        border-radius: 15px 15px 15px 15px;
     }
 
     .displaylocation{
-        margin: 20px 50px 50px 50px;
-        text-align: center;
-        
+        margin: 30px 20px 60px 20px;
+        text-align: center;   
     }
 
     .displaylocation h2{
-        font-family: 'Fraunces', serif;
-        font-size: 22px;
-        color: rgb(20, 20, 20);
-        font-weight: 600;
-        letter-spacing: 2px;
+        font-family: ;
+        font-size: 38px;
+        color: #575757;
+        font-weight: 700;
+        letter-spacing: 3px;
     }
 
     .displaylocation h3{
-        font-family: 'Fraunces', serif;
-        font-size: 17px;
-        color: rgb(99, 99, 99);
-        font-weight: 600;
-        letter-spacing: 2px;
-        margin-top: 15px;
+        font-family: ;
+        font-size: 25px;
+        color: #707070;
+        font-weight: 700;
+        letter-spacing: 3px;
+        margin: 15px 0px 0px 0px;
+        padding-bottom: 50px;
     }
 
     
@@ -825,11 +833,15 @@ nav ul li a:hover::after{
     }
     
     .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
-        font-size: 17px;
+        font-size: 25px;
     }
 
     .Topmessage{
         margin: 40px 60px 30px 60px;
+    }
+
+    .Topmessage h1{
+        font-size: 47px;   
     }
 }
 
@@ -863,32 +875,46 @@ nav ul li a:hover::after{
         letter-spacing: 3px;
         border-style: solid;
     }
+
+    .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3, .topdisplayformobile p4, .topdisplayformobile p5{
+        font-size: 30px;
+        padding: 60px 0px 60px 0px;
+    }
     
     .topdisplayformobile p1{
         border-width: 1px 0px 0px 1px;
-        padding: 70px 0px 70px 0px;
     }
     
     .topdisplayformobile p2{
         border-width: 0px 1px 0px 0px;
-        padding: 70px 0px 70px 0px;
     }
     
     .topdisplayformobile p3{
         border-width: 0px 0px 1px 1px;
-        padding: 70px 0px 70px 0px;
     }
 
     .Topmessage{
-        margin: 50px 60px 0px 60px;
+        margin: 50px 50px 0px 50px;
     }
 
     .Topmessage h1{
-        font-size: 25px;
-        letter-spacing: 3px;
+        font-size: 43px;
+        letter-spacing: 2px;
     }
 
+    .displaylocation h2{
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+
+    .displaylocation h3{
+        font-size: 25px;
+        letter-spacing: 2px;
+    }   
     
+    .displayimages img{
+        max-height: 500px;
+    }
 }
 
 
@@ -898,21 +924,26 @@ nav ul li a:hover::after{
     }
     
     .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3, .topdisplayformobile p4, .topdisplayformobile p5{
-        font-size: 18px;
-        padding: 60px 0px 60px 0px;
+        font-size: 26px;
+        padding: 50px 0px 50px 0px;
     }
 
     .Topmessage{
-        margin: 50px 50px 0px 50px;
+        margin: 50px 40px 0px 40px;
     }
 
-    .displaylocation{
-        font-size: 20px;
+    .displaylocation h2{
+        font-size: 32px;
+        letter-spacing: 1px;
     }
 
-    .displaylocation{
-        font-size: 17px;
-        margin-top: 10px;
+    .displaylocation h3{
+        font-size: 22px;
+        letter-spacing: 1px;
+    } 
+
+    .displayimages img{
+        max-height: 480px;
     }
 
 }
@@ -924,13 +955,30 @@ nav ul li a:hover::after{
     }
     
     .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3, .topdisplayformobile p4, .topdisplayformobile p5{
-        font-size: 18px;
-        padding: 55px 0px 55px 0px;
+        font-size: 25px;
+        padding: 50px 0px 50px 0px;
     }
 
     .Topmessage{
-        margin: 50px 40px 0px 40px;
+        margin: 50px 30px 0px 30px;
     }
 
-    
+    .Topmessage h1{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .displaylocation h2{
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .displaylocation h3{
+        font-size: 18px;
+        letter-spacing: 1px;
+    } 
+
+    .displayimages img{
+        max-height: 450px;
+    }
 }
