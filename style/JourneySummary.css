@@ -9,7 +9,6 @@
 
 .headingsection{
     height: 88%;
-    width: 100%;
     display: flex;
     align-items: center; 
     position: sticky;
@@ -55,14 +54,14 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: rgb(20, 20, 20);
+    color: #707070;
     font-size: 14px;
     background-color: white;
     position: relative;
 }
 
 nav ul li a:hover{
-    color: rgb(99, 99, 99);
+    color: grey;
 }
 
 nav ul li a::after{
@@ -84,147 +83,168 @@ nav ul li a:hover::after{
 
 /*Content*/
 
-.topdisplayforsmallerscreen, .topdisplayformobile, .contentformobile{
-    display: none;
-}
-
-.topdisplay{
-    margin: 50px 20px 0px 20px;
+.content{
+    background-image: url("KensingtonGardens.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 100px;
     overflow-x: hidden;
 }
 
-.imagesdisplayrow1, .imagesdisplayrow2{
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6{
+    display: none;
+}
+
+.mySlides1 img, .mySlides2 img, .mySlides3 img,
+.mySlides4 img, .mySlides5 img, .mySlides6 img{
+    width: 500px;
+    height: 430px;
+    object-fit: cover;
+    object-position: 0% 75%;
+    margin: 20px 0px 0px 0px;
+}
+
+.slideshow-container, .slideshow-container2, .slideshow-container3{
+    width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.displayrow{
     display: grid;
-    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.location1,
+.location2,
+.location3,
+.location4,
+.location5,
+.location6{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    margin: 20px 50px 20px 50px;
+    height: 630px;
+    width: 560px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.location2{
+    margin-top: 400px;
+    rotate: 5deg;
+    width: 550px;
+    height: 640px;
+}
+
+.mySlides2 img,
+.slideshow-container2{
+    width: 480px;
+    height: 420px;
+}
+
+.location3{
+    margin-top: -200px;
+    margin-left: 80px;
+    rotate: -2deg;
+    width: 500px;
+    height: 680px;
+}
+
+.mySlides3 img,
+.slideshow-container3{
+    width: 440px;
+    height: 460px;
+}
+
+.location4{
+    margin-top: 100px;
+    rotate: 1deg;
+}
+
+.locationname{
+    align-self: center;
     justify-content: center;
+    border-style: dotted;
+    border-width: 3px 0px 0px 0px;
+    border-color: rgb(190, 188, 188);
+    margin: 0px 30px 0px 30px;
+    padding-top: 15px;
 }
 
-.imagedisplay1, .imagedisplay2, .imagedisplay3, .imagedisplay4, .imagedisplay5{
-    width: 100%;
-    object-fit: cover;
-}
 
-.topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
-    width: 100%;
-    align-self: center;
+h1{
+    font-size: 130px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 8px;
     text-align: center;
-    font-size: 30px;
-    color: rgb(58, 57, 57);
-    font-weight: 600;
-    letter-spacing: 3px;
-    border-style: solid;
+    padding: 80px 20px 0px 20px;
 }
 
-.topdisplay p1{
-    border-width: 1px 0px 0px 0px;
-    padding: 90px 0px 90px 0px;
-}
-
-.topdisplay p2{
-    border-width: 1px 0px 0px 0px;
-    padding: 90px 0px 90px 0px;
-}
-
-.topdisplay p3{
-    margin: 0px;
-    border-width: 0px 0px 1px 1px;
-    padding: 90px 40px 90px 40px;
-}
-
-.topdisplay p4{
-    border-width: 0px 0px 1px 0px;
-    padding: 90px 0px 90px 0px;
-}
-
-.topdisplay p5{
-    margin: 0px;
-    border-width: 0px 1px 1px 0px;
-    padding: 90px 0px 90px 0px;
-}
-
-.Topmessage{
-    margin: 80px 200px 30px 200px;
-}
-
-.Topmessage h1{
-    font-family: 'Fraunces', serif;
-    font-size: 43px;
-    color: rgb(20, 20, 20);
-    font-weight: 600;
-    letter-spacing: 4px;
-}
-
-.Topmessage p{
-    color: rgb(58, 57, 57);
-    text-align: justify;
-    margin-top: 25px;
-    margin-bottom: 30px;
-    font-size: 16px;
-}
-
-.display1, .display2{
-    background-color: hsl(30, 22%, 96%);
-}
-
-.display1{
-    display: grid;
-    grid-template-columns: 500px 1fr;
-    align-items: center;
-    margin: 100px 50px 0px 50px;
-    
-}
-
-.display2{
-    display: grid;
-    grid-template-columns: 1fr 500px;
-    align-items: center;
-    margin: 100px 50px 0px 50px;
-}
-
-
-.displaylocation1 h2,
-.displaylocation2 h2{
-    align-self: center;
+h5{
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
     text-align: center;
-    font-family: 'Fraunces', serif;
-    font-size: 35px;
-    color: rgb(20, 20, 20);
-    font-weight: 600;
-    letter-spacing: 4px;
+    padding: 30px 180px 0px 180px;
 }
 
-.displaylocation1 h3,
-.displaylocation2 h3{
-    align-self: center;
+h2{
+    font-size: 36px;
+    color: rgb(61, 61, 61);
+    font-weight: 900;
+    letter-spacing: 1px;
     text-align: center;
-    font-family: 'Fraunces', serif;
-    font-size: 30px;
-    color: rgb(99, 99, 99);
-    font-weight: 600;
-    letter-spacing: 4px;
-    margin-top: 25px;
 }
 
-.displayimages1{
-    max-height: 550px;
-    width: 100%; 
-    object-fit: cover;
-    object-position: 10% 70%;
-    justify-self: right;
+h3{
+    font-size: 25px;
+    color: grey;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 15px 0px 20px 0px;
+    text-align: center;
 }
 
-.displayimages2{
-    max-height: 550px;
-    width: 100%; 
-    object-fit: cover;
-    object-position: 10% 75%;
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
 
 /*copyright*/
 
 .copyright{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 11px;
     color: grey;
     bottom: 2%;
@@ -233,442 +253,429 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1300px){
 
-    .imagesdisplayrow1, .imagesdisplayrow2{
-        grid-template-columns: 220px 220px 220px 220px 220px;
+    .mySlides1 img, .mySlides2 img, .mySlides3 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 450px;
+        height: 390px;
+        margin: 20px 0px 0px 0px;
     }
 
-    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
-        font-size: 25px;
+    .slideshow-container, .slideshow-container2, .slideshow-container3{
+        width: 450px;
     }
 
-    .Topmessage{
-        margin: 60px 180px 30px 180px;
-    }
-    
-    .Topmessage h1{
-        font-size: 36px;
-    }
-
-    .displaylocation1 h2,
-    .displaylocation2 h2{
-        font-size: 30px;
-        letter-spacing: 3px;
+    .location1,
+    .location2,
+    .location3,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 20px 20px 20px;
+        height: 630px;
+        width: 510px;
     }
 
-    .displaylocation1 h3,
-    .displaylocation2 h3{
-        font-size: 28px;
-        letter-spacing: 3px;
+    .location1{
+        margin-top: -100px;
     }
 
-}
-
-
-@media only screen and (max-width:1250px){
-
-    .Topmessage{
-        margin: 60px 140px 30px 140px;
-    }
-}
-
-
-@media only screen and (max-width:1200px){
-
-    .display1{
-        grid-template-columns: 420px 1fr;
-        
-    }
-    
-    .display2{
-        grid-template-columns: 1fr 420px;
+    .location2{
+        margin-top: 300px;
+        rotate: 5deg;
+        width: 500px;
+        height: 600px;
     }
 
-    .displaylocation1 h2,
-    .displaylocation2 h2{
-        font-size: 28px;
-        letter-spacing: 3px;
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 430px;
+        height: 380px;
     }
 
-    .displaylocation1 h3,
-    .displaylocation2 h3{
-        font-size: 25px;
-        letter-spacing: 3px;
+    .location3{
+        margin-top: -200px;
+        margin-left: 80px;
+        rotate: -2deg;
+        width: 450px;
+        height: 640px;
+    }
+
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 390px;
+        height: 420px;
     }
 }
 
 
 @media only screen and (max-width:1150px){
 
-    .imagesdisplayrow1, .imagesdisplayrow2{
-        grid-template-columns: 200px 200px 200px 200px 200px;
+    .mySlides1 img, .mySlides2 img, .mySlides3 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 400px;
+        height: 350px;
+        margin: 15px 0px 0px 0px;
     }
 
-    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
-        font-size: 22px;
-        padding: 75px 0px 75px 0px;
+    .slideshow-container, .slideshow-container2, .slideshow-container3{
+        width: 400px;
     }
 
-    .Topmessage{
-        margin: 60px 130px 30px 130px;
+    .location1,
+    .location2,
+    .location3,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 0px 20px 0px;
+        height: 520px;
+        width: 450px;
     }
 
-    .Topmessage h1{
-        font-size: 35px;
+    .location1{
+        margin-top: -100px;
     }
 
-    .Topmessage p{
-        font-size: 15px;
+    .location2{
+        margin-top: 300px;
+        rotate: 5deg;
+        width: 440px;
+        height: 580px;
     }
 
-}
-
-
-@media only screen and (max-width:1100px){
-
-    .display1{
-        grid-template-columns: 380px 1fr;
-        
-    }
-    
-    .display2{
-        grid-template-columns: 1fr 380px;
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 380px;
+        height: 390px;
     }
 
-    .displaylocation1, .displaylocation2{
-        margin: 0px 30px 0px 30px;
+    .location3{
+        margin-top: -200px;
+        margin-left: 80px;
+        rotate: -2deg;
+        width: 390px;
+        height: 580px;
     }
 
-    .displaylocation1 h2,
-    .displaylocation2 h2{
-        font-size: 26px;
-        letter-spacing: 3px;
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 340px;
+        height: 400px;
+        margin-top: 12px;
     }
 
-    .displaylocation1 h3,
-    .displaylocation2 h3{
-        font-size: 20px;
-        letter-spacing: 3px;
+    .location4{
+        height: 570px;
     }
 
-    .displayimages1,
-    .displayimages2{
-        max-height: 500px;
-    }
-}
-
-
-@media only screen and (max-width:1080px){
-    .Topmessage{
-        margin: 60px 100px 30px 100px;
-    }
-}
-
-
-@media only screen and (max-width:1050px){
-    
-    .imagesdisplayrow1, .imagesdisplayrow2{
-        grid-template-columns: 180px 180px 180px 180px 180px;
-    }
-
-    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
-        font-size: 20px;
-        padding: 70px 0px 70px 0px;
+    h1{
+        font-size: 110px;
+        letter-spacing: 8px;
+        padding: 80px 20px 0px 20px;
     }
     
-    .Topmessage{
-        margin: 50px 100px 30px 100px;
+    h5{
+        font-size: 17px;
+        letter-spacing: 1px;
+        padding: 30px 150px 0px 150px;
     }
-
-    .Topmessage h1{
+    
+    h2{
         font-size: 30px;
-    }    
-
-
-}
-
-
-@media only screen and (max-width:1020px){
-    .Topmessage{
-        margin: 60px 80px 30px 80px;
-    }
-}
-
-
-@media only screen and (max-width:1000px){
-
-    .display1{
-        grid-template-columns: 330px 1fr;
-        
     }
     
-    .display2{
-        grid-template-columns: 1fr 330px;
-    }
-
-    .displaylocation1, .displaylocation2{
-        margin: 0px 30px 0px 30px;
-    }
-
-    .displaylocation1 h2,
-    .displaylocation2 h2{
-        font-size: 23px;
-        letter-spacing: 3px;
-    }
-
-    .displaylocation1 h3,
-    .displaylocation2 h3{
+    h3{
         font-size: 20px;
-        letter-spacing: 3px;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
-    .displayimages1,
-    .displayimages2{
-        max-height: 460px;
-    }
 }
 
 
-@media only screen and (max-width:980px){
-    .Topmessage{
-        margin: 50px 110px 30px 110px;
+@media only screen and (max-width:1030px){
+
+    .mySlides1 img, .mySlides2 img, .mySlides3 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 360px;
+        height: 350px;
+        margin: 15px 0px 0px 0px;
     }
 
-    .Topmessage p{
-        margin-top: 18px;
-    }
-}
-
-
-@media only screen and (max-width:950px){
-    .logo{
-        margin-left: 40px;
+    .slideshow-container, .slideshow-container2, .slideshow-container3{
+        width: 360px;
     }
 
-    .imagesdisplayrow1, .imagesdisplayrow2{
-        grid-template-columns: 160px 160px 160px 160px 160px;
+    .location1,
+    .location2,
+    .location3,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 0px 20px 0px;
+        height: 520px;
+        width: 410px;
     }
 
-    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
-        font-size: 18px;
-        padding: 60px 0px 60px 0px;
+    .location1{
+        margin-top: -100px;
+    }
+
+    .location2{
+        margin-top: 250px;
+        rotate: 5deg;
+        width: 390px;
+        height: 560px;
+    }
+
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 340px;
+        height: 370px;
+    }
+
+    .location3{
+        margin-top: -200px;
+        margin-left: 30px;
+        rotate: -2deg;
+        width: 370px;
+        height: 550px;
+    }
+
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 320px;
+        height: 380px;
+        margin-top: 12px;
+    }
+
+    .location4{
+        height: 570px;
+    }
+
+    h1{
+        font-size: 100px;
+        letter-spacing: 6px;
+        padding: 80px 20px 0px 20px;
     }
     
-    .Topmessage h1{
+    h5{
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 30px 100px 0px 100px;
+    }
+    
+    h2{
         font-size: 28px;
-    }    
-
-    .Topmessage p{
-        margin-top: 15px;
+    }
+    
+    h3{
+        font-size: 19px;
+        margin-top: 10px;
     }
 
-    
 }
 
 
 @media only screen and (max-width:900px){
 
-    .display1{
-        grid-template-columns: 280px 1fr;
-        margin: 100px 30px 0px 30px;
+    .mySlides1 img, .mySlides2 img, .mySlides3 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 320px;
+        height: 350px;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .slideshow-container, .slideshow-container2, .slideshow-container3{
+        width: 320px;
+    }
+
+    .location1,
+    .location2,
+    .location3,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 0px 20px 0px;
+        height: 520px;
+        width: 370px;
+    }
+
+    .location1{
+        margin-top: -100px;
+    }
+
+    .location2{
+        margin-top: 250px;
+        rotate: 5deg;
+        width: 350px;
+        height: 500px;
+    }
+
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 300px;
+        height: 330px;
+    }
+
+    .location3{
+        margin-top: -200px;
+        margin-left: 30px;
+        rotate: -2deg;
+        width: 340px;
+        height: 510px;
+    }
+
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 290px;
+        height: 350px;
+        margin-top: 12px;
+    }
+
+    .location4{
+        height: 530px;
+    }
+
+    h1{
+        font-size: 85px;
+        letter-spacing: 5px;
+        padding: 80px 20px 0px 20px;
     }
     
-    .display2{
-        grid-template-columns: 1fr 280px;
-        margin: 100px 30px 0px 30px;
-    }
-
-    .displaylocation1, .displaylocation2{
-        margin: 0px 30px 0px 30px;
-    }
-
-    .displaylocation1 h2,
-    .displaylocation2 h2{
-        font-size: 23px;
-        letter-spacing: 3px;
-    }
-
-    .displaylocation1 h3,
-    .displaylocation2 h3{
-        font-size: 20px;
-        letter-spacing: 3px;
-        margin-top: 15px;
-    }
-
-    .displayimages1,
-    .displayimages2{
-        max-height: 460px;
-    }
-}
-
-
-@media only screen and (max-width:850px){
-
-    .imagesdisplayrow1, .imagesdisplayrow2{
-        grid-template-columns: 150px 150px 150px 150px 150px;
-    }
-
-    .topdisplay p1, .topdisplay p2, .topdisplay p3, .topdisplay p4, .topdisplay p5{
-        font-size: 17px;
-        padding: 55px 0px 55px 0px;
+    h5{
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 30px 70px 0px 70px;
     }
     
-    .Topmessage{
-        margin: 50px 70px 30px 70px;
-    }
-
-    .Topmessage h1{
+    h2{
         font-size: 25px;
-    }    
+    }
+    
+    h3{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
 }
-
-
 
 
 @media only screen and (max-width:800px){
-
-    .topdisplayforsmallerscreen{
-        display: initial;
-        margin: 100px 20px 0px 20px;
-        overflow-x: hidden;
-    }
-
-    .topdisplay{
-        display: none;
-    }
-    
-    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
+    .displayrow{
         display: grid;
-        grid-template-columns: 210px 210px 210px;
-        justify-content: center;
-        margin: 0px 20px 0px 20px;
-    }
-    
-    .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
-        width: 100%;
-        align-self: center;
-        text-align: center;
-        font-size: 22px;
-        color: rgb(58, 57, 57);
-        font-weight: 600;
-        letter-spacing: 3px;
-        border-style: solid;
-    }
-    
-    .topdisplayforsmallerscreen p1{
-        border-width: 1px 0px 0px 1px;
-        padding: 80px 0px 80px 0px;
-    }
-    
-    .topdisplayforsmallerscreen p2{
-        border-width: 1px 1px 0px 0px;
-        padding: 80px 0px 80px 0px;
-    }
-    
-    .topdisplayforsmallerscreen p3{
-        border-width: 0px 0px 0px 0px;
-        padding: 80px 0px 80px 0px;
-    }
-    
-    .topdisplayforsmallerscreen p4{
-        border-width: 0px 0px 1px 1px;
-        padding: 80px 0px 80px 0px;
-    }
-    
-    .topdisplayforsmallerscreen p5{
-        border-width: 0px 1px 1px 0px;
-        padding: 80px 0px 80px 0px;
+        grid-template-columns: 1fr;
     }
 
-    .Topmessage{
-        margin: 60px 100px 30px 100px;
+    .mySlides1 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 450px;
+        height: 380px;
+        margin: 15px 0px 0px 0px;
     }
 
-    .Topmessage h1{
-        font-size: 28px;
+    .slideshow-container, .slideshow-container2, .slideshow-container3{
+        width: 450px;
     }
 
-    .display1{
-        grid-template-columns: 250px 1fr;
-        margin: 100px 30px 0px 30px;
-    }
-    
-    .display2{
-        grid-template-columns: 1fr 250px;
-        margin: 100px 30px 0px 30px;
-    }
-
-    .displaylocation1, .displaylocation2{
-        margin: 0px 30px 0px 30px;
+    .location1,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 0px 20px 0px;
+        height: 550px;
+        width: 500px;
     }
 
-    .displaylocation1 h2,
-    .displaylocation2 h2{
-        font-size: 22px;
-        letter-spacing: 3px;
+    .location1{
+        margin-top: 70px;
     }
 
-    .displaylocation1 h3,
-    .displaylocation2 h3{
-        font-size: 17px;
-        letter-spacing: 3px;
+    .location2{
+        margin: 50px 0px 0px 70px;
+        rotate: 3deg;
+        width: 500px;
+        height: 600px;
+    }
+
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 450px;
+        height: 420px;
+    }
+
+    .location3{
+        margin-top: 10px;
+        margin-left: -30px;
+        rotate: -2deg;
+        width: 450px;
+        height: 580px;
+    }
+
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 400px;
+        height: 420px;
         margin-top: 15px;
     }
 
-    .displayimages1,
-    .displayimages2{
-        max-height: 460px;
+    .location4{
+        height: 550px;
+        margin-left: 80px;
+    }
+
+    h1{
+        font-size: 85px;
+        letter-spacing: 5px;
+        padding: 80px 20px 0px 20px;
+    }
+    
+    h5{
+        font-size: 15px;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 1px;
+        padding: 30px 30px 0px 30px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    
+    h3{
+        font-size: 18px;
+        margin-top: 10px;
     }
 }
 
 
 @media only screen and (max-width:700px){
-
-    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
-        grid-template-columns: 190px 190px 190px;
+    h1{
+        font-size: 70px;
+        letter-spacing: 5px;
+        padding: 80px 20px 0px 20px;
     }
     
-    .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
-        font-size: 20px;
-        padding: 70px 0px 70px 0px;
+    h5{
+        font-size: 15px;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 1px;
+        padding: 30px 20px 0px 20px;
     }
+}
 
-    .Topmessage{
-        margin: 60px 90px 30px 90px;
-    }
 
-    .display1{
-        grid-template-columns: 220px 1fr;
-        margin: 100px 20px 0px 20px;
+@media only screen and (max-width:650px){
+    h1{
+        font-size: 68px;
+        letter-spacing: 3px;
+        padding: 80px 20px 0px 20px;
     }
     
-    .display2{
-        grid-template-columns: 1fr 220px;
-        margin: 100px 20px 0px 20px;
+    h5{
+        font-size: 15px;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 1px;
+        padding: 30px 90px 0px 90px;
     }
-
-    .displaylocation1, .displaylocation2{
-        margin: 0px 20px 0px 20px;
-    }
-
-    .displaylocation1 h2,
-    .displaylocation2 h2{
-        font-size: 22px;
-        letter-spacing: 3px;
-    }
-
-    .displaylocation1 h3,
-    .displaylocation2 h3{
-        font-size: 17px;
-        letter-spacing: 3px;
-        margin-top: 15px;
-    }
-
-    .displayimages1,
-    .displayimages2{
-        max-height: 440px;
-    }
-
 }
 
 
@@ -746,239 +753,351 @@ nav ul li a:hover::after{
         padding-right: 10px;
     }
 
-    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
-        grid-template-columns: 170px 170px 170px;
+    h1{
+        font-size: 60px;
+        letter-spacing: 3px;
+        padding: 80px 20px 0px 20px;
     }
     
-    .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
-        font-size: 27px;
-        padding: 60px 0px 60px 0px;
+    h5{
+        font-size: 15px;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 1px;
+        padding: 30px 50px 0px 50px;
     }
 
-    .Topmessage{
-        margin: 40px 70px 30px 70px;
-    }
-
-    .Topmessage h1{
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-size: 50px;   
-    }
-    
-    .Topmessage p{
-        font-size: 14px;
-        margin-bottom: 80px;
-    }
-
-    .content{
-        display: none;
-    }
-
-    .contentformobile{
-        display: initial;
-        overflow: hidden;
-    }
-
-    .display{
-        display: block;
-        margin: 0px 0px 20px 0px;
-        width: 100%;
-        border-radius: 15px;
-    }
-
-    .displayimages{
-        display: flex;
-        justify-content: center;
-    }
-
-    .displayimages img{
-        width: 100%;
-        margin: 0px 0px 0px 0px;
-        object-fit: cover;
-        max-height: 520px;
-        object-position: 10% 80%;
-        border-radius: 15px 15px 15px 15px;
-    }
-
-    .displaylocation{
-        margin: 30px 20px 60px 20px;
-        text-align: center;   
-    }
-
-    .displaylocation h2{
-        font-family: ;
-        font-size: 38px;
-        color: #575757;
-        font-weight: 700;
-        letter-spacing: 3px;
-    }
-
-    .displaylocation h3{
-        font-family: ;
-        font-size: 25px;
-        color: #707070;
-        font-weight: 700;
-        letter-spacing: 3px;
+    .mySlides1 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 400px;
+        height: 380px;
         margin: 15px 0px 0px 0px;
-        padding-bottom: 50px;
     }
 
-    
-}
+    .slideshow-container, .slideshow-container2, .slideshow-container3{
+        width: 400px;
+    }
 
-@media only screen and (max-width:550px){
+    .location1,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 0px 20px 0px;
+        height: 550px;
+        width: 450px;
+    }
 
-    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
-        grid-template-columns: 160px 160px 160px;
+    .location1{
+        margin-top: 70px;
+    }
+
+    .location2{
+        margin: 50px 0px 0px 30px;
+        rotate: 2deg;
+        width: 450px;
+        height: 600px;
+    }
+
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 400px;
+        height: 420px;
+    }
+
+    .location3{
+        margin-top: 10px;
+        margin-left: -30px;
+        rotate: -2deg;
+        width: 420px;
+        height: 580px;
+    }
+
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 370px;
+        height: 420px;
+        margin-top: 15px;
+    }
+
+    .location4{
+        height: 550px;
+        margin-left: 30px;
     }
     
-    .topdisplayforsmallerscreen p1, .topdisplayforsmallerscreen p2, .topdisplayforsmallerscreen p3, .topdisplayforsmallerscreen p4, .topdisplayforsmallerscreen p5{
+    h2{
         font-size: 25px;
     }
-
-    .Topmessage{
-        margin: 40px 60px 30px 60px;
-    }
-
-    .Topmessage h1{
-        font-size: 47px;   
+    
+    h3{
+        font-size: 18px;
+        margin-top: 10px;
     }
 }
 
 
 @media only screen and (max-width:500px){
 
-    .topdisplayformobile{
-        display: initial;
-        margin: 80px 30px 0px 30px;
-        overflow-x: hidden;
-    }
-
-    .topdisplayforsmallerscreen{
-        display: none;
-    }
-    
-    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3{
-        display: grid;
-        grid-template-columns:  200px 200px;
-        justify-content: center;
-        margin: 0px 20px 0px 20px;
-    }
-    
-    .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3{
-        width: 100%;
-        align-self: center;
-        text-align: center;
-        font-size: 18px;
-        color: rgb(58, 57, 57);
-        font-weight: 600;
-        letter-spacing: 3px;
-        border-style: solid;
-    }
-
-    .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3, .topdisplayformobile p4, .topdisplayformobile p5{
-        font-size: 30px;
-        padding: 60px 0px 60px 0px;
-    }
-    
-    .topdisplayformobile p1{
-        border-width: 1px 0px 0px 1px;
-    }
-    
-    .topdisplayformobile p2{
-        border-width: 0px 1px 0px 0px;
-    }
-    
-    .topdisplayformobile p3{
-        border-width: 0px 0px 1px 1px;
-    }
-
-    .Topmessage{
-        margin: 50px 50px 0px 50px;
-    }
-
-    .Topmessage h1{
-        font-size: 43px;
+    h1{
+        font-size: 55px;
         letter-spacing: 2px;
+        padding: 80px 20px 0px 20px;
+    }
+    
+    h5{
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 1px;
+        padding: 20px 40px 0px 40px;
     }
 
-    .displaylocation h2{
-        font-size: 35px;
-        letter-spacing: 2px;
+    .mySlides1 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 360px;
+        height: 380px;
+        margin: 15px 0px 0px 0px;
     }
 
-    .displaylocation h3{
+    .slideshow-container{
+        width: 360px;
+    }
+
+    .location1,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 0px 20px 0px;
+        height: 540px;
+        width: 410px;
+    }
+
+    .location1{
+        margin-top: 70px;
+    }
+
+    .location2{
+        margin: 30px 0px 0px 30px;
+        rotate: 2deg;
+        width: 400px;
+        height: 540px;
+    }
+
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 350px;
+        height: 380px;
+        margin-top: 15px;
+    }
+
+    .location3{
+        margin-top: 10px;
+        margin-left: -10px;
+        rotate: -2deg;
+        width: 380px;
+        height: 550px;
+    }
+
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 330px;
+        height: 390px;
+        margin-top: 12px;
+    }
+
+    .location4{
+        height: 550px;
+        margin-left: 10px;
+        rotate: 0deg;
+    }
+    
+    h2{
         font-size: 25px;
-        letter-spacing: 2px;
-    }   
+    }
     
-    .displayimages img{
-        max-height: 500px;
+    h3{
+        font-size: 18px;
+        margin-top: 10px;
     }
 }
 
 
 @media only screen and (max-width:450px){
-    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3, .imagesdisplayrow4, .imagesdisplayrow5{
-        grid-template-columns:  180px 180px;
+
+    h1{
+        font-size: 50px;
+        letter-spacing: 1px;
+        padding: 60px 10px 0px 10px;
     }
     
-    .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3, .topdisplayformobile p4, .topdisplayformobile p5{
-        font-size: 26px;
-        padding: 50px 0px 50px 0px;
-    }
-
-    .Topmessage{
-        margin: 50px 40px 0px 40px;
-    }
-
-    .displaylocation h2{
-        font-size: 32px;
+    h5{
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
         letter-spacing: 1px;
+        padding: 20px 60px 0px 60px;
     }
 
-    .displaylocation h3{
-        font-size: 22px;
-        letter-spacing: 1px;
-    } 
-
-    .displayimages img{
-        max-height: 480px;
+    .mySlides1 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 330px;
+        height: 380px;
+        margin: 10px 0px 0px 0px;
     }
 
+    .slideshow-container{
+        width: 330px;
+    }
+
+    .location1,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 0px 20px 0px;
+        height: 530px;
+        width: 370px;
+        border-radius: 15px;
+    }
+
+    .location1{
+        margin-top: 70px;
+    }
+
+    .location2{
+        margin: 30px 0px 0px 10px;
+        rotate: 2deg;
+        width: 360px;
+        height: 510px;
+        border-radius: 15px;
+    }
+
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 320px;
+        height: 350px;
+        margin-top: 15px;
+    }
+
+    .location3{
+        margin-top: 10px;
+        margin-left: -10px;
+        rotate: -2deg;
+        width: 335px;
+        height: 510px;
+        border-radius: 15px;
+    }
+
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 290px;
+        height: 360px;
+        margin-top: 12px;
+    }
+
+    .location4{
+        height: 550px;
+        margin-left: 10px;
+        rotate: 0deg;
+    }
+
+    .location4 img{
+        margin-top: 15px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    
+    h3{
+        font-size: 18px;
+        margin-top: 10px;
+    }
 }
 
 
 @media only screen and (max-width:400px){
-    .imagesdisplayrow1, .imagesdisplayrow2, .imagesdisplayrow3, .imagesdisplayrow4, .imagesdisplayrow5{
-        grid-template-columns:  170px 170px;
+
+    h1{
+        font-size: 46px;
+        letter-spacing: 1px;
+        padding: 60px 10px 0px 10px;
     }
     
-    .topdisplayformobile p1, .topdisplayformobile p2, .topdisplayformobile p3, .topdisplayformobile p4, .topdisplayformobile p5{
-        font-size: 25px;
-        padding: 50px 0px 50px 0px;
-    }
-
-    .Topmessage{
-        margin: 50px 30px 0px 30px;
-    }
-
-    .Topmessage h1{
-        font-size: 40px;
-        letter-spacing: 2px;
-    }
-
-    .displaylocation h2{
-        font-size: 28px;
+    h5{
+        font-size: 14px;
+        font-family: "Lato", sans-serif;
         letter-spacing: 1px;
+        padding: 20px 40px 0px 40px;
     }
 
-    .displaylocation h3{
+    .mySlides1 img,
+    .mySlides4 img, .mySlides5 img, .mySlides6 img{
+        width: 300px;
+        height: 350px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .slideshow-container{
+        width: 300px;
+    }
+
+    .location1,
+    .location4,
+    .location5,
+    .location6{
+        margin: 20px 0px 20px 0px;
+        height: 530px;
+        width: 340px;
+        border-radius: 15px;
+    }
+
+    .location1{
+        margin-top: 40px;
+    }
+
+    .location2{
+        margin: 20px 0px 0px 10px;
+        rotate: 2deg;
+        width: 330px;
+        height: 480px;
+        border-radius: 15px;
+    }
+
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 290px;
+        height: 320px;
+        margin-top: 12px;
+    }
+
+    .location3{
+        margin-top: 10px;
+        margin-left: 0px;
+        rotate: -2deg;
+        width: 335px;
+        height: 510px;
+        border-radius: 15px;
+    }
+
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 290px;
+        height: 360px;
+        margin-top: 12px;
+    }
+
+    .location4{
+        height: 550px;
+        margin-left: 10px;
+        rotate: 0deg;
+    }
+
+    .location4 img{
+        margin-top: 15px;
+    }
+    
+    h2{
+        font-size: 23px;
+    }
+    
+    h3{
         font-size: 18px;
-        letter-spacing: 1px;
-    } 
-
-    .displayimages img{
-        max-height: 450px;
+        margin-top: 10px;
     }
 }
