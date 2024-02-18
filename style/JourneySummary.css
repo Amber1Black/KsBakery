@@ -81,15 +81,82 @@ nav ul li a:hover::after{
 }
 
 
+/*Top Message*/
+
+.toppart{
+    display: flex;
+    grid-template-columns: ;
+    align-items: center;
+}
+
+.topmessage{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.topmessage h1{
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(43, 42, 42);
+}
+
+.topmessage p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-align: justify;
+    margin: 0px 60px 0px 60px;
+}
+
+.displaypictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displaypictures img{
+    max-width: 600px;
+    object-fit: cover;
+    margin: 100px 10px 100px 40px;
+    rotate: -1deg;
+}
+
+.displaypictures1 img{
+    width: 400px;
+}
+
+.displaypictures2 img{
+    width: 180px;
+}
+
+.displaypictures3 img{
+    width: 150px;
+}
+
+
 /*Content*/
 
 .content{
-    background-image: url("KensingtonGardens.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: 100px;
+    background-image: linear-gradient(to bottom, rgb(247, 158, 158), rgb(245, 217, 165), rgb(253, 232, 192));
+    background-size: ;
+    background-attachment: ;
+    padding-bottom: 150px;
     overflow-x: hidden;
 }
+
+.toppictures img{
+    width: 700px;
+    height: 500px;
+    margin-top: -500px;
+    z-index: -10;
+}
+
 
 .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6{
     display: none;
@@ -101,11 +168,11 @@ nav ul li a:hover::after{
     height: 430px;
     object-fit: cover;
     object-position: 0% 75%;
-    margin: 20px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
-.slideshow-container, .slideshow-container2, .slideshow-container3{
-    width: 500px;
+.slideshow-container, .slideshow-container2, .slideshow-container3,
+.slideshow-container4, .slideshow-container5, .slideshow-container6{
     position: relative;
     margin: auto;
 }
@@ -124,18 +191,28 @@ nav ul li a:hover::after{
     display: grid;
     align-self: center;
     justify-self: center;
-    margin: 20px 50px 20px 50px;
-    height: 630px;
-    width: 560px;
-    border-radius: 20px;
     background-color: white;
+    box-shadow: 4px 4px 5px rgb(141, 141, 141);
+    border-radius: 5px;
+}
+
+.location1{
+    margin-top: -70px;
+    height: 580px;
+    width: 540px;
+}
+
+.mySlides1 img,
+.slideshow-container1{
+    width: 500px;
+    height: 430px;
 }
 
 .location2{
-    margin-top: 400px;
+    margin-top: 250px;
     rotate: 5deg;
-    width: 550px;
-    height: 640px;
+    width: 520px;
+    height: 570px;
 }
 
 .mySlides2 img,
@@ -148,19 +225,52 @@ nav ul li a:hover::after{
     margin-top: -200px;
     margin-left: 80px;
     rotate: -2deg;
-    width: 500px;
-    height: 680px;
+    width: 480px;
+    height: 600px;
 }
 
 .mySlides3 img,
 .slideshow-container3{
     width: 440px;
-    height: 460px;
+    height: 450px;
 }
 
 .location4{
     margin-top: 100px;
     rotate: 1deg;
+    width: 500px;
+    height: 590px;
+}
+
+.mySlides4 img,
+.slideshow-container4{
+    width: 460px;
+    height: 440px;
+}
+
+.location5{
+    width: 490px;
+    height: 610px;
+    margin-top: -100px;
+}
+
+.mySlides5 img,
+.slideshow-container5{
+    width: 450px;
+    height: 460px;
+}
+
+.location6{
+    width: 470px;
+    height: 590px;
+    rotate: 3deg;
+    margin-top: 150px;
+}
+
+.mySlides6 img,
+.slideshow-container6{
+    width: 430px;
+    height: 440px;
 }
 
 .locationname{
@@ -173,39 +283,20 @@ nav ul li a:hover::after{
     padding-top: 15px;
 }
 
-
-h1{
-    font-size: 130px;
-    color: white;
-    font-weight: 700;
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 8px;
-    text-align: center;
-    padding: 80px 20px 0px 20px;
-}
-
-h5{
-    font-size: 18px;
-    color: white;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 30px 180px 0px 180px;
-}
-
 h2{
-    font-size: 36px;
+    font-size: 25px;
     color: rgb(61, 61, 61);
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 1px;
     text-align: center;
 }
 
 h3{
-    font-size: 25px;
+    font-size: 20px;
     color: grey;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
-    margin: 15px 0px 20px 0px;
+    margin: 10px 0px 20px 0px;
     text-align: center;
 }
 
@@ -244,437 +335,691 @@ h3{
 
 .copyright{
     text-align: center;
-    margin-top: 100px;
+    padding: 30px 0px 20px 0px;
     font-size: 11px;
     color: grey;
     bottom: 2%;
+    background-color: rgb(253, 232, 192);
 }
 
 
-@media only screen and (max-width:1300px){
+@media only screen and (max-width:1250px){
 
-    .mySlides1 img, .mySlides2 img, .mySlides3 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 450px;
-        height: 390px;
-        margin: 20px 0px 0px 0px;
+    .topmessage h1{
+        font-size: 130px;
     }
-
-    .slideshow-container, .slideshow-container2, .slideshow-container3{
-        width: 450px;
+    
+    .topmessage p{
+        font-size: 17px;
     }
-
-    .location1,
-    .location2,
-    .location3,
-    .location4,
-    .location5,
-    .location6{
-        margin: 20px 20px 20px 20px;
-        height: 630px;
-        width: 510px;
+    
+    .displaypictures img{
+        max-width: 550px;
     }
 
     .location1{
-        margin-top: -100px;
-    }
-
-    .location2{
-        margin-top: 300px;
-        rotate: 5deg;
+        margin-top: -70px;
+        height: 540px;
         width: 500px;
-        height: 600px;
     }
-
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 460px;
+        height: 390px;
+    }
+    
+    .location2{
+        margin-top: 250px;
+        rotate: 5deg;
+        width: 480px;
+        height: 540px;
+    }
+    
     .mySlides2 img,
     .slideshow-container2{
-        width: 430px;
+        width: 440px;
         height: 380px;
     }
-
+    
     .location3{
         margin-top: -200px;
         margin-left: 80px;
         rotate: -2deg;
-        width: 450px;
-        height: 640px;
+        width: 440px;
+        height: 560px;
     }
-
+    
     .mySlides3 img,
     .slideshow-container3{
-        width: 390px;
-        height: 420px;
+        width: 400px;
+        height: 400px;
     }
+    
+    .location4{
+        margin-top: 100px;
+        rotate: 1deg;
+        width: 480px;
+        height: 560px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 430px;
+        height: 400px;
+    }
+    
+    .location5{
+        width: 450px;
+        height: 570px;
+        margin-top: -100px;
+    }
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 410px;
+        height: 410px;
+    }
+    
+    .location6{
+        width: 430px;
+        height: 550px;
+        rotate: 3deg;
+        margin-top: 150px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 390px;
+        height: 390px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+    
+    h3{
+        font-size: 19px;
+    }
+    
 }
 
 
 @media only screen and (max-width:1150px){
 
-    .mySlides1 img, .mySlides2 img, .mySlides3 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 400px;
-        height: 350px;
-        margin: 15px 0px 0px 0px;
+    .topmessage h1{
+        font-size: 110px;
     }
-
-    .slideshow-container, .slideshow-container2, .slideshow-container3{
-        width: 400px;
+    
+    .topmessage p{
+        font-size: 16px;
     }
-
-    .location1,
-    .location2,
-    .location3,
-    .location4,
-    .location5,
-    .location6{
-        margin: 20px 0px 20px 0px;
-        height: 520px;
-        width: 450px;
+    
+    .displaypictures img{
+        max-width: 500px;
     }
 
     .location1{
-        margin-top: -100px;
+        margin-top: -70px;
+        height: 490px;
+        width: 450px;
     }
-
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 410px;
+        height: 340px;
+    }
+    
     .location2{
-        margin-top: 300px;
+        margin-top: 250px;
         rotate: 5deg;
-        width: 440px;
-        height: 580px;
+        width: 430px;
+        height: 490px;
     }
-
+    
     .mySlides2 img,
     .slideshow-container2{
-        width: 380px;
-        height: 390px;
+        width: 390px;
+        height: 330px;
     }
-
+    
     .location3{
         margin-top: -200px;
         margin-left: 80px;
         rotate: -2deg;
         width: 390px;
-        height: 580px;
+        height: 510px;
     }
-
+    
     .mySlides3 img,
     .slideshow-container3{
-        width: 340px;
-        height: 400px;
-        margin-top: 12px;
-    }
-
-    .location4{
-        height: 570px;
-    }
-
-    h1{
-        font-size: 110px;
-        letter-spacing: 8px;
-        padding: 80px 20px 0px 20px;
-    }
-    
-    h5{
-        font-size: 17px;
-        letter-spacing: 1px;
-        padding: 30px 150px 0px 150px;
-    }
-    
-    h2{
-        font-size: 30px;
-    }
-    
-    h3{
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
-}
-
-
-@media only screen and (max-width:1030px){
-
-    .mySlides1 img, .mySlides2 img, .mySlides3 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 360px;
+        width: 350px;
         height: 350px;
-        margin: 15px 0px 0px 0px;
     }
-
-    .slideshow-container, .slideshow-container2, .slideshow-container3{
-        width: 360px;
+    
+    .location4{
+        margin-top: 100px;
+        rotate: 1deg;
+        width: 430px;
+        height: 510px;
     }
-
-    .location1,
-    .location2,
-    .location3,
-    .location4,
-    .location5,
-    .location6{
-        margin: 20px 0px 20px 0px;
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 380px;
+        height: 350px;
+    }
+    
+    .location5{
+        width: 420px;
         height: 520px;
-        width: 410px;
-    }
-
-    .location1{
         margin-top: -100px;
     }
-
-    .location2{
-        margin-top: 250px;
-        rotate: 5deg;
-        width: 390px;
-        height: 560px;
-    }
-
-    .mySlides2 img,
-    .slideshow-container2{
-        width: 340px;
-        height: 370px;
-    }
-
-    .location3{
-        margin-top: -200px;
-        margin-left: 30px;
-        rotate: -2deg;
-        width: 370px;
-        height: 550px;
-    }
-
-    .mySlides3 img,
-    .slideshow-container3{
-        width: 320px;
-        height: 380px;
-        margin-top: 12px;
-    }
-
-    .location4{
-        height: 570px;
-    }
-
-    h1{
-        font-size: 100px;
-        letter-spacing: 6px;
-        padding: 80px 20px 0px 20px;
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 380px;
+        height: 360px;
     }
     
-    h5{
-        font-size: 16px;
-        letter-spacing: 1px;
-        padding: 30px 100px 0px 100px;
+    .location6{
+        width: 400px;
+        height: 500px;
+        rotate: 3deg;
+        margin-top: 180px;
     }
     
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 360px;
+        height: 340px;
+    }
+
     h2{
-        font-size: 28px;
+        font-size: 24px;
     }
     
     h3{
         font-size: 19px;
-        margin-top: 10px;
     }
-
+    
 }
 
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:1050px){
 
-    .mySlides1 img, .mySlides2 img, .mySlides3 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 320px;
-        height: 350px;
-        margin: 15px 0px 0px 0px;
+    .topmessage h1{
+        font-size: 100px;
+        margin: 0px 40px 20px 10px;
+    }
+    
+    .topmessage p{
+        font-size: 16px;
+        margin: 0px 40px 0px 10px;
+    }
+    
+    .displaypictures img{
+        max-width: 480px;
+        margin: 80px 20px 80px 20px;
     }
 
-    .slideshow-container, .slideshow-container2, .slideshow-container3{
-        width: 320px;
+    .location3{
+        margin-left: 30px;
+    }
+}
+
+
+@media only screen and (max-width:970px){
+
+    .topmessage h1{
+        font-size: 92px;
+        margin: 0px 40px 20px 10px;
+    }
+    
+    .topmessage p{
+        font-size: 15px;
+        margin: 0px 40px 0px 10px;
+    }
+    
+    .displaypictures img{
+        max-width: 450px;
+        margin: 80px 20px 80px 20px;
     }
 
-    .location1,
-    .location2,
-    .location3,
-    .location4,
-    .location5,
+    .location1{
+        margin-top: -70px;
+        height: 430px;
+        width: 400px;
+    }
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 360px;
+        height: 290px;
+    }
+    
+    .location2{
+        margin-top: 250px;
+        margin-left: -10px;
+        rotate: 5deg;
+        width: 380px;
+        height: 430px;
+    }
+    
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 340px;
+        height: 280px;
+    }
+    
+    .location3{
+        margin-top: -200px;
+        margin-left: 20px;
+        rotate: -2deg;
+        width: 350px;
+        height: 450px;
+    }
+    
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 310px;
+        height: 300px;
+    }
+    
+    .location4{
+        margin-top: 100px;
+        rotate: 1deg;
+        width: 380px;
+        height: 450px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 340px;
+        height: 300px;
+    }
+    
+    .location5{
+        width: 390px;
+        height: 460px;
+        margin-top: -100px;
+    }
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 350px;
+        height: 310px;
+    }
+    
     .location6{
-        margin: 20px 0px 20px 0px;
-        height: 520px;
         width: 370px;
+        height: 440px;
+        rotate: 3deg;
+        margin-top: 180px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 330px;
+        height: 290px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+    
+    h3{
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width:920px){
+
+    .topmessage h1{
+        font-size: 92px;
+        margin: 0px 40px 20px 10px;
+    }
+    
+    .topmessage p{
+        font-size: 15px;
+        margin: 0px 40px 0px 10px;
+    }
+    
+    .displaypictures img{
+        max-width: 400px;
+        margin: 80px 20px 80px 20px;
+    }
+}
+
+
+@media only screen and (max-width:870px){
+
+    .topmessage h1{
+        font-size: 90px;
+        margin: 0px 30px 20px 10px;
+    }
+    
+    .topmessage p{
+        font-size: 15px;
+        margin: 0px 30px 0px 10px;
+    }
+    
+    .displaypictures img{
+        max-width: 370px;
+        margin: 80px 5px 80px 10px;
+        rotate: -3deg;
     }
 
     .location1{
         margin-top: -100px;
+        height: 390px;
+        width: 370px;
     }
-
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 330px;
+        height: 260px;
+    }
+    
     .location2{
-        margin-top: 250px;
+        margin-top: 150px;
+        margin-left: -10px;
         rotate: 5deg;
-        width: 350px;
-        height: 500px;
+        width: 370px;
+        height: 390px;
     }
-
+    
     .mySlides2 img,
     .slideshow-container2{
-        width: 300px;
-        height: 330px;
+        width: 330px;
+        height: 250px;
     }
-
+    
     .location3{
         margin-top: -200px;
-        margin-left: 30px;
+        margin-left: 20px;
         rotate: -2deg;
-        width: 340px;
-        height: 510px;
+        width: 350px;
+        height: 410px;
     }
-
+    
     .mySlides3 img,
     .slideshow-container3{
-        width: 290px;
-        height: 350px;
-        margin-top: 12px;
+        width: 310px;
+        height: 270px;
     }
-
+    
     .location4{
-        height: 530px;
+        margin-top: 100px;
+        rotate: 1deg;
+        width: 350px;
+        height: 430px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 310px;
+        height: 280px;
+    }
+    
+    .location5{
+        width: 360px;
+        height: 420px;
+        margin-top: -100px;
+    }
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 320px;
+        height: 280px;
+    }
+    
+    .location6{
+        width: 340px;
+        height: 400px;
+        rotate: 3deg;
+        margin-top: 180px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 300px;
+        height: 260px;
     }
 
-    h1{
-        font-size: 85px;
-        letter-spacing: 5px;
-        padding: 80px 20px 0px 20px;
-    }
-    
-    h5{
-        font-size: 15px;
-        letter-spacing: 1px;
-        padding: 30px 70px 0px 70px;
-    }
-    
     h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     
     h3{
-        font-size: 18px;
-        margin-top: 10px;
+        font-size: 17px;
     }
-
 }
 
 
 @media only screen and (max-width:800px){
+
+    .topmessage h1{
+        font-size: 80px;
+        margin: 0px 30px 20px 10px;
+    }
+    
+    .topmessage p{
+        font-size: 15px;
+        margin: 0px 40px 0px 20px;
+    }
+    
+    .displaypictures img{
+        max-width: 330px;
+        margin: 80px 5px 80px 10px;
+        rotate: -3deg;
+    }
+
     .displayrow{
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .mySlides1 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 450px;
-        height: 380px;
-        margin: 15px 0px 0px 0px;
-    }
-
-    .slideshow-container, .slideshow-container2, .slideshow-container3{
-        width: 450px;
-    }
-
-    .location1,
-    .location4,
-    .location5,
-    .location6{
-        margin: 20px 0px 20px 0px;
-        height: 550px;
-        width: 500px;
-    }
-
     .location1{
-        margin-top: 70px;
+        margin: 30px 200px 0px 0px;
+        height: 450px;
+        width: 440px;
+        rotate: -1deg;
+        z-index: 1;
     }
-
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 400px;
+        height: 310px;
+    }
+    
     .location2{
-        margin: 50px 0px 0px 70px;
-        rotate: 3deg;
-        width: 500px;
-        height: 600px;
+        margin-top: -30px;
+        margin-left: 220px;
+        rotate: 4deg;
+        width: 450px;
+        height: 500px;
     }
-
+    
     .mySlides2 img,
     .slideshow-container2{
-        width: 450px;
-        height: 420px;
+        width: 410px;
+        height: 360px;
     }
-
+    
     .location3{
-        margin-top: 10px;
-        margin-left: -30px;
-        rotate: -2deg;
-        width: 450px;
-        height: 580px;
+        margin-top: 0px;
+        margin-left: -130px;
+        rotate: -1deg;
+        width: 480px;
+        height: 490px;
     }
-
+    
     .mySlides3 img,
     .slideshow-container3{
-        width: 400px;
-        height: 420px;
-        margin-top: 15px;
+        width: 440px;
+        height: 350px;
     }
-
+    
     .location4{
-        height: 550px;
-        margin-left: 80px;
+        margin: 20px 0px 0px 30px;
+        rotate: 0deg;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 460px;
+        height: 350px;
+    }
+    
+    .location5{
+        width: 480px;
+        height: 490px;
+        margin: 20px 0px 0px 80px;
+        rotate: 2deg;
+    }
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 440px;
+        height: 350px;
+    }
+    
+    .location6{
+        width: 490px;
+        height: 480px;
+        rotate: -1deg;
+        margin: 30px 100px 0px 0px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 450px;
+        height: 340px;
     }
 
-    h1{
-        font-size: 85px;
-        letter-spacing: 5px;
-        padding: 80px 20px 0px 20px;
-    }
-    
-    h5{
-        font-size: 15px;
-        font-family: "Lato", sans-serif;
-        letter-spacing: 1px;
-        padding: 30px 30px 0px 30px;
-    }
-    
     h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     
     h3{
-        font-size: 18px;
-        margin-top: 10px;
+        font-size: 17px;
     }
 }
 
 
-@media only screen and (max-width:700px){
-    h1{
+@media only screen and (max-width:720px){
+
+    .topmessage h1{
+        font-size: 75px;
+        margin: 0px 30px 20px 10px;
+    }
+    
+    .topmessage p{
+        font-size: 15px;
+        margin: 0px 40px 0px 20px;
+    }
+    
+    .displaypictures img{
+        max-width: 300px;
+        margin: 80px 5px 80px 10px;
+        rotate: -3deg;
+    }
+
+    .location1{
+        margin: 30px 130px 0px 0px;
+    }
+    
+    .location2{
+        margin: -10px 0px 0px 100px;
+    }
+    
+    .location3{
+        margin: 10px 0px 0px -100px;
+    }
+}
+
+
+@media only screen and (max-width:670px){
+
+    .topmessage h1{
         font-size: 70px;
-        letter-spacing: 5px;
-        padding: 80px 20px 0px 20px;
+        margin: 0px 30px 20px 10px;
     }
     
-    h5{
+    .topmessage p{
         font-size: 15px;
-        font-family: "Lato", sans-serif;
-        letter-spacing: 1px;
-        padding: 30px 20px 0px 20px;
+        margin: 0px 40px 0px 20px;
+    }
+    
+    .displaypictures img{
+        max-width: 270px;
+        margin: 80px 5px 80px 10px;
+        rotate: -4deg;
+    }
+
+    .location1{
+        margin: 30px 50px 0px 0px;
+    }
+    
+    .location2{
+        margin: 10px 0px 0px 100px;
+    }
+    
+    .location3{
+        margin: 10px 0px 0px -100px;
+    }
+
+    .location6{
+        margin: 30px 30px 0px 0px;
     }
 }
 
 
-@media only screen and (max-width:650px){
-    h1{
-        font-size: 68px;
-        letter-spacing: 3px;
-        padding: 80px 20px 0px 20px;
+@media only screen and (max-width:630px){
+
+    .topmessage h1{
+        font-size: 65px;
+        letter-spacing: 7px;
+        margin: 0px 30px 20px 10px;
     }
     
-    h5{
+    .topmessage p{
         font-size: 15px;
-        font-family: "Lato", sans-serif;
-        letter-spacing: 1px;
-        padding: 30px 90px 0px 90px;
+        margin: 0px 40px 0px 20px;
+    }
+    
+    .displaypictures img{
+        max-width: 270px;
+        margin: 80px 5px 80px 10px;
+        rotate: -4deg;
+    }
+
+    .location1{
+        margin: 30px 20px 0px 0px;
+    }
+    
+    .location2{
+        margin: 10px 0px 0px 60px;
+    }
+    
+    .location3{
+        rotate: 0deg;
+        margin: 15px 0px 0px -20px;
+    }
+
+    .location5{
+        margin: 20px 0px 0px 50px;
+    }
+
+    .location6{
+        margin: 30px 30px 0px 0px;
     }
 }
 
@@ -753,351 +1098,463 @@ h3{
         padding-right: 10px;
     }
 
-    h1{
+    .topmessage h1{
         font-size: 60px;
-        letter-spacing: 3px;
-        padding: 80px 20px 0px 20px;
+        letter-spacing: 7px;
+        margin: 0px 30px 20px 10px;
     }
     
-    h5{
-        font-size: 15px;
-        font-family: "Lato", sans-serif;
-        letter-spacing: 1px;
-        padding: 30px 50px 0px 50px;
-    }
-
-    .mySlides1 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 400px;
-        height: 380px;
-        margin: 15px 0px 0px 0px;
-    }
-
-    .slideshow-container, .slideshow-container2, .slideshow-container3{
-        width: 400px;
-    }
-
-    .location1,
-    .location4,
-    .location5,
-    .location6{
-        margin: 20px 0px 20px 0px;
-        height: 550px;
-        width: 450px;
-    }
-
-    .location1{
-        margin-top: 70px;
-    }
-
-    .location2{
-        margin: 50px 0px 0px 30px;
-        rotate: 2deg;
-        width: 450px;
-        height: 600px;
-    }
-
-    .mySlides2 img,
-    .slideshow-container2{
-        width: 400px;
-        height: 420px;
-    }
-
-    .location3{
-        margin-top: 10px;
-        margin-left: -30px;
-        rotate: -2deg;
-        width: 420px;
-        height: 580px;
-    }
-
-    .mySlides3 img,
-    .slideshow-container3{
-        width: 370px;
-        height: 420px;
-        margin-top: 15px;
-    }
-
-    .location4{
-        height: 550px;
-        margin-left: 30px;
+    .topmessage p{
+        font-size: 14px;
+        margin: 0px 30px 0px 20px;
     }
     
-    h2{
-        font-size: 25px;
+    .displaypictures img{
+        max-width: 250px;
+        margin: 80px 5px 80px 10px;
+        rotate: -4deg;
     }
-    
-    h3{
-        font-size: 18px;
-        margin-top: 10px;
+
+    .location5{
+        margin: 20px 0px 0px 30px;
     }
+
 }
 
+@media only screen and (max-width:560px){
 
-@media only screen and (max-width:500px){
-
-    h1{
+    .topmessage h1{
         font-size: 55px;
-        letter-spacing: 2px;
-        padding: 80px 20px 0px 20px;
+        letter-spacing: 6px;
+        margin: 0px 25px 20px 10px;
     }
     
-    h5{
+    .topmessage p{
         font-size: 14px;
-        font-family: "Lato", sans-serif;
-        letter-spacing: 1px;
-        padding: 20px 40px 0px 40px;
+        margin: 0px 25px 0px 20px;
     }
-
-    .mySlides1 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 360px;
-        height: 380px;
-        margin: 15px 0px 0px 0px;
-    }
-
-    .slideshow-container{
-        width: 360px;
-    }
-
-    .location1,
-    .location4,
-    .location5,
-    .location6{
-        margin: 20px 0px 20px 0px;
-        height: 540px;
-        width: 410px;
+    
+    .displaypictures img{
+        max-width: 225px;
+        margin: 80px 5px 80px 10px;
+        rotate: -4deg;
     }
 
     .location1{
-        margin-top: 70px;
+        margin: 30px 0px 0px 0px;
+        height: 430px;
+        width: 430px;
+        rotate: 0deg;
+        z-index: 1;
     }
-
-    .location2{
-        margin: 30px 0px 0px 30px;
-        rotate: 2deg;
+    
+    .mySlides1 img,
+    .slideshow-container1{
         width: 400px;
-        height: 540px;
+        height: 300px;
     }
-
+    
+    .location2{
+        margin: 10px 0px 0px 0px;
+        rotate: 3deg;
+        width: 420px;
+        height: 480px;
+    }
+    
     .mySlides2 img,
     .slideshow-container2{
-        width: 350px;
-        height: 380px;
-        margin-top: 15px;
+        width: 390px;
+        height: 340px;
     }
-
+    
     .location3{
-        margin-top: 10px;
-        margin-left: -10px;
-        rotate: -2deg;
-        width: 380px;
-        height: 550px;
+        margin: 20px 20px 0px 0px;
+        rotate: -1deg;
+        width: 430px;
+        height: 470px;
     }
-
+    
     .mySlides3 img,
     .slideshow-container3{
-        width: 330px;
-        height: 390px;
-        margin-top: 12px;
+        width: 400px;
+        height: 330px;
     }
-
+    
     .location4{
-        height: 550px;
-        margin-left: 10px;
+        margin: 20px 20px 0px 0px;
+        rotate: 0deg;
+        width: 450px;
+        height: 460px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 420px;
+        height: 320px;
+    }
+    
+    .location5{
+        width: 450px;
+        height: 470px;
+        margin: 20px 0px 0px 30px;
         rotate: 0deg;
     }
     
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 420px;
+        height: 330px;
+    }
+    
+    .location6{
+        width: 430px;
+        height: 460px;
+        rotate: -2deg;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 400px;
+        height: 320px;
+    }
+
     h2{
-        font-size: 25px;
+        font-size: 18px;
     }
     
     h3{
-        font-size: 18px;
-        margin-top: 10px;
+        font-size: 15px;
     }
+
+}
+
+@media only screen and (max-width:500px){
+
+    .toppart{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .topmessage h1{
+        font-size: 55px;
+        letter-spacing: 3px;
+        margin: 20px 10px 20px 10px;
+    }
+    
+    .topmessage p{
+        font-size: 14px;
+        margin: 0px 40px 30px 40px;
+    }
+    
+    .displaypictures img{
+        max-width: 280px;
+        margin:20px 10px 0px 5px;
+        rotate: 2deg;
+    }
+
+    .location1{
+        margin: 10px 0px 0px 0px;
+        height: 390px;
+        width: 400px;
+        rotate: 0deg;
+        z-index: 1;
+    }
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 370px;
+        height: 270px;
+    }
+    
+    .location2{
+        margin: 15px 0px 0px 0px;
+        rotate: 1deg;
+        width: 390px;
+        height: 450px;
+    }
+    
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 360px;
+        height: 310px;
+    }
+    
+    .location3{
+        margin: 20px 20px 0px 0px;
+        rotate: 0deg;
+        width: 400px;
+        height: 440px;
+    }
+    
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 370px;
+        height: 300px;
+    }
+    
+    .location4{
+        margin: 20px 0px 0px 20px;
+        rotate: 0deg;
+        width: 410px;
+        height: 440px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 380px;
+        height: 300px;
+    }
+    
+    .location5{
+        width: 420px;
+        height: 440px;
+        margin: 20px 0px 0px 20px;
+        rotate: 1deg;
+    }
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 390px;
+        height: 300px;
+    }
+    
+    .location6{
+        width: 400px;
+        height: 430px;
+        rotate: -1deg;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 370px;
+        height: 290px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+    
+    h3{
+        font-size: 15px;
+    }
+
 }
 
 
 @media only screen and (max-width:450px){
 
-    h1{
+    .topmessage h1{
         font-size: 50px;
-        letter-spacing: 1px;
-        padding: 60px 10px 0px 10px;
+        letter-spacing: 2px;
+        margin: 20px 10px 20px 10px;
     }
     
-    h5{
+    .topmessage p{
         font-size: 14px;
-        font-family: "Lato", sans-serif;
-        letter-spacing: 1px;
-        padding: 20px 60px 0px 60px;
+        margin: 0px 40px 30px 40px;
     }
-
-    .mySlides1 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 330px;
-        height: 380px;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .slideshow-container{
-        width: 330px;
-    }
-
-    .location1,
-    .location4,
-    .location5,
-    .location6{
-        margin: 20px 0px 20px 0px;
-        height: 530px;
-        width: 370px;
-        border-radius: 15px;
+    
+    .displaypictures img{
+        max-width: 280px;
+        margin: 30px 10px 0px 5px;
+        rotate: 2deg;
     }
 
     .location1{
-        margin-top: 70px;
+        margin: 10px 0px 0px 0px;
+        height: 380px;
+        width: 390px;
+        rotate: 0deg;
+        z-index: 1;
     }
-
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 370px;
+        height: 260px;
+    }
+    
     .location2{
-        margin: 30px 0px 0px 10px;
-        rotate: 2deg;
+        margin: 15px 0px 0px 0px;
+        rotate: 1deg;
+        width: 380px;
+        height: 420px;
+    }
+    
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 350px;
+        height: 290px;
+    }
+    
+    .location3{
+        margin: 20px 0px 0px 0px;
+        rotate: 0deg;
+        width: 380px;
+        height: 400px;
+    }
+    
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 350px;
+        height: 270px;
+    }
+    
+    .location4{
+        margin: 20px 0px 0px 0px;
+        rotate: 0deg;
+        width: 390px;
+        height: 430px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
         width: 360px;
-        height: 510px;
-        border-radius: 15px;
+        height: 300px;
+    }
+    
+    .location5{
+        width: 390px;
+        height: 390px;
+        margin: 20px 0px 0px 5px;
+        rotate: 1deg;
+    }
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 360px;
+        height: 260px;
+    }
+    
+    .location6{
+        width: 380px;
+        height: 390px;
+        rotate: -1deg;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 350px;
+        height: 250px;
     }
 
+    h2{
+        font-size: 18px;
+    }
+    
+    h3{
+        font-size: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width:410px){
+
+    .topmessage h1{
+        font-size: 45px;
+        letter-spacing: 1px;
+        margin: 20px 10px 20px 10px;
+    }
+    
+    .topmessage p{
+        font-size: 14px;
+        margin: 0px 30px 30px 30px;
+    }
+    
+    .displaypictures img{
+        max-width: 220px;
+        margin: 30px 10px 0px 5px;
+        rotate: 2deg;
+    }
+
+    .location1{
+        margin: 10px 0px 0px 0px;
+        height: 480px;
+        width: 355px;
+        rotate: 0deg;
+        z-index: 1;
+    }
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 325px;
+        height: 360px;
+    }
+    
+    .location2{
+        margin: 15px 0px 0px 0px;
+        rotate: 1deg;
+        width: 350px;
+        height: 480px;
+    }
+    
     .mySlides2 img,
     .slideshow-container2{
         width: 320px;
         height: 350px;
-        margin-top: 15px;
     }
-
+    
     .location3{
-        margin-top: 10px;
-        margin-left: -10px;
-        rotate: -2deg;
-        width: 335px;
-        height: 510px;
-        border-radius: 15px;
-    }
-
-    .mySlides3 img,
-    .slideshow-container3{
-        width: 290px;
-        height: 360px;
-        margin-top: 12px;
-    }
-
-    .location4{
-        height: 550px;
-        margin-left: 10px;
+        margin: 20px 0px 0px 0px;
         rotate: 0deg;
-    }
-
-    .location4 img{
-        margin-top: 15px;
-    }
-    
-    h2{
-        font-size: 25px;
-    }
-    
-    h3{
-        font-size: 18px;
-        margin-top: 10px;
-    }
-}
-
-
-@media only screen and (max-width:400px){
-
-    h1{
-        font-size: 46px;
-        letter-spacing: 1px;
-        padding: 60px 10px 0px 10px;
-    }
-    
-    h5{
-        font-size: 14px;
-        font-family: "Lato", sans-serif;
-        letter-spacing: 1px;
-        padding: 20px 40px 0px 40px;
-    }
-
-    .mySlides1 img,
-    .mySlides4 img, .mySlides5 img, .mySlides6 img{
-        width: 300px;
-        height: 350px;
-        margin: 10px 0px 0px 0px;
-    }
-
-    .slideshow-container{
-        width: 300px;
-    }
-
-    .location1,
-    .location4,
-    .location5,
-    .location6{
-        margin: 20px 0px 20px 0px;
-        height: 530px;
-        width: 340px;
-        border-radius: 15px;
-    }
-
-    .location1{
-        margin-top: 40px;
-    }
-
-    .location2{
-        margin: 20px 0px 0px 10px;
-        rotate: 2deg;
-        width: 330px;
+        width: 350px;
         height: 480px;
-        border-radius: 15px;
-    }
-
-    .mySlides2 img,
-    .slideshow-container2{
-        width: 290px;
-        height: 320px;
-        margin-top: 12px;
-    }
-
-    .location3{
-        margin-top: 10px;
-        margin-left: 0px;
-        rotate: -2deg;
-        width: 335px;
-        height: 510px;
-        border-radius: 15px;
-    }
-
-    .mySlides3 img,
-    .slideshow-container3{
-        width: 290px;
-        height: 360px;
-        margin-top: 12px;
-    }
-
-    .location4{
-        height: 550px;
-        margin-left: 10px;
-        rotate: 0deg;
-    }
-
-    .location4 img{
-        margin-top: 15px;
     }
     
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 320px;
+        height: 350px;
+    }
+    
+    .location4{
+        margin: 20px 0px 0px 0px;
+        rotate: 0deg;
+        width: 360px;
+        height: 440px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 335px;
+        height: 310px;
+    }
+    
+    .location5{
+        width: 350px;
+        height: 480px;
+        margin: 20px 0px 0px 5px;
+        rotate: 1deg;
+    }
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 325px;
+        height: 350px;
+    }
+    
+    .location6{
+        width: 340px;
+        height: 480px;
+        rotate: -1deg;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 315px;
+        height: 350px;
+    }
+
     h2{
-        font-size: 23px;
+        font-size: 18px;
     }
     
     h3{
-        font-size: 18px;
-        margin-top: 10px;
+        font-size: 15px;
     }
 }
