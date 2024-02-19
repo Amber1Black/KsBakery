@@ -104,8 +104,7 @@ nav ul li a:hover::after{
 .secondpartforsmallerscreen, .secondpartformobile,
 .thirdpartformobile,
 .thirdpartlargermessage p1, 
-.fourthpartformobile,
-.fourthpartlargermessage p1, 
+.fourthpartmessageformobile,
 .fifthpartformobile{
     display: none;
 }
@@ -263,7 +262,7 @@ nav ul li a:hover::after{
     color: rgb(0, 0, 0);
     text-align: center;
     margin: -40px 0px 20px 0px;
-    text-shadow: 3px 3px rgb(167, 165, 165);
+    text-shadow: 3px 3px 3px rgb(167, 165, 165);
 }
 
 .secondpartlargermessage p{
@@ -328,7 +327,7 @@ nav ul li a:hover::after{
     font-family: 'Lato', sans-serif;
     color: black;
     text-align: center;
-    text-shadow: 3px 3px rgb(167, 165, 165);
+    text-shadow: 3px 3px 1px rgb(167, 165, 165);
 }
 
 .thirdpartlargermessage h1{
@@ -358,68 +357,99 @@ nav ul li a:hover::after{
 
 /*Fourth Section*/
 
-.fourthpartforlargerscreen{
+.fourthpart{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    background-image: linear-gradient(to bottom, rgb(255, 164, 148), rgb(241, 177, 177));
+    background-image: linear-gradient(to top, rgb(255, 205, 176), rgb(247, 171, 171));
 }
 
-.fourthpartlargermessage h1{
-    font-size: 150px;
+.fourthpartmessage{
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.fourthpartmessage h1{
+    font-size: 130px;
     font-weight: 700;
-    letter-spacing: 9px;
+    letter-spacing: 10px;
     font-family: 'Lato', sans-serif;
     color: white;
-    margin: 0px 0px 30px 0px;
-    text-shadow: 3px 3px rgb(61, 61, 61);
     text-align: center;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+    margin: 80px 0px 20px 0px;
 }
 
-.fourthpartlargermessage p{
-    font-size: 20px;
-    font-weight: 500;
+.fourthpartmessage p{
+    text-align: center;
     color: white;
-    text-align: center;
-    margin-bottom: 30px;
+    font-weight: 500;
 }
 
-.fourthpartlargermessage p,
-.fourthpartredirection a{
-    font-size: 17px;
+.fourthpartmessage a{
+    text-decoration: none;
+    color: white;
 }
 
-.fourthpartlargerpictures{
+.scroll-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 70px 100px 20px;
+    justify-self: center;
+    column-gap: 10px;
+    background-color: ;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 10px 30px 120px 30px;
+    max-width: 90%;
 }
 
-.fourthpartlargerpictures img{
-    height: 520px;
+.scroll-container img{
+    width: 270px;
+    height: 340px;
     object-fit: cover;
-    border-radius: 130px;
-    margin-right: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 8px 8px 30px 8px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px rgb(65, 64, 64);
 }
 
-.fourthpartlargerpictures1 img{
-    width: 250px;
+.picture1 img{
+    rotate: -1deg;
 }
 
-.fourthpartlargerpictures2 img{
-    width: 140px;
-    object-position: 10% 95%;
+.picture2 img{
+    margin-top: 20px;
 }
 
-.fourthpartlargerpictures3 img{
-    width: 140px;
+.picture3 img{
+    margin-top: 5px;
+    rotate: 1deg;
 }
 
-.fourthpartlargermessage{
-    margin: 0px 50px 0px 50px;
+.picture4 img{
+    margin-top: 20px;
+    rotate: -1deg;
 }
 
+.picture5 img{
+    margin-top: 20px;
+}
+
+.picture6 img{
+    margin-top: 5px;
+    rotate: 1deg;
+}
+
+.picture7 img{
+    margin-top: 20px;
+}
+
+.picture8 img{
+    margin-top: 10px;
+    rotate: 1deg;
+}
 
 /*Fifth Section*/
 
@@ -427,7 +457,7 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgb(255, 205, 176), rgb(247, 171, 171));
+    background-image: linear-gradient(to bottom, rgb(255, 151, 151), rgb(236, 184, 184));
 }
 
 .fifthpartprofilepic{
@@ -511,6 +541,7 @@ nav ul li a:hover::after{
     .thirdpartlargermessage h2{
         margin: -20px 0px 0px 40px;
     }
+
 }
 
 
@@ -553,12 +584,6 @@ nav ul li a:hover::after{
         margin: -30px 0px 0px 0px;
     }
 
-    /*Fourth Section*/
-
-    .fourthpartlargermessage h1{
-        font-size: 130px;
-    }
-
 }
 
 
@@ -588,16 +613,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1280px){
-
-    /*Fourth Section*/
-
-    .fourthpartlargermessage h1{
-        font-size: 110px;
-    }
-
-    .fourthpartlargerpictures1 img{
-        width: 220px;
-    }
 
     /*Fifth Section*/
 
@@ -693,35 +708,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1180px){
 
-    /*Fourth Section*/
-
-    .fourthpartlargermessage h1{
-        font-size: 100px;
-        margin-bottom: 20px;
-    }
-
-    .fourthpartlargermessage p{
-        margin-bottom: 20px;
-    }
-
-    .fourthpartlargerpictures{
-        margin: 100px 40px 100px 20px;
-    }
-
-    .fourthpartlargerpictures1 img{
-        width: 210px;
-    }
-
-    .fourthpartlargerpictures2 img, 
-    .fourthpartlargerpictures3 img{
-        width: 110px;
-        border-radius: 60px;
-    }
-
-    .fourthpartlargermessage{
-        margin: 0px 40px 0px 40px;
-    }
-
     /*Fifth Section*/
 
     .fifthpartprofilepic{
@@ -803,6 +789,14 @@ nav ul li a:hover::after{
         font-size: 130px;
     }
 
+    /*Four Section*/
+
+    .fourthpartmessage p{
+        max-width: 90%;
+        text-align: justify;
+        justify-self: center;
+    }
+
 }
 
 
@@ -828,18 +822,6 @@ nav ul li a:hover::after{
     .topimage2 img{
         width: 100%;
         margin: 150px 0px 10px 0px;
-    }
-
-    /*Fourth Section*/
-
-    .fourthpartlargerpictures1 img{
-        width: 200px;
-    }
-
-    .fourthpartlargerpictures2 img, 
-    .fourthpartlargerpictures3 img{
-        width: 100px;
-        border-radius: 60px;
     }
 
     /*Fifth Section*/
@@ -945,33 +927,6 @@ nav ul li a:hover::after{
         margin: 15px 0px 20px 0px;
     }
 
-    /*Fourth Section*/
-
-    .fourthpartlargermessage{
-        margin-right: 0px;
-    }
-
-    .fourthpartlargermessage h1{
-        font-size: 90px;
-    }
-
-    .fourthpartlargerpictures{
-        margin: 80px 10px 80px 0px;
-    }
-
-    .fourthpartlargerpictures1 img{
-        width: 180px;
-    }
-
-    .fourthpartlargerpictures2 img, 
-    .fourthpartlargerpictures3 img{
-        width: 100px;
-        border-radius: 60px;
-    }
-
-    .fourthpartlargermessage{
-        margin: 0px 20px 0px 20px;
-    }
 }
 
 
@@ -1172,49 +1127,11 @@ nav ul li a:hover::after{
         margin: 0px 40px 0px 10px;
     }
 
-
-
     /*Fourth Section*/
 
-    .fourthpartlargermessage h1{
-        font-size: 95px;
+    .fourthpartmessage h1{
+        font-size: 115px;
     }
-
-    .fourthpartlargermessage p{
-        display: none;
-    }
-
-    .fourthpartlargermessage p1{
-        display: flex;
-        text-align: justify;
-        color: white;
-        margin: 0px 10px 15px 20px;
-        font-weight: 500;
-    }
-
-    .fourthpartredirection{
-        text-align: justify;
-        margin: 0px 10px 0px 20px;
-    }
-
-    .fourthpartlargerpictures{
-        margin: 70px 0px 70px 5px;
-    }
-
-    .fourthpartlargerpictures img{
-        margin-right: 15px;
-    }
-
-    .fourthpartlargerpictures1 img{
-        width: 170px;
-    }
-
-    .fourthpartlargerpictures2 img, 
-    .fourthpartlargerpictures3 img{
-        width: 90px;
-        border-radius: 60px;
-    }
-
 
     /*Fifth Section*/
 
@@ -1372,27 +1289,9 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartlargermessage h1{
-        font-size: 80px;
-    }
-
-    .fourthpartlargerpictures {
-        margin-left: 10px;
-    }
-
-    .fourthpartlargerpictures img{
-        margin-right: 15px;
-        height: 450px;
-    }
-
-    .fourthpartlargerpictures1 img{
-        width: 160px;
-    }
-
-    .fourthpartlargerpictures2 img, 
-    .fourthpartlargerpictures3 img{
-        width: 90px;
-        border-radius: 60px;
+    .fourthpartmessage h1{
+        font-size: 110px;
+        letter-spacing: 8px;
     }
 
     /*Fifth Section*/
@@ -1490,40 +1389,11 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartlargermessage h1{
-        font-size: 80px;
-        letter-spacing: 6px;
-        margin-bottom: 20px;
+    .fourthpartmessage h1{
+        letter-spacing: 5px;
+        font-size: 100px;
     }
-
-    .fourthpartlargermessage p1,
-    .fourthpartredirection a{
-        font-size: 16px;
-    }
-
-    .fourthpartlargermessage p1{
-        margin: 0px 20px 20px 20px;
-    }
-
-    .fourthpartlargerpictures{
-        margin: 50px 10px 50px 5px;
-    }
-
-    .fourthpartlargerpictures img{
-        margin-right: 10px;
-        height: 450px;
-    }
-
-    .fourthpartlargerpictures1 img{
-        width: 145px;
-    }
-
-    .fourthpartlargerpictures2 img, 
-    .fourthpartlargerpictures3 img{
-        width: 90px;
-        border-radius: 60px;
-    }
-
+    
     /*Fifth Section*/
 
     .fifthpartprofilepic{
@@ -1611,14 +1481,6 @@ nav ul li a:hover::after{
         margin: 0px 40px 0px 10px;
     }
 
-    /*Fourth Section*/
-
-    .fourthpartlargermessage h1{
-        font-size: 75px;
-        letter-spacing: 5px;
-        margin-bottom: 20px;
-    }
-
     /*Fifth Section*/
 
     .fifthpartprofilepic{
@@ -1668,8 +1530,8 @@ nav ul li a:hover::after{
 
     .thirdpartlargermessage p1,
     .thirdpartredirection a,
-    .fourthpartlargermessage p1,
-    .fourthpartredirection a,
+    .fourthpartmessage p,
+    .fourthpartmessage a,
     .fifthpartlargermessage p,
     .fifthpartredirection a{
         font-size: 16px;
@@ -1689,32 +1551,9 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartlargermessage h1{
-        font-size: 70px;
-        letter-spacing: 5px;
-    }
-
-    .fourthpartlargermessage p1{
-        margin: 0px 20px 20px 20px;
-    }
-
-    .fourthpartlargerpictures {
-        margin-left: 0px;
-    }
-
-    .fourthpartlargerpictures img{
-        margin-right: 8px;
-        height: 420px;
-    }
-
-    .fourthpartlargerpictures1 img{
-        width: 135px;
-    }
-
-    .fourthpartlargerpictures2 img, 
-    .fourthpartlargerpictures3 img{
-        width: 85px;
-        border-radius: 60px;
+    .fourthpartmessage h1{
+        letter-spacing: 3px;
+        font-size: 95px;
     }
 
     /*Fifth Section*/
@@ -1784,6 +1623,7 @@ nav ul li a:hover::after{
     .thirdpartredirection{
         margin: 0px 30px 0px 10px;
     }
+
 }
 
 
@@ -1803,6 +1643,7 @@ nav ul li a:hover::after{
         margin-left: 455px;
         max-height: 650px;
     }
+
 }
 
 
@@ -1814,28 +1655,6 @@ nav ul li a:hover::after{
         letter-spacing: 8px;
         margin-top: 0px;
         margin-bottom: 20px;
-    }
-
-    /*Fourth Section*/
-
-    .fourthpartlargermessage h1{
-        font-size: 60px;
-        letter-spacing: 1px;
-    }
-
-    .fourthpartlargermessage p1,
-    .fourthpartredirection a{
-        font-size: 15px;
-    }
-
-    .fourthpartlargerpictures1 img{
-        width: 140px;
-    }
-
-    .fourthpartlargerpictures2 img, 
-    .fourthpartlargerpictures3 img{
-        width: 80px;
-        border-radius: 60px;
     }
 
     /*Fifth Section*/
@@ -1880,6 +1699,18 @@ nav ul li a:hover::after{
         margin-left: 440px;
         max-height: 650px;
     }
+
+    /*Fourth Section*/
+
+    .fourthpartmessage h1{
+        font-size: 90px;
+        letter-spacing: 1px;
+    }
+
+    .fourthpartmessage p{
+        max-width: 78%;
+    }
+
 }
 
 
@@ -1976,6 +1807,17 @@ nav ul li a:hover::after{
         padding-right: 10px;
     }
 
+    /*Common Parameter*/
+
+    .thirdpartlargermessage p1,
+    .thirdpartredirection a,
+    .fourthpartmessageformobile p,
+    .fourthpartmessageformobile a,
+    .fifthpartlargermessage p,
+    .fifthpartredirection a{
+        font-size: 15px;
+    }
+
     /*First Section*/
 
     .firstpartforlargerscreen{
@@ -1995,7 +1837,9 @@ nav ul li a:hover::after{
     .firstpartmobileupperimage img{
         width: 100%;
         object-fit: cover;
-        border-radius: 20px;      
+        border-radius: 10px;
+        box-shadow: 4px 4px 5px grey;   
+
     }
 
     .firstpartmobilemessage{
@@ -2051,7 +1895,7 @@ nav ul li a:hover::after{
         margin: 10px 0px 15px 0px;
         text-align: center;
         font-family: 'Lato', sans-serif;
-        text-shadow: 3px 3px 1px grey;
+        text-shadow: 3px 3px 2px grey;
     }
 
     .secondpartformobile p,
@@ -2173,72 +2017,55 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartforlargerscreen{
+    .fourthpart{
+        background-image: unset;
+    }
+
+    .fourthpartmessage{
         display: none;
     }
 
-    .fourthpartformobile{
+    .fourthpartmessageformobile{
         display: grid;
-        align-items: center;
-        background-image: linear-gradient(to bottom, rgb(255, 164, 148), rgb(241, 177, 177));
     }
 
-    .fourthpartmobilemessage h1{
-        font-size: 100px;
+    .fourthpartmessageformobile h1,
+    .fourthpartmessageformobile h2{
+        font-size: 110px;
         font-weight: 700;
-        letter-spacing: 9px;
+        letter-spacing: 0px;
         font-family: 'Lato', sans-serif;
-        color: white;
-        margin: 0px 0px 20px 0px;
+        color: black;
         text-align: center;
-        margin: -110px 0px 20px 0px;
-        text-shadow: 3px 3px 1px rgb(32, 32, 32);
+        text-shadow: 3px 3px 2px rgb(133, 132, 132);
     }
 
-    .fourthpartmobilemessage p{
+    .fourthpartmessageformobile h1{
+        margin: 30px 180px 0px 0px;
+    }
+
+    .fourthpartmessageformobile h2{
+        margin: -30px 0px 15px 100px;
+    }
+
+    .fourthpartmessageformobile p{
         font-weight: 500;
-        color: white;
         text-align: justify;
-        margin: 0px 60px 20px 60px;
+        justify-self: center;
+        color: black;
+        max-width: 80%;
+        margin-bottom: 20px;
     }
 
-    .fourthpartmobilemessage p,
-    .fourthpartredirection a{
-        font-size: 15px;
+    .fourthpartmessageformobile a{
+        text-decoration: none;
+        color: black;
     }
 
-    .fourthpartredirection{
-        margin-left: 60px;
-        padding-bottom: 60px;
+    .scroll-container img{
+        box-shadow: 2px 2px 6px black;
     }
 
-    .fourthpartmobilepictures{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 80px 0px 20px 0px;
-        column-gap: 15px;
-    }
-
-    .fourthpartmobilepictures img{
-        height: 400px;
-        object-fit: cover;
-        border-radius: 130px;
-    }
-
-    .fourthpartmobilepictures1 img{
-        width: 250px;
-    }
-
-    .fourthpartmobilepictures2 img,
-    .fourthpartmobilepictures3 img{
-        width: 120px;
-    }
-
-    .fourthpartmobilemessage{
-        margin: 0px 0px 50px 0px;
-    }
-    
 
     /*Fifth Section*/
 
@@ -2254,6 +2081,7 @@ nav ul li a:hover::after{
     .fifthpartprofilepic{
         justify-content: center;
         align-items: center;
+        margin-bottom: 80px;
     }
 
     .fifthpartprofilepic img{
@@ -2351,37 +2179,6 @@ nav ul li a:hover::after{
         letter-spacing: 5px;
     }
 
-    /*Fourth Section*/
-
-    .fourthpartmobilemessage h1{
-        font-size: 100px;
-        letter-spacing: 7px;
-        margin: -100px 0px 20px 0px;
-    }
-
-    .fourthpartmobilemessage p{
-        margin: 0px 60px 20px 60px;
-    }
-
-    .fourthpartmobilepictures{
-        margin: 80px 0px 20px 0px;
-        column-gap: 12px;
-    }
-
-    .fourthpartmobilepictures img{
-        height: 380px;
-        border-radius: 130px;
-    }
-
-    .fourthpartmobilepictures1 img{
-        width: 230px;
-    }
-
-    .fourthpartmobilepictures2 img,
-    .fourthpartmobilepictures3 img{
-        width: 100px;
-    }
-
     /*Fifth Section*/
 
     .fifthpartmobilemessage{
@@ -2431,8 +2228,8 @@ nav ul li a:hover::after{
     .secondpartredirection a,
     .thirdpartlargermessage p1,
     .thirdpartredirection a,
-    .fourthpartmobilemessage p,
-    .fourthpartredirection a,
+    .fourthpartmessageformobile p,
+    .fourthpartmessageformobile a,
     .fifthpartmobilemessage p,
     .fifthpartredirection a{
         font-size: 14px;
@@ -2489,35 +2286,26 @@ nav ul li a:hover::after{
     .secondpartformobileimage5 img{
         width: 300px;
     }
-   
+
     /*Fourth Section*/
 
-    .fourthpartmobilemessage h1{
+    .fourthpartmessageformobile h1,
+    .fourthpartmessageformobile h2{
         font-size: 100px;
-        letter-spacing: 6px;
-        margin: -100px 0px 20px 0px;
+        font-weight: ;
+        letter-spacing: ;
     }
 
-    .fourthpartmobilemessage p{
-        margin: 0px 40px 20px 40px;
+    .fourthpartmessageformobile h1{
+        margin: 30px 150px 0px 0px;
     }
 
-    .fourthpartredirection{
-        margin: 0px 40px 20px 40px;
+    .fourthpartmessageformobile h2{
+        margin: -30px 0px 15px 50px;
     }
 
-    .fourthpartmobilepictures{
-        margin: 80px 0px 20px 0px;
-        column-gap: 12px;
-    }
-
-    .fourthpartmobilepictures1 img{
-        width: 230px;
-    }
-
-    .fourthpartmobilepictures2 img,
-    .fourthpartmobilepictures3 img{
-        width: 90px;
+    .fourthpartmessageformobile p{
+        max-width: 85%;
     }
 
     /*Fifth Section*/
@@ -2619,37 +2407,6 @@ nav ul li a:hover::after{
 
     }
 
-    /*Fourth Section*/
-
-    .fourthpartmobilemessage h1{
-        font-size: 90px;
-        letter-spacing: 6px;
-        margin: -100px 0px 20px 0px;
-    }
-
-    .fourthpartmobilemessage p{
-        margin: 0px 30px 20px 30px;
-    }
-
-    .fourthpartredirection{
-        margin: 0px 30px 20px 30px;
-    }
-
-    .fourthpartmobilepictures{
-        margin: 80px 0px 20px 0px;
-        column-gap: 12px;
-    }
-
-    .fourthpartmobilepictures1 img{
-        width: 210px;
-    }
-
-    .fourthpartmobilepictures2 img,
-    .fourthpartmobilepictures3 img{
-        width: 80px;
-    }
-
-
     /*Fifth Section*/
 
     .fifthpartmobilemessage{
@@ -2702,6 +2459,27 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:420px){
 
+    /*Fourth Section*/
+
+    .fourthpartmessageformobile h1,
+    .fourthpartmessageformobile h2{
+        font-size: 95px;
+        font-weight: ;
+        letter-spacing: ;
+    }
+
+    .fourthpartmessageformobile h1{
+        margin: 30px 150px 0px 0px;
+    }
+
+    .fourthpartmessageformobile h2{
+        margin: -30px 0px 15px 20px;
+    }
+
+    .fourthpartmessageformobile p{
+        max-width: 85%;
+    }
+
     /*Fifth Section*/
 
     .fifthpartmobilemessage{
@@ -2721,40 +2499,6 @@ nav ul li a:hover::after{
         margin: -145px 0px 0px 0px;
     }
 
-}
-
-
-@media only screen and (max-width:410px){
-
-    /*Fourth Section*/
-
-    .fourthpartmobilemessage h1{
-        font-size: 85px;
-        letter-spacing: 6px;
-        margin: -100px 0px 20px 0px;
-    }
-
-    .fourthpartmobilemessage p{
-        margin: 0px 30px 20px 30px;
-    }
-
-    .fourthpartredirection{
-        margin: 0px 30px 20px 30px;
-    }
-
-    .fourthpartmobilepictures{
-        margin: 80px 0px 20px 0px;
-        column-gap: 12px;
-    }
-
-    .fourthpartmobilepictures1 img{
-        width: 200px;
-    }
-
-    .fourthpartmobilepictures2 img,
-    .fourthpartmobilepictures3 img{
-        width: 70px;
-    }
 }
 
 
@@ -2839,14 +2583,11 @@ nav ul li a:hover::after{
         }
     
     }
- 
-    
-    }
 
     /*Fourth Section*/
 
-    .fourthpartmobilemessage p{
-        margin: 0px 70px 20px 70px;
+    .fourthpartmessageformobile h1{
+        margin: 30px 120px 0px 0px;
     }
 
 }
