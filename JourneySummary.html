@@ -14,7 +14,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="description" content="K's Bakery, just take a break to explore the beauty of the world.">
+        <meta name="description" content="K's Bakery, just take a break to explore the beauty of the world. It's thrilling!">
 
         <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
         <link rel="shortcut icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
@@ -48,13 +48,12 @@
     <div class="toppart">
         <div class="displaypictures">
             <img src = "Pictures/Journey - Kensington Gardens 3.jpg">
-    </div>
-            <div class="topmessage">
-                <h1>TAKE A BREAK</h1>
-                <p>Apart from baking, it's thrilling to explore the beauty of the world also. Love to walk under sunshine, to admire the mightiness of nature.</p>
-            </div>
-
-            
+        </div>
+        <div class="topmessage">
+            <h1>JUST</h1>
+            <h2>RELAX</h2>
+            <p>Apart from baking, it's thrilling to explore the beauty of the world also. Love to walk under sunshine, to admire the mightiness of nature.</p>
+        </div>
     </div>
 
     <div class="displayrow">
@@ -242,6 +241,39 @@
                 <h3>London, UK</h3>
             </div>
         </div>
+
+        <div class="location7">
+            <div class="slideshow-container7">
+                <div class="mySlides7">
+                    <img src="Pictures/Journey - The Regent's Park 4.jpg">
+                </div>
+                <div class="mySlides7">
+                    <img src="Pictures/Journey - The Regent's Park 1.jpg">
+                </div>
+                <div class="mySlides7">
+                    <img src="Pictures/Journey - The Regent's Park 2.jpg">
+                </div>
+                <div class="mySlides7">
+                    <img src="Pictures/Journey - The Regent's Park 5.jpg">
+                </div>
+                <div class="mySlides7">
+                    <img src="Pictures/Journey - The Regent's Park 6.jpg">
+                </div>
+                <div class="mySlides7">
+                    <img src="Pictures/Journey - The Regent's Park 7.jpg">
+                </div>
+                <div class="mySlides7">
+                    <img src="Pictures/Journey - The Regent's Park 8.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+            </div>
+
+            <div class="locationname">
+                <h2>The Regent's Park</h2>
+                <h3>London, UK</h3>
+            </div>
+        </div>
     </div>
 
     </div>
@@ -253,14 +285,17 @@
     </div>
     
     <script>
-        let slideIndex = [1,1,1,1,1,1];
-        let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"]
+        let slideIndex = [1,1,1,1,1,1,1,1,1,1];
+        let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9"]
         showSlides(1, 0);
         showSlides(1, 1);
         showSlides(1, 2);
         showSlides(1, 3);
         showSlides(1, 4);
         showSlides(1, 5);
+        showSlides(1, 6);
+        showSlides(1, 7);
+        showSlides(1, 8);
         
         function plusSlides(n, no) {
         showSlides(slideIndex[no] += n, no);
