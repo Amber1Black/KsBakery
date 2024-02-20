@@ -359,7 +359,7 @@ nav ul li a:hover::after{
 
 .fourthpart{
     display: grid;
-    background-image: linear-gradient(to top, rgb(255, 205, 176), rgb(255, 188, 171));
+
 }
 
 .fourthpartmessage{
