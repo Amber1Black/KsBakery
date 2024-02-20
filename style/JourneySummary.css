@@ -94,23 +94,32 @@ nav ul li a:hover::after{
     justify-content: center;
 }
 
-.topmessage h1{
-    font-size: 150px;
+.topmessage h1, .topmessage h2{
+    font-size: 160px;
     font-weight: 700;
     letter-spacing: 10px;
     font-family: 'Lato', sans-serif;
     color: white;
-    margin: 0px 60px 30px 30px;
     text-align: center;
-    text-shadow: 2px 2px 5px rgb(43, 42, 42);
+    text-shadow: 5px 5px 3px rgb(15, 15, 15);
 }
+
+.topmessage h1{
+    margin: -50px 60px 30px -950px;
+}
+
+.topmessage h2{
+    margin: -150px 60px 30px 50px;
+}
+
 
 .topmessage p{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
     text-align: justify;
-    margin: 0px 60px 0px 30px;
+    margin: 0px 80px 0px 30px;
+    max-width: 85%;
 }
 
 .displaypictures{
@@ -120,8 +129,8 @@ nav ul li a:hover::after{
 }
 
 .displaypictures img{
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
     margin: 50px 50px 50px 50px;
     border-radius: 300px;
@@ -135,8 +144,6 @@ nav ul li a:hover::after{
 
 .content{
     background-image: linear-gradient(to bottom, rgb(247, 158, 158), rgb(245, 217, 165), rgb(253, 232, 192));
-    background-size: ;
-    background-attachment: ;
     padding-bottom: 150px;
     overflow-x: hidden;
 }
@@ -146,16 +153,17 @@ nav ul li a:hover::after{
 }
 
 .mySlides1 img, .mySlides2 img, .mySlides3 img,
-.mySlides4 img, .mySlides5 img, .mySlides6 img{
-    width: 500px;
-    height: 430px;
+.mySlides4 img, .mySlides5 img, .mySlides6 img,
+.mySlides7 img, .mySlides8 img, .mySlides9 img{
+
     object-fit: cover;
     object-position: 0% 75%;
-    margin: 10px 0px 0px 0px;
+    margin: 3px 0px 0px 0px;
 }
 
 .slideshow-container, .slideshow-container2, .slideshow-container3,
-.slideshow-container4, .slideshow-container5, .slideshow-container6{
+.slideshow-container4, .slideshow-container5, .slideshow-container6,
+.slideshow-container7, .slideshow-container8, .slideshow-container9{
     position: relative;
     margin: auto;
 }
@@ -170,7 +178,10 @@ nav ul li a:hover::after{
 .location3,
 .location4,
 .location5,
-.location6{
+.location6,
+.location7,
+.location8,
+.location9{
     display: grid;
     align-self: center;
     justify-self: center;
@@ -180,9 +191,9 @@ nav ul li a:hover::after{
 }
 
 .location1{
-    margin-top: -70px;
+    margin-top: 100px;
     height: 580px;
-    width: 530px;
+    width: 520px;
 }
 
 .mySlides1 img,
@@ -192,9 +203,9 @@ nav ul li a:hover::after{
 }
 
 .location2{
-    margin-top: 250px;
+    margin-top: -150px;
     rotate: 5deg;
-    width: 510px;
+    width: 500px;
     height: 570px;
 }
 
@@ -205,10 +216,10 @@ nav ul li a:hover::after{
 }
 
 .location3{
-    margin-top: -200px;
+    margin-top: 150px;
     margin-left: 80px;
     rotate: -2deg;
-    width: 470px;
+    width: 460px;
     height: 600px;
 }
 
@@ -219,9 +230,9 @@ nav ul li a:hover::after{
 }
 
 .location4{
-    margin-top: 100px;
+    margin-top: -100px;
     rotate: 1deg;
-    width: 490px;
+    width: 480px;
     height: 590px;
 }
 
@@ -232,9 +243,9 @@ nav ul li a:hover::after{
 }
 
 .location5{
-    width: 480px;
+    width: 470px;
     height: 610px;
-    margin-top: -100px;
+    margin-top: 100px;
 }
 
 .mySlides5 img,
@@ -244,14 +255,27 @@ nav ul li a:hover::after{
 }
 
 .location6{
-    width: 460px;
+    width: 450px;
     height: 590px;
     rotate: 3deg;
-    margin-top: 150px;
+    margin-top: -100px;
 }
 
 .mySlides6 img,
 .slideshow-container6{
+    width: 430px;
+    height: 440px;
+}
+
+.location7{
+    width: 450px;
+    height: 590px;
+    rotate: -2deg;
+    margin: 50px 0px 0px 100px;
+}
+
+.mySlides7 img,
+.slideshow-container7{
     width: 430px;
     height: 440px;
 }
@@ -326,29 +350,30 @@ h3{
 }
 
 
-@media only screen and (max-width:1230px){
+@media only screen and (max-width:1300px){
 
     .topmessage h1{
-        font-size: 135px;
-        margin: 0px 60px 30px 20px;
+        font-size: 145px;
+        margin: -50px 60px 30px -950px;
     }
     
-    .topmessage p{
-        font-size: 17px;
-        margin: 0px 60px 0px 20px;
+    .topmessage h2{
+        font-size: 145px;
+        margin: -130px 60px 30px -50px;
     }
 
-    .displaypictures img{
-        width: 450px;
-        height: 450px;
-        border-radius: 300px;
-        margin: 50px 20px 50px 50px;
+    .topmessage p{
+        max-width: 95%;
+        margin: 0px 80px 0px 30px;
     }
+}
+
+
+@media only screen and (max-width:1200px){
 
     .location1{
-        margin-top: -70px;
         height: 540px;
-        width: 490px;
+        width: 480px;
     }
     
     .mySlides1 img,
@@ -358,9 +383,8 @@ h3{
     }
     
     .location2{
-        margin-top: 250px;
         rotate: 5deg;
-        width: 470px;
+        width: 460px;
         height: 540px;
     }
     
@@ -371,55 +395,64 @@ h3{
     }
     
     .location3{
-        margin-top: -200px;
         margin-left: 80px;
         rotate: -2deg;
-        width: 430px;
+        width: 450px;
         height: 560px;
     }
     
     .mySlides3 img,
     .slideshow-container3{
-        width: 400px;
-        height: 400px;
-    }
-    
-    .location4{
-        margin-top: 100px;
-        rotate: 1deg;
-        width: 460px;
-        height: 560px;
-    }
-    
-    .mySlides4 img,
-    .slideshow-container4{
         width: 430px;
         height: 400px;
     }
     
+    .location4{
+        rotate: 1deg;
+        width: 470px;
+        height: 550px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 450px;
+        height: 390px;
+    }
+    
     .location5{
-        width: 440px;
-        height: 570px;
-        margin-top: -100px;
+        width: 450px;
+        height: 550px;
     }
     
     .mySlides5 img,
     .slideshow-container5{
-        width: 410px;
-        height: 410px;
+        width: 430px;
+        height: 390px;
     }
     
     .location6{
-        width: 420px;
-        height: 550px;
+        width: 430px;
+        height: 530px;
         rotate: 3deg;
-        margin-top: 150px;
     }
     
     .mySlides6 img,
     .slideshow-container6{
-        width: 390px;
-        height: 390px;
+        width: 410px;
+        height: 370px;
+    }
+
+    .location7{
+        width: 450px;
+        height: 550px;
+        rotate: -2deg;
+        margin: 50px 0px 0px 100px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
+        width: 430px;
+        height: 400px;
     }
 
     h2{
@@ -433,29 +466,40 @@ h3{
 }
 
 
-@media only screen and (max-width:1120px){
+@media only screen and (max-width:1150px){
 
     .topmessage h1{
-        font-size: 130px;
-        margin: 0px 50px 30px 20px;
+        font-size: 140px;
+        letter-spacing: 5px;
+        margin: -50px 60px 30px -850px;
+    }
+        
+    .topmessage h2{
+        font-size: 140px;
+        letter-spacing: 5px;
+        margin: -130px 60px 30px -50px;
     }
     
     .topmessage p{
-        font-size: 17px;
-        margin: 0px 50px 0px 20px;
+        max-width: 95%;
+        margin: 0px 50px 0px 10px;
     }
 
     .displaypictures img{
-        width: 410px;
-        height: 410px;
+        width: 450px;
+        height: 450px;
         border-radius: 300px;
-        margin: 50px 10px 50px 40px;
+        margin: 50px 30px 50px 40px;
     }
 
+}
+
+
+@media only screen and (max-width:1050px){
+    
     .location1{
-        margin-top: -70px;
-        height: 480px;
-        width: 440px;
+        height: 490px;
+        width: 430px;
     }
     
     .mySlides1 img,
@@ -465,10 +509,10 @@ h3{
     }
     
     .location2{
-        margin-top: 250px;
         rotate: 5deg;
-        width: 420px;
-        height: 480px;
+        width: 410px;
+        height: 490px;
+        margin-left: -30px;
     }
     
     .mySlides2 img,
@@ -478,55 +522,66 @@ h3{
     }
     
     .location3{
-        margin-top: -200px;
-        margin-left: 80px;
+        margin-left: 10px;
         rotate: -2deg;
-        width: 380px;
-        height: 500px;
+        width: 400px;
+        height: 485px;
     }
     
     .mySlides3 img,
     .slideshow-container3{
-        width: 350px;
-        height: 350px;
+        width: 380px;
+        height: 330px;
     }
     
     .location4{
-        margin-top: 100px;
         rotate: 1deg;
-        width: 410px;
+        width: 420px;
         height: 500px;
+        margin-left: -35px;
     }
     
     .mySlides4 img,
     .slideshow-container4{
-        width: 380px;
-        height: 350px;
+        width: 400px;
+        height: 340px;
     }
     
     .location5{
-        width: 410px;
-        height: 510px;
-        margin-top: -100px;
+        width: 400px;
+        height: 500px;
     }
     
     .mySlides5 img,
     .slideshow-container5{
         width: 380px;
-        height: 360px;
+        height: 340px;
     }
     
     .location6{
-        width: 390px;
-        height: 490px;
+        width: 400px;
+        height: 480px;
         rotate: 3deg;
-        margin-top: 180px;
+        margin-left: -20px;
     }
     
     .mySlides6 img,
     .slideshow-container6{
-        width: 360px;
-        height: 340px;
+        width: 380px;
+        height: 320px;
+    }
+
+    .location7{
+        width: 420px;
+        height: 500px;
+        rotate: -2deg;
+        margin: 50px 0px 0px 100px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
+        width: 400px;
+        height: 350px;
     }
 
     h2{
@@ -536,62 +591,44 @@ h3{
     h3{
         font-size: 19px;
     }
-    
 }
 
 
-@media only screen and (max-width:1060px){
+@media only screen and (max-width:1000px){
 
     .topmessage h1{
-        font-size: 120px;
-        margin: 0px 50px 30px 20px;
+        font-size: 130px;
+        letter-spacing: 3px;
+        margin: -40px 60px 30px -800px;
+    }
+        
+    .topmessage h2{
+        font-size: 130px;
+        letter-spacing: 3px;
+        margin: -130px 30px 30px -90px;
     }
     
     .topmessage p{
+        max-width: 100%;
         font-size: 17px;
-        margin: 0px 50px 0px 20px;
+        margin: 0px 50px 0px 0px;
     }
 
     .displaypictures img{
-        width: 390px;
-        height: 390px;
+        width: 450px;
+        height: 450px;
         border-radius: 300px;
-        margin: 50px 10px 50px 30px;
+        margin: 50px 30px 50px 40px;
     }
 
-    .location3{
-        margin-left: 30px;
-    }
-}
-
-
-@media only screen and (max-width:970px){
-
-    .topmessage h1{
-        font-size: 110px;
-        margin: 0px 40px 30px 20px;
-    }
-    
-    .topmessage p{
-        font-size: 16px;
-        margin: 0px 40px 0px 20px;
-    }
-
-    .displaypictures img{
-        width: 360px;
-        height: 360px;
-        border-radius: 300px;
-        margin: 50px 10px 50px 30px;
-    }
 }
 
 
 @media only screen and (max-width:950px){
-
+    
     .location1{
-        margin-top: -70px;
-        height: 430px;
-        width: 400px;
+        height: 440px;
+        width: 380px;
     }
     
     .mySlides1 img,
@@ -601,11 +638,10 @@ h3{
     }
     
     .location2{
-        margin-top: 250px;
-        margin-left: -10px;
         rotate: 5deg;
-        width: 380px;
-        height: 430px;
+        width: 360px;
+        height: 440px;
+        margin-left: -30px;
     }
     
     .mySlides2 img,
@@ -615,63 +651,74 @@ h3{
     }
     
     .location3{
-        margin-top: -200px;
-        margin-left: 20px;
+        margin-left: 10px;
         rotate: -2deg;
         width: 350px;
-        height: 450px;
+        height: 435px;
     }
     
     .mySlides3 img,
     .slideshow-container3{
-        width: 310px;
-        height: 300px;
+        width: 330px;
+        height: 280px;
     }
     
     .location4{
-        margin-top: 100px;
         rotate: 1deg;
-        width: 380px;
+        width: 370px;
         height: 450px;
+        margin-left: -35px;
     }
     
     .mySlides4 img,
     .slideshow-container4{
-        width: 340px;
-        height: 300px;
+        width: 350px;
+        height: 290px;
     }
     
     .location5{
-        width: 390px;
-        height: 460px;
-        margin-top: -100px;
+        width: 350px;
+        height: 450px;
     }
     
     .mySlides5 img,
     .slideshow-container5{
-        width: 350px;
-        height: 310px;
+        width: 330px;
+        height: 290px;
     }
     
     .location6{
-        width: 370px;
-        height: 440px;
+        width: 350px;
+        height: 430px;
         rotate: 3deg;
-        margin-top: 180px;
+        margin-left: -20px;
     }
     
     .mySlides6 img,
     .slideshow-container6{
         width: 330px;
-        height: 290px;
+        height: 270px;
+    }
+
+    .location7{
+        width: 370px;
+        height: 450px;
+        rotate: -2deg;
+        margin: 50px 0px 0px 100px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
+        width: 350px;
+        height: 300px;
     }
 
     h2{
-        font-size: 22px;
+        font-size: 24px;
     }
     
     h3{
-        font-size: 17px;
+        font-size: 19px;
     }
 }
 
@@ -679,102 +726,119 @@ h3{
 @media only screen and (max-width:900px){
 
     .topmessage h1{
-        font-size: 100px;
-        margin: 0px 40px 30px 20px;
+        font-size: 120px;
+        letter-spacing: 3px;
+        margin: -20px 60px 30px -800px;
+    }
+        
+    .topmessage h2{
+        font-size: 120px;
+        letter-spacing: 3px;
+        margin: -130px 30px 30px -130px;
     }
     
     .topmessage p{
-        font-size: 15px;
-        margin: 0px 40px 0px 20px;
+        max-width: 100%;
+        font-size: 16px;
+        margin: 0px 50px 0px -20px;
     }
 
     .displaypictures img{
-        width: 330px;
-        height: 330px;
+        width: 430px;
+        height: 430px;
         border-radius: 300px;
-        margin: 50px 10px 50px 30px;
+        margin: 50px 30px 50px 20px;
     }
 }
 
 
 @media only screen and (max-width:850px){
-
+    
     .location1{
-        margin-top: -100px;
-        height: 390px;
-        width: 370px;
+        height: 380px;
+        width: 330px;
     }
     
     .mySlides1 img,
     .slideshow-container1{
-        width: 330px;
-        height: 260px;
+        width: 310px;
+        height: 240px;
     }
     
     .location2{
-        margin-top: 150px;
-        margin-left: -10px;
         rotate: 5deg;
-        width: 370px;
-        height: 390px;
+        width: 310px;
+        height: 380px;
+        margin-left: -40px;
     }
     
     .mySlides2 img,
     .slideshow-container2{
-        width: 330px;
-        height: 250px;
+        width: 290px;
+        height: 230px;
     }
     
     .location3{
-        margin-top: -200px;
-        margin-left: 20px;
+        margin-left: 10px;
         rotate: -2deg;
-        width: 350px;
-        height: 410px;
+        width: 300px;
+        height: 375px;
     }
     
     .mySlides3 img,
     .slideshow-container3{
-        width: 310px;
-        height: 270px;
+        width: 280px;
+        height: 230px;
     }
     
     .location4{
-        margin-top: 100px;
         rotate: 1deg;
-        width: 350px;
-        height: 430px;
+        width: 320px;
+        height: 410px;
+        margin-left: -45px;
     }
     
     .mySlides4 img,
     .slideshow-container4{
-        width: 310px;
-        height: 280px;
+        width: 300px;
+        height: 240px;
     }
     
     .location5{
-        width: 360px;
-        height: 420px;
-        margin-top: -100px;
+        width: 300px;
+        height: 390px;
     }
     
     .mySlides5 img,
     .slideshow-container5{
-        width: 320px;
-        height: 280px;
+        width: 280px;
+        height: 240px;
     }
     
     .location6{
-        width: 340px;
-        height: 400px;
+        width: 300px;
+        height: 370px;
         rotate: 3deg;
-        margin-top: 180px;
+        margin-left: -30px;
     }
     
     .mySlides6 img,
     .slideshow-container6{
+        width: 280px;
+        height: 220px;
+    }
+
+    .location7{
+        width: 320px;
+        height: 390px;
+        rotate: -2deg;
+        margin: 50px 0px 0px 100px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
         width: 300px;
-        height: 260px;
+        height: 250px;
     }
 
     h2{
@@ -782,117 +846,136 @@ h3{
     }
     
     h3{
-        font-size: 17px;
-    }
-}
-
-
-@media only screen and (max-width:830px){
-
-    .topmessage h1{
-        font-size: 80px;
-        margin: 0px 40px 30px 20px;
-    }
-    
-    .topmessage p{
-        font-size: 15px;
-        margin: 0px 40px 0px 20px;
-    }
-
-    .displaypictures img{
-        width: 310px;
-        height: 310px;
-        margin: 50px 10px 50px 20px;
+        font-size: 16px;
     }
 }
 
 
 @media only screen and (max-width:800px){
 
+    .topmessage h1{
+        font-size: 110px;
+        letter-spacing: 2px;
+        margin: -20px 60px 30px -720px;
+    }
+        
+    .topmessage h2{
+        font-size: 110px;
+        letter-spacing: 2px;
+        margin: -110px 30px 20px -130px;
+    }
+    
+    .topmessage p{
+        max-width: 100%;
+        font-size: 15px;
+        margin: 0px 50px 0px -20px;
+    }
+
+    .displaypictures img{
+        width: 400px;
+        height: 400px;
+        border-radius: 300px;
+        margin: 50px 30px 50px 20px;
+    }
+    
+}
+
+
+@media only screen and (max-width:730px){
     .displayrow{
         display: grid;
         grid-template-columns: 1fr;
+        justify-self: center;
     }
 
     .location1{
-        margin: 30px 200px 0px 0px;
-        height: 450px;
-        width: 440px;
-        rotate: -1deg;
-        z-index: 1;
+        height: 480px;
+        width: 460px;
+        margin-top: 30px;
     }
     
     .mySlides1 img,
     .slideshow-container1{
-        width: 400px;
-        height: 310px;
+        width: 440px;
+        height: 340px;
     }
     
     .location2{
-        margin-top: -30px;
-        margin-left: 220px;
-        rotate: 4deg;
-        width: 450px;
-        height: 500px;
+        rotate: 3deg;
+        width: 460px;
+        height: 480px;
+        margin: 20px 0px 0px 50px;
     }
     
     .mySlides2 img,
     .slideshow-container2{
-        width: 410px;
-        height: 360px;
+        width: 440px;
+        height: 330px;
     }
     
     .location3{
-        margin-top: 0px;
-        margin-left: -130px;
-        rotate: -1deg;
-        width: 480px;
-        height: 490px;
+        margin: 20px 80px 0px 50px;
+        rotate: -2deg;
+        width: 450px;
+        height: 525px;
     }
     
     .mySlides3 img,
     .slideshow-container3{
-        width: 440px;
-        height: 350px;
+        width: 430px;
+        height: 380px;
     }
     
     .location4{
-        margin: 20px 0px 0px 30px;
         rotate: 0deg;
-        width: 500px;
-        height: 500px;
+        width: 480px;
+        height: 540px;
+        margin: 20px 20px 20px 50px;
     }
     
     .mySlides4 img,
     .slideshow-container4{
         width: 460px;
-        height: 350px;
+        height: 390px;
     }
     
     .location5{
-        width: 480px;
-        height: 490px;
-        margin: 20px 0px 0px 80px;
-        rotate: 2deg;
+        width: 450px;
+        height: 540px;
+        rotate: -1deg;
+        margin: 0px 20px 20px 50px;
     }
     
     .mySlides5 img,
     .slideshow-container5{
-        width: 440px;
-        height: 350px;
+        width: 430px;
+        height: 390px;
     }
     
     .location6{
-        width: 490px;
-        height: 480px;
-        rotate: -1deg;
-        margin: 30px 100px 0px 0px;
+        width: 440px;
+        height: 470px;
+        rotate: 2deg;
+        margin: 20px 20px 20px 80px;
     }
     
     .mySlides6 img,
     .slideshow-container6{
+        width: 420px;
+        height: 320px;
+    }
+
+    .location7{
         width: 450px;
-        height: 340px;
+        height: 490px;
+        rotate: 0deg;
+        margin: 0px 0px 0px -30px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
+        width: 430px;
+        height: 350px;
     }
 
     h2{
@@ -900,132 +983,71 @@ h3{
     }
     
     h3{
-        font-size: 17px;
-    }
-}
-
-
-@media only screen and (max-width:740px){
-
-    .topmessage h1{
-        font-size: 70px;
-        margin: 0px 30px 30px 20px;
-    }
-    
-    .topmessage p{
-        font-size: 15px;
-        margin: 0px 30px 0px 20px;
-    }
-
-    .displaypictures img{
-        width: 300px;
-        height: 300px;
-        margin: 50px 10px 50px 20px;
+        font-size: 16px;
     }
 }
 
 
 @media only screen and (max-width:720px){
 
-    .location1{
-        margin: 30px 130px 0px 0px;
-    }
-    
-    .location2{
-        margin: -10px 0px 0px 100px;
-    }
-    
-    .location3{
-        margin: 10px 0px 0px -100px;
-    }
-}
-
-
-@media only screen and (max-width:680px){
-
     .topmessage h1{
-        font-size: 65px;
-        letter-spacing: 5px;
-        margin: 0px 30px 30px 20px;
+        font-size: 105px;
+        letter-spacing: 2px;
+        margin: -20px 60px 30px -400px;
+    }
+        
+    .topmessage h2{
+        font-size: 105px;
+        letter-spacing: 2px;
+        margin: -60px 30px 10px -130px;
     }
     
     .topmessage p{
+        max-width: 100%;
         font-size: 15px;
-        margin: 0px 30px 0px 20px;
+        margin: 0px 30px 0px -20px;
     }
 
     .displaypictures img{
-        width: 280px;
-        height: 280px;
-        margin: 50px 10px 50px 20px;
+        width: 330px;
+        height: 330px;
+        border-radius: 300px;
+        margin: 45px 10px 50px 15px;
     }
+
 }
 
 
-@media only screen and (max-width:670px){
-
-    .location1{
-        margin: 30px 50px 0px 0px;
-    }
-    
-    .location2{
-        margin: 10px 0px 0px 100px;
-    }
-    
-    .location3{
-        margin: 10px 0px 0px -100px;
-    }
-
-    .location6{
-        margin: 30px 30px 0px 0px;
-    }
-}
-
-
-@media only screen and (max-width:630px){
-
-    .location1{
-        margin: 30px 20px 0px 0px;
-    }
-    
-    .location2{
-        margin: 10px 0px 0px 60px;
-    }
-    
-    .location3{
-        rotate: 0deg;
-        margin: 15px 0px 0px -20px;
-    }
-
-    .location5{
-        margin: 20px 0px 0px 50px;
-    }
-
-    .location6{
-        margin: 30px 30px 0px 0px;
-    }
-}
-
-
-@media only screen and (max-width:620px){
+@media only screen and (max-width:650px){
 
     .topmessage h1{
-        font-size: 60px;
-        letter-spacing: 5px;
-        margin: 0px 30px 30px 20px;
+        font-size: 100px;
+        letter-spacing: 2px;
+        margin: 0px 60px 30px -400px;
+    }
+        
+    .topmessage h2{
+        font-size: 100px;
+        letter-spacing: 2px;
+        margin: -60px 30px 10px -100px;
     }
     
     .topmessage p{
+        max-width: 100%;
         font-size: 15px;
-        margin: 0px 30px 0px 20px;
+        margin: 0px 30px 0px -20px;
     }
 
     .displaypictures img{
-        width: 250px;
-        height: 250px;
-        margin: 50px 15px 50px 20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        margin: 45px 10px 50px 15px;
     }
+
 }
+
+
 
 
 @media only screen and (max-width:600px){
@@ -1108,341 +1130,388 @@ h3{
     }
 
     .topmessage h1{
-        font-size: 100px;
-        letter-spacing: 8px;
-        margin: -90px 30px 10px 20px;
+        font-size: 110px;
+        letter-spacing: 10px;
+        margin: -200px 60px 30px -100px;
+    }
+        
+    .topmessage h2{
+        font-size: 110px;
+        letter-spacing: 10px;
+        margin: -80px 0px 10px 60px;
     }
     
     .topmessage p{
+        max-width: 100%;
         font-size: 15px;
-        margin: 10px 60px 80px 60px;
+        margin: 0px 50px 50px 50px;
     }
 
     .displaypictures img{
         width: 380px;
         height: 380px;
-        margin: 30px 0px 0px 0px;
+        border-radius: 300px;
+        margin: 45px 10px 0px 10px;
     }
-
-    .location5{
-        margin: 20px 0px 0px 30px;
-    }
-
 }
 
 
-
-@media only screen and (max-width:560px){
+@media only screen and (max-width:570px){
 
     .location1{
-        margin: 30px 0px 0px 0px;
-        height: 430px;
-        width: 430px;
-        rotate: 0deg;
-        z-index: 1;
+        height: 450px;
+        width: 410px;
+        margin-top: 30px;
     }
     
     .mySlides1 img,
     .slideshow-container1{
-        width: 400px;
-        height: 300px;
+        width: 390px;
+        height: 310px;
     }
     
     .location2{
-        margin: 10px 0px 0px 0px;
         rotate: 3deg;
-        width: 420px;
-        height: 480px;
+        width: 410px;
+        height: 460px;
+        margin: 20px 0px 0px 30px;
     }
     
     .mySlides2 img,
     .slideshow-container2{
         width: 390px;
-        height: 340px;
+        height: 320px;
     }
     
     .location3{
-        margin: 20px 20px 0px 0px;
-        rotate: -1deg;
-        width: 430px;
-        height: 470px;
+        margin: 20px 80px 0px 50px;
+        rotate: -2deg;
+        width: 400px;
+        height: 475px;
     }
     
     .mySlides3 img,
     .slideshow-container3{
-        width: 400px;
+        width: 380px;
         height: 330px;
     }
     
     .location4{
-        margin: 20px 20px 0px 0px;
         rotate: 0deg;
-        width: 450px;
-        height: 460px;
+        width: 420px;
+        height: 490px;
+        margin: 20px 0px 20px -20px;
     }
     
     .mySlides4 img,
     .slideshow-container4{
-        width: 420px;
-        height: 320px;
+        width: 400px;
+        height: 340px;
     }
     
     .location5{
-        width: 450px;
-        height: 470px;
-        margin: 20px 0px 0px 30px;
-        rotate: 0deg;
+        width: 400px;
+        height: 480px;
+        rotate: -1deg;
+        margin: 0px 20px 20px 0px;
     }
     
     .mySlides5 img,
     .slideshow-container5{
-        width: 420px;
-        height: 330px;
+        width: 380px;
+        height: 340px;
     }
     
     .location6{
-        width: 430px;
-        height: 460px;
-        rotate: -2deg;
-        margin: 20px 0px 0px 0px;
+        width: 420px;
+        height: 450px;
+        rotate: 2deg;
+        margin: 20px 20px 20px -10px;
     }
     
     .mySlides6 img,
     .slideshow-container6{
         width: 400px;
+        height: 300px;
+    }
+
+    .location7{
+        width: 430px;
+        height: 470px;
+        rotate: 0deg;
+        margin: 0px 0px 0px -30px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
+        width: 410px;
         height: 320px;
     }
 
     h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     h3{
-        font-size: 15px;
+        font-size: 16px;
     }
-
 }
 
 
 @media only screen and (max-width:500px){
 
     .topmessage h1{
-        font-size: 90px;
-        letter-spacing: 8px;
-        margin: -80px 30px 10px 20px;
+        font-size: 100px;
+        letter-spacing: 5px;
+        margin: -200px 60px 30px -50px;
+    }
+        
+    .topmessage h2{
+        font-size: 100px;
+        letter-spacing: 5px;
+        margin: -80px 0px 10px 30px;
     }
     
     .topmessage p{
+        max-width: 100%;
         font-size: 15px;
-        margin: 10px 40px 50px 40px;
-        letter-spacing: 1px;
+        margin: 0px 40px 50px 40px;
     }
 
     .displaypictures img{
-        width: 350px;
-        height: 350px;
-        margin: 30px 15px 0px 20px;
-    }
-
-    .location1{
-        margin: 10px 0px 0px 0px;
-        height: 390px;
-        width: 400px;
-        rotate: 0deg;
-        z-index: 1;
-    }
-    
-    .mySlides1 img,
-    .slideshow-container1{
-        width: 370px;
-        height: 270px;
-    }
-    
-    .location2{
-        margin: 15px 0px 0px 0px;
-        rotate: 1deg;
-        width: 390px;
-        height: 450px;
-    }
-    
-    .mySlides2 img,
-    .slideshow-container2{
-        width: 360px;
-        height: 310px;
-    }
-    
-    .location3{
-        margin: 20px 20px 0px 0px;
-        rotate: 0deg;
-        width: 400px;
-        height: 440px;
-    }
-    
-    .mySlides3 img,
-    .slideshow-container3{
-        width: 370px;
-        height: 300px;
-    }
-    
-    .location4{
-        margin: 20px 0px 0px 20px;
-        rotate: 0deg;
-        width: 410px;
-        height: 440px;
-    }
-    
-    .mySlides4 img,
-    .slideshow-container4{
         width: 380px;
-        height: 300px;
-    }
-    
-    .location5{
-        width: 420px;
-        height: 440px;
-        margin: 20px 0px 0px 20px;
-        rotate: 1deg;
-    }
-    
-    .mySlides5 img,
-    .slideshow-container5{
-        width: 390px;
-        height: 300px;
-    }
-    
-    .location6{
-        width: 400px;
-        height: 430px;
-        rotate: -1deg;
-        margin: 20px 0px 0px 0px;
-    }
-    
-    .mySlides6 img,
-    .slideshow-container6{
-        width: 370px;
-        height: 290px;
-    }
-
-    h2{
-        font-size: 18px;
-    }
-    
-    h3{
-        font-size: 15px;
-    }
-
-}
-
-
-@media only screen and (max-width:450px){
-
-    .location1{
-        margin: 10px 0px 0px 0px;
         height: 380px;
-        width: 390px;
-        rotate: 0deg;
-        z-index: 1;
+        border-radius: 300px;
+        margin: 45px 10px 0px 10px;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+
+    .location1{
+        height: 410px;
+        width: 370px;
+        margin-top: 30px;
     }
     
     .mySlides1 img,
     .slideshow-container1{
-        width: 370px;
-        height: 260px;
+        width: 350px;
+        height: 270px;
     }
     
     .location2{
-        margin: 15px 0px 0px 0px;
-        rotate: 1deg;
-        width: 380px;
+        rotate: 3deg;
+        width: 370px;
         height: 420px;
+        margin: 20px 0px 0px 10px;
     }
     
     .mySlides2 img,
     .slideshow-container2{
         width: 350px;
-        height: 290px;
+        height: 280px;
     }
     
     .location3{
-        margin: 20px 0px 0px 0px;
-        rotate: 0deg;
-        width: 380px;
-        height: 400px;
+        margin: 20px 80px 0px 40px;
+        rotate: -2deg;
+        width: 360px;
+        height: 435px;
     }
     
     .mySlides3 img,
     .slideshow-container3{
-        width: 350px;
-        height: 270px;
+        width: 340px;
+        height: 290px;
     }
     
     .location4{
-        margin: 20px 0px 0px 0px;
         rotate: 0deg;
-        width: 390px;
-        height: 430px;
+        width: 370px;
+        height: 450px;
+        margin: 20px 0px 20px 0px;
     }
     
     .mySlides4 img,
     .slideshow-container4{
-        width: 360px;
+        width: 350px;
         height: 300px;
     }
     
     .location5{
-        width: 390px;
-        height: 390px;
-        margin: 20px 0px 0px 5px;
-        rotate: 1deg;
+        width: 360px;
+        height: 440px;
+        rotate: -1deg;
+        margin: 0px 20px 20px -25px;
     }
     
     .mySlides5 img,
     .slideshow-container5{
-        width: 360px;
-        height: 260px;
+        width: 340px;
+        height: 300px;
     }
     
     .location6{
-        width: 380px;
-        height: 390px;
-        rotate: -1deg;
-        margin: 20px 0px 0px 0px;
+        width: 370px;
+        height: 400px;
+        rotate: 2deg;
+        margin: 20px 20px 20px 0px;
     }
     
     .mySlides6 img,
     .slideshow-container6{
         width: 350px;
-        height: 250px;
+        height: 270px;
+    }
+
+    .location7{
+        width: 390px;
+        height: 430px;
+        rotate: 0deg;
+        margin: 0px 0px 0px -10px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
+        width: 370px;
+        height: 300px;
     }
 
     h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     h3{
         font-size: 15px;
     }
-
 }
 
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:440px){
 
     .topmessage h1{
-        font-size: 85px;
-        letter-spacing: 5px;
-        margin: -80px 30px 10px 20px;
+        font-size: 95px;
+        letter-spacing: 3px;
+        margin: -150px 60px 30px -50px;
+    }
+        
+    .topmessage h2{
+        font-size: 95px;
+        letter-spacing: 3px;
+        margin: -50px 0px 20px 30px;
     }
     
     .topmessage p{
+        max-width: 100%;
         font-size: 15px;
-        margin: 10px 30px 80px 30px;
+        margin: 0px 30px 50px 30px;
     }
 
     .displaypictures img{
         width: 360px;
         height: 360px;
-        margin: 30px 0px 0px 0px;
+        border-radius: 300px;
+        margin: 45px 10px 0px 10px;
+    }
+
+    .location1{
+        height: 410px;
+        width: 370px;
+        margin-top: 30px;
+    }
+    
+    .mySlides1 img,
+    .slideshow-container1{
+        width: 350px;
+        height: 270px;
+    }
+    
+    .location2{
+        rotate: 3deg;
+        width: 370px;
+        height: 420px;
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .mySlides2 img,
+    .slideshow-container2{
+        width: 350px;
+        height: 280px;
+    }
+    
+    .location3{
+        margin: 20px 80px 0px 20px;
+        rotate: -2deg;
+        width: 360px;
+        height: 435px;
+    }
+    
+    .mySlides3 img,
+    .slideshow-container3{
+        width: 340px;
+        height: 290px;
+    }
+    
+    .location4{
+        rotate: 0deg;
+        width: 370px;
+        height: 450px;
+        margin: 20px 0px 20px -20px;
+    }
+    
+    .mySlides4 img,
+    .slideshow-container4{
+        width: 350px;
+        height: 300px;
+    }
+    
+    .location5{
+        width: 360px;
+        height: 440px;
+        rotate: -1deg;
+        margin: 0px 20px 20px -25px;
+    }
+    
+    .mySlides5 img,
+    .slideshow-container5{
+        width: 340px;
+        height: 300px;
+    }
+    
+    .location6{
+        width: 370px;
+        height: 400px;
+        rotate: 2deg;
+        margin: 20px 20px 20px -10px;
+    }
+    
+    .mySlides6 img,
+    .slideshow-container6{
+        width: 350px;
+        height: 270px;
+    }
+
+    .location7{
+        width: 390px;
+        height: 430px;
+        rotate: 0deg;
+        margin: 0px 0px 0px -50px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
+        width: 370px;
+        height: 300px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    
+    h3{
+        font-size: 15px;
     }
 }
 
@@ -1450,89 +1519,129 @@ h3{
 @media only screen and (max-width:410px){
 
     .location1{
-        margin: 10px 0px 0px 0px;
-        height: 480px;
-        width: 355px;
-        rotate: 0deg;
-        z-index: 1;
+        height: 380px;
+        width: 340px;
+        margin-top: 30px;
     }
     
     .mySlides1 img,
     .slideshow-container1{
-        width: 325px;
-        height: 360px;
+        width: 320px;
+        height: 240px;
     }
     
     .location2{
-        margin: 15px 0px 0px 0px;
-        rotate: 1deg;
-        width: 350px;
-        height: 480px;
+        rotate: 3deg;
+        width: 340px;
+        height: 390px;
+        margin: 20px 0px 0px 0px;
     }
     
     .mySlides2 img,
     .slideshow-container2{
         width: 320px;
-        height: 350px;
+        height: 250px;
     }
     
     .location3{
-        margin: 20px 0px 0px 0px;
-        rotate: 0deg;
-        width: 350px;
-        height: 480px;
+        margin: 20px 80px 0px 20px;
+        rotate: -2deg;
+        width: 330px;
+        height: 405px;
     }
     
     .mySlides3 img,
     .slideshow-container3{
-        width: 320px;
-        height: 350px;
+        width: 310px;
+        height: 260px;
     }
     
     .location4{
-        margin: 20px 0px 0px 0px;
         rotate: 0deg;
-        width: 360px;
-        height: 440px;
+        width: 340px;
+        height: 420px;
+        margin: 20px 0px 20px -20px;
     }
     
     .mySlides4 img,
     .slideshow-container4{
-        width: 335px;
-        height: 310px;
+        width: 320px;
+        height: 270px;
     }
     
     .location5{
-        width: 350px;
-        height: 480px;
-        margin: 20px 0px 0px 5px;
-        rotate: 1deg;
+        width: 330px;
+        height: 410px;
+        rotate: -1deg;
+        margin: 0px 20px 20px -25px;
     }
     
     .mySlides5 img,
     .slideshow-container5{
-        width: 325px;
-        height: 350px;
+        width: 310px;
+        height: 270px;
     }
     
     .location6{
         width: 340px;
-        height: 480px;
-        rotate: -1deg;
-        margin: 20px 0px 0px 0px;
+        height: 370px;
+        rotate: 2deg;
+        margin: 20px 20px 20px -10px;
     }
     
     .mySlides6 img,
     .slideshow-container6{
-        width: 315px;
-        height: 350px;
+        width: 320px;
+        height: 240px;
+    }
+
+    .location7{
+        width: 360px;
+        height: 400px;
+        rotate: 0deg;
+        margin: 0px 0px 0px -40px;
+    }
+    
+    .mySlides7 img,
+    .slideshow-container7{
+        width: 340px;
+        height: 270px;
     }
 
     h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     h3{
         font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+
+    .topmessage h1{
+        font-size: 90px;
+        letter-spacing: 2px;
+        margin: -150px 60px 30px -50px;
+    }
+        
+    .topmessage h2{
+        font-size: 90px;
+        letter-spacing: 2px;
+        margin: -50px 0px 20px 30px;
+    }
+    
+    .topmessage p{
+        max-width: 100%;
+        font-size: 15px;
+        margin: 0px 30px 50px 30px;
+    }
+
+    .displaypictures img{
+        width: 350px;
+        height: 350px;
+        border-radius: 300px;
+        margin: 45px 10px 0px 10px;
     }
 }
