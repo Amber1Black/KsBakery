@@ -359,7 +359,7 @@ nav ul li a:hover::after{
 
 .fourthpart{
     display: grid;
-
+    
 }
 
 .fourthpartmessage{
@@ -376,7 +376,7 @@ nav ul li a:hover::after{
     font-family: 'Lato', sans-serif;
     color: black;
     text-align: center;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(88, 88, 88);
 }
 
 .fourthpartmessage h1{
@@ -414,13 +414,15 @@ nav ul li a:hover::after{
     width: 270px;
     height: 340px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 2px;
     border-style: solid;
     border-color: white;
     border-width: 8px 8px 30px 8px;
     margin: 10px;
-    box-shadow: 3px 3px 5px rgb(65, 64, 64);
+    box-shadow: 2px 2px 5px rgb(65, 64, 64);
 }
+
+
 
 .picture1 img{
     rotate: -1deg;
