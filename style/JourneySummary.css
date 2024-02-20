@@ -158,10 +158,10 @@ nav ul li a:hover::after{
 .mySlides1 img, .mySlides2 img, .mySlides3 img,
 .mySlides4 img, .mySlides5 img, .mySlides6 img,
 .mySlides7 img, .mySlides8 img, .mySlides9 img{
-
     object-fit: cover;
     object-position: 0% 75%;
     margin: 3px 0px 0px 0px;
+    box-shadow: 2px 2px 3px grey;
 }
 
 .slideshow-container, .slideshow-container2, .slideshow-container3,
@@ -189,8 +189,8 @@ nav ul li a:hover::after{
     align-self: center;
     justify-self: center;
     background-color: white;
-    box-shadow: 6px 6px 5px rgb(20, 20, 20);
-    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(51, 50, 50);
+    border-radius: 3px;
 }
 
 .location1{
