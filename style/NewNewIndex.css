@@ -121,7 +121,7 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
-.secondpartredirection:hover, .thirdpartredirection:hover, .fourthpartredirection:hover, .fifthpartredirection:hover{
+.secondpartredirection:hover, .thirdpartredirection:hover, .fourthpartmessage a:hover, .fourthpartmessageformobile a:hover, .fifthpartredirection:hover{
     font-weight: bold;
     cursor: pointer;
 }
@@ -359,7 +359,7 @@ nav ul li a:hover::after{
 
 .fourthpart{
     display: grid;
-    background-image: linear-gradient(to top, rgb(255, 205, 176), rgb(247, 171, 171));
+    background-image: linear-gradient(to top, rgb(255, 205, 176), rgb(255, 188, 171));
 }
 
 .fourthpartmessage{
@@ -369,26 +369,33 @@ nav ul li a:hover::after{
     margin: 0px 0px 30px 0px;
 }
 
-.fourthpartmessage h1{
+.fourthpartmessage h1, .fourthpartmessage h2{
     font-size: 130px;
     font-weight: 700;
     letter-spacing: 10px;
     font-family: 'Lato', sans-serif;
     color: white;
     text-align: center;
-    text-shadow: 3px 3px 2px rgb(0, 0, 0);
-    margin: 80px 0px 20px 0px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.fourthpartmessage h1{
+    margin: 80px 470px 20px 0px;
+} 
+
+.fourthpartmessage h2{
+    margin: -120px 0px 20px 360px;
 }
 
 .fourthpartmessage p{
     text-align: center;
-    color: white;
-    font-weight: 500;
+    color: black;
+    font-weight: 400;
 }
 
 .fourthpartmessage a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .scroll-container{
@@ -457,7 +464,7 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgb(255, 151, 151), rgb(236, 184, 184));
+    background-image: linear-gradient(to top, rgb(255, 205, 176), rgb(247, 171, 171));
 }
 
 .fifthpartprofilepic{
@@ -1129,8 +1136,17 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartmessage h1{
+    .fourthpartmessage h1, .fourthpartmessage h2{
         font-size: 115px;
+        letter-spacing: 7px;
+    }
+
+    .fourthpartmessage h1{
+        margin: 80px 420px 20px 0px;
+    } 
+    
+    .fourthpartmessage h2{
+        margin: -120px 0px 20px 300px;
     }
 
     /*Fifth Section*/
@@ -1287,13 +1303,6 @@ nav ul li a:hover::after{
         margin: 0px 40px 0px 10px;
     }
 
-    /*Fourth Section*/
-
-    .fourthpartmessage h1{
-        font-size: 110px;
-        letter-spacing: 8px;
-    }
-
     /*Fifth Section*/
 
     .fifthpartprofilepic{
@@ -1353,6 +1362,17 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:800px){
 
+    /*Common Parameter*/
+
+    .thirdpartlargermessage p1,
+    .thirdpartredirection a,
+    .fourthpartmessage p,
+    .fourthpartmessage a,
+    .fifthpartlargermessage p,
+    .fifthpartredirection a{
+        font-size: 15px;
+    }
+
     /*First Section*/
 
     .firstpartimagecolumn{
@@ -1389,9 +1409,19 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartmessage h1{
-        letter-spacing: 5px;
+    /*Fourth Section*/
+
+    .fourthpartmessage h1, .fourthpartmessage h2{
         font-size: 100px;
+        letter-spacing: 5px;
+    }
+
+    .fourthpartmessage h1{
+        margin: 80px 370px 20px 0px;
+    } 
+    
+    .fourthpartmessage h2{
+        margin: -100px 0px 20px 250px;
     }
     
     /*Fifth Section*/
@@ -1526,17 +1556,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:700px){
 
-    /*Common Parameter*/
-
-    .thirdpartlargermessage p1,
-    .thirdpartredirection a,
-    .fourthpartmessage p,
-    .fourthpartmessage a,
-    .fifthpartlargermessage p,
-    .fifthpartredirection a{
-        font-size: 16px;
-    }
-
     /*First Section*/
 
     .IconOutline{
@@ -1551,9 +1570,17 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartmessage h1{
+    .fourthpartmessage h1, .fourthpartmessage h2{
+        font-size: 100px;
         letter-spacing: 3px;
-        font-size: 95px;
+    }
+
+    .fourthpartmessage h1{
+        margin: 80px 350px 20px 0px;
+    } 
+    
+    .fourthpartmessage h2{
+        margin: -95px 0px 20px 250px;
     }
 
     /*Fifth Section*/
@@ -1657,6 +1684,21 @@ nav ul li a:hover::after{
         margin-bottom: 20px;
     }
 
+    /*Fourth Section*/
+
+    .fourthpartmessage h1, .fourthpartmessage h2{
+        font-size: 95px;
+        letter-spacing: 2px;
+    }
+
+    .fourthpartmessage h1{
+        margin: 80px 320px 20px 0px;
+    } 
+    
+    .fourthpartmessage h2{
+        margin: -95px 0px 20px 230px;
+    }
+
     /*Fifth Section*/
 
     .fifthpartprofilepic img{
@@ -1698,17 +1740,6 @@ nav ul li a:hover::after{
     .pinkbox{
         margin-left: 440px;
         max-height: 650px;
-    }
-
-    /*Fourth Section*/
-
-    .fourthpartmessage h1{
-        font-size: 90px;
-        letter-spacing: 1px;
-    }
-
-    .fourthpartmessage p{
-        max-width: 78%;
     }
 
 }
@@ -1805,17 +1836,6 @@ nav ul li a:hover::after{
         overflow: hidden;
         transition: 0.5s;
         padding-right: 10px;
-    }
-
-    /*Common Parameter*/
-
-    .thirdpartlargermessage p1,
-    .thirdpartredirection a,
-    .fourthpartmessageformobile p,
-    .fourthpartmessageformobile a,
-    .fifthpartlargermessage p,
-    .fifthpartredirection a{
-        font-size: 15px;
     }
 
     /*First Section*/
@@ -2037,11 +2057,11 @@ nav ul li a:hover::after{
         font-family: 'Lato', sans-serif;
         color: black;
         text-align: center;
-        text-shadow: 3px 3px 2px rgb(133, 132, 132);
+        text-shadow: 4px 4px 5px rgb(133, 132, 132);
     }
 
     .fourthpartmessageformobile h1{
-        margin: 30px 180px 0px 0px;
+        margin: 30px 200px 0px 0px;
     }
 
     .fourthpartmessageformobile h2{
@@ -2110,6 +2130,7 @@ nav ul li a:hover::after{
         font-family: 'Lato', sans-serif;
         color: white;
         text-align: center;
+        text-shadow: 3px 3px 4px black;
     }
 
     .fifthpartmobilemessage p{
@@ -2521,6 +2542,10 @@ nav ul li a:hover::after{
 
     .secondpartformobile p{
         margin: 20px 30px 20px 30px;
+    }
+
+    .secondpartredirection{
+        margin-left: 30px;
     }
 
     .secondpartformobileimage1 img{
