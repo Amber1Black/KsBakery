@@ -370,21 +370,21 @@ nav ul li a:hover::after{
 }
 
 .fourthpartmessage h1, .fourthpartmessage h2{
-    font-size: 130px;
+    font-size: 160px;
     font-weight: 700;
-    letter-spacing: 10px;
+    letter-spacing: 12px;
     font-family: 'Lato', sans-serif;
     color: black;
     text-align: center;
-    text-shadow: 5px 5px 5px rgb(88, 88, 88);
+    text-shadow: 5px 5px 3px rgb(161, 160, 160);
 }
 
 .fourthpartmessage h1{
-    margin: 80px 470px 20px 0px;
+    margin: 80px 600px 20px 0px;
 } 
 
 .fourthpartmessage h2{
-    margin: -120px 0px 20px 360px;
+    margin: -160px 0px 5px 450px;
 }
 
 .fourthpartmessage p{
@@ -401,13 +401,14 @@ nav ul li a:hover::after{
 .scroll-container{
     display: flex;
     justify-self: center;
-    column-gap: 10px;
-    background-color: ;
+    column-gap: 0px;
+    background-image: linear-gradient(to top, rgb(255, 205, 176), rgb(247, 171, 171));
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     margin: 10px 30px 120px 30px;
-    max-width: 90%;
+    max-width: 100%;
+    padding: 15px 20px 15px 20px;
 }
 
 .scroll-container img{
@@ -712,6 +713,21 @@ nav ul li a:hover::after{
         letter-spacing: 20px;
         margin: -40px 0px 20px 0px;
     }
+
+    /*Fourth Section*/
+
+    .fourthpartmessage h1, .fourthpartmessage h2{
+        font-size: 150px;
+        letter-spacing: 6px;
+    }
+
+    .fourthpartmessage h1{
+        margin: 80px 550px 20px 0px;
+    } 
+    
+    .fourthpartmessage h2{
+        margin: -160px 0px 10px 400px;
+    }
 }
 
 
@@ -936,6 +952,20 @@ nav ul li a:hover::after{
         margin: 15px 0px 20px 0px;
     }
 
+    /*Fourth Section*/
+
+    .fourthpartmessage h1, .fourthpartmessage h2{
+        font-size: 140px;
+        letter-spacing: 5px;
+    }
+
+    .fourthpartmessage h1{
+        margin: 80px 500px 20px 0px;
+    } 
+    
+    .fourthpartmessage h2{
+        margin: -140px 0px 10px 360px;
+    }
 }
 
 
@@ -1139,16 +1169,16 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartmessage h1, .fourthpartmessage h2{
-        font-size: 115px;
-        letter-spacing: 7px;
+        font-size: 130px;
+        letter-spacing: 5px;
     }
 
     .fourthpartmessage h1{
-        margin: 80px 420px 20px 0px;
+        margin: 80px 450px 20px 0px;
     } 
     
     .fourthpartmessage h2{
-        margin: -120px 0px 20px 300px;
+        margin: -120px 0px 20px 310px;
     }
 
     /*Fifth Section*/
@@ -1305,6 +1335,21 @@ nav ul li a:hover::after{
         margin: 0px 40px 0px 10px;
     }
 
+    /*Fourth Section*/
+
+    .fourthpartmessage h1, .fourthpartmessage h2{
+        font-size: 120px;
+        letter-spacing: 5px;
+    }
+
+    .fourthpartmessage h1{
+        margin: 80px 420px 20px 0px;
+    } 
+    
+    .fourthpartmessage h2{
+        margin: -120px 0px 20px 310px;
+    }
+
     /*Fifth Section*/
 
     .fifthpartprofilepic{
@@ -1411,19 +1456,17 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    /*Fourth Section*/
-
     .fourthpartmessage h1, .fourthpartmessage h2{
-        font-size: 100px;
-        letter-spacing: 5px;
+        font-size: 118px;
+        letter-spacing: 3px;
     }
 
     .fourthpartmessage h1{
-        margin: 80px 370px 20px 0px;
+        margin: 80px 380px 20px 0px;
     } 
     
     .fourthpartmessage h2{
-        margin: -100px 0px 20px 250px;
+        margin: -100px 0px 20px 265px;
     }
     
     /*Fifth Section*/
@@ -1573,8 +1616,8 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartmessage h1, .fourthpartmessage h2{
-        font-size: 100px;
-        letter-spacing: 3px;
+        font-size: 110px;
+        letter-spacing: 2px;
     }
 
     .fourthpartmessage h1{
@@ -1689,8 +1732,8 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartmessage h1, .fourthpartmessage h2{
-        font-size: 95px;
-        letter-spacing: 2px;
+        font-size: 105px;
+        letter-spacing: 0px;
     }
 
     .fourthpartmessage h1{
@@ -2063,11 +2106,11 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmessageformobile h1{
-        margin: 30px 200px 0px 0px;
+        margin: 30px 0px 0px 0px;
     }
 
     .fourthpartmessageformobile h2{
-        margin: -30px 0px 15px 100px;
+        margin: -30px 0px 15px 120px;
     }
 
     .fourthpartmessageformobile p{
@@ -2075,13 +2118,15 @@ nav ul li a:hover::after{
         text-align: justify;
         justify-self: center;
         color: black;
-        max-width: 80%;
+        max-width: 85%;
         margin-bottom: 20px;
+        font-size: 15px;
     }
 
     .fourthpartmessageformobile a{
         text-decoration: none;
         color: black;
+        font-size: 15px;
     }
 
     .scroll-container img{
@@ -2314,9 +2359,9 @@ nav ul li a:hover::after{
 
     .fourthpartmessageformobile h1,
     .fourthpartmessageformobile h2{
-        font-size: 100px;
+        font-size: 110px;
         font-weight: ;
-        letter-spacing: ;
+        letter-spacing: 5px;
     }
 
     .fourthpartmessageformobile h1{
@@ -2428,6 +2473,23 @@ nav ul li a:hover::after{
         height: 160px;
         margin-top: 5px;
 
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartmessageformobile h1,
+    .fourthpartmessageformobile h2{
+        font-size: 100px;
+        font-weight: ;
+        letter-spacing: 5px;
+    }
+
+    .fourthpartmessageformobile h1{
+        margin: 30px 100px 0px 0px;
+    }
+
+    .fourthpartmessageformobile h2{
+        margin: -30px 0px 15px 50px;
     }
 
     /*Fifth Section*/
