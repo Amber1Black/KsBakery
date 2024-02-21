@@ -49,61 +49,94 @@
     
     <div class="content">
 
-        <div class="description">
-            <h1>Bakeries Gallery</h1>
-            <p>
-                The bakeries in England have been so different from HK's, so I started to learn bakery, to bake those I miss.
-                Starting from the end of 2022, I began baking on almost daily basis, and I fell in love with it.
-                I love to see people's smile when they enjoy my bakeries.
-                The possibilities in baking are endless, there are always something new to explore, and we can create our own unique style.
+        <div class="topdisplay">
+            <div class="description">
+                <h1>Bakeries Gallery</h1>
+                <p>
+                    The possibilities in baking are endless, there are always something new to explore, and we can create our own unique style.
+                
+                </p>
+            </div>
+            <div class="topdisplayimage">
+                <img src ="Pictures/Outline - Grassland Tart Ring.png">
+            </div>
+        </div>
+
+        <div class="topdisplayforsmallerscreen">
+            <div class="topdisplayimage">
+                <img src ="Pictures/Outline - Grassland Tart Ring.png">
+            </div>
+            <div class="descriptionformobile">
+                <h1>Bakeries Gallery</h1>
+                <p>
+                    The possibilities in baking are endless, there are always something new to explore, and we can create our own unique style.
+                
+                </p>
+            </div>
             
-            </p>
         </div>
     
-        <div class="category">
-            <div class="categorygrid">
-                <img src = "Pictures/Tart Ring.jpg">
-                <button type = "button"><a href="https://www.k-bakery.com/TartGallery">View</a></button>
-                <div class="categorybottom">
-                    <h3>Tart</h3>
+        <div class="gallerycontent">
+            <div class="gallerygrid1 reveal">
+                <img src ="Pictures/Outline - Rasperry Tart with shadow.png">
+                <div class="message">
+                    <h2>TART</h2>
+                    <p>The crispy tart crust and rich ingredients inside made tarts very appealing</p>
+                    <div class="redirection">
+                        <a href="https://www.k-bakery.com/TartGallery"><span style="text-decoration: ;">GALLERY</span> &#8594</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="categorygrid">
-                <img src = "Pictures/Cake - Crown Cake.jpg">
-                <button type = "button"><a href="https://www.k-bakery.com/CakeGallery">View</a></button>
-                <div class="categorybottom">
-                    <h3>Cake</h3>
+            <div class="gallerygrid2 reveal">
+                <div class="message">
+                    <h2>CAKE</h2>
+                    <p>The fluffy cake matches perfectly with the cream on top and inside</p>
+                    <div class="redirection">
+                        <a href="https://www.k-bakery.com/CakeGallery"><span style="text-decoration: ;">GALLERY</span> &#8594</a>
+                    </div>
+                </div>
+                <img src ="Pictures/Outline - Coffee Cake with shadow.png">
+            </div>
+
+            <div class="gallerygrid3 reveal">
+                <img src ="Pictures/Outline - Choco Twist Bread with shadow.png">
+                <div class="message">
+                    <h2>BREAD</h2>
+                    <p>Home-made bread makes up the best breakfast every morning</p>
+                    <div class="redirection">
+                        <a href="https://www.k-bakery.com/BreadGallery"><span style="text-decoration: ;">GALLERY</span> &#8594</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="categorygrid">
-                <img src = "Pictures/Bread - Ribbon Bread.jpg">
-                <button type = "button"><a href="https://www.k-bakery.com/BreadGallery">View</a></button>
-                <div class="categorybottom">
-                    <h3>Bread</h3>
+            <div class="gallerygrid4 reveal">
+                <div class="message">
+                    <h2>COOKIE</h2>
+                    <p>The rich butter texture makes cookie melts in our mouth</p>
+                    <div class="redirection">
+                        <a href="https://www.k-bakery.com/CookieGallery"><span style="text-decoration: ;">GALLERY</span> &#8594</a>
+                    </div>
                 </div>
+                <img src ="Pictures/Outline - Dress Cookie.png" class = "largecookieimage">
+                <img src ="Pictures/Outline - Dress Cookie 2.png" class = "smallcookieimage">
             </div>
 
-            <div class="categorygrid">
-                <img src = "Pictures/Cookie - Dress Cookie.jpg">
-                <button type = "button"><a href="https://www.k-bakery.com/CookieGallery">View</a></button>
-                <div class="categorybottom">
-                    <h3>Cookie</h3>
-                </div>
-            </div>
-
-            <div class="categorygrid">
-                <img src = "Pictures/Pastry - Choco Puff.jpg">
-                <button type = "button"><a href="https://www.k-bakery.com/PastryGallery">View</a></button>
-                <div class="categorybottom">
-                    <h3>Pastry</h3>
+            <div class="gallerygrid5 reveal">
+                <img src ="Pictures/Outline - Macaron with shadow.png">
+                <div class="message">
+                    <h2>PASTRY</h2>
+                    <p>Pastries are the best afternoon tea & dessert after dinner</p>
+                    <div class="redirection">
+                        <a href="https://www.k-bakery.com/PastryGallery"><span style="text-decoration: ;">GALLERY</span> &#8594</a>
+                    </div>
                 </div>
             </div>
             
-            
-            
+
         </div>
+            
+            
 
     </div>
    
@@ -128,6 +161,30 @@
                 menulist.style.maxHeight = "0px";
             }
         }
+    </script>
+
+    <script type = "text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal (){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+        
     </script>
 </body>
 
