@@ -78,9 +78,9 @@
 
         <div class="secondpart">
             <div class="secondpartforlargerscreen">
-                <div class="topimages">
+                <div class="topimages reveal">
                     <div class="topimage1">
-                        <img src = "Pictures/Outline - Bakery Combination.png">
+                        <img src = "Pictures/Outline - Bakery Combination.jpg">
                     </div>
                     <div class="topimage2">
                         <img src = "Pictures/Outline - Bakery Combination 2.png">
@@ -95,10 +95,9 @@
                         <img src = "Pictures/Outline - Bakery Combination 5.png">
                     </div>
                 </div>
-                <div class="secondpartlargermessage">
+                <div class="secondpartlargermessage reveal">
                     <h1>GALLERY</h1>
-                    <p>Had explored different kind of bakieries, with different flavor and <Br>various decoration. Here is a gallery of my bakeries.</p>
-                    <p1>Had explored different kind of bakieries, <Br>with different flavor and various decoration. <Br>Here is a gallery of my bakeries.</p1>
+                    <p>Had explored different kind of bakieries, with different flavor and various decoration. Here is a gallery of my bakeries.</p>
                     <div class="secondpartredirection">
                         <a href="https://www.k-bakery.com/GallerySummary"><span style="text-decoration: underline;">Let's Explore</span> &#8594</a>
                     </div>
@@ -106,31 +105,34 @@
 
             </div>
 
-            <div class="secondpartformobile">
-                <div class="secondpartformobileimagerow1">
-                    <div class="secondpartformobileimage1">
-                        <img src = "Pictures/Tart - Small White Flower.jpg">
-                    </div>
-                    <div class="secondpartformobileimage2">
-                        <img src = "Pictures/Cake - Coffee Cake.jpg">
-                    </div>
-                </div>
-                    <div class="secondpartformobileimage3">
-                        <img src = "Pictures/Bread - Matcha Mushroom Bread.jpg">
-                    </div>
-                <div class="secondpartformobileimagerow2">
-                        <div class="secondpartformobileimage4">
-                            <img src = "Pictures/Cookie - Poke Ball.jpg">
+            <div class="secondpartformobile reveal">
+                    <div class="secondpartformobileimagerow1">
+                        <div class="secondpartformobileimage1">
+                            <img src = "Pictures/Tart - Small White Flower.jpg">
                         </div>
-                        <div class="secondpartformobileimage5">
-                            <img src = "Pictures/Pastry - Flower Shape Puff.jpg">
+                        <div class="secondpartformobileimage2">
+                            <img src = "Pictures/Cake - Coffee Cake.jpg">
                         </div>
-                </div>
-                <h1>GALLERY</h1>
-                <p>Had explored different kind of bakieries, with different decoration. Here is a gallery of my bakeries.</p>
-                <div class="secondpartredirection">
+                    </div>
+                        <div class="secondpartformobileimage3">
+                            <img src = "Pictures/Bread - Matcha Mushroom Bread.jpg">
+                        </div>
+                    <div class="secondpartformobileimagerow2">
+                            <div class="secondpartformobileimage4">
+                                <img src = "Pictures/Cookie - Poke Ball.jpg">
+                            </div>
+                            <div class="secondpartformobileimage5">
+                                <img src = "Pictures/Pastry - Flower Shape Puff.jpg">
+                            </div>
+                    </div>
+                
+                    <h1>GALLERY</h1>
+                    <p>Had explored different kind of <Br>bakieries, with different decoration. <Br>Here is a gallery of my bakeries.</p>
+                    <div class="secondpartredirection">
                         <a href="https://www.k-bakery.com/GallerySummary"><span style="text-decoration: underline;">Let's Explore</span> &#8594</a>
-                </div>
+                    </div>
+                
+                
             </div>
 
             
@@ -139,34 +141,26 @@
     
     <!-- Third Section -->
         
-        <div class="thirdpart">
-            <div class="thirdpartforlargerscreen">
-                <div class="thirdpartimagedisplay">
-                    <div class="thirdpartimagedisplay1">
-                        <img src = "Pictures/First Page - Cake.png">
-                    </div>
-                    <div class="thirdpartimagedisplay2">
-                        <img src = "Pictures/Front Page - Gallery 3.png">
-                    </div>
-                </div>
+    <div class="thirdpart reveal">
+        <div class="thirdpartimagedisplay">
+            <img src = "Pictures/Outline - 2 Tart Rings Combined.png">
+        </div>
 
-                <div class="thirdpartlargermessage">
-                    <h1>HOME-</h1>
-                    <h2>MADE</h2>
-                    <p>Home-made bakeries are most delicious and healthy. <Br>They smell so good when come out of the oven.</p>
-                    <p1>Home-made bakeries are most delicious and healthy. They smell so good when come out of the oven.</p1>
-                    <div class="thirdpartredirection">
-                        <a href="https://www.k-bakery.com/RecipeSummary"><span style="text-decoration: underline;">Let's Bake</span> &#8594</a>
-                    </div>
-                </div>
+        <div class="thirdpartmessage">
+            <h1>HOME-</h1>
+            <h2>MADE</h2>
+            <p>Home-made bakeries are most delicious and healthy. They smell so good when come out of the oven.</p>
+            <div class="thirdpartredirection">
+                <a href="https://www.k-bakery.com/RecipeSummary"><span style="text-decoration: underline;">Let's Bake</span> &#8594</a>
             </div>
         </div>
+    </div>
 
 
 
     <!-- Fourth Section -->
 
-        <div class="fourthpart">
+        <div class="fourthpart reveal">
             <div class="fourthpartmessage">
                 <h1>JUST</h1>
                 <h2>RELAX</h2>
@@ -219,7 +213,7 @@
 
     <!-- Fifth Section -->
 
-        <div class="fifthpart">
+        <div class="fifthpart reveal">
             <div class="fifthpartforlargerscreen">
                 <div class="fifthpartprofilepic">
                     <img src = "Pictures/First Page - Profile Pic.png">
@@ -273,6 +267,30 @@
                 menulist.style.maxHeight = "0px";
             }
         }
+    </script>
+
+    <script type = "text/javascript">
+        window.addEventListener('scroll', reveal);
+
+        function reveal (){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+        }
+        
     </script>
 </body>
 
