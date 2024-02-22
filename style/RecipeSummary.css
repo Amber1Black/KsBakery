@@ -602,7 +602,7 @@ nav ul li a:hover::after{
     }
 
     .topdisplayimageforsmallerscreen img{
-        max-width: 90%;
+        max-width: 95%;
     }
 
     .description{
