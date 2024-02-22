@@ -137,6 +137,18 @@ nav ul li a:hover::after{
 
 /*Content*/
 
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 .recipecategory{
     display: grid;
     grid-template-columns: auto auto auto;
