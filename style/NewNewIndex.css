@@ -116,7 +116,6 @@ nav ul li a:hover::after{
 .secondpartredirection, .fourthpartredirection, .fifthpartredirection{
     letter-spacing: 1px;
     font-size: 20px;
-    font-weight: 500;
     color: white;
     text-align: center;
 }
@@ -332,13 +331,12 @@ nav ul li a:hover::after{
 
 .thirdpartredirection{
     margin-top: 20px;
-    letter-spacing: 3px;
 }
 
 .thirdpartredirection a{
     text-decoration: none;
     color: #707070;
-    font-weight: 500; 
+    letter-spacing: 1px;
     font-size: 17px;
 }
 
@@ -347,7 +345,6 @@ nav ul li a:hover::after{
 
 .fourthpart{
     display: grid;
-    
 }
 
 .fourthpartmessage{
@@ -377,13 +374,15 @@ nav ul li a:hover::after{
 
 .fourthpartmessage p{
     text-align: center;
-    color: black;
-    font-weight: 400;
+    letter-spacing: 1px;
+    color: #575757;
+    font-size: 17px;
 }
 
 .fourthpartmessage a{
     text-decoration: none;
-    color: black;
+    letter-spacing: 1px;
+    color: #575757;
 }
 
 .scroll-container{
@@ -554,6 +553,14 @@ nav ul li a:hover::after{
         margin-left: 1120px;
     }
 
+    /*Four Section*/
+
+    .fourthpartmessage p{
+        max-width: 90%;
+        text-align: justify;
+        justify-self: center;
+    }
+
 }
 
 
@@ -713,14 +720,6 @@ nav ul li a:hover::after{
         width: 113px;
         height: 113px;
     }   
-
-    /*Four Section*/
-
-    .fourthpartmessage p{
-        max-width: 90%;
-        text-align: justify;
-        justify-self: center;
-    }
 
 }
 
@@ -1635,6 +1634,12 @@ nav ul li a:hover::after{
         margin: -95px 0px 20px 230px;
     }
 
+    .fourthpartmessage p{
+        max-width: 82%;
+        text-align: justify;
+        justify-self: center;
+    }
+
     /*Fifth Section*/
 
     .fifthpartprofilepic img{
@@ -1852,7 +1857,7 @@ nav ul li a:hover::after{
         letter-spacing: 0px;
         font-family: ;
         color: #575757;
-        margin: 0px 20px 100px 20px;
+        margin: 0px 20px 150px 20px;
         text-align: center;
     }
 
@@ -1998,7 +2003,7 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmessageformobile h1{
-        margin: 30px 0px 0px 0px;
+        margin: 30px 0px 0px -200px;
     }
 
     .fourthpartmessageformobile h2{
@@ -2006,18 +2011,19 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmessageformobile p{
-        font-weight: 500;
         text-align: justify;
         justify-self: center;
-        color: black;
         max-width: 85%;
         margin-bottom: 20px;
         font-size: 15px;
+        letter-spacing: 1px;
+        color: #575757;
     }
 
     .fourthpartmessageformobile a{
         text-decoration: none;
-        color: black;
+        letter-spacing: 1px;
+        color: #575757;
         font-size: 15px;
     }
 
@@ -2387,12 +2393,11 @@ nav ul li a:hover::after{
     .fourthpartmessageformobile h1,
     .fourthpartmessageformobile h2{
         font-size: 100px;
-        font-weight: ;
         letter-spacing: 5px;
     }
 
     .fourthpartmessageformobile h1{
-        margin: 30px 100px 0px 0px;
+        margin: 30px 120px 0px 0px;
     }
 
     .fourthpartmessageformobile h2{
@@ -2548,4 +2553,3 @@ nav ul li a:hover::after{
     }
 
 }
-
