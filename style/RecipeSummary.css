@@ -156,7 +156,6 @@ nav ul li a:hover::after{
     column-gap: 30px;
     row-gap: 30px;
     justify-content: center;
-    z-index: -1;
 }
 
 .recipegrid, .recipegrid4, .recipegrid5, .recipegrid6, .recipegrid7, .recipegrid8, .recipegrid9, .recipegrid10{
