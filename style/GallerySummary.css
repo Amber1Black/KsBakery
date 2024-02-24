@@ -189,11 +189,11 @@ nav ul li a:hover::after{
 }
 
 .gallerygrid5{
-    margin: -80px 200px 0px 0px;
+    margin: 0px 200px 0px 0px;
 }
 
 .gallerygrid5 img{
-    height: 500px;
+    max-width: 40vw;
     object-fit: cover;
 }
 
@@ -283,7 +283,7 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: -20px 150px 0px 0px;
+        margin: 0px 150px 0px 0px;
     }
     
 }
@@ -308,7 +308,7 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: -20px 80px 0px 0px;
+        margin: 0px 100px 0px 0px;
     }
     
 }
@@ -358,14 +358,6 @@ nav ul li a:hover::after{
     .gallerygrid4 img{
         height: 450px;
     }
-    
-    .gallerygrid5{
-        margin: -20px 80px 0px 0px;
-    }
-
-    .gallerygrid5 img{
-        height: 450px;
-    }
 
     .message h2{
         font-size: 110px;
@@ -395,12 +387,12 @@ nav ul li a:hover::after{
         height: 400px;
     }
 
-    .gallerygrid5{
-        margin: -20px 80px 0px -80px;
+    .gallerygrid5 img{
+        max-width: 39vw;
     }
 
-    .gallerygrid5 img{
-        height: 400px;
+    .gallerygrid5{
+        margin: 0px 110px 0px 0px;
     }
 }
 
@@ -455,13 +447,9 @@ nav ul li a:hover::after{
     .gallerygrid4 img{
         height: 380px;
     }
-    
-    .gallerygrid5{
-        margin: -20px 0px 0px -10px;
-    }
 
-    .gallerygrid5 img{
-        height: 380px;
+    .gallerygrid5{
+        margin: 50px 50px 0px 20px;
     }
 
     .message h2{
@@ -546,11 +534,7 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: 20px 0px 0px -10px;
-    }
-
-    .gallerygrid5 img{
-        height: 340px;
+        margin: 50px 0px 0px -10px;
     }
 
     .message h2{
@@ -604,11 +588,7 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: 20px 0px 0px -10px;
-    }
-
-    .gallerygrid5 img{
-        height: 290px;
+        margin: 80px 0px 0px -10px;
     }
 
     .message h2{
@@ -721,14 +701,6 @@ nav ul li a:hover::after{
     .largecookieimage{
         display: none;
     }
-    
-    .gallerygrid5{
-        margin: 20px 0px 0px 0px;
-    }
-
-    .gallerygrid5 img{
-        height: 260px;
-    }
 
     .message h2{
         font-size: 90px;
@@ -741,7 +713,7 @@ nav ul li a:hover::after{
 
     .gallerygrid5 h2{
         letter-spacing: 2px;
-        font-size: 85px;
+        font-size: 80px;
     }
 
     .message p, .redirection a{
@@ -793,11 +765,7 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: 20px 0px 0px 30px;
-    }
-
-    .gallerygrid5 img{
-        height: 230px;
+        margin: 80px 10px 0px 30px;
     }
 
     .message h2{
@@ -807,7 +775,7 @@ nav ul li a:hover::after{
 
     .gallerygrid4 h2, .gallerygrid5 h2{
         letter-spacing: 0px;
-        font-size: 70px;
+        font-size: 68px;
     }
 }
 
@@ -830,6 +798,12 @@ nav ul li a:hover::after{
         margin: 20px 50px 20px 50px;
         font-size: 15px;
         
+    }
+
+    /*Content*/
+
+    .gallerygrid5 img{
+        max-width: 260px;
     }
 
 }
@@ -968,11 +942,11 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: 20px 0px 0px 0px;
+        margin: 50px 0px 0px 0px;
     }
 
     .gallerygrid5 img{
-        height: 210px;
+        height: 150px;
     }
 
     .message h2{
@@ -1007,6 +981,12 @@ nav ul li a:hover::after{
         margin: 20px 40px 20px 40px;
         font-size: 15px;
         
+    }
+
+    /*Content*/
+
+    .gallerygrid5 img{
+        height: 135px;
     }
 
 }
@@ -1053,11 +1033,11 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: 20px 0px 0px 0px;
+        margin: 50px 0px 0px -20px;
     }
 
     .gallerygrid5 img{
-        height: 210px;
+        height: 140px;
         rotate: -10deg;
     }
 
@@ -1116,13 +1096,13 @@ nav ul li a:hover::after{
     }
 
     .gallerygrid5{
-        margin: 20px 0px 0px 0px;
+        margin: 50px 0px 0px 0px;
     }
 
     .gallerygrid5 img{
-        height: 200px;
+        height: 130px;
         rotate: -10deg;
-        margin-right: -5px;
+        margin-right: -10px;
     }
 
     .gallerygrid4 h2, .gallerygrid5 h2{
@@ -1196,11 +1176,11 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: 40px 0px 0px 0px;
+        margin: 50px 0px 0px -10px;
     }
 
     .gallerygrid5 img{
-        height: 180px;
+        height: 130px;
         rotate: -10deg;
     }
 
@@ -1269,11 +1249,11 @@ nav ul li a:hover::after{
     }
     
     .gallerygrid5{
-        margin: 40px 0px 0px 0px;
+        margin: 50px 0px 0px -10px;
     }
 
     .gallerygrid5 img{
-        height: 170px;
+        height: 120px;
         rotate: -10deg;
     }
 
