@@ -118,8 +118,9 @@ nav ul li a:hover::after{
     text-align: justify;
     margin-top: 40px;
     color: #575757;
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 20px;
+    letter-spacing: 1px;
     max-width: 90%;
 }
 
@@ -323,6 +324,7 @@ nav ul li a:hover::after{
 
     .description p{
         max-width: 86%;
+        font-size: 17px;
     }
 
     /*Content*/
@@ -408,6 +410,7 @@ nav ul li a:hover::after{
     .description p{
         max-width: 80%;
         margin-top: 30px;
+        font-size: 16px;
     }
 
     /*Content*/
