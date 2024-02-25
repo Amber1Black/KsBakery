@@ -186,6 +186,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
     vertical-align: middle;
     width: 100%;
+    box-shadow: 3px 3px 4px rgb(95, 95, 95);
 }
 
 .reveal{
