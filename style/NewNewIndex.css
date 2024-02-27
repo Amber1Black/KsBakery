@@ -268,60 +268,72 @@ nav ul li a:hover::after{
 .topimages{
     object-fit: cover;
     display: flex;
-    justify-self: center;
     align-items: center;
-    margin: 0px 50px 0px 50px;
-}
-
-.topimage1{
-    justify-content: center;
+    margin: 0px 80px 0px 80px;
 }
 
 .topimage1 img{
-    width: 95%;
-    margin-top: 130px;
+    width: 100%;
+    margin-top: -220px;
 }
 
-.topimage2, .topimage3, .topimage4, .topimage5, .secondpartlargermessage p1 {
+.topimage2, .topimage3, .topimage4, .topimage5{
     display: none;
 }
 
-.secondpartlargermessage{
-    align-items: center;
-    margin-bottom: 150px;
-}
-
-.secondpartlargermessage h1{
-    font-size: 180px;
-    font-weight: 900;
+.secondpart h1{
+    font-size: 22vw;
+    font-weight: 700;
     letter-spacing: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: rgb(0, 0, 0);
     text-align: center;
-    margin: -20px 0px 20px 0px;
+    margin: 100px 0px 20px 0px;
     text-shadow: 5px 5px 5px rgb(128, 126, 126);
 }
 
-.secondpartlargermessage p{
-    margin: 0px 400px 20px 400px;
+.secondpartmessageforsmallerscreen{
+    display: none;
+}
+
+.secondpartmessage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: -60px 0px 180px 0px;
+}
+
+.secondpartmessageleft, .secondpartmessageright{
+    justify-self: center;
+}
+
+.secondpartmessageleft p, .secondpartmessageright p, .secondpartredirection{
+    text-align: justify;
+    font-size: 17px;
     letter-spacing: 1px;
     color: #575757;
-    text-align: center;
 }
 
-.secondpartlargermessage p,
+.secondpartmessageleft{
+    max-width: 60%;
+    margin-right: 80px;
+}
+
+.secondpartmessageright{
+    max-width: 60%;
+    margin-left: 100px;
+}
+
+.secondpartredirection{
+    margin: 0px 50px 0px 0px;
+}
+
 .secondpartredirection a{
     font-size: 17px;
-}
-
-.secondpartredirection a{
     text-decoration: none;
     color: #575757;
 }
 
-.secondpartredirection{
-    text-align: center;
-}
+
 
 /*Third Section*/
 
@@ -575,15 +587,6 @@ nav ul li a:hover::after{
     .firstpartimagecolumn{
         margin-left: 1200px;
     }
-
-}
-
-
-@media only screen and (max-width:1400px){
-
-    .secondpartlargermessage p{
-        margin: 0px 300px 20px 300px;
-    }
 }
 
 
@@ -611,6 +614,24 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:1300px){
+
+    /*Second Section*/
+
+    .topimages{
+        margin: 0px 70px 0px 70px;
+    }
+
+    .topimage1 img{
+        width: 100%;
+        margin-top: -190px;
+    }
+    
+    .secondpartmessage{
+        margin: -40px 0px 180px 0px;
+    }
+}
+
 @media only screen and (max-width:1290px){
     /*First Section*/
 
@@ -633,34 +654,11 @@ nav ul li a:hover::after{
     .firstpartimagecolumn{
         margin-left: 1040px;
     }
+
 }
 
 
 @media only screen and (max-width:1280px){
-
-    /*Second Section*/
-
-    .topimage1{
-        display: none;
-    }
-    
-    .topimage2{
-        display: flex;
-        justify-content: center;
-        
-    }
-
-    .topimage2 img{
-        margin: 150px 0px 10px 0px;
-        width: 92%;
-    }
-
-    .secondpartlargermessage h1{
-        font-size: 170px;
-        font-weight: 900;
-        letter-spacing: 18px;
-    }
-
 
     /*Fifth Section*/
 
@@ -709,18 +707,15 @@ nav ul li a:hover::after{
     /*Second Section*/
 
     .topimages{
-        margin: 0px 10px 0px 10px;
+        margin: 0px 50px 0px 50px;
     }
 
-    .secondpartlargermessage h1{
-        font-size: 160px;
-        font-weight: 700;
-        letter-spacing: 20px;
-        margin: -30px 0px 20px 0px;
+    .topimage1 img{
+        margin-top: -170px;
     }
-
-    .secondpartlargermessage p{
-        margin: 0px 200px 20px 200px;
+    
+    .secondpartmessage{
+        margin: -30px 0px 180px 0px;
     }
 
     /*Fourth Section*/
@@ -794,6 +789,26 @@ nav ul li a:hover::after{
         font-size: 85px;
         letter-spacing: 2px;
         margin-left: -5px;
+    }
+
+    /*Second Section*/
+
+    .secondpart h1{
+        font-size: 22vw;
+        font-weight: 700;
+        letter-spacing: 13px;
+    }
+
+    .topimages{
+        margin: 0px 50px 0px 50px;
+    }
+
+    .topimage1 img{
+        margin-top: -160px;
+    }
+    
+    .secondpartmessage{
+        margin: -20px 0px 180px 0px;
     }
 
     /*Fourth Section*/
@@ -914,6 +929,8 @@ nav ul li a:hover::after{
 
     /*Common Parameter*/
 
+    .secondpartmessage p,
+    .secondpartredirection a,
     .thirdpartmessage p,
     .thirdpartredirection a,
     .fourthpartmessage p,
@@ -964,14 +981,41 @@ nav ul li a:hover::after{
 
     /*Second Section*/
 
-    .secondpartlargermessage h1{
-        font-size: 130px;
-        letter-spacing: 12px;
-        margin: -20px 0px 20px 0px;
+    .secondpart h1{
+        font-size: 23vw;
+        font-weight: 700;
+        letter-spacing: 10px;
     }
 
-    .secondpartlargermessage p{
-        margin: 0px 120px 20px 120px;
+    .topimages{
+        margin: 0px 30px 0px 30px;
+    }
+
+    .topimage1 img{
+        margin-top: -150px;
+    }
+    
+    .secondpartmessage{
+        display: none;
+    }
+
+    .secondpartmessageforsmallerscreen{
+        display: initial;
+    }
+
+    .secondpartmessageforsmallerscreen p{
+        text-align: justify;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #575757;
+        margin: 10px 70px 150px 70px;
+    }
+
+    .secondpartmessageforsmallerscreen a{
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #575757;
     }
 
     /*Third Section*/
@@ -1087,20 +1131,6 @@ nav ul li a:hover::after{
         margin-left: 40px;
     }
 
-    /*Second Section*/
-
-    .topimage2{
-        display: none;
-    }
-    
-    .topimage3{
-        display: flex;
-    }
-
-    .topimage3 img{
-        width: 100%;
-        margin: 150px 40px 10px 40px;
-    }
 
     /*Fifth Section*/
 
@@ -1156,6 +1186,26 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:900px){
+
+    /*Second Section*/
+
+    .topimage1{
+        display: none;
+    }
+
+    .topimage2{
+        display: flex;
+        justify-self: center;
+    }
+
+    .topimage2 img{
+        width: 100%;
+        margin: -120px 0px 0px 0px;
+    }
+
+    .secondpartmessageforsmallerscreen p{
+        margin-top: 30px;
+    }
 
     /*Third Section*/
 
@@ -1297,6 +1347,14 @@ nav ul li a:hover::after{
         margin-bottom: 9px;
     }
 
+    /*Second Section*/
+
+    .topimages{
+        margin: 0px 30px 0px 30px;
+    }
+
+
+
     /*Third Section*/
 
     .thirdpartimagedisplay{
@@ -1415,15 +1473,8 @@ nav ul li a:hover::after{
     
     /*Second Section*/
 
-    .secondpartforlargerscreen h1{
-        font-size: 120px;
-        letter-spacing: 10px;
-        margin-bottom: 20px;
-    }
-
-    .secondpartlargermessage p,
-    .secondpartredirection a{
-        font-size: 16px;
+    .topimage2 img{
+        margin: -110px 0px 0px 0px;
     }
 
     /*Third Section*/
@@ -1524,19 +1575,17 @@ nav ul li a:hover::after{
 
     /*Second Section*/
 
-    .topimage3 img{
-        width: 100%;
-        margin: 150px 30px 10px 30px;
+    .topimage2 img{
+        margin-top: -100px;
     }
 
     .secondpartforlargerscreen h1{
-        font-size: 110px;
-        letter-spacing: 10px;
-        margin-bottom: 20px;
+        font-size: 24vw;
+        letter-spacing: 5px;
     }
 
-    .secondpartlargermessage p{
-        margin: 0px 50px 20px 50px;
+    .secondpartmessageforsmallerscreen p{
+        margin: 40px 105px 130px 105px;
     }
 
     /*Third Section*/
@@ -1731,6 +1780,19 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:690px){
+
+    /*Second Section*/
+
+    .topimage2 img{
+        margin-top: -90px;
+    }
+
+    .secondpartmessageforsmallerscreen p{
+        margin: 40px 80px 130px 80px;
+    }
+}
+
 @media only screen and (max-width:670px){
     /*First Section*/
 
@@ -1752,18 +1814,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:650px){
-    /*Second Section*/
-
-    .secondpartforlargerscreen h1{
-        font-size: 100px;
-        letter-spacing: 8px;
-        margin-top: 0px;
-        margin-bottom: 20px;
-    }
-
-    .secondpartlargermessage p{
-        margin: 0px 100px 20px 100px;
-    }
 
     /*Third Section*/
 
@@ -1990,12 +2040,12 @@ nav ul li a:hover::after{
     }
 
     .secondpartformobile h1{
-        font-size: 110px;
-        letter-spacing: 5px;
+        font-size: 24vw;
+        letter-spacing: 3px;
         margin: 10px 0px 15px 0px;
         text-align: center;
-        font-family: 'Lato', sans-serif;
-        text-shadow: 5px 5px 5px rgb(97, 96, 96);
+        font-family: 'Roboto Condensed', sans-serif;
+        text-shadow: 3px 3px 4px rgb(124, 124, 124);
     }
 
     .secondpartformobile p,
@@ -2004,13 +2054,14 @@ nav ul li a:hover::after{
     }
 
     .secondpartformobile p{
-        margin: 0px 0px 20px 0px;
+        margin: 0px 40px 20px 40px;
         letter-spacing: 1px;
         color: #575757;
-        text-align: center;
+        text-align: justify;
     }
 
     .secondpartredirection{
+        margin-left: 40px;
         padding-bottom: 100px;
     }
 
@@ -2192,13 +2243,6 @@ nav ul li a:hover::after{
         font-size: 17px;
     }
 
-    /*Second Section*/
-
-    .secondpartformobile h1{
-        font-size: 105px;
-        letter-spacing: 3px;
-    }
-
     /*Third Section*/
 
     .thirdpartimagedisplay img{
@@ -2279,12 +2323,6 @@ nav ul li a:hover::after{
     }
 
     /*Second Section*/
-
-    .secondpartformobile h1{
-        font-size: 95px;
-        letter-spacing: 2px;
-        margin: 10px 0px 15px 0px;
-    }
 
     .secondpartformobile p{
         margin: 20px 35px 20px 35px;
@@ -2411,12 +2449,6 @@ nav ul li a:hover::after{
 
     /*Second Section*/
 
-    .secondpartformobile h1{
-        font-size: 82px;
-        letter-spacing: 2px;
-        margin: 10px 0px 15px 0px;
-    }
-
     .secondpartformobileimage1 img{
         width: 230px;
         height: 160px;
@@ -2527,12 +2559,6 @@ nav ul li a:hover::after{
     }
 
     /*Second Section*/
-
-    .secondpartformobile h1{
-        font-size: 75px;
-        letter-spacing: 2px;
-        margin: 10px 0px 15px 0px;
-    }
 
     .secondpartformobile p{
         margin: 20px 30px 20px 30px;
