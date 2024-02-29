@@ -148,7 +148,7 @@ h2{
 
 h3{
     font-size: 20px;
-    color: #707070;
+    color: #575757;
     font-weight: 600;
     letter-spacing: 1px;
     margin: 10px 0px 20px 0px;
@@ -495,8 +495,12 @@ input[type=checkbox] {
 
 @media only screen and (max-width:1000px){
 
+    .topsection{
+        background-image: url(JourneyEnglandBackground2.jpg);
+    }
+
     .topmessage h1, .topmessage h2{
-        font-size: 220px;
+        font-size: 24vw;
         font-weight: 700;
         letter-spacing: 10px;
     }
@@ -506,7 +510,7 @@ input[type=checkbox] {
     }
     
     .topmessage h2{
-        margin: 180px 0px 0px -350px;
+        margin: 200px 0px 0px -380px;
     }
 
     .topmessage p{
@@ -585,7 +589,7 @@ input[type=checkbox] {
 @media only screen and (max-width:850px){
 
     .topmessage h1, .topmessage h2{
-        font-size: 200px;
+        font-size: 25vw;
         font-weight: 700;
         letter-spacing: 10px;
     }
@@ -595,7 +599,7 @@ input[type=checkbox] {
     }
     
     .topmessage h2{
-        margin: 180px 0px 0px -380px;
+        margin: 180px 0px 0px -400px;
     }
 
     .next {
@@ -669,11 +673,18 @@ input[type=checkbox] {
 
 
 @media only screen and (max-width:750px){
-
     .topmessage h1, .topmessage h2{
-        font-size: 190px;
+        font-size: 27vw;
         font-weight: 700;
         letter-spacing: 10px;
+    }
+
+    .topmessage h1{
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .topmessage h2{
+        margin: 180px 0px 0px -400px;
     }
 
     .next {
@@ -742,21 +753,6 @@ input[type=checkbox] {
     .england4, .spain2{
         margin-right: 20px;
     }
-}
-
-
-@media only screen and (max-width:650px){
-
-    .topmessage h1, .topmessage h2{
-        font-size: 175px;
-        font-weight: 700;
-        letter-spacing: 9px;
-    }
-    
-    .topmessage h2{
-        margin: 180px 0px 0px -380px;
-    }
-
 }
 
 
@@ -843,18 +839,41 @@ input[type=checkbox] {
         padding-right: 10px;
     }
 
+    .topsection{
+        background-image: url(JourneyEnglandBackground2.jpg);
+        background-attachment: initial;
+    }
+
+    .england{
+        background: url(JourneyEnglandBackground.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        padding: 80px 0px 20px 0px;
+    }
+
+    .spain{
+        background: url(JourneySpainBackground2.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        padding: 80px 0px 40px 0px;
+    }
+
     .topmessage h1, .topmessage h2{
-        font-size: 165px;
+        font-size: 28vw;
         font-weight: 700;
-        letter-spacing: 9px;
+        letter-spacing: 8px;
     }
 
     .topmessage h1{
-        margin-top: -50px;
+        margin: 0px 0px 0px 0px;
     }
     
     .topmessage h2{
-        margin: 110px 0px 0px -380px;
+        margin: 160px 0px 0px -400px;
     }
 
     .topmessage p{
@@ -869,17 +888,13 @@ input[type=checkbox] {
 
 @media only screen and (max-width:550px){
     .topmessage h1, .topmessage h2{
-        font-size: 155px;
+        font-size: 28vw;
+        font-weight: 700;
         letter-spacing: 8px;
     }
 
     .topmessage h2{
-        margin: 110px 0px 0px -360px;
-    }
-
-    .introduction h2{
-        font-size: 25px;
-        margin: 5px 0px 10px 0px;
+        margin: 160px 0px 0px -350px;
     }
 }
 
@@ -887,12 +902,13 @@ input[type=checkbox] {
 @media only screen and (max-width:500px){
 
     .topmessage h1, .topmessage h2{
-        font-size: 140px;
-        letter-spacing: 7px;
+        font-size: 28vw;
+        font-weight: 700;
+        letter-spacing: 6px;
     }
-
+    
     .topmessage h2{
-        margin: 100px 0px 0px -330px;
+        margin: 140px 0px 0px -330px;
     }
 
     .topmessage p{
@@ -908,17 +924,18 @@ input[type=checkbox] {
 @media only screen and (max-width:450px){
 
     .topmessage h1, .topmessage h2{
-        font-size: 125px;
-        letter-spacing: 7px;
+        font-size: 30vw;
+        font-weight: 700;
+        letter-spacing: 6px;
     }
-
+    
     .topmessage h2{
-        margin: 80px 0px 0px -300px;
+        margin: 140px 0px 0px -280px;
     }
 
     .topmessage p{
         font-size: 14px;
-        margin: 0px 30px 0px 30px;
+        margin: 10px 30px 0px 30px;
     }
 
     h2{
@@ -958,14 +975,6 @@ input[type=checkbox] {
 
 @media only screen and (max-width:400px){
 
-    .topmessage h1, .topmessage h2{
-        font-size: 115px;
-        letter-spacing: 6px;
-    }
-
-    .topmessage h2{
-        margin: 60px 0px 0px -270px;
-    }
 
     .topmessage p{
         font-size: 14px;
