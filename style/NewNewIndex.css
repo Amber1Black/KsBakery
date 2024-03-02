@@ -2382,33 +2382,73 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartmessage{
-        margin: 80px 0px 0px 0px;
+    .fourthpart{
+        background-image: none;
     }
 
-    .fourthpartmessage h1{
-        margin: 0px 120px 0px 0px;
-        font-size: 105px;
-        letter-spacing: 2px;
-    }
-    
-    .fourthpartmessage h2{
-        margin: -30px 0px 0px 20px;
-        font-size: 105px;
-        letter-spacing: 2px;
+    .fourthpartmessage{
+        display: none;
     }
 
     .righthandsideimage{
-        margin: 20px 20px 100px 20px;
-        height: 440px;
-        width: 80vw;
+        margin: 20px 0px 100px 0px;
+        height: 540px;
+        width: 100%;
+        box-shadow: none;
     }
 
     .mySlides1 img,
     .slideshow-container{
-        width: 80vw;
-        height: 440px;
+        width: 100%;
+        height: 540px;
+        box-shadow: none;
     }
+
+    .fourthpartforsmallerscreen{
+        display: flex;
+        border-radius: 15px;
+        background-color: white;
+        margin: -120px 0px 100px 0px;
+        z-index: 1;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+    .fourthpartsmallermessage{
+        margin: 40px 40px 40px 40px;
+        
+    }
+
+    .fourthpartsmallermessage h1{
+        letter-spacing: 5px;
+        font-size: 40px;
+        margin-bottom: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 550;
+    }
+
+    .fourthpartsmallermessage p{
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-family:;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    .fourthpartredirection{
+        margin: 20px 0px 10px 0px;
+    }
+
+    .fourthpartredirection a{
+        font-size: 14px;
+        color: black;
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 10px;
+    }
+
 
     /*Fifth Section*/
 
@@ -2527,6 +2567,38 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:420px){
 
+    /*Fourth Section*/
+
+    .righthandsideimage{
+        height: 500px;
+    }
+
+    .mySlides1 img,
+    .slideshow-container{
+        height: 500px;
+    }
+
+    .fourthpartsmallermessage{
+        margin: 30px 40px 30px 40px;
+    }
+
+    .fourthpartsmallermessage h1{
+        letter-spacing: 3px;
+        font-size: 30px;
+        margin-bottom: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 550;
+    }
+
+    .fourthpartredirection{
+        margin: 15px 0px 10px 0px;
+    }
+
+    .fourthpartredirection a{
+        font-size: 14px;
+        color: black;
+    }
+
     /*Fifth Section*/
 
     .fifthpartmobilemessage{
@@ -2621,33 +2693,6 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartmessage{
-        margin: 80px 0px 0px 0px;
-    }
-
-    .fourthpartmessage h1{
-        margin: 0px 100px 0px 0px;
-        font-size: 95px;
-        letter-spacing: 2px;
-    }
-    
-    .fourthpartmessage h2{
-        margin: -30px 0px 0px 10px;
-        font-size: 95px;
-        letter-spacing: 2px;
-    }
-
-    .righthandsideimage{
-        margin: 20px 20px 100px 20px;
-        height: 400px;
-        width: 90vw;
-    }
-
-    .mySlides1 img,
-    .slideshow-container{
-        width: 90vw;
-        height: 400px;
-    }
 
 }
 
