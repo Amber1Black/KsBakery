@@ -1999,35 +1999,46 @@ nav ul li a:hover::after{
 
     .secondpartformobile{
         display: initial;
-        margin: 50px 0px 50px 0px;
+        margin: 0px 0px 50px 0px;
     }
     
     .secondpartmessageformobile{
-        margin: 0px 30px 40px 30px;
+        margin: -60px 30px 40px 30px;
     }
     
     .secondpartmessageformobile h1{
         font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        letter-spacing: 3px;
-        font-size: 10vw;
-        margin-bottom: 20px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 30px;
+        margin-bottom: 15px;
         text-align: justify;
         text-shadow: 1px 1px 1px grey;
     }
     
     .secondpartmessageformobile p{
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
         letter-spacing: 1px;
         text-align: justify;
-        font-size: 15px;
+        font-size: 1.2em;
         margin-bottom: 15px;
+    }
+
+    .secondpartmessageformobile a{
+        text-decoration: none;
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: black;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
     }
     
     .gallerydisplay{
         display: flex;
         overflow: auto;
         white-space: nowrap;
-        margin: 0px 20px 0px 20px;
+        margin: 50px 20px 0px 20px;
         -ms-overflow-style: none;  /* Hide scroll bar at IE and Edge */
         scrollbar-width: none;  /* Hide scroll bar at Firefox */
     }
@@ -2043,7 +2054,7 @@ nav ul li a:hover::after{
     
     .gallerydisplay img{
         width: 300px;
-        height: 400px;
+        height: 450px;
         object-fit: cover;
         border-radius: 20px;
         margin-right: 15px;
@@ -2056,10 +2067,17 @@ nav ul li a:hover::after{
     }
     
     .bottomleftcategory h3{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
         color: white;
         font-size: 40px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         text-shadow: 2px 2px 2px black;
+        cursor: pointer;
+    }
+
+    .bottomleftcategory a{
+        text-decoration: none;
     }
     
 
@@ -2075,95 +2093,125 @@ nav ul li a:hover::after{
         margin: 0px 20px 0px 20px;
     }
     
-    .thirdpartmobileimagesdisplay h2{
-        font-size: 25px;
-        margin: 0px 0px 0px 30px;
-        color: white;
+    .thirdpartgallerydisplaycontainer{
+        position: relative;
     }
     
-    .thirdpartmobileimagesdisplayrow1{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .thirdpartmobileimagesdisplay img{
         width: 100%;
-        column-gap: 15px;
-        margin-bottom: 10px;
-        margin-top: 100px;
-    }
-    
-    .thirdpartmobileimasgedisplay1 img{
-        width: 100%;
-        height: auto;
+        height: 650px;
         object-fit: cover;
-        border-radius: 15px;
-    }
-    
-    .thirdpartmobileimagesdisplayrow2{
-        display: grid;
-        grid-template-columns: 60% 1fr;
-        column-gap: 15px;
-    }
-    
-    .thirdpartmobileimasgedisplay3 img{
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 15px;
+        border-radius: 20px;
         margin-right: 15px;
     }
     
-    .thirdpartmobileimasgedisplay4 img{
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 15px;
+    .thirdpartbottomleftcategory{
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+    }
+    
+    .thirdpartbottomleftcategory h3{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: white;
+        font-size: 18vw;
+        letter-spacing: 5px;
+        text-shadow: 3px 3px 3px black;
+        line-height: 1.1em;
+        cursor: pointer;
+    }
+
+    .thirdpartbottomleftcategory a{
+        text-decoration: none;
     }
 
     .thirdpartmessageformobile{
-        margin: 20px 30px 40px 30px;
-    }
-    
-    .thirdpartmessageformobile h1{
-        font-family: 'Lato', sans-serif;
-        font-weight: 700;
-        letter-spacing: 3px;
-        font-size: 10vw;
-        margin-bottom: 20px;
-        text-align: justify;
-        text-shadow: 1px 1px 1px grey;
+        margin: 40px 30px 80px 20px;
     }
     
     .thirdpartmessageformobile p{
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
         letter-spacing: 1px;
         text-align: justify;
-        font-size: 15px;
+        font-size: 1.2em;
         margin-bottom: 15px;
+    }
+
+    .thirdpartmessageformobile a{
+        text-decoration: none;
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: black;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
     }
     
 
     /*Fourth Section*/
 
-    .fourthpartmessage h1{
-        margin: 0px 150px 0px 0px;
-        font-size: 120px;
-        letter-spacing: 5px;
+    .fourthpart{
+        background-image: none;
     }
-    
-    .fourthpartmessage h2{
-        margin: -30px 0px 0px 50px;
-        font-size: 120px;
-        letter-spacing: 5px;
+
+    .fourthpartmessage{
+        display: none;
     }
 
     .righthandsideimage{
-        margin: 20px 20px 150px 20px;
-        height: 450px;
-        width: 70vw;
+        margin: 20px 0px 10px 0px;
+        height: 540px;
+        width: 90%;
+        box-shadow: none;
+        border-radius: 15px;
     }
 
     .mySlides1 img,
     .slideshow-container{
-        width: 70vw;
-        height: 450px;
+        width: 100%;
+        height: 540px;
+        box-shadow: none;
+        border-radius: 15px;
+    }
+
+    .fourthpartmessageformobile{
+        display: grid;
+        margin: 0px 30px 100px 30px;
+    }
+
+    .fourthpartmessageformobile h1{
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 30px;
+        margin: 15px 0px 15px 0px;
+        text-align: justify;
+        text-shadow: 1px 1px 1px grey;
+    }
+    
+    .fourthpartmessageformobile p{
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    .fourthpartmessageformobile a{
+        text-decoration: none;
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: black;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    .prev, .next {
+        padding: 10px;
+        font-size: 10px;
     }
 
     /*Fifth Section*/
@@ -2204,7 +2252,7 @@ nav ul li a:hover::after{
     }
 
     .fifthpartmobilemessage h1{
-        font-size: 80px;
+        font-size: 78px;
         letter-spacing: 4px;
         font-family: 'Lato', sans-serif;
         color: white;
@@ -2250,6 +2298,16 @@ nav ul li a:hover::after{
         font-size: 17px;
     }
 
+    /*Third Section*/
+
+    .thirdpartmobileimagesdisplay img{
+        height: 600px;
+    }
+
+    .thirdpartbottomleftcategory h3{
+        line-height: 1em;
+    }
+
     /*Fifth Section*/
 
     .fifthpartmobilemessage{
@@ -2274,8 +2332,6 @@ nav ul li a:hover::after{
 
     /*Common Parameter*/
 
-    .secondpartformobile p,
-    .secondpartredirection a,
     .thirdpartmessage p,
     .thirdpartredirection a,
     .fourthpartmessage p,
@@ -2303,32 +2359,10 @@ nav ul li a:hover::after{
 
     /*Second Section*/
 
-    .secondpartmessageformobile h1{
-        font-size: 10vw;
-        margin-bottom: 15px;
-    }
-    
     .secondpartmessageformobile p{
-        font-size: 14px;
+        font-size: 1em;
     }
-    
-    .gallerydisplay img{
-        width: 280px;
-        height: 380px;
-        object-fit: cover;
-        border-radius: 20px;
-        margin-right: 15px;
-    }
-    
-    .bottomleftcategory{
-        bottom: 30px;
-        left: 20px;
-    }
-    
-    .bottomleftcategory h3{
-        font-size: 35px;
-        font-weight: 600;
-    }
+
 
     /*Third Section*/
 
@@ -2337,74 +2371,33 @@ nav ul li a:hover::after{
         height: 220px;
     }
 
+    .thirdpartmessageformobile{
+        margin: 20px 10px 40px 10px;
+    }
+
+    .thirdpartmobileimagesdisplay img{
+        height: 550px;
+    }
+
+    .thirdpartmessageformobile p{
+        font-size: 1em;
+    }
+
     /*Fourth Section*/
-
-    .fourthpart{
-        background-image: none;
-    }
-
-    .fourthpartmessage{
-        display: none;
-    }
-
-    .righthandsideimage{
-        margin: 20px 0px 100px 0px;
-        height: 540px;
-        width: 100%;
-        box-shadow: none;
-    }
 
     .mySlides1 img,
     .slideshow-container{
-        width: 100%;
-        height: 540px;
-        box-shadow: none;
+        height: 500px;
     }
 
-    .fourthpartforsmallerscreen{
-        display: flex;
-        border-radius: 15px;
-        background-color: white;
-        margin: -120px 0px 100px 0px;
-        z-index: 1;
-        box-shadow: 2px 2px 2px grey;
+    .righthandsideimage{
+        height: 500px;
     }
 
-    .fourthpartsmallermessage{
-        margin: 40px 40px 40px 40px;
-        
+    .fourthpartmessageformobile p{
+        font-size: 1em;
     }
-
-    .fourthpartsmallermessage h1{
-        letter-spacing: 5px;
-        font-size: 40px;
-        margin-bottom: 15px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 550;
-    }
-
-    .fourthpartsmallermessage p{
-        letter-spacing: 1px;
-        font-size: 14px;
-        margin-bottom: 15px;
-        font-family:;
-        font-weight: 400;
-        text-align: justify;
-    }
-
-    .fourthpartredirection{
-        margin: 20px 0px 10px 0px;
-    }
-
-    .fourthpartredirection a{
-        font-size: 14px;
-        color: black;
-    }
-
-    .prev, .next {
-        padding: 10px;
-        font-size: 10px;
-    }
+    
 
 
     /*Fifth Section*/
@@ -2446,9 +2439,24 @@ nav ul li a:hover::after{
 
     /*Third Section*/
 
-    .thirdpartmobileimasgedisplay3 img,
-    .thirdpartmobileimasgedisplay4 img{
-        height: 200px;
+    .thirdpartmobileimagesdisplay img{
+        height: 550px;
+    }
+
+    .thirdpartbottomleftcategory{
+        bottom: 40px;
+        left: 30px;
+    }
+
+    /*Fourth Section*/
+
+    .mySlides1 img,
+    .slideshow-container{
+        height: 450px;
+    }
+
+    .righthandsideimage{
+        height: 450px;
     }
 
     /*Fifth Section*/
@@ -2474,38 +2482,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:420px){
 
-    /*Fourth Section*/
-
-    .righthandsideimage{
-        height: 500px;
-    }
-
-    .mySlides1 img,
-    .slideshow-container{
-        height: 500px;
-    }
-
-    .fourthpartsmallermessage{
-        margin: 30px 40px 30px 40px;
-    }
-
-    .fourthpartsmallermessage h1{
-        letter-spacing: 3px;
-        font-size: 30px;
-        margin-bottom: 15px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 550;
-    }
-
-    .fourthpartredirection{
-        margin: 15px 0px 10px 0px;
-    }
-
-    .fourthpartredirection a{
-        font-size: 14px;
-        color: black;
-    }
-
     /*Fifth Section*/
 
     .fifthpartmobilemessage{
@@ -2514,7 +2490,7 @@ nav ul li a:hover::after{
     }
 
     .fifthpartmobilemessage h1{
-        font-size: 75px;
+        font-size: 70px;
         letter-spacing: 2px;
     }
 
@@ -2537,28 +2513,11 @@ nav ul li a:hover::after{
         margin-top: 35px;
     }
 
-    /*Second Section*/
+    /*Third Section*/
 
-    .secondpartmessageformobile h1{
-        font-size: 50px;
-        margin-bottom: 15px;
+    .thirdpartmobileimagesdisplay img{
+        height: 480px;
     }
-    
-    .gallerydisplay img{
-        width: 250px;
-        height: 360px;
-    }
-    
-    .bottomleftcategory{
-        bottom: 30px;
-        left: 20px;
-    }
-    
-    .bottomleftcategory h3{
-        font-size: 25px;
-        font-weight: 600;
-    }
-
 
 }
 
