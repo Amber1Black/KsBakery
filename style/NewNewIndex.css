@@ -287,7 +287,7 @@ nav ul li a:hover::after{
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 100px 0px 20px 0px;
-    text-shadow: 5px 5px 5px rgb(128, 126, 126);
+    text-shadow: 5px 5px 3px rgb(128, 126, 126);
 }
 
 .secondpartmessageforsmallerscreen{
@@ -360,7 +360,7 @@ nav ul li a:hover::after{
     letter-spacing: 0px;
     font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
-    text-shadow: 5px 5px 5px rgb(141, 140, 140);
+    text-shadow: 5px 5px 2px rgb(141, 140, 140);
 }
 
 .thirdpartmessage h1{
@@ -394,21 +394,22 @@ nav ul li a:hover::after{
     background-repeat: no-repeat;
     background-size: 95% 95%;
     background-position: center;
-    padding: 50px 50px 80px 50px;
+    padding: 80px 50px 80px 50px;
     margin-bottom: 30px;
 }
 
 .fourthpartmessage{
-    margin: 80px 60px 30px 60px;
+    margin: -70px 0px -10px 0px;
 }
 
 .fourthpartmessage h1{
-    font-size: 8vw;
+    font-size: 10vw;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 8px;
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 2px rgb(141, 140, 140);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    text-align: center;
 }
 
 .fourthpartmessage p, .fourthpartmessage a{
@@ -428,7 +429,7 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    margin: 10px 0px 10px 0px;  
+    margin: 0px 0px 10px 0px;  
 }
 
 .fourthpartdisplay img{
@@ -439,12 +440,16 @@ nav ul li a:hover::after{
     object-position: 0% 70%;
 }
 
-.textbox2{
+.textbox1{
     background-color: #447270;
     width: 30%;
     height: 300px;
     box-shadow: 1px 1px 3px grey;
     display: grid;
+}
+
+.textbox2{
+    display: none;
 }
 
 .fourthpartdisplay p{
@@ -567,16 +572,8 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
-    .fourthpartmessage{
-        margin: 70px 60px 20px 60px;
-    }
-
-    .fourthpartmessage h1{
-        font-size: 7vw;
-    }
-
     .fourthpartdisplay img,
-    .textbox2{
+    .textbox1{
         height: 280px;
     }
 }
@@ -635,7 +632,7 @@ nav ul li a:hover::after{
     /*Fourth Section*/
     
     .fourthpartdisplay img,
-    .textbox2{
+    .textbox1{
         height: 250px;
     }
 
@@ -802,7 +799,7 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartdisplay img,
-    .textbox2{
+    .textbox1{
         height: 230px;
     }
 
@@ -1082,19 +1079,15 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpart{
-        padding: 50px 20px 80px 20px;
+        padding: 80px 30px 80px 30px;
     }
 
     .fourthpartmessage{
-        margin: 50px 40px 10px 40px;
-    }
-
-    .fourthpartmessage h1{
-        font-size: 8vw;
+        margin: -50px 0px -10px 0px;
     }
 
     .fourthpartdisplay img,
-    .textbox2{
+    .textbox1{
         height: 210px;
     }
 
@@ -1103,6 +1096,7 @@ nav ul li a:hover::after{
         padding: 0px 25px 0px 25px;
         letter-spacing: 0px;
         font-weight: 300;
+        line-height: 1.4em;
     }
     
     .fourthpartdisplay a{
@@ -1336,17 +1330,33 @@ nav ul li a:hover::after{
 
     /*Fourth Section*/
 
+    .fourthpart{
+        padding: 80px 10px 80px 10px;
+    }
+
     .fourthpartmessage{
-        margin: 30px 40px 20px 40px;
+        margin: -45px 0px 0px 0px;
     }
 
     .fourthpartmessage h1{
-        font-size: 7vw;
+        font-size: ;
+        letter-spacing: 5px;
     }
 
     .fourthpartdisplay img,
     .textbox2{
-        height: 180px;
+        height: 190px;
+    }
+
+    .textbox2{
+        background-color: #447270;
+        width: 30%;
+        box-shadow: 1px 1px 3px grey;
+        display: grid;
+    }
+    
+    .textbox1{
+        display: none;
     }
 
     .fourthpartdisplay p{
@@ -1633,11 +1643,7 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartmessage{
-        margin: 30px 25px 20px 25px;
-    }
-
-    .fourthpartmessage h1{
-        font-size: 8vw;
+        margin: -40px 0px 0px 0px;
     }
 
     .fourthpartdisplay img,
