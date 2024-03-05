@@ -113,13 +113,6 @@ nav ul li a:hover::after{
     overflow-x: hidden;
 }
 
-.secondpartredirection, .fourthpartredirection, .fifthpartredirection{
-    letter-spacing: 1px;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
-
 .secondpartredirection:hover, .thirdpartmessage a:hover, .fourthpartredirection a:hover, .fourthpartmessageformobile a:hover, .fifthpartredirection:hover{
     font-weight: bold;
     cursor: pointer;
@@ -461,6 +454,7 @@ nav ul li a:hover::after{
 .fourthpartredirection{
     margin-top: 50px;
     text-align: center;
+    color: #575757;
 }
 
 .fourthpartredirection a{
@@ -468,7 +462,6 @@ nav ul li a:hover::after{
     font-size: 16px;
     letter-spacing: 1px;
     text-decoration: none;
-    color: #575757;
     border-style: solid;
     border-width: 1px;
     border-color: #575757;
@@ -524,7 +517,7 @@ nav ul li a:hover::after{
     display: none;
 }
 
-.fifthpartmessage p, .fourthpartredirection a{
+.fifthpartmessage p, .fifthpartredirection a{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
@@ -543,10 +536,10 @@ nav ul li a:hover::after{
     font-size: 16px;
     letter-spacing: 1px;
     text-decoration: none;
-    color: #3b3b3b;
+    color: black;
     border-style: solid;
     border-width: 1px;
-    border-color: #3b3b3b;
+    border-color: black;
     padding: 6px 25px 6px 25px;
 }
 
