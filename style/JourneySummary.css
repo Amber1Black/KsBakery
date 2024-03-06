@@ -82,27 +82,19 @@ nav ul li a:hover::after{
 
 /*Top Section*/
 
-.topsection{
-    background-image: url(JourneyEnglandBackground.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: contain;
-    padding: 120px 0px 120px 0px;
-}
-
 .headings{
     display: flex;
     justify-content: center;
 }
 
 .topmessage h1, .topmessage h2{
-    font-size: 16vw;
-    font-weight: 700;
-    letter-spacing: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 11vw;
+    font-weight: 600;
+    letter-spacing: 10px;
+    font-family: 'Playfair Display', sans-serif;
     color: black;
     text-align: center;
-    text-shadow: 5px 5px 3px rgb(160, 160, 160);
+    text-shadow: 3px 3px 2px rgb(160, 160, 160);
 }
 
 .topmessage h1{
@@ -110,72 +102,81 @@ nav ul li a:hover::after{
 }
 
 .topmessage h2{
-    margin: 90px 0px 0px 10px;
+    margin: 90px 0px 20px 10px;
 }
 
 .topmessage p{
     font-size: 18px;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 400;
     color: #161616;
-    text-align: justify;
+    text-align: center;
     justify-content: center;
-    margin: 0px 180px 0px 180px; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topmessage p1{
+    display: none;
 }
 
 
-/*Content*/
+/*New*/
 
-.location{
-    margin: 0px 20px 0px 20px;
+.locationgallery{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 25px;
+    justify-content: center;
+    margin-top: 50px;
+    background-image: linear-gradient();
+    padding: 80px 0px 80px 0px;
+    background-color: #efefef;
 }
 
-.location4{
-    margin-right: 40px;
+.locationgrid{
+    box-shadow: 1px 1px 2px grey;
+    border-radius: 5px;
+    background-color: #ffffff;
 }
 
-.location7{
-    margin-top: 15px;
+.spot img{
+    width: 28vw;
+    height: 340px;
+    object-fit: cover;
+    object-position: 0% 70%;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 10px;
+    border-radius: 5px 5px 0px 0px;
 }
 
-h2{
-    font-size: 25px;
-    color: rgb(29, 29, 29);
-    font-weight: 600;
+.location h2{
+    font-size: 22px;
+    color:black;
+    font-weight: 400;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: ;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0px 0px 25px;
 }
 
-h3{
-    font-size: 20px;
+.location h3{
+    font-size: 18px;
     color: #575757;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin: 10px 0px 20px 0px;
-    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin: 6px 0px 25px 25px;
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 /*To trigger the pop up images*/
 
 .button {
     display: inline-block;
-    padding: 10px 16px;
-    border-radius: 4px;
-    color: #ffffff;
-}
-
-.locationicon{
-    display: flex;
-    justify-content: center;
-}
-
-.locationicon img{
-    height: 180px;
-    width: 180px;
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 100px;
-    object-position: 0% 75%;
+    border-style: none;
+    box-shadow: none;
 }
 
 [id^=modal] {
@@ -261,12 +262,12 @@ input[type=checkbox] {
     margin: 10px 20px 10px 20px;
 }
 
-.introduction, .introduction7{
-    align-self:flex-end;
+.introduction{
+    align-self: flex-end;
     margin: 0px 80px 100px 50px;
 }
 
-.introduction h2, .introduction7 h2{
+.introduction h2{
     font-size: 50px;
     color: rgb(43, 43, 43);
     font-weight: 600;
@@ -275,89 +276,12 @@ input[type=checkbox] {
     text-align:left;
 }
 
-.introduction p, .introduction7 p{
+.introduction p{
     letter-spacing: 1px;
     color: #575757;
     text-align: justify;
     font-size: 17px;
 }
-
-
-.england{
-    background-image: url(JourneyEnglandBackground.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: contain;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 120px 0px 120px 0px;
-}
-
-.england1, .england2, .england3, .england4, .england5{
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
-
-.england1{
-    margin: -20px 120px 20px 0px;
-}
-
-.location1{
-    margin-left: 30px;
-}
-
-.england2{
-    margin: 80px 0px 20px 120px;
-}
-
-.england3{
-    margin: 30px 130px 20px 0px;
-}
-
-.england4{
-    margin: 80px 30px 20px 220px;
-}
-
-.england5{
-    margin: 80px 100px 20px 70px;
-}
-
-.location5{
-    margin-top: 15px;
-}
-
-
-.spain{
-    background-image: url(JourneySpainBackground.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: contain;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 150px 0px 150px 0px;
-}
-
-.spain1, .spain2, .spain3{
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
-
-.spain1{
-    margin: 40px 80px 20px 0px;
-}
-
-.spain2{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 100px 30px 20px 100px;
-}
-
-.spain3{
-    margin: 20px 30px 20px 50px;
-}
-
 
 
 /* Next & previous buttons */
@@ -404,142 +328,92 @@ input[type=checkbox] {
 
 
 
-@media only screen and (max-width:1300px){
+@media only screen and (max-width:1400px){
 
-    .topsection{
-        padding: 100px 0px 100px 0px;
+    .spot img{
+        height: 300px;
+    }
+}
+
+
+@media only screen and (max-width:1200px){
+
+    .topmessage h2{
+        margin: 70px 0px 20px 10px;
     }
 
-    .topmessage p{
-        margin: 0px 100px 0px 100px; 
+    .locationgallery{
+        column-gap: 20px;
+        row-gap: 20px;
     }
 
-    .spain{
-        padding: 180px 0px 180px 0px;
+    .spot img{
+        width: 30vw;
+        height: 280px;
+    }
+
+    .location h2{
+        font-size: 20px;
+    }
+    
+    .location h3{
+        font-size: 17px;
     }
 }
 
 @media only screen and (max-width:1150px){
 
-    .topmessage h1, .topmessage h2{
-        font-size: 17vw;
-        font-weight: 700;
-        letter-spacing: 10px;
-    }
-
-    .topmessage p{
-        font-size: 17px;
-    }
-
-    .location{
-        margin: 0px 10px 0px 10px;
-    }
-    
-    .location4{
-        margin-right: 20px;
-    }
-    
-    h2{
-        font-size: 23px;
-    }
-    
-    h3{
-        font-size: 19px;
-    }
-
-    .england1{
-        margin: -20px 60px 20px 0px;
-    }
-    
-    .england2{
-        margin: 80px 0px 20px 50px;
-    }
-    
-    .england3{
-        margin: 30px 50px 20px 0px;
-    }
-    
-    .england4{
-        margin: 80px 30px 20px 50px;
-    }
-    
-    .england5{
-        margin: 80px 70px 20px 70px;
-    }
-
-    .spain1{
-        margin: 40px 40px 20px 0px;
-    }
-    
-    .spain2{
-        margin: 100px 30px 20px 50px;
-    }
-    
-    .spain3{
-        margin: 20px 30px 20px 50px;
-    }
-
     .popup__wrapper{
         width: 95%;
     }
 
-    .introduction, .introduction7{
+    .introduction{
         margin: 0px 40px 70px 40px;
     }
 
-    .introduction h2, .introduction7 h2{
+    .introduction h2{
         font-size: 50px;
+    }
+}
+
+
+@media only screen and (max-width:1100px){
+
+    .topmessage h2{
+        margin: 50px 0px 20px 10px;
     }
 }
 
 
 @media only screen and (max-width:1000px){
 
-    .topsection{
-        background-image: url(JourneyEnglandBackground2.jpg);
-    }
-
     .topmessage h1, .topmessage h2{
-        font-size: 24vw;
-        font-weight: 700;
-        letter-spacing: 10px;
-    }
-
-    .topmessage h1{
-        margin: 0px 0px 0px 0px;
-    }
-    
-    .topmessage h2{
-        margin: 200px 0px 0px -380px;
+        text-shadow: 2px 2px 2px rgb(160, 160, 160);
     }
 
     .topmessage p{
-        font-size: 16px;
-        margin: 0px 50px 0px 50px;
-    }
-
-    .locationicon img{
-        height: 150px;
-        width: 150px;
-    }
-
-    h2{
-        font-size: 21px;
-    }
-    
-    h3{
         font-size: 17px;
+    }
+
+    .spot img{
+        width: 31vw;
+        height: 280px;
+    }
+
+    .locationgallery{
+        column-gap: 15px;
+        row-gap: 20px;
     }
 
     .popup__wrapper img{
         margin-left: 0px;
     }
 
-    .introduction h2, .introduction7 h2{
+    .introduction h2{
         font-size: 45px;
     }
 
-    .introduction p, .introduction7 p{
+    .introduction p{
         font-size: 16px;
     }
 
@@ -560,6 +434,16 @@ input[type=checkbox] {
         margin-left: 40px;
     }
 
+    .spot img{
+        width: 40vw;
+        height: 300px;
+    }
+
+    .locationgallery{
+        column-gap: 25px;
+        row-gap: 20px;
+    }
+
     .next {
         right: 52.3%;
     }
@@ -576,11 +460,11 @@ input[type=checkbox] {
         right: 47.4%;
     }
 
-    .introduction, .introduction7{
+    .introduction{
         margin: 0px 15px 50px 15px;
     }
 
-    .introduction h2, .introduction7 h2{
+    .introduction h2{
         font-size: 40px;
     }
 }
@@ -588,65 +472,38 @@ input[type=checkbox] {
 
 @media only screen and (max-width:850px){
 
-    .topmessage h1, .topmessage h2{
-        font-size: 25vw;
-        font-weight: 700;
-        letter-spacing: 10px;
-    }
-
-    .topmessage h1{
-        margin: 0px 0px 0px 0px;
-    }
-    
-    .topmessage h2{
-        margin: 180px 0px 0px -400px;
+    .spot img{
+        width: 44vw;
+        height: 300px;
     }
 
     .next {
         right: 47.6%;
     }
 
-    .locationicon img{
-        height: 130px;
-        width: 130px;
-    }
-
-    h2{
-        font-size: 21px;
+    .topmessage p1{
+        display: flex;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        color: #161616;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0px 50px 0px 50px;
     }
     
-    h3{
-        font-size: 16px;
+    .topmessage p{
+        display: none;
     }
 
-    .england1, .england2, .england3, .england4, .england5,
-    .england6, .england7, .england8, .england9, .england10,
-    .spain1, .spain2, .spain3{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0px 0px 80px 0px;
-    }
-
-    .location, .location1, .location2, .location3, .location4, .location5,
-    .location6, .location7, .location8, .location9, .location10, .location11{
-        margin: 0px;
-    }
-
-    .england3{
-        margin-right: 60px;
-    }
-
-    .england4{
-        margin-left: 60px;
-    }
-
-    .spain3{
-        margin-right: 60px;
-    }
 }
 
 
 @media only screen and (max-width:800px){
+
+    .topmessage p1{
+        margin: 0px 120px 0px 120px;
+    }
 
     .popup__wrapper {
         padding: 10px 5px 10px 5px;
@@ -656,15 +513,15 @@ input[type=checkbox] {
         height: 73vh;
     }
 
-    .introduction, .introduction7{
+    .introduction{
         margin: 0px 15px 30px 15px;
     }
 
-    .introduction h2, .introduction7 h2{
+    .introduction h2{
         font-size: 30px;
     }
 
-    .introduction p, .introduction7 p{
+    .introduction p{
         font-size: 15px;
         margin-right: 10px;
     }
@@ -673,36 +530,28 @@ input[type=checkbox] {
 
 
 @media only screen and (max-width:750px){
-    .topmessage h1, .topmessage h2{
-        font-size: 27vw;
-        font-weight: 700;
-        letter-spacing: 10px;
+
+    .locationgallery{
+        column-gap: 15px;
     }
 
-    .topmessage h1{
-        margin: 0px 0px 0px 0px;
-    }
-    
-    .topmessage h2{
-        margin: 180px 0px 0px -400px;
+    .spot img{
+        width: 46vw;
+        height: 280px;
     }
 
     .next {
         right: 47.8%;
     }
 
-    .topsection{
-        background-image: url(JourneyEnglandBackground2.jpg);
-    }
-
-    .england{
-        background-image: url(JourneyEnglandBackground2.jpg);
-    }
-
 }
 
 
 @media only screen and (max-width:700px){
+
+    .topmessage p1{
+        margin: 0px 50px 0px 50px;
+    }
 
     .enlargepic1{
         grid-template-columns: 1fr;
@@ -730,16 +579,16 @@ input[type=checkbox] {
         margin: 10px 20px 10px 20px;
     }
     
-    .introduction, .introduction7{
+    .introduction{
         margin: 0px 20px 10px 20px;
     }
     
-    .introduction h2, .introduction7 h2{
+    .introduction h2{
         font-size: 30px;
         margin: 5px 0px 15px 0px;
     }
     
-    .introduction p, .introduction7 p{
+    .introduction p{
         font-size: 14px;
         margin-right: 0px;
     }
@@ -750,18 +599,20 @@ input[type=checkbox] {
         font-size: 25px;
     }
 
-    .england4, .spain2{
-        margin-right: 20px;
-    }
 }
 
 
-@media only screen and (max-width:625px){
+@media only screen and (max-width:650px){
 
-    .spain{
-        background-image: url(JourneySpainBackground2.jpg);
+    .locationgallery{
+        padding: 50px 0px 50px 0px;
+        row-gap: 30px;
     }
 
+    .spot img{
+        width: 70vw;
+        height: 350px;
+    }
 }
 
 
@@ -839,111 +690,63 @@ input[type=checkbox] {
         padding-right: 10px;
     }
 
-    .topsection{
-        background-image: url(JourneyEnglandBackground2.jpg);
-        background-attachment: initial;
-    }
-
-    .england{
-        background: url(JourneyEnglandBackground.jpg) no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        padding: 80px 0px 20px 0px;
-    }
-
-    .spain{
-        background: url(JourneySpainBackground2.jpg) no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        padding: 80px 0px 40px 0px;
-    }
-
-    .topmessage h1, .topmessage h2{
-        font-size: 28vw;
-        font-weight: 700;
-        letter-spacing: 8px;
-    }
-
-    .topmessage h1{
-        margin: 0px 0px 0px 0px;
+    .topmessage h2{
+        margin: 30px 0px 20px 10px;
     }
     
-    .topmessage h2{
-        margin: 160px 0px 0px -400px;
-    }
-
-    .topmessage p{
+    .topmessage p1{
         font-size: 15px;
     }
 
-    .introduction h2, .introduction7 h2{
+    .introduction h2{
         font-size: 25px;
     }
 }
 
-
 @media only screen and (max-width:550px){
+
     .topmessage h1, .topmessage h2{
-        font-size: 28vw;
-        font-weight: 700;
-        letter-spacing: 8px;
+        font-size: 12vw;
     }
-
+    
     .topmessage h2{
-        margin: 160px 0px 0px -350px;
+        margin: 30px 0px 20px 0px;
     }
-}
 
+    .topmessage p1{
+        margin: 0px 70px 0px 70px;
+    }
+
+    .spot img{
+        width: 80vw;
+        height: 350px;
+    }
+
+}
 
 @media only screen and (max-width:500px){
 
     .topmessage h1, .topmessage h2{
-        font-size: 28vw;
-        font-weight: 700;
-        letter-spacing: 6px;
-    }
-    
-    .topmessage h2{
-        margin: 140px 0px 0px -330px;
+        letter-spacing: 7px;
     }
 
-    .topmessage p{
+    .topmessage p1{
         font-size: 14px;
     }
 
-    .england1, .spain1, .spain3{
-        margin-left: 20px;
+    .spot img{
+        width: 90vw;
+        height: 350px;
     }
+
 }
 
 
 @media only screen and (max-width:450px){
 
-    .topmessage h1, .topmessage h2{
-        font-size: 30vw;
-        font-weight: 700;
-        letter-spacing: 6px;
-    }
-    
-    .topmessage h2{
-        margin: 140px 0px 0px -280px;
-    }
-
-    .topmessage p{
-        font-size: 14px;
-        margin: 10px 30px 0px 30px;
-    }
-
-    h2{
-        font-size: 19px;
-    }
-    
-    h3{
-        font-size: 16px;
+    .spot img{
+        width: 93vw;
+        height: 350px;
     }
 
     .popup__wrapper img{
@@ -955,37 +758,12 @@ input[type=checkbox] {
         top: 25%;
     }
 
-    .england3{
-        margin-right: 10px;
-    }
-
-    .england4{
-        margin-left: 10px;
-    }
-
-    .spain3{
-        margin-right: 10px;
-    }
-
-    .introduction7 h2{
-        font-size: 20px;
-    }
 }
 
 
 @media only screen and (max-width:400px){
-
-
-    .topmessage p{
-        font-size: 14px;
-        margin: 10px 30px 0px 30px;
+    .topmessage p1{
+        margin: 0px 50px 0px 50px;
     }
 
-    .introduction h2{
-        font-size: 22px;
-    }
-
-    .introduction7 h2{
-        font-size: 18px;
-    }
 }
