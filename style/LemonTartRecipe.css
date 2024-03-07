@@ -105,11 +105,6 @@ nav ul li a:hover::after{
     display: none;
 }
 
-.recipebakerypicformobile{
-    display: none; 
-}
-
-
 /*baking steps on right hand side*/
 
 .recipecontent{
