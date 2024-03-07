@@ -48,7 +48,7 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 2em;
+    margin-right: 1.5em;
     background-color: white;
     
 }
@@ -86,45 +86,49 @@ nav ul li a:hover::after{
 
 .recipebakerypic{
     position: fixed;
-    top: 15%;
-    margin-left: 130px;
     mix-blend-mode: multiply;
+    display: flex;
 }
 
+/*The margin of the pic link to the prev next button*/
+
 .recipebakerypic img{
-    border-radius: 50px 50px 50px 50px;
-    max-width: 480px;;
+    margin: 0px 0px 0px 100px;
+    width: 500px;
     height: 80vh;
+    max-height: 800px;
+    align-self: center;
     object-fit: cover;
 }
 
-.recipebakerypicformobile{
+.mySlides1{
     display: none;
-    
 }
+
 
 /*baking steps on right hand side*/
 
 .recipecontent{
-    margin-left: 650px;
-    margin-top: 50px;
-    
+    margin-left: 700px;
+    margin-top: 50px;   
 }
 
 .recipe h1{
-    font-family: Fraunces;
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: 800;
     letter-spacing: 6px;
-    color: rgb(92, 91, 91);
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 30px;
     margin-top: 13px;
 }
 
 .recipe h3{
+    font-size: 20px;
+    font-weight: 600;
     letter-spacing: 5px;
-    color: grey;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #575757;
 }
 
 .igreel{
@@ -134,89 +138,67 @@ nav ul li a:hover::after{
     align-items: center;
 }
 
-.recipe-what-you-need h2{
-    font-size: 20px;
-    color: rgb(87, 86, 86);
-    font-weight: bold;
+.recipe-what-you-need h2, .recipe-what-to-do h2{
+    font-size: 25px;
+    font-weight: 600;
     margin: 20px 20px 20px 0px;
 }
 
-.recipe-what-you-need h4, .recipe-what-you-need h5{
-    color: rgb(87, 86, 86);
-    margin-left: 20px;
-    margin-bottom: 10px;
-    font-size: 17px;
+.recipe-what-you-need h4, .recipe-what-to-do h4{
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 20px 20px 10px 25px;
 }
-  
+
 .ingredientsfortart{
-    background-color: ;
     display: flex;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 120px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 20px;
+    margin: 10px 150px 10px 60px;
+    padding: 0px 15px 20px 15px;
     z-index: -1;
 }
 
-.ingredientsforsmallerscreen{
-    display: none;
-}
-
 .ingredientsforcake{
-    background-color: ;
     display: flex;
     align-items: center;
-    margin-left: 60px;
-    margin-right: 150px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 20px;
+    margin: 0px 200px 0px 60px;
+    padding: 0px 15px 20px 15px;
     z-index: -1;
 }
 
 .ingredientsforcream{
-    background-color: ;
     display: flex;
     align-items: center;
-    margin-left: 80px;
-    margin-right: 180px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 20px;
+    margin: 0px 250px 0px 100px;
+    padding: 0px 15px 20px 15px;
     z-index: -1;
 }
-  
+
 .ingredients-col{
-    background-color: ;
     flex: 1;
     text-align: center;
-    color: rgb(70, 70, 70);
     font-size: 13px;
     position: relative;
     padding-top: 10px;
 }
   
 .ingredients-col h3{
-    background-color: ;
-    color: rgb(70, 70, 70);
+    font-size: 16px;
+    font-weight: 600;
     padding-bottom: 0.5rem;
 }
   
 .ingredients-col p{
-    background-color: ;
-    color: rgb(70, 70, 70);
     font-size: 15px;
+    font-weight: 500;
 }
   
 .ingredients-col::after{
     content: '';
     width: 2px;
     height: 25px;
-    background: rgb(103, 103, 105);
+    background: rgb(87, 86, 86);
     position: absolute;
     align-items: center;
     top: 30px;
@@ -231,64 +213,50 @@ nav ul li a:hover::after{
 /*What to do*/
 
 .recipe-what-to-do{
-    display: ;
-    flex-wrap: wrap;
+    display: grid;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .recipe-what-to-do h2{
-    font-size: 20px;
-    color: rgb(87, 86, 86);
-    font-weight: bold;
-    margin: 20px 20px 20px 0px;
+    margin-bottom: 10px;
 }
 
 .recipe-what-to-do h4{
-    color: rgb(87, 86, 86);
-    font-size: 16px;
-    font-weight: 1000;
-    margin-left: 15px;
-    margin-bottom: 20px;
-    text-decoration: ;
+    margin: 10px 0px 15px 15px;
 }
 
-ul{
-    margin-bottom: 20px;
-}
 
 li{
-    color: rgb(87, 86, 86);
-    padding-bottom: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    padding-bottom: 15px;
     margin-left: 30px;
     margin-right: 150px;
-    font-size: 15px;
-    text-align: justify;
 }
 
 .note{
-    color: rgb(158, 158, 158);
-    
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    color: rgb(116, 114, 114);
 }
 
 /*pictures at the bottom*/
 
 .stepspic{
-    margin-top: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .stepspic img{
-    max-height: 220px;
-    min-width: 150px;
-    width: 20%;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 15px;
+    border-radius: 3px;
+    margin: 10px 120px 50px 0px;
 }
 
 
@@ -296,258 +264,288 @@ li{
 
 .backbutton{
     text-align: right;
-    margin-top: 100px;
-    bottom: 2%;
-    margin-right: 70px;
+    margin: 50px 70px 0px 0px;
     cursor: pointer;
 }
 
 .backbutton a{
-    font-size: 13px;
-    color: rgb(156, 156, 156);
+    font-size: 14px;
+    color: #575757;
     text-decoration: none;
 }
+
+
+/* Next & previous buttons */
+
+.picturesshown{
+    position: relative;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px;
+    margin-left: 100px;
+    color: #ffffff;
+    background-color: #575757;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+/* Position the "next button" to the right */
+  
+.next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a grey background color */
+  
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
 
 /*copyright*/
 
 .copyright{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 11px;
     color: grey;
     bottom: 2%;
 }
 
 
-
-@media only screen and (max-width:1280px){
-    .recipebakerypic{
-        top: 15%;
-        margin-left: 60px;
-    }
-    
-    .recipebakerypic img{
-        max-width: 450px;;
-        height: 75vh;
-    }
-    
-    .recipecontent{
-        margin-left: 550px;
-        margin-top: ;
-    }
+@media only screen and (max-width:1450px){
 
     .ingredientsfortart{
-        margin-left: 20px;
-        margin-right: 120px;
+        margin: 10px 80px 10px 30px;
+        padding: 0px 15px 20px 15px;
     }
     
     .ingredientsforcake{
-        margin-left: 50px;
-        margin-right: 150px;
+        margin: 0px 120px 0px 50px;
+        padding: 0px 15px 20px 15px;
     }
     
     .ingredientsforcream{
-        margin-left: 80px;
-        margin-right: 200px;
+        margin: 0px 160px 0px 100px;
+        padding: 0px 15px 20px 15px;
+    }
+
+    li{
+        margin-right: 120px;
+    }
+}
+
+
+@media only screen and (max-width:1350px){
+
+    .recipebakerypic img{
+        margin: 0px 0px 0px 100px;
+        width: 480px;;
+        height: 80vh;
+        max-height: 800px;
+        align-self: center;
+        object-fit: cover;
+    }
+    
+    .recipecontent{
+        margin-left: 650px;
     }
 
     li{
         margin-right: 100px;
     }
+
+    .stepspic img{
+        height: 380px;
+        width: 380px;
+        border-radius: 3px;
+        margin: 10px 100px 50px 0px;
+    }
 }
 
-@media only screen and (max-width:1200px){
-    .ingredientsfortart{
-        margin-left: 20px;
-        margin-right: 50px;
-    }
-    
-    .ingredientsforcake{
-        margin-left: 50px;
-        margin-right: 80px;
-    }
-    
-    .ingredientsforcream{
-        margin-left: 80px;
-        margin-right: 140px;
+
+@media only screen and (max-width:1250px){
+
+    .recipebakerypic img{
+        margin: 0px 0px 0px 60px;
+        width: 450px;
+        height: 80vh;
+        max-height: 800px;
+        align-self: center;
+        object-fit: cover;
     }
 
-    li{
-        margin-right: 80px;
-    }
-
-}
-
-@media only screen and (max-width:1120px){
-    .recipebakerypic{
-        top: 15%;
+    .prev{
         margin-left: 60px;
     }
     
-    .recipebakerypic img{
-        max-width: 420px;;
-        height: ;
-    }
-    
     .recipecontent{
-        margin-left: 500px;
-        margin-top: ;
-    }
-
-    .ingredientsfortart{
-        margin-left: 20px;
-        margin-right: 80px;
-    }
-    
-    .ingredientsforcake{
-        margin-left: 50px;
-        margin-right: 110px;
-    }
-    
-    .ingredientsforcream{
-        margin-left: 80px;
-        margin-right: 160px;
+        margin-left: 570px;
     }
 
     li{
         margin-right: 80px;
     }
 
+    .stepspic img{
+        height: 380px;
+        width: 380px;
+        border-radius: 3px;
+        margin: 10px 80px 50px 0px;
+    }
 }
 
-@media only screen and (max-width:1060px){
-    .recipebakerypic{
-        top: 15%;
-        margin-left: 50px;
-    }
-    
+
+@media only screen and (max-width:1150px){
+
     .recipebakerypic img{
-        max-width: 370px;;
-        height: ;
+        margin: 0px 0px 0px 40px;
+        width: 420px;
+        height: 580px;
+        align-self: center;
+        object-fit: cover;
     }
-    
+
+    .prev{
+        margin-left: 40px;
+    }
+
     .recipecontent{
-        margin-left: 450px;
-        margin-top: ;
+        margin-left: 510px;
     }
 
     .ingredientsfortart{
-        margin-left: 10px;
+        margin: 10px 50px 10px 10px;
+        padding: 0px 15px 20px 15px;
+    }
+    
+    .ingredientsforcake{
+        margin: 0px 70px 0px 30px;
+        padding: 0px 15px 20px 15px;
+    }
+    
+    .ingredientsforcream{
+        margin: 0px 80px 0px 50px;
+        padding: 0px 15px 20px 15px;
+    }
+
+    li{
+        margin-right: 70px;
+    }
+
+    .stepspic img{
+        height: 350px;
+        width: 350px;
+        border-radius: 3px;
+        margin: 10px 50px 30px 0px;
+    }
+}
+
+
+@media only screen and (max-width:1050px){
+    .recipebakerypic img{
+        margin: 0px 0px 0px 20px;
+        width: 370px;
+        height: 550px;
+        align-self: center;
+        object-fit: cover;
+    }
+
+    .prev{
+        margin-left: 20px;
+    }
+    
+    .recipecontent{
+        margin-left: 430px;
+    }
+
+    .ingredientsfortart{
+        margin: 10px 30px 10px 10px;
+    }
+    
+    .ingredientsforcake{
+        margin: 0px 50px 0px 30px;
+    }
+    
+    .ingredientsforcream{
+        margin: 0px 80px 0px 50px;
+    }
+
+    li{
         margin-right: 60px;
     }
-    
-    .ingredientsforcake{
-        margin-left: 40px;
-        margin-right: 90px;
-    }
-    
-    .ingredientsforcream{
-        margin-left: 70px;
-        margin-right: 150px;
-    }
 
-    li{
-        margin-right: 70px;
+    .stepspic img{
+        height: 300px;
+        width: 300px;
+        border-radius: 3px;
+        margin: 10px 50px 30px 0px;
     }
 
 }
 
-@media only screen and (max-width:1000px){
-    .recipebakerypic{
-        top: 15%;
-        margin-left: 40px;
-    }
-    
-    .recipebakerypic img{
-        max-width: 360px;
-        height: ;
-    }
-    
-    .recipecontent{
-        margin-left: 440px;
-        margin-top: ;
-        
-    }
-
-    li{
-        margin-right: 70px;
-    }
-
-}
 
 @media only screen and (max-width:950px){
     .logo{
         margin-left: 40px;
     }
 
-    .recipebakerypic{
-        top: 16%;
-        margin-left: 35px;
-    }
-    
-    .recipebakerypic img{
-        max-width: 330px;;
-        height: 70vh;
-    }
-    
-    .recipecontent{
-        margin-left: 390px;
-        margin-top: ;
-    }
-
-    .recipe-what-you-need h4, .recipe-what-you-need h5{
-        margin-left: 10px;
+    .recipe-what-you-need h4{
+        margin: 10px 0px 10px 15px;
     }
 
     .ingredientsfortart{
-        margin-left: 10px;
-        margin-right: 40px;
+        margin: 10px 10px 10px 5px;
     }
-
+    
     .ingredientsforcake{
-        margin-left: 30px;
-        margin-right: 80px;
+        margin: 0px 30px 0px 20px;
     }
     
     .ingredientsforcream{
-        margin-left: 50px;
-        margin-right: 110px;
+        margin: 0px 50px 0px 50px;
     }
 
     li{
-        margin-right: 70px;
+        margin-right: 40px;
+        padding-bottom: 10px;
     }
 
 }
 
+
 @media only screen and (max-width:900px){
-    .recipebakerypic{
-        top: 16%;
-        margin-left: 35px;
-    }
-    
     .recipebakerypic img{
-        max-width: 300px;;
-        height: 70vh;
+        margin: 0px 0px 0px 20px;
+        width: 320px;
+        height: 480px;
+        align-self: center;
+        object-fit: cover;
     }
     
     .recipecontent{
-        margin-left: 360px;
-        margin-top: ;
-    }
-
-    .ingredientsfortart{
-        margin-left: 0px;
-        margin-right: 30px;
-    }
-
-    .ingredientsforcake{
-        margin-left: 30px;
-        margin-right: 60px;
+        margin-left: 370px;
     }
 
     li{
-        margin-right: 60px;
+        margin-right: 50px;
+    }
+
+    .stepspic img{
+        height: 300px;
+        width: 300px;
+        border-radius: 3px;
+        margin: 10px 30px 30px 0px;
     }
 
 }
@@ -556,43 +554,24 @@ li{
 /*change the layout to 1 column, for mobile*/
 
 @media only screen and (max-width:850px){
-    *{
-        background-color: hsl(30, 38%, 92%);
-    }
-
-    /*update headings so that it's not in white*/
-    .logo{
-        mix-blend-mode: multiply;
-    }
-
-    .headingsection, nav, nav ul, nav ul li, nav ul li a{
-        background-color: hsl(30, 38%, 92%);
-    }
 
     /*body*/
 
     .recipebakerypic{
-        display: none;
-    }
-    
-    .recipebakerypicformobile{
-        display: flex;
-        margin-top: 30px;
-        margin-left: 0px;
-        margin-right: 0px;
-        
+        position: unset;
+        justify-content: center;
     }
 
-    .recipebakerypicformobile img{
+    .recipebakerypic img{
+        margin: 10px 0px 0px 0px;
+        width: 680px;
+        height: 600px;
+        max-height: unset;
         object-fit: cover;
-        width: 100%;
-        display: block;
-        border-radius: 10px 10px 0 0;
-        max-height: 500px;
     }
 
-    .bodysection{
-        border-radius: 10px 10px 10px 10px;
+    .prev{
+        margin-left: 0px;
     }
 
     .bodysection,
@@ -600,139 +579,129 @@ li{
     .recipe,
     .recipebakery,
     .recipebakerypic,
-    .recipe-what-to-do{
-        margin-left: 40px;
-        margin-right: 40px;
-        background-color: white;
-    }
-
-    .recipe-what-you-need{
-        margin-left: 40px;
-        margin-right: ;
-        background-color: white;
-    }
-
-    .recipe h1,
-    .recipe h3, 
-    .recipe-what-you-need h2,
-    .recipe-what-you-need h4,
-    .recipe-what-you-need h5,
-    .ingredientsfortart,
-    .ingredientsforcake,
-    .ingredientsforcream,
-    .ingredients,
-    .ingredientsforsmallerscreen,
-    .ingredients-col,
-    .ingredients-col h3,
-    .ingredients-col p,
-    .recipe-what-to-do h2,
-    .recipe-what-to-do h4,
-    .recipe-what-to-do ul li,
-    .recipe-what-to-do ul li span,
-    .stepspic{
-        background-color: white;
-    }
-
-    .igreel{
-        mix-blend-mode: ;
-        background-color: white;
-        width: 28px;
-        margin: 0px;
-        display: flex;
-    }
-
-    .ingredientsfortart{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .ingredientsforcake{
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-
-    .ingredientsforcream{
-        margin-left: 120px;
-        margin-right: 120px;
-    }
-
-    .recipe-what-to-do p{
-        font-size: 18px;
-        margin: 15px 20px 10px 30px;
-        background-color: white;
-    }
-
-    .recipe-what-to-do ul{
-        margin-bottom: 30px;
-        margin-right: 0px;
-        background-color: white;
-    }
-
-
-    li{
-        margin-right: 0px;
-    }
-
-    .backbutton{
-        margin-right: 60px;
-    }
-
-}
-
-@media only screen and (max-width:770px){
-    .ingredientsfortart{
-        margin-left: 20px;
-        margin-right: 10px;
-    }
-
-    .ingredientsforcake{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .ingredientsforcream{
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-}
-
-@media only screen and (max-width:700px){
-    .bodysection,
-    .recipecontent, 
-    .recipe,
+    .recipe-what-you-need,
     .recipe-what-to-do{
         margin-left: 30px;
         margin-right: 30px;
     }
 
-    .recipe-what-you-need{
-        margin-left: 30px;
-        margin-right: 0px;
+    .igreel{
+        width: 28px;
+        margin: 0px;
+        display: flex;
+    }
+
+    .recipe-what-you-need h4{
+        margin: 10px 0px 10px 30px;
     }
 
     .ingredientsfortart{
-        margin-left: 20px;
+        margin: 10px 10px 10px 30px;
+    }
+    
+    .ingredientsforcake{
+        margin: 0px 30px 0px 50px;
+    }
+    
+    .ingredientsforcream{
+        margin: 0px 80px 0px 100px;
+    }
+
+    .ingredients h3{
+        font-size: 15px;
+    }
+
+    .recipe-what-to-do p{
+        font-size: 18px;
+        margin: 15px 30px 10px 30px;
+    }
+
+    .recipe-what-to-do ul{
+        margin-bottom: 15px;
         margin-right: 0px;
     }
 
-    .ingredientsforcake{
-        margin-left: 30px;
+    li{
+        margin-right: 0px;
+    }
+
+    li, .note{
+        font-size: 15px;
+    }
+
+    .stepspic img{
+        height: 380px;
+        width: 380px;
+        border-radius: 3px;
+        margin: 10px 30px 40px 30px;
+    }
+
+    .backbutton{
+        margin-right: 60px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width:750px){
+    .bodysection,
+    .recipecontent, 
+    .recipebakery,
+    .recipebakerypic{
+        margin-left: 10px;
         margin-right: 10px;
     }
 
-    .ingredientsforcream{
-        margin-left: 50px;
-        margin-right: 50px;
+    .recipebakerypic img{
+        width: 600px;
+        height: 550px;
     }
 
+    .recipe-what-you-need, .recipe-what-to-do{
+        margin: 25px;
+    }
+
+    .recipe-what-to-do h2, .recipe-what-you-need h2{
+        font-size: 23px;
+        margin-left: 5px;
+    }
+
+    .ingredientsfortart{
+        margin: 10px -30px 10px 30px;
+    }
     
+    .ingredientsforcake{
+        margin: 0px 30px 0px 50px;
+    }
+    
+    .ingredientsforcream{
+        margin: 0px 80px 0px 80px;
+    }
+
 }
 
 @media only screen and (max-width:650px){
-    .recipebakerypicformobile img{
-        max-height: 400px;
+
+    .recipe h1{
+        font-size: 30px;
+    }
+
+    .ingredientsfortart{
+        margin: 10px -30px 10px 20px;
     }
     
+    .ingredientsforcake{
+        margin: 0px 10px 0px 50px;
+    }
+    
+    .ingredientsforcream{
+        margin: 0px 50px 0px 80px;
+    }
+
+    .recipe-what-to-do h2, .recipe-what-you-need h2{
+        font-size: 20px;
+    }
+
     .backbutton{
         margin-right: 50px;
     }
@@ -745,13 +714,13 @@ li{
         width: 12%;
         max-width: 50px;
         margin-left: 20px;
-        margin-top: 7px;
+        margin-top: 10px;
     }
-    
+
     nav{
         text-align: left;
     }
-
+    
     nav ul{
         width: 100%;
         background: white;
@@ -791,7 +760,7 @@ li{
         bottom: -5px;
         left: 50%;
         transform: translateX(-50%);
-        background: white;
+        background: black;
         transition: width 0.5s;
     }
 
@@ -805,7 +774,6 @@ li{
         min-width: 40px;
         max-width: 65px;
         cursor: pointer;
-        mix-blend-mode: multiply;
     }
 
     #menulist{
@@ -819,32 +787,77 @@ li{
     .bodysection,
     .recipecontent, 
     .recipe,
+    .recipe-what-you-need,
     .recipe-what-to-do{
         margin-left: 15px;
-        margin-right: 15px;  
+        margin-right: 15px;
+        overflow: hidden;
     }
 
-    .recipe-what-you-need{
+    .recipebakerypic img{
+        width: 550px;
+        height: 520px;
+    }
+
+    .recipe h1{
+        letter-spacing: 5px;
+        font-size: 23px;
+        margin: 13px 0px 20px 0px;
+    }
+    
+    .recipe h3{
+        letter-spacing: 5px;
+        margin: 0px 0px 20px 0px;
+    }
+    
+    .igreel{
+        width: 26px;
+    }
+    
+    .recipe-what-you-need h2,
+    .recipe-what-to-do h2{
+        font-size: 18px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .recipe-what-to-do h2{
+        margin-bottom: 5px;
+    }
+
+    .recipe-what-you-need h4,
+    .recipe-what-to-do h4{
+        font-size: 17px;
         margin-left: 15px;
-        margin-right: 0px;  
     }
-
-    .recipebakerypicformobile img{
-        max-height: 400px;
+      
+    .ingredients-col{
+        font-size: 13px;
+    }
+      
+    .ingredients-col h3,
+    .ingredients-col p,
+    .recipe-what-to-do li{
+        font-size: 15px;
     }
 
     .ingredientsfortart{
-        margin-left: 10px;
-        margin-right: -15px;
+        margin: 10px -30px 10px 0px;
     }
-
+    
     .ingredientsforcake{
-        margin-left: 10px;
-        margin-right: 0px;
+        margin: 0px 10px 0px 30px;
+    }
+    
+    .ingredientsforcream{
+        margin: 0px 50px 0px 50px;
     }
 
-    .recipe-what-to-do p{
-        font-size: 17px;
+    .stepspic img{
+        height: 350px;
+        width: 350px;
+        justify-content: center;
+        border-radius: 0px;
+        margin: 10px 15px 20px 15px;
     }
 
     .backbutton{
@@ -852,99 +865,187 @@ li{
     }
 }
 
+@media only screen and (max-width:550px){
 
-@media only screen and (max-width:500px){
-    .recipe-what-you-need h4{
+    .recipebakerypic img{
+        width: 480px;
+        height: 460px;
+    }
+}
+
+@media only screen and (max-width:530px){
+
+    .bodysection,
+    .recipecontent, 
+    .recipe,
+    .recipe-what-you-need,
+    .recipe-what-to-do{
         margin-left: 10px;
-        font-weight: ;
+        margin-right: 10px;
     }
 
-    .recipe-what-you-need h5{
+    .recipe-what-you-need h4,
+    .recipe-what-to-do h4{
+        font-size: 17px;
         margin-left: 10px;
-        margin-top: 30px;
-        font-weight: ;
-    }
-
-    .recipe-what-you-need h3{
-        font-size: 15px;
     }
 
     .ingredientsfortart{
-        display: none;
-    }
-
-    .ingredientsforsmallerscreen{
-        display: flex;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 5px;
-    }
-
-    .ingredientsforsmallerscreen h3{
-        font-size: ;
-    }
-
-    .ingredientsforcake{
-        margin-left: 0px;
-        margin-right: -10px;
-        margin-bottom: 20px;
-    }
-
-    .ingredientsforcream{
-        margin-left: 30px;
-        margin-right: 50px;
-        margin-bottom: 20px;
-    }
-
-    .stepspic{
-        margin-left: 30px;
-    }
-    
-}
-
-@media only screen and (max-width:480px){
-    .recipebakerypicformobile img{
-        max-height: 350px;
-    }
-    
-    .recipe-what-to-do h4{
-        margin-left: 5px;
-    }
-
-    li{
-        margin-left: 20px;
-    }
-
-    .recipe-what-to-do p{
-        font-size: 16px;
-    }
-
-}
-
-@media only screen and (max-width:430px){
-    .recipe-what-you-need h4{
-        margin-left: 5px;
-    }
-
-    .ingredientsforsmallerscreen, .ingredientsforcream{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .ingredientsforcake{
         margin-left: -10px;
-        margin-right: -15px;
     }
-    
 }
 
-@media only screen and (max-width:405px){
-    .recipe-what-you-need h3, .recipe-what-you-need p{
+
+@media only screen and (max-width:500px){
+
+    .recipe h1{
+        letter-spacing: 3px;
+        font-size: 23px;
+        margin: 13px 0px 20px 0px;
+    }
+
+    .bodysection,
+    .recipecontent, 
+    .recipe,
+    .recipe-what-you-need,
+    .recipe-what-to-do{
+        margin-left: 8px;
+        margin-right: 10px;
+    }
+
+    .ingredients-col h3,
+    .ingredients-col p,
+    .recipe-what-to-do li, 
+    .note{
         font-size: 14px;
     }
 
-    .stepspic{
-        margin-left: 20px;
+    .ingredientsforcake{
+        margin: 0px 0px 0px 10px;
     }
     
+    .ingredientsforcream{
+        margin: 0px 30px 0px 30px;
+    }
+
+    li{
+        padding-bottom: 8px;
+        margin-left: 20px;
+    }
+
+    .stepspic img{
+        height: 350px;
+        width: 360px;
+        justify-content: center;
+        border-radius: 0px;
+        margin: 10px 10px 20px 20px;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:480px){
+
+    .recipebakerypic img{
+        width: 430px;
+        height: 400px;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+
+    .recipe h1{
+        letter-spacing: 2px;
+        font-size: 23px;
+        margin: 13px 0px 20px 0px;
+    }
+
+    .recipe-what-you-need h4{
+        margin-bottom: 10px;
+    }
+
+    .ingredientsfortart{
+        margin: 10px -27px 10px -5px;
+    }
+
+    .stepspic img{
+        height: 320px;
+        width: 320px;
+        justify-content: center;
+        border-radius: 0px;
+        margin: 10px -10px 20px 8px;
+    }
+}
+
+
+@media only screen and (max-width:430px){
+
+    .recipebakerypic img{
+        width: 380px;
+        height: 350px;
+    }
+
+    .recipe-what-you-need h4{
+        margin-left: 3px;
+    }
+
+    .ingredientsfortart{
+        margin: 0px -27px 0px -18px;
+    }
+
+    .ingredientsforcake{
+        margin: 0px -20px 0px 0px;
+    }
+    
+    .ingredientsforcream{
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+
+    .bodysection,
+    .recipecontent, 
+    .recipe,
+    .recipe-what-you-need,
+    .recipe-what-to-do{
+        margin-left: 8px;
+        margin-right: 5px;
+    }
+
+    .recipebakerypic img{
+        width: 370px;
+        height: 350px;
+    }
+
+    .recipe h1{
+        letter-spacing: 1px;
+        font-size: 23px;
+        margin: 13px 0px 20px 0px;
+    }
+
+    .recipe-what-you-need h4{
+        margin-left: 3px;
+    }
+
+    .ingredients-col h3,
+    .ingredients-col p{
+        font-size: 13px;
+    }
+
+    li{
+        margin-left: 18px;
+    }
+
+    .stepspic img{
+        height: 305px;
+        width: 305px;
+        justify-content: center;
+        border-radius: 0px;
+        margin: 10px -10px 20px 0px;
+    }
 }
