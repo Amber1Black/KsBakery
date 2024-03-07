@@ -94,22 +94,22 @@ nav ul li a:hover::after{
 
 .topmessage{
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 5%;
+    width: 70%;
 }
 
 .topmessage h1{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-family: 'DM Serif Display', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 3px;
-    font-size: 70px;
+    font-size: 65px;
     color: #ffffff;
     text-shadow: 1px 1px 2px black;
 }
 
 .topmessage p{
-    width: 65%;
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     font-weight: 600;
@@ -156,6 +156,10 @@ nav ul li a:hover::after{
     text-align: ;
     font-family: 'Roboto', sans-serif;
     margin: 15px 0px 0px 25px;
+}
+
+.location a{
+    display: none;
 }
 
 .location h3{
@@ -333,7 +337,19 @@ input[type=checkbox] {
 }
 
 
+@media only screen and (max-width:1250px){
+
+    .topmessage{
+        bottom: 10%;
+    }
+}
+
+
 @media only screen and (max-width:1200px){
+
+    .topmessage p{
+        font-size: 17px;
+    }
 
     .locationgallery{
         column-gap: 20px;
@@ -370,35 +386,17 @@ input[type=checkbox] {
 }
 
 
-@media only screen and (max-width:1110px){
-    .topmessage h1{
-        font-weight: 700;
-        letter-spacing: 3px;
-        font-size: 60px;
-    }
-    
-    .topmessage p{
-        width: 70%;
-        font-weight: 600;
-        font-size: 17px;
-    }
+@media only screen and (max-width:1050px){
 
+    .topmessage h1{
+        font-size: 55px;
+    }
 }
 
 
 @media only screen and (max-width:1000px){
 
-    .topmessage h1{
-        width: 70%;
-        font-weight: 700;
-        letter-spacing: 3px;
-        font-size: 60px;
-        line-height: 1.2em;
-    }
-    
     .topmessage p{
-        width: 50%;
-        font-weight: 600;
         font-size: 16px;
     }
 
@@ -461,6 +459,15 @@ input[type=checkbox] {
 
 
 @media only screen and (max-width:900px){
+
+    .topmessage{
+        width: 80%;
+    }
+
+    .topmessage h1{
+       font-size: 50px;
+    }
+
     .enlargepic1{
         grid-template-columns: 55% 1fr;
     }
@@ -521,6 +528,14 @@ input[type=checkbox] {
 
 @media only screen and (max-width:750px){
 
+    .topmessage{
+        width: 85%;
+    }
+
+    .topmessage h1{
+        font-size: 40px;
+     }
+
     .locationgallery{
         column-gap: 15px;
     }
@@ -538,10 +553,6 @@ input[type=checkbox] {
 
 
 @media only screen and (max-width:700px){
-
-    .topmessage p{
-        width: 60%;
-    }
 
     .enlargepic1{
         grid-template-columns: 1fr;
@@ -601,14 +612,21 @@ input[type=checkbox] {
         padding: 80px 0px 50px 0px;
     }
 
+    .location a{
+        display: initial;
+        text-decoration: none;
+        color: #575757;
+    }
+
     .locationgallery{
         padding: 50px 0px 50px 0px;
         row-gap: 30px;
     }
 
     .spot img{
-        width: 70vw;
+        width: 80vw;
         height: 350px;
+        box-shadow: 1px 1px 2px grey;
     }
 }
 
@@ -687,25 +705,12 @@ input[type=checkbox] {
         padding-right: 10px;
     }
 
-    .topmessage{
-        position: absolute;
-        top: 7%;
-        left: 5%;
+    .topmessage h1{
+        font-size: 35px;
     }
 
-    .topmessage h1{
-        font-weight: 700;
-        letter-spacing: 2px;
-        font-size: 35px;
-        text-shadow: ;
-        width: 95%;
-    }
-    
     .topmessage p{
-        width: 95%;
         font-size: 15px;
-        text-shadow: ;
-        font-weight: 500;
     }
 
     .introduction h2{
@@ -724,6 +729,15 @@ input[type=checkbox] {
 
 @media only screen and (max-width:500px){
 
+    .topmessage h1{
+        line-height: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    .topmessage p{
+        font-size: 14px;
+    }
+
     .spot img{
         width: 90vw;
         height: 350px;
@@ -734,25 +748,14 @@ input[type=checkbox] {
 
 @media only screen and (max-width:450px){
 
-    .topmessage h1{
-        font-weight: 700;
-        letter-spacing: 3px;
-        font-size: 30px;
-        color:#ffffff;
-        text-shadow: none;
-        width: 95%;
-    }
-    
-    .topmessage p{
-        width: 85%;
-        font-size: 14px;
-        font-weight: 500;
-        text-shadow: 1px 1px 1px black;
+    .spot img{
+        width: 90vw;
+        height: 350px;
     }
 
     .spot img{
         width: 93vw;
-        height: 350px;
+        height: 320px;
     }
 
     .popup__wrapper img{
