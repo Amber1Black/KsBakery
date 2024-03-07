@@ -438,7 +438,7 @@ nav ul li a:hover::after{
 .fourthpartmessage h1{
     text-align: center;
     font-family: 'Playfair Display', sans-serif;
-    font-size: 140px;
+    font-size: 100px;
     letter-spacing: 5px;
 }
 
@@ -498,19 +498,19 @@ nav ul li a:hover::after{
 }
 
 .fifthpartmessage{
-    margin: 0px 100px 0px 20px;
+    margin: 0px 80px 0px 20px;
     justify-self: left;
     align-self: center;
     border-style: solid;
     border-width: 1px 1px 1px 0px;
-    padding: 20px 50px 50px 50px;
+    padding: 20px 100px 50px 50px;
 }
 
 .fifthpartmessage h1{
     text-align: center;
     font-family: 'Playfair Display', sans-serif;
-    font-size: 140px;
-    letter-spacing: 5px;
+    font-size: 100px;
+    letter-spacing: 10px;
 }
 
 .fifthpartmessage p1{
@@ -608,7 +608,7 @@ nav ul li a:hover::after{
     
     .fifthpartmessage{
         margin: 0px 30px 0px 20px;
-        padding: 20px 50px 50px 50px;
+        padding: 20px 80px 50px 50px;
     }
 }
 
@@ -724,12 +724,12 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartmessage h1{
-        font-size: 130px;
+        font-size: 95px;
         letter-spacing: 5px;
     }
 
     .fourthpartmessage{
-        margin: 10px 200px 0px 120px;
+        margin: 10px 100px 0px 60px;
     }
 
     /*Fifth Section*/
@@ -747,7 +747,8 @@ nav ul li a:hover::after{
     }
 
     .fifthpartmessage h1{
-        font-size: 110px;
+        font-size: 90px;
+        letter-spacing: 5px;
     }
 
 }
@@ -820,12 +821,12 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartmessage h1{
-        font-size: 120px;
+        font-size: 75px;
         letter-spacing: 5px;
     }
 
     .fourthpartmessage{
-        margin: 10px 150px 0px 100px;
+        margin: 10px 120px 0px 60px;
     }
 }
 
@@ -916,17 +917,6 @@ nav ul li a:hover::after{
         margin: 0px 90px 0px -10px;
     }
 
-    /*Fourth Section*/
-
-    .fourthpartmessage h1{
-        font-size: 110px;
-        letter-spacing: 5px;
-    }
-
-    .fourthpartmessage{
-        margin: 10px 120px 0px 70px;
-    }
-
 }
 
 
@@ -979,6 +969,21 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:1090px){
+
+    /*Fourth Section*/
+
+    .fourthpartmessage h1{
+        font-size: 65px;
+        letter-spacing: 5px;
+    }
+
+    .fourthpartmessage{
+        margin: 10px 110px 0px 50px;
+    }
+}
+
+
 @media only screen and (max-width:1040px){
     /*First Section*/
 
@@ -1011,11 +1016,11 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartmessage{
-        margin: 10px 70px 0px 50px;
+        margin: 10px 80px 0px 40px;
     }
 
     .fourthpartmessage h1{
-        font-size: 12vw;
+        font-size: 60px;
         line-height: 1.2em;
     }
 
@@ -1338,11 +1343,11 @@ nav ul li a:hover::after{
     /*Fourth Section*/
 
     .fourthpartmessage h1{
-        font-size: 105px;
+        font-size: 50px;
         letter-spacing: 5px;
     }
+}
 
-    
 
 
 @media only screen and (max-width:880px){
@@ -1429,6 +1434,13 @@ nav ul li a:hover::after{
 
     .thirdpartmessage p{
         margin: 5px 60px 0px 80px;
+    }
+
+    /*Fourth Section*/
+
+    .fourthpartmessage h1{
+        font-size: 45px;
+        letter-spacing: 4px;
     }
 
 }
@@ -1527,7 +1539,7 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmessage h1{
-        font-size: 11vw;
+        font-size: 45px;
         line-height: 1.2em;
     }
 
@@ -1727,7 +1739,8 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmessage h1{
-        font-size: 11vw;
+        font-size: 40px;
+        letter-spacing: 3px;
         line-height: 1.2em;
     }
 
@@ -2399,7 +2412,8 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmobilemessage h1{
-        font-size: 35px;
+        font-size: 28px;
+        letter-spacing: 3px;
         margin-bottom: 15px;
     }
 
@@ -2464,7 +2478,11 @@ nav ul li a:hover::after{
         height: 420px;
     }
 
-    
+    .fourthpartmobilemessage h1{
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
 }
 
 
