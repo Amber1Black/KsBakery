@@ -15,7 +15,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="K's Bakery, with Hydrangea Tart Recipe. The hydrangea piped on top made the tarts look gorgeous.">
+  <meta name="description" content="K's Bakery, with Hydrangea Tart Recipe shared. The hydrangea piped on top made the tarts look gorgeous.">
   
   <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
 
@@ -23,10 +23,8 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
-  <!-- My CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- My CSS -->
   <link rel="stylesheet" href="style/HydrangeaTartRecipe.css">
 </head>
 
@@ -51,13 +49,27 @@
     <!-- left hand side images-->
 
     <div class="recipebakerypic">
-        <img src="Pictures/Recipe - Hydrangea Tart 1.gif">
-    </div>
+        <div class="picturesshown">
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Hydrangea Tart 1.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Hydrangea Tart - 2.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Hydrangea Tart - 3.jpg">
+            </div>
 
-    <div class="recipebakerypicformobile">
-        <img src="Pictures/Recipe - Hydrangea Tart for mobile.gif">
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Hydrangea Tart - 4.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
     </div>
-
 
     <!-- right hand side-->
 
@@ -99,40 +111,8 @@
                         <p>235g</p>
                     </div>
                 </div>
-                
-                <div class="ingredientsforsmallerscreen">
-                    <div class="ingredients-col">
-                        <Br>
-                        <h3>Butter</h3>
-                        <p>140g</p>
-                    </div>
-                    <div class="ingredients-col">
-                        <h3>Icing<Br>Sugar</h3>
-                        <p>50g</p>
-                    </div>
-                    <div class="ingredients-col">
-                        <Br>
-                        <h3>Egg</h3>
-                        <p>50g</p>
-                    </div>
-                </div>
-                    
-                <div class="ingredientsforsmallerscreen">    
-                    <div class="ingredients-col">
-                        <h3>Almond<Br>Powder</h3>
-                        <p>30g</p>
-                    </div>
-                    <div class="ingredients-col">
-                        <h3>Corn<Br>Starch</h3>
-                        <p>40g</p>
-                    </div>
-                    <div class="ingredients-col">
-                        <h3>Plain<Br>Flour</h3>
-                        <p>235g</p>
-                    </div>
-                </div>
 
-            <h5>Cake Layer :</h5>
+            <h4>Cake Layer :</h4>
                 <div class="ingredientsforcake">
                     <div class="ingredients-col">
                         <Br><h3>Butter</h3>
@@ -156,7 +136,7 @@
                     </div>
                 </div>
 
-                <h4>Cream :</h4>
+            <h4>Cream :</h4>
                 <div class="ingredientsforcream">
                     <div class="ingredients-col">
                         <h3>Cream<Br>Cheese</h3>
@@ -221,9 +201,6 @@
                     <li>Fill in the cake batter to bake for another 15 minutes at 150&#8451
                         <Br><Br><span class = "note">[It will rise so just fill in half of the tart crust height]</span>
                         </li>
-                        <div class="stepspic">
-                            <img src = "Pictures/Recipe - Hydrangea Tart 4.jpg">
-                        </div> 
                     <li>When the tarts have turned to golden color, take them out of the oven to let them cool down</li>
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Hydrangea Tart 5.jpg">
@@ -274,8 +251,35 @@
             }
         }
     </script>
+
+    <script>
+        let slideIndex = [1,1,1,1,1,1,1,1,1,1];
+        let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+        showSlides(1, 3);
+        showSlides(1, 4);
+        showSlides(1, 5);
+        showSlides(1, 6);
+        showSlides(1, 7);
+        showSlides(1, 8);
+        
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
 </body>
 
 </html>
-
-
