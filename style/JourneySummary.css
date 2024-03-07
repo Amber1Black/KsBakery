@@ -94,7 +94,7 @@ nav ul li a:hover::after{
 
 .topmessage{
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 5%;
     width: 70%;
 }
