@@ -111,11 +111,11 @@ nav ul li a:hover::after{
 .description h1{
     font-size: 13vw;
     font-weight: 700;
-    letter-spacing: 15px;
-    font-family: 'Lato', sans-serif;
-    color: rgb(0, 0, 0);
+    letter-spacing: 10px;
+    line-height: 1.1em;
+    font-family: 'DM Serif Display', sans-serif;
     margin: 0px 0px 20px 0px;
-    text-shadow: 3px 3px 3px rgb(167, 165, 165);
+    text-shadow: 2px 2px 2px rgb(167, 165, 165);
 }
 
 .description p{
@@ -124,7 +124,6 @@ nav ul li a:hover::after{
     color: #575757;
     font-size: 18px;
     letter-spacing: 1px;
-    max-width: 95%;
 }
 
 .topdisplayimage{
@@ -132,9 +131,9 @@ nav ul li a:hover::after{
 }
 
 .topdisplayimage img{
-    max-width: 45vw;
+    max-width: 40vw;
     object-fit: cover;
-    margin: 10px 50px 10px -130px;
+    margin: 50px 50px 50px -50px;
 }
 
 /*Gallery Grid*/
@@ -174,6 +173,7 @@ nav ul li a:hover::after{
     vertical-align: middle;
     width: 100%;
     box-shadow: 3px 3px 4px rgb(95, 95, 95);
+    border-radius: 10px;
 }
 
 .reveal{
@@ -241,18 +241,18 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1450px){
     .description{
-        margin: 0px 50px 0px 60px;
+        margin: 0px 50px 0px 80px;
     }
 
     .description h1{
-        font-size: 13vw;
+        font-size: 11vw;
         font-weight: 700;
-        letter-spacing: 15px;
+        letter-spacing: 10px;
     }
 
     .topdisplayimage img{
-        max-width: 47vw;
-        margin: 10px 50px 10px -100px;
+        max-width: 40vw;
+        margin: 10px 50px 10px -30px;
     }
 
     .gallerycontent h3{
@@ -287,9 +287,9 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1200px){
+
     .topdisplayimage img{
-        max-width: 47vw;
-        margin: 0px 50px 0px -100px;
+        margin: 0px 50px 0px -50px;
     }
 
     .description p{
@@ -320,14 +320,14 @@ nav ul li a:hover::after{
     }
 
     .description h1{
-        font-size: 12vw;
+        font-size: 11vw;
         font-weight: 700;
         letter-spacing: 12px;
     }
 
     .topdisplayimage img{
-        max-width: 50vw;
-        margin: 10px 50px 10px -80px;
+        max-width: 40vw;
+        margin: 10px 50px 10px 0px;
     }
 
 }
@@ -388,12 +388,12 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:900px){
     .description{
-        margin: 0px 10px 0px 40px;
+        margin: 0px 10px 0px 50px;
     }
 
     .topdisplayimage img{
-        max-width: 50vw;
-        margin: 10px 40px 10px -50px;
+        max-width: 40vw;
+        margin: 20px 40px 20px 0px;
     }
 
     .gallerycontent2 h3{
@@ -434,14 +434,14 @@ nav ul li a:hover::after{
     }
 
     .description h1{
-        font-size: 12vw;
+        font-size: 11vw;
         font-weight: 700;
         letter-spacing: 8px;
     }
 
     .topdisplayimage img{
-        max-width: 49vw;
-        margin: 30px 30px 30px -30px;
+        max-width: 43vw;
+        margin: 30px 30px 30px 0px;
     }
 
     /*Content*/
@@ -585,30 +585,31 @@ nav ul li a:hover::after{
 
     .topdisplayimageforsmallerscreen img{
         margin: 0px;
-        max-width: 90vw;
+        max-width: 80vw;
     }
 
     .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 110px;
+        font-size: 100px;
         font-weight: 700;
-        letter-spacing: 6px;
-        font-family: 'Lato', sans-serif;
+        letter-spacing: 10px;
+        line-height: 1em;
+        font-family: 'DM Serif Display', sans-serif;
         color: rgb(0, 0, 0);
-        text-shadow: 3px 3px 3px rgb(167, 165, 165);
+        text-shadow: 2px 1px 2px rgb(167, 165, 165);
         text-align: center;
     }
 
     .descriptionforsmallerscreen h1{
-        margin: -40px 50px 0px 0px;
+        margin: -20px 70px 0px 0px;
     }
 
     .descriptionforsmallerscreen h2{
-        margin: 0px 0px 0px 20px;
+        margin: 0px 0px 30px 40px;
     }
    
     .descriptionforsmallerscreen p{
         text-align: justify;
-        color: #575757;
+        font-weight: 500;
         font-size: 15px;
         letter-spacing: 1px;
         margin: 20px 40px 20px 40px;
@@ -632,7 +633,7 @@ nav ul li a:hover::after{
 @media only screen and (max-width:500px){
 
     .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 100px;
+        font-size: 90px;
     }
 
     .descriptionforsmallerscreen h1{
@@ -678,8 +679,7 @@ nav ul li a:hover::after{
 @media only screen and (max-width:450px){
 
     .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 95px;
-        letter-spacing: 2px;
+        font-size: 85px;
     }
 
     .descriptionforsmallerscreen p{
@@ -703,11 +703,12 @@ nav ul li a:hover::after{
 @media only screen and (max-width:400px){
 
     .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 90px;
+        font-size: 75px;
+        letter-spacing: 5px;
     }
 
     .descriptionforsmallerscreen h1{
-        margin: -30px 40px 0px 0px;
+        margin: -10px 40px 0px 0px;
     }
 
     /*Content*/
