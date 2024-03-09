@@ -425,7 +425,7 @@ nav ul li a:hover::after{
 
 .righthandside img{
     width: 480px;
-    height: 600px;
+    height: 80vh;
     object-fit: cover;
     margin: 50px 30px 50px -100px;
     box-shadow: 1px 1px 1px white;
@@ -638,7 +638,7 @@ nav ul li a:hover::after{
 
     .righthandside img{
         width: 480px;
-        height: 550px;
+        height: 70vh;
         margin: 50px 30px 50px -100px;
     }
 
@@ -688,7 +688,7 @@ nav ul li a:hover::after{
     
     .righthandside img{
         width: 420px;
-        height: 500px;
+        height: 70vh;
         margin: 50px 30px 50px -70px;
     }
 
@@ -2053,12 +2053,11 @@ nav ul li a:hover::after{
         margin-bottom: 10px;
         text-align:left;
         text-shadow: none;
-        font-family: 'Playfair Display', sans-serif;
+        font-family: 'DM Serif Display', sans-serif;
     }
     
     .secondpartmessageformobile p{
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         letter-spacing: 1px;
         font-size: 16px;
         margin-bottom: 10px;
@@ -2068,8 +2067,7 @@ nav ul li a:hover::after{
         text-decoration: none;
         font-size: 16px;
         color: black;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
         letter-spacing: 1px;
     }
     
@@ -2128,66 +2126,62 @@ nav ul li a:hover::after{
 
     .thirdpartformobile{
         display: grid;
-        margin: 0px 20px 0px 20px;
+        margin: 0px 0px 0px 0px;
         overflow: hidden;
     }
     
-    .thirdpartgallerydisplaycontainer{
+    .thirdpartuppersection{
+        background-color: #fcd5ce;
+        padding: 50px 40px 30px 40px;
+    }
+    
+    .thirdpartuppersection h1{
+        font-family: 'DM Serif Display', sans-serif;
+        letter-spacing: 3px;
+        font-weight: 600;
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .thirdpartuppersection p{
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    
+    .thirdpartlowersection{
         position: relative;
     }
     
-    .thirdpartmobileimagesdisplay img{
+    .thirdpartlowersection img{
         width: 100%;
-        height: 680px;
-        object-fit: cover;
-        border-radius: 15px;
     }
     
-    .thirdpartbottomleftcategory{
+    .thirdpartmobileredirection{
         position: absolute;
-        bottom: 40px;
-        left: 40px;
-    }
-    
-    .thirdpartbottomleftcategory h3{
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-style: solid;
+        border-width: 2px;
+        padding: 5px 25px 5px 25px;
+        color: #ffffff;
         font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        color: white;
-        font-size: 18vw;
-        letter-spacing: 5px;
-        text-shadow: 3px 3px 3px black;
-        line-height: 1.1em;
+        font-size: 17px;
+        font-weight: 900px;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 2px black;
         cursor: pointer;
-    }
-
-    .thirdpartbottomleftcategory a{
-        text-decoration: none;
-    }
-
-    .thirdpartmessageformobile{
-        margin: 40px 20px 50px 20px;
+        background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+        z-index: 1;
     }
     
-    .thirdpartmessageformobile p{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        letter-spacing: 1px;
-        text-align: justify;
-        margin-bottom: 15px;
-    }
-
-    .thirdpartredirection{
-        margin-top: 30px;
-    }
-
-    .thirdpartredirection a{
+    .thirdpartmobileredirection a{
         text-decoration: none;
-        font-size: 1em;
-        color: #575757;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        letter-spacing: 1px;
-        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 900px;
     }
 
     /*Fourth Section*/
@@ -2225,7 +2219,7 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmobilemessage h1{
-        font-family: 'Playfair Display', sans-serif;
+        font-family: 'DM Serif Display', sans-serif;
         font-size: 12vw;
         letter-spacing: 5px;
         text-align: center;
@@ -2235,7 +2229,7 @@ nav ul li a:hover::after{
     
     .fourthpartmobilemessage p, .fourthpartmobileredirection{
         text-align: justify;
-        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
         font-size: 16px;
         letter-spacing: 1px;
         margin: 30px 20px 30px 20px;
@@ -2249,7 +2243,7 @@ nav ul li a:hover::after{
     }
 
     .fourthpartmobileredirection a{
-        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
         font-size: 16px;
         letter-spacing: 1px;
         text-decoration: none;
@@ -2293,15 +2287,15 @@ nav ul li a:hover::after{
     
     .fifthpartmobilemessage h1{
         text-align: center;
-        font-family: 'Playfair Display', sans-serif;
+        font-family: 'DM Serif Display', sans-serif;
         font-size: 70px;
         letter-spacing: 5px;
     }
     
     .fifthpartmobilemessage p, .fourthpartredirection a{
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
+        font-size: 16px;
+        font-weight: 500;
         letter-spacing: 1px;
         margin-top: 20px;
         color: black;
@@ -2310,6 +2304,7 @@ nav ul li a:hover::after{
     .fifthpartredirection{
         margin: 10px 0px 0px 0px;
         text-align: center;
+        font-weight: 500;
     }
 
     .fifthpartredirection a{
@@ -2333,17 +2328,6 @@ nav ul li a:hover::after{
     .firstpartmobilemessage p{
         font-size: 17px;
     }
-
-    /*Third Section*/
-
-    .thirdpartmobileimagesdisplay img{
-        height: 600px;
-    }
-
-    .thirdpartbottomleftcategory h3{
-        line-height: 1em;
-    }
-
     
 }
 
@@ -2352,8 +2336,7 @@ nav ul li a:hover::after{
 
     /*Common Parameter*/
 
-    .thirdpartmessage p,
-    .thirdpartmessage a,
+    .thirdpartuppersection p,
     .fourthpartmessage p,
     .fourthpartmessage a,
     .fifthpartmobilemessage p,
@@ -2392,24 +2375,10 @@ nav ul li a:hover::after{
         font-size: 15px;
     }
 
-
     /*Third Section*/
 
-    .thirdpartmobileimasgedisplay3 img,
-    .thirdpartmobileimasgedisplay4 img{
-        height: 220px;
-    }
-
-    .thirdpartmessageformobile{
-        margin: 20px 10px 40px 10px;
-    }
-
-    .thirdpartmobileimagesdisplay img{
-        height: 550px;
-    }
-
-    .thirdpartmessageformobile p{
-        font-size: 1em;
+    .thirdpartuppersection h1{
+        font-size: 60px;
     }
 
     /*Fourth Section*/
@@ -2470,13 +2439,12 @@ nav ul li a:hover::after{
 
     /*Third Section*/
 
-    .thirdpartmobileimagesdisplay img{
-        height: 550px;
+    .thirdpartuppersection{
+        padding: 35px 25px 25px 25px;
     }
 
-    .thirdpartbottomleftcategory{
-        bottom: 40px;
-        left: 30px;
+    .thirdpartuppersection h1{
+        font-size: 55px;
     }
 
     /*Fourth Section*/
@@ -2512,8 +2480,10 @@ nav ul li a:hover::after{
 
     /*Third Section*/
 
-    .thirdpartmobileimagesdisplay img{
-        height: 480px;
+    .thirdpartuppersection h1{
+        letter-spacing: 3px;
+        font-weight: 600;
+        font-size: 50px;
     }
 
     /*Fourth Section*/
