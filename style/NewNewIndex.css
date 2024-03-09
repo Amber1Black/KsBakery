@@ -2337,8 +2337,8 @@ nav ul li a:hover::after{
     /*Common Parameter*/
 
     .thirdpartuppersection p,
-    .fourthpartmessage p,
-    .fourthpartmessage a,
+    .fourthpartmobilemessage p,
+    .fourthpartmobilemessage a,
     .fifthpartmobilemessage p,
     .fifthpartredirection a{
         font-size: 14px;
