@@ -48,7 +48,7 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 3em;
+    margin-right: 20px;
     background-color: white; 
 }
 
@@ -507,6 +507,14 @@ li{
         margin-left: 40px;
     }
 
+    nav ul li{
+        margin-right: 5px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+    }
+
     .recipe-what-you-need h4{
         margin: 10px 0px 10px 15px;
     }
@@ -641,16 +649,6 @@ li{
         font-size: 14px;
     }
 
-}
-
-
-@media only screen and (max-width:800px){
-
-    /*Headings*/
-
-    nav ul li{
-        margin-right: 1em;
-    }
 }
 
 
