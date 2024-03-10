@@ -23,10 +23,8 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
-  <!-- My CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- My CSS -->
   <link rel="stylesheet" href="style/CustardBreadRecipe.css">
 </head>
 
@@ -51,11 +49,22 @@
     <!-- left hand side images-->
 
     <div class="recipebakerypic">
-        <img src="Pictures/Recipe - Custard Bread 1.jpg">
-    </div>
-
-    <div class="recipebakerypicformobile">
-        <img src="Pictures/Recipe - Custard Bread 9.jpg">
+        <div class="picturesshown">
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Custard Bread 1.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Custard Bread - 2.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Custard Bread - 3.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
     </div>
 
 
@@ -140,16 +149,16 @@
                         </div>  
                     <li>Knead until a round dough with smooth surface is formed</li>
                     <li>Let it rise under a warm condition until its size is doubled.
-                        <Br><Br><span class = "note">[Time may vary under different weather condition, in Summer it can be an hour, in Winter it can be 2 hours.]</span>
+                        <Br><span class = "note">[Time may vary under different weather condition, in Summer it can be an hour, in Winter it can be 2 hours.]</span>
                         </li> 
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Custard Bread 8.png">
                         </div>
                     <li>Meanwhile, let's make the custard.
                         <Br>Mix all ingredients for the custard together, then boil it.
-                            <Br><Br><span class = "note">[The ingredients may be hard to mix together at first, but it's fine. When it's boiled, the ingredients would be melted and mixed well together easily.]</li>
+                            <Br><span class = "note">[The ingredients may be hard to mix together at first, but it's fine. When it's boiled, the ingredients would be melted and mixed well together easily.]</li>
                     <li>Keep stiring while boiling the custard, boil until the mixture solidifies. Then let it cool down before incorporating it into the dough.
-                        <Br><Br><span class = "note">[If got a smaller pan, then boil the custard at the pan directly would be more effective.]
+                        
                     </li>
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Custard Bread 4.jpg">
@@ -168,17 +177,17 @@
                             <img src = "Pictures/Recipe - Custard Bread 5.gif">
                         </div>
                     <li>Let it proof for 30 minutes at least, the size should be 80% more (ideally it's doubled).
-                        <Br><Br><span class = "note">[The last proofing time depends on weather also. In Summer it can be 30 minutes, in Winter it can be 1 hour. ]</span>
+                        <Br><span class = "note">[The last proofing time depends on weather also. In Summer it can be 30 minutes, in Winter it can be 1 hour. ]</span>
                     </li>
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Custard Bread 6.png">
                         </div>
                     <li>Brush some milk on top of the bread before baking, to let them look better after coming out of the oven.</li>
                     <li>Pre-heat the oven for 3 minutes at 240&#8451, then bake for 17 minutes, at 180&#8451.
-                        <Br><Br><span class = "note">[Fan option of the oven would be good to be picked. Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
+                        <Br><span class = "note">[Fan option of the oven would be good to be picked. Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
                     </li>
                         <div class="stepspic">
-                            <img src = "Pictures/Recipe - Custard Bread 7.jpg">
+                            <img src = "Pictures/Recipe - Custard Bread 1.jpg">
                         </div>
                 </ul>
                 
@@ -214,6 +223,29 @@
             }
         }
     </script>
+
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1"]
+        showSlides(1, 0);
+        
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
 </body>
 
 </html>
+
+
