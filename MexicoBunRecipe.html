@@ -23,10 +23,8 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
-  <!-- My CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- My CSS -->
   <link rel="stylesheet" href="style/MexicoBunRecipe.css">
 </head>
 
@@ -51,11 +49,22 @@
     <!-- left hand side images-->
 
     <div class="recipebakerypic">
-        <img src="Pictures/Recipe - Mexico Bun 1.gif">
-    </div>
-
-    <div class="recipebakerypicformobile">
-        <img src="Pictures/Recipe - Mexico Bun for mobile.gif">
+        <div class="picturesshown">
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Mexico Bun 1.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Mexico Bun - 2.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Mexico Bun - 3.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
     </div>
 
 
@@ -162,7 +171,7 @@
                             <img src = "Pictures/Recipe - Matcha Mushroom Bread 4.jpg">
                         </div>  
                     <li>Knead the dough into round shape, then let it rise under a warm condition until its size is doubled. Cover it with wet cloth otherwise the dough will be dried out.
-                        <Br><Br><span class = "note">[Time may vary under different weather condition, in Summer it can be an hour, in Winter it can be 2 hours.]</span>
+                        <Br><span class = "note">[Time may vary under different weather condition, in Summer it can be an hour, in Winter it can be 2 hours.]</span>
                         </li> 
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Matcha Mushroom Bread 5.jpg">
@@ -176,7 +185,7 @@
                             <img src = "Pictures/Recipe - Matcha Mushroom Bread 7.jpg">
                         </div>  
                     <li>Knead each round dough into round shape again, then let it proof for 30 minutes at least, the size should be doubled.
-                        <Br><Br><span class = "note">[The last proofing time depends on weather also. In Summer it can be 30 minutes, in Winter it can be 1 hour. ]</span>
+                        <Br><span class = "note">[The last proofing time depends on weather also. In Summer it can be 30 minutes, in Winter it can be 1 hour. ]</span>
                     </li>
                     <li>For top ingredients, first take butter out of the fridge to let it soften. Then mix it well with icing sugar. Flour is then added in to mix everything well together.</li>
                     <li>Divide the batter by half. Melt the coffee powder and matcha powder with hot water separately before adding to the batter.</li>
@@ -189,7 +198,7 @@
                             <img src = "Pictures/Recipe - Mexico Bun 2.jpg">
                         </div>
                     <li>Pre-heat the oven for 3 minutes at 240&#8451, then bake for 17 minutes, at 180&#8451.
-                        <Br><Br><span class = "note">[Fan option of the oven would be good to be picked. Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
+                        <Br><span class = "note">[Fan option of the oven would be good to be picked. Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
                     </li>
                         <div class="stepspic">
                             <img src = "Pictures/Bread - Mexico Bun.jpg">
@@ -228,6 +237,29 @@
             }
         }
     </script>
+
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1"]
+        showSlides(1, 0);
+        
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
 </body>
 
 </html>
+
+
