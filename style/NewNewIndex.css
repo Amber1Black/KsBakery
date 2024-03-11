@@ -1981,6 +1981,7 @@ nav ul li a:hover::after{
     
     .firstpartmiddlepic img{
         width: 94%;  
+        border-radius: 6px;
     }
     
     .firstpartmiddlepic h1{
@@ -1999,9 +2000,12 @@ nav ul li a:hover::after{
     
     .firstpartlowersection h2{
         text-align: center;
+        font-family: 'Roboto', sans-serif;
         font-size: 35px;
+        letter-spacing: 4px;
+        line-height: 1.3em;
         margin: 40px 20px 10px 20px;
-        font-weight: 500;
+        font-weight: 450;
         color: #3d3d3d;
     }
     
@@ -2333,8 +2337,9 @@ nav ul li a:hover::after{
     }
 
     .firstpartlowersection h2{
-        font-size: 28px;
+        font-size: 32px;
         margin-top: 30px;
+        letter-spacing: 3px;
     }
 
     /*Second Section*/
@@ -2407,7 +2412,7 @@ nav ul li a:hover::after{
     }
 
     .firstpartlowersection h2{
-        font-size: 25px;
+        font-size: 28px;
         margin-top: 30px;
     }
 
@@ -2445,12 +2450,14 @@ nav ul li a:hover::after{
     }
 
     .firstpartlowersection h2{
-        font-size: 20px;
-        margin: 25px 20px 10px 20px;
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin: 25px 20px 15px 20px;
     }
 
     .firstpartlowersection p{
         margin-top: 10px;
+        font-size: 15px;
     }
 }
 
