@@ -132,13 +132,6 @@ nav ul li a:hover::after{
     color: #575757;
 }
 
-.igreel{
-    width: 28px;
-    margin-right: 8px;
-    margin-top: 2px;
-    align-items: center;
-}
-
 .recipe-what-you-need h2, .recipe-what-to-do h2{
     font-size: 25px;
     font-weight: 600;
@@ -597,12 +590,6 @@ li{
         margin-right: 30px;
     }
 
-    .igreel{
-        width: 28px;
-        margin: 0px;
-        display: flex;
-    }
-
     .recipe-what-you-need h4{
         margin: 10px 0px 10px 30px;
     }
@@ -819,10 +806,6 @@ li{
     .recipe h3{
         letter-spacing: 5px;
         margin: 0px 0px 20px 0px;
-    }
-    
-    .igreel{
-        width: 26px;
     }
     
     .recipe-what-you-need h2,
