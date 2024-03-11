@@ -434,9 +434,18 @@ h3{
 
 
 @media only screen and (max-width:950px){
+
+    /*Headings*/
+
     .logo{
         margin-left: 40px;
     }
+
+    nav ul li{
+        margin-right: 2em;
+    }
+
+    /*Top Section*/
 
     .topdisplayimage img{
         height: 450px;
@@ -577,6 +586,57 @@ h3{
 
 @media only screen and (max-width:700px){
 
+    .topdisplay{
+        display: none;
+    }
+
+    .topdisplayformobile{
+        display: grid;
+        position: relative;
+        margin: 0px;
+    }
+
+    .topdisplayimageformobile{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .topdisplayimageformobile img{
+        width: 100%;
+        object-fit: cover;
+        margin: 0px;
+    }
+
+    .description{
+        margin: 0px;
+        
+    }
+
+    .description h1{
+        position: absolute;
+        top: 13%;
+        right: 15%;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #000000;
+        text-align: right;
+        font-size: 13vw;
+        letter-spacing: 7px;
+    }
+
+    .description p{
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        margin: 0px;
+        width: 70%;
+        font-weight: 600;
+        color: #ffffff;
+        text-shadow: 1px 1px 1px #000000;
+        font-size: 3.5vw;
+        text-align: right;
+    }
+
     /*grid*/
 
     h3{
@@ -594,50 +654,6 @@ h3{
     }
 }
 
-
-@media only screen and (max-width:660px){
-
-    .topdisplay{
-        grid-template-columns: 1fr;
-    }
-
-    .topdisplayimage{
-        display: none;
-    }
-
-    .topdisplayimageforsmallerscreen{
-        display: flex;
-        justify-content: center;
-    }
-
-    .topdisplayimageforsmallerscreen img{
-        max-width: 90%;
-    }
-
-    .description{
-        margin: 0px;
-    }
-
-    .description h1, .description h2{
-        font-size: 20vw;
-        letter-spacing: 8px;
-    }
-    
-    .description h1{
-        text-align: center;
-        margin: -80px 80px 0px 0px;
-    }
-    
-    .description h2{
-        text-align: center;
-        margin: -10px 0px 0px 100px;
-    }
-
-    .description p{
-        margin: 10px 50px 50px 50px;
-    }
-
-}
 
 
 @media only screen and (max-width:650px){
@@ -750,20 +766,24 @@ h3{
     }
 }
 
-@media only screen and (max-width:500px){
 
-    .description h1, .description h2{
-        font-size: 20vw;
-        letter-spacing: 4px;
-    }
+@media only screen and (max-width:550px){
 
     .description h1{
-        margin-top: -60px;
+        right: 17%;
     }
-    
+}
+
+@media only screen and (max-width:500px){
+
+    .description h1{
+        right: 19%;
+        letter-spacing: 5px;
+    }
+
     .description p{
-        font-size: 14px;
-        margin: 20px 40px 50px 40px; 
+        font-size: 18px;
+        width: 75%;
     }
 
     /*grid*/
@@ -789,22 +809,31 @@ h3{
     }
 }
 
+
 @media only screen and (max-width:450px){
 
-    .description h1, .description h2{
-        font-size: 20vw;
-        letter-spacing: 3px;
-    }
-
     .description h1{
-        margin-top: -50px;
-    }
-    
-    .description p{
-        font-size: 14px;
-        margin: 10px 30px 50px 30px; 
+        top: 14%;
+        right: 19%;
+        letter-spacing: 5px;
     }
 
-    
+    .description p{
+        font-size: 17px;
+        width: 77%;
+    }
 }
 
+@media only screen and (max-width:420px){
+
+    .description h1{
+        top: 14%;
+        right: 21%;
+        letter-spacing: 5px;
+    }
+
+    .description p{
+        font-size: 17px;
+        width: 83%;
+    }
+}
