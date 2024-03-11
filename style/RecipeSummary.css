@@ -83,7 +83,9 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-
+.topdisplayformobile{
+    display: none;
+}
 
 .topdisplay{
     display: grid;
