@@ -23,10 +23,8 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
-  <!-- My CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- My CSS -->
   <link rel="stylesheet" href="style/FlowerCookieRecipe.css">
 </head>
 
@@ -51,11 +49,22 @@
     <!-- left hand side images-->
 
     <div class="recipebakerypic">
-        <img src="Pictures/Recipe - Flower Cookie.jpg">
-    </div>
-
-    <div class="recipebakerypicformobile">
-        <img src="Pictures/Recipe - Flower Cookie for mobile.jpg">
+        <div class="picturesshown">
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Flower Cookie.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Flower Cookie - 2.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Flower Cookie - 3.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
     </div>
 
 
@@ -96,7 +105,13 @@
                 <h2>What to do</h2>
                 <ul class = "a">
                     <li>Take the butter out of the fridge to let it soften</li>
+                        <div class="stepspic">
+                            <img src = "Pictures/Recipe - Flower Cookie 5.jpg"> 
+                        </div>
                     <li>Add sugar by batches to mix well together</li>
+                        <div class="stepspic">
+                            <img src = "Pictures/Recipe - Flower Cookie 6.jpg"> 
+                        </div>
                     <li>Add egg by 2 times to mix well together</li>
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Flower Cookie 1.png"> 
@@ -105,7 +120,6 @@
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Flower Cookie 2.png"> 
                         </div>
-                    
                     <li>Pipe the batter to flower shape with nozzle 1M or 2D</li>
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Flower Cookie 3.png"> 
@@ -115,10 +129,10 @@
                             <img src = "Pictures/Recipe - Flower Cookie 4.png"> 
                         </div>
                     <li>Pre-heat the oven at 240&#8451 for 3 minutes, then bake for 18 minutes at 180&#8451.
-                        <Br><Br><span class = "note">[Every oven are different, have to do some testing to see which duration and temperature suit the best. Bake till the cookie turned golden colour.]</span>
+                        <Br><span class = "note">[Every oven are different, have to do some testing to see which duration and temperature suit the best. Bake till the cookie turned golden colour.]</span>
                     </li>
                         <div class="stepspic">
-                            <img src = "Pictures/Recipe - Flower Cookie 5.png">
+                            <img src = "Pictures/Recipe - Flower Cookie.jpg">
                         </div>
                 </ul>
                 
@@ -152,6 +166,27 @@
             {
                 menulist.style.maxHeight = "0px";
             }
+        }
+    </script>
+
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1"]
+        showSlides(1, 0);
+        
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
         }
     </script>
 </body>
