@@ -119,7 +119,7 @@ nav ul li a:hover::after{
     font-weight: 800;
     letter-spacing: 6px;
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 13px;
 }
 
@@ -800,7 +800,7 @@ li{
     .recipe h1{
         letter-spacing: 5px;
         font-size: 23px;
-        margin: 13px 0px 20px 0px;
+        margin: 13px 0px 0px 0px;
     }
     
     .recipe h3{
@@ -898,7 +898,6 @@ li{
     .recipe h1{
         letter-spacing: 3px;
         font-size: 23px;
-        margin: 10px 0px 20px 0px;
     }
 
     .ingredients-col h3,
@@ -954,7 +953,6 @@ li{
     .recipe h1{
         letter-spacing: 2px;
         font-size: 23px;
-        margin: 13px 0px 20px 0px;
     }
 
     .recipe-what-you-need h4{
@@ -1017,7 +1015,6 @@ li{
     .recipe h1{
         letter-spacing: 1px;
         font-size: 23px;
-        margin: 13px 0px 20px 0px;
     }
 
     .recipe-what-you-need h4{
