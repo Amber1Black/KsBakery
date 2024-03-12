@@ -252,7 +252,7 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:950px){
     .logo{
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
     nav{
@@ -335,10 +335,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:700px){
-
-    nav ul li{
-        margin-right: 1.8em;
-    }
 
     .contact-right img{
         width: 230px;
