@@ -9,11 +9,13 @@
 
 .headingsection{
     height: 88%;
+    width: 100%;
     display: flex;
     align-items: center; 
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 100;
 }
 
 .logo{
@@ -46,14 +48,15 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 2em;
-    background-color: white;
-    
+    margin-right: 3em;
+    background-color: white; 
 }
 
 nav ul li a{
     text-decoration: none;
-    color: #707070;
+    color: #575757;
+    font-weight: 400;
+    letter-spacing: 1px;
     font-size: 14px;
     background-color: white;
     position: relative;
@@ -78,7 +81,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-
 
 /*content*/
 
@@ -305,7 +307,16 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:950px){
     .logo{
-        margin-left: 40px;
+        margin-left: 20px;
+    }
+
+    nav{
+        padding-right: 1%;
+    }
+
+    nav ul li{
+        margin-right: 2.5em;
+        font-size: 13px;
     }
     
     .photodisplay{
