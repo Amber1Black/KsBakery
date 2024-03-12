@@ -58,7 +58,7 @@ nav ul li a{
     color: #575757;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 14px;
     background-color: white;
     position: relative;
 }
@@ -82,6 +82,8 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+
 
 .topdisplayformobile{
     display: none;
@@ -440,11 +442,16 @@ h3{
     /*Headings*/
 
     .logo{
-        margin-left: 40px;
+        margin-left: 20px;
+    }
+
+    nav{
+        padding-right: 1%;
     }
 
     nav ul li{
-        margin-right: 2em;
+        margin-right: 2.5em;
+        font-size: 13px;
     }
 
     /*Top Section*/
