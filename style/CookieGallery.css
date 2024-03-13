@@ -96,7 +96,7 @@ nav ul li a:hover::after{
 
 /*message on top*/
 
-.topdisplayforsmallerscreen{
+.topdisplayformobile{
     display: none;
 }
 
