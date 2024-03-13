@@ -501,16 +501,16 @@ nav ul li a:hover::after{
     }
     
     .topdisplayformobile img{
-        width: 95%;
+        width: 91%;
         object-fit: cover;
         border-radius: 5px;
     }
     
     .message{
         position: absolute;
-        top: 15px;
-        left: 30px;
-        right: 30px;
+        top: 13px;
+        left: 43px;
+        right: 43px;
         background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
         z-index: 1;
         border-radius: 5px;
@@ -673,6 +673,17 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:550px){
+
+    .message{
+        top: 13px;
+        left: 35px;
+        right: 35px;
+        padding: 25px;
+    }
+}
+
+
 @media only screen and (max-width:500px){
 
     /*Top Section*/
@@ -680,8 +691,8 @@ nav ul li a:hover::after{
     .message{
         position: absolute;
         top: 10px;
-        left: 20px;
-        right: 20px;
+        left: 30px;
+        right: 30px;
         padding: 20px 30px 20px 30px;
     }
 
@@ -721,8 +732,8 @@ nav ul li a:hover::after{
 
     .message{
         top: 10px;
-        left: 20px;
-        right: 20px;
+        left: 28px;
+        right: 28px;
         padding: 20px 20px 20px 20px;
     }
 
@@ -752,13 +763,26 @@ nav ul li a:hover::after{
 
     .message{
         top: 10px;
-        left: 20px;
-        right: 20px;
-        padding: 20px 15px 20px 15px;
+        left: 25px;
+        right: 25px;
+        padding: 20px 12px 20px 12px;
     }
 
     .message h1{
         font-size: 8vw;
         line-height: 1em;
+    }
+}
+
+
+@media only screen and (max-width:380px){
+
+    /*Top Section*/
+
+    .message{
+        top: 10px;
+        left: 23px;
+        right: 23px;
+        padding: 20px 10px 20px 10px;
     }
 }
