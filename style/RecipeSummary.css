@@ -616,22 +616,24 @@ h3{
     .topdisplayformobile{
         display: grid;
         position: relative;
+        justify-items: center;
     }
     
     .topdisplayformobile img{
-        width: 100%;
+        width: 92%;
         object-fit: cover;
+        border-radius: 5px;
     }
     
     .message{
         position: absolute;
-        top: 15px;
-        left: 15px;
-        right: 15px;
+        top: 13px;
+        left: 38px;
+        right: 38px;
         background-color: rgba(0,0,0, 0.65); /* Black w/opacity/see-through */
         z-index: 1;
         border-radius: 5px;
-        padding: 30px;
+        padding: 20px 30px 20px 30px;
     }
     
     .message h1{
@@ -639,14 +641,14 @@ h3{
         font-family: 'Playfair Display', sans-serif;
         font-weight: 900;
         letter-spacing: 3px;
-        font-size: 11vw;
+        font-size: 10vw;
         text-align: right;
         text-shadow: 1px 1px 1px black;
     }
     
     .message p{
         color: #ffffff;
-        margin: 5px 0px 0px 110px;
+        margin: 5px 0px 0px 50px;
         font-family: 'Poppins', sans-serif;
         letter-spacing: 1px;
         font-size: 16px;
@@ -676,7 +678,7 @@ h3{
 @media only screen and (max-width:650px){
 
     .message p{
-        margin: 5px 0px 10px 60px;
+        margin: 5px 0px 0px 20px;
     }
 
     h3{
@@ -766,8 +768,15 @@ h3{
 
     /*Top Section*/
 
+    .message{
+        top: 13px;
+        left: 35px;
+        right: 35px;
+        padding: 20px 25px 20px 25px;
+    }
+
     .message p{
-        margin: 5px 0px 10px 8px;
+        margin: 5px 0px 0px 0px;
     }
 
     /*grid*/
@@ -796,6 +805,18 @@ h3{
 
 @media only screen and (max-width:550px){
 
+    .message{
+        position: absolute;
+        top: 10px;
+        
+        padding: 10px 15px 10px 15px;
+    }
+
+    .message h1{
+        letter-spacing: 3px;
+        font-size: 9vw;
+    }
+
     .message p{
         font-size: 15px;
     }
@@ -807,15 +828,13 @@ h3{
     /*Top Section*/
 
     .message{
-        padding: 15px 25px 15px 25px;
-    }
-
-    .message h1{
-        font-size: 10vw;
+        left: 28px;
+        right: 28px;
+        padding: 15px 20px 15px 20px;
     }
 
     .message p{
-        margin: 5px 0px 5px 80px;
+        margin: 5px 0px 5px 70px;
     }
 
     /*grid*/
@@ -846,8 +865,21 @@ h3{
 
     /*Top Section*/
 
+    .message{
+        left: 25px;
+        right: 25px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    .message h1{
+        letter-spacing: 3px;
+        font-size: 8vw;
+    }
+
+
     .message p{
         margin: 5px 0px 5px 40px;
+        line-height: 1.3em;
     }
 }
 
@@ -857,7 +889,7 @@ h3{
     /*Top Section*/
 
     .message p{
-        margin: 5px 0px 5px 30px;
+        margin: 5px 0px 5px 20px;
         font-size: 14px;
     }
 }
