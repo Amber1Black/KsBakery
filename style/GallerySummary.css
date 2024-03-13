@@ -102,15 +102,15 @@ nav ul li a:hover::after{
 }
 
 .description{
-    margin: 20px -20px 20px 80px;
+    margin: 20px 0px 0px 80px;
     display: grid;
     align-self: center;
 }
 
 .description h1{
-    font-size: 11vw;
+    font-size: 10vw;
     font-weight: 900;
-    letter-spacing: 12px;
+    letter-spacing: 10px;
     font-family: 'DM Serif Display', sans-serif;
     text-align: center;
     line-height: 1.1em;
@@ -246,6 +246,10 @@ nav ul li a:hover::after{
 
     /*Top Section*/
 
+    .description h1{
+        font-size: 9vw;
+    }
+
     .topdisplayimage img{
         width: 630px;
         object-fit: cover;
@@ -259,7 +263,17 @@ nav ul li a:hover::after{
     /*Top Section*/
 
     .description{
-        margin: 20px -20px 20px 50px;
+        margin: 20px 0px 20px 60px;
+    }
+
+    .description p{
+        font-size: 17px;
+        margin: 30px 0px 0px 0px;
+    }
+
+    .topdisplayimage img{
+        width: 580px;
+        margin: 20px 0px 20px 0px;
     }
 
     /*Gallery Grid*/
@@ -296,26 +310,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1150px){
-
-    /*Top Section*/
-
-    .description{
-        margin: 20px -80px 20px 50px;
-    }
-
-    .description h1{
-        font-size: 11vw;
-        letter-spacing: 8px;
-    }
-
-    .description p{
-        margin-right: 70px;
-    }
-
-    .topdisplayimage img{
-        width: 580px;
-        margin: 20px 0px 20px 0px;
-    }
 
     /*Gallery Grid*/
 
@@ -363,16 +357,23 @@ nav ul li a:hover::after{
         font-size: 16px;
     }
 
-    .message1 p, .message2 p, .redirection a{
-        font-size: 16px;
+    .topdisplayimage img{
+        width: 530px;
+        margin: 20px 0px 20px 0px;
     }
 
+    
     /*Gallery Grid*/
 
     .gallerycontent{
         row-gap: 60px;
         margin-top: 80px;
     }
+
+    .message1 p, .message2 p, .redirection a{
+        font-size: 16px;
+    }
+
 
 }
 
@@ -394,19 +395,13 @@ nav ul li a:hover::after{
     /*Top Section*/
 
     .description{
-        margin: 20px -80px 20px 30px;
+        margin: 20px -20px 20px 50px;
     }
-
-    .description h1{
-        font-size: 11vw;
-        letter-spacing: 5px;
-    }
-
+    
     .topdisplayimage img{
         width: 500px;
         margin: 20px 0px 20px 0px;
     }
- 
 }
 
 
@@ -459,7 +454,7 @@ nav ul li a:hover::after{
     }
 
     .description h1{
-        font-size: 11vw;
+        font-size: 10vw;
         letter-spacing: 5px;
     }
 
@@ -494,40 +489,39 @@ nav ul li a:hover::after{
         display: grid;
         position: relative;
     }
-
-    .topdisplayimageformobile{
-        display: grid;
-    }
-
-    .topdisplayimageformobile img{
+    
+    .topdisplayformobile img{
         width: 100%;
-        height: 850px;
         object-fit: cover;
     }
-
-    .description{
-        margin: 0px;
-        
-    }
-
-    .description h1{
+    
+    .message{
         position: absolute;
-        top: 5%;
-        right: 5%;
-        color: #ffffff;
-        text-shadow: 2px 2px 2px #000000;
-        text-align: right;
-        font-size: 15vw;
-        letter-spacing: 7px;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+        z-index: 1;
+        border-radius: 5px;
+        padding: 30px;
     }
-
-    .description p{
-        margin: 30px;
-        width: 85%;
-        font-weight: 450;
-        color: black;
-        text-shadow: 1px 1px 1px #ffffff;
+    
+    .message h1{
+        color: #ffffff;
+        font-family: 'DM Serif Display', sans-serif;
+        letter-spacing: 4px;
+        font-size: 11vw;
+        line-height: 1.1em;
+        text-align: right;
+    }
+    
+    .message p{
+        color: #ffffff;
+        margin-top: 10px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
         font-size: 16px;
+        text-align: right;
     }
 
 }
@@ -619,14 +613,6 @@ nav ul li a:hover::after{
         padding-right: 10px;
     }
 
-    /*Top Section*/
-
-    .topdisplayimageformobile img{
-        width: 100%;
-        height: 700px;
-        object-fit: cover;
-    }
-
     /*Gallery Grid*/
    
     .gallerygrid1, .gallerygrid2, .gallerygrid3, .gallerygrid4, .gallerygrid5{
@@ -678,10 +664,26 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:500px){
 
-    .description p{
-        width: 87%;
+    /*Top Section*/
+
+    .message{
+        padding: 20px;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .message h1{
+        font-size: 10vw;
+        line-height: 1.1em;
+    }
+    
+    .message p{
+        letter-spacing: 1px;
         font-size: 15px;
-    }  
+    }
+
+    /*Gallery Grid*/
 
     .gallerygrid1, .gallerygrid2, .gallerygrid3, .gallerygrid4, .gallerygrid5{
         max-width: unset;
@@ -701,19 +703,24 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:470px){
+@media only screen and (max-width:450px){
 
-    .description h1{
-        bottom: 12%;
-        right: 2%;
+    /*Top Section*/
+
+    .message{
+        padding: 20px;
+        top: 10px;
+        left: 10px;
+        right: 10px;
     }
 
-      
+    .message p{
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
 
-}
+    /*Gallery Grid*/
 
-
-@media only screen and (max-width:450px){
     .message1 h2, .message2formobile h2{
         font-size: 10vw;
         font-weight: 700;
@@ -726,19 +733,3 @@ nav ul li a:hover::after{
     }
 }
 
-
-@media only screen and (max-width:410px){
-
-    .description h1{
-        bottom: 12%;
-        right: 2%;
-    }
-
-    .description p{
-        bottom: 1%;
-        right: 3%;
-        width: 87%;
-        font-size: 15px;
-    }    
-
-}
