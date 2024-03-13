@@ -25,9 +25,7 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <!-- My CSS -->
   <link rel="stylesheet" href="style/CakeGallery.css">
 </head>
@@ -42,9 +40,10 @@
                     <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
                     <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
                     <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+                    <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
                 </ul>
             </nav>
-            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
     </div>
     
     <div class="content">
@@ -59,13 +58,10 @@
             </div>
         </div>
 
-        <div class="topdisplayforsmallerscreen">
-            <div class="topdisplayimageforsmallerscreen">
-                <img src ="Pictures/Outline - Coffee Cake with shadow.png">
-            </div>
-            <div class="descriptionforsmallerscreen">
-                <h1>Cake</h1>   
-                <h2>Gallery</h2>
+        <div class="topdisplayformobile">
+            <img src ="Pictures/Cake Gallery Cover.jpg">
+            <div class="message">
+                <h1>Cake Gallery</h1>
                 <p>The fluffy cake matches perfectly with the smooth cream. Cake can't be missed when there're important & festive days.</p>
             </div>
         </div>
@@ -73,55 +69,104 @@
         <div class="gallerycontent reveal">
 
             <div class="column">
-                <h3>Cream Cake</h3>
-                <img src="Pictures/Cake Gallery - Purple Cake.jpg">
-                <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
+                <div class="specialreveal reveal2">
+                    <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
+                    <p>Coffee Genoise</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
+                    <p>Coffee Cream Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Letter C.jpg">
+                    <p>Letter "C" Cake</p>
+                </div> 
                 <div class="specialreveal reveal2">
                     <img src="Pictures/Cake Gallery - Coffee Cake Roll.jpg">
+                    <p>Coffee Cake Roll</p>
                 </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cake Gallery - Flower Cupcake.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Simple Opera.jpg">
+                    <p>Simple Opera</p>
                 </div>
-                <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
+                
             </div>
             
             <div class="column">
-                <img src="Pictures/Cake Gallery - Crown Cake.jpg">
-                <img src="Pictures/Cake Gallery - Flower Cake.jpg">
-                <img src="Pictures/Cake Gallery - Mango Cake.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Crown Cake.jpg">
+                    <p>Crown Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Flower Cake.jpg">
+                    <p>Flower Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Mango Cake.jpg">
+                    <p>Mango Cake</p>
+                </div>
                 <div class="specialreveal reveal2">
                     <img src="Pictures/Cake Gallery - Matcha Cake Roll.jpg">
+                    <p>Matcha Cake Roll</p>
                 </div>
-                <div class="specialreveal reveal3">
-                    <h3>Cup-Cake</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Madeleine.jpg">
+                    <p>Madeleine</p>
                 </div>
-                <img src="Pictures/Cake Gallery - Madeleine.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
+                    <p>Basque Cheesecake</p>
+                </div>
             </div> 
 
             <div class="column">
-                <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
-                <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
-                <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
-                <div class="specialreveal reveal2">
-                    <h3>Cake Roll</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Purple Cake.jpg">
+                    <p>Purple Cream Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
+                    <p>Purple Nuts Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
+                    <p>Dragon Ball Cake</p>
+                </div>
+                <div class="gallerygrid reveal2">
+                    <img src="Pictures/Cake Gallery - Coffee Cake Roll 2.jpg">
+                    <p>Coffee Cake Roll</p>
                 </div>
                 <div class="specialreveal reveal3">
-                    <img src="Pictures/Cake Gallery - XMas Tree Cupcake.jpg">
+                    <img src="Pictures/Cake Gallery - Flower Cupcake.jpg">
+                    <p>Flower Cupcake</p>
                 </div>
-                <img src="Pictures/Cake Gallery - Simple Opera.jpg">
+                
             </div>
             
             <div class="column">
-                <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
-                <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
-                <img src="Pictures/Cake Gallery - Choco Cake.jpg">
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cake Gallery - Coffee Cake Roll 2.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
+                    <p>Matcha Cake</p>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
+                    <p>Skirt Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Choco Cake.jpg">
+                    <p>Choco Cake</p>
+                </div>
+                <div class="gallerygrid reveal3">
+                    <img src="Pictures/Cake Gallery - XMas Tree Cupcake.jpg">
+                    <p>X'Mas Tree Cupcake</p>
+                </div>
+                <div class="gallerygrid reveal3">
                     <img src="Pictures/Cake Gallery - Cupcake.jpg">
+                    <p>Cupcake</p>
                 </div>
-                <img src="Pictures/Cake Gallery - Letter C.jpg">
             </div>
 
         </div>
@@ -129,113 +174,210 @@
 
         <div class="gallerycontent2 reveal">
             <div class="column">
-                <h3>Cream Cake</h3>
-                <img src="Pictures/Cake Gallery - Purple Cake.jpg">
-                <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
-                <img src="Pictures/Cake Gallery - Choco Cake.jpg">
+                <div class="specialreveal reveal2">
+                    <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
+                    <p>Coffee Genoise</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
+                    <p>Coffee Cream Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
+                    <p>Matcha Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Letter C.jpg">
+                    <p>Letter "C" Cake</p>
+                </div> 
                 <div class="specialreveal reveal2">
                     <img src="Pictures/Cake Gallery - Coffee Cake Roll.jpg">
+                    <p>Coffee Cake Roll</p>
                 </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cake Gallery - XMas Tree Cupcake.jpg">
+                <div class="gallerygrid reveal3">
+                    <img src="Pictures/Cake Gallery - Cupcake.jpg">
+                    <p>Cupcake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Simple Opera.jpg">
+                    <p>Simple Opera</p>
                 </div>
                 
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cake Gallery - Cupcake.jpg">
-                </div>
-                <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
             </div>
             
             <div class="column">
-                <img src="Pictures/Cake Gallery - Crown Cake.jpg">
-                <img src="Pictures/Cake Gallery - Flower Cake.jpg">
-                <img src="Pictures/Cake Gallery - Mango Cake.jpg">
-                <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
-                <div class="specialreveal reveal2">
-                    <h3>Cake Roll</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Crown Cake.jpg">
+                    <p>Crown Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Flower Cake.jpg">
+                    <p>Flower Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Mango Cake.jpg">
+                    <p>Mango Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Choco Cake.jpg">
+                    <p>Choco Cake</p>
                 </div>
                 <div class="specialreveal reveal2">
                     <img src="Pictures/Cake Gallery - Matcha Cake Roll.jpg">
+                    <p>Matcha Cake Roll</p>
                 </div>
-                <div class="specialreveal reveal3">
-                    <h3>Cup-Cake</h3>
-                </div>
-                <img src="Pictures/Cake Gallery - Madeleine.jpg">
                 
+                <div class="gallerygrid reveal3">
+                    <img src="Pictures/Cake Gallery - XMas Tree Cupcake.jpg">
+                    <p>X'Mas Tree Cupcake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Madeleine.jpg">
+                    <p>Madeleine</p>
+                </div>
             </div> 
 
             <div class="column">
-                <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
-                <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
-                <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
-                <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
-                <div class="specialreveal reveal2">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Purple Cake.jpg">
+                    <p>Purple Cream Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
+                    <p>Purple Nuts Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
+                    <p>Skirt Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
+                    <p>Dragon Ball Cake</p>
+                </div>
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Cake Gallery - Coffee Cake Roll 2.jpg">
+                    <p>Coffee Cake Roll</p>
                 </div>
                 <div class="specialreveal reveal3">
                     <img src="Pictures/Cake Gallery - Flower Cupcake.jpg">
+                    <p>Flower Cupcake</p>
                 </div>
-                <img src="Pictures/Cake Gallery - Letter C.jpg">
-                <img src="Pictures/Cake Gallery - Simple Opera.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
+                    <p>Basque Cheesecake</p>
+                </div>
             </div>
+            
         </div>
         
         <div class="gallerycontent3 reveal">
             <div class="column">
-                <h3>Cream Cake</h3>
-                <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
-                <img src="Pictures/Cake Gallery - Purple Cake.jpg">
-                <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
-                <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
-                <img src="Pictures/Cake Gallery - Choco Cake.jpg">
                 <div class="specialreveal reveal2">
-                    <h3>Cake Roll</h3>
+                    <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
+                    <p>Coffee Genoise</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
+                    <p>Coffee Cream Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
+                    <p>Matcha Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
+                    <p>Purple Nuts Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
+                    <p>Skirt Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
+                    <p>Dragon Ball Cake</p>
+                </div>
+                
                 <div class="specialreveal reveal2">
                     <img src="Pictures/Cake Gallery - Coffee Cake Roll.jpg">
+                    <p>Coffee Cake Roll</p>
                 </div>
                 <div class="specialreveal reveal3">
                     <img src="Pictures/Cake Gallery - Flower Cupcake.jpg">
+                    <p>Flower Cupcake</p>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid reveal3">
                     <img src="Pictures/Cake Gallery - Cupcake.jpg">
+                    <p>Cupcake</p>
                 </div>
-                <img src="Pictures/Cake Gallery - Letter C.jpg">
-                <img src="Pictures/Cake Gallery - Simple Opera.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Simple Opera.jpg">
+                    <p>Simple Opera</p>
+                </div>
+                
             </div>
             
             <div class="column">
-                <img src="Pictures/Cake Gallery - Crown Cake.jpg">
-                <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
-                <img src="Pictures/Cake Gallery - Flower Cake.jpg">
-                <img src="Pictures/Cake Gallery - Mango Cake.jpg">
-                <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
-                <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cake Gallery - Coffee Cake Roll 2.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Crown Cake.jpg">
+                    <p>Crown Cake</p>
                 </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Purple Cake.jpg">
+                    <p>Purple Cream Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Flower Cake.jpg">
+                    <p>Flower Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Mango Cake.jpg">
+                    <p>Mango Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Choco Cake.jpg">
+                    <p>Choco Cake</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Letter C.jpg">
+                    <p>Letter "C" Cake</p>
+                </div> 
                 <div class="specialreveal reveal2">
                     <img src="Pictures/Cake Gallery - Matcha Cake Roll.jpg">
+                    <p>Matcha Cake Roll</p>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid reveal2">
+                    <img src="Pictures/Cake Gallery - Coffee Cake Roll 2.jpg">
+                    <p>Coffee Cake Roll</p>
+                </div>
+                <div class="gallerygrid reveal3">
                     <img src="Pictures/Cake Gallery - XMas Tree Cupcake.jpg">
+                    <p>X'Mas Tree Cupcake</p>
                 </div>
-                <div class="specialreveal reveal3">
-                    <h3>Cup-Cake</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Madeleine.jpg">
+                    <p>Madeleine</p>
                 </div>
-                
-                <img src="Pictures/Cake Gallery - Madeleine.jpg">
-                
-                <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
+                    <p>Basque Cheesecake</p>
+                </div>
             </div> 
 
-        </div>   
+        </div>
+            
 
     </div>
+   
     <div class="backbutton">
         <a href="https://www.k-bakery.com/GallerySummary">Back &#8629</a>
     </div>
-
+    
     <div class="copyright">
         Copyright &#169 2023 K's Bakery
     </div>
@@ -329,3 +471,5 @@
 </body>
 
 </html>
+
+
