@@ -104,7 +104,7 @@ nav ul li a:hover::after{
 }
 
 .description h1, .description h2{
-    font-size: 15vw;
+    font-size: 12vw;
     font-weight: 700;
     letter-spacing: 12px;
     font-family: 'DM Serif Display', sans-serif;
@@ -602,48 +602,42 @@ h3{
     .topdisplayformobile{
         display: grid;
         position: relative;
-        margin: 0px;
     }
-
-    .topdisplayimageformobile{
-        display: flex;
-        justify-content: center;
-        margin: 0px;
-    }
-
-    .topdisplayimageformobile img{
+    
+    .topdisplayformobile img{
         width: 100%;
         object-fit: cover;
-        margin: 0px;
     }
-
-    .description{
-        margin: 0px;
-        
-    }
-
-    .description h1{
+    
+    .message{
         position: absolute;
-        top: 13%;
-        right: 15%;
-        color: #ffffff;
-        text-shadow: 1px 1px 1px #000000;
-        text-align: right;
-        font-size: 13vw;
-        letter-spacing: 7px;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        background-color: rgba(0,0,0, 0.65); /* Black w/opacity/see-through */
+        z-index: 1;
+        border-radius: 5px;
+        padding: 30px;
     }
-
-    .description p{
-        position: absolute;
-        top: 3%;
-        right: 5%;
-        margin: 0px;
-        width: 70%;
-        font-weight: 600;
+    
+    .message h1{
         color: #ffffff;
-        text-shadow: 1px 1px 1px #000000;
-        font-size: 3.5vw;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: 900;
+        letter-spacing: 3px;
+        font-size: 11vw;
         text-align: right;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    .message p{
+        color: #ffffff;
+        margin: 5px 0px 0px 110px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: right;
+        text-shadow: 1px 1px 1px black;
     }
 
     /*grid*/
@@ -666,6 +660,10 @@ h3{
 
 
 @media only screen and (max-width:650px){
+
+    .message p{
+        margin: 5px 0px 10px 60px;
+    }
 
     h3{
         font-size: 20px;
@@ -752,6 +750,12 @@ h3{
         padding-right: 10px;
     }
 
+    /*Top Section*/
+
+    .message p{
+        margin: 5px 0px 10px 8px;
+    }
+
     /*grid*/
 
     .recipecategory{
@@ -778,21 +782,26 @@ h3{
 
 @media only screen and (max-width:550px){
 
-    .description h1{
-        right: 17%;
+    .message p{
+        font-size: 15px;
     }
 }
 
+
 @media only screen and (max-width:500px){
 
-    .description h1{
-        right: 19%;
-        letter-spacing: 5px;
+    /*Top Section*/
+
+    .message{
+        padding: 15px 25px 15px 25px;
     }
 
-    .description p{
-        font-size: 18px;
-        width: 75%;
+    .message h1{
+        font-size: 10vw;
+    }
+
+    .message p{
+        margin: 5px 0px 5px 80px;
     }
 
     /*grid*/
@@ -821,28 +830,20 @@ h3{
 
 @media only screen and (max-width:450px){
 
-    .description h1{
-        top: 14%;
-        right: 19%;
-        letter-spacing: 5px;
-    }
+    /*Top Section*/
 
-    .description p{
-        font-size: 17px;
-        width: 77%;
+    .message p{
+        margin: 5px 0px 5px 40px;
     }
 }
 
-@media only screen and (max-width:420px){
 
-    .description h1{
-        top: 14%;
-        right: 21%;
-        letter-spacing: 5px;
-    }
+@media only screen and (max-width:400px){
 
-    .description p{
-        font-size: 17px;
-        width: 83%;
+    /*Top Section*/
+
+    .message p{
+        margin: 5px 0px 5px 30px;
+        font-size: 14px;
     }
 }
