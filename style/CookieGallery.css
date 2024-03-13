@@ -10,6 +10,7 @@
 
 .headingsection{
     height: 88%;
+    width: 100%;
     display: flex;
     align-items: center; 
     position: sticky;
@@ -37,7 +38,7 @@
 nav{
     flex: 1;
     text-align: right;
-    padding-right: 5%;
+    padding-right: 2%;
     background-color: white;
 }
 
@@ -57,7 +58,7 @@ nav ul li a{
     color: #575757;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 14px;
     background-color: white;
     position: relative;
 }
@@ -232,7 +233,7 @@ nav ul li a:hover::after{
 
 .backbutton a{
     font-size: 15px;
-    color: rgb(156, 156, 156);
+    color: #575757;
     text-decoration: none;
 }
 
@@ -240,7 +241,7 @@ nav ul li a:hover::after{
 
 .copyright{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 11px;
     color: grey;
     bottom: 2%;
@@ -369,7 +370,19 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:950px){
     .logo{
-        margin-left: 40px;
+        margin-left: 35px;
+    }
+
+    nav{
+        padding-right: 1%;
+    }
+
+    nav ul li{
+        margin-right: 3em;
+    }
+
+    .backbutton a{
+        font-size: 14px;
     }
  
 }
@@ -412,32 +425,78 @@ nav ul li a:hover::after{
 }
 
 @media only screen and (max-width:800px){
+
+    /*Headings*/
+
     nav ul li{
         margin-right: 2em;
+    }
+
+    nav ul li a{
+        font-size: 13px;
     }
 }
 
 
 @media only screen and (max-width:700px){
-    .description{
-        margin: 0px 10px 0px 30px;
+
+    .topdisplay{
+        display: none;
     }
 
-    .description h1{
-        font-size: 11vw;
-        font-weight: 700;
-        letter-spacing: 8px;
+    .topdisplayformobile{
+        display: grid;
+        position: relative;
+        justify-items: center;
     }
-
-    .topdisplayimage img{
-        max-width: 43vw;
-        margin: 30px 30px 30px 0px;
+    
+    .topdisplayformobile img{
+        width: 91%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .message{
+        position: absolute;
+        top: 13px;
+        left: 43px;
+        right: 43px;
+        background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+        z-index: 1;
+        border-radius: 5px;
+        padding: 30px;
+    }
+    
+    .message h1{
+        color: #ffffff;
+        font-family: 'DM Serif Display', sans-serif;
+        letter-spacing: 4px;
+        font-size: 10vw;
+        line-height: 1.1em;
+        text-align: right;
+    }
+    
+    .message p{
+        color: #ffffff;
+        margin-top: 10px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: right;
     }
 
 }
 
 
 @media only screen and (max-width:650px){
+
+    .message h1{
+        font-size: 9vw;
+    }
+
+    .message p{
+        line-height: 1.3em;
+    }
 
     /*Change from 3 columns to 2 columns*/
 
@@ -543,54 +602,21 @@ nav ul li a:hover::after{
         padding-right: 10px;
     }
 
-    /*Top display*/
+    /*Top Section*/
 
-    .topdisplay{
-        display: none;
-    }
-
-    .topdisplayforsmallerscreen{
-        display: grid;
-        margin-top: 20px;
-    }
-
-    .topdisplayimageforsmallerscreen{
-        justify-self: center;
+    .message{
+        position: absolute;
+        top: 13px;
+        left: 40px;
+        right: 40px;
+        padding: 25px;
     }
 
-    .topdisplayimageforsmallerscreen img{
-        margin: 0px;
-        max-width: 80vw;
+    .message p{
+        margin: 15px 0px 0px 40px;
     }
 
-    .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 100px;
-        font-weight: 700;
-        letter-spacing: 10px;
-        line-height: 1em;
-        font-family: 'DM Serif Display', sans-serif;
-        color: rgb(0, 0, 0);
-        text-shadow: 2px 1px 2px rgb(167, 165, 165);
-        text-align: center;
-    }
-
-    .descriptionforsmallerscreen h1{
-        margin: -20px 70px 0px 0px;
-    }
-
-    .descriptionforsmallerscreen h2{
-        margin: 0px 0px 30px 40px;
-    }
-   
-    .descriptionforsmallerscreen p{
-        text-align: justify;
-        font-weight: 500;
-        font-size: 15px;
-        letter-spacing: 1px;
-        margin: 20px 40px 20px 40px;
-        line-height: 1.5em;
-        color: #3d3d3d;
-    }
+    /*Gallery Grid*/
 
     .gallerygrid p, .specialreveal p{
         margin: -5px 10px 25px 10px;
@@ -605,7 +631,40 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:550px){
+
+    .message{
+        top: 13px;
+        left: 35px;
+        right: 35px;
+        padding: 25px;
+    }
+}
+
+
 @media only screen and (max-width:500px){
+
+    /*Top Section*/
+
+    .message{
+        top: 10px;
+        left: 30px;
+        right: 30px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .message h1{
+        font-size: 9vw;
+        line-height: 1em;
+    }
+    
+    .message p{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin: 15px 0px 0px 20px;
+    }
+
+    /*Gallery Grid*/
 
     .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
         font-size: 90px;
@@ -651,12 +710,17 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:450px){
 
-    .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 85px;
+    .message{
+        top: 8px;
+        left: 27px;
+        right: 27px;
+        padding: 20px 15px 20px 15px;
     }
 
-    .descriptionforsmallerscreen p{
-        margin: 20px 30px 20px 30px;
+    .message p{
+        margin: 15px 0px 0px 0px;
+        letter-spacing: 1px;
+        font-size: 14px;
     }
 
 }
@@ -664,13 +728,11 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:400px){
 
-    .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 75px;
-        letter-spacing: 5px;
-    }
-
-    .descriptionforsmallerscreen h1{
-        margin: -10px 40px 0px 0px;
+    .message{
+        top: 8px;
+        left: 23px;
+        right: 23px;
+        padding: 20px 12px 20px 12px;
     }
 
     /*Content*/
