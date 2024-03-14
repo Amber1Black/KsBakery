@@ -25,9 +25,7 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <!-- My CSS -->
   <link rel="stylesheet" href="style/BreadGallery.css">
 </head>
@@ -42,9 +40,12 @@
                     <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
                     <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
                     <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+                    <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
                 </ul>
             </nav>
-            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+            <div class="menuicon">
+                <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
+            </div>
     </div>
     
     <div class="content">
@@ -59,13 +60,10 @@
             </div>
         </div>
 
-        <div class="topdisplayforsmallerscreen">
-            <div class="topdisplayimageforsmallerscreen">
-                <img src ="Pictures/Outline - Bread with shadow 2.png">
-            </div>
-            <div class="descriptionforsmallerscreen">
-                <h1>Bread</h1>   
-                <h2>Gallery</h2>
+        <div class="topdisplayformobile">
+            <img src ="Pictures/Bread Gallery Cover.jpg">
+            <div class="message">
+                <h1>Bread Gallery</h1>
                 <p>Home-made bread is the best breakfast to start the day. Healthy and delicious bread helps us to recharge during the day also!</p>
             </div>
         </div>
@@ -73,62 +71,116 @@
         <div class="gallerycontent reveal">
 
             <div class="column">
-                <img src="Pictures/Bread Gallery - Custart Bread.jpg">
-                <img src="Pictures/Bread Gallery - Choco Twist Bread.jpg">
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Bread Gallery - Choco Toast.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Custard Bread.jpg">
+                    <p>Custard Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/CustardBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Bread 2.jpg">
+                    <p>Choco Stripe Bread</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Twist Bread.jpg">
+                    <p>Chocolate Twist Bread</p>
+                </div>
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Bread Gallery - Double Color Loaf.jpg">
+                    <p>Double Color Loaf</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Sesame Bread.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Sesame Bread.jpg">
+                    <p>Sesame Bread</p>
+                </div>
             </div>
             
-            <div class="column">
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Bread Gallery - Pumpkin Bread.jpg">
+            <div class="column">               
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Donut.jpg">
+                    <p>Donut</p>
                 </div>
-                <h3>Choco</h3>
-                <img src="Pictures/Bread Gallery - Chocolate Twist Bread.jpg">
-    
-                
-                <div class="specialreveal reveal3">
-                    <h3>Toast</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Chocolate Twist Bread.jpg">
+                    <p>Chocolate Twist Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/ChocolateTwistBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Toast.jpg"> 
+                    <p>Choco Toast</p>
+                </div>
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Bread Gallery - Matcha Loaf.jpg"> 
+                    <p>Matcha Loaf</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MatchaLoafRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <img src="Pictures/Bread Gallery - Sweet Bread.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Sweet Bread.jpg">
+                    <p>Sweet Bread</p>
+                </div>
             </div> 
 
             <div class="column">
-                <div class="specialreveal reveal2">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Ribbon Bread.jpg">
+                    <p>Ribbon Bread</p>
+                </div>
+                <div class="gallerygrid reveal3">
                     <img src="Pictures/Bread Gallery - Matcha Mushroom Bread.jpg">
+                    <p>Matcha Mushroom Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MatchaMushroomBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Bread Gallery - Mexico Bun.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Bread.jpg">
+                    <p>Chocolate Bread</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Donut.jpg">
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Bread Gallery - Loaf.jpg">
+                    <p>Loaf</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Ribbon Bread.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Toast Bread.jpg"> 
+                    <p>Chocolate Loaf</p>
+                </div>
             </div>
             
             <div class="column">
-                <div class="specialreveal reveal2">
-                    <h3>Crispy Top</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Pumpkin Bread.jpg">
+                    <p>Pumpkin Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/PumpkinBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal2">
+                <div class="gallerygrid reveal3">
                     <img src="Pictures/Bread Gallery - Mushroom Bread.jpg">
+                    <p>Mushroom Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MushroomBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <img src="Pictures/Bread Gallery - Choco Bread.jpg">
-                
-                
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Mexico Bun.jpg">
+                    <p>Mexico Bun</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MexicoBunRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
+                </div>
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Bread Gallery - Cube.jpg">
+                    <p>Cube Loaf</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Cheese Bread.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Cheese Bread.jpg">
+                    <p>Cheese Bread</p>
+                </div>
                 
             </div>
 
@@ -137,111 +189,225 @@
 
         <div class="gallerycontent2 reveal">
             <div class="column">
-                <img src="Pictures/Bread Gallery - Custart Bread.jpg">
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Bread Gallery - Mexico Bun.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Custard Bread.jpg">
+                    <p>Custard Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/CustardBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <img src="Pictures/Bread Gallery - Choco Twist Bread.jpg">
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Bread Gallery - Choco Toast.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Donut.jpg">
+                    <p>Donut</p>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Bread 2.jpg">
+                    <p>Choco Stripe Bread</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Twist Bread.jpg">
+                    <p>Chocolate Twist Bread</p>
+                </div>
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Bread Gallery - Double Color Loaf.jpg">
+                    <p>Double Color Loaf</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Sesame Bread.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Sesame Bread.jpg">
+                    <p>Sesame Bread</p>
+                </div>
             </div>
             
-            <div class="column">
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Bread Gallery - Pumpkin Bread.jpg">
-                </div>
-                <div class="specialreveal reveal2">
+            <div class="column">    
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Ribbon Bread.jpg">
+                    <p>Ribbon Bread</p>
+                </div>  
+                <div class="gallerygrid reveal3">
                     <img src="Pictures/Bread Gallery - Mushroom Bread.jpg">
+                    <p>Mushroom Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MushroomBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
+                </div>         
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Mexico Bun.jpg">
+                    <p>Mexico Bun</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MexicoBunRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <h3>Choco</h3>
-                <img src="Pictures/Bread Gallery - Chocolate Twist Bread.jpg">
-                <div class="specialreveal reveal3">
-                    <h3>Toast</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Chocolate Twist Bread.jpg">
+                    <p>Chocolate Twist Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/ChocolateTwistBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Bread Gallery - Matcha Loaf.jpg"> 
-                </div>
-                <img src="Pictures/Bread Gallery - Ribbon Bread.jpg">
-                <img src="Pictures/Bread Gallery - Sweet Bread.jpg">
                 
+                <div class="gallerygrid reveal2">
+                    <img src="Pictures/Bread Gallery - Matcha Loaf.jpg"> 
+                    <p>Matcha Loaf</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MatchaLoafRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Sweet Bread.jpg">
+                    <p>Sweet Bread</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Cheese Bread.jpg">
+                    <p>Cheese Bread</p>
+                </div>
             </div> 
 
             <div class="column">
-                <div class="specialreveal reveal2">
-                    <h3>Crispy Top</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Pumpkin Bread.jpg">
+                    <p>Pumpkin Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/PumpkinBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal2">
+                <div class="gallerygrid reveal3">
                     <img src="Pictures/Bread Gallery - Matcha Mushroom Bread.jpg">
+                    <p>Matcha Mushroom Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MatchaMushroomBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <img src="Pictures/Bread Gallery - Donut.jpg">
-                <img src="Pictures/Bread Gallery - Choco Bread.jpg">
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Toast.jpg"> 
+                    <p>Choco Toast</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Bread.jpg">
+                    <p>Chocolate Bread</p>
+                </div>
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Bread Gallery - Loaf.jpg">
+                    <p>Loaf</p>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Toast Bread.jpg"> 
+                    <p>Chocolate Loaf</p>
+                </div>
+                <div class="gallerygrid">
                     <img src="Pictures/Bread Gallery - Cube.jpg">
+                    <p>Cube Loaf</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Cheese Bread.jpg">
             </div>
-            
         </div>
         
         <div class="gallerycontent3 reveal">
             <div class="column">
-                <img src="Pictures/Bread Gallery - Custart Bread.jpg">
-                <div class="specialreveal reveal2">
-                    <h3>Crispy Top</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Custard Bread.jpg">
+                    <p>Custard Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/CustardBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Bread Gallery - Mushroom Bread.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Donut.jpg">
+                    <p>Donut</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Donut.jpg">
-                <img src="Pictures/Bread Gallery - Choco Twist Bread.jpg">
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Bread Gallery - Choco Toast.jpg">
+                <div class="gallerygrid reveal3">
+                    <img src="Pictures/Bread Gallery - Matcha Mushroom Bread.jpg">
+                    <p>Matcha Mushroom Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MatchaMushroomBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Bread Gallery - Loaf.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Bread 2.jpg">
+                    <p>Choco Stripe Bread</p>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Twist Bread.jpg">
+                    <p>Chocolate Twist Bread</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Bread.jpg">
+                    <p>Chocolate Bread</p>
+                </div>
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Bread Gallery - Double Color Loaf.jpg">
+                    <p>Double Color Loaf</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Sesame Bread.jpg">
-                <img src="Pictures/Bread Gallery - Cheese Bread.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Loaf.jpg">
+                    <p>Loaf</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Sesame Bread.jpg">
+                    <p>Sesame Bread</p>
+                </div>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Cheese Bread.jpg">
+                    <p>Cheese Bread</p>
+                </div>
             </div>
             
-            <div class="column">
-                <div class="specialreveal reveal2">
+            <div class="column">    
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Ribbon Bread.jpg">
+                    <p>Ribbon Bread</p>
+                </div>
+                <div class="gallerygrid">
                     <img src="Pictures/Bread Gallery - Pumpkin Bread.jpg">
-                </div>
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Bread Gallery - Matcha Mushroom Bread.jpg">
-                </div>
-                <div class="specialreveal reveal2">
+                    <p>Pumpkin Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/PumpkinBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
+                </div>  
+                <div class="gallerygrid reveal3">
+                    <img src="Pictures/Bread Gallery - Mushroom Bread.jpg">
+                    <p>Mushroom Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MushroomBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
+                </div>         
+                <div class="gallerygrid">
                     <img src="Pictures/Bread Gallery - Mexico Bun.jpg">
+                    <p>Mexico Bun</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MexicoBunRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <h3>Choco</h3>
-                <img src="Pictures/Bread Gallery - Chocolate Twist Bread.jpg">
-                <img src="Pictures/Bread Gallery - Choco Bread.jpg">
-                <div class="specialreveal reveal3">
-                    <h3>Toast</h3>
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Chocolate Twist Bread.jpg">
+                    <p>Chocolate Twist Bread</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/ChocolateTwistBreadRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Toast.jpg"> 
+                    <p>Choco Toast</p>
+                </div>
+                <div class="gallerygrid reveal2">
                     <img src="Pictures/Bread Gallery - Matcha Loaf.jpg"> 
+                    <p>Matcha Loaf</p>
+                    <div class="recipeicon">
+                        <a href="https://www.k-bakery.com/MatchaLoafRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
+                    </div>
                 </div>
-                <div class="specialreveal reveal3">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Choco Toast Bread.jpg"> 
+                    <p>Chocolate Loaf</p>
+                </div>
+                <div class="gallerygrid">
                     <img src="Pictures/Bread Gallery - Cube.jpg">
+                    <p>Cube Loaf</p>
                 </div>
-                <img src="Pictures/Bread Gallery - Ribbon Bread.jpg">
-                <img src="Pictures/Bread Gallery - Sweet Bread.jpg">
+                <div class="gallerygrid">
+                    <img src="Pictures/Bread Gallery - Sweet Bread.jpg">
+                    <p>Sweet Bread</p>
+                </div>
                 
             </div> 
-
         </div>
             
 
