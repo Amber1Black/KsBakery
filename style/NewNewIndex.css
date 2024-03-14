@@ -2091,7 +2091,7 @@ nav ul li a:hover::after{
     }
 
     .secondpartmobilemessage{
-        margin: 30px 15px 50px 30px;
+        margin: 30px 15px 50px 20px;
     }
 
     .secondpartmobilemessage h2{
@@ -2108,6 +2108,7 @@ nav ul li a:hover::after{
         font-size: 15px;
         letter-spacing: 1px;
         color: #3d3d3d;
+        text-align: ;
     }
 
     .secondpartredirection{
@@ -2438,12 +2439,16 @@ nav ul li a:hover::after{
 
     /*Second Section*/
 
+    .secondpartmobilemessage{
+        margin: 20px 7px 50px 7px;
+    }
+
     .gallerygrid{
-        margin: 0px 20px 0px 20px;
+        margin: 0px 15px 0px 15px;
     }
 
     .secondpartmobilemessage{
-        margin: 30px 15px 50px 20px;
+        margin: 30px 25px 50px 25px;
     }
 
     /*Third Section*/
