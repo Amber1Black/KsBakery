@@ -38,7 +38,7 @@
 nav{
     flex: 1;
     text-align: right;
-    padding-right: 2%;
+    padding-right: 3%;
     background-color: white;
 }
 
@@ -49,7 +49,7 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 2em;
+    margin-right: 20px;
     background-color: white; 
 }
 
@@ -306,11 +306,11 @@ li{
 }
 
 
-@media only screen and (max-width:1350px){
+@media only screen and (max-width:1400px){
 
     .recipebakerypic img{
-        margin: 0px 0px 0px 70px;
-        width: 550px;;
+        margin: 0px 0px 0px 50px;
+        width: 570px;;
         height: 80vh;
         max-height: 800px;
         align-self: center;
@@ -318,12 +318,16 @@ li{
     }
     
     .recipecontent{
-        margin-left: 680px;
+        margin-left: 670px;
     }
 
     li{
         margin-right: 100px;
     }
+}
+
+
+@media only screen and (max-width:1350px){
 
     .stepspic img{
         height: 380px;
@@ -341,7 +345,7 @@ li{
     }
     
     .recipecontent{
-        margin-left: 650px;
+        margin-left: 620px;
     }
 }
 
@@ -457,11 +461,11 @@ li{
     }
 
     nav{
-        padding-right: 1%;
+        padding-right: 3%;
     }
 
     nav ul li{
-        margin-right: 1.5em;
+        margin-right: 23px;
     }
 
     /*Content*/
@@ -608,7 +612,11 @@ li{
     }
 
     nav ul li{
-        margin-right: -5px;
+        margin-right: 1px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
     }
 
 }
@@ -748,8 +756,8 @@ li{
     }
 
     .recipebakerypic img{
-        width: 550px;
-        height: 450px;
+        width: 525px;
+        height: 400px;
     }
 
     .recipe h1{
@@ -830,6 +838,11 @@ li{
 
 @media only screen and (max-width:500px){
 
+    .recipebakerypic img{
+        width: 435px;
+        height: 400px;
+    }
+
     .ingredients-col h3,
     .ingredients-col p,
     .recipe-what-to-do li, 
@@ -853,18 +866,12 @@ li{
 }
 
 
-
-
-@media only screen and (max-width:480px){
+@media only screen and (max-width:450px){
 
     .recipebakerypic img{
-        width: 430px;
+        width: 410px;
         height: 360px;
     }
-}
-
-
-@media only screen and (max-width:450px){
 
     .recipe h1{
         font-size: 23px;
