@@ -295,6 +295,13 @@ li{
 
 @media only screen and (max-width:1450px){
 
+    .recipebakerypic img{
+        margin: 0px 0px 0px 100px;
+        width: 550px;
+        height: 80vh;
+        max-height: 800px;
+    }
+
     .ingredients{
         margin: 10px 100px 10px 30px;
         padding: 0px 15px 20px 15px;
@@ -310,7 +317,7 @@ li{
 
     .recipebakerypic img{
         margin: 0px 0px 0px 50px;
-        width: 570px;;
+        width: 530px;;
         height: 80vh;
         max-height: 800px;
         align-self: center;
