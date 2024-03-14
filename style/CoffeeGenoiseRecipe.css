@@ -704,14 +704,14 @@ li{
     nav ul li{
         background-color: transparent;
         display: block;
-        margin: 3em 3em 3em;
+        margin: 2.5em;
     }
 
     nav ul li a{
         background-color: transparent;
         color: rgb(20, 20, 20);
-        font-size: 16px;
-        margin-left: 10px;
+        font-size: 15px;
+        margin: 0px;
         letter-spacing: 3px;
         font-weight: 500;
     }
@@ -739,9 +739,16 @@ li{
     .menu-icon{
         display: block;
         margin-right: 8%;
-        min-width: 50px;
-        max-width: 65px;
         cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .menu-icon img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 30px;
+        align-content: center;
     }
 
     #menulist{
