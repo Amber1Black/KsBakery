@@ -23,7 +23,7 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <!-- My CSS -->
   <link rel="stylesheet" href="style/HydrangeaTartRecipe.css">
 </head>
@@ -38,9 +38,12 @@
                     <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
                     <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
                     <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+                    <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
                 </ul>
             </nav>
-            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+            <div class="menuicon">
+                <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
+            </div>
     </div>
     
 
@@ -164,7 +167,7 @@
                     <li>Add corn starch with seiving it before mixing together</li>
                     <li>Add plain flour by batches with seiving it to mix well together</li>
                     <li>Roll out the dough to freeze it to make it harden to do the shaping
-                        <Br><Br><span class = "note">[Would be better to roll out the dough with a pair of rulers, for an even thickness. Freeze for at least a few hours to let the dough get harden, in order to do the shaping more easily. It can be freezed for a week before baking.]</span>
+                        <Br><span class = "note">[Would be better to roll out the dough with a pair of rulers, for an even thickness. Freeze for at least a few hours to let the dough get harden, in order to do the shaping more easily. It can be freezed for a week before baking.]</span>
                     </li>
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Hydrangea Tart 2.jpg">
@@ -188,7 +191,7 @@
                 <ul class = "a">
                     <li>Take the cream cheese out from the fridge to let it soften</li>
                     <li>Add double cream, and icing sugar with seiving it to mix together
-                        <Br><Br><span class = "note">[Pick low to medium speed of the mixer in order not to let the cream get rough]</span>
+                        <Br><span class = "note">[Pick low to medium speed of the mixer in order not to let the cream get rough]</span>
                     </li>
                     <li>Separate the cream by half, then add any color gel you like to one of the portion.</li>
                 </ul>
@@ -196,10 +199,10 @@
                 <h4>Tart :</h4>
                 <ul class = "a">
                     <li>Pre-heat the oven for 3 minutes at 240&#8451, then bake the tart crust for 12 minutes at 150&#8451.
-                        <Br><Br><span class = "note">[The color would change a bit, but far from golden]</span>
+                        <Br><span class = "note">[The color would change a bit, but far from golden]</span>
                         </li>
                     <li>Fill in the cake batter to bake for another 15 minutes at 150&#8451
-                        <Br><Br><span class = "note">[It will rise so just fill in half of the tart crust height]</span>
+                        <Br><span class = "note">[It will rise so just fill in half of the tart crust height]</span>
                         </li>
                     <li>When the tarts have turned to golden color, take them out of the oven to let them cool down</li>
                         <div class="stepspic">
@@ -253,17 +256,9 @@
     </script>
 
     <script>
-        let slideIndex = [1,1,1,1,1,1,1,1,1,1];
-        let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9"]
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1"]
         showSlides(1, 0);
-        showSlides(1, 1);
-        showSlides(1, 2);
-        showSlides(1, 3);
-        showSlides(1, 4);
-        showSlides(1, 5);
-        showSlides(1, 6);
-        showSlides(1, 7);
-        showSlides(1, 8);
         
         function plusSlides(n, no) {
         showSlides(slideIndex[no] += n, no);
@@ -283,3 +278,5 @@
 </body>
 
 </html>
+
+
