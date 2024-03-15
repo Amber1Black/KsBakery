@@ -3,19 +3,20 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
-    
 }
+
 
 /*headings section*/
 
 .headingsection{
     height: 88%;
+    width: 100%;
     display: flex;
     align-items: center; 
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 999;
+    z-index: 100;
 }
 
 .logo{
@@ -37,7 +38,7 @@
 nav{
     flex: 1;
     text-align: right;
-    padding-right: 5%;
+    padding-right: 4%;
     background-color: white;
 }
 
@@ -48,14 +49,15 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 1.5em;
-    background-color: white;
-    
+    margin-right: 20px;
+    background-color: white; 
 }
 
 nav ul li a{
     text-decoration: none;
-    color: #707070;
+    color: #575757;
+    font-weight: 400;
+    letter-spacing: 1px;
     font-size: 14px;
     background-color: white;
     position: relative;
@@ -495,9 +497,21 @@ li{
 
 
 @media only screen and (max-width:950px){
+    /*Headings*/
+
     .logo{
-        margin-left: 40px;
+        margin-left: 35px;
     }
+
+    nav{
+        padding-right: 4%;
+    }
+
+    nav ul li{
+        margin-right: 16px;
+    }
+
+    /*Content*/
 
     .recipe-what-you-need h4{
         margin: 10px 0px 10px 15px;
@@ -642,6 +656,19 @@ li{
 
 }
 
+@media only screen and (max-width:800px){
+
+    /*Headings*/
+
+    nav ul li{
+        margin-right: 2px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
+    }
+}
+
 @media only screen and (max-width:750px){
     .bodysection,
     .recipecontent, 
@@ -735,14 +762,14 @@ li{
     nav ul li{
         background-color: transparent;
         display: block;
-        margin: 3em 3em 3em;
+        margin: 2.5em;
     }
 
     nav ul li a{
         background-color: transparent;
         color: rgb(20, 20, 20);
-        font-size: 16px;
-        margin-left: 10px;
+        font-size: 15px;
+        margin: 0px;
         letter-spacing: 3px;
         font-weight: 500;
     }
@@ -770,9 +797,16 @@ li{
     .menu-icon{
         display: block;
         margin-right: 8%;
-        min-width: 40px;
-        max-width: 65px;
         cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .menu-icon img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 30px;
+        align-content: center;
     }
 
     #menulist{
@@ -794,8 +828,8 @@ li{
     }
 
     .recipebakerypic img{
-        width: 550px;
-        height: 520px;
+        width: 520px;
+        height: 480px;
     }
 
     .recipe h1{
@@ -897,6 +931,11 @@ li{
 
 @media only screen and (max-width:500px){
 
+    .recipebakerypic img{
+        width: 450px;
+        height: 420px;
+    }
+
     .recipe h1{
         letter-spacing: 3px;
         font-size: 23px;
@@ -942,19 +981,12 @@ li{
     
 }
 
-
-
-
-@media only screen and (max-width:480px){
+@media only screen and (max-width:450px){
 
     .recipebakerypic img{
-        width: 430px;
-        height: 400px;
+        width: 400px;
+        height: 380px;
     }
-}
-
-
-@media only screen and (max-width:450px){
 
     .recipe h1{
         letter-spacing: 2px;
@@ -967,7 +999,7 @@ li{
     }
 
     .ingredientsfortart{
-        margin: 10px -27px 10px 0px;
+        margin: 10px -30px 10px 0px;
     }
 
     .stepspic img{
