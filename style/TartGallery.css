@@ -10,6 +10,7 @@
 
 .headingsection{
     height: 88%;
+    width: 100%;
     display: flex;
     align-items: center; 
     position: sticky;
@@ -37,7 +38,7 @@
 nav{
     flex: 1;
     text-align: right;
-    padding-right: 5%;
+    padding-right: 2%;
     background-color: white;
 }
 
@@ -49,13 +50,14 @@ nav ul li{
     list-style: none;
     display: inline-block;
     margin-right: 3em;
-    background-color: white;
-    
+    background-color: white; 
 }
 
 nav ul li a{
     text-decoration: none;
-    color: #707070;
+    color: #575757;
+    font-weight: 400;
+    letter-spacing: 1px;
     font-size: 14px;
     background-color: white;
     position: relative;
@@ -94,7 +96,7 @@ nav ul li a:hover::after{
 
 /*message on top*/
 
-.topdisplayforsmallerscreen{
+.topdisplayformobile{
     display: none;
 }
 
@@ -109,22 +111,23 @@ nav ul li a:hover::after{
 }
 
 .description h1{
-    font-size: 13vw;
+    font-size: 12vw;
     font-weight: 700;
-    letter-spacing: 15px;
-    font-family: 'Lato', sans-serif;
-    color: rgb(0, 0, 0);
+    letter-spacing: 18px;
+    line-height: 1.1em;
+    font-family: 'DM Serif Display', sans-serif;
     margin: 0px 0px 20px 0px;
-    text-shadow: 3px 3px 3px rgb(167, 165, 165);
+    text-shadow: 2px 2px 2px rgb(167, 165, 165);
 }
 
 .description p{
-    text-align: justify;
-    margin: 40px 0px 20px 0px;
-    color: #575757;
-    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900px;
     letter-spacing: 1px;
-    max-width: 90%;
+    color: #3d3d3d;
+    text-align: justify;
+    margin: 30px 0px 20px 0px;
+    font-size: 18px;
 }
 
 .topdisplayimage{
@@ -132,9 +135,9 @@ nav ul li a:hover::after{
 }
 
 .topdisplayimage img{
-    max-width: 49vw;
+    max-width: 40vw;
     object-fit: cover;
-    margin: 50px 50px 50px -150px;
+    margin: 50px 50px 50px -50px;
 }
 
 /*Gallery Grid*/
@@ -147,32 +150,17 @@ nav ul li a:hover::after{
     display: flex;
     flex-wrap: wrap;
     column-gap: 15px;
-    margin: 100px 50px 0px 50px;
+    margin: 130px 50px 0px 50px;
     justify-content: center;
 }
 
-.gallerycontent h3{
-    font-size: 6vw;
-    font-weight: 700;
-    letter-spacing: 12px;
-    font-family: 'Lato', sans-serif;
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px 3px rgb(167, 165, 165);
-    align-self: center;
-    text-align: center;
-    margin: 80px 0px 80px 0px;
-}
-
-.gallerycontent h4{
-    font-size: 5vw;
-    font-weight: 700;
-    letter-spacing: 8px;
-    font-family: 'Lato', sans-serif;
-    color: rgb(0, 0, 0);
-    text-shadow: 3px 3px 3px rgb(167, 165, 165);
-    align-self: center;
-    text-align: center;
-    margin: 80px 0px 80px 0px;
+.gallerygrid p, .specialreveal p{
+    margin: -5px 20px 25px 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900px;
+    letter-spacing: 1px;
+    color: #3d3d3d;
 }
 
 .column {
@@ -185,7 +173,24 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
     vertical-align: middle;
     width: 100%;
-    box-shadow: 3px 3px 4px rgb(95, 95, 95);
+
+    border-radius: 10px;
+}
+
+h3{
+    font-size: 6vw;
+    font-family: 'DM Serif Display', sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 50px 0px 50px 0px;
+}
+
+.recipeicon{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    margin: -10px 0px 30px 20px;
+    cursor: pointer;
 }
 
 .reveal{
@@ -236,7 +241,7 @@ nav ul li a:hover::after{
 
 .backbutton a{
     font-size: 15px;
-    color: rgb(156, 156, 156);
+    color: #575757;
     text-decoration: none;
 }
 
@@ -244,7 +249,7 @@ nav ul li a:hover::after{
 
 .copyright{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 11px;
     color: grey;
     bottom: 2%;
@@ -257,27 +262,30 @@ nav ul li a:hover::after{
     }
 
     .description h1{
-        font-size: 13vw;
+        font-size: 11vw;
         font-weight: 700;
-        letter-spacing: 15px;
+        letter-spacing: 18px;
     }
 
     .topdisplayimage img{
-        max-width: 49vw;
-        margin: 10px 40px 10px -130px;
-    }
-
-}
-
-@media only screen and (max-width:1300px){
-
-    .description p{
-        margin: 20px 0px 20px 0px;
+        max-width: 40vw;
+        margin: 10px 50px 10px -30px;
     }
 
 }
 
 @media only screen and (max-width:1250px){
+
+    .description h1{
+        font-size: 10vw;
+        font-weight: 700;
+        letter-spacing: 15px;
+    }
+
+    .topdisplayimage img{
+        max-width: 44vw;
+        margin: 10px 50px 10px -30px;
+    }
 
     .gallerycontent{
         column-gap: 12px;
@@ -293,27 +301,31 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1200px){
+
     .topdisplayimage img{
-        max-width: 49vw;
-        margin: 20px 50px 20px -140px;
+        margin: 0px 50px 0px -50px;
+    }
+
+    .description p{
+        font-size: 17px;
+    }
+
+    .gallerygrid p, .specialreveal p{
+        font-size: 17px;
     }
 
 }
 
+@media only screen and (max-width:1100px){
 
-@media only screen and (max-width:1150px){
-
-    .topdisplayimage img{
-        max-width: 51vw;
-        margin: 20px 50px 20px -120px;
+    .gallerygrid p, .specialreveal p{
+        margin: -5px 10px 25px 10px;
     }
 
-    .description{
-        margin: 0px 50px 0px 60px;
+    .recipeicon{
+        margin-left: 10px;
     }
-
 }
-
 
 @media only screen and (max-width:1050px){
     .description{
@@ -321,26 +333,26 @@ nav ul li a:hover::after{
     }
 
     .description h1{
-        font-size: 12vw;
+        font-size: 10vw;
         font-weight: 700;
-        letter-spacing: 12px;
-    }
-
-    .description p{
-        margin-top: 30px;
-        font-size: 16px;
-        max-width: 90%;
+        letter-spacing: 10px;
     }
 
     .topdisplayimage img{
-        max-width: 52vw;
-        margin: 20px 50px 20px -80px;
+        max-width: 45vw;
+        margin: 10px 40px 10px -20px;
     }
 
 }
 
 
 @media only screen and (max-width:1000px){
+
+    .description p{
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 1.4em;
+    }
 
     /*Change from 4 columns to 3 columns*/
 
@@ -356,30 +368,14 @@ nav ul li a:hover::after{
         justify-content: center;
     }
 
-    .gallerycontent2 h3{
-        font-size: 8vw;
-        font-weight: 700;
-        letter-spacing: 10px;
-        font-family: 'Lato', sans-serif;
-        color: rgb(0, 0, 0);
-        text-shadow: 3px 3px 3px rgb(167, 165, 165);
-        align-self: center;
-        text-align: center;
-        margin: 80px 0px 80px 0px;
+    .gallerygrid p, .specialreveal p{
+        margin: -5px 20px 25px 20px;
     }
 
-    .gallerycontent2 h4{
-        font-size: 7vw;
-        font-weight: 700;
-        letter-spacing: 6px;
-        font-family: 'Lato', sans-serif;
-        color: rgb(0, 0, 0);
-        text-shadow: 3px 3px 3px rgb(167, 165, 165);
-        align-self: center;
-        text-align: center;
-        margin: 80px 0px 80px 0px;
+    .recipeicon{
+        margin-left: 20px;
     }
-    
+
     .column {
         flex: 32%;
         max-width: 32%;
@@ -395,7 +391,19 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:950px){
     .logo{
-        margin-left: 40px;
+        margin-left: 35px;
+    }
+
+    nav{
+        padding-right: 1%;
+    }
+
+    nav ul li{
+        margin-right: 3em;
+    }
+
+    .backbutton a{
+        font-size: 14px;
     }
  
 }
@@ -403,12 +411,12 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:900px){
     .description{
-        margin: 0px 10px 0px 40px;
+        margin: 0px 10px 0px 50px;
     }
 
-    .description p{
-        font-size: 15px;
-        max-width: 88%;
+    .topdisplayimage img{
+        max-width: 45vw;
+        margin: 20px 30px 20px -10px;
     }
 
 }
@@ -420,55 +428,96 @@ nav ul li a:hover::after{
         flex: 31%;
         max-width: 31%;
     }
+
+    .recipeicon{
+        width: 24px;
+        height: 24px;
+    }
+
+    .gallerygrid p, .specialreveal p{
+        margin: -5px 10px 25px 10px;
+        font-size: 16px;
+    }
+
+    .recipeicon{
+        margin-left: 10px;
+    }
  
 }
 
-
 @media only screen and (max-width:800px){
 
-    .description p{
-        font-size: 15px;
-        max-width: 84%;
-        margin-top: 20px;
+    /*Headings*/
+
+    nav ul li{
+        margin-right: 2em;
     }
 
-    .topdisplayimage img{
-        max-width: 52vw;
-        margin: 20px 40px 20px -70px;
+    nav ul li a{
+        font-size: 13px;
     }
 }
 
 
 @media only screen and (max-width:700px){
-    .description{
-        margin: 0px 10px 0px 30px;
+
+    .topdisplay{
+        display: none;
     }
 
-    .description h1{
-        font-size: 12vw;
-        font-weight: 700;
-        letter-spacing: 8px;
+    .topdisplayformobile{
+        display: grid;
+        position: relative;
+        justify-items: center;
+    }
+    
+    .topdisplayformobile img{
+        width: 91%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .message{
+        position: absolute;
+        top: 13px;
+        left: 43px;
+        right: 43px;
+        background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+        z-index: 1;
+        border-radius: 5px;
+        padding: 30px;
+    }
+    
+    .message h1{
+        color: #ffffff;
+        font-family: 'DM Serif Display', sans-serif;
+        letter-spacing: 4px;
+        font-size: 10vw;
+        line-height: 1.1em;
+        text-align: right;
+    }
+    
+    .message p{
+        color: #ffffff;
+        margin-top: 10px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        font-size: 16px;
+        text-align: right;
     }
 
-    .description p{
-        font-size: 15px;
-        max-width: 85%;
-    }
-
-    .topdisplayimage img{
-        max-width: 55vw;
-        margin: 20px 30px 20px -70px;
-    }
-
-    /*Content*/
-
-    .gallerycontent2{
-        margin-top: 120px;
-    }
 }
 
 
 @media only screen and (max-width:650px){
+
+    .message h1{
+        font-size: 9vw;
+    }
+
+    .message p{
+        line-height: 1.3em;
+    }
 
     /*Change from 3 columns to 2 columns*/
 
@@ -479,38 +528,26 @@ nav ul li a:hover::after{
     .gallerycontent3{
         display: flex;
         flex-wrap: wrap;
-        column-gap: 15px;
-        margin: 60px 20px 0px 20px;
+        column-gap: 10px;
+        margin: 60px 10px 0px 10px;
         justify-content: center;
     }
 
-    .gallerycontent3 h3{
-        font-size: 12vw;
-        font-weight: 700;
-        letter-spacing: 8px;
-        font-family: 'Lato', sans-serif;
-        color: rgb(0, 0, 0);
-        text-shadow: 3px 3px 3px rgb(167, 165, 165);
-        align-self: center;
-        text-align: center;
-        margin: 80px 0px 80px 0px;
+    h3{
+        font-size: 10vw;
     }
 
-    .gallerycontent3 h4{
-        font-size: 11vw;
-        font-weight: 700;
-        letter-spacing: 6px;
-        font-family: 'Lato', sans-serif;
-        color: rgb(0, 0, 0);
-        text-shadow: 3px 3px 3px rgb(167, 165, 165);
-        align-self: center;
-        text-align: center;
-        margin: 80px 0px 80px 0px;
+    .gallerygrid p, .specialreveal p{
+        margin: -5px 20px 25px 20px;
+    }
+
+    .recipeicon{
+        margin-left: 20px;
     }
     
     .column {
-        flex: 48%;
-        max-width: 48%;
+        flex: 48.5%;
+        max-width: 48.5%;
     }
  
 }
@@ -544,14 +581,14 @@ nav ul li a:hover::after{
     nav ul li{
         background-color: transparent;
         display: block;
-        margin: 3em 3em 3em;
+        margin: 2.5em;
     }
 
     nav ul li a{
         background-color: transparent;
         color: rgb(20, 20, 20);
-        font-size: 16px;
-        margin-left: 10px;
+        font-size: 15px;
+        margin: 0px;
         letter-spacing: 3px;
         font-weight: 500;
     }
@@ -579,9 +616,16 @@ nav ul li a:hover::after{
     .menu-icon{
         display: block;
         margin-right: 8%;
-        min-width: 40px;
-        max-width: 65px;
         cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .menu-icon img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-right: 30px;
+        align-content: center;
     }
 
     #menulist{
@@ -590,74 +634,97 @@ nav ul li a:hover::after{
         padding-right: 10px;
     }
 
-    /*Top display*/
+    /*Top Section*/
 
-    .topdisplay{
-        display: none;
+    .message{
+        position: absolute;
+        top: 13px;
+        left: 35px;
+        right: 35px;
+        padding: 15px;
     }
 
-    .topdisplayforsmallerscreen{
-        display: grid;
-        margin-top: 20px;
+    .message p{
+        margin: 15px 0px 0px 0px;
     }
 
-    .topdisplayimageforsmallerscreen{
-        justify-self: center;
-    }
+    /*Gallery Grid*/
 
-    .topdisplayimageforsmallerscreen img{
-        max-width: 95vw;
-    }
-
-    .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 22vw;
-        font-weight: 700;
-        letter-spacing: 10px;
-        font-family: 'Lato', sans-serif;
-        color: rgb(0, 0, 0);
-        text-shadow: 3px 3px 3px rgb(167, 165, 165);
-        text-align: center;
-    }
-
-    .descriptionforsmallerscreen h1{
-        margin: -180px 120px 0px 0px;
-    }
-
-    .descriptionforsmallerscreen h2{
-        margin: 0px 0px 0px 0px;
-    }
-   
-    .descriptionforsmallerscreen p{
-        text-align: justify;
-        color: #575757;
+    .gallerygrid p, .specialreveal p{
+        margin: -5px 10px 25px 10px;
         font-size: 15px;
-        letter-spacing: 1px;
-        margin: 20px 40px 20px 40px;
+        line-height: 1.3em;
+    }
+
+    .recipeicon{
+        margin-left: 10px;
     }
 
 }
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:550px){
 
-    .descriptionforsmallerscreen h1{
-        margin: -180px 80px 0px 0px;
-        font-size: 120px;
-        letter-spacing: 5px;
+    .message{
+        top: 13px;
+        left: 35px;
+        right: 35px;
+        padding: 20px;
     }
 
-    .descriptionforsmallerscreen h2{
-        font-size: 110px;
-        letter-spacing: 5px;
+    .message p{
+        margin: 15px 0px 0px 30px;
+    }
+}
+
+@media only screen and (max-width:520px){
+
+    .message p{
+        margin: 15px 0px 0px 0px;
+    }
+}
+
+
+@media only screen and (max-width:500px){
+
+    /*Top Section*/
+
+    .message{
+        top: 10px;
+        left: 30px;
+        right: 30px;
+        padding: 20px 15px 20px 15px;
+    }
+
+    .message h1{
+        font-size: 9vw;
+        line-height: 1em;
+    }
+    
+    .message p{
+        letter-spacing: 1px;
+        font-size: 15px;
+        margin: 15px 0px 0px 10px;
+    }
+
+    /*Gallery Grid*/
+
+    .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
+        font-size: 90px;
+    }
+
+    .descriptionforsmallerscreen h1{
+        margin: -30px 40px 0px 0px;
     }
 
     .descriptionforsmallerscreen p{
         font-size: 14px;
     }
 
-    .gallerycontent3 h3,
-    .gallerycontent3 h4{
-        margin: 60px 0px 60px 0px;
+    .gallerygrid p, .specialreveal p{
+        margin: 0px 10px 25px 10px;
+        font-size: 14px;
+        line-height: 1.3em;
     }
 
     /*back button*/
@@ -671,11 +738,15 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:470px){
 
+    .message p{
+        margin: 15px 0px 0px 0px;
+    }
+
     /*Content*/
 
     .gallerycontent3{
-        column-gap: 8px;
-        margin: 70px 10px 0px 10px;
+        column-gap: 6px;
+        margin: 70px 5px 0px 5px;
     }
 
     .gallerycontent3 img{
@@ -686,34 +757,49 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:450px){
 
-    .descriptionforsmallerscreen h1{
-        margin: -150px 80px 0px 0px;
-        font-size: 105px;
-        letter-spacing: 3px;
+    .message{
+        top: 8px;
+        left: 27px;
+        right: 27px;
+        padding: 20px 12px 20px 12px;
     }
 
-    .descriptionforsmallerscreen h2{
-        font-size: 105px;
-        letter-spacing: 3px;
+    .message p{
+        margin: 15px 0px 0px 0px;
+        letter-spacing: 1px;
+        font-size: 14px;
     }
 
-    .descriptionforsmallerscreen p{
-        margin: 20px 30px 20px 30px;
+}
+
+
+@media only screen and (max-width:420px){
+
+    .message{
+        top: 8px;
+        left: 27px;
+        right: 27px;
+        padding: 15px 15px 15px 15px;
     }
+
+    .message p{
+        margin: 10px 0px 0px 30px;
+    }
+
 }
 
 
 @media only screen and (max-width:400px){
 
-    .descriptionforsmallerscreen h1{
-        margin: -140px 80px 0px 0px;
-        font-size: 100px;
-        letter-spacing: 3px;
+    .message{
+        top: 8px;
+        left: 23px;
+        right: 23px;
+        padding: 20px 12px 20px 12px;
     }
 
-    .descriptionforsmallerscreen h2{
-        font-size: 100px;
-        letter-spacing: 3px;
+    .message p{
+        margin: 10px 0px 0px 23px;
     }
 
     /*Content*/
@@ -722,5 +808,13 @@ nav ul li a:hover::after{
         column-gap: 6px;
         margin: 70px 8px 0px 8px;
     }
-    
+
+}
+
+@media only screen and (max-width:380px){
+
+    .message p{
+        margin: 10px 0px 0px 10px;
+    }
+
 }
