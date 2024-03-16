@@ -15,7 +15,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="K's Bakery, with Matcha Mushroom Bread Recipe. The top is crispy and the bread looks very cute.">
+  <meta name="description" content="K's Bakery, with Mushroom Bread Recipe. The top is crispy and the bread looks very cute.">
   
   <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
 
@@ -23,10 +23,8 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
-  <!-- My CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- My CSS -->
   <link rel="stylesheet" href="style/MushroomBreadRecipe.css">
 </head>
 
@@ -40,9 +38,12 @@
                     <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
                     <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
                     <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+                    <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
                 </ul>
             </nav>
-            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+            <div class="menuicon">
+                <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
+            </div>
     </div>
     
 
@@ -51,11 +52,22 @@
     <!-- left hand side images-->
 
     <div class="recipebakerypic">
-        <img src="Pictures/Recipe - Mushroom Bread 1.gif">
-    </div>
-
-    <div class="recipebakerypicformobile">
-        <img src="Pictures/Recipe - Mushroom Bread 2.gif">
+        <div class="picturesshown">
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Mushroom Bread.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Mushroom Bread - 2.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Mushroom Bread - 3.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
     </div>
 
 
@@ -179,7 +191,7 @@
                         <Br><Br><span class = "note">[Fan option of the oven would be good to be picked. Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
                     </li>
                         <div class="stepspic">
-                            <img src = "Pictures/Recipe - Mushroom Bread.jpg">
+                            <img src = "Pictures/Bread - Mushroom Bread.jpg">
                         </div>
                 </ul>
                 
@@ -215,6 +227,29 @@
             }
         }
     </script>
+
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1"]
+        showSlides(1, 0);
+        
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
 </body>
 
 </html>
+
+
