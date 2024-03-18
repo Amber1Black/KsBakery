@@ -15,7 +15,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="K's Bakery, with Matcha Loaf Recipe. The rich matcha flavor makes the bread tastes good.">
+  <meta name="description" content="K's Bakery, a sharing on Matcha Loaf Recipe. The rich matcha flavor makes the bread tastes good.">
   
   <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
 
@@ -23,10 +23,8 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
-  <!-- My CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- My CSS -->
   <link rel="stylesheet" href="style/MatchaLoafRecipe.css">
 </head>
 
@@ -40,9 +38,12 @@
                     <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
                     <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
                     <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+                    <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
                 </ul>
             </nav>
-            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+            <div class="menuicon">
+                <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
+            </div>
     </div>
     
 
@@ -51,11 +52,22 @@
     <!-- left hand side images-->
 
     <div class="recipebakerypic">
-        <img src="Pictures/Recipe - Matcha Loaf 9.jpg">
-    </div>
-
-    <div class="recipebakerypicformobile">
-        <img src="Pictures/Recipe - Matcha Loaf 12.jpg">
+        <div class="picturesshown">
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Matcha Loaf 9.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Matcha Loaf 10.jpg">
+            </div>
+            
+            <div class="mySlides1">
+                <img src="Pictures/Recipe - Matcha Loaf 11.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
     </div>
 
 
@@ -124,29 +136,29 @@
                     <li>When a rough dough is formed (~kneading for 3 minutes), add butter then knead again.</li>
                     <li>Knead until a round dough with smooth surface is formed</li>
                     <li>Divide the dough into 2, with 1 adding matcha powder into it. Keep kneading and adding matcha powder until it turns green.
-                        <Br><Br><span class = "note">[The adding volume of every type of powder may vary, add until you feel enough with it.]</span></li>
+                        <Br><span class = "note">[The adding volume of every type of powder may vary, add until you feel enough with it.]</span></li>
                         
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Matcha Loaf 15.png"> 
                         </div>
                     
                     <li>Let it rise under a warm condition until its size is doubled.
-                        <Br><Br><span class = "note">[Time may vary under different weather condition, in Summer it can be an hour, in Winter it can be 2 hours.]</span>
+                        <Br><span class = "note">[Time may vary under different weather condition, in Summer it can be an hour, in Winter it can be 2 hours.]</span>
                     </li>
                     <li>Press the dough gently to push out any air inside. Then knead into round dough again and let it rest for 20 minutes.</li>
                     <li>Do the formation as below :</li>
-                        <div class="stepspic">
+                        <div class="stepspic1">
                             <img src = "Pictures/Recipe - Matcha Loaf 17.gif">
                         </div>   
                     <li>Let it proof for 30 minutes at least, the size should be 80% more (ideally it's doubled).
-                        <Br><Br><span class = "note">[The last proofing time depends on weather also. In Summer it can be 30 minutes, in Winter it can be 1 hour.]</span>
+                        <Br><span class = "note">[The last proofing time depends on weather also. In Summer it can be 30 minutes, in Winter it can be 1 hour.]</span>
                     </li>
-                        <div class="stepspic">
+                        <div class="stepspic1">
                             <img src = "Pictures/Recipe - Matcha Loaf 16.png">
                         </div>
                     <li>Brush some milk on top of it before baking, to let it looks better after coming out of the oven.</li>
                     <li>Bake it for 20 minutes, at 180&#8451.
-                        <Br><Br><span class = "note">[If there's fan option with the oven, please choose it. Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
+                        <Br><span class = "note">[If there's fan option with the oven, please choose it. Every oven are different, have to do some testing to see which duration and temperature suit the best.]</span>
                     </li>
                         <div class="stepspic">
                             <img src = "Pictures/Recipe - Matcha Loaf 10.jpg">
@@ -185,6 +197,29 @@
             }
         }
     </script>
+
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1"]
+        showSlides(1, 0);
+        
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
 </body>
 
 </html>
+
+
