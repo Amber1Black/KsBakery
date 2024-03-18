@@ -1992,18 +1992,18 @@ nav ul li a:hover::after{
         position: absolute;
         bottom: 0%;
         left: 50%;
-        -ms-transform: translate(-50%, -25%);
-        transform: translate(-50%, -25%);
-        width: 400px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 55px;
-        font-weight: 700;
+        -ms-transform: translate(-50%, -35%);
+        transform: translate(-50%, -35%);
+        width: 90%;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 70px;
+        font-weight: 550;
         text-align: center;
         border-radius: 5px;
         color: #ffffff;
-        text-shadow: 2px 2px 1px #070707;
+        text-shadow: 2px 2px 1px #000000;
         letter-spacing: 3px;
-        background-color: rgba(253, 169, 169, 0.5); /* Black w/opacity/see-through */
+        background-color: rgba(245, 153, 153, 0.5); /* Black w/opacity/see-through */
         z-index: 1;
         padding: 5px 15px 5px 15px;
     }
@@ -2391,7 +2391,13 @@ nav ul li a:hover::after{
 
     /*First Section*/
 
-    /*First Section*/
+    .firstpartmobilegallerydisplay h1{
+        font-size: 60px;
+        letter-spacing: 3px;
+        background-color: rgba(248, 193, 193, 0.5); /* Black w/opacity/see-through */
+        z-index: 1;
+        padding: 5px 20px 5px 20px;
+    }
 
     .firstpartmobilemessage h2{
         font-size: 28px;
@@ -2473,13 +2479,7 @@ nav ul li a:hover::after{
     /*First Section*/
 
     .firstpartmobilegallerydisplay h1{
-        width: 350px;
-        font-size: 50px;
-        font-weight: 700;
-        text-shadow: 1px 1px 1px #070707;
-        letter-spacing: 2px;
-        background-color: rgba(247, 184, 184, 0.6); /* Black w/opacity/see-through */
-        padding: 5px 15px 5px 15px;
+        font-size: 13vw;
     }
     
     .firstpartmobilemessage h2{
@@ -2542,9 +2542,8 @@ nav ul li a:hover::after{
     /*First Section*/
 
     .firstpartmobilegallerydisplay h1{
-        width: 320px;
-        font-size: 46px;
-        padding: 5px 15px 5px 15px;
+        width: 90%;
+        font-size: 12vw;
     }
 
     .firstpartmobilemessage h2{
