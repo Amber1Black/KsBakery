@@ -2,114 +2,152 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-RF94ND0HKD');
-        </script>
+    gtag('config', 'G-RF94ND0HKD');
+    </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="K's Bakery, I would like to share my bakeries with everyone, and learn to code a better webpage.">      
+  <meta name="description" content="K's Bakery, a gallery on my bakeries, a record on what I had baked. Home-made bakery is easy, but yummy, wish you can get some ideas on what to bake at home here.">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
 
+  <!-- displays site properly based on user's device -->
+  
   <title>K's Bakery</title>
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;600&display=swap"
-    rel="stylesheet">
-  <!-- My CSS -->
-  <link rel="stylesheet" href="style/AboutMe.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- My CSS -->
+  <link rel="stylesheet" href="style/AboutMeNew.css">
 </head>
 
 <body>
 
-    <div class="headingsection">
-        <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
-            <nav>
-                <ul id="menulist">
-                    <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
-                    <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
-                    <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
-                    <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
-                    <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
-                </ul>
-            </nav>
-            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.jpg">
+  <div class="headingsection">
+    <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
+    <nav>
+      <ul id="menulist">
+        <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
+        <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
+        <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
+        <li><a href="https://www.k-bakery.com/AboutMe"><span style="text-decoration:underline; text-decoration-thickness: 2px; text-underline-offset: 0.5em;">About Me</span></a></li>
+        <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menuicon">
+      <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
     </div>
-
-    <div class="content">
-        <div class="photodisplay">
-            <img src ="Pictures/About Me.jpg">
-        </div>
-
-        <div class="myintroduction">
-            <h1>I am ...</h1>
-            <p>Has been self-learning how to bake since end-2022, and I really love it.
-                I love coding and design also, so have self-learn how to code to create this blog.
-                <Br><Br>
-                I hope to share my bakeries to everyone around me, and wish you have some thrilling times here <span style ="font-size : 12px">&#128155</span>
-            </p>
-
-        </div>
-    </div>
-
-    <div class="contentforsmallerscreen">
-        <div class="uppersection">
-            <div class="photodisplay">
-                <img src ="Pictures/About Me.jpg">
-            </div>
+  </div>
     
-            <div class="myintroductionheadings">
-                <h1>I am ...</h1>
-                <p>I love to bake, and I love design.</p>
-            </div>
+    <div class="content">
 
+      <div class="description">
+        <div class="leftcolumn">
+          <h1>Live an interesting life</h1>
+          <p>Explore the possibilities of life, persistent on the things we love.</p>
+        </div>
+        <div class="rightcolumn">
+          <img src ="Pictures/Profile Pic.jpg">
         </div>
         
-        <div class="myintroductioncontent">
-            <p>Has been self-learning how to bake since end-2022, and I really love it.
-                I love coding and design also, so have self-learn how to code to create this blog.
-                <Br><Br>
-                I hope to share my bakeries to everyone around me, and wish you have some thrilling times here <span style ="font-size : 12px">&#128155</span>
-            </p>
+      </div>
+
+      <div class="introlist">
+        <div class="intro">
+          <img src = "Pictures/About Me - Bake.jpg">
+          <div class="wordsontop">
+            <h3>Love to Bake</h3>
+            <p>Fell in love with home-made bakery once started making it. Thrilled to explore the different possibilities in baking. Home-made bakeries are healthy and delicious, wish everyone enjoy baking at home.</p>
+          </div>
+          <div class="introname">
+            <h4>Love to Bake</h4>
+          </div>
         </div>
-            
+  
+        <div class="intro">
+          <img src = "Pictures/About Me - Design.jpg">
+          <div class="wordsontop">
+            <h3>Love Design</h3>
+            <p>Interested in different kind of design, I like designing new pattern of decoration on bakeries, and I like creating my own blog with my own design. I have created this blog with my own coding, to share everything I like. Coding may be hard to master it, but the process of coding & debugging is interesting.</p>
+          </div>
+          <div class="introname">
+            <h4>Love Design</h4>
+          </div>
+        </div>
+
+        <div class="intro">
+          <img src = "Pictures/About Me - Nature.jpg">
+          <div class="wordsontop">
+            <h3>Love Nature</h3>
+            <p>Love to walk under the Sun, it's so enjoyable and relaxing. Love walking in the park and along sea side, hope to share all the beautiful places I visited.</p>
+          </div>
+          <div class="introname">
+            <h4>Love Nature</h4>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-
+    
 
 
     <div class="copyright">
-        Copyright &#169 2023 K's Bakery
+      Copyright &#169 2023 K's Bakery
     </div>
+        
 
-    
     <script>
-        var menulist = document.getElementById("menulist");
+      var menulist = document.getElementById("menulist");
 
-        menulist.style.maxHeight = "0px";
+      menulist.style.maxHeight = "0px";
 
-        function togglemenu(){
-            if(menulist.style.maxHeight == "0px")
-            {
-                menulist.style.maxHeight = "100vh"
-            }
-            else
-            {
-                menulist.style.maxHeight = "0px";
-            }
+      function togglemenu(){
+        if(menulist.style.maxHeight == "0px")
+        {
+            menulist.style.maxHeight = "100vh"
         }
+        else
+        {
+            menulist.style.maxHeight = "0px";
+        }
+      }
     </script>
 
+    <script type = "text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal (){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+        
+    </script>
 </body>
 
 </html>
+
+
