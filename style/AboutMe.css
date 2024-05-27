@@ -90,6 +90,10 @@ nav ul li a:hover::after{
   overflow: hidden;
 }
 
+.descriptionformobile{
+  display: none;
+}
+
 .description{
   margin: 100px 0px 50px 80px;
   display: grid;
@@ -466,32 +470,48 @@ nav ul li a:hover::after{
   }
 
   /*Content*/
+  /*Change the display of upper section*/
 
   .description{
-    grid-template-columns: 7fr 5fr;
-    margin: 50px 0px 0px 30px;
+    display: none;
   }
 
-  .description h1{
+  .descriptionformobile{
+    display: grid;
+  }
+
+  .upperpic{
+    display: flex;
+    justify-content: center;
+  }
+
+  .upperpic img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 300px;
+    margin: 20px 0px 30px 0px;
+  }
+
+  .lowerdescription h1{
     letter-spacing: 1px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
   }
 
-  .description p{
-    font-size: 14px;
-    margin: 20px 10px 0px 0px;
-  }
-
-  .rightcolumn img{
-    width: 88%;
+  .lowerdescription p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
   }
 
   .introlist{
-    padding: 100px 70px 0px 70px;
+    padding: 80px 16% 0px 16%;
     row-gap: 50px;
   }
 
   .intro img{
-    max-height: 380px;
+    max-height: 420px;
     object-fit: cover;
     object-position: 50% 65%;
   }
@@ -509,12 +529,8 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:500px){
 
-  .introlist{
-    padding: 100px 50px 0px 50px;
-  }
-
-  .intro img{
-    max-height: 335px;
+  .lowerdescription h1{
+    font-size: 28px;
   }
 
   .wordsontop h3, .introname h4{
@@ -525,12 +541,12 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:450px){
 
-  .introlist{
-    padding: 100px 40px 0px 40px;
+  .lowerdescription h1{
+    font-size: 25px;
   }
 
-  .intro img{
-    max-height: 320px;
+  .introlist{
+    padding: 80px 13% 0px 13%;
   }
 
   .wordsontop h3, .introname h4{
@@ -544,14 +560,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:400px){
-
-  .introlist{
-    padding: 100px 30px 0px 30px;
-  }
-
-  .intro img{
-    max-height: 290px;
-  }
 
   .wordsontop h3, .introname h4{
     font-size: 4.5vw;
