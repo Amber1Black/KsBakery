@@ -155,8 +155,9 @@ nav ul li a:hover::after{
 }
 
 .dough-ingredients-content p, .top-ingredients-content p{
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -310,7 +311,11 @@ nav ul li a:hover::after{
     'one four five'
     'two two two'
     'three three three';
-    grid-template-rows: 270px 350px;
+    grid-template-rows: 270px 380px;
+  }
+
+  .bento-content:nth-child(2){
+    padding: 50px 20px 50px 20px;
   }
 
   .ingredients{
@@ -334,7 +339,7 @@ nav ul li a:hover::after{
   }
 
   .bento-grid{
-    grid-template-rows: 220px 330px;
+    grid-template-rows: 220px 350px;
   }
 
   .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
@@ -377,7 +382,7 @@ nav ul li a:hover::after{
   }
 
   .bento-grid{
-    grid-template-rows: 170px 310px;
+    grid-template-rows: 170px 330px;
   }
 
   .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
@@ -398,7 +403,7 @@ nav ul li a:hover::after{
   
   .dough-ingredients-content, .top-ingredients-content{
     font-size: 15px;
-    line-height: 1.5em;
+    line-height: 1.6em;
   }
 
   .bento-content:nth-child(3){
@@ -495,8 +500,8 @@ nav ul li a:hover::after{
     margin-right: 35px;
     cursor: pointer;
     margin-top: 10px;
-    width: 55px;
-    height: 55px;
+    width: 58px;
+    height: 58px;
     object-fit: cover;
   }
 
@@ -520,7 +525,7 @@ nav ul li a:hover::after{
     'four five'
     'two two'
     'three three';
-    grid-template-rows: 350px 220px 300px;
+    grid-template-rows: 350px 220px;
     margin: 30px 30px 80px 30px;
     gap: 20px;
   }
@@ -548,6 +553,7 @@ nav ul li a:hover::after{
 
   .dough-ingredients-content p, .top-ingredients-content p{
     font-size: 15px;
+    letter-spacing: 0px;
   }
 
   .bento-content:nth-child(3){
@@ -573,7 +579,7 @@ nav ul li a:hover::after{
 @media only screen and (max-width:550px){
 
   .bento-grid{
-    grid-template-rows: 320px 200px 300px;
+    grid-template-rows: 320px 200px;
     margin: 30px 30px 80px 30px;
     gap: 20px;
   }
@@ -597,7 +603,7 @@ nav ul li a:hover::after{
   }
 
   .bento-grid{
-    grid-template-rows: 310px 200px 300px;
+    grid-template-rows: 310px 200px;
     margin: 30px 20px 80px 20px;
     gap: 20px;
   }
@@ -638,7 +644,7 @@ nav ul li a:hover::after{
   }
 
   .bento-grid{
-    grid-template-rows: 280px 180px 300px;
+    grid-template-rows: 280px 180px;
     margin: 30px 15px 80px 15px;
   }
 
@@ -667,7 +673,7 @@ nav ul li a:hover::after{
   }
 
   .bento-grid{
-    grid-template-rows: 260px 170px 300px;
+    grid-template-rows: 260px 170px;
     margin: 30px 15px 80px 15px;
   }
 
