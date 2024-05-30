@@ -244,7 +244,7 @@ nav ul li a:hover::after{
 /*Change tart crust process to Bento Grid*/
 
 .tart-crust{
-  margin: 10px 0px 50px 0px;
+  margin: 10px 0px -100px 0px;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-areas:
@@ -371,6 +371,10 @@ nav ul li a:hover::after{
     grid-template-rows: auto 230px;
   }
 
+  .tart-crust{
+    margin: 10px 0px -80px 0px;
+  }
+
 }
 
 
@@ -395,6 +399,7 @@ nav ul li a:hover::after{
 
   .tart-crust{
     grid-template-rows: 220px 220px;
+    margin: 10px 10px 50px 0px;
   }
 
 }
