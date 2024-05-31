@@ -244,35 +244,40 @@ nav ul li a:hover::after{
 /*Change tart crust process to Bento Grid*/
 
 .tart-crust{
-  margin: 10px 0px -100px 0px;
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-areas:
-  'tart1 tart1 tart1 tart2'
-  'tart1 tart1 tart1 tart3';
-  column-gap: 40px;
-  row-gap: 10px;
-  grid-template-rows: 240px 230px;
+  grid-template-areas: 
+  'tart1 tart1'
+  'tart2 tart3';
+  column-gap: 30px;
+  grid-template-rows: auto 420px;
+}
+
+.tart-crust-process{
+  margin-bottom: 20px;
 }
 
 .tart-crust-process:nth-child(1){
   grid-area: tart1;
-  margin-right: 20px;
 }
 
 .tart-crust-process:nth-child(2){
   grid-area: tart2;
+  display: flex;
+  justify-content: right;
 }
 
 .tart-crust-process:nth-child(2) img{
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .tart-crust-process:nth-child(3){
   grid-area: tart3;
+  display: flex;
+  justify-content: left;
 }
 
 .tart-crust-process:nth-child(3) img{
@@ -282,6 +287,11 @@ nav ul li a:hover::after{
   border-radius: 10px;
 }
 
+.tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
+  width: 70%;
+}
+
+
 /*Change tart process to Bento Grid*/
 
 .tart{
@@ -289,11 +299,12 @@ nav ul li a:hover::after{
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-areas:
-  'one one one one'
-  'two three four five';
-  column-gap: 10px;
-  row-gap: 10px;
-  grid-template-rows: auto 280px;
+  'one one'
+  'two three'
+  'four five';
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-rows: auto 380px 380px;
 }
 
 .tart-process:nth-child(1){
@@ -302,10 +313,12 @@ nav ul li a:hover::after{
 
 .tart-process:nth-child(2){
   grid-area: two;
+  display: flex;
+  justify-content: right;
 }
 
 .tart-process:nth-child(2) img{
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -316,7 +329,7 @@ nav ul li a:hover::after{
 }
 
 .tart-process:nth-child(3) img{
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -324,10 +337,12 @@ nav ul li a:hover::after{
 
 .tart-process:nth-child(4){
   grid-area: four;
+  display: flex;
+  justify-content: right;
 }
 
 .tart-process:nth-child(4) img{
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -338,7 +353,7 @@ nav ul li a:hover::after{
 }
 
 .tart-process:nth-child(5) img{
-  width: 100%;
+  width: 80%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -363,16 +378,12 @@ nav ul li a:hover::after{
     column-gap: 60px;
   }
 
-  .tart-crust-process:nth-child(1){
-    margin-right: 15px;
+  .tart-crust{
+    grid-template-rows: auto 370px;
   }
 
   .tart{
-    grid-template-rows: auto 230px;
-  }
-
-  .tart-crust{
-    margin: 10px 0px -80px 0px;
+    grid-template-rows: auto 350px 350px;
   }
 
 }
@@ -398,35 +409,14 @@ nav ul li a:hover::after{
   }
 
   .tart-crust{
-    grid-template-rows: 220px 220px;
-    margin: 10px 10px 50px 0px;
-  }
-
-}
-
-
-@media only screen and (max-width:1200px){
-
-  .tart-crust{
-    grid-template-areas: 
-    'tart1 tart1'
-    'tart2 tart3';
-    grid-template-rows: auto 300px;
-  }
-
-  .tart-crust-process:nth-child(2){
-    display: flex;
-    justify-content: right;
-  }
-
-  .tart-crust-process:nth-child(3){
-    display: flex;
-    justify-content: left;
+    column-gap: 20px;
+    grid-template-rows: auto 350px;
   }
 
   .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 75%;
+    width: 80%;
   }
+
 }
 
 
@@ -453,8 +443,24 @@ nav ul li a:hover::after{
     margin-left: 15px;
   }
 
+  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
+    width: 90%;
+  }
+
+  /*What to do - Tart Crust*/
+
+  .tart-crust{
+    grid-template-rows: auto 380px;
+  }
+
+  /*What to do - Tart*/
+
   .tart{
-    grid-template-rows: auto 200px;
+    grid-template-rows: auto 300px 300px;
+  }
+
+  .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
+    width: 90%;
   }
 }
 
@@ -489,20 +495,23 @@ nav ul li a:hover::after{
 
   /*What to do - Tart Crust*/
 
-  .tart-crust{
-    grid-template-areas: 
-    'tart1 tart1 tart1 tart2'
-    'tart1 tart1 tart1 tart3';
-    grid-template-rows: 225px 220px;
-    margin-bottom: -60px;
+  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
+    width: 75%;
   }
 
-  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 100%;
+  .tart-crust{
+    grid-template-rows: auto 400px;
   }
+
+
+  /*What to do - Tart*/
 
   .tart{
-    grid-template-rows: auto 250px;
+    grid-template-rows: auto 380px 380px;
+  }
+
+  .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
+    width: 90%;
   }
   
 }
@@ -531,12 +540,14 @@ nav ul li a:hover::after{
     padding: 50px 30px 100px 30px;
   }
 
-  .tart-crust-process:nth-child(1){
-    margin-right: 10px;
+  /*What to do - Tart Crust*/
+
+  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
+    width: 80%;
   }
 
   .tart-crust{
-    margin-bottom: -50px;
+    grid-template-rows: auto 450px;
   }
 }
 
@@ -581,22 +592,14 @@ nav ul li a:hover::after{
     margin-left: 20px;
   }
 
+  /*What to do - Tart Crust*/
+
   .tart-crust{
-    column-gap: 20px;
-    grid-template-rows: 220px 220px;
+    grid-template-rows: auto 380px;
   }
 
 }
 
-@media only screen and (max-width:888px){
-
-  /*Content*/
-
-  .tart-crust{
-    margin-bottom: -40px;
-  }
-
-}
 
 
 @media only screen and (max-width:850px){
@@ -616,41 +619,6 @@ nav ul li a:hover::after{
     margin-left: 15px;
   }
 
-  .tart-crust{
-    grid-template-areas: 
-    'tart1 tart1'
-    'tart2 tart3';
-    grid-template-rows: auto 330px;
-    margin-bottom: 50px;
-  }
-
-  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 75%;
-  }
-
-  .tart{
-    grid-template-areas:
-    'one one'
-    'two three'
-    'four five';
-    column-gap: 20px;
-    row-gap: 20px;
-    grid-template-rows: auto 300px 300px;
-  }
-
-  .tart-process:nth-child(2), .tart-process:nth-child(4){
-    display: flex;
-    justify-content: right;
-  }
-
-  .tart-process:nth-child(3), .tart-process:nth-child(5){
-    display: flex;
-    justify-content: left;
-  }
-
-  .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
-    width: 75%;
-  }
 
 }
 
@@ -676,8 +644,7 @@ nav ul li a:hover::after{
     column-gap: 30px;
   }
 
-  .tart{
-    margin: 10px 0px 20px 0px;
+
 }
 
 
@@ -685,6 +652,16 @@ nav ul li a:hover::after{
 
   .ingredients{
     column-gap: 25px;
+  }
+
+  /*What to do - Tart Crust*/
+
+  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
+    width: 85%;
+  }
+
+  .tart-crust{
+    grid-template-rows: auto 350px;
   }
 
 }
@@ -721,14 +698,22 @@ nav ul li a:hover::after{
     margin-left: 40px;
   }
 
+  /*What to do - Tart Crust*/
+
   .tart-crust{
-    grid-template-rows: auto 270px;
-    margin-bottom: 50px;
+    grid-template-rows: auto 310px;
   }
 
   .tart{
     grid-template-rows: auto 245px 245px;
   }
+
+  /*What to do - Tart*/
+
+  .tart{
+    grid-template-rows: auto 300px 300px;
+  }
+
 }
 
 
@@ -857,20 +842,29 @@ nav ul li a:hover::after{
     font-size: 15px;
   }
 
-  .tart-crust{
-    grid-template-rows: auto 250px;
-  }
+  /*What to do - Tart Crust*/
 
-  .tart{
-    grid-template-rows: auto 230px 230px;
+  .tart-crust{
+    column-gap: 10px;
   }
 
   .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 85%;
+    width: 95%;
+  }
+
+  .tart-crust{
+    grid-template-rows: auto 300px;
+  }
+
+  /*What to do - Tart*/
+
+  .tart{
+    grid-template-rows: auto 270px 270px;
+    gap: 10px;
   }
 
   .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
-    width: 85%;
+    width: 95%;
   }
     
 }
@@ -936,22 +930,53 @@ nav ul li a:hover::after{
     font-size: 14px;
   }
 
+  /*What to do - Tart Crust*/
+
   .tart-crust{
-    grid-template-rows: auto 210px;
+    grid-template-areas: 
+    'tart1'
+    'tart2'
+    'tart3';
+    grid-template-rows: auto 400px 400px;
   }
 
-  .tart{
-    grid-template-rows: auto 200px 200px;
-    column-gap: 10px;
-    row-gap: 10px;
+  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
+    width: 75%;
   }
+
+  .tart-crust-process:nth-child(2), .tart-crust-process:nth-child(3){
+    justify-content: center;
+  }
+
+  /*What to do - Tart*/
+
+  .tart{
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+    grid-template-rows: auto 360px 360px 360px 360px;
+    row-gap: 15px;
+  }
+
+  .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
+    width: 80%;
+  }
+
+  .tart-process:nth-child(2), .tart-process:nth-child(3), .tart-process:nth-child(4), .tart-process:nth-child(5){
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 
 @media only screen and (max-width:450px){
 
   .headings h1{
-    font-size: 33px;
+    font-size: 38px;
     margin-left: 25px;
   }
 
@@ -978,20 +1003,34 @@ nav ul li a:hover::after{
     margin-left: 12px;
   }
 
+  /*What to do - Tart Crust*/
+
   .tart-crust{
-    grid-template-rows: auto 190px;
+    grid-template-rows: auto 380px 380px;
   }
 
-  .tart{
-    grid-template-rows: auto 170px 170px;
+  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
+    width: 80%;
   }
+
+  /*What to do - Tart*/
+
+  .tart{
+    grid-template-rows: auto 330px 330px 330px 330px;
+    row-gap: 15px;
+  }
+
+  .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
+    width: 80%;
+  }
+
 }
 
 
 @media only screen and (max-width:400px){
 
   .headings h1{
-    font-size: 28px;
+    font-size: 35px;
     margin-left: 23px;
   }
 
@@ -1005,11 +1044,25 @@ nav ul li a:hover::after{
     margin-left: 8px;
   }
 
+  /*What to do - Tart Crust*/
+
   .tart-crust{
-    grid-template-rows: auto 175px;
+    grid-template-rows: auto 380px 380px;
   }
 
-  .tart{
-    grid-template-rows: auto 160px 160px;
+  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
+    width: 90%;
   }
+
+  /*What to do - Tart*/
+
+  .tart{
+    grid-template-rows: auto 310px 310px 310px 330px;
+    row-gap: 15px;
+  }
+
+  .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
+    width: 90%;
+  }
+
 }
