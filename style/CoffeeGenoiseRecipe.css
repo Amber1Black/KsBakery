@@ -97,7 +97,7 @@ nav ul li a:hover::after{
   'three three three three three four four'
   'three three three three three five five';
   grid-gap: 30px;
-  grid-template-rows: 450px 380px 380px;
+  grid-template-rows: 420px 380px 380px;
 }
 
 .bento-content{
@@ -116,6 +116,8 @@ nav ul li a:hover::after{
   object-fit: cover;
   border-radius: 10px;
 }
+
+/*What you need*/
 
 .bento-content:nth-child(2){
   grid-area: two;
@@ -146,7 +148,7 @@ nav ul li a:hover::after{
 
 .ingredients-content p{
   font-family: 'Poppins', sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 400;
   letter-spacing: 1px;
 }
@@ -157,7 +159,7 @@ nav ul li a:hover::after{
 }
 
 .bento-content:nth-child(2) h4{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   margin-top: 40px;
@@ -249,16 +251,29 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1350px){
 
+  .bento-grid{
+    grid-template-rows: 390px 380px 380px;
+  }
+
   .bento-content:nth-child(2){
     padding: 60px 40px;
   }
 
-  .bento-grid{
-    grid-template-rows: 400px 380px 380px;
+  .ingredients-content p{
+    font-size: 18px;
   }
 
   .ingredients{
     column-gap:50px;
+  }
+
+}
+
+
+@media only screen and (max-width:1200px){
+
+  .ingredients-portion{
+    margin-left: 20px;
   }
 
 }
@@ -278,8 +293,8 @@ nav ul li a:hover::after{
     column-gap: 30px;
   }
 
-  .ingredients-portion{
-    margin-left: 20px;
+  .bento-content:nth-child(2) h4{
+    font-size: 18px;
   }
 
 }
@@ -291,6 +306,10 @@ nav ul li a:hover::after{
     margin: 30px 40px 80px 40px;
     grid-template-rows: 380px 340px 340px;
     gap: 20px;
+  }
+
+  .ingredients-content p{
+    font-size: 17px;
   }
 
   /*What to do*/
@@ -380,8 +399,14 @@ nav ul li a:hover::after{
     grid-template-rows: 270px 350px;
   }
 
+  /*What you need*/
+
   .bento-content:nth-child(2){
     padding: 50px 20px 50px 20px;
+  }
+
+  .ingredients-content p{
+    font-size: 17px;
   }
 
   .ingredients{
@@ -390,6 +415,10 @@ nav ul li a:hover::after{
 
   .ingredients-portion{
     margin-left: 50px;
+  }
+
+  .bento-content:nth-child(2) h4{
+    font-size: 20px;
   }
 }
 
@@ -405,7 +434,7 @@ nav ul li a:hover::after{
   }
 
   .bento-grid{
-    grid-template-rows: 250px 330px;
+    grid-template-rows: 250px 350px;
   }
 
   .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
@@ -414,6 +443,10 @@ nav ul li a:hover::after{
 
   .ingredients{
     column-gap: 40px;
+  }
+
+  .bento-content:nth-child(2) h4{
+    font-size: 19px;
   }
 
 }
@@ -434,7 +467,15 @@ nav ul li a:hover::after{
   /*Content*/
 
   .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
-    font-size: 23px;
+    font-size: 25px;
+  }
+
+  .bento-content:nth-child(2) h4{
+    font-size: 18px;
+  }
+
+  .ingredients-portion{
+    margin-left: 35px;
   }
 
   .bento-content:nth-child(3){
@@ -644,11 +685,11 @@ nav ul li a:hover::after{
   }
 
   .bento-content:nth-child(2) h4{
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .ingredients-content p{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .ingredients{
@@ -656,7 +697,7 @@ nav ul li a:hover::after{
   }
 
   .ingredients-portion{
-    margin-left: 15px;
+    margin-left: 10px;
   }
 
   .bento-content li, .note{
@@ -687,11 +728,13 @@ nav ul li a:hover::after{
 
   .ingredients-content p{
     letter-spacing: 0px;
+    font-size: 15px;
   }
 
-  .ingredients-portion{
-    margin-left: 10px;
+  .bento-content:nth-child(2) h4{
+    font-size: 16px;
   }
+
 
   /*What to do*/
 
