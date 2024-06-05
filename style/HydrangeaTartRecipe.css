@@ -1,3 +1,24 @@
+:root{
+  --h2--first--fs: 35px;
+  --h2--first--ls: 4px;
+  --h2--first--fw: 700;
+  --ff--special: "Fraunces", serif;
+  --h2--950--fs: 30px;
+
+  --h4--first--fs: 20px;
+  --h4--first--ls: 1px;
+  --h4--first--fw: 700;
+  --h4--first--c: #2a2a2a;
+  --h4--950--fs: 18px;
+
+  --p--first--fs: 16px;
+  --p--first--ls: 0px;
+  --p--first--fw: 500;
+  --p--first--c: #2a2a2a;
+  --p--950--fs: 15px;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -83,9 +104,11 @@ nav ul li a:hover::after{
 /*content*/
 
 .headings h1{
-  margin: 50px 0px 0px 60px;
-  letter-spacing: 3px;
-  font-size: 45px;
+  margin: 50px 0px 0px 70px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 55px;
+  font-family: var(--ff--special);
 }
 
 .bento-grid{
@@ -93,11 +116,12 @@ nav ul li a:hover::after{
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-areas:
-  'one one two two two two two two'
-  'three three three three three three four four'
-  'three three three three three three five five';
+  'one one one four four four two two two two'
+  'three three three three three three two two two two'
+  'three three three three three three six six six six'
+  'three three three three three three five five five five';
   grid-gap: 20px;
-  grid-template-rows: 420px 290px 350px;
+  grid-template-rows: 480px 80px 550px 550px;
 }
 
 .bento-content{
@@ -122,102 +146,115 @@ nav ul li a:hover::after{
   display: grid;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px 60px 20px;
+  padding: 70px 20px 70px 20px;
 }
 
 .bento-content:nth-child(2) h2{
-  font-size: 30px;
-  letter-spacing: 2px;
+  font-size: var(--h2--first--fs);
+  font-family: var(--ff--special);
+  font-weight: var(--h2--first--fw);
+  letter-spacing: var(--h2--first--ls);
   margin-bottom: 30px;
   text-align: center;
 }
 
 .ingredients{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 80px;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+  'one two'
+  'one three';
+  grid-gap: 40px;
+}
+
+.ingredients-grid:nth-child(1){
+  grid-area: one;
+}
+
+.ingredients-grid:nth-child(2){
+  grid-area: two;
+}
+
+.ingredients-grid:nth-child(3){
+  grid-area: three;
 }
 
 .ingredients h4{
-  font-size: 23px;
-  letter-spacing: 1px;
+  font-size: var(--h4--first--fs);
+  letter-spacing: var(--h4--first--ls);
+  font-weight: var(--h4--first--fw);
+  color: var(--h4--first--c);
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 0.4em;
   text-decoration-thickness: 0.1em;
-  margin-right: 20px;
 }
 
 .ingredients-content{
   display: flex;
   margin: 20px 0px 0px 0px;
-  line-height: 1.8em;
+  line-height: 2em;
 }
 
 .ingredients-content p{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-size: var(--p--first--fs);
+  font-weight: var(--p--first--fw);
+  letter-spacing: var(--p--first--ls);
+  color: var(--p--first--c);
 }
 
 .ingredients-portion{
   text-align: right;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
-.bento-content:nth-child(3){
-  grid-area: three;
-  padding: 50px;
-  overflow-y: scroll;
-}
 
 /*What to do*/
 
+.bento-content:nth-child(3){
+  grid-area: three;
+  padding: 50px 50px;
+  overflow-y: scroll;
+}
+
 .bento-content:nth-child(3) h2{
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: var(--h2--first--fs);
+  font-family: var(--ff--special);
+  font-weight: var(--h2--first--fw);
+  letter-spacing: var(--h2--first--ls);
+  text-align: center;
 }
 
 .bento-content:nth-child(3) h4{
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin: 20px 0px 20px 10px;
+  font-size: var(--h4--first--fs);
+  letter-spacing: var(--h4--first--ls);
+  font-weight: var(--h4--first--fw);
+  color: var(--h4--first--c);
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-thickness: 0.1em;
+  margin: 20px 0px 30px 0px;
 }
 
 .bento-content li{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--p--first--fs);
+  font-weight: var(--p--first--fw);
+  letter-spacing: var(--p--first--ls);
+  color: var(--p--first--c);
   text-align: justify;
   padding-bottom: 10px;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .note{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--p--first--fs);
+  font-weight: var(--p--first--fw);
   text-align: justify;
   color: rgb(116, 114, 114);
+  
 }
 
-/*pictures at the bottom*/
-
-.stepspic{
-  display: flex;
-  justify-content: center;
-}
-
-.stepspic img{
-  height: 550px;
-  width: 420px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 10px 0px 50px 0px;
-}
+/*Additional Pics*/
 
 .bento-content:nth-child(4){
   grid-area: four;
@@ -241,6 +278,17 @@ nav ul li a:hover::after{
   border-radius: 10px;
 }
 
+.bento-content:nth-child(6){
+  grid-area: six;
+}
+
+.bento-content:nth-child(6) img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 /*Change tart crust process to Bento Grid*/
 
 .tart-crust{
@@ -249,7 +297,7 @@ nav ul li a:hover::after{
   grid-template-areas: 
   'tart1 tart1'
   'tart2 tart3';
-  column-gap: 30px;
+  column-gap: 20px;
   grid-template-rows: auto 420px;
 }
 
@@ -268,7 +316,7 @@ nav ul li a:hover::after{
 }
 
 .tart-crust-process:nth-child(2) img{
-  width: 100%;
+  width: 90%;
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -281,14 +329,10 @@ nav ul li a:hover::after{
 }
 
 .tart-crust-process:nth-child(3) img{
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-  width: 70%;
 }
 
 
@@ -304,7 +348,7 @@ nav ul li a:hover::after{
   'four five';
   column-gap: 20px;
   row-gap: 20px;
-  grid-template-rows: auto 380px 380px;
+  grid-template-rows: auto 350px 350px;
 }
 
 .tart-process:nth-child(1){
@@ -318,7 +362,7 @@ nav ul li a:hover::after{
 }
 
 .tart-process:nth-child(2) img{
-  width: 80%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -329,7 +373,7 @@ nav ul li a:hover::after{
 }
 
 .tart-process:nth-child(3) img{
-  width: 80%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -342,7 +386,7 @@ nav ul li a:hover::after{
 }
 
 .tart-process:nth-child(4) img{
-  width: 80%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -353,7 +397,7 @@ nav ul li a:hover::after{
 }
 
 .tart-process:nth-child(5) img{
-  width: 80%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -374,111 +418,100 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1350px){
 
-  .ingredients{
-    column-gap: 60px;
-  }
-
-  .tart-crust{
-    grid-template-rows: auto 370px;
-  }
-
-  .tart{
-    grid-template-rows: auto 350px 350px;
-  }
-
-}
-
-
-@media only screen and (max-width:1250px){
-
   .bento-grid{
-    grid-template-areas:
-    'one one one two two two two two two two'
-    'three three three three three three three four four four'
-    'three three three three three three three five five five';
     grid-gap: 20px;
-    grid-template-rows: 420px 280px 380px;
+    grid-template-rows: 430px 100px 550px 550px;
   }
 
   .ingredients{
-    column-gap: 35px;
+    grid-gap: 25px;
+  }
+
+  .tart-crust{
+    grid-template-rows: auto 360px;
+  }
+
+  .tart{
+    grid-template-rows: auto 310px 310px;
+  }
+
+}
+
+@media only screen and (max-width:1300px){
+
+  .headings h1{
+    font-size: 50px;
+    margin-left: 50px;
+  }
+
+  .bento-grid{
+    margin: 30px 30px 80px 30px;
   }
 
   .ingredients-portion{
     margin-left: 15px;
   }
 
-  .tart-crust{
-    column-gap: 20px;
-    grid-template-rows: auto 350px;
-  }
-
-  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 80%;
-  }
-
 }
 
 
-@media only screen and (max-width:1150px){
+@media only screen and (max-width:1200px){
+
+  .headings h1{
+    font-size: 40px;
+    margin-left: 45px;
+  }
 
   .bento-grid{
     grid-template-areas:
-    'one one two two two two two'
-    'three three three three three four four'
-    'three three three three three five five';
-    grid-template-rows: 420px 280px 360px;
-    margin: 30px 40px 80px 40px;
+    'one one one one four four four four two two two two two two'
+    'three three three three three three three three two two two two two two'
+    'three three three three three three three three six six six six six six'
+    'three three three three three three three three five five five five five five';
+    grid-gap: 15px;
+    grid-template-rows: 400px 120px 470px 520px;
   }
 
-  .bento-content:nth-child(2){
-    padding: 60px 10px 60px 10px;
-  }
-
-  .ingredients{
-    column-gap: 30px;
+  .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
+    font-size: 30px;
   }
 
   .ingredients-portion{
-    margin-left: 15px;
+    margin-left: 13px;
   }
 
-  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 90%;
+  .bento-content:nth-child(3){
+    padding: 50px 35px;
   }
-
-  /*What to do - Tart Crust*/
 
   .tart-crust{
-    grid-template-rows: auto 380px;
+    grid-template-rows: auto 320px;
   }
-
-  /*What to do - Tart*/
 
   .tart{
-    grid-template-rows: auto 300px 300px;
-  }
-
-  .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
-    width: 90%;
+    grid-template-rows: auto 280px 280px;
   }
 }
-
 
 
 @media only screen and (max-width:1100px){
 
   .bento-grid{
     grid-template-areas:
-    'one four five'
-    'two two two'
-    'three three three';
-    grid-template-rows: 380px 400px;
-    gap: 30px;
+    'one one two two two'
+    'three three three four four'
+    'three three three five five'
+    'three three three six six';
+    grid-template-rows: 500px 310px 450px 400px;
+    gap: 20px;
   }
 
   .bento-content:nth-child(2){
     padding: 50px 20px 50px 20px;
+  }
+
+  .ingredients-content{
+    line-height: 1.8em;
   }
 
   .ingredients{
@@ -486,46 +519,37 @@ nav ul li a:hover::after{
   }
 
   .ingredients-portion{
-    margin-left: 50px;
+    margin-left: 40px;
   }
 
+
   .bento-content:nth-child(3){
-    padding: 50px 80px 100px 80px;
+    padding: 50px 30px 100px 30px;
   }
 
   /*What to do - Tart Crust*/
-
-  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 75%;
-  }
 
   .tart-crust{
     grid-template-rows: auto 400px;
   }
 
 
-  /*What to do - Tart*/
+  /*What to do*/
+
+  .tart-crust{
+    grid-template-rows: auto 310px;
+  }
 
   .tart{
-    grid-template-rows: auto 380px 380px;
-  }
-
-  .tart-process:nth-child(2) img, .tart-process:nth-child(3) img, .tart-process:nth-child(4) img, .tart-process:nth-child(5) img{
-    width: 90%;
-  }
-  
+    grid-template-rows: auto 280px 280px;
+  } 
 }
 
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1050px){
 
   .bento-grid{
-    grid-template-areas:
-    'one four five'
-    'two two two'
-    'three three three';
-    grid-template-rows: 350px 400px;
-    gap: 30px;
+    grid-template-rows: 480px 300px 450px 400px;
   }
 
   .ingredients{
@@ -536,19 +560,6 @@ nav ul li a:hover::after{
     margin-left: 30px;
   }
 
-  .bento-content:nth-child(3){
-    padding: 50px 30px 100px 30px;
-  }
-
-  /*What to do - Tart Crust*/
-
-  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 80%;
-  }
-
-  .tart-crust{
-    grid-template-rows: auto 450px;
-  }
 }
 
 
@@ -569,37 +580,39 @@ nav ul li a:hover::after{
     margin-right: 40px;
   }
 
-}
-
-
-
-
-@media only screen and (max-width:900px){
-
   /*Content*/
 
   .bento-grid{
-    grid-template-rows: 320px 400px;
-    gap: 25px;
-    margin: 30px 35px 80px 35px;
+    grid-template-rows: 470px 300px 410px 360px;
   }
 
-  .ingredients{
-    column-gap: 35px;
+  .bento-content:nth-child(2) h2,
+  .bento-content:nth-child(3) h2{
+    font-size: var(--h2--950--fs);
   }
 
-  .ingredients-portion{
-    margin-left: 20px;
+  .ingredients-content p,
+  .bento-content li,
+  .note{
+    font-size: var(--p--950--fs);
   }
 
-  /*What to do - Tart Crust*/
+  .ingredients h4,
+  .bento-content:nth-child(3) h4{
+    font-size: var(--h4--950--fs);
+  }
+
+  /*What to do*/
 
   .tart-crust{
-    grid-template-rows: auto 380px;
+    grid-template-rows: auto 270px;
   }
 
-}
+  .tart{
+    grid-template-rows: auto 240px 240px;
+  } 
 
+}
 
 
 @media only screen and (max-width:850px){
@@ -608,41 +621,44 @@ nav ul li a:hover::after{
 
   .headings h1{
     font-size: 40px;
-    margin-left: 50px;
+    margin-left: 30px;
+  }
+
+  .bento-grid{
+    grid-template-rows: 430px 260px 370px 330px;
+    gap: 15px;
+    margin: 20px 20px 80px 20px;
+  }
+
+  .bento-content:nth-child(2) h2{
+    margin-bottom: 20px;
+  }
+
+  .ingredients-content{
+    line-height: 1.5em;
   }
 
   .ingredients h4{
     font-size: 20px;
   }
 
+  .ingredients{
+    column-gap: 25px;
+  }
+
   .ingredients-portion{
     margin-left: 15px;
   }
 
+  /*What to do*/
 
-}
-
-
-@media only screen and (max-width:800px){
-
-  .headings h1{
-    font-size: 40px;
-    margin-left: 35px;
+  .tart-crust{
+    grid-template-rows: auto 250px;
   }
 
-  .bento-grid{
-    grid-template-rows: 280px 400px;
-    margin: 30px 25px 80px 25px;
-    gap: 20px;
-  }
-
-  .ingredients-content p{
-    letter-spacing: 0px;
-  }
-
-  .ingredients{
-    column-gap: 30px;
-  }
+  .tart{
+    grid-template-rows: auto 220px 220px;
+  } 
 
 
 }
@@ -650,20 +666,25 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:750px){
 
+  .bento-grid{
+    grid-template-rows: 450px 260px 370px 330px;
+    gap: 10px;
+  }
+
+
+  /*What you need*/
+
   .ingredients{
-    column-gap: 25px;
+    column-gap: 15px;
   }
 
-  /*What to do - Tart Crust*/
-
-  .tart-crust-process:nth-child(2) img, .tart-crust-process:nth-child(3) img{
-    width: 85%;
+  .ingredients-portion{
+    margin-left: 5px;
   }
 
-  .tart-crust{
-    grid-template-rows: auto 350px;
+  .ingredients p{
+    letter-spacing: 0px;
   }
-
 }
 
 
@@ -682,20 +703,27 @@ nav ul li a:hover::after{
   /*Content*/
 
   .bento-grid{
-    grid-template-rows: 260px 520px;
+    grid-template-rows: 240px 480px;
     margin: 30px 25px 80px 25px;
     gap: 20px;
+    grid-template-areas:
+    'one five'
+    'four four'
+    'two two'
+    'three three';
+    grid-template-rows: 320px 380px 480px;
+  }
+
+  .bento-content:nth-child(6){
+    display: none;
   }
 
   .ingredients{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 30px;
   }
 
   .ingredients-portion{
-    margin-left: 40px;
+    margin-left: 50px;
   }
 
   /*What to do - Tart Crust*/
@@ -813,6 +841,10 @@ nav ul li a:hover::after{
     'two two'
     'three three';
     grid-template-rows: 320px 380px 480px;
+  }
+
+  .bento-content:nth-child(6){
+    display: none;
   }
 
   .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
