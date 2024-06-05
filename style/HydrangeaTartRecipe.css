@@ -862,12 +862,12 @@ nav ul li a:hover::after{
 
   .headings h1{
     font-size: 35px;
-    margin-left: 30px;
+    margin: 20px 0px 0px 30px;
   }
 
   .bento-grid{
     margin: 30px 20px 80px 20px;
-    grid-template-rows: 260px 230px 420px;
+    grid-template-rows: 260px 230px 460px;
   }
 
   .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
@@ -884,7 +884,7 @@ nav ul li a:hover::after{
   }
 
   .ingredients-content{
-    line-height: 1.4em;
+    line-height: 1.6em;
   }
 
   .ingredients{
@@ -950,9 +950,14 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:450px){
 
+  .headings h1{
+    font-size: 35px;
+    margin: 20px 0px 0px 20px;
+  }
+
   .bento-grid{
-    margin: 30px 10px 80px 10px;
-    grid-template-rows: 250px 230px 420px;
+    margin: 25px 10px 80px 10px;
+    grid-template-rows: 250px 230px 440px;
     gap: 10px;
   }
 
@@ -975,7 +980,7 @@ nav ul li a:hover::after{
   }
 
   .bento-grid{
-    grid-template-rows: 230px 200px 420px;
+    grid-template-rows: 230px 200px 440px;
     margin: 20px 10px 50px 10px;
     gap: 15px;
   }
