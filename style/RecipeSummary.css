@@ -186,14 +186,13 @@
   animation: circleRotate 20s linear infinite;
 }
 
-/*
+
 @keyframes circleRotate{
   to{
       transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
   }
 }
 
-*/
 
 
 /*Recipe Grid*/
