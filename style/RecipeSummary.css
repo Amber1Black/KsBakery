@@ -92,7 +92,7 @@
     min-height: 740px;
     overflow: hidden; 
     position: relative;
-    background-color: #153432;
+    background-color: #003c43;
     background-image: radial-gradient(#fff3, transparent 90%);
     margin-top: -50px;
 }
@@ -122,13 +122,11 @@
     filter: drop-shadow(0 0 20px #000);
 }
 
-.picture1, .picture3{
-  scale: 0.85;
-  filter: blur(2px);
-  filter: grayscale(10px);
+.picture1, .picture3 img{
+  scale: 0.80;
 }
 
-.picture1 img:hover, .picture3:hover{
+.picture1:hover, .picture3:hover{
   scale : 1;
   filter: blur(0px);
 }
@@ -160,6 +158,7 @@
 .content p{
   letter-spacing: 1px;
   font-size: 17px;
+  filter: drop-shadow(0 0 10px #000);
 }
 
 .content p1, .content p2{
@@ -175,15 +174,12 @@
   left: 0%;
   width: 100%;
   height: 110%;
-  backdrop-filter: blur(0px);
-
-    
 }
 
 .circle span{
   display: block;
   position: absolute;
-  height: calc(var(--radius) * 2 + 20px);
+  height: calc(var(--radius) * 2 + 30px);
   top: 50%;
   left: 50%;
   --rotate: 50deg;
@@ -194,11 +190,13 @@
   animation: circleRotate 30s linear infinite;
 }
 
+
 @keyframes circleRotate{
   to{
       transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
   }
 }
+
 
 
 /*Recipe Grid*/
@@ -280,7 +278,7 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 25px;
     row-gap: 50px;
-    padding: 40px;
+    padding: 80px 40px;
   }
 
   .recipename h3{
@@ -303,7 +301,7 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 20px;
     row-gap: 50px;
-    padding: 40px 30px;
+    padding: 80px 30px;
   }
 
   .recipename, .recipename1{
@@ -323,7 +321,7 @@ h3{
 @media only screen and (max-width:1100px){
 
   .uppersection{
-    height: 750px;
+    height: 700px;
   }
 
   .content p{
@@ -334,6 +332,8 @@ h3{
     display: grid;
     font-size: 16px;
     letter-spacing: 1px;
+    filter: drop-shadow(1px 1px 3px #000);
+    margin-top: 10px;
   }
 
   /*Recipe Grid*/
@@ -363,14 +363,14 @@ h3{
 @media only screen and (max-width:1000px){
 
   .uppersection{
-    height: 700px;
+    height: 650px;
   }
 
   .recipecategory{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     column-gap: 40px;
     row-gap: 50px;
-    padding: 40px 70px;
+    padding: 80px 70px;
   }
 
   .recipename1 h3{
@@ -402,14 +402,14 @@ h3{
 @media only screen and (max-width:900px){
 
   .uppersection{
-    height: 650px;
+    height: 600px;
   }
 
   .recipecategory{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 20px;
     row-gap: 30px;
-    padding: 40px 30px;
+    padding: 80px 30px;
   }
 }
 
@@ -426,7 +426,7 @@ h3{
 @media only screen and (max-width:800px){
 
   .uppersection{
-    height: 600px;
+    height: 580px;
   }
 
   .recipename1{
@@ -491,11 +491,12 @@ h3{
   .content h2{
     display: grid;
     font-size: 14vw;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     font-weight: bold;
     position: initial;
     line-height: 1em;
     margin-bottom: 20px;
+    filter: drop-shadow(2px 2px 5px #000);
   }
 
   .content p1{
@@ -506,6 +507,7 @@ h3{
     display: block;
     font-size: 15px;
     letter-spacing: 2px;
+    filter: drop-shadow(1px 1px 3px #000);
   }
 
   .circle{
@@ -513,12 +515,6 @@ h3{
     left: 0%;
     width: 100%;
     height: 123.5%;
-    -webkit-mask: none;
-    mask: radial-gradient(var(--radius), #0000 90%, #000);
-    backdrop-filter: blur(0px);
-    background: radial-gradient( 
-        calc(var(--radius) + 1px), #eee5 10%, #eee2
-    );
   }
 
   .circle span{
@@ -679,7 +675,7 @@ h3{
   /*Upper Section*/
 
   .uppersection{
-    height: 760px;
+    height: 770px;
   }
 }
 
@@ -693,7 +689,7 @@ h3{
   }
 
   .uppersection{
-    height: 700px;
+    height: 710px;
   }
 
   .picture2 img{
@@ -710,10 +706,12 @@ h3{
   .content h2{
     font-size: 15vw;
     margin-bottom: 10px;
+    letter-spacing: 5px;
   }
 
   .content p2{
     font-size: 14px;
+    letter-spacing: 1px;
   }
 
   /*Recipe Grid*/
@@ -721,7 +719,7 @@ h3{
   .recipecategory{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     row-gap: 30px;
-    padding: 70px 40px;
+    padding: 80px 40px;
   }
 
   .recipename, .recipename1{
@@ -740,17 +738,8 @@ h3{
 
   .recipecategory{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 70px 20px;
+    padding: 80px 20px;
   }
-}
-
-
-@media only screen and (max-width:400px){
-
-  .uppersection{
-    height: 580px;
-  }
-
 }
 
 
@@ -759,6 +748,16 @@ h3{
     font-size: 23px;
   }
 }
+
+
+@media only screen and (max-width:400px){
+
+  .uppersection{
+    height: 610px;
+  }
+
+}
+
 
 @media only screen and (max-width:380px){
 
