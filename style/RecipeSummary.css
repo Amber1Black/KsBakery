@@ -89,7 +89,7 @@
 .uppersection{
     width: 100vw;
     height: 100vh;
-    max-height: 1000px;
+    min-height: 770px;
     overflow: hidden; 
     position: relative;
     background-color: #0d2826;
@@ -99,6 +99,7 @@
 
 .imageshown{
     position: absolute;
+    top: -5%;
     width: max-content;
     height: 100%;
     display: flex;
@@ -114,7 +115,7 @@
 }
 
 .picture1 img, .picture2 img, .picture3 img{
-    width: 85%;
+    width: 90%;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 100%;
@@ -123,7 +124,7 @@
 
 .content{
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -140,12 +141,16 @@
     position: relative;
 }
 
-.content p{
-  letter-spacing: 1px;
-  font-size: 18px;
+.content h2{
+  display: none;
 }
 
-.content p1{
+.content p{
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+.content p1, .content p2{
   display: none;
 }
 
@@ -154,10 +159,10 @@
 
 .circle{
   position: absolute;
-  top: 0%;
+  top: -10%;
   left: 0%;
   width: 100%;
-  height: 100%;
+  height: 110%;
   -webkit-mask: radial-gradient(var(--radius), transparent 100%, #000);
   mask: radial-gradient(var(--radius), #0000 98%, #000);
   backdrop-filter: blur(9px);
@@ -166,6 +171,7 @@
   );
     
 }
+
 .circle span{
   display: block;
   position: absolute;
@@ -179,6 +185,15 @@
   font-size: small;
   animation: circleRotate 20s linear infinite;
 }
+
+/*
+@keyframes circleRotate{
+  to{
+      transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
+  }
+}
+
+*/
 
 
 /*Recipe Grid*/
@@ -249,22 +264,11 @@ h3{
 }
 
 
-@media only screen and (max-width:1400px){
-
-  .uppersection{
-    max-height: 850px;
-  }
-
-  .recipename1 h3{
-    letter-spacing: 1px;
-  }
-}
-
-
 @media only screen and (max-width:1300px){
 
   .uppersection{
-    max-height: 800px;
+    max-height: 850px;
+    min-height: initial;
   }
 
   .recipecategory{
@@ -314,8 +318,20 @@ h3{
 @media only screen and (max-width:1100px){
 
   .uppersection{
-    max-height: 700px;
+    height: 750px;
   }
+
+  .content p{
+    display: none;
+  }
+
+  .content p1{
+    display: grid;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  /*Recipe Grid*/
 
   .recipecategory{
     column-gap: 15px;
@@ -335,14 +351,15 @@ h3{
     font-size: 21px;
   }
 
-  .content p{
-    letter-spacing: 1px;
-    font-size: 17px;
-  }
+  
 }
 
 
 @media only screen and (max-width:1000px){
+
+  .uppersection{
+    height: 700px;
+  }
 
   .recipecategory{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -379,23 +396,8 @@ h3{
 @media only screen and (max-width:900px){
 
   .uppersection{
-    max-height: 650px;
+    height: 650px;
   }
-
-  .recipecategory{
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 30px;
-    row-gap: 50px;
-    padding: 40px 50px;
-  }
-
-  .recipename1 h3{
-    font-size: 23px;
-  }
-}
-
-
-@media only screen and (max-width:900px){
 
   .recipecategory{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -403,10 +405,28 @@ h3{
     row-gap: 30px;
     padding: 40px 30px;
   }
+}
+
+
+@media only screen and (max-width:850px){
 
   .recipename1 h3{
-    font-size: 21px;
+    font-size: 3vw;
+    letter-spacing: 2px;
   }
+}
+
+
+@media only screen and (max-width:800px){
+
+  .uppersection{
+    height: 600px;
+  }
+
+  .recipename1{
+    margin-left: 17px;
+  }
+
 }
 
 
@@ -428,12 +448,17 @@ h3{
   /*Upper Section*/
 
   .uppersection{
-    height: 750px;
+    height: 910px;
     max-height: none;
   }
 
   :root{
-    --radius: calc(100vw / 3.5);
+    --radius: calc(100vw / 3);
+  }
+
+  .imageshown{
+    position: absolute;
+    top: -12%;
   }
 
   .picture1, .picture3{
@@ -443,27 +468,55 @@ h3{
   .picture2 img{
     position: absolute;
     top: 50%;
-    left: 87.5%;
+    left: 75%;
     transform: translate(-50%, -50%);
   }
 
   .content{
     bottom: 0%;
     padding-bottom: 0px;
-    margin-bottom: 40px;
+    margin: 40px 0px;
   }
 
   .content h1{
-    font-size: 11vw;
-    letter-spacing: 1px;
-    font-weight: bold;
-    position: initial;
-    margin-top: 50px;
+    display: none;
   }
 
-  .content p{
+  .content h2{
+    display: grid;
+    font-size: 14vw;
+    letter-spacing: 10px;
+    font-weight: bold;
+    position: initial;
+    line-height: 1em;
+    margin-bottom: 20px;
+  }
+
+  .content p1{
+    display: none;
+  }
+
+  .content p2{
+    display: block;
     font-size: 15px;
-    line-height: 1.5em;
+    letter-spacing: 2px;
+  }
+
+  .circle{
+    top: -23.5%;
+    left: 0%;
+    width: 100%;
+    height: 123.5%;
+    -webkit-mask: none;
+    mask: radial-gradient(var(--radius), #0000 90%, #000);
+    backdrop-filter: blur(0px);
+    background: radial-gradient( 
+        calc(var(--radius) + 1px), #eee5 10%, #eee2
+    );
+  }
+
+  .circle span{
+    height: calc(var(--radius) * 2 + 30px);
   }
 
   /*Recipe Grid*/
@@ -473,10 +526,6 @@ h3{
     column-gap: 15px;
     row-gap: 30px;
     padding: 40px 20px;
-  }
-
-  .recipename1{
-    margin-left: 17px;
   }
 
   .recipename h3{
@@ -496,6 +545,13 @@ h3{
 
 
 @media only screen and (max-width:650px){
+
+  /*Upper Section*/
+
+  .uppersection{
+    height: 850px;
+    max-height: none;
+  }
 
   .recipename{
     margin-left: 20px;
@@ -586,17 +642,12 @@ h3{
   /*Upper Section*/
 
   .uppersection{
-    height: 650px;
-    max-height: none;
+    height: 800px;
   }
 
-  .content h1{
-    font-size: 60px;
-  }
-
-  .content p{
-    font-size: 14px;
-    margin-top: 5px;
+  .content h2{
+    font-size: 80px;
+    letter-spacing: 8px;
   }
 
   /*Recipe Grid*/
@@ -618,6 +669,15 @@ h3{
 }
 
 
+@media only screen and (max-width:550px){
+  /*Upper Section*/
+
+  .uppersection{
+    height: 760px;
+  }
+}
+
+
 @media only screen and (max-width:500px){
 
   /*Upper Section*/
@@ -627,8 +687,7 @@ h3{
   }
 
   .uppersection{
-    height: 630px;
-    max-height: none;
+    height: 700px;
   }
 
   .picture2 img{
@@ -642,16 +701,12 @@ h3{
     margin-bottom: 30px;
   }
 
-  .content h1{
-    font-size: 55px;
+  .content h2{
+    font-size: 15vw;
+    margin-bottom: 10px;
   }
 
-  .content p{
-    display: none;
-  }
-
-  .content p1{
-    display: block;
+  .content p2{
     font-size: 14px;
   }
 
@@ -670,12 +725,9 @@ h3{
 
 
 @media only screen and (max-width:450px){
-  .content h1{
-    font-size: 50px;
-  }
 
-  .content p1{
-    margin: 10px 0px;
+  .uppersection{
+    height: 660px;
   }
 
   /*Recipe Grid*/
@@ -688,8 +740,9 @@ h3{
 
 
 @media only screen and (max-width:400px){
-  .content h1{
-    font-size: 45px;
+
+  .uppersection{
+    height: 580px;
   }
 
 }
