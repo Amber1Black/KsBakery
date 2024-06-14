@@ -92,8 +92,8 @@
     min-height: 740px;
     overflow: hidden; 
     position: relative;
-    background-color: #0d2826;
-    background-image: radial-gradient(#fff3, transparent 50%);
+    background-color: #153432;
+    background-image: radial-gradient(#fff3, transparent 90%);
     margin-top: -50px;
 }
 
@@ -122,6 +122,17 @@
     filter: drop-shadow(0 0 20px #000);
 }
 
+.picture1, .picture3{
+  scale: 0.85;
+  filter: blur(2px);
+  filter: grayscale(10px);
+}
+
+.picture1 img:hover, .picture3:hover{
+  scale : 1;
+  filter: blur(0px);
+}
+
 .content{
     position: absolute;
     bottom: 4%;
@@ -139,6 +150,7 @@
     letter-spacing: 10px;
     font-weight: bold;
     position: relative;
+    filter: drop-shadow(2px 2px 5px #000);
 }
 
 .content h2{
@@ -163,19 +175,15 @@
   left: 0%;
   width: 100%;
   height: 110%;
-  -webkit-mask: radial-gradient(var(--radius), transparent 100%, #000);
-  mask: radial-gradient(var(--radius), #0000 98%, #000);
-  backdrop-filter: blur(9px);
-  background: radial-gradient( 
-      calc(var(--radius) + 1px), #eee5 100%, #eee2
-  );
+  backdrop-filter: blur(0px);
+
     
 }
 
 .circle span{
   display: block;
   position: absolute;
-  height: calc(var(--radius) * 2 + 50px);
+  height: calc(var(--radius) * 2 + 20px);
   top: 50%;
   left: 50%;
   --rotate: 50deg;
@@ -368,6 +376,7 @@ h3{
   .recipename1 h3{
     font-size: 25px;
   }
+
 }
 
 
@@ -522,7 +531,7 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 15px;
     row-gap: 30px;
-    padding: 40px 20px;
+    padding: 80px 20px;
   }
 
   .recipename h3{
@@ -653,7 +662,7 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     column-gap: 10px;
     row-gap: 30px;
-    padding: 40px 70px;
+    padding: 80px 50px;
   }
 
   .recipename, .recipename1{
@@ -712,7 +721,7 @@ h3{
   .recipecategory{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     row-gap: 30px;
-    padding: 40px 40px;
+    padding: 70px 40px;
   }
 
   .recipename, .recipename1{
@@ -731,7 +740,7 @@ h3{
 
   .recipecategory{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 40px 20px;
+    padding: 70px 20px;
   }
 }
 
