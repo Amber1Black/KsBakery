@@ -770,7 +770,7 @@ nav ul li a:hover::after{
     margin-right: 5%;
     cursor: pointer;
     margin-top: 5px;
-    width: 13%;
+    width: 55px;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
