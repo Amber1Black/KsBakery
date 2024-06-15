@@ -630,8 +630,8 @@ h3{
     margin-right: 5%;
     cursor: pointer;
     margin-top: 5px;
-    width: 50px;
-    height: 50px;
+    width: 13%;
+    aspect-ratio: 1/1;
     object-fit: cover;
   }
 
