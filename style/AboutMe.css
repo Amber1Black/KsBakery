@@ -87,6 +87,10 @@ nav ul li a:hover::after{
 
 /*Content*/
 
+.contentformobile{
+  display: none;
+}
+
 .slider{
   grid-area: two;
   width: 100%;
@@ -500,42 +504,36 @@ nav ul li a:hover::after{
 
   /*Content*/
 
-  .introduction{
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-areas:
-    'one'
-    'two';
+  .content{
+    display: none;
   }
 
-  .intro{
-    grid-area: two;
+  .contentformobile{
+    display: block;
   }
 
-  .intro p{
-    line-height: 1.3em;
+  .profilepicformobile img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px;
   }
 
-  .profilepic{
-    grid-area: one;
-  }
-
-  .profilepic img{
-    width: 200px;
-    margin: 0px 0px 30px 0px;
+  .introductionformobile p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 50px auto;
+    line-height: 1.4em;
+    text-align: center;
+    max-width: 380px;
   }
 }
 
-@media only screen and (max-width:450px){
 
-  .intro h2{
-    font-size: 22px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-  }
+@media only screen and (max-width:500px){
 
-  .intro p{
-    max-width: 320px;
+  .introductionformobile p{
+    font-size: 14px;
+    max-width: 305px;
   }
 
 }
