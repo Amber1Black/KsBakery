@@ -1,3 +1,24 @@
+:root{
+  --h2--first--fs: 35px;
+  --h2--first--ls: 4px;
+  --h2--first--fw: 700;
+  --ff--special: "Fraunces", serif;
+  --h2--950--fs: 30px;
+
+  --h4--first--fs: 20px;
+  --h4--first--ls: 1px;
+  --h4--first--fw: 700;
+  --h4--first--c: #2a2a2a;
+  --h4--950--fs: 18px;
+
+  --p--first--fs: 16px;
+  --p--first--ls: 2px;
+  --p--first--fw: 450;
+  --p--first--c: #2a2a2a;
+  --p--950--fs: 15px;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -83,21 +104,23 @@ nav ul li a:hover::after{
 /*content*/
 
 .headings h1{
-  margin: 50px 0px 0px 60px;
-  letter-spacing: 3px;
-  font-size: 45px;
+  margin: 30px 0px 0px 100px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 55px;
+  font-family: var(--ff--special);
 }
 
 .bento-grid{
-  margin: 30px 50px 80px 50px;
+  margin: 30px 90px 80px 90px;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-areas:
-  'one one one two two two two'
-  'three three three three three four four'
-  'three three three three three five five';
-  grid-gap: 30px;
-  grid-template-rows: 370px 300px 330px;
+  'one one one one two two two two two'
+  'four four four five five five six six six'
+  'three three three three three three three three three';
+  grid-gap: 25px;
+  grid-template-rows: 450px 350px;
 }
 
 .bento-content{
@@ -117,102 +140,119 @@ nav ul li a:hover::after{
   border-radius: 10px;
 }
 
+/*What you need*/
+
 .bento-content:nth-child(2){
   grid-area: two;
   display: grid;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 70px 20px 70px 20px;
 }
 
 .bento-content:nth-child(2) h2{
-  font-size: 30px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+  font-size: var(--h2--first--fs);
+  font-family: var(--ff--special);
+  font-weight: var(--h2--first--fw);
+  letter-spacing: var(--h2--first--ls);
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .ingredients{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 80px;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+  'one two';
+  grid-gap: 80px;
 }
 
-.dough-ingredients h4, .top-ingredients h4{
-  font-size: 23px;
-  letter-spacing: 1px;
+.ingredients-grid:nth-child(1){
+  grid-area: one;
+}
+
+.ingredients-grid:nth-child(2){
+  grid-area: two;
+}
+
+.ingredients h4{
+  font-size: var(--h4--first--fs);
+  letter-spacing: var(--h4--first--ls);
+  font-weight: var(--h4--first--fw);
+  color: var(--h4--first--c);
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 0.4em;
   text-decoration-thickness: 0.1em;
-  margin-right: 20px;
 }
 
 .ingredients-content{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  column-gap: 20px;
   margin: 20px 0px 0px 0px;
-  line-height: 1.8em;
+  line-height: 2em;
 }
 
 .ingredients-content p{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-size: var(--p--first--fs);
+  font-weight: var(--p--first--fw);
+  letter-spacing: var(--p--first--ls);
+  color: var(--p--first--c);
 }
 
-.dough-ingredients-portion, .top-ingredients-portion{
+.ingredients-portion{
   text-align: right;
-  margin-left: 50px;
+  justify-content: right;
 }
 
-.bento-content:nth-child(3){
-  grid-area: three;
-  padding: 50px;
-  overflow-y: scroll;
-}
 
 /*What to do*/
 
+.bento-content:nth-child(3){
+  grid-area: three;
+  padding: 50px 150px;
+  overflow-y: scroll;
+}
+
 .bento-content:nth-child(3) h2{
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+  font-size: var(--h2--first--fs);
+  font-family: var(--ff--special);
+  font-weight: var(--h2--first--fw);
+  letter-spacing: var(--h2--first--ls);
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.bento-content:nth-child(3) h4{
+  font-size: var(--h4--first--fs);
+  letter-spacing: var(--h4--first--ls);
+  font-weight: var(--h4--first--fw);
+  color: var(--h4--first--c);
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-thickness: 0.1em;
+  margin: 20px 0px 30px 0px;
 }
 
 .bento-content li{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--p--first--fs);
+  font-weight: var(--p--first--fw);
+  color: var(--p--first--c);
   text-align: justify;
-  padding-bottom: 15px;
-  margin-left: 30px;
+  padding-bottom: 12px;
+  margin-left: 15px;
+  line-height: 1.5em;
 }
 
 .note{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--p--first--fs);
+  font-weight: var(--p--first--fw);
   text-align: justify;
-  color: rgb(116, 114, 114);
-  
+  color: #727070;
 }
 
-/*pictures at the bottom*/
-
-.stepspic{
-  display: flex;
-  justify-content: center;
-}
-
-.stepspic img{
-  height: 550px;
-  width: 420px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 10px 0px 50px 0px;
-}
+/*Additional Pics*/
 
 .bento-content:nth-child(4){
   grid-area: four;
@@ -223,6 +263,7 @@ nav ul li a:hover::after{
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  object-position: 50% 75%;
 }
 
 .bento-content:nth-child(5){
@@ -234,9 +275,49 @@ nav ul li a:hover::after{
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  object-position: 50% 70%;
 }
 
+.bento-content:nth-child(6){
+  grid-area: six;
+}
 
+.bento-content:nth-child(6) img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.stepspic1, .stepspic2, .stepspic3{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 80px 50px 80px;
+}
+
+.stepspic1 img{
+  width: 380px;
+  aspect-ratio: 5/6;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.stepspic2 img{
+  width: 380px;
+  aspect-ratio: 5/6.5;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.stepspic3 img{
+  width: 420px;
+  aspect-ratio: 5/6;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 /*copyright*/
 
@@ -249,36 +330,182 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:1250px){
+@media only screen and (max-width:1450px){
 
-  .ingredients{
-    column-gap: 20px;
+  .headings h1{
+    margin-left: 70px;
   }
-
-}
-
-@media only screen and (max-width:1100px){
 
   .bento-grid{
-    grid-template-areas:
-    'one one one two two two two two'
-    'three three three three three three four four'
-    'three three three three three three five five';
-    grid-template-rows: 370px 300px 330px;
+    margin: 30px 60px 80px 60px;
+    grid-gap: 20px;
+    grid-template-rows: 450px 360px;
   }
-
-}
-
-@media only screen and (max-width:1000px){
 
   .ingredients{
-    column-gap:10px;
+    column-gap: 50px;
   }
 
-  .dough-ingredients-portion, .top-ingredients-portion{
-    margin-left: 22px;
+  .bento-content:nth-child(3){
+    padding: 40px 100px;
+  }
+
+}
+
+
+@media only screen and (max-width:1300px){
+
+  .headings h1{
+    font-size: 47px;
+    margin-left: 60px;
+  }
+
+  .bento-grid{
+    margin: 30px 50px 80px 50px;
+    grid-template-rows: 420px 350px;
+  }
+
+  .ingredients{
+    column-gap: 40px;
+  }
+
+  .ingredients-content{
+    line-height: 1.9em;
+  }
+
+  .bento-content:nth-child(3){
+    padding: 40px 80px;
+  }
+
+  .stepspic1 img,
+  .stepspic2 img{
+    width: 320px;
+  }
+
+  .stepspic3 img{
+    width: 350px;
+  }
+
+}
+
+
+@media only screen and (max-width:1200px){
+
+  .headings h1{
+    margin-left: 50px;
+  }
+
+  .bento-grid{
+    margin: 30px 40px 80px 40px;
+    grid-template-rows: 400px 310px;
+
+  }
+
+  .bento-content:nth-child(2){
+    padding: 50px 10px;
+  }
+
+  .bento-content:nth-child(2) h2{
+    margin-bottom: 20px;
+  }
+
+  .ingredients{
+    grid-gap: 30px;
+  }
+
+  .ingredients-content{
+    line-height: 1.9em;
+    column-gap: 0px;
+  }
+
+  .bento-content:nth-child(3){
+    padding: 40px 70px;
   }
 }
+
+
+@media only screen and (max-width:1100px){
+  .bento-grid{
+    grid-template-areas:
+    'one two two'
+    'four five six'
+    'three three three';
+    grid-gap: 20px;
+    grid-template-rows: 380px 300px;
+  }
+
+  .ingredients{
+    grid-gap: 50px;
+  }
+
+  .stepspic1, .stepspic2, .stepspic3{
+    margin: 10px 50px 50px 50px;
+  }
+}
+
+
+@media only screen and (max-width:1000px){
+  /*Content*/
+
+  .headings h1{
+    font-size: 40px;
+    margin-left: 40px;
+  }
+
+  .bento-grid{
+    grid-template-rows: 370px 280px;
+    margin: 30px 30px 80px 30px;
+    gap: 15px;
+  }
+
+  .bento-content:nth-child(2) h2,
+  .bento-content:nth-child(3) h2{
+    font-size: var(--h2--950--fs);
+  }
+
+  .bento-content:nth-child(2){
+    padding: 50px 20px 50px 20px;
+  }
+
+  .ingredients{
+    column-gap: 50px;
+  }
+
+  .ingredients-content{
+    line-height: 1.8em;
+    column-gap: 0px;
+  }
+
+  .ingredients-content p,
+  .bento-content li,
+  .note{
+    font-size: var(--p--950--fs);
+  }
+
+  .ingredients h4,
+  .bento-content:nth-child(3) h4{
+    font-size: var(--h4--950--fs);
+  }
+
+  .bento-content:nth-child(3){
+    padding: 20px 40px;
+  }
+
+  .bento-content:nth-child(3) h2{
+    margin-bottom: 30px;
+  }
+
+  .stepspic1 img,
+  .stepspic2 img{
+    width: 280px;
+  }
+
+  .stepspic3 img{
+    width: 300px;
+  }
+
+}
+
 
 
 @media only screen and (max-width:950px){
@@ -300,65 +527,90 @@ nav ul li a:hover::after{
 }
 
 @media only screen and (max-width:900px){
-
-  .headings h1{
-    letter-spacing: 3px;
-    font-size: 40px;
-  }
-
+  
   .bento-grid{
-    grid-template-areas:
-    'one four five'
-    'two two two'
-    'three three three';
-    grid-template-rows: 270px 380px;
-  }
-
-  .bento-content:nth-child(2){
-    padding: 50px 20px 50px 20px;
-  }
-
-  .ingredients{
-    column-gap: 60px;
-  }
-
-  .dough-ingredients-portion, .top-ingredients-portion{
-    margin-left: 50px;
-  }
-}
-
-
-@media only screen and (max-width:800px){
-
-  /*Content*/
-
-  .headings h1{
-    margin: 50px 0px 0px 50px;
-    letter-spacing: 3px;
-    font-size: 33px;
-  }
-
-  .bento-grid{
-    grid-template-rows: 220px 350px;
-  }
-
-  .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
-    font-size: 25px;
-  }
-
-  .dough-ingredients h4, .top-ingredients h4{
-    font-size: 20px;
+    grid-template-rows: 360px 280px;
+    margin: 30px 30px 80px 30px;
+    gap: 15px;
   }
 
   .ingredients{
     column-gap: 40px;
   }
-  
+
   .ingredients-content{
-    font-size: 16px;
-    line-height: 1.6em;
+    line-height: 1.7em;
   }
 
+  .ingredients-content p{
+    letter-spacing: 1px;
+  }
+
+  .stepspic1, .stepspic2, .stepspic3{
+    margin: 10px 10px 50px 10px;
+  }
+
+}
+
+
+@media only screen and (max-width:800px){
+
+  .headings h1{
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .bento-grid{
+    grid-template-rows: 350px 280px;
+    margin: 30px 20px 80px 20px;
+    gap: 15px;
+  }
+
+  .ingredients{
+    column-gap: 30px;
+  }
+
+}
+
+
+@media only screen and (max-width:750px){
+
+  .bento-grid{
+    margin: 30px 20px 80px 20px;
+    grid-template-areas:
+    'one one one four four'
+    'six six five five five '
+    'two two two two two'
+    'three three three three three';
+    grid-gap: 15px;
+    grid-template-rows: 330px 330px 380px;
+  }
+
+  .bento-content:nth-child(6) img{
+    object-position: 70% 70%;
+  }
+
+  .ingredients{
+    column-gap: 50px;
+  }
+
+  .ingredients-content{
+    column-gap: 20px;
+  }
+
+  .stepspic1, .stepspic2, .stepspic3{
+    margin: 10px 5px 50px 5px;
+  }
+
+  .stepspic1 img,
+  .stepspic2 img{
+    width: 240px;
+    margin: 5px;
+  }
+
+  .stepspic3 img{
+    width: 270px;
+  }
 }
 
 
@@ -373,66 +625,37 @@ nav ul li a:hover::after{
   nav ul li a{
     font-size: 13px;
   }
-
-  /*Content*/
-
-  .headings h1{
-    letter-spacing: 3px;
-    font-size: 30px;
-  }
-
-  .bento-grid{
-    grid-template-rows: 170px 330px;
-  }
-
-  .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
-    font-size: 23px;
-  }
-
-  .dough-ingredients h4, .top-ingredients h4{
-    font-size: 18px;
-  }
-
-  .ingredients{
-    column-gap: 20px;
-  }
-
-  .dough-ingredients-portion, .top-ingredients-portion{
-    margin-left: 40px;
-  }
-  
-  .ingredients-content{
-    font-size: 15px;
-    line-height: 1.6em;
-  }
-
-  .bento-content:nth-child(3){
-    padding: 40px;
-  }
-  
-  .bento-content li{
-    margin-left: 20px;
-  }
-
-  .bento-content li, .note{
-    font-size: 15px;
-  }
-
-  .stepspic img{
-    height: 460px;
-    width: 360px;
-  }
 }
 
 
 @media only screen and (max-width:650px){
 
-  .ingredients-content p{
-    letter-spacing: 0px;
+  .headings h1{
+    font-size: 32px;
   }
 
-}
+  .bento-grid{
+    grid-template-rows: 300px 300px 360px;
+  }
 
+  .ingredients{
+    column-gap: 40px;
+  }
+
+  .ingredients-content{
+    column-gap: 10px;
+  }
+
+  .stepspic1 img,
+  .stepspic2 img{
+    width: 220px;
+    margin: 5px;
+  }
+
+  .stepspic3 img{
+    width: 250px;
+  }
+}
 
 
 @media only screen and (max-width:600px){
@@ -440,7 +663,7 @@ nav ul li a:hover::after{
   .logo{
     width: 12%;
     max-width: 50px;
-    margin-left: 20px;
+    margin-left: 20%;
     margin-top: 10px;
   }
 
@@ -497,11 +720,11 @@ nav ul li a:hover::after{
 
   .menu-icon{
     display: block;
-    margin-right: 35px;
+    margin-right: 5%;
     cursor: pointer;
-    margin-top: 10px;
-    width: 58px;
-    height: 58px;
+    margin-top: 5px;
+    width: 55px;
+    aspect-ratio: 1/1;
     object-fit: cover;
   }
 
@@ -515,62 +738,56 @@ nav ul li a:hover::after{
 
   .headings h1{
     letter-spacing: 2px;
-    font-size: 28px;
+    font-size: 33px;
     margin-left: 30px;
   }
 
   .bento-grid{
-    grid-template-areas:
-    'one one'
-    'four five'
-    'two two'
-    'three three';
-    grid-template-rows: 350px 220px;
-    margin: 30px 30px 80px 30px;
-    gap: 20px;
+    margin: 20px 20px 80px 20px;
+    grid-template-rows: 250px 250px 350px;
   }
 
   .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
-    font-size: 21px;
+    font-size: 28px;
+    margin-bottom: 20px;
   }
 
-  .dough-ingredients h4, .top-ingredients h4{
-    font-size: 17px;
-  }
-
-  .ingredients{
-    column-gap: 25px;
-  }
-
-  .dough-ingredients-portion, .top-ingredients-portion{
-    margin-left: 35px;
-  }
-  
-  .ingredients-content{
-    font-size: 15px;
-    line-height: 1.5em;
+  .ingredients h4{
+    font-size: 18px;
   }
 
   .ingredients-content p{
     font-size: 15px;
-    letter-spacing: 0px;
   }
 
-  .bento-content:nth-child(3){
-    padding: 30px;
+  .ingredients-content{
+    margin: 20px 0px 0px 0px;
+    line-height: 1.6em;
+    column-gap: 0px;
+  }
+
+  .ingredients{
+    column-gap: 30px;
+    row-gap: 30px;
   }
   
-  .bento-content li{
-    margin-left: 20px;
-  }
-
   .bento-content li, .note{
     font-size: 15px;
   }
 
-  .stepspic img{
-    height: 450px;
-    width: 350px;
+  /*What to do*/
+
+  .bento-content:nth-child(3){
+    padding: 10px 35px;
+  }
+
+  .stepspic1 img,
+  .stepspic2 img{
+    width: 200px;
+  }
+
+  .stepspic3 img{
+    width: 230px;
   }
     
 }
@@ -578,86 +795,130 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:550px){
 
+  .headings h1{
+    margin: 15px 0px 0px 25px;
+  }
+
   .bento-grid{
-    grid-template-rows: 320px 200px;
-    margin: 30px 30px 80px 30px;
-    gap: 20px;
+    margin: 30px 20px 80px 20px;
+    grid-template-rows: 230px 230px 360px;
+    gap: 15px;
   }
 
-  .ingredients{
-    column-gap: 10px;
+  /*What to do*/
+
+  .bento-content:nth-child(3){
+    padding: 10px 30px;
   }
 
-  .dough-ingredients-portion, .top-ingredients-portion{
-    margin-left: 22px;
+  .stepspic1 img,
+  .stepspic2 img{
+    width: 185px;
   }
+
+  .stepspic3 img{
+    width: 220px;
+  }
+
 }
 
 
 @media only screen and (max-width:500px){
 
   .headings h1{
-    letter-spacing: 2px;
-    font-size: 26px;
-    margin-left: 25px;
+    font-size: 30px;
+    margin: 15px 0px 0px 20px;
   }
 
   .bento-grid{
-    grid-template-rows: 310px 200px;
-    margin: 30px 20px 80px 20px;
-    gap: 20px;
-  }
-
-  .bento-content:nth-child(2){
-    padding: 40px 20px 40px 20px;
+    margin: 20px 15px 80px 15px;
+    grid-template-rows: 220px 220px 350px;
   }
 
   .bento-content:nth-child(2) h2{
-    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .bento-content:nth-child(3) h2{
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  .ingredients h4, .bento-content:nth-child(3) h4{
+    font-size: 17px;
+  }
+
+  .ingredients-content p{
+    font-size: 14px;
+  }
+
+  .ingredients-content{
+    line-height: 1.6em;
   }
 
   .ingredients{
-    column-gap: 10px;
+    column-gap: 25px;
   }
 
-  .dough-ingredients-portion, .top-ingredients-portion{
-    margin-left: 18px;
-  }
+  /*What to do*/
 
+  .bento-content:nth-child(3){
+    padding: 0px 25px;
+  }
+  
   .bento-content li, .note{
     font-size: 14px;
   }
 
-  .stepspic img{
-    height: 400px;
-    width: 310px;
+  .stepspic1 img,
+  .stepspic2 img{
+    width: 165px;
   }
+
+  .stepspic3 img{
+    width: 200px;
+  }
+
 }
 
 
 @media only screen and (max-width:450px){
 
   .headings h1{
-    letter-spacing: 1px;
-    font-size: 26px;
-    margin-left: 20px;
+    font-size: 28px;
+    margin: 15px 0px 0px 20px;
   }
 
   .bento-grid{
-    grid-template-rows: 280px 180px;
-    margin: 30px 15px 80px 15px;
+    margin: 15px 10px 80px 10px;
+    grid-template-rows: 220px 220px 330px;
+    gap: 10px;
   }
 
   .ingredients{
-    column-gap: 0px;
+    column-gap: 25px;
   }
 
-  .dough-ingredients-portion, .top-ingredients-portion{
-    margin-left: 13px;
+  .ingredients-content{
+    grid-template-columns: 1fr 36px;
   }
 
-  .stepspic img{
-    height: 370px;
+  .ingredients-content p{
+    letter-spacing: 0px;
+  }
+
+  /*What to do*/
+
+  .bento-content:nth-child(3){
+    padding: 10px 20px;
+  }
+
+  .stepspic1 img,
+  .stepspic2 img{
+    width: 280px;
+  }
+
+  .stepspic3 img{
     width: 280px;
   }
 }
@@ -666,44 +927,38 @@ nav ul li a:hover::after{
 @media only screen and (max-width:400px){
 
   .headings h1{
+    font-size: 27px;
     letter-spacing: 1px;
-    font-size: 25px;
-    margin-left: 0px;
-    text-align: center;
+    margin-left: 20px;
   }
 
   .bento-grid{
-    grid-template-rows: 260px 170px;
-    margin: 30px 15px 80px 15px;
+    grid-template-rows: 200px 200px 330px;
+    margin: 15px 10px 50px 10px;
   }
 
-  .bento-content:nth-child(2){
-    padding: 40px 15px 40px 15px;
+  .bento-content:nth-child(2) h2, .bento-content:nth-child(3) h2{
+    font-size: 23px;
   }
 
   .ingredients{
-    column-gap: 0px;
+    column-gap: 16px;
   }
 
-  .ingredients-content{
-    font-weight: 400;
+
+  /*What to do*/
+
+  .bento-content:nth-child(3){
+    padding: 10px 15px;
   }
 
-  .dough-ingredients-portion, .top-ingredients-portion{
-    margin-left: 7px;
-  }
-
-  .stepspic img{
-    height: 350px;
+  .stepspic1 img,
+  .stepspic2 img{
     width: 260px;
   }
-}
 
-
-@media only screen and (max-width:380px){
-
-  .ingredients-content p{
-    font-size: 14px;
+  .stepspic3 img{
+    width: 260px;
   }
 
 }
