@@ -119,7 +119,7 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 100%;
-    filter: drop-shadow(0 0 20px #000);
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 30px;
 }
 
 .picture1, .picture3 img{
