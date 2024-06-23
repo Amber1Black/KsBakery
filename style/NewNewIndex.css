@@ -1952,7 +1952,7 @@ nav ul li a:hover::after{
 
   .menu-icon{
     display: block;
-    margin-right: 5%;
+    margin-right: 15px;
     cursor: pointer;
     margin-top: 5px;
     width: 55px;
