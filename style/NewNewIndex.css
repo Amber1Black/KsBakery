@@ -681,7 +681,7 @@ nav ul li a:hover::after{
     /*First Section*/
 
     .firstmessage{
-        max-width: 430px;
+        max-width: 400px;
     }
 
     .firstmessage h1{
@@ -1457,7 +1457,7 @@ nav ul li a:hover::after{
     }
 
     .pinkbox{
-        margin-left: 480px;
+        margin-left: 485px;
         max-height: 560px;
     }
 
@@ -1477,16 +1477,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:800px){
 
-    /*Headings*/
-
-    nav ul li{
-        margin-right: 2em;
-    }
-
-    nav ul li a{
-        font-size: 13px;
-    }
-
     /*Common Parameter*/
 
     .thirdpartmessage p,
@@ -1505,17 +1495,17 @@ nav ul li a:hover::after{
     }
 
     .firstmessage{
-        margin-left: 40px;
+        margin-left: 35px;
         max-width: 300px;
     }
 
     .IconOutline{
-        margin-left: 285px;
+        margin-left: 300px;
         width: 480px;
     }
 
     .pinkbox{
-        margin-left: 525px;
+        margin-left: 540px;
         max-height: 560px;
     }
     
@@ -1601,12 +1591,12 @@ nav ul li a:hover::after{
     }
 
     .IconOutline{
-        margin-left: 260px;
+        margin-left: 270px;
         width: 470px;
     }
 
     .pinkbox{
-        margin-left: 500px;
+        margin-left: 505px;
         max-height: 560px;
     }
 
@@ -1673,23 +1663,6 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:720px){
-    /*First Section*/
-
-    .IconOutline{
-        margin-left: 245px;
-        width: 465px;
-    }
-
-    .pinkbox{
-        margin-left: 480px;
-        max-height: 560px;
-    }
-
-    
-}
-
-
 @media only screen and (max-width:700px){
 
 	/*Headings*/
@@ -1705,12 +1678,12 @@ nav ul li a:hover::after{
 	/*First Section*/
 
 	.IconOutline{
-			margin-left: 250px;
+			margin-left: 260px;
 			width: 440px;
 	}
 
 	.pinkbox{
-			margin-left: 470px;
+			margin-left: 480px;
 			max-height: 550px;
 	}
 
@@ -1802,12 +1775,12 @@ nav ul li a:hover::after{
 	}
 
 	.IconOutline{
-			margin-left: 245px;
+			margin-left: 260px;
 			width: 415px;
 	}
 
 	.pinkbox{
-			margin-left: 455px;
+			margin-left: 465px;
 			max-height: 550px;
 	}
 
@@ -1860,33 +1833,15 @@ nav ul li a:hover::after{
     }
 
     .IconOutline{
-        margin-left: 245px;
+        margin-left: 255px;
         width: 390px;
     }
 
     .pinkbox{
-        margin-left: 440px;
+        margin-left: 450px;
         max-height: 520px;
     }
 
-}
-
-
-@media only screen and (max-width:620px){
-    /*First Section*/
-
-    .firstmessage h1{
-        font-size: 65px;
-    }
-
-    .IconOutline{
-        margin-left: 245px;
-        width: 370px;
-    }
-
-    .pinkbox{
-        margin-left: 432px;
-    }
 }
 
 
