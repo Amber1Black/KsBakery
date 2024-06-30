@@ -2094,9 +2094,9 @@ nav ul li a:hover::after{
 
     /*First Section*/
 
-		.content{
-			top: 68%;
-		}
+      .content{
+	top: 66%;
+}
 
     .item h1{
 			font-size: 50px;
