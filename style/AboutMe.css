@@ -29,7 +29,7 @@
   width: 20%;
   min-width: 65px;
   max-width: 70px;
-  margin-left: 70px;
+  margin-left: 40px;
   margin-top: 14px;
 }
   
@@ -87,110 +87,330 @@ nav ul li a:hover::after{
 
 /*Content*/
 
-.contentformobile{
+.headingsphraseformobile{
   display: none;
 }
 
-.slider{
-  grid-area: two;
-  width: 100%;
-  height: var(--height--);
+.headings{
+  position: ;
+  inset: 0 0 0 0;
   overflow: hidden;
-  margin-top: 20px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: .5s;
+  align-items: center;
+  height: 650px;
 }
 
-.list{
-  display: flex;
+.headings img{
   width: 100%;
-  min-width: calc(var(--width--) * var(--quantity--));
-  position: relative;
-}
-
-.item{
-  width: var(--width--);
-  height: var(--height--);
-  position: absolute;
-  left: 100%;
-  animation: autoRun 20s linear infinite;
-  transition: filter 0.5s;
-  animation-delay: calc( (20s / var(--quantity--)) * (var(--position) - 1) )!important;
-  padding: 10px 0px;
-}
-
-.item img{
-  height: 100%;
-  aspect-ratio: 8/7;
+  height: 650px;
   object-fit: cover;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 5px;
+  object-position: 50% 35%;
 }
 
-@keyframes autoRun{
-    from{
-      left: calc(var(--width--) * -1);
-    }to{
-      left: 100%;  
-    }
+.headingsphrase,
+.headingsphraseformobile{
+  position: absolute;
+  inset: 250px 3% 31.5% 7%;
+  z-index: 1;
 }
 
+.headingsphrase h1,
+.headingsphrase h2,
+.headingsphrase h3,
+.headingsphraseformobile h1,
+.headingsphraseformobile h2,
+.headingsphraseformobile h3,
+.headingsphraseformobile h4,
+.headingsphraseformobile h5{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  letter-spacing: 6px;
+	font-size: 5.5vw;
+  color: #ffffff;
+  text-shadow: 4px 4px 2px rgb(35, 35, 35);
+  line-height: 1.3em;
+}
 
-/*Content*/
+@keyframes showContent {
+  to{
+      transform: translateY(0);
+      filter: blur(0);
+      opacity: 1;
+  }
+}
+
+.headingsphrase h1,
+.headingsphraseformobile h1{
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s .7s ease-in-out 1 forwards;
+  animation-delay: 0.5s;
+  animation-duration: 1.2s;
+}
+
+.headingsphrase h2,
+.headingsphraseformobile h2{
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s .7s ease-in-out 1 forwards;
+  animation-delay: 1.3s;
+  animation-duration: 1.2s;
+}
+
+.headingsphrase h3,
+.headingsphraseformobile h3{
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s .7s ease-in-out 1 forwards;
+  animation-delay: 2.1s;
+  animation-duration: 1.2s;
+}
+
+.headingsphraseformobile h4{
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s .7s ease-in-out 1 forwards;
+  animation-delay: 2.9s;
+  animation-duration: 1.2s;
+}
+
+.headingsphraseformobile h5{
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s .7s ease-in-out 1 forwards;
+  animation-delay: 3.7s;
+  animation-duration: 1.2s;
+}
 
 .content{
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+/*Common*/
+
+.description p, 
+.description2 p,
+.description3 p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 1.3em;
+}
+
+/*Section 1*/
+
+.section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 150px 100px 250px 80px;
+  align-items: center;
+}
+
+.description{
+  margin: 80px 100px;
+}
+
+.description h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 38px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+}
+
+.picture img{
+  width: 43vw;
+  aspect-ratio: 4/3.2;
+  object-fit: cover;
+}
+
+
+/*Section 2 Journey*/
+
+.section2{
+  margin: 50px 5% 300px 4%;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-areas:
-  'one'
-  'two';
-  grid-template-rows: 55vh var(--height--);
+  'one two three'
+  'one two three'
+  'one four three'
+  'one four five'
+  'one four five';
+  grid-gap: 15px;
+  grid-template-rows: 200px 100px 150px 150px 200px;
 }
 
-.introduction{
+.section2grid:nth-child(1){
   grid-area: one;
-  margin: 0px 30px 20px 30px;
-  padding: 40px;
+}
+
+.section2grid:nth-child(1) img{
+  padding: 18% 0 20% 5%;
+}
+
+.section2grid:nth-child(2){
+  grid-area: two;
+}
+
+.section2grid:nth-child(2) img{
+  opacity: 0;
+}
+
+.section2grid:nth-child(3){
+  grid-area: three;
+}
+
+.section2grid:nth-child(3) img{
+  padding-left: 10%;
+  object-position: 0% 70%;
+}
+
+.section2grid:nth-child(4){
+  grid-area: four;
+}
+
+.section2grid:nth-child(4) img{
+  padding-right: 13%;
+}
+
+.section2grid:nth-child(5){
+  grid-area: five;
   display: flex;
   align-items: center;
+}
+
+.description2{
+  margin: 0px 50px 0px -30px;
+}
+
+.description2 h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.section2grid img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Section 3 Coding*/
+
+.section3mobile{
+  display: none;
+}
+
+.section3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 200px 200px 80px 60px;
+}
+
+.description3{
+  margin: 80px 80px;
+}
+
+.description3 h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 38px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.picture3{
+  display: flex;
   justify-content: center;
-  background-color: #fff2e1;
-  border-radius: 10px;
-  height: 55vh;
 }
 
-.profilepic{
-  text-align: center;
-}
-
-.profilepic img{
-  width: 330px;
+.picture3 img{
+  width: 40vw;
   aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 100%;
-  box-shadow: rgba(0, 0, 0, 0.3) 5px 14px 28px, rgba(0, 0, 0, 0.4) 5px 6px 10px;
-  margin-left: 100px;
 }
 
-.intro{
-  display: grid;
-  justify-content: center;
+/*Animation*/
+
+@keyframes showContent {
+  to{
+      transform: translateY(0);
+      filter: blur(0);
+      opacity: 1;
+  }
+}
+.description h2,
+.description p,
+.picture,
+.picture2,
+.picture3{
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
-.intro h2{
-  font-family: 'DM Serif Display', sans-serif;
-  font-size: 40px;
-  letter-spacing: 2px;
-  text-align: center;
-  margin-bottom: 20px;  
+.description h2{
+  animation-delay: 0.5s;
+  animation-duration: 1s;
 }
 
-.intro p{
-  text-align: center;
-  max-width: 660px;
-  font-size: 17px;
-  letter-spacing: 1px;
-  color: #3d3d3d;
-  line-height: 1.4em;
+.description p{
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+
+.picture, .picture2, .picture3{
+  animation-delay: 1.3s;
+  animation-duration: 1.5s;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.reveal2{
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal2.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal3{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal3.active{
+  transform: translateX(0px);
+  opacity: 1;
 }
 
 
@@ -205,224 +425,422 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:1700px){
+
+  .section2{
+    grid-template-rows: 180px 100px 130px 130px 180px;
+  }
+
+}
+
+
+@media only screen and (max-width:1600px){
+
+  .section2{
+    grid-template-rows: 160px 100px 130px 130px 130px;
+  }
+
+}
+
+
 @media only screen and (max-width:1450px){
 
-  :root{
-    --width--: 200px;
-    --height--: 200px;
+  .description h2, 
+  .description2 h2,
+  .description3 h2{
+    font-size: 35px;
   }
 
-  .intro p{
-    max-width: 630px;
+  .description p, 
+  .description2 p,
+  .description3 p{
     font-size: 16px;
-    line-height: 1.3em;
   }
 
-  .profilepic img{
-    width: 280px;
+  .description{
+    margin: 80px 70px;
   }
+
+  .section2{
+    grid-template-rows: 180px 80px 70px 130px 130px;
+  }
+
+  .section2grid:nth-child(1) img{
+    padding: 20% 0 22% 3%;
+  }
+
 }
 
 
 @media only screen and (max-width:1300px){
 
-  .intro h2{
-    font-size: 38px;
+  .description h2, 
+  .description2 h2,
+  .description3 h2{
+    font-size: 32px;
   }
 
-  .intro p{
-    max-width: 620px;
-    font-size: 16px;
-    line-height: 1.2em;
+  .headings, .headings img{
+    height: 600px;
   }
 
-  .profilepic img{
-    margin-left: 50px;
+  .headingsphrase{
+    inset: 240px 3% 31.5% 7%;
   }
 
+  .headingsphrase h1,
+  .headingsphrase h2,
+  .headingsphrase h3{
+  	font-size: 6vw;
+  }
+
+  .section{
+    margin: 100px 70px 150px 50px;
+  }
+
+  .picture img{
+    width: 40vw;
+  }
+
+  .section2{
+    margin: 30px 3% 80px 2%;
+    grid-template-rows: 130px 50px 90px 120px 150px;
+  }
+
+  .section3{
+    margin: 200px 150px 80px 50px;
+  }
+
+  .description3{
+    margin: 80px 40px;
+  }
 }
 
 
 @media only screen and (max-width:1200px){
 
-  :root{
-    --width--: 190px;
-    --height--: 190px;
+  .headings, .headings img{
+    height: 550px;
   }
 
-  .intro h2{
-    font-size: 35px;
+  .headingsphrase{
+    inset: 220px 3% 31.5% 7%;
   }
 
-  .intro p{
-    max-width: 650px;
-    font-size: 16px;
-    line-height: 1.2em;
-  }
-
-  .profilepic img{
-    width: 250px;
-  }
 }
 
 
-@media only screen and (max-width:1060px){
+@media only screen and (max-width:1100px){
 
-  :root{
-    --width--: 180px;
-    --height--: 180px;
+  .headings, .headings img{
+    height: 500px;
   }
 
-  .introduction{
-    padding: 40px 30px;
+  .headingsphrase{
+    inset: 200px 3% 31.5% 7%;
   }
 
-  .intro h2{
-    font-size: 30px;
+  .description h2, 
+  .description2 h2,
+  .description3 h2{
+    font-size: 28px;
   }
 
-  .intro p{
-    max-width: 600px;
+  .description p, 
+  .description2 p,
+  .description3 p{
     font-size: 15px;
-    letter-spacing: 1px;
-    line-height: 1.2em;
   }
 
-  .profilepic img{
-    width: 220px;
-    margin-left: 20px;
+  .section{
+    margin: 70px 70px 150px 80px;
+  }
+
+  .description{
+    margin: 0px 50px 0px 10px;
+  }
+
+  .picture img{
+    width: 44vw;
+  }
+
+  .section2{
+    grid-template-rows: 100px 50px 90px 120px 120px;
+  }
+
+  .description2{
+    margin: 0px 20px 0px -30px;
+  }
+
+  .section2grid:nth-child(1) img{
+    padding: 20% 0 25% 3%;
+  }
+
+  .section3{
+    margin: 150px 100px 100px 30px;
+  }
+
+  .description3{
+    margin: 50px 50px;
   }
 }
 
 
+@media only screen and (max-width:1000px){
+  .section{
+    margin: 70px 70px 150px 60px;
+  }
+}
 
 
 @media only screen and (max-width:950px){
 
-    /*Headings*/
-    
-    .logo{
-      margin-left: 35px;
-    }
+  /*Headings*/
   
-    nav{
-      padding-right: 15px;
-    }
-    
-    nav ul li{
-      margin-right: 40px;
-    }
+  nav{
+    padding-right: 15px;
+  }
+  
+  nav ul li{
+    margin-right: 40px;
+  }
 
-    /*Content*/
+  /*Content*/
 
-    :root{
-      --width--: 170px;
-      --height--: 170px;
-    }
+  .headings, .headings img{
+    height: 500px;
+  }
 
-    .introduction{
-      margin: 0px 25px 20px 25px;
-    }
+  .headingsphrase{
+    inset: 205px 3% 31.5% 7%;
+  }
 
-    .intro h2{
-      font-size: 28px;
-    }
+  .headingsphrase h1,
+  .headingsphrase h2,
+  .headingsphrase h3{
+    line-height: 1.4em;
+}
 
-    .intro p{
-      max-width: 480px;
-      line-height: 1.2em;
-    }
+  .description h2, 
+  .description2 h2,
+  .description3 h2{
+    font-size: 25px;
+  }
 
-    .profilepic img{
-      width: 220px;
-      margin-left: 40px;
-    }
+  .section2{
+    margin: 50px 4% 150px 4%;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    'one four three'
+    'one five five';
+    grid-gap: 15px;
+    grid-template-rows: 350px 200px;
+  }
+
+  .section2grid:nth-child(2){
+    display: none;
+  }
+
+  .section2grid:nth-child(1) img{
+    padding: 55% 0 35% 5%;
+  }
+
+  .section2grid:nth-child(3) img{
+    padding: 35% 0 0 10%;
+    object-position: 0% 70%;
+  }
+  
+  .section2grid:nth-child(4) img{
+    padding: 0 10% 15% 2%;
+  }
+
+  .description2{
+    margin: 0px 50px 0px 20px;
+  }
   
 }
 
 
 @media only screen and (max-width:850px){
 
-  :root{
-    --width--: 160px;
-    --height--: 160px;
+  .headings, .headings img{
+    height: 450px;
   }
 
-  .introduction{
-    padding: 40px 20px;
+  .headingsphrase{
+    inset: 200px 3% 31.5% 7%;
   }
 
-  .intro h2{
-    font-size: 25px;
-    margin-bottom: 15px;
+  /*Section 1*/
+
+  .section{
+    margin: 80px 50px 150px 30px;
+    display: initial;
   }
 
-  .intro p{
-    max-width: 455px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 1.2em;
+  .description{
+    margin: 0px 230px 40px 80px;
   }
 
-  .profilepic img{
-    width: 180px;
-    margin-left: 25px;
+  .picture{
+    margin: 0 0 0 220px;
+  }
+
+  .picture img{
+    width: 55vw;
+    aspect-ratio: 4/3.3;
+  }
+
+  /*Section 2*/
+
+  .section2{
+    margin: 130px 4% 150px 4%;
+    grid-gap: 10px;
+    grid-template-rows: 320px 200px;
+  }
+
+  .section2grid:nth-child(4) img{
+    padding: 0 1% 15% 2%;
+  }
+
+  .description2{
+    margin: 50px 50px 0px 20px;
+  }
+
+  /*Section 3*/
+
+  .section3{
+    margin: 150px 40px 100px 40px;
+    grid-template-columns: 300px 1fr;
+  }
+
+  .description3{
+    margin: 280px 20px -50px 0px;
+  }
+
+  .picture3 img{
+    width: 50vw;
+    aspect-ratio: 1/1;
+    max-height: 420px;
   }
 }
 
 
 @media only screen and (max-width:750px){
 
-  :root{
-    --width--: 150px;
-    --height--: 150px;
+  /*Section 2*/
+
+  .section2{
+    margin: 130px 4% 150px 4%;
+    grid-gap: 10px;
+    grid-template-rows: 280px 180px;
   }
 
-  .content{
-    grid-template-areas:
-    'two'
-    'one';
-    grid-template-rows: 200px;
+  /*Section 3*/
+  
+  .description3{
+    margin: 230px 20px -50px 0px;
   }
 
-  .introduction{
-    height: unset;
-    padding: 60px 15px;
-    margin: 0px 20px 20px 20px;
-  }
-
-  .intro p{
-    max-width: 350px;
+  .picture3 img{
+    max-height: 380px;
   }
 }
+
+
 
 
 @media only screen and (max-width:700px){
 
-    /*Headings*/
-  
-    nav ul li{
-      margin-right: 30px;
-    } 
-  
-    nav ul li a{
-      font-size: 13px;
-    }
-}
+  /*Headings*/
 
+  nav ul li{
+    margin-right: 30px;
+  } 
 
-@media only screen and (max-width:650px){
-
-  .introduction{
-    padding: 60px 10px;
-    margin: 0px 15px 20px 15px;
+  nav ul li a{
+    font-size: 13px;
   }
 
-  .profilepic img{
-    width: 170px;
-    margin-left: 15px;
+  /*Content*/
+
+  .headings, .headings img{
+    height: 380px;
   }
 
+  .headingsphrase{
+    inset: 185px 3% 31.5% 7%;
+  }
+
+  .description h2, 
+  .description2 h2,
+  .description3 h2{
+    font-size: 21px;
+  }
+
+  .description p, 
+  .description2 p,
+  .description3 p{
+    font-size: 14px;
+  }
+
+  .content{
+    margin-top: 70px;
+  }
+
+  /*Section 1*/
+
+  .section{
+    margin: 30px 50px 150px 30px;
+    display: initial;
+  }
+
+  .description{
+    margin: 0px 220px 20px 70px;
+  }
+
+  .picture{
+    margin: 0 0 0 200px;
+  }
+
+  .picture img{
+    width: 55vw;
+    aspect-ratio: 4/3.3;
+  }
+
+  /*Section 2*/
+
+  .section2{
+    grid-template-areas:
+    'four four four three three'
+    'one one five five five';
+    grid-gap: 5px;
+    grid-template-rows: 350px 290px;
+  }
+
+  .section2grid:nth-child(1) img{
+    padding: 0 0 5% 0;
+  }
+
+  .section2grid:nth-child(3) img{
+    padding: 35% 0 -10% 8%;
+    object-position: 0% 65%;
+  }
+
+  .section2grid:nth-child(4) img{
+    padding: 0 1% 13% 8%;
+  }
+
+  /*Section 3*/
+
+  .section3{
+    margin: 150px 30px 100px 30px;
+    grid-template-columns: 250px 1fr;
+  }
+
+  .picture3 img{
+    max-height: 350px;
+  }
 }
 
 
@@ -504,36 +922,276 @@ nav ul li a:hover::after{
 
   /*Content*/
 
-  .content{
+  .headingsphrase{
     display: none;
   }
 
-  .contentformobile{
-    display: block;
+  .headings, .headings img{
+    height: 620px;
   }
 
-  .profilepicformobile img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 0px;
+  .headings img{
+    filter: brightness(0.8);
   }
 
-  .introductionformobile p{
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin: 50px auto;
+  .headingsphraseformobile{
+    inset: 210px 3% 0 9%;
+  }
+
+  .headingsphraseformobile{
+    display: initial;
+  }
+
+  .headingsphraseformobile h1,
+  .headingsphraseformobile h2,
+  .headingsphraseformobile h3,
+  .headingsphraseformobile h4,
+  .headingsphraseformobile h5{
+  	font-size: 9vw;
     line-height: 1.4em;
-    text-align: center;
-    max-width: 380px;
   }
+
+  .content{
+    margin-top: 50px;
+  }
+
+  /*Section 1*/
+
+  .section{
+    margin: 0px 50px 150px 30px;
+    display: initial;
+  }
+
+  .description{
+    margin: 0px 160px 20px 60px;
+  }
+
+  .picture{
+    margin: 0 0 0 140px;
+  }
+
+  .picture img{
+    width: 57vw;
+    aspect-ratio: 4/3.3;
+  }
+
+  /*Section 2*/
+
+  .section2{
+    grid-template-rows: 310px 270px;
+  }
+
+  .section2grid:nth-child(1) img{
+    padding: 0 0 5% 0;
+  }
+
+  .section2grid:nth-child(3) img{
+    padding: 45% 0 -10% 8%;
+    object-position: 0% 65%;
+  }
+
+  .section2grid:nth-child(4) img{
+    padding: 0 1% 13% 8%;
+  }
+
+  .description2{
+    margin: 50px 10px 0px 20px;
+  }
+
+  /*Section 3*/
+
+  .section3{
+    display: none;
+  }
+
+  .section3mobile{
+    display: initial;
+    margin: 80px 40px 100px 40px;
+  }
+
+  .description3{
+    margin: 50px 60px 80px 200px;
+  }
+
+  .picture3 img{
+    width: 65vw;
+    aspect-ratio: 1/1;
+    max-height: none;
+    margin-right: 100px;
+  }
+
+
 }
 
 
 @media only screen and (max-width:500px){
 
-  .introductionformobile p{
-    font-size: 14px;
-    max-width: 305px;
+  /*Content*/
+
+  .headings, .headings img{
+    height: 580px;
   }
 
+  .headingsphraseformobile{
+    inset: 210px 3% 0 9%;
+  }
+
+  .description h2, 
+  .description2 h2,
+  .description3 h2{
+    font-size: 23px;
+  }
+
+  .description p, 
+  .description2 p,
+  .description3 p{
+    font-size: 13px;
+  }
+
+  /*Section 1*/
+
+  .section{
+    margin: 0px 50px 30px 30px;
+    display: initial;
+  }
+
+  .description{
+    margin: 0px 100px 20px 40px;
+  }
+
+  .picture{
+    margin: 0 0 0 80px;
+  }
+
+  .picture img{
+    width: 65vw;
+    aspect-ratio: 4/3.5;
+  }
+
+  /*Section 2*/
+
+  .section2{
+    margin: 100px 4% 100px 4%;
+    grid-template-areas:
+    'four one'
+    'three one' 
+    'five five';
+    grid-gap: 5px;
+    grid-template-rows: 250px 200px;
+  }
+
+  .section2grid:nth-child(1) img{
+    padding: 50% 0 30% 3%;
+  }
+
+  .section2grid:nth-child(3) img{
+    padding: 5% 0 0 8%;
+    object-position: 0% 65%;
+  }
+
+  .section2grid:nth-child(4) img{
+    padding: 0 5% 5% 0%;
+  }
+
+  .description2{
+    margin: 25px 80px 0px 50px;
+  }
+
+  /*Section 3*/
+
+  .section3mobile{
+    margin: 50px 40px 100px 40px;
+  }
+
+  .description3{
+    margin: 30px 50px 50px 150px;
+  }
+
+  .picture3 img{
+    width: 65vw;
+    margin-right: 100px;
+  }
+}
+
+
+@media only screen and (max-width:450px){
+
+  .headingsphraseformobile h1,
+  .headingsphraseformobile h2,
+  .headingsphraseformobile h3,
+  .headingsphraseformobile h4,
+  .headingsphraseformobile h5{
+  	font-size: 10vw;
+    line-height: 1.4em;
+  }
+
+  /*Section 1*/
+
+  .section{
+    margin: 0px 8% 30px 20px;
+  }
+
+  .picture{
+    margin: 0 0 0 80px;
+  }
+
+  .picture img{
+    width: 68vw;
+    aspect-ratio: 4/3.5;
+  }
+
+  /*Section 2*/
+
+  .section2{
+    grid-template-rows: 200px 200px;
+  }
+
+  /*Section 3*/
+
+  .description3{
+    margin: 30px 40px 50px 140px;
+  }
+
+}
+
+
+@media only screen and (max-width:420px){
+
+  /*Content*/
+
+  .headings, .headings img{
+    height: 550px;
+  }
+
+  .headingsphraseformobile{
+    inset: 230px 3% 0 9%;
+  }
+
+  /*Section 1*/
+
+  .description{
+    margin: 0px 80px 20px 30px;
+  }
+
+  /*Section 2*/
+
+  .section2{
+    margin: 100px 4% 80px 4%;
+    grid-template-rows: 180px 180px;
+  }
+
+  .description2{
+    margin: 25px 20px 0px 30px;
+  }
+
+  /*Section 3*/
+
+  .picture3 img{
+    width: 70vw;
+    margin-right: 50px;
+  }
+
+  .description3{
+    margin: 30px 40px 50px 100px;
+  }
 }
