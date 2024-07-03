@@ -1060,19 +1060,25 @@ nav ul li a:hover::after{
   /*Content*/
 
   .headings{
-    height: 78vh;
+    height: 79vh;
+  }
+
+  .headingsphraseforsmallerscreen{
+    margin: 0 4%;
+    max-height: 300px;
   }
 
   .headingsphraseforsmallerscreen h1,
   .headingsphraseforsmallerscreen h2,
   .headingsphraseforsmallerscreen h3{
-    font-size: 6.2vw;
-    letter-spacing: 2px;
+    font-size: 6.5vw;
+    letter-spacing: 3px;
     line-height: 1.4em;
+
   }
 
   .headingspic{
-    height: 48vh;
+    height: 45vh;
   }
 
   /*Content*/
@@ -1156,6 +1162,15 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:450px){
+
+  .headingsphraseforsmallerscreen h1,
+  .headingsphraseforsmallerscreen h2,
+  .headingsphraseforsmallerscreen h3{
+    font-size: 7vw;
+    letter-spacing: 1px;
+    line-height: 1.55em;
+
+  }
 
 
   /*Section 1*/
