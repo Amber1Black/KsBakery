@@ -87,124 +87,86 @@ nav ul li a:hover::after{
 
 /*Content*/
 
-.headingsphraseforsmallerscreen,
-.headingsphraseformobile,
-.headingspicforsmallerscreen{
+.topheadingstitle2,
+.headingssectionformobile{
   display: none;
 }
 
-.headings{
-  overflow: hidden;
-  transition: .5s;
-  height: 90vh;
-  background-color: #fff5e1;
-  position: relative;
-  padding-bottom: 5%;
-}
-
-.headingsphrase{
-  position: absolute;
-  margin: 0 7.5%;
-  height: 25vh;
-  display: grid;
-  align-content: center;
-  z-index: 10;
-}
-
-.headingsphrase h1,
-.headingsphrase h2,
-.headingsphrase h3,
-.headingsphraseforsmallerscreen h1,
-.headingsphraseforsmallerscreen h2,
-.headingsphraseforsmallerscreen h3,
-.headingsphraseformobile h1,
-.headingsphraseformobile h2,
-.headingsphraseformobile h3,
-.headingsphraseformobile h4,
-.headingsphraseformobile h5{
-  font-family: 'Bodoni Moda SC', sans-serif;
-  font-weight: 700;
+.topheadingstitle h1{
+  font-family: 'Raleway', sans-serif;
   letter-spacing: 3px;
-	font-size: 4.5vw;
-  color: #303030;
-  text-shadow: 1px 1px 2px rgb(43, 43, 43);
-  line-height: 1.2em;
-  z-index: 10;
+  word-spacing: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 4.2vw;
+  margin: 20px 70px;
+  line-height: 1.4em;
 }
 
-.headingspic{
-  margin: 0 7% 0 7%;
-  width: 86%;
-  height: 60vh;
-  position: absolute;
-  bottom: 8%;
-}
-
-.headings img{
+.mainpassion{
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 0% 54%;
-  filter: brightness(1.05);
+  height: 70vh;
+  max-height: 700px;
+  background: linear-gradient(330deg, rgb(248, 163, 160) 10%, rgb(255, 251, 239) 96.1%);
+  padding: 10px 3%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@keyframes showContent {
-  to{
-      transform: translateY(0);
-      filter: blur(0);
-      opacity: 1;
+.mainpassion h2{
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 2;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #000;
+  background: linear-gradient(#000, #000);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-size: 0%;
+  animation: movingtext 3s linear infinite alternate;
+}
+
+@keyframes movingtext {
+  0%{
+    background-size: 0%;
+  }
+  20%{
+    background-size: 0%;
+  }
+  50%{
+    background-size: 50%;
+  }
+  80%{
+    background-size: 100%;
+  }
+  100%{
+    background-size: 100%;
   }
 }
 
-.headingsphrase h1,
-.headingsphraseforsmallerscreen h1,
-.headingsphraseformobile h1{
-  transform: translateY(30px);
-  filter: blur(20px);
-  opacity: 0;
-  animation: showContent .5s .7s ease-in-out 1 forwards;
-  animation-delay: 0.5s;
-  animation-duration: 1.2s;
+.mainpassion h3{
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 1px rgb(238, 238, 238);
 }
 
-.headingsphrase h2,
-.headingsphraseforsmallerscreen h2,
-.headingsphraseformobile h2{
-  transform: translateY(30px);
-  filter: blur(20px);
-  opacity: 0;
-  animation: showContent .5s .7s ease-in-out 1 forwards;
-  animation-delay: 1.3s;
-  animation-duration: 1.2s;
-}
-
-.headingsphrase h3,
-.headingsphraseforsmallerscreen h3,
-.headingsphraseformobile h3{
-  transform: translateY(30px);
-  filter: blur(20px);
-  opacity: 0;
-  animation: showContent .5s .7s ease-in-out 1 forwards;
-  animation-delay: 2.1s;
-  animation-duration: 1.2s;
-}
-
-.headingsphraseformobile h4{
-  transform: translateY(30px);
-  filter: blur(20px);
-  opacity: 0;
-  animation: showContent .5s .7s ease-in-out 1 forwards;
-  animation-delay: 2.9s;
-  animation-duration: 1.2s;
-}
-
-.headingsphraseformobile h5{
-  transform: translateY(30px);
-  filter: blur(20px);
-  opacity: 0;
-  animation: showContent .5s .7s ease-in-out 1 forwards;
-  animation-delay: 3.7s;
-  animation-duration: 1.2s;
+.pictureshown{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 70vh;
+  max-height: 700px;
+  width: 65%;
+  background-image: url(AboutMe.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 .content{
@@ -447,6 +409,12 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1700px){
 
+  .topheadingstitle h1{
+    letter-spacing: 3px;
+    word-spacing: 15px;
+    font-size: 4.1vw;
+  }
+
   .section2{
     grid-template-rows: 180px 100px 130px 130px 180px;
   }
@@ -455,6 +423,16 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1600px){
+
+  .mainpassion,
+  .pictureshown{
+    max-height: 600px;
+  }
+
+  .mainpassion h2,
+  .mainpassion h3{
+    font-size: 80px;
+  }
 
   .section2{
     grid-template-rows: 160px 100px 130px 130px 130px;
@@ -465,8 +443,13 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1450px){
 
-  .headings img{
-    object-position: 0% 42%;
+  .topheadingstitle h1{
+    margin: 20px 50px;
+  }
+
+  .mainpassion h2,
+  .mainpassion h3{
+    font-size: 70px;
   }
 
   .description h2, 
@@ -498,6 +481,22 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1300px){
 
+  .topheadingstitle h1{
+    letter-spacing: 2px;
+    word-spacing: 12px;
+    font-size: 4vw;
+  }
+
+  .mainpassion,
+  .pictureshown{
+    max-height: 530px;
+  }
+
+  .mainpassion h2,
+  .mainpassion h3{
+    font-size: 65px;
+  }
+
   .description h2, 
   .description2 h2,
   .description3 h2{
@@ -526,7 +525,18 @@ nav ul li a:hover::after{
   }
 }
 
+
 @media only screen and (max-width:1100px){
+
+  .mainpassion,
+  .pictureshown{
+    max-height: 500px;
+  }
+
+  .mainpassion h2,
+  .mainpassion h3{
+    font-size: 60px;
+  }
 
   .description h2, 
   .description2 h2,
@@ -576,45 +586,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1000px){
 
-  .headings{
-    max-height: 750px;
-  }
-
-  .headingsphraseforsmallerscreen{
-    max-height: 250px;
-  }
-
-  .headingspic, .headingspic img{
-    max-height: 420px;
-  }
-
-  .headingsphrase{
-    display: none;
-  }
-
-  .headingsphraseforsmallerscreen{
-    display: block;
-    position: absolute;
-    margin: 1% 7.5%;
-    height: 28vh;
-    display: grid;
-    align-content: center;
-    z-index: 10;
-  }
-
-  .headingsphraseforsmallerscreen h1,
-  .headingsphraseforsmallerscreen h2,
-  .headingsphraseforsmallerscreen h3{
-    font-size: 5.8vw;
-    font-weight: 750;
-    letter-spacing: 5px;
-    line-height: 1.15em;
-  }
-
-  .headingspic{
-    height: 52vh
-  }
-
   .section{
     margin: 70px 70px 150px 60px;
   }
@@ -634,6 +605,18 @@ nav ul li a:hover::after{
   }
 
   /*Content*/
+
+  .topheadingstitle h1{
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-size: 4.3vw;
+    margin: 20px 40px;
+    line-height: 1.4em;
+  }
+
+  .pictureshown{
+    width: 68%;
+  }
 
   .description h2, 
   .description2 h2,
@@ -676,6 +659,22 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:850px){
+
+  /*Content*/
+
+  .mainpassion,
+  .pictureshown{
+    max-height: 450px;
+  }
+
+  .pictureshown{
+    width: 71%;
+  }
+
+  .mainpassion h2,
+  .mainpassion h3{
+    font-size: 55px;
+  }
 
   /*Section 1*/
 
@@ -732,43 +731,22 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:750px){
 
-  .headingsphraseforsmallerscreen h1,
-  .headingsphraseforsmallerscreen h2,
-  .headingsphraseforsmallerscreen h3{
-    font-family: 'Cormorant Garamond', sans-serif;
-    text-transform: uppercase;
-    font-size: 6vw;
-    font-weight: 700;
-    letter-spacing: 3px;
+  /*Content*/
+
+  .topheadingstitle h1{
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    font-size: 4.3vw;
+    margin: 17px 28px;
     line-height: 1.4em;
   }
 
-  .headingspic{
-    display: none;
+  .mainpassion h2,
+  .mainpassion h3{
+    font-size: 7vw;
   }
-
-  .headingspicforsmallerscreen{
-    display: block;
-    margin: 0 7% 0 7%;
-    width: 86%;
-    height: 52vh;
-    position: absolute;
-    bottom: 6%;
-  }
-  
-  .headingspicforsmallerscreen img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 38% 54%;
-    filter: brightness(1.05);
-  }
-}
-
-
-@media only screen and (max-width:750px){
 
 
   /*Section 2*/
@@ -806,12 +784,6 @@ nav ul li a:hover::after{
   }
 
   /*Content*/
-
-  .headingsphraseforsmallerscreen h1,
-  .headingsphraseforsmallerscreen h2,
-  .headingsphraseforsmallerscreen h3{
-    font-size: 6.1vw;
-  }
 
   .content{
     margin-top: 70px;
@@ -963,23 +935,17 @@ nav ul li a:hover::after{
 
   /*Content*/
 
-  .headings{
-    height: 83vh;
+  .topheadingstitle h1{
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    font-size: 4.3vw;
+    margin: 17px 20px 17px 26px;
+    line-height: 1.4em;
   }
 
-  .headingsphraseforsmallerscreen{
-    height: 25vh;
-    max-height: 230px;
-  }
-
-  .headingspic{
-    height: 51vh;
-    max-height: unset;
-    bottom: 5%;
-  }
-
-  .headingspic img{
-    max-height: unset;
+  .mainpassion,
+  .pictureshown{
+    max-height: 420px;
   }
 
   .content{
@@ -1055,33 +1021,48 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:550px){
 
-  /*Content*/
-
-  .headings{
-    height: 79vh;
+  .headingssection{
+    display: none;
   }
 
-  .headingsphraseforsmallerscreen{
-    margin: 0 4%;
-    max-height: 300px;
+  .topheadingstitle,
+  .headingssectionformobile{
+    display: grid;
   }
 
-  .headingsphraseforsmallerscreen h1,
-  .headingsphraseforsmallerscreen h2,
-  .headingsphraseforsmallerscreen h3{
-    font-size: 6.5vw;
-    letter-spacing: 3px;
+  .topheadingstitle h1{
+    font-size: 5.8vw;
+    margin: 40px 20px 20px 30px;
+    letter-spacing: 1px;
+    text-transform: none;
+  }
+
+  .circlepic{
+    display: flex;
+    justify-content: center;
+  }
+
+  .circlepic img{
+    width: 100vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  .headingssectionformobile p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 450;
+    margin: 0px 30px 50px 30px;
+    text-align: justify;
     line-height: 1.4em;
-
   }
 
-  .headingspic{
-    height: 45vh;
-  }
-
-  /*Content*/
+  /*Common Parameter*/
 
   .description h2, 
   .description2 h2,
@@ -1098,20 +1079,20 @@ nav ul li a:hover::after{
   /*Section 1*/
 
   .section{
-    margin: 0px 50px 30px 30px;
+    margin: 0px 30px 30px 30px;
     display: initial;
   }
 
   .description{
-    margin: 0px 100px 20px 40px;
+    margin: 0px 40px 20px 40px;
   }
 
   .picture{
-    margin: 0 0 0 80px;
+    margin: 0 30px 0 30px;
   }
 
   .picture img{
-    width: 65vw;
+    width: 90vw;
     aspect-ratio: 4/3.5;
   }
 
@@ -1120,28 +1101,28 @@ nav ul li a:hover::after{
   .section2{
     margin: 100px 4% 100px 4%;
     grid-template-areas:
-    'four one'
-    'three one' 
+    'one three'
+    'four four' 
     'five five';
-    grid-gap: 5px;
-    grid-template-rows: 250px 200px;
+    grid-gap: 10px;
+    grid-template-rows: 300px 270px;
   }
 
   .section2grid:nth-child(1) img{
-    padding: 50% 0 30% 3%;
+    padding: 0;
   }
 
   .section2grid:nth-child(3) img{
-    padding: 5% 0 0 8%;
+    padding: 30% 0 0 0;
     object-position: 0% 65%;
   }
 
   .section2grid:nth-child(4) img{
-    padding: 0 5% 5% 0%;
+    padding: 0;
   }
 
   .description2{
-    margin: 25px 80px 0px 50px;
+    margin: 25px 20px 0px 20px;
   }
 
   /*Section 3*/
@@ -1151,89 +1132,70 @@ nav ul li a:hover::after{
   }
 
   .description3{
-    margin: 30px 50px 50px 150px;
+    margin: 30px 30px 50px 30px;
   }
 
   .picture3 img{
-    width: 65vw;
-    margin-right: 100px;
+    width: 90vw;
+    margin-right: 0px;
   }
+}
+
+@media only screen and (max-width:500px){
+
+  .topheadingstitle h1{
+    font-size: 5.8vw;
+    margin: 40px 20px 20px 20px;
+    word-spacing: 5px;
+  }
+
+  .headingssectionformobile p{
+    margin: 0px 20px 50px 20px;
+  }
+
 }
 
 
 @media only screen and (max-width:450px){
 
-  .headingsphraseforsmallerscreen h1,
-  .headingsphraseforsmallerscreen h2,
-  .headingsphraseforsmallerscreen h3{
-    font-size: 7vw;
+  .description h2, 
+  .description2 h2,
+  .description3 h2{
+    font-size: 21px;
     letter-spacing: 1px;
-    line-height: 1.55em;
-
+    margin-bottom: 10px;
   }
-
 
   /*Section 1*/
 
-  .section{
-    margin: 0px 8% 30px 20px;
-  }
-
-  .picture{
-    margin: 0 0 0 80px;
-  }
-
-  .picture img{
-    width: 68vw;
-    aspect-ratio: 4/3.5;
+  .description{
+    margin: 0px 20px 20px 20px;
   }
 
   /*Section 2*/
 
+  .description2{
+    margin: 25px 0px 0px 0px;
+  }
+
   .section2{
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 250px 240px;
   }
 
   /*Section 3*/
 
   .description3{
-    margin: 30px 40px 50px 140px;
+    margin: 30px 20px 0px 20px;
   }
-
 }
 
 
 @media only screen and (max-width:420px){
 
-  /*Content*/
-
-
-
-  /*Section 1*/
-
-  .description{
-    margin: 0px 80px 20px 30px;
+  .topheadingstitle h1{
+    font-size: 5.5vw;
+    margin: 40px 20px 20px 20px;
+    word-spacing: 3px;
   }
 
-  /*Section 2*/
-
-  .section2{
-    margin: 100px 4% 80px 4%;
-    grid-template-rows: 180px 180px;
-  }
-
-  .description2{
-    margin: 25px 20px 0px 30px;
-  }
-
-  /*Section 3*/
-
-  .picture3 img{
-    width: 70vw;
-    margin-right: 50px;
-  }
-
-  .description3{
-    margin: 30px 40px 50px 100px;
-  }
 }
