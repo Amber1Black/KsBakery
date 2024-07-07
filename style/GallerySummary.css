@@ -599,11 +599,6 @@ nav ul li a:hover::after{
     padding-right: 10px;
   }
 
-  /*Content*/
-
-  .content{
-    background-color: #f7eedd;
-  }
 
   /*Top Section*/
 
@@ -614,7 +609,7 @@ nav ul li a:hover::after{
   .topdisplayformobile{
     display: grid;
     justify-items: center;
-    margin: 30px 7%;
+    margin: 10px 10% 20px 10%;
   }
     
   .topdisplayformobile img{
@@ -622,13 +617,12 @@ nav ul li a:hover::after{
     aspect-ratio: 5/4;
     object-position: 0 75%;
     object-fit: cover;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 5px 6px;
   }
     
   .message{
-    background-color: #FFFFFF;
-    border-radius: 0 0 15px 15px;
-    padding: 30px 30px 50px 30px;
+    padding: 30px 20px 50px 20px;
   }
 
   .message h2{
@@ -650,30 +644,34 @@ nav ul li a:hover::after{
   }
     
   .message p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     letter-spacing: 1px;
     font-size: 15px;
     line-height: 1.3em;
     text-align: justify;
-    color: hsl(220, 2%, 36%)
+    color: #3d3d3d;
   }
 
   /*Gallery Grid*/
 
   .gallerycontent{
-    row-gap: 30px;
+    row-gap: 50px;
   }
   
   .gallerygrid1, .gallerygrid2, .gallerygrid3, .gallerygrid4, .gallerygrid5{
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 7%;
+    margin: 0 10%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 5px 6px;
   }
 
   .gallerygrid1 img, .gallerygrid2 img, .gallerygrid3 img, .gallerygrid4 img, .gallerygrid5 img{
-      width: 100%;
-      aspect-ratio: 5/3.8;
-      object-position: 0% 68%;
-      border-radius: 15px 15px 0 0;
+    width: 100%;
+    aspect-ratio: 5/3.8;
+    object-position: 0% 68%;
+    border-radius: 15px 15px 0 0;
   }
 
   .message2{
@@ -684,13 +682,13 @@ nav ul li a:hover::after{
   .message2formobile{
     display: grid;
     margin: -5px 0 0 0;
-    padding: 20px 30px 40px 30px;
+    padding: 20px 30px 30px 30px;
     background-color: #ffffff;
     border-radius: 0 0 15px 15px;
   }
 
   .message1 h2, .message2formobile h2{
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 700;
     letter-spacing: 5px;
     font-family: 'Raleway', sans-serif;
@@ -699,11 +697,13 @@ nav ul li a:hover::after{
   }
 
   .message1 p, .message2formobile p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     margin-top: 10px;
     font-size: 15px;
     letter-spacing: 1px;
-    color: hsl(220, 2%, 38%);
-    line-height: 1.2em;
+    color: #3d3d3d;
+    line-height: 1.3em;
     text-align: justify;
   }
 
@@ -713,18 +713,19 @@ nav ul li a:hover::after{
 
   .redirection{
     border-radius: 0.5rem;
-    padding: 0.75em 1.5em;
+    padding: 0.75em 1.2em;
     background-color: #1a5d66;
     color: hsl(228, 12%, 48%);
     font-weight: 500;
     font-size: 0.925rem;
     box-shadow: none;
+    margin-top: 20px;
+    width: 150px;
   }
 
   .redirection span{
     width: 15px;
   }
-
 
   .reveal{
     position: unset;
@@ -754,16 +755,16 @@ nav ul li a:hover::after{
 @media only screen and (max-width:500px){
 
   .topdisplayformobile{
-    margin: 30px 4%;
+    margin: 10px 5% 30px 5%;
   }
 
   .message{
-    padding: 25px 20px 35px 20px;
+    padding: 25px 15px 35px 15px;
   }
 
   .message h1{
     margin-bottom: 10px;
-    margin: 0 0 20px -1px;
+    margin: 0 0 13px -1px;
   }
 
   .message h2{
@@ -775,7 +776,7 @@ nav ul li a:hover::after{
 
   .gallerygrid1, .gallerygrid2, .gallerygrid3, .gallerygrid4, .gallerygrid5{
     max-width: unset;
-    margin: 0 4%;
+    margin: 0 5%;
   }
 
   .gallerygrid1 img, .gallerygrid2 img, .gallerygrid3 img, .gallerygrid4 img, .gallerygrid5 img{
@@ -790,6 +791,7 @@ nav ul li a:hover::after{
   
   .redirection{
     padding: 0.6em 1em;
+    width: 140px;
   }
 }
 
@@ -800,5 +802,39 @@ nav ul li a:hover::after{
   .redirection a{
     font-size: 13px;
   }
+
+  .topdisplayformobile{
+    margin: 10px 0 0 0;
+  }
+
+  .topdisplayformobile img{
+    border-radius: 0;
+  }
+    
+  .message{
+    padding: 30px 20px 20px 20px;
+  }
+
+  .redirection{
+    margin-top: 15px;
+  }
+
+  .redirection{
+    padding: 0.5em 1em;
+    width: 130px;
+  }
   
+  .message1,
+  .message2formobile{
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+
+@media only screen and (max-width:400px){
+
+  .redirection{
+    padding: 0.4em 1em;
+  }
+
 }
