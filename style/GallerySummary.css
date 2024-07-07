@@ -191,7 +191,6 @@ nav ul li a:hover::after{
 }
 
 .message1 p, .message2 p{
-  font-family: 'Raleway', sans-serif;
   margin-top: 10px;
   font-size: 18px;
   letter-spacing: 1px;
@@ -516,52 +515,12 @@ nav ul li a:hover::after{
     font-size: 13px;
   }
 
-  /*Top Section*/
-
-  .topdisplay{
-      display: none;
-  }
-
-  .topdisplayformobile{
-    display: grid;
-    justify-items: center;
-  }
-    
-  .topdisplayformobile img{
-    width: 85%;
-    height: 50vh;
-    object-position: 0 75%;
-    object-fit: cover;
-    box-shadow: 7px 7px 5px rgb(167, 166, 166);
-  }
-    
-  .message{
-    margin: 40px 60px 40px 60px;
-  }
-    
-  .message h1{
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 6px;
-    font-size: 6vw;
-    text-transform: uppercase;
-    line-height: 1.1em;
-    margin-bottom: 20px;
-  }
-    
-  .message p{
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 1px;
-    font-size: 15px;
-    line-height: 1.3em;
-    text-align: justify;
-  }
-
   .gallerygrid1 img, .gallerygrid2 img, .gallerygrid3 img, .gallerygrid4 img, .gallerygrid5 img{
     width: 45vw;
     aspect-ratio: 5/6;
   }
-
 }
+  
 
 
 @media only screen and (max-width:600px){
@@ -640,50 +599,112 @@ nav ul li a:hover::after{
     padding-right: 10px;
   }
 
+  /*Content*/
+
+  .content{
+    background-color: #f7eedd;
+  }
+
+  /*Top Section*/
+
+  .topdisplay{
+      display: none;
+  }
+
+  .topdisplayformobile{
+    display: grid;
+    justify-items: center;
+    margin: 30px 7%;
+  }
+    
+  .topdisplayformobile img{
+    width: 100%;
+    aspect-ratio: 5/4;
+    object-position: 0 75%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+    
+  .message{
+    background-color: #FFFFFF;
+    border-radius: 0 0 15px 15px;
+    padding: 30px 30px 50px 30px;
+  }
+
+  .message h2{
+    font-size: 14px;
+    letter-spacing: 8px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+    font-weight: 450;
+    color: grey;
+  }
+    
+  .message h1{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 6px;
+    font-size: 6vw;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    margin: 0 0 20px -2px;
+  }
+    
   .message p{
-    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.3em;
+    text-align: justify;
+    color: hsl(220, 2%, 36%)
   }
 
   /*Gallery Grid*/
+
+  .gallerycontent{
+    row-gap: 30px;
+  }
   
   .gallerygrid1, .gallerygrid2, .gallerygrid3, .gallerygrid4, .gallerygrid5{
-      max-width: 95vw;
-      flex-wrap: wrap;
-      justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 7%;
   }
 
   .gallerygrid1 img, .gallerygrid2 img, .gallerygrid3 img, .gallerygrid4 img, .gallerygrid5 img{
-      width: 80vw;
+      width: 100%;
       aspect-ratio: 5/3.8;
       object-position: 0% 68%;
+      border-radius: 15px 15px 0 0;
   }
 
   .message2{
-      display: none;
+    display: none;
   }
 
   .message1,
   .message2formobile{
-      display: grid;
-      margin: 20px 20px 20px 20px;
+    display: grid;
+    margin: -5px 0 0 0;
+    padding: 20px 30px 40px 30px;
+    background-color: #ffffff;
+    border-radius: 0 0 15px 15px;
   }
 
   .message1 h2, .message2formobile h2{
     font-size: 6vw;
     font-weight: 700;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     font-family: 'Raleway', sans-serif;
     color: rgb(0, 0, 0);
     text-shadow: none;
   }
 
   .message1 p, .message2formobile p{
-    font-family: 'Open Sans', sans-serif;
     margin-top: 10px;
     font-size: 15px;
     letter-spacing: 1px;
-    color: #000000;
+    color: hsl(220, 2%, 38%);
     line-height: 1.2em;
+    text-align: justify;
   }
 
   .redirection a{
@@ -691,132 +712,93 @@ nav ul li a:hover::after{
   }
 
   .redirection{
-    width: 150px;
-    box-shadow: 2px 1px 1px grey;
-  }
-}
-
-
-@media only screen and (max-width:550px){
-
-  /*Top Section*/
-
-  .topdisplayformobile img{
-    width: 100%;
-    object-position: 0 70%;
-    border-radius: 0;
-  }
-
-  .message{
-    margin: 40px 40px 0 40px;
-  }
-    
-  .message p{
-    font-size: 15px;
-  }
-
-  /*Gallery Grid*/
-
-  .redirection{
-    background-color: #ffffff;
-    border-style: solid;
-    border-color: #5c5c5c;
-    border-width: 1px;
-    box-shadow: 1px 1px 1px rgb(183, 183, 183);
-    padding: 8px 0px;
-    width: 150px;
-    border-radius: 0px;
-  }
-
-  .redirection a{
-    letter-spacing: 4px;
-    color: #5c5c5c;
+    border-radius: 0.5rem;
+    padding: 0.75em 1.5em;
+    background-color: #1a5d66;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 0.925rem;
+    box-shadow: none;
   }
 
   .redirection span{
     width: 15px;
   }
 
+
+  .reveal{
+    position: unset;
+    transform: unset;
+    opacity: unset;
+    transition: unset;
+}
+
+  .reveal.active{
+    transform: unset;
+    opacity: unset;
+  }
+}
+
+
+@media only screen and (max-width:550px){
+
+  .message p,
+  .message1 p, .message2formobile p,
+  .redirection a{
+    font-size: 14px;
+  }
+  
 }
 
 
 @media only screen and (max-width:500px){
 
+  .topdisplayformobile{
+    margin: 30px 4%;
+  }
+
   .message{
-    margin: 40px 20px 0 20px;
+    padding: 25px 20px 35px 20px;
+  }
+
+  .message h1{
+    margin-bottom: 10px;
+    margin: 0 0 20px -1px;
+  }
+
+  .message h2{
+    font-size: 13px;
+    letter-spacing: 5px;
   }
 
   /*Gallery Grid*/
 
   .gallerygrid1, .gallerygrid2, .gallerygrid3, .gallerygrid4, .gallerygrid5{
     max-width: unset;
-    margin: 20px 20px 0px 20px;
+    margin: 0 4%;
   }
 
   .gallerygrid1 img, .gallerygrid2 img, .gallerygrid3 img, .gallerygrid4 img, .gallerygrid5 img{
-    width: 100%;
-    aspect-ratio: 5/3.5;
-    object-position: 0% 62%;
+    aspect-ratio: 5/3.3;
+    object-position: 0% 60%;
   }
 
-  .message1, .message2formobile{
-    margin: 15px 5px 10px 5px;
+  .message1,
+  .message2formobile{
+    padding: 20px 20px 30px 20px;
   }
-
-  .message1 p, .message2formobile p{
-    margin-top: 10px;
-  }
-
+  
   .redirection{
-    margin-top: 20px;
-    padding: 10px 0px;
+    padding: 0.6em 1em;
   }
-
 }
-
 
 @media only screen and (max-width:450px){
 
-  /*Top Section*/
-
-  .topdisplayformobile img{
-    height: 45vh;
-    object-position: 0 70%;
-    box-shadow: none;
+  .message p,
+  .message1 p, .message2formobile p,
+  .redirection a{
+    font-size: 13px;
   }
-
-  .message{
-    margin: 30px 20px 0 20px;
-  }
-
-  .message h1{
-    font-size: 28px;
-    letter-spacing: 5px;
-    word-spacing: 5px;
-    margin-bottom: 13px;
-  }
-    
-  .message p{
-    font-size: 14px;
-    margin-top: 0px;
-  }
-
-  /*Gallery Grid*/
-
-  .message1, .message2formobile{
-      margin: 18px 0px 0px 0px;
-  }
-
-  .message1 p, .message2formobile p, .redirection a{
-    font-size: 14px;
-  }
-
-  .message1 h2, .message2formobile h2{
-    letter-spacing: 5px;
-  }
-
-  .redirection{
-    padding: 7px 0px;
-    width: 130px;
-  }
+  
 }
