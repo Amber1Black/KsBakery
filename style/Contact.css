@@ -1,85 +1,82 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+    
 }
 
 /*headings section*/
 
 .headingsection{
-    height: 88%;
-    width: 100%;
-    display: flex;
-    align-items: center; 
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 100;
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
 }
 
 .logo{
-    width: 20%;
-    min-width: 65px;
-    max-width: 70px;
-    margin-left: 70px;
-    margin-top: 14px;
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 70px;
+  margin-top: 14px;
 }
 
 .menu-icon{
-    width: 15%;
-    min-width: 60px;
-    max-width: 90px;
-    cursor: pointer;
-    display: none;
+  display: none;
 }
 
 nav{
-    flex: 1;
-    text-align: right;
-    padding-right: 2%;
-    background-color: white;
+  flex: 1;
+  text-align: right;
+  padding-right: 40px;
+  background-color: white;
 }
 
 nav ul{
-    background-color: white;
+  background-color: white;
 }
 
 nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 3em;
-    background-color: white; 
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+  background-color: white; 
 }
 
 nav ul li a{
-    text-decoration: none;
-    color: #575757;
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 14px;
-    background-color: white;
-    position: relative;
+  text-decoration: none;
+  color: #575757;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
+  background-color: white;
+  position: relative;
 }
 
 nav ul li a:hover{
-    color: grey;
+  color: grey;
 }
 
 nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgb(107, 107, 107);
-    transition: width 0.3s;
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
 }
 
 nav ul li a:hover::after{
-    width: 100%;
+  width: 100%;
 }
 
 
@@ -94,13 +91,11 @@ nav ul li a:hover::after{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: ;
-    background-image: linear-gradient(to bottom, #ef9595, #f9dec9);
 }
 
 .contact-left{
     display: flex;
-    margin-left: 150px;
+    margin-left: 15%;
     flex-direction: column;
     align-items: start;
     gap: 20px;
@@ -111,80 +106,77 @@ nav ul li a:hover::after{
     letter-spacing: 5px;
     font-weight: 600;
     color: black;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 10px;
 }
 
 .contact-left-title h3{
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
-    font-size: 25px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .contact-left-title hr{
     border: none;
-    width: 580px;
+    width: 37vw;
     height: 3px;
     background-color: black;
-    border-radius: 10px;
+    border-radius: 0px;
     margin-bottom: 20px;
 }
 
 .contact-inputs{
-    width: 550px;
+    width: 35vw;
     height: 50px;
     border: none;
     outline: none;
     padding-left: 25px;
     font-weight: 500;
-    color: #666;
-    border-radius: 50px;
+    color: #333333;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    font-size: 15px;
 }
 
 .contact-left textarea{
-    height: 140px;
+    height: 150px;
     padding-top: 15px;
-    border-radius: 20px;
-}
-
-.contact-inputs:focus{
-    border: 1px solid #27467e;
 }
 
 .contact-inputs::placeholder{
-    color: #a9a9a9;
-    font-size: 15px;
+    color: #282828;
+    font-size: 16px;
 }
 
 .contact-left button{
     display: flex;
     align-items: center;
-    padding: 12px 30px;
+    padding: 7px 30px;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
-    font-size: 17px;
+    font-size: 16px;
     color: #ffffff;
     font-weight: 600;
-    gap: 10px;
-    border: none;
     border-radius: 50px;
-    background: linear-gradient(to bottom, #060047, #060047);
+    background: linear-gradient(to bottom, #ed7979, #f6a87e);
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .contact-right{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
 .contact-right img{
-    width: 600px;
-    height: 600px;
+    width: 35vw;
+    aspect-ratio: 9/9;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 /*copyright*/
@@ -198,104 +190,86 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:1400px){
+@media only screen and (max-width:1200px){
 
-    .contact-left{
-        margin-left: 100px;
-    }
+  .contact-left-title h2{
+    font-size: 40px;
+  }
 
-    .contact-right img{
-        width: 500px;
-        height: 500px;
-    }
+  .contact-left-title h3{
+    font-size: 17px;
+  }
+
+  .contact-inputs{
+    height: 40px;
+  }
+
+  .contact-inputs::placeholder{
+    font-size: 15px;
+  }
 }
 
 
-@media only screen and (max-width:1250px){
+@media only screen and (max-width:1050px){
 
-    .contact-left{
-        margin-left: 60px;
-    }
+  .contact-left-title hr{
+    width: 45vw;
+  }
 
-    .contact-right img{
-        width: 450px;
-        height: 450px;
-    }
-}
-
-
-@media only screen and (max-width:1100px){
-
-    .contact-left{
-        margin-left: 50px;
-    }
-
-    .contact-left-title h3{
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .contact-left-title hr{
-        width: 470px;
-    }
-    
-    .contact-inputs{
-        width: 450px;
-    }
-
-    .contact-right img{
-        width: 420px;
-        height: 420px;
-    }
+  .contact-inputs{
+    width: 40vw;
+  }
 }
 
 
 @media only screen and (max-width:950px){
-    .logo{
-        margin-left: 35px;
-    }
+  .logo{
+      margin-left: 35px;
+  }
 
-    nav{
-        padding-right: 1%;
-    }
+  nav{
+      padding-right: 1%;
+  }
 
-    nav ul li{
-        margin-right: 3em;
-    }
+  nav ul li{
+      margin-right: 3em;
+  }
 
-    /*Content*/
+  /*Content*/
 
-    .contact-left{
-        margin-left: 45px;
-    }
+  .contact-left-title h2{
+    font-size: 35px;
+    letter-spacing: 3px;
+  }
 
-    .contact-left-title h3{
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
+  .contact-left-title h3{
+    font-size: 16px;
+    font-weight: 450;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+  }
 
-    .contact-left-title hr{
-        width: 450px;
-    }
-    
-    .contact-inputs{
-        width: 400px;
-    }
+  .contact-left{
+      margin-left: 9%;
+  }
 
-    .contact-right img{
-        width: 350px;
-        height: 350px;
-    }
- 
+  .contact-left-title hr{
+    height: 2px;
+    margin-bottom: 18px;
 }
 
+  .contact-inputs{
+    padding-left: 18px;
+  }
 
-@media only screen and (max-width:850px){
+  .contact-left button{
+    font-size: 15px;
+}
 
-    .contact-right img{
-        width: 300px;
-        height: 300px;
-    }
+  .contact-right img{
+    width: 38vw;
+  }
+
 }
 
 
@@ -313,31 +287,8 @@ nav ul li a:hover::after{
 
     /*Content*/
 
-    .contact-left{
-        margin-left: 40px;
-    }
-
     .contact-left-title h3{
-        font-size: 17px;
-        letter-spacing: 0px;
-        margin-bottom: 15px;
-    }
-
-    .contact-left-title hr{
-        width: 370px;
-    }
-    
-    .contact-inputs{
-        width: 350px;
-    }
-
-    .contact-right img{
-        width: 280px;
-        height: 280px;
-    }
-
-    .contact-left button{
-        font-size: 16px;
+      font-size: 15px;
     }
  
 }
@@ -345,215 +296,187 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:700px){
 
-    .contact-right img{
-        width: 230px;
-        height: 230px;
-    }
- 
-}
+  /*Headings*/
 
-@media only screen and (max-width:650px){
+  nav ul li{
+    margin-right: 30px;
+  } 
 
-    .contact-left{
-        margin-left: 30px;
-    }
-    
-    .contact-right img{
-        width: 190px;
-        height: 190px;
-    }
- 
+  nav ul li a{
+    font-size: 13px;
+  }
+
+  /*Content*/
+
+  .topimageformobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .topimageformobile img{
+      width: 65vw;
+      aspect-ratio: 7/5.8;
+      object-fit: cover;
+      margin: 20px auto 50px auto;
+  }
+
+  .contact-container{
+      height: unset;
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .contact-left{
+      margin: 0px 10%;
+  }
+
+  .contact-left h3{
+    font-weight: 400;
+  }
+
+  .contact-left-title hr{
+      width: 80vw;
+  }
+
+  .contact-inputs{
+      width: 100%;
+  }
+
+  .contact-right{
+      display: none;
+  }
+
+  .contact-left button{
+      font-size: 15px;
+      margin-bottom: 80px;
+  }
 }
 
 
 @media only screen and (max-width:600px){
 
-    .logo{
-        width: 12%;
-        max-width: 50px;
-        margin-left: 20px;
-        margin-top: 10px;
-    }
+  .logo{
+    width: 12%;
+    max-width: 50px;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
 
-    nav{
-        text-align: left;
-    }
-    
-    nav ul{
-        width: 100%;
-        background: white;
-        opacity: 0.98;
-        position: absolute;
-        align-self: center;
-        top: 100%;
-        height: 100vh;
-        right: 0;
-        z-index: 999;
-    }
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
 
-    nav ul li{
-        background-color: transparent;
-        display: block;
-        margin: 2.5em;
-    }
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
 
-    nav ul li a{
-        background-color: transparent;
-        color: rgb(20, 20, 20);
-        font-size: 15px;
-        margin: 0px;
-        letter-spacing: 3px;
-        font-weight: 500;
-    }
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
 
-    nav ul li a:hover{
-        color:black;
-    }
+  nav ul li a:hover{
+    color:black;
+  }
 
-    nav ul li a::after{
-        content: '';
-        width: 0;
-        height: 3px;
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: black;
-        transition: width 0.5s;
-    }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.5s;
+  }
 
-    nav ul li a:hover::after{
-        width: 0;
-    }
+  nav ul li a:hover::after{
+    width: 0;
+  }
 
-    .menu-icon{
-        display: block;
-        margin-right: 8%;
-        cursor: pointer;
-        margin-top: 10px;
-    }
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 55px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
 
-    .menu-icon img{
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        margin-right: 30px;
-        align-content: center;
-    }
+  #menulist{
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
 
-    #menulist{
-        overflow: hidden;
-        transition: 0.5s;
-        padding-right: 10px;
-    }
+  /*Content*/
 
-    /*Content*/
+  .topimageformobile img{
+    width: 70vw;
+  }
 
-    .topimageformobile{
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        overflow: hidden;
-    }
+  .contact-left-title h2{
+    font-size: 30px;
+  }
 
-    .topimageformobile img{
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        margin: 30px 50px 20px 0px;
-    }
+  .contact-inputs{
+    padding-left: 15px;
+  }
 
-    .contact-container{
-        height: unset;
-        display: grid;
-        grid-template-columns: 1fr;
-        
-    }
-
-    .contact-left{
-        margin: 0px 50px 0px 50px;
-    }
-
-    .contact-left-title hr{
-        width: 80vw;
-    }
-    
-    .contact-inputs{
-        width: 100%;
-    }
-
-    .contact-right{
-        display: none;
-    }
-
-    .contact-left button{
-        font-size: 15px;
-        margin-bottom: 100px;
-    }
-
-    /*copyright*/
-
-    .copyright{
-        margin-top: 30px;
-    }
 }
 
 
 @media only screen and (max-width:500px){
 
     .contact-left-title h2{
-        font-size: 40px;
-        margin-bottom: 8px;
+        font-size: 28px;
+        margin-bottom: 6px;
     }
 
     .contact-left-title h3{
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0px;
-        margin-bottom: 15px;
+      font-size: 14px;
     }
 
-    .contact-left-title hr{
-        width: 75vw;
+    .contact-inputs::placeholder{
+      font-size: 14px;
     }
 
     .topimageformobile img{
-        width: 200px;
-        height: 200px;
-        margin: 30px 50px 20px 0px;
+      width: 75vw;
     }
 }
 
 
-@media only screen and (max-width:440px){
-    .contact-left{
-        margin: 0px 30px 0px 30px;
-    }
+@media only screen and (max-width:450px){
 
-    .contact-left-title hr{
-        width: 82vw;
-    }
-
-    .topimageformobile img{
-        width: 180px;
-        height: 180px;
-        margin: 30px 40px 20px 0px;
-    }
+  .contact-left-title h2{
+    font-size: 23px;
 }
 
-
-@media only screen and (max-width:400px){
-
-    .contact-left-title h2{
-        font-size: 35px;
-        margin-bottom: 8px;
-    }
-
-    .contact-left-title h3{
-        font-size: 15px;
-    }
-
-    .contact-left button{
-        font-size: 14px;
-    }
+  .topimageformobile img{
+    width: 85vw;
+  }
 }
+
