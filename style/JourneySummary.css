@@ -1,124 +1,115 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
-
-
+  
 /*headings section*/
 
 .headingsection{
-    height: 88%;
-    width: 100%;
-    display: flex;
-    align-items: center; 
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 100;
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
 }
 
 .logo{
-    width: 20%;
-    min-width: 65px;
-    max-width: 70px;
-    margin-left: 70px;
-    margin-top: 14px;
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 40px;
+  margin-top: 14px;
 }
 
 .menu-icon{
-    width: 15%;
-    min-width: 60px;
-    max-width: 90px;
-    cursor: pointer;
-    display: none;
+  display: none;
 }
 
 nav{
-    flex: 1;
-    text-align: right;
-    padding-right: 2%;
-    background-color: white;
+  flex: 1;
+  text-align: right;
+  padding-right: 40px;
+  background-color: white;
 }
 
 nav ul{
-    background-color: white;
+  background-color: white;
 }
 
 nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 3em;
-    background-color: white; 
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+  background-color: white; 
 }
 
 nav ul li a{
-    text-decoration: none;
-    color: #575757;
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 14px;
-    background-color: white;
-    position: relative;
+  text-decoration: none;
+  color: #575757;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
+  background-color: white;
+  position: relative;
 }
 
 nav ul li a:hover{
-    color: grey;
+  color: grey;
 }
 
 nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgb(107, 107, 107);
-    transition: width 0.3s;
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
 }
 
 nav ul li a:hover::after{
-    width: 100%;
+  width: 100%;
 }
 
 /*Top Section*/
 
+.topheadingstitle h1{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 6px;
+  word-spacing: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 5vw;
+  margin: 15px 4% 0 4%;
+  line-height: 1.2em;
+}
+
+.topheadingstitle p{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 450;
+  font-size: 1.3vw;
+  margin: 10px 50px 20px 4%;
+  line-height: 1.4em;
+}
+
 .topsection{
-    position: relative;
+  display: flex;
+  justify-content: right;
 }
 
 .topsection img{
-    width: 100%;
-    height: 85vh;
-    object-fit: cover;
-}
-
-.topmessage{
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    width: 70%;
-}
-
-.topmessage h1{
-    margin-bottom: 5px;
-    font-family: 'DM Serif Display', sans-serif;
-    font-weight: 900;
-    letter-spacing: 3px;
-    font-size: 65px;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px black;
-}
-
-.topmessage p{
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 1px;
-    font-weight: 600;
-    font-size: 18px;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px black;
+  width: 90%;
+  aspect-ratio: 7/3;
+  object-fit: cover;
+  object-position: 0% 75%;
 }
 
 
@@ -140,13 +131,12 @@ nav ul li a:hover::after{
 
 .spot img{
     width: 28vw;
-    height: 340px;
+    aspect-ratio: 5/3.5;
     object-fit: cover;
     object-position: 0% 70%;
     border-style: solid;
     border-color: #ffffff;
     border-width: 0px;
-    border-radius: 15px 15px 15px 15px;
 }
 
 .location h2{
@@ -329,28 +319,19 @@ input[type=checkbox] {
 }
 
 
+@media only screen and (max-width:1300px){
 
-@media only screen and (max-width:1400px){
-
-    .spot img{
-        height: 300px;
-    }
-}
-
-
-@media only screen and (max-width:1250px){
-
-    .topmessage{
-        bottom: 10%;
-    }
+  .topheadingstitle p{
+    font-size: 17px;
+  }
 }
 
 
 @media only screen and (max-width:1200px){
 
-    .topmessage p{
-        font-size: 17px;
-    }
+  .topheadingstitle p{
+    font-size: 16px;
+  }
 
     .locationgallery{
         column-gap: 20px;
@@ -359,7 +340,6 @@ input[type=checkbox] {
 
     .spot img{
         width: 30vw;
-        height: 280px;
     }
 
     .location h2{
@@ -387,23 +367,10 @@ input[type=checkbox] {
 }
 
 
-@media only screen and (max-width:1050px){
-
-    .topmessage h1{
-        font-size: 55px;
-    }
-}
-
-
 @media only screen and (max-width:1000px){
-
-    .topmessage p{
-        font-size: 16px;
-    }
 
     .spot img{
         width: 31vw;
-        height: 280px;
     }
 
     .locationgallery{
@@ -436,19 +403,28 @@ input[type=checkbox] {
 
 @media only screen and (max-width:950px){
 
-    /*Headings*/
+  /*Headings*/
 
-    .logo{
-        margin-left: 35px;
-    }
+  .logo{
+    margin-left: 35px;
+  }
 
-    nav{
-        padding-right: 1%;
-    }
+  nav{
+    padding-right: 15px;
+  }
+  
+  nav ul li{
+    margin-right: 40px;
+  }
 
-    nav ul li{
-        margin-right: 3em;
-    }
+  /*Top Headings*/
+
+  .topheadingstitle p{
+    font-size: 15px;
+  }
+
+
+
     /*Content*/
 
     .locationgallery{
@@ -460,7 +436,6 @@ input[type=checkbox] {
 
     .spot img{
         width: 42vw;
-        height: 300px;
     }
 
     .next {
@@ -472,13 +447,11 @@ input[type=checkbox] {
 
 @media only screen and (max-width:900px){
 
-    .topmessage{
-        width: 80%;
-    }
-
-    .topmessage h1{
-       font-size: 50px;
-    }
+  .topsection img{
+    width: 90%;
+    aspect-ratio: 7/3.5;
+    object-position: 0% 75%;
+  }
 
     .enlargepic1{
         grid-template-columns: 55% 1fr;
@@ -502,7 +475,6 @@ input[type=checkbox] {
 
     .spot img{
         width: 44vw;
-        height: 300px;
     }
 
     .next {
@@ -552,21 +524,12 @@ input[type=checkbox] {
 
 @media only screen and (max-width:750px){
 
-    .topmessage{
-        width: 85%;
-    }
-
-    .topmessage h1{
-        font-size: 40px;
-     }
-
     .locationgallery{
         column-gap: 15px;
     }
 
     .spot img{
         width: 46vw;
-        height: 280px;
     }
 
     .next {
@@ -577,6 +540,23 @@ input[type=checkbox] {
 
 
 @media only screen and (max-width:700px){
+
+  /*Headings*/
+
+  nav ul li{
+    margin-right: 30px;
+  } 
+
+  nav ul li a{
+    font-size: 13px;
+  }
+
+  /*Top Section*/
+
+  .topsection img{
+    width: 90%;
+    aspect-ratio: 7/4;
+  }
 
     .enlargepic1{
         grid-template-columns: 1fr;
@@ -629,12 +609,10 @@ input[type=checkbox] {
 
 @media only screen and (max-width:650px){
 
-    .locationgallery{
-        grid-template-columns: auto;
-        column-gap: 0px;
-        row-gap: 40px;
-        padding: 80px 0px 50px 0px;
-    }
+  .location h2,
+  .location h3{
+    margin-left: 5px;
+  }
 
     .location a{
         display: initial;
@@ -647,156 +625,169 @@ input[type=checkbox] {
         row-gap: 30px;
     }
 
-    .spot img{
-        width: 80vw;
-        height: 350px;
-        box-shadow: 1px 1px 2px grey;
-    }
+
 }
 
 
 @media only screen and (max-width:600px){
 
-    .logo{
-        width: 12%;
-        max-width: 50px;
-        margin-left: 20px;
-        margin-top: 10px;
-    }
+  .logo{
+    width: 12%;
+    max-width: 50px;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
 
-    nav{
-        text-align: left;
-    }
-    
-    nav ul{
-        width: 100%;
-        background: white;
-        opacity: 0.98;
-        position: absolute;
-        align-self: center;
-        top: 100%;
-        height: 100vh;
-        right: 0;
-        z-index: 999;
-    }
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
 
-    nav ul li{
-        background-color: transparent;
-        display: block;
-        margin: 2.5em;
-    }
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
 
-    nav ul li a{
-        background-color: transparent;
-        color: rgb(20, 20, 20);
-        font-size: 15px;
-        margin: 0px;
-        letter-spacing: 3px;
-        font-weight: 500;
-    }
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
 
-    nav ul li a:hover{
-        color:black;
-    }
+  nav ul li a:hover{
+    color:black;
+  }
 
-    nav ul li a::after{
-        content: '';
-        width: 0;
-        height: 3px;
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: black;
-        transition: width 0.5s;
-    }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.5s;
+  }
 
-    nav ul li a:hover::after{
-        width: 0;
-    }
+  nav ul li a:hover::after{
+    width: 0;
+  }
 
-    .menu-icon{
-        display: block;
-        margin-right: 8%;
-        cursor: pointer;
-        margin-top: 10px;
-    }
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 58px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
 
-    .menu-icon img{
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        margin-right: 30px;
-        align-content: center;
-    }
+  #menulist{
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
 
-    #menulist{
-        overflow: hidden;
-        transition: 0.5s;
-        padding-right: 10px;
-    }
+  /*Top Section*/
 
-    .topmessage h1{
-        font-size: 35px;
-    }
+  .topheadingstitle h1{
+    font-size: 5.5vw;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+  }
 
-    .topmessage p{
-        font-size: 15px;
-    }
+  .topheadingstitle p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
 
-    .introduction h2{
-        font-size: 25px;
-    }
+  .topsection img{
+    width: 90%;
+    aspect-ratio: 7/6.5;
+  }
+
+  .introduction h2{
+      font-size: 25px;
+  }
+
+  .locationgallery{
+    grid-template-columns: auto;
+    padding: 80px 0px 50px 0px;
+  }
+  .spot img{
+    width: 80vw;
+  }
+
+  .location h2,
+  .location h3{
+    margin-left: 30px;
+  }
 }
 
-@media only screen and (max-width:550px){
-
-    .spot img{
-        width: 80vw;
-        height: 350px;
-    }
-
-}
 
 @media only screen and (max-width:500px){
 
-    .topmessage h1{
-        line-height: 1.3em;
-        margin-bottom: 15px;
-    }
+  /*Top Section*/
 
-    .topmessage p{
-        font-size: 14px;
-    }
+  .topheadingstitle h1{
+    font-size: 29px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+  }
 
-    .spot img{
-        width: 90vw;
-        height: 350px;
-    }
+  .topheadingstitle p{
+    font-size: 14px;
+  }
+
 
 }
 
 
 @media only screen and (max-width:450px){
 
-    .spot img{
-        width: 90vw;
-        height: 350px;
-    }
+  /*Top Section*/
 
-    .spot img{
-        width: 93vw;
-        height: 320px;
-    }
+  .topheadingstitle h1{
+    font-size: 27px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+  }
 
-    .popup__wrapper img{
-        height: 47vh;
-        width: 100%;
-    }
+  .topheadingstitle p{
+    font-size: 13px;
+  }
 
-    .prev, .next {
-        top: 25%;
-    }
+
+
+  .spot img{
+      width: 85vw;
+  }
+
+  .popup__wrapper img{
+      height: 47vh;
+      width: 100%;
+  }
+
+  .prev, .next {
+      top: 25%;
+  }
 
 }
 
