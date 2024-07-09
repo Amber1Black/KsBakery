@@ -1050,6 +1050,11 @@ nav ul li a:hover::after{
     font-size: 13vw;
     letter-spacing: 10px;
     z-index: 10;
+    background: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-size: 0%;
+    animation: movingtext 3s linear infinite alternate;
   }
   
   /*Common Parameter*/
