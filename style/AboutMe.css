@@ -919,10 +919,10 @@ nav ul li a:hover::after{
 
   .menu-icon{
     display: block;
-    margin-right: 5%;
+    margin-right: 15px;
     cursor: pointer;
     margin-top: 5px;
-    width: 55px;
+    width: 58px;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
@@ -1033,33 +1033,32 @@ nav ul li a:hover::after{
   }
 
   .topheadingstitle h1{
-    font-size: 5.8vw;
-    margin: 40px 20px 20px 30px;
-    letter-spacing: 1px;
-    text-transform: none;
+    font-size: 5vw;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    margin: 15px 5% 0 5%;
+    line-height: 1.4em;
+    text-transform: initial;
+  }
+  
+  .topheadingstitle p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 15px 5% 20px 5%;
+    line-height: 1.2em;
+    text-align: justify;
   }
 
-  .circlepic{
+  .mobileheadingspic{
     display: flex;
     justify-content: center;
   }
 
-  .circlepic img{
+  .mobileheadingspic img{
     width: 100vw;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 0px 0px 15px 15px;
     box-shadow: 5px 5px 5px grey;
-  }
-
-  .headingssectionformobile p{
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    letter-spacing: 0px;
-    font-weight: 450;
-    margin: 0px 30px 50px 30px;
-    text-align: justify;
-    line-height: 1.4em;
   }
 
   /*Common Parameter*/
@@ -1073,7 +1072,8 @@ nav ul li a:hover::after{
   .description p, 
   .description2 p,
   .description3 p{
-    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
   }
 
   /*Section 1*/
@@ -1141,22 +1141,28 @@ nav ul li a:hover::after{
   }
 }
 
+
 @media only screen and (max-width:500px){
+  .topheadingstitle h1{
+    margin: 12px 3% 0 4%;
+  }
+
+  .topheadingstitle p{
+    font-size: 14px;
+    margin: 10px 4% 20px 4%;
+  }
+}
+
+@media only screen and (max-width:450px){
 
   .topheadingstitle h1{
-    font-size: 5.8vw;
-    margin: 40px 20px 20px 20px;
+    letter-spacing: 1px;
     word-spacing: 5px;
   }
 
-  .headingssectionformobile p{
-    margin: 0px 20px 50px 20px;
+  .topheadingstitle p{
+    font-size: 13px;
   }
-
-}
-
-
-@media only screen and (max-width:450px){
 
   .description h2, 
   .description2 h2,
@@ -1164,6 +1170,12 @@ nav ul li a:hover::after{
     font-size: 21px;
     letter-spacing: 1px;
     margin-bottom: 10px;
+  }
+
+  .description p, 
+  .description2 p,
+  .description3 p{
+    font-size: 13px;
   }
 
   /*Section 1*/
@@ -1187,15 +1199,4 @@ nav ul li a:hover::after{
   .description3{
     margin: 30px 20px 0px 20px;
   }
-}
-
-
-@media only screen and (max-width:420px){
-
-  .topheadingstitle h1{
-    font-size: 5.5vw;
-    margin: 40px 20px 20px 20px;
-    word-spacing: 3px;
-  }
-
 }
