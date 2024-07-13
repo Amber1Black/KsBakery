@@ -23,7 +23,7 @@
   width: 20%;
   min-width: 65px;
   max-width: 70px;
-  margin-left: 70px;
+  margin-left: 40px;
   margin-top: 14px;
 }
 
@@ -174,7 +174,7 @@ nav ul li a:hover::after{
   font-weight: 800;
   line-height: 1em;
 	font-family: 'Raleway', sans-serif; 
-	color: rgb(46, 46, 46);
+	color: rgb(0, 0, 0);
 	letter-spacing: 4px;
 	margin-left: -5px;
 }
@@ -183,7 +183,7 @@ nav ul li a:hover::after{
   font-family: 'Raleway', sans-serif; 
   letter-spacing: 2px;
 	font-size: 1.5vw;
-	color: #707070;
+	color: #3d3d3d;
 	font-weight: 500;
 	margin: 15px 0px 15px 0px;
 }
@@ -192,14 +192,14 @@ nav ul li a:hover::after{
   font-family: 'Raleway', sans-serif; 
   letter-spacing: 1px;
   font-size: 16px;
-  color: #838383;
+  color: #5b5b5b;
   font-weight: 400;
 }
 
 .pinkbox{
   height: 92vh;
   min-height: 750px;
-  max-height: 1200px;
+  max-height: 1150px;
   margin-left: 58%;
   background-image: linear-gradient(to bottom, rgb(250, 200, 200), rgb(247, 177, 177), rgb(240, 140, 140));
   grid-column: 1/4;
@@ -236,24 +236,74 @@ nav ul li a:hover::after{
   margin-bottom: 15px;
 }
 
-
 /*Second Section*/
 
 .secondpart{
-	margin: 150px 0px 30px 0px;
+	margin: 60px 2% 30px 2%;
+  padding: 80px 10px;
+}
+
+.secondpartdescription{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.secondpartdescription h1{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 8px;
+  font-size: 5vw;
+  margin: 30px 5%;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.secondpartdescription p{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  font-size: 17px;
+  margin: 10px auto 20px auto;
+  width: 500px;
+  line-height: 1.4em;
+}
+
+.secondpartdescription a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 450; 
+  font-size: 16px;
+  letter-spacing: 3px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  line-height: 2.5em;
 }
 
 .secondpartslider{
 	position: relative;
-	height: 100vh;
+	height: 50svh;
+  min-height: 400px;
+  background: radial-gradient(circle at 10% 20%, #0a303d 0%, #154c61 90%);
 }
 
 .secondpartcontent{
 	position: absolute;
-	inset: 0 0 0 0;
+	inset: 0 60px 0 60px;
 	overflow: hidden;
 	opacity: 0;
 	transition: .5s;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+  'one two three';
+  grid-gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .secondpartcontent.active{
@@ -261,84 +311,92 @@ nav ul li a:hover::after{
 	z-index: 10;
 }
 
-.secondpartdescription{
-	position: absolute;
-	inset: 0px 80px;
-	text-align: right;
-	justify-content: end;
-	z-index: 10;
-}
-
-.secondpartdescription h2{
-	letter-spacing: 10px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-}
-
-.secondpartdescription h1{
-	font-family: 'Raleway', sans-serif; 
-	font-size: 7vw;
-	letter-spacing: 5px;
-	margin: 20px 0px 20px 0px;
-	text-shadow: rgb(135, 134, 134) 1px 1px 1px;
-}
-
-.secondpartdescription p{
-	font-family: 'Raleway', sans-serif; 
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	display: inline-block;
-	width: 50vw;
-}
-
-.galleryredirection{
-	margin: 50px 0px 0px 0px;
-	cursor: pointer;
-}
-
-.galleryredirection a{
-	font-family: 'Raleway', sans-serif; 
-	font-size: 17px;
-	font-weight: 450;
-	letter-spacing: 1px;
-	text-decoration: none;
-	color: #000000;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #575757;
-	border-radius: 30px;
-	padding: 8px 25px 8px 25px;
-}
-
 .pictureshown{
 	position: absolute;
-	inset: 160px 4% 10px 4%;
+	inset: 50px 4% 50px 4%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 15px;
-	align-items: baseline;
+	align-items: center;
+  display: flex;
 	justify-content: center; 
 }
 
 .pictureshown img{
-	width: 30vw;
+	width: 100%;
+  height: 100%;
 	object-fit: cover;
-	box-shadow: 5px 5px 5px rgb(145, 144, 144);
+  border-radius: 10px;
 }
 
-.picture1 img{
-	height: 65vh;
+.secondpartgriddescription{
+  margin: 30px;
+  grid-area: one;
 }
 
-.picture2 img{
-	height: 52vh;
+.secondpartgriddescription h1{
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 8px;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgb(4, 4, 4);
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-.picture3 img{
-	height: 40vh;
-	object-position: 30% 70%;
+.secondpartgriddescription p{
+  width: 25vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 450;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px rgb(5, 5, 5);
+}
+
+.secondpartgriddescription a{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.pictureshown:nth-child(2){
+  grid-area: two;
+}
+
+.pictureshown:nth-child(3){
+  grid-area: three;
+}
+
+.secondpartpic2,
+.secondpartpic10,
+.secondpartpic13,
+.secondpartpic15{
+  object-position: 50% 75%;
+}
+
+.secondpartpic4{
+  object-position: 50% 40%;
+}
+
+.secondpartpic5{
+  object-position: 50% 70%;
+}
+
+.secondpartpic6{
+  object-position: 50% 45%;
+}
+
+.secondpartpic7,
+.secondpartpic12{
+  object-position: 50% 95%;
+}
+
+.secondpartpic8,
+.secondpartpic9{
+  object-position: 50% 80%;
 }
 
 @keyframes showContent {
@@ -349,10 +407,6 @@ nav ul li a:hover::after{
 	}
 }
 
-.secondpartcontent.active h2,
-.secondpartcontent.active h1,
-.secondpartcontent.active p,
-.secondpartcontent.active .galleryredirection,
 .secondpartcontent.active img{
 	transform: translateY(30px);
 	filter: blur(20px);
@@ -360,55 +414,36 @@ nav ul li a:hover::after{
 	animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
-.secondpartcontent.active h2{
-	animation-delay: 0.3s;
-	animation-duration: 1s;
-}
-
-.secondpartcontent.active h1{
-	animation-delay: 0.6s;
-	animation-duration: 1s;
-}
-
-.secondpartcontent.active p{
-	animation-delay: 0.9s;
-	animation-duration: 1s;
-}
-
-.secondpartcontent.active .galleryredirection{
-	animation-delay: 1.2s;
-	animation-duration: 1s;
-}
-
 .secondpartcontent.active img{
-	animation-delay: 1.5s;
+	animation-delay: 0.1s;
 	animation-duration: 1s;
-}
-
-.secondpartarrows{
-	margin-top: 20px 0px -20px 0px;
-	display: flex;
-	justify-content: center;
-	z-index: 100;
-	gap: 10px;
 }
 
 .secondpartarrows button{
-	background-color: rgba(238, 238, 238, 0.774);
-	border: none;
-	font-family: monospace;
-	width: 40px;
-	height: 40px;
-	border-radius: 100%;
-	font-size: x-large;
-	color: #4e4c4caf;
-	transition: .5s;
-	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-family: monospace;
+  background-color: #ffffff;
+  border: none;
+  color: #403f3f;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  left: 2%;
 }
 
 .secondpartarrows button:hover{
 	background-color: #eee;
-	color: black;
+	color: rgb(47, 47, 47);
+}
+
+.secondpartarrows button#secondpartnext{
+  left: unset;
+  right: 2%;
 }
 
 
@@ -642,30 +677,11 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1450px){
 
-	/*Second Section*/
+  /*First Section*/
 
-	.secondpart{
-		margin: 100px 0px 20px 0px;
-	}
-
-	.secondpartdescription{
-    inset: 0px 70px;
-  }
-
-  .secondpartdescription h1{
-    margin: 20px 0px 10px 0px;
-  }
-
-  .secondpartdescription p{
-    font-size: 17px;
-  }
-
-  .galleryredirection a{
-    font-size: 16px;
-  }
-
-  .galleryredirection{
-    margin: 40px 0px 0px 0px;
+  .pinkbox{
+    height: 95vh;
+    max-height: 850px;
   }
 
     /*Fourth Section*/
@@ -748,6 +764,41 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1300px){
 
+  /*Second Section*/
+
+  .secondpartdescription p{
+    font-size: 16px;
+    margin: 10px auto 20px auto;
+    width: 450px;
+  }
+  
+  .secondpartdescription a{
+    font-size: 15px;
+  }
+
+  .secondpartgriddescription h1{
+    font-size: 35px;
+  }
+
+  .secondpartgriddescription p,
+  .secondpartgriddescription a{
+    font-size: 16px;
+  }
+
+  .secondpartslider{
+    max-height: 500px;
+  }
+
+  .secondpartarrows button{
+    width: 35px;
+    height: 35px;
+    left: 1%;
+  }
+
+  .secondpartarrows button#secondpartnext{
+    right: 1%;
+  }
+
     /*Third Section*/
 
     .thirdpartmessage h1{
@@ -782,37 +833,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1250px){
-
-	/*Second Section*/
-
-	.secondpart{
-		margin: 100px 0px 0px 0px;
-	}
-
-  .secondpartdescription h1{
-    font-size: 6vw;
-    margin-top: 15px;
-  }
-
-	.secondpartdescription p{
-    width: 57vw;
-  }
-
-  .pictureshown{
-    margin: 0px 4% 0px 4%;
-  }
-
-  .picture1 img{
-    height: 50vh;
-  }
-  
-  .picture2 img{
-    height: 41vh;
-  }
-  
-  .picture3 img{
-    height: 35vh;
-  }
 
     /*Fourth Section*/
 
@@ -908,37 +928,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1100px){
-
-	/*Second Section*/
-	
-	.secondpartdescription p{
-    width: 60vw;
-    font-size: 16px;
-  }
-
-  .galleryredirection{
-    margin-top: 30px;
-  }
-
-  .galleryredirection a{
-    font-size: 15px;
-  }
-
-  .pictureshown{
-    margin: 10px 4% 0px 4%;
-  }
-
-  .picture1 img{
-    height: 45vh;
-  }
-  
-  .picture2 img{
-    height: 40vh;
-  }
-  
-  .picture3 img{
-    height: 35vh;
-  }
 
     /*Third Section*/
 
@@ -1071,26 +1060,49 @@ nav ul li a:hover::after{
     padding: 5px;
   }
 
-	/*Second Section*/
-	
-	.secondpartdescription{
-    inset: 0px 50px 0px 0px;
+  /*Second Section*/
+
+  .secondpart{
+    margin: 60px 1% 30px 1%;
   }
 
   .secondpartdescription p{
-    width: 70vw;
+    font-size: 15px;
+    width: 400px;
+  }
+  
+  .secondpartdescription a{
+    font-size: 14px;
   }
 
-  .picture1 img{
-    height: 48vh;
+  .secondpartgriddescription{
+    margin: 5px;
   }
-  
-  .picture2 img{
-    height: 40vh;
+
+  .secondpartgriddescription h1{
+    font-size: 30px;
   }
-  
-  .picture3 img{
-    height: 35vh;
+
+  .secondpartgriddescription p,
+  .secondpartgriddescription a{
+    font-size: 15px;
+  }
+
+  .secondpartarrows button{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .secondpartcontent{
+    inset: 0 45px 0 45px;
+    grid-gap: 5px;
+  }
+
+  .secondpartslider{
+    height: 400px;
+    min-height: unset;
+    max-height: unset;
   }
 
     /*Third Section*/
@@ -1236,38 +1248,31 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:850px){
-    
-	/*Second Section*/
 
-	.secondpartdescription h1{
-    font-size: 60px;
-  }
+  /*Second Section*/
 
   .secondpartdescription p{
-    width: 650px;
-  }
-
-  .picture3{
-    display: none;
-  }
-
-  .pictureshown{
-    grid-template-columns: 1fr 1fr;
-    margin: 80px 4% 0px 4%;
-  }
-
-  .pictureshown img{
-    width: 45vw;
-  }
-
-  .picture1 img{
-    height: 52vh;
+    font-size: 14px;
+    width: 360px;
   }
   
-  .picture2 img{
-    height: 45vh;
+  .secondpartdescription a{
+    font-size: 13px;
   }
 
+  .secondpartgriddescription h1{
+    font-size: 25px;
+  }
+
+  .secondpartgriddescription p,
+  .secondpartgriddescription a{
+    font-size: 14px;
+  }
+
+  .secondpartslider{
+    height: 360px;
+  }
+  
     /*Third Section*/
 
     .thirdpartmessage h1{
@@ -1397,25 +1402,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:750px){
 
-	/*Second Section*/
-
-	.secondpartdescription{
-    inset: 10px 40px 0px 10px;
-  }
-  
-  .secondpartdescription p{
-    font-size: 15px;
-    width: 560px;
-  }
-
-  .galleryredirection a{
-    font-size: 14px;
-  }
-
-  .galleryredirection{
-    margin-top: 30px;
-  }
-
     /*Third Section*/
 
     .thirdpartimagedisplay img{
@@ -1504,6 +1490,45 @@ nav ul li a:hover::after{
     margin-left: 78%;
   }
 
+  /*Second Section*/
+
+  .secondpartdescription p{
+    width: 300px;
+  }
+
+  .secondpartslider{
+    height: 480px;
+  }
+
+  .secondpartcontent{
+    inset: 10px 30px;
+  }
+
+  .secondpartgriddescription{
+    margin: 20px 30px 30px 30px;
+  }
+
+  .secondpartgriddescription h1{
+    margin-bottom: 12px;
+  }
+
+  .secondpartgriddescription p{
+    width: unset;
+  }
+
+  .secondpartcontent{
+    grid-template-areas:
+    'one one'
+    'two three';
+    grid-gap: 10px;
+    grid-template-rows: 180px 250px;
+  }
+
+  .pictureshown{
+    inset: 0px 4% 0px 4%;
+  }
+  
+
 	/*Third Section*/
 
 	.thirdpartimagedisplay{
@@ -1570,34 +1595,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:650px){
-
-	/*Second Section*/
-
-	.secondpartdescription h1{
-    font-size: 50px;
-    margin: 10px 0px;
-  }
-
-  .secondpartdescription h2{
-    font-size: 15px;
-    letter-spacing: 6px;
-  }
-
-  .secondpartdescription p{
-    width: 400px;
-  }
-
-  .pictureshown{
-    margin: 80px 4% 30px 4%;
-  }
-
-  .picture1 img{
-    height: 45vh;
-  }
-  
-  .picture2 img{
-    height: 40vh;
-  }
 
     /*Third Section*/
 
@@ -1700,7 +1697,7 @@ nav ul li a:hover::after{
     margin-right: 15px;
     cursor: pointer;
     margin-top: 5px;
-    width: 58px;
+    width: 55px;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
@@ -1711,12 +1708,37 @@ nav ul li a:hover::after{
     padding-right: 10px;
   }
 
-	/*Second Section*/
+  /*Second Section*/
 
-	.secondpartdescription{
-    inset: 15px 35px 0px 10px;
+  .secondpartdescription{
+    grid-template-columns: 1fr;
   }
-	
+
+  .secondpartdescription h1{
+    letter-spacing: 6px;
+    margin: 10px 5%;
+  }
+
+  .secondpartdescription p{
+    width: unset;
+    margin: 10px 30px;
+    text-align: justify;
+    line-height: 1.3em;
+  }
+
+  .secondpartslider{
+    height: 450px;
+  }
+
+  .secondpartgriddescription{
+    margin: 20px 15px 30px 15px;
+  }
+
+  .secondpartcontent{
+    grid-gap: 5px;
+    grid-template-rows: 180px 220px;
+  }
+
 	/*Third Section*/
 
 	.thirdpartforlargerscreen{
@@ -2016,53 +2038,6 @@ nav ul li a:hover::after{
     text-shadow: rgb(0, 0, 0) 3px 3px 10px;
   }
 
-	/*Second Section*/
-
-  .secondpartarrows button{
-    width: 30px;
-    height: 30px;
-    gap: 3px;
-  }
-
-  .secondpartdescription{
-    inset: 10px 35px 0px 10px;
-  }
-
-	.secondpartdescription h1{
-    font-size: 40px;
-    margin: 10px 0px;
-  }
-
-  .secondpartdescription h2{
-    font-size: 14px;
-    letter-spacing: 7px;
-  }
-
-  .secondpartdescription p{
-    font-size: 14px;
-    width: 390px;
-  }
-
-  .galleryredirection{
-    margin-top: 25px;
-  }
-
-  .galleryredirection a{
-    font-size: 13px;
-  }
-
-	.pictureshown{
-    margin: 50px 4% 0px 4%;
-  }
-
-  .picture1 img{
-    height: 42vh;
-  }
-  
-  .picture2 img{
-    height: 36vh;
-  }
-
 	/*Third Section*/
 
 	.thirdpartmobilemessage{
@@ -2105,7 +2080,72 @@ nav ul li a:hover::after{
 			font-weight: 500;
 			letter-spacing: 3px;
 		}
-		
+	
+  /*Second Section*/
+
+  .secondpart{
+    margin: 30px 0 50px 0;
+    padding: 30px 0px;
+  }
+
+  .secondpartdescription{
+    margin: 20px 20px;
+  }
+
+  .secondpartdescription h1{
+    font-size: 6.6vw;
+    letter-spacing: 3px;
+    margin: 0 0 10px 0;
+  }
+
+  .secondpartdescription p{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1 px;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 5px;
+  }
+  
+  .secondpartdescription a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 8px 23px;
+  }
+
+  .secondpartslider{
+    height: 480px;
+  }
+
+  .secondpartcontent{
+    gap: 1px;
+    grid-template-rows: 180px 250px;
+    inset: 10px 30px;
+  }
+
+  .secondpartgriddescription{
+    margin: 20px 10px 30px 10px;
+  }
+
+  .secondpartgriddescription h1{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 6px;
+  }
+
+  .secondpartgriddescription p,
+  .secondpartgriddescription a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .secondpartarrows button{
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+
     /*Third Section*/
 
     .thirdpartmobilemessage{
@@ -2185,48 +2225,43 @@ nav ul li a:hover::after{
     font-size: 14px;
   }
 
-	/*Second Section*/
-
-  .secondpartdescription{
-    inset: 5px 25px 0px 10px;
-  }
-
-  .secondpartdescription h1{
-    font-size: 33px;
-    margin: 8px 0px;
-  }
-
-  .secondpartdescription h2{
-    font-size: 13px;
-    letter-spacing: 5px;
-  }
+  /*Second Section*/
 
   .secondpartdescription p{
-    width: 360px;
+    font-size: 13px;
+    margin: 10px 0px;
+  }
+
+  .secondpartdescription a{
+    font-size: 12px;
+  }
+
+  .secondpartslider{
+    height: 420px;
+  }
+
+  .secondpartcontent{
+    gap: 1px;
+    grid-template-rows: 160px 210px;
+  }
+
+  .secondpartgriddescription{
+    margin: 25px 0px 30px 10px;
+  }
+
+  .secondpartgriddescription h1{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .secondpartgriddescription p,
+  .secondpartgriddescription a{
     font-size: 13px;
   }
 
-  .galleryredirection{
-    margin-top: 20px;
-  }
-
-  .picture2{
-    display: none;
-  }
-
-  .pictureshown{
-    display: flex;
-    margin-top: 40px
-  }
-
-  .pictureshown img{
-    width: 100vw;
-    justify-content: center;
-    box-shadow: none;
-  }
-
-  .picture1 img{
-    height: 58vh;
+  .secondpartarrows button{
+    width: 25px;
+    height: 25px;
   }
 
 	/*Third Section*/
@@ -2251,12 +2286,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:420px){
-
-	/*Second Section*/
-
-	.secondpartdescription{
-    inset: 5px 15px 0px 10px;
-  }
 
     /*Fifth Section*/
 
@@ -2300,14 +2329,4 @@ nav ul li a:hover::after{
         letter-spacing: 3px;
     }
 
-}
-
-@media only screen and (max-width:380px){
-	.secondpartdescription p{
-    width: 300px;
-  }
-
-	.pictureshown{
-		margin-top: 90px;
-	}
 }
