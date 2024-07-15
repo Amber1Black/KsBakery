@@ -127,12 +127,6 @@ nav ul li a:hover{
 
 /*First Section*/
 
-.firstpart{
-	overflow-x: hidden;
-  max-width: 100vw;
-  margin-bottom: 50px;
-}
-
 .firstpartmobile{
 	display: none;
 }
@@ -155,13 +149,13 @@ nav ul li a:hover{
 }
 
 .firstmessage h1{
-	font-size: 7.5vw;
+	font-size: 7vw;
   font-weight: 800;
   line-height: 1em;
 	font-family: 'Raleway', sans-serif; 
 	color: rgb(0, 0, 0);
 	letter-spacing: 4px;
-	margin: 0 0 20px -7px;
+	margin: 0 0 25px -7px;
 }
 
 .firstmessage h2{
@@ -225,7 +219,7 @@ nav ul li a:hover{
 /*Second Section*/
 
 .secondpart{
-	margin: 150px 5% 30px 5%;
+	margin: 250px 5% 30px 5%;
 }
 
 .secondpartdescription{
@@ -248,9 +242,9 @@ nav ul li a:hover{
 .secondpartdescription p{
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
-  font-size: 17px;
+  font-size: 19px;
   margin: 10px auto 20px auto;
-  width: 520px;
+  width: 500px;
   line-height: 1.4em;
 }
 
@@ -629,8 +623,6 @@ nav ul li a:hover{
     padding: 6px 25px 6px 25px;
 }
 
-
-
 /*copyright*/
 
 .copyright{
@@ -653,6 +645,13 @@ nav ul li a:hover{
 
   .pinkbox{
     max-height: 880px;
+  }
+
+  /*Second Section*/
+
+  .secondpartdescription p{
+    font-size: 18px;
+    width: 470px;
   }
 }
 
@@ -687,6 +686,13 @@ nav ul li a:hover{
 
 @media only screen and (max-width:1400px){
 
+  /*Second Section*/
+
+  .secondpartdescription p{
+    font-size: 17px;
+    width: 460px;
+  }
+
     /*Fifth Section*/
 
     .profilepic img{
@@ -716,7 +722,7 @@ nav ul li a:hover{
   }
 
   .pinkbox{
-    max-height: 800px;
+    max-height: 750px;
     margin-left: 58%;
   }
   
@@ -727,6 +733,12 @@ nav ul li a:hover{
   
   .firstpartimagecolumn{
     margin-left: 86%;
+  }
+
+  /*Second Section*/
+
+  .secondpart{
+    margin: 180px 5% 30px 5%;
   }
 
     /*Fourth Section*/
@@ -751,7 +763,7 @@ nav ul li a:hover{
   .secondpartdescription p{
     font-size: 16px;
     margin: 10px auto 20px auto;
-    width: 440px;
+    width: 420px;
   }
   
   .secondpartdescription a{
@@ -908,6 +920,18 @@ nav ul li a:hover{
 
 @media only screen and (max-width:1100px){
 
+  /*First Section*/
+
+  .pinkbox{
+    max-height: 600px;
+  }
+
+  /*Second Section*/
+
+  .secondpart{
+    margin: 150px 5% 30px 5%;
+  }
+
     /*Third Section*/
 
     .thirdpartimagedisplay img{
@@ -1016,7 +1040,8 @@ nav ul li a:hover{
   }
 
   .firstmessage h1{
-    font-size: 7.2vw;
+    font-size: 7vw;
+    margin-left: -3px;
   }
 
   .firstmessage h2{
@@ -1045,7 +1070,7 @@ nav ul li a:hover{
   /*Second Section*/
 
   .secondpart{
-    margin: 60px 1% 30px 1%;
+    margin: 120px 2% 30px 2%;
   }
 
   .secondpartdescription p{
@@ -1077,7 +1102,7 @@ nav ul li a:hover{
   }
 
   .secondpartcontent{
-    inset: 0 45px 0 45px;
+    inset: 0 50px 0 50px;
     grid-gap: 5px;
   }
 
@@ -1201,6 +1226,19 @@ nav ul li a:hover{
 
   /*First Section*/
 
+  .firstmessage h1{
+    font-size: 6.6vw;
+    margin-bottom: 15px;
+  }
+
+  .pinkbox{
+    max-height: 540px;
+  }
+
+  .IconOutline{
+    margin-top: 20px;
+  }
+
   .firstpartimagecolumn img{
     width: 95px;
     height: 95px;
@@ -1303,9 +1341,26 @@ nav ul li a:hover{
   }
 
   .firstmessage h1{
-    font-size: 7.5vw;
     letter-spacing: 3px;
     margin-left: -3px;
+  }
+
+  .firstmessage h2{
+    font-size: 17px;
+  }
+
+  .firstmessage p{
+    font-size: 14px;
+  }
+
+  .IconOutline{
+    width: 57vw;
+    margin-left: 30%;
+  }
+
+  .pinkbox{
+    max-height: 500px;
+    width: 41vw;
   }
 
   .firstpartimagecolumn img{
@@ -1460,14 +1515,12 @@ nav ul li a:hover{
   }
 
   .firstpartmobile{
-    display: initial;
+    display: grid;
     overflow-x: hidden;
   }
 
   .firstpartmobiletopsection{
-    width: 100vw;
-    height: 55svh;
-    max-height: 700px;
+    height: 450px;
     background: linear-gradient(330deg, rgb(248, 163, 160) 10%, rgb(255, 251, 239) 96.1%);
     padding: 0px 3%;
     position: relative;
@@ -1492,8 +1545,7 @@ nav ul li a:hover{
     position: absolute;
     top: 0;
     right: 0;
-    height: 55svh;
-    max-height: 700px;
+    height: 450px;
     width: 75%;
     background-image: url(AboutMe.jpeg);
     background-size: cover;
@@ -1502,7 +1554,7 @@ nav ul li a:hover{
   }
 
   .firstpartmobiledescription{
-    margin: 40px 0px;
+    margin: 40px 0;
     overflow: hidden;
   }
 
@@ -1512,20 +1564,16 @@ nav ul li a:hover{
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     text-align: center;
-    display: block;
-    margin: 10px auto;
-    width: 450px;
-    overflow: hidden;
   }
 
   .firstpartmobiledescription h3{
     font-size: 15px;
     letter-spacing: 1px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 350;
     text-align: center;
     display: block;
-    margin: 20px auto 30px auto;
+    margin: 20px auto 25px auto;
     width: 400px;
     overflow: hidden;
   }
@@ -1558,11 +1606,11 @@ nav ul li a:hover{
   }
 
   .secondpartcontent{
-    inset: 10px 30px;
+    inset: 10px 40px;
   }
 
   .secondpartgriddescription{
-    margin: 20px 30px 30px 30px;
+    margin: 20px 15px 30px 15px;
   }
 
   .secondpartgriddescription h1{
@@ -1582,7 +1630,7 @@ nav ul li a:hover{
   }
 
   .pictureshown{
-    inset: 0px 4% 0px 4%;
+    inset: 0px 3% 0px 3%;
   }
   
 
@@ -1769,12 +1817,11 @@ nav ul li a:hover{
 
   .firstpartmobiletopsection,
   .firstpartpictureshown{
-    height: 50svh;
+    height: 400px;
   }
 
   .firstpartmobiledescription h2{
     font-size: 4.3vw;
-    width: 410px;
   }
 
   .firstpartmobiledescription h3{
@@ -1784,33 +1831,14 @@ nav ul li a:hover{
 
   /*Second Section*/
 
-  .secondpartdescription{
-    grid-template-columns: 1fr;
-  }
-
   .secondpartdescription h1{
-    letter-spacing: 6px;
-    margin: 10px 5%;
+    font-size: 5.7vw;
+    letter-spacing: 4px;
+    margin: 0 0 10px 0;
   }
 
   .secondpartdescription p{
-    width: unset;
-    margin: 10px 30px;
-    text-align: justify;
-    line-height: 1.3em;
-  }
-
-  .secondpartslider{
-    height: 450px;
-  }
-
-  .secondpartgriddescription{
-    margin: 20px 15px 30px 15px;
-  }
-
-  .secondpartcontent{
-    grid-gap: 5px;
-    grid-template-rows: 180px 220px;
+    width: 250px;
   }
 
 	/*Third Section*/
@@ -2036,7 +2064,7 @@ nav ul li a:hover{
 
   .firstpartmobiletopsection,
   .firstpartpictureshown{
-    height: 43svh;
+    height: 360px;
   }
 
   .firstpartmobiletopsection h1{
@@ -2046,19 +2074,19 @@ nav ul li a:hover{
   }
 
   .firstpartmobiledescription h2{
-    font-size: 4.45vw;
-    width: 350px;
+    font-size: 4.5vw;
   }
 
   .firstpartmobiledescription h3{
     font-size: 14px;
-    width: 340px;
-    margin: 15px auto 20px auto;
+    letter-spacing: 0px;
+    width: 330px;
+    margin: 15px auto 5px auto;
   }  
 
   .firstpartimagerow{
     gap: 10px;
-    margin: 20px 0;
+    margin: 5px 0;
   }
 
   .firstpartimagerow img{
@@ -2069,18 +2097,18 @@ nav ul li a:hover{
   /*Second Section*/
 
   .secondpart{
-    margin: 30px 0 50px 0;
+    margin: 80px 0 50px 0;
     padding: 30px 0px;
   }
 
   .secondpartdescription{
     margin: 20px 20px;
+    grid-template-columns: 1fr;
   }
 
   .secondpartdescription h1{
-    font-size: 6.6vw;
-    letter-spacing: 2px;
-    margin: 0 0 10px 0;
+    letter-spacing: 3px;
+    margin: 10px 5%;
   }
 
   .secondpartdescription p{
@@ -2088,15 +2116,16 @@ nav ul li a:hover{
     letter-spacing: 0px;
     font-weight: 400;
     font-size: 14px;
-    margin: 10px 5px;
     text-align: justify;
+    width: unset;
+    margin: 10px 15px;
+    line-height: 1.3em;
   }
-  
+
   .secondpartdescription a{
     font-weight: 450;
     font-size: 13px;
     padding: 8px 23px;
-    
   }
 
   .secondpartslider{
@@ -2212,6 +2241,11 @@ nav ul li a:hover{
 
   /*Second Section*/
 
+  .secondpart{
+    margin: 50px 0 50px 0;
+    padding: 30px 0px;
+  }
+
   .secondpartdescription p{
     font-size: 13px;
     margin: 10px 0px;
@@ -2291,12 +2325,12 @@ nav ul li a:hover{
 
   .firstpartmobiledescription h2{
     font-size: 18px;
-    width: 300px;
   }
 
   .firstpartmobiledescription h3{
     font-size: 13px;
-    width: 320px;
+    width: 330px;
+    line-height: 1.3em;
     margin: 10px auto 5px auto;
   }  
 
