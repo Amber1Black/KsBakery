@@ -148,6 +148,10 @@ nav ul li a:hover::after{
 	overflow: hidden;
 }
 
+.firstpartmobile{
+	display: none;
+}
+
 .firstpartforlargerscreen{
 	display: grid;
 	grid-template-columns: repeat(1fr, 1fr, 1fr, 1fr);
@@ -156,10 +160,6 @@ nav ul li a:hover::after{
 
 .pinkbox, .IconOutline, .firstmessage, .firstpartimagecolumn{
 	grid-row: 1/2;
-}
-
-.firstpartimageforsmallerscreen{
-	display: none;
 }
 
 .firstmessage{
@@ -265,7 +265,7 @@ nav ul li a:hover::after{
   letter-spacing: 2px;
   font-size: 17px;
   margin: 10px auto 20px auto;
-  width: 500px;
+  width: 520px;
   line-height: 1.4em;
 }
 
@@ -489,7 +489,6 @@ nav ul li a:hover::after{
     color: #575757;
     text-align: justify;
     font-size: 17px;
-    
 }
 
 .thirdpartredirection{
@@ -763,7 +762,7 @@ nav ul li a:hover::after{
   .secondpartdescription p{
     font-size: 16px;
     margin: 10px auto 20px auto;
-    width: 450px;
+    width: 440px;
   }
   
   .secondpartdescription a{
@@ -1467,45 +1466,91 @@ nav ul li a:hover::after{
 
   /*First Section*/
 
-  .firstmessage{
-    margin-left: 6%;
-    max-width: 88vw;
-    margin-bottom: 470px;
+  .firstpartforlargerscreen{
+    display: none;
   }
 
-  .firstmessage h1{
-    font-size: 8vw;
+  .firstpartmobile{
+    display: initial;
   }
 
-  .firstmessage h2{
-    font-size: 17px;
+  .firstpartmobiletopsection{
+    width: 100%;
+    height: 55svh;
+    max-height: 700px;
+    background: linear-gradient(330deg, rgb(248, 163, 160) 10%, rgb(255, 251, 239) 96.1%);
+    padding: 0px 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  .firstmessage p{
-    font-size: 14px;
+  .firstpartmobiletopsection h1{
+    font-size: 13vw;
+    letter-spacing: 6px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 750;
+    position: relative;
+    z-index: 2;
+    color: #151515;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
   }
 
-  .IconOutline{
-    width: 70vw;
-    margin-left: 5%;
-     margin-top: 180px;
+  .firstpartpictureshown{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 55svh;
+    max-height: 700px;
+    width: 75%;
+    background-image: url(AboutMe.jpeg);
+    background-size: cover;
+    background-position: center;
   }
 
-  .pinkbox{
-    margin-left: 40%;
-    max-height: unset;
-    height: 700px;
+  .firstpartmobiledescription{
+    margin: 40px 0px;
   }
 
-  .firstpartimagecolumn img{
-    width: 110px;
-    height: 110px;
-    
+  .firstpartmobiledescription h2{
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    width: 450px;
   }
 
-  .firstpartimagecolumn{
-    margin-left: 76%;
-    margin-top: 180px;
+  .firstpartmobiledescription h3{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    margin: 20px auto 30px auto;
+    width: 400px;
+  }
+
+  .firstpartimagerow{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin: 20px 10%;
+  }
+
+  .firstpartimagerow img{
+    width: 23vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding: 3px;
   }
 
   /*Second Section*/
@@ -1728,44 +1773,19 @@ nav ul li a:hover::after{
 
   /*First Section*/
 
-  .firstmessage{
-    max-width: 88vw;
-    margin-bottom: 420px;
+  .firstpartmobiletopsection,
+  .firstpartpictureshown{
+    height: 50svh;
   }
 
-  .firstmessage h1{
-    font-size: 8vw;
+  .firstpartmobiledescription h2{
+    font-size: 4.3vw;
+    width: 410px;
   }
 
-  .firstmessage h2{
-    font-size: 2.9vw;
-    margin-bottom: 10px;
-  }
-
-  .firstmessage p{
-    font-size: 14px;
-  }
-
-  .IconOutline{
-    width: 73vw;
-    margin-left: 4%;
-    margin-top: 150px;
-  }
-
-  .pinkbox{
-    margin-left: 40%;
-    max-height: unset;
-    height: 620px;
-  }
-
-  .firstpartimagecolumn img{
-    width: 95px;
-    height: 95px;
-  }
-
-  .firstpartimagecolumn{
-    margin-left: 76%;
-    margin-top: 150px;
+  .firstpartmobiledescription h3{
+    font-size: 15px;
+    width: 380px;
   }
 
   /*Second Section*/
@@ -1996,46 +2016,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:550px){
-
-  /*First Section*/
-
-  .firstmessage{
-    max-width: 88vw;
-    margin-bottom: 420px;
-  }
-
-  .firstmessage h2{
-    letter-spacing: 1px;
-    font-size: 16px;
-  }
-
-  .firstmessage p{
-    letter-spacing: 0px;
-    color: #000000;
-  }
-
-  .IconOutline{
-    width: 75vw;
-    margin-left: 3%;
-    margin-top: 150px;
-  }
-
-  .pinkbox{
-    margin-left: 40%;
-    max-height: unset;
-    height: 590px;
-  }
-
-  .firstpartimagecolumn img{
-    width: 90px;
-    height: 90px;
-  }
-
-  .firstpartimagecolumn{
-    margin-left: 77%;
-    margin-top: 150px;
-  }
-
   
 	/*Third Section*/
 
@@ -2060,51 +2040,37 @@ nav ul li a:hover::after{
 
   /*First Section*/
 
-  .firstmessage{
-    margin-bottom: 380px;
-    max-width: 90vw;
+  .firstpartmobiletopsection,
+  .firstpartpictureshown{
+    height: 43svh;
   }
 
-  .firstmessage h2{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    letter-spacing: 0px;
-    font-size: 17px;
-    line-height: 1.3em;
+  .firstpartmobiletopsection h1{
+    font-size: 15vw;
+    letter-spacing: 3px;
+    font-weight: 700;
   }
 
-  .firstmessage p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    line-height: 1.2em;
-    color: #403f3f;
+  .firstpartmobiledescription h2{
+    font-size: 4.45vw;
+    width: 350px;
+  }
+
+  .firstpartmobiledescription h3{
     font-size: 14px;
+    width: 340px;
+    margin: 15px auto 20px auto;
+  }  
+
+  .firstpartimagerow{
+    gap: 15px;
+    margin: 20px 10%;
   }
 
-  .IconOutline{
-    width: 82vw;
-    margin-left: 0%;
-    margin-top: 150px;
+  .firstpartimagerow img{
+    width: 27vw;
+    padding: 3px;
   }
-
-  .pinkbox{
-    margin-left: 40%;
-    max-height: unset;
-    height: 600px;
-  }
-
-  .firstpartimagecolumn img{
-    width: 80px;
-    height: 80px;
-    padding: 4px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-
-  .firstpartimagecolumn{
-    margin-left: 78%;
-    margin-top: 150px;
-  }    
 	
   /*Second Section*/
 
@@ -2250,41 +2216,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:450px){
 
-  /*First Section*/
-
-  .firstmessage{
-    margin-bottom: 350px;
-  }
-
-  .firstmessage h2{
-    font-size: 16px;
-  }
-
-  .firstmessage p{
-    font-size: 13px;
-  }
-
-  .IconOutline{
-    margin-top: 170px;
-  }
-
-  .pinkbox{
-    margin-left: 40%;
-    max-height: unset;
-    height: 570px;
-  }
-
-  .firstpartimagecolumn img{
-    width: 70px;
-    height: 70px;
-  }
-
-  .firstpartimagecolumn{
-    margin-left: 78%;
-    margin-top: 170px;
-    
-  }  
-
   /*Second Section*/
 
   .secondpartdescription p{
@@ -2353,6 +2284,27 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:400px){
 
+  /*First Section*/
+
+  .firstpartmobiletopsection,
+  .firstpartpictureshown{
+    height: 40svh;
+  }
+
+  .firstpartmobiledescription{
+    margin: 30px 0px;
+  }
+
+  .firstpartmobiledescription h2{
+    font-size: 18px;
+    width: 300px;
+  }
+
+  .firstpartmobiledescription h3{
+    font-size: 13px;
+    width: 320px;
+  }
+
     /*Third Section*/
 
     .thirdpartmobilemessage{
@@ -2385,3 +2337,4 @@ nav ul li a:hover::after{
     }
 
 }
+
