@@ -842,7 +842,7 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpart{
-    margin: 120px 2% 80px 2%;
+    margin: 120px 2.5% 80px 2.5%;
   }
 
   .secondpartdescription h1{
@@ -1179,6 +1179,14 @@ nav ul li a:hover::after{
     inset: 0px 3% 0px 3%;
   }
 
+  .secondpartarrows button{
+    left: 1.5%;
+  }
+
+  .secondpartarrows button#secondpartnext{
+    right: 1.5%;
+  }
+
   /*Third Section*/
 
   .recipegrid{
@@ -1291,14 +1299,25 @@ nav ul li a:hover::after{
   
   /*Second Section*/
 
+  .secondpart{
+    margin: 80px 3% 50px 3%;
+    padding: 30px 0px;
+  }
+
+  .secondpartdescription{
+    margin: 20px 12px;
+    grid-template-columns: 1fr;
+  }
+
   .secondpartdescription h1{
-    font-size: 5.5vw;
-    letter-spacing: 3px;
+    font-size: 6vw;
     margin: 0 0 10px 0;
+    text-transform: none;
   }
 
   .secondpartdescription p{
-    width: 250px;
+    width: 380px;
+    text-align: center;
   }
 
   /*Third Section*/
@@ -1328,8 +1347,7 @@ nav ul li a:hover::after{
   }
 
   .recipe p, .recipe1 p{
-    letter-spacing: 0px;
-    width: 210px;
+    width: 150px;
   }
 
   .thirdpartredirection,
@@ -1379,36 +1397,27 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpart{
-    margin: 80px 0 50px 0;
-    padding: 30px 0px;
+    margin: 80px 3.5% 50px 3.5%;
   }
 
   .secondpartdescription{
-    margin: 20px 12px;
-    grid-template-columns: 1fr;
+    margin: 10px 0px;
   }
 
   .secondpartdescription h1{
-    text-transform: none;
-    font-size: 6vw;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    margin: 0px 5%;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    margin: 0px;
   }
 
   .secondpartdescription p{
-    font-weight: 500;
     font-size: 14px;
-    text-align: justify;
-    width: unset;
-    margin: 10px 15px;
     line-height: 1.3em;
   }
 
   .secondpartdescription a{
-    font-weight: 500;
     font-size: 14px;
-    padding: 8px 23px;
+    padding: 8px 28px;
   }
 
   .secondpartslider{
@@ -1435,7 +1444,6 @@ nav ul li a:hover::after{
   .secondpartgriddescription a{
     font-weight: 500;
     font-size: 14px;
-    text-align: justify;
   }
 
   .pictureshown{
@@ -1470,20 +1478,28 @@ nav ul li a:hover::after{
     aspect-ratio: 4/1.8;
   }
 
+  .recipe, .recipe1{
+    padding: 0 0 15px 0;
+  }
+
   .recipe h2, .recipe1 h2{
     font-size: 18px;
-    margin: 34% auto 0px auto;
+    margin: 33% auto 0px auto;
     letter-spacing: 1px;
   }
 
   .recipe p, .recipe1 p{
-    width: 130px;
-    margin: 5px auto 5px auto;
+    width: 150px;
+    margin: 8px auto 5px auto;
   }
 
   .thirdpartredirection,
   .thirdpartreciperedirection{
     padding: 8px 0px 8px 0px;
+  }
+
+  .thirdpartreciperedirection{
+    margin: 13px auto 8px auto;
   }
 }
 
@@ -1492,9 +1508,15 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpartdescription p,
+  .secondpartdescription p{
+    font-size: 13px;
+    font-weight: 500;
+    width: 363px;
+  }
+
   .secondpartdescription a{
     font-size: 13px;
+    font-weight: 500;
   }
 
   .secondpartslider{
@@ -1540,7 +1562,7 @@ nav ul li a:hover::after{
   .recipe p, .recipe1 p{
     font-size: 13px;
     font-weight: 500;
-    width: 130px;
+    width: 140px;
   }
 
   .thirdpartredirection a,
