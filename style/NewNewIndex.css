@@ -1130,14 +1130,12 @@ nav ul li a:hover::after{
   }
 
   .firstpartimagerow img{
-    width: 23vw;
+    width: 27vw;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: grey;
-    padding: 3px;
+    background: linear-gradient(-45deg, #FFC796 0%, #ff82a5 100%);
+    padding: 6px;
   }
 
   /*Second Section*/
@@ -1152,6 +1150,11 @@ nav ul li a:hover::after{
 
   .secondpartcontent{
     inset: 10px 40px;
+    grid-template-areas:
+    'one one'
+    'two three';
+    grid-gap: 10px;
+    grid-template-rows: 180px 250px;
   }
 
   .secondpartgriddescription{
@@ -1165,14 +1168,6 @@ nav ul li a:hover::after{
 
   .secondpartgriddescription p{
     width: unset;
-  }
-
-  .secondpartcontent{
-    grid-template-areas:
-    'one one'
-    'two three';
-    grid-gap: 10px;
-    grid-template-rows: 180px 250px;
   }
 
   .pictureshown{
@@ -1293,8 +1288,13 @@ nav ul li a:hover::after{
 
   .firstpartmobiledescription h3{
     font-size: 15px;
-    width: 360px;
+    width: 390px;
     margin-bottom: 10px;
+    font-family: unset;
+  }
+
+  .firstpartimagerow{
+    gap: 20px;
   }
   
   /*Second Section*/
@@ -1321,6 +1321,11 @@ nav ul li a:hover::after{
   }
 
   /*Third Section*/
+
+  .thirdpartdescription h1{
+    text-transform: none;
+    letter-spacing: 6px;
+  }
 
   .thirdpartdescription p{
     width: 410px;
@@ -1375,23 +1380,26 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h2{
-    font-size: 4.5vw;
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 
   .firstpartmobiledescription h3{
     font-size: 14px;
-    width: 330px;
+    font-weight: 450;
+    width: 320px;
     margin: 15px auto 0px auto;
+    letter-spacing: 0px;
   }  
 
   .firstpartimagerow{
-    gap: 10px;
-    margin: 5px 0;
+    gap: 13px;
+    margin: 3px 0;
   }
 
   .firstpartimagerow img{
-    width: 27vw;
-    padding: 3px;
+    width: 28vw;
+    padding: 5px;
   }
 
   /*Second Section*/
@@ -1470,7 +1478,7 @@ nav ul li a:hover::after{
   }
 
   .thirdpartdescription h1{
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     word-spacing: 5px;
   }
 
@@ -1585,7 +1593,7 @@ nav ul li a:hover::after{
 
   .firstpartmobiletopsection,
   .firstpartpictureshown{
-    height: 300px;
+    height: 280px;
   }
 
   .firstpartmobiledescription{
@@ -1598,7 +1606,7 @@ nav ul li a:hover::after{
 
   .firstpartmobiledescription h3{
     font-size: 13px;
-    width: 320px;
+    width: 300px;
     line-height: 1.4em;
     margin: 10px auto 0px auto;
   }  
