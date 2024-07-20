@@ -229,7 +229,6 @@ nav ul li a:hover::after{
   font-size: 5vw;
   margin: 30px 5%;
   text-align: center;
-  text-transform: uppercase;
   line-height: 1.4em;
 }
 
@@ -247,7 +246,7 @@ nav ul li a:hover::after{
   color: #000000;
   font-family: 'Raleway', sans-serif;
   font-weight: 450; 
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 4px;
   border-style: solid;
   border-width: 1px;
@@ -429,7 +428,6 @@ nav ul li a:hover::after{
   font-size: 6vw;
   letter-spacing: 10px;
   text-align: center;
-  text-transform: uppercase;
   color: #0b0c2f;
 }
 
@@ -543,11 +541,160 @@ nav ul li a:hover::after{
 }
 
 
+/*Fourth Section*/
+
+.fourthpart{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 5% 80px 5%;
+  overflow: hidden;
+}
+
+.fourthpartdescription{
+  width: 31vw;
+  margin: auto 5px auto 0;
+}
+
+.fourthpartdescription h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 4.5vw;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.fourthpartdescription p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+
+.fourthpartredirection{
+  margin: 30px 0 0 0;
+  padding: 13px 0px 13px 0px;
+  width: 160px;
+  text-align: center;
+  border-radius: 25px;
+  background: radial-gradient(circle at 10% 20%, rgb(75, 108, 183) 0%, rgb(55, 82, 141) 90%);
+  transition: : 0.5s;
+}
+
+.fourthpartredirection span{
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.fourthpartredirection:hover span{
+  width: 22px;
+}
+
+.fourthpartredirection a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500; 
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fourthpartslider{
+  position: relative;
+  margin: 0 0 0 0;
+  width: 55.3vw;
+}
+
+/* Hide the images by default */
+.fourthpartsliderpic {
+  display: none;
+}
+
+.fourthpartsliderpic img{
+  width: 55.3vw;
+  height: 65svh;
+  object-fit: cover;
+}
+
+.fourthpartsliderpic2{
+  object-position: 50% 70%;;
+}
+
+.fourthpartsliderpic3{
+  object-position: 50% 90%;;
+}
+
+.fourthpartsliderpic6{
+  object-position: 30% 50%;;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.fourthpartprev,
+.fourthpartnext{
+  position: absolute;
+  top: 48%;
+  z-index: 100;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border: none;
+  color: #403f3f;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 0;
+  text-align: center;
+  cursor: pointer;
+  left: 1.5%;
+}
+
+.fourthpartnext {
+  left: unset;
+  right: 1.5%;
+}
+
+.fourthpartprev:hover,
+.fourthpartnext:hover{
+  background-color: rgba(27, 70, 134, 0.8);
+  color: #ffffff;
+}
+
+.fourthpartsliderrow{
+  display: flex;
+  gap: 0.5vw;
+  margin: 0;
+  padding: 0;
+}
+
+.fourthpartsliderrowpic img{
+  width: 8.8vw;
+  aspect-ratio: 3/2.5;
+  object-fit: cover;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
 /*copyright*/
 
 .copyright{
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
   font-size: 11px;
   color: grey;
   bottom: 2%;
@@ -695,6 +842,40 @@ nav ul li a:hover::after{
   .recipe, .recipe1{
     width: 28vw;
   }
+
+  /*Fourth Section*/
+
+  .fourthpart{
+    margin: 0 4%;
+  }
+
+  .fourthpartdescription h1{
+    font-size: 4.3vw;
+    letter-spacing: 2px;
+    word-spacing: 0px;
+  }
+
+  .fourthpartdescription p,
+  .fourthpartredirection a{
+    font-size: 16px;
+  }
+
+  .fourthpartredirection{
+    padding: 10px 0px 10px 0px;
+    width: 150px;
+  }
+
+  .fourthpartsliderpic img{
+    max-height: 550px;
+  }
+
+  .fourthpartprev,
+  .fourthpartnext{
+    width: 28px;
+    height: 28px;
+    padding: 4px 0;
+    font-size: 16px;
+  }
 }
 
 
@@ -787,6 +968,12 @@ nav ul li a:hover::after{
 
   .recipegrid{
     margin: 0px auto;
+  }
+
+  /*Fourth Section*/
+
+  .fourthpartsliderpic img{
+    max-height: 470px;
   }
 
 }
@@ -923,6 +1110,38 @@ nav ul li a:hover::after{
     margin: 18px auto 8px auto;
     width: 17vw;
   }
+
+  /*Fourth Section*/
+
+  .fourthpart{
+    margin: 0 3% 80px 3%;
+  }
+
+  .fourthpartdescription h1{
+    font-size: 4.3vw;
+    letter-spacing: 3px;
+  }
+
+  .fourthpartdescription p,
+  .fourthpartredirection a{
+    font-size: 15px;
+  }
+
+  .fourthpartredirection{
+    width: 140px;
+  }
+
+  .fourthpartsliderpic img{
+    max-height: 500px;
+  }
+
+  .fourthpartprev,
+  .fourthpartnext{
+    width: 25px;
+    height: 25px;
+    padding: 2px 0;
+    font-size: 16px;
+  }
 }
 
 
@@ -1036,6 +1255,13 @@ nav ul li a:hover::after{
   .thirdpartreciperedirection a{
     font-size: 14px;
     letter-spacing: 2px;
+  }
+
+  /*Fourth Section*/
+
+  .fourthpartdescription p,
+  .fourthpartredirection a{
+    font-size: 14px;
   }
 
 }
@@ -1195,6 +1421,53 @@ nav ul li a:hover::after{
   .thirdpartredirection,
   .thirdpartreciperedirection{
     width: 23vw;
+    padding: 10px 10px;
+  }
+
+  /*Fourth Section*/
+
+  .fourthpart{
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .fourthpartdescription{
+    width: unset;
+    text-align: center;
+  }
+
+  .fourthpartdescription h1{
+    font-size: 6vw;
+    margin-bottom: 15px;
+  }
+
+  .fourthpartdescription p{
+    margin: 0 auto;
+    width: 430px;
+  }
+  
+  .fourthpartredirection{
+    margin: 20px auto 30px auto;
+    text-align: center;
+  }
+
+  .fourthpartslider{
+    width: 86.5vw;
+    margin: 0 auto 50px auto;
+  }
+
+  .fourthpartsliderpic img{
+    width: 86.5vw;
+    max-height: 400px;
+  }
+
+  .fourthpartsliderrowpic img{
+    width: 14vw;
+  }
+
+  .fourthpartprev,
+  .fourthpartnext{
+    display: none;
   }
 }
 
@@ -1509,6 +1782,21 @@ nav ul li a:hover::after{
   .thirdpartreciperedirection{
     margin: 13px auto 8px auto;
   }
+
+  /*Fourth Section*/
+
+  .fourthpartslider{
+    width: 91.3vw;
+  }
+
+  .fourthpartsliderpic img{
+    width: 91.3vw;
+    max-height: 400px;
+  }
+
+  .fourthpartsliderrowpic img{
+    width: 14.8vw;
+  }
 }
 
 
@@ -1582,6 +1870,31 @@ nav ul li a:hover::after{
   .thirdpartredirection,
   .thirdpartreciperedirection{
     width: 130px;
+  }
+
+  /*Fourth Section*/
+
+  .fourthpart{
+    padding-top: 50px;
+  }
+
+  .fourthpartdescription h1{
+    margin-bottom: 10px;
+  }
+
+  .fourthpartdescription p{
+    font-size: 13px;
+    font-weight: 500;
+    width: 300px;
+  }
+
+  .fourthpartredirection{
+    margin: 12px auto 22px auto;
+    padding: 8px 0;
+  }
+
+  .fourthpartredirection a{
+    font-size: 13px;
   }
 }
 
