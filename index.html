@@ -85,15 +85,15 @@
 
   <!-- Second Section -->
 
-  <div class="secondpart">
-    <div class="secondpartdescription reveal2">
+  <div class="secondpart reveal2">
+    <div class="secondpartdescription">
         <h1>My Baking Collection</h1>
         <p>There are many possibilities in baking, ranging from tarts, cakes, and bread to cookies and pastries, offering ample room for creativity and joy.
           <Br><Br>
               <a href="https://www.k-bakery.com/GallerySummary">Gallery &#8594</a>
         </p>
     </div>
-    <div class="secondpartslider reveal2">
+    <div class="secondpartslider">
       <div class="secondpartarrows">
         <button id="secondpartprev">&#8592</button>
         <button id="secondpartnext">&#8594</button>
@@ -177,7 +177,7 @@
 
   <div class="thirdpart reveal">
     <div class="thirdpartdescription">
-      <h1>Bake at home</h1>
+      <h1>Bake at Home</h1>
       <p>Homemade baked goods are not only the most delicious but also the healthiest. The aroma that fills the air when they come out of the oven is simply irresistible. Hope everyone enjoys baking at home!</p>
       <div class="thirdpartredirection">
         <a href="https://www.k-bakery.com/RecipeSummary">View More <span>&#8594</span></a>
@@ -212,7 +212,68 @@
           </div>
       </div>
     </div>
-    
+  </div>
+
+
+  <!-- Fourth Section -->
+
+  <div class="fourthpart reveal2">
+    <div class="fourthpartdescription">
+      <h1>Discover the Splendor</h1>
+      <p>It's thrilling to discover the beautiful places around us. Sometimes just take a break to explore new destinations, it can bring us many unforgettable moments.</p>
+      <div class="fourthpartredirection">
+        <a href="https://www.k-bakery.com/JourneySummary">Explore <span>&#8594</span></a>
+      </div>
+    </div>
+    <div class="fourthpartslider">
+      <div class="fourthpartsliderpic">
+        <img src="Pictures/Journey - Putney Bridge - 1.jpg">
+      </div>
+
+      <div class="fourthpartsliderpic">
+        <img src="Pictures/Journey - Karuizawa 1.jpg" class ="fourthpartsliderpic2">
+      </div>
+
+      <div class="fourthpartsliderpic">
+        <img src="Pictures/Journey - Battersea Power Station - 1.jpg" class ="fourthpartsliderpic3">
+      </div>
+        
+      <div class="fourthpartsliderpic">
+        <img src="Pictures/Journey - Stratford-upon-Avon 2.jpg">
+      </div>
+
+      <div class="fourthpartsliderpic">
+        <img src="Pictures/Journey - Chelsea Riverside.jpg">
+      </div>
+        
+      <div class="fourthpartsliderpic">
+        <img src="Pictures/Journey - Tower Bridge 5 (view on the bridge).jpg" class ="fourthpartsliderpic6">
+      </div>
+        
+      <a class="fourthpartprev" onclick="plusSlides(-1)">&#8592</a>
+      <a class="fourthpartnext" onclick="plusSlides(1)">&#8594</a>
+
+      <div class="fourthpartsliderrow">
+        <div class="fourthpartsliderrowpic">
+          <img class="demo cursor" src="Pictures/Journey - Putney Bridge - 1.jpg" onclick="currentSlide(1)">
+        </div>
+        <div class="fourthpartsliderrowpic">
+          <img class="demo cursor" src="Pictures/Journey - Karuizawa 1.jpg" onclick="currentSlide(2)">
+        </div>
+        <div class="fourthpartsliderrowpic">
+          <img class="demo cursor" src="Pictures/Journey - Battersea Power Station - 1.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        <div class="fourthpartsliderrowpic">
+          <img class="demo cursor" src="Pictures/Journey - Stratford-upon-Avon 2.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+        </div>
+        <div class="fourthpartsliderrowpic">
+          <img class="demo cursor" src="Pictures/Journey - Chelsea Riverside.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+        </div>    
+        <div class="fourthpartsliderrowpic">
+          <img class="demo cursor" src="Pictures/Journey - Tower Bridge 5 (view on the bridge).jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="copyright">
@@ -351,6 +412,35 @@
     }
   </script>
 
+<script>
+  //Fourth Section
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("fourthpartsliderpic");
+    let dots = document.getElementsByClassName("demo");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
 
 </body>
 </html>
