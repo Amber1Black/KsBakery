@@ -1,478 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        gtag('config', 'G-RF94ND0HKD');
-        </script>
-
-  <meta charset="UTF-8">
+  gtag('config', 'G-RF94ND0HKD');
+  </script>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="K's Bakery, a gallery on the cake I have baked. Cake can't be missed on important and festive days. Wish you can get some ideas on what kind of cake to be baked at home here.">
+  <meta name="description" content="K's Bakery, from simple treats to elaborate masterpieces, cakes enrich our lives and create lasting memories. Let's delve into this gallery and discover the endless possibilities that the world of cakes has to offer.">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
+  <link rel="icon" type="image/png" href="./Pictures/websitelogo.png" sizes = "512x512">
+  <link rel="shortcut icon" href="./Pictures/websitelogo.png" type="image/png" sizes = "512x512">
 
-  <!-- displays site properly based on user's device -->
-  
   <title>K's Bakery</title>
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <!-- My CSS -->
   <link rel="stylesheet" href="style/CakeGallery.css">
+
+  <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
+  <div class="headingsection">
+    <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
+        <nav>
+          <ul id="menulist">
+            <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
+            <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
+            <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
+            <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+            <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menuicon">
+            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
+        </div>
+  </div>
 
-    <div class="headingsection">
-        <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
-            <nav>
-                <ul id="menulist">
-                    <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
-                    <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
-                    <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
-                    <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
-                    <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menuicon">
-                <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
-            </div>
-            
+
+  <div class="cakegallery">
+    <div class="gallerydescription">
+      <p>From simple treats to elaborate masterpieces, cakes enrich our lives and create lasting memories. Let's delve into this gallery and discover the endless possibilities that the world of cakes has to offer.</p>
+      <h1>Cake Gallery</h1>
+    </div>
+    <div class="imagesdisplay">
+      <img src="Pictures/Cake - Madeleine.jpg">
+      <img src="Pictures/Cake - Coffee Cake.jpg" class ="imagedisplay2">
+      <img src="Pictures/Cake - XMas Tree Cupcake.jpg">
     </div>
     
-    <div class="content">
 
-        <div class="topdisplay">
-            <div class="description">
-                <h1>Cake Gallery</h1>
-                <p>The fluffy cake matches perfectly with the smooth cream. Cake can't be missed when there're important & festive days.</p>
-            </div>
-            <div class="topdisplayimage">
-                <img src ="Pictures/Outline - Coffee Cake with shadow.png">
-            </div>
-        </div>
-
-        <div class="topdisplayformobile">
-            <img src ="Pictures/Cake Gallery Cover.jpg">
-            <div class="message">
-                <h1>Cake Gallery</h1>
-                <p>The fluffy cake matches perfectly with the smooth cream. Cake can't be missed when there're important & festive days.</p>
-            </div>
-        </div>
-    
-        <div class="gallerycontent reveal">
-
-            <div class="column">
-                <div class="specialreveal">
-                    <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
-                    <p>Coffee Genoise</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
-                    <p>Coffee Cream Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Letter C.jpg">
-                    <p>Letter "C" Cake</p>
-                </div> 
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cake Gallery - Coffee Cake Roll.jpg">
-                    <p>Coffee Cake Roll</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Simple Opera.jpg">
-                    <p>Simple Opera</p>
-                </div>
-                
-            </div>
-            
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Crown Cake.jpg">
-                    <p>Crown Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Flower Cake.jpg">
-                    <p>Flower Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Mango Cake.jpg">
-                    <p>Mango Cake</p>
-                </div>
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cake Gallery - Matcha Cake Roll.jpg">
-                    <p>Matcha Cake Roll</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Madeleine.jpg">
-                    <p>Madeleine</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
-                    <p>Basque Cheesecake</p>
-                </div>
-            </div> 
-
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Purple Cake.jpg">
-                    <p>Purple Cream Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
-                    <p>Purple Nuts Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
-                    <p>Dragon Ball Cake</p>
-                </div>
-                <div class="gallerygrid reveal2">
-                    <img src="Pictures/Cake Gallery - Coffee Cake Roll 2.jpg">
-                    <p>Coffee Cake Roll</p>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cake Gallery - Flower Cupcake.jpg">
-                    <p>Flower Cupcake</p>
-                </div>
-                
-            </div>
-            
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
-                    <p>Matcha Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
-                    <p>Skirt Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Choco Cake.jpg">
-                    <p>Choco Cake</p>
-                </div>
-                <div class="gallerygrid reveal3">
-                    <img src="Pictures/Cake Gallery - XMas Tree Cupcake.jpg">
-                    <p>X'Mas Tree Cupcake</p>
-                </div>
-                <div class="gallerygrid reveal3">
-                    <img src="Pictures/Cake Gallery - Cupcake.jpg">
-                    <p>Cupcake</p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="gallerycontent2 reveal">
-            <div class="column">
-                <div class="specialreveal">
-                    <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
-                    <p>Coffee Genoise</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
-                    <p>Coffee Cream Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
-                    <p>Matcha Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Letter C.jpg">
-                    <p>Letter "C" Cake</p>
-                </div> 
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cake Gallery - Coffee Cake Roll.jpg">
-                    <p>Coffee Cake Roll</p>
-                </div>
-                <div class="gallerygrid reveal3">
-                    <img src="Pictures/Cake Gallery - Cupcake.jpg">
-                    <p>Cupcake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Simple Opera.jpg">
-                    <p>Simple Opera</p>
-                </div>
-                
-            </div>
-            
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Crown Cake.jpg">
-                    <p>Crown Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Flower Cake.jpg">
-                    <p>Flower Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Mango Cake.jpg">
-                    <p>Mango Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Choco Cake.jpg">
-                    <p>Choco Cake</p>
-                </div>
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cake Gallery - Matcha Cake Roll.jpg">
-                    <p>Matcha Cake Roll</p>
-                </div>
-                
-                <div class="gallerygrid reveal3">
-                    <img src="Pictures/Cake Gallery - XMas Tree Cupcake.jpg">
-                    <p>X'Mas Tree Cupcake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Madeleine.jpg">
-                    <p>Madeleine</p>
-                </div>
-            </div> 
-
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Purple Cake.jpg">
-                    <p>Purple Cream Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
-                    <p>Purple Nuts Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
-                    <p>Skirt Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
-                    <p>Dragon Ball Cake</p>
-                </div>
-                <div class="gallerygrid reveal2">
-                    <img src="Pictures/Cake Gallery - Coffee Cake Roll 2.jpg">
-                    <p>Coffee Cake Roll</p>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cake Gallery - Flower Cupcake.jpg">
-                    <p>Flower Cupcake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
-                    <p>Basque Cheesecake</p>
-                </div>
-            </div>
-            
-        </div>
-        
-        <div class="gallerycontent3 reveal">
-            <div class="column">
-                <div class="specialreveal">
-                    <img src="Pictures/Cake Gallery - Coffee Cake.jpg">
-                    <p>Coffee Genoise</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Coffee Cake 2.jpg">
-                    <p>Coffee Cream Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Matcha Cake.jpg">
-                    <p>Matcha Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Purple Cream Cake.jpg">
-                    <p>Purple Nuts Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Skirt Cake.jpg">
-                    <p>Skirt Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Dragon Ball Cake.jpg">
-                    <p>Dragon Ball Cake</p>
-                </div>
-                
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cake Gallery - Coffee Cake Roll.jpg">
-                    <p>Coffee Cake Roll</p>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cake Gallery - Flower Cupcake.jpg">
-                    <p>Flower Cupcake</p>
-                </div>
-                <div class="gallerygrid reveal3">
-                    <img src="Pictures/Cake Gallery - Cupcake.jpg">
-                    <p>Cupcake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Simple Opera.jpg">
-                    <p>Simple Opera</p>
-                </div>
-                
-            </div>
-            
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Crown Cake.jpg">
-                    <p>Crown Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Purple Cake.jpg">
-                    <p>Purple Cream Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Flower Cake.jpg">
-                    <p>Flower Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Mango Cake.jpg">
-                    <p>Mango Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Choco Cake.jpg">
-                    <p>Choco Cake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Letter C.jpg">
-                    <p>Letter "C" Cake</p>
-                </div> 
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cake Gallery - Matcha Cake Roll.jpg">
-                    <p>Matcha Cake Roll</p>
-                </div>
-                <div class="gallerygrid reveal2">
-                    <img src="Pictures/Cake Gallery - Coffee Cake Roll 2.jpg">
-                    <p>Coffee Cake Roll</p>
-                </div>
-                <div class="gallerygrid reveal3">
-                    <img src="Pictures/Cake Gallery - XMas Tree Cupcake.jpg">
-                    <p>X'Mas Tree Cupcake</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Madeleine.jpg">
-                    <p>Madeleine</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cake Gallery - Basque Cheesecake.jpg">
-                    <p>Basque Cheesecake</p>
-                </div>
-            </div> 
-
-        </div>
-            
-
+    <div class="container reveal2">
+      <div class="container-description">
+        <h2>Whole Cake</h2>
+        <p>Cake plays a vital role in every festive occasion and special day. With endless possibilities for decoration, it's exciting and enjoyable to experiment with different designs.</p>
+      </div>
+      <h4>Scroll for more &#8594</h4>
+      <div class="scroll-container">
+        <img src="Pictures/Cake - Coffee Cake.jpg" class = "wholecake1">
+        <img src="Pictures/Cake - Crown Cake.jpg" class = "wholecake2">
+        <img src="Pictures/Cake - Strawberry Cake.jpg" class = "wholecake3">
+        <img src="Pictures/Cake - Purple Cake.jpg" class = "wholecake4">
+        <img src="Pictures/Cake - Matcha Cake.jpg" class = "wholecake5">
+        <img src="Pictures/Cake - Mango Cake.jpg" class = "wholecake6">
+        <img src="Pictures/Cake - Coffee Cake 2.jpg" class = "wholecake7">
+        <img src="Pictures/Cake - Skirt Cake.jpg" class = "wholecake8">
+        <img src="Pictures/Cake - Purple Cream Cake.jpg" class = "wholecake9">
+        <img src="Pictures/Cake - Choco Cake.jpg" class = "wholecake10">
+        <img src="Pictures/Cake - Flower Cake.jpg" class = "wholecake11">
+      </div>
     </div>
-   
-    <div class="backbutton">
-        <a href="https://www.k-bakery.com/GallerySummary">Back &#8629</a>
-    </div>
-    
-    <div class="copyright">
-        Copyright &#169 2023 K's Bakery
-    </div>
-        
 
-    <script>
-        var menulist = document.getElementById("menulist");
+    <div class="container2 reveal">
+      <div class="container-description2">
+        <h2>Cake Roll</h2>
+        <p>The fluffy cake and creamy filling blend perfectly to create a delicious cake roll.</p>
+      </div>
+      
+      <div class="scroll-container2">
+        <img src="Pictures/Cake - Coffee Cake Roll.jpg">
+        <img src="Pictures/Cake - Coffee Cream Cake Roll.jpg">
+        <img src="Pictures/Cake - Matcha Cake Roll.jpg">
+      </div>
+    </div>
 
+    <div class="cakefact">
+      <h3>Why cake is called "cake"?</h3>
+      <p>The term "cake" has a very long history, it traces back through several languages and centuries. The word "cake" comes from the Old Norse word "kaka." The Old Norse "kaka" referred to a small, flat bread or loaf. This word was then translated into Old English as "cāc," which eventually evolved into the modern English word "cake."
+        <Br><Br>Originally, cakes were more like bread and were often sweetened with honey. Over time, as baking techniques and ingredients improved, cakes became lighter and sweeter, resembling the desserts we know today.
+        </p>
+    </div>
+
+    <div class="container3 reveal2">
+      <div class="container-description3">
+        <h2>Cupcake</h2>
+        <p>Cupcakes are small but can look elegant with various types of piping on top.</p>
+      </div>
+      
+      <div class="scroll-container3">
+        <img src="Pictures/Cake - XMas Tree Cupcake.jpg">
+        <img src="Pictures/Cake - Flower Cupcake.jpg">
+        <img src="Pictures/Cake - Cupcake.jpg">
+      </div>
+    </div>
+
+    <div class="container4 reveal">
+      <div class="container-description4">
+        <h2>Cakes</h2>
+        <p>Cakes come in various forms, offering unlimited possibilities for us to explore.</p>
+      </div>
+      
+      <div class="scroll-container4">
+        <img src="Pictures/Cake - Letter C.jpg" class = "cake1">
+        <img src="Pictures/Cake - Madeleine.jpg" class = "cake2">
+        <img src="Pictures/Cake - Simple Opera.jpg" class = "cake3">
+        <img src="Pictures/Cake - Basque Cheesecake.jpg" class = "cake4">
+      </div>
+  </div>
+  
+  <div class="copyright">
+      Copyright &#169 2023 K's Bakery
+  </div>
+
+ 
+
+  <script>
+    var menulist = document.getElementById("menulist");
+
+    menulist.style.maxHeight = "0px";
+
+    function togglemenu(){
+      if(menulist.style.maxHeight == "0px")
+      {
+        menulist.style.maxHeight = "100vh"
+      }
+      else
+      {
         menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
 
-        function togglemenu(){
-            if(menulist.style.maxHeight == "0px")
-            {
-                menulist.style.maxHeight = "100vh"
-            }
-            else
-            {
-                menulist.style.maxHeight = "0px";
-            }
-        }
-    </script>
-
-<script type = "text/javascript">
+  <script type = "text/javascript">
+    //Reveal
     window.addEventListener('scroll', reveal);
-
     function reveal (){
-        var reveals = document.querySelectorAll('.reveal');
+      var reveals = document.querySelectorAll('.reveal');
+      for(var i = 0; i < reveals.length; i++){
 
-        for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
 
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if(revealtop < windowheight - revealpoint){
-                reveals[i].classList.add('active');
-            }
-
-            else{
-                reveals[i].classList.remove('active');
-            }
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
         }
-    }  
-    </script>
 
-    <script type = "text/javascript">
+        else{
+            reveals[i].classList.remove('active');
+        }
+      }
+  }  
+  </script>
+
+  <script type = "text/javascript">
+    //Reveal2
     window.addEventListener('scroll', reveal2);
-
     function reveal2 (){
-        var reveals = document.querySelectorAll('.reveal2');
+      var reveals = document.querySelectorAll('.reveal2');
+      for(var i = 0; i < reveals.length; i++){
 
-        for(var i = 0; i < reveals.length; i++){
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
 
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
+      if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+      }
+      else{
+          reveals[i].classList.remove('active');
+      }
+    }
+  }  
+  </script>
 
-            if(revealtop < windowheight - revealpoint){
-                reveals[i].classList.add('active');
-            }
-
-            else{
-                reveals[i].classList.remove('active');
-            }
-        }
-    }  
-    </script>
-
-    <script type = "text/javascript">
+  <script type = "text/javascript">
+    //Reveal3
     window.addEventListener('scroll', reveal3);
-
     function reveal3 (){
-        var reveals = document.querySelectorAll('.reveal3');
+      var reveals = document.querySelectorAll('.reveal3');
+      for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
 
-        for(var i = 0; i < reveals.length; i++){
-
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if(revealtop < windowheight - revealpoint){
-                reveals[i].classList.add('active');
-            }
-
-            else{
-                reveals[i].classList.remove('active');
-            }
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
         }
-    }  
-    </script>
+
+        else{
+            reveals[i].classList.remove('active');
+        }
+      }
+  }  
+  </script>
+  
+
 </body>
-
 </html>
-
-
