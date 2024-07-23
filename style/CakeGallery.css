@@ -1,74 +1,817 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
     
 }
 
 /*headings section*/
 
 .headingsection{
-    height: 88%;
-    width: 100%;
-    display: flex;
-    align-items: center; 
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 100;
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
 }
 
 .logo{
-    width: 20%;
-    min-width: 65px;
-    max-width: 70px;
-    margin-left: 70px;
-    margin-top: 14px;
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 40px;
+  margin-top: 14px;
 }
-
+  
 .menu-icon{
-    width: 15%;
-    min-width: 60px;
-    max-width: 90px;
-    cursor: pointer;
-    display: none;
-    align-self: center;
+  display: none;
 }
 
 nav{
-    flex: 1;
-    text-align: right;
-    padding-right: 2%;
-    background-color: white;
+  flex: 1;
+  text-align: right;
+  padding-right: 40px;
+  background-color: white;
 }
 
 nav ul{
-    background-color: white;
+  background-color: white;
 }
 
 nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 3em;
-    background-color: white; 
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+  background-color: white; 
 }
 
 nav ul li a{
-    text-decoration: none;
-    color: #575757;
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 14px;
-    background-color: white;
-    position: relative;
+  text-decoration: none;
+  color: #575757;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
+  background-color: white;
+  position: relative;
 }
 
 nav ul li a:hover{
-    color: grey;
+  color: grey;
+}
+  
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
 }
 
-nav ul li a::after{
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+
+/*Reveal*/
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.reveal2{
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal2.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal3{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal3.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*Content*/
+
+.gallerydescription{
+  padding: 40px 5%;
+  width: 100%;
+  display: grid;
+}
+
+.gallerydescription h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 6.5vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 60px 0 -70px 5px;
+  text-shadow: 2px 2px 2px #ffffff;
+  z-index: 5;
+}
+
+.gallerydescription p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 350;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  width: 480px;
+  text-align: right;
+  position: absolute;
+  right: 3%;
+  z-index: 5;
+}
+
+.imagesdisplay{
+  padding: 30px 0 30px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: #153448;
+}
+
+.imagesdisplay img{
+  width: 31vw;
+  aspect-ratio: 1/0.8;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.imagedisplay2{
+  object-position: 50% 66%;
+}
+
+.container, .container2, .container3, .container4{
+  padding: 20px 0;
+  align-items: center;
+}
+
+.container-description h2,
+.container-description2 h2,
+.container-description3 h2,
+.container-description4 h2{
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.container-description p,
+.container-description2 p,
+.container-description3 p,
+.container-description4 p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 350;
+  letter-spacing: 1px;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+/*Whole Cake*/
+
+.container-description{
+  padding: 70px 10% 20px 5%;
+}
+
+.container-description p{
+  width: 800px;
+}
+
+.scroll-container{
+  margin: 0px 8% 30px 8%;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.container h4{
+  text-align: right;
+  margin: 0 8.5% 5px 0;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 450;
+  font-size: 15px;
+  color: rgb(130, 129, 126);
+}
+
+.scroll-container img{
+  width: 350px;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+  padding: 0px 40px 0px 0;
+}
+
+.wholecake3{
+  object-position: 50% 30%;
+}
+
+.wholecake6{
+  object-position: 50% 70%;
+}
+
+.wholecake7, .wholecake10{
+  object-position: 50% 30%;
+}
+
+.wholecake9{
+  object-position: 50% 60%;
+}
+
+.wholecake11{
+  object-position: 50% 10%;
+}
+
+/*Cake Roll*/
+
+.container-description2{
+  margin: 50px 7% 0px 150px;
+  text-align: right;
+}
+
+.container-description2 h2{
+  color: #0c3640;
+  font-size: 50px;
+}
+
+.container-description2 p{
+  color: #0c3640;
+  display: grid;
+  z-index: 10;
+}
+
+.scroll-container2{
+  display: flex;
+  margin: 0px 5% 50px 5%;
+  justify-content: center;
+}
+
+.scroll-container2 img{
+  width: 30vw;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  padding: 20px;
+}
+
+/*Cake Fact*/
+
+.cakefact{
+  background-color: #153448;
+  margin-top: 50px;
+  padding: 120px 0;
+}
+
+.cakefact h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cakefact p{
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 350;
+  letter-spacing: px;
+  line-height: 1.5em;
+  width: 630px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*Cupcake*/
+
+.container-description3{
+  width: 18%;
+  margin: 5% 5% -6% 5%;
+}
+
+.container-description3 h2{
+  color: #0c3640;
+  font-size: 50px;
+}
+
+.container-description3 p{
+  color: #0c3640;
+  display: grid;
+  z-index: 10;
+}
+
+.scroll-container3{
+  display: flex;
+  margin-left: 25%;
+}
+
+.scroll-container3 img{
+  width: 23vw;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  padding: 0px 25px 0px 0;
+}
+
+/*Cakes*/
+
+.container-description4{
+  margin: 80px 5% 0px 15%;
+}
+
+.container-description4 h2{
+  color: #0c3640;
+  font-size: 50px;
+}
+
+.container-description4 p{
+  color: #0c3640;
+  display: grid;
+  z-index: 10;
+}
+
+.scroll-container4{
+  display: flex;
+  margin: 10px 5% 8% 5%;
+  justify-content: center;
+}
+
+.scroll-container4 img{
+  width: 23vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.cake1{
+  object-position: 50% 55%;
+}
+
+.cake3{
+  object-position: 50% 45%;
+}
+
+.cake4{
+  object-position: 80% 75%;
+}
+
+
+/*copyright*/
+
+.copyright{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 11px;
+  color: grey;
+  bottom: 2%;
+}
+
+
+@media only screen and (max-width:1300px){
+
+  .gallerydescription h1{
+    margin: 100px 0 -65px 0px;
+    letter-spacing: 5px;
+  }
+
+  .gallerydescription p{
+    font-size: 16px;
+    width: 440px;
+  }
+
+  .imagesdisplay img{
+    aspect-ratio: 1/0.9;
+  }
+
+  .container-description p,
+  .container-description2 p,
+  .container-description3 p,
+  .container-description4 p{
+    font-size: 16px;
+  }
+
+  /*Whole Cake*/
+
+  .scroll-container img{
+    padding: 0px 20px 0px 0;
+  }
+
+  .wholecake7, .wholecake10{
+    object-position: 50% 40%;
+  }
+  
+  .wholecake11{
+    object-position: 50% 30%;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact p{
+    font-size: 16px;
+    width: 580px;
+  }
+
+  /*Cupcake*/
+
+  .container-description3{
+    width: 16%;
+    margin: 5% 0 -6% 4%;
+  }
+
+  .scroll-container3{
+    margin-left: 21%;
+  }
+  
+  .scroll-container3 img{
+    width: 26vw;
+  }
+
+  /*Cake*/
+
+  .scroll-container4 img{
+    width: 24vw;
+    aspect-ratio: 1/1.2;
+  }
+}
+
+
+@media only screen and (max-width:1000px){
+
+  /*Content*/
+
+  .gallerydescription{
+    padding: 30px 5% 60px 5%;
+  }
+
+  .gallerydescription h1{
+    margin: 100px 0 -80px 0px;
+    letter-spacing: 5px;
+  }
+
+  .gallerydescription p{
+    font-size: 15px;
+    width: 420px;
+  }
+
+  .imagesdisplay{
+    overflow: hidden;
+  }
+
+  .imagesdisplay img{
+    aspect-ratio: 1/1;
+    width: 35vw;
+  }
+
+  .container-description h2,
+  .container-description2 h2,
+  .container-description3 h2,
+  .container-description4 h2{
+    font-size: 30px;
+  }
+
+  .container-description p,
+  .container-description2 p,
+  .container-description3 p,
+  .container-description4 p{
+    font-size: 15px;
+  }
+
+  /*Whole Cake*/
+
+  .scroll-container{
+    margin: 0px 5% 30px 5%;
+  }
+
+  .scroll-container img{
+    width: 330px;
+    aspect-ratio: 1/1;
+  }
+  
+  .container-description p{
+    width: 700px;
+  }
+
+  .wholecake1{
+    object-position: 50% 70%;
+  }
+
+  .wholecake2,
+  .wholecake4,
+  .wholecake5,
+  .wholecake8,
+  .wholecake9{
+    object-position: 50% 66%;
+  }
+
+  .wholecake3,
+  .wholecake7{
+    object-position: 50% 46%;
+  }
+
+
+  .wholecake8{
+    object-position: 50% 55%;
+  }
+
+  /*Cake Roll*/
+
+  .container-description2{
+    margin: 50px 7% 0px 30px;
+  }
+
+  .scroll-container2 img{
+    width: 31vw;
+    aspect-ratio: 4/4.5;
+    padding: 10px;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact h3{
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .cakefact p{
+    font-size: 15px;
+    width: 550px;
+  }
+
+  /*Cupcake*/
+
+  .container-description3{
+    width: unset;
+    margin: 80px 5% 20px 5%;
+  }
+
+  .scroll-container3{
+    margin: 0 auto;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .scroll-container3 img{
+    width: 30vw;
+    aspect-ratio: 3/3.5;
+    object-fit: cover;
+    padding: 0;
+  }
+  
+  /*Cakes*/
+
+  .container-description4{
+    margin: 80px 5% 0px 5%;
+  }
+
+  .scroll-container4{
+    display: flex;
+    margin: 10px 4% 8% 4%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .scroll-container4 img{
+    width: 38vw;
+    aspect-ratio: 1/1;
+  }
+}
+
+
+
+@media only screen and (max-width:950px){
+
+  /*Headings*/
+
+  .logo{
+    margin-left: 20px;
+  }
+
+  nav{
+    padding-right: 1%;
+  }
+
+  nav ul li{
+    margin-right: 3em;
+  }
+
+  
+}
+
+
+@media only screen and (max-width:800px){
+
+  .gallerydescription h1{
+    margin: 100px 0 -75px 0px;
+  }
+
+  /*Whole Cake*/
+
+  .container-description p{
+    width: 470px;
+  }
+}
+
+
+@media only screen and (max-width:700px){
+
+	/*Headings*/
+
+  nav ul li{
+    margin-right: 30px;
+  } 
+
+  nav ul li a{
+    font-size: 13px;
+  }
+
+  /*description*/
+
+  .gallerydescription h1{
+    margin: 120px 0 -40px 0px;
+    font-size: 9vw;
+  }
+
+  .gallerydescription p{
+    font-size: 14px;
+    width: 400px;
+  }
+
+  .imagedisplay2{
+    display: none;
+  }
+
+  .imagesdisplay img{
+    width: 45vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .container-description p,
+  .container-description2 p,
+  .container-description3 p,
+  .container-description4 p{
+    font-size: 14px;
+  }
+
+  /*Whole Cake*/
+
+  .container-description p{
+    width: 440px;
+  }
+
+  .container h4{
+    font-size: 14px;
+  }
+
+  /*Cake Roll*/
+
+  .container-description2 p{
+    width: 350px;
+    text-align: right;
+    position: absolute;
+    right: 5%;
+  }
+
+  .scroll-container2{
+    display: flex;
+    margin: 70px 3% 50px 3%;
+    flex-wrap: wrap;
+  }
+  
+  .scroll-container2 img{
+    width: 46vw;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    padding: 5px;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 80px 0;
+  }
+
+  .cakefact h3{
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .cakefact p{
+    font-size: 14px;
+    width: 400px;
+  }
+
+  /*Cupcake*/
+
+  .container-description3 p{
+    width: 350px;
+  }
+
+  .scroll-container3{
+    display: flex;
+    margin: 10px 3% 0px 3%;
+    flex-wrap: wrap;
+  }
+  
+  .scroll-container3 img{
+    width: 43vw;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    padding: 0px;
+  }
+
+  /*Cakes*/
+
+  .container-description4{
+    margin: 50px 5% 0px 5%;
+  }
+
+  .scroll-container4 img{
+    width: 43vw;
+    aspect-ratio: 1/1;
+  }
+
+}
+
+
+
+@media only screen and (max-width:600px){
+
+  .logo{
+    width: 12%;
+    max-width: 50px;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
+
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
+
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+
+  nav ul li a:hover{
+    color:black;
+  }
+
+  nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
@@ -76,688 +819,133 @@ nav ul li a::after{
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgb(107, 107, 107);
-    transition: width 0.3s;
-}
+    background: black;
+    transition: width 0.5s;
+  }
 
-nav ul li a:hover::after{
-    width: 100%;
-}
+  nav ul li a:hover::after{
+    width: 0;
+  }
 
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 58px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
 
-/*content*/
-
-.content{
+  #menulist{
     overflow: hidden;
-}
+    transition: 0.5s;
+    padding-right: 10px;
+  }
 
-.topdisplayformobile{
-    display: none;
-}
-
-/*message on top*/
-
-.topdisplayforsmallerscreen{
-    display: none;
-}
-
-.topdisplay{
-    display: flex;
-} 
-
-.description{
-    margin: 0px 50px 0px 100px;
-    width: 50vw;
-    align-self: center;
-}
-
-.description h1{
-    font-size: 13vw;
-    font-weight: 700;
-    letter-spacing: 18px;
-    line-height: 1.1em;
-    font-family: 'DM Serif Display', sans-serif;
-    margin: 0px 0px 20px 0px;
-    text-shadow: 2px 2px 2px rgb(167, 165, 165);
-}
-
-.description p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900px;
-    letter-spacing: 1px;
-    color: #3d3d3d;
-    text-align: justify;
-    margin: 30px 0px 20px 0px;
-    font-size: 18px;
-}
-
-.topdisplayimage{
-    z-index: -1;
-}
-
-.topdisplayimage img{
-    max-width: 40vw;
-    object-fit: cover;
-    margin: 80px 50px 80px -50px;
-}
-
-/*Gallery Grid*/
-
-.gallerycontent2, .gallerycontent3{
-    display: none;
-}
-
-.gallerycontent{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 15px;
-    margin: 130px 50px 0px 50px;
-    justify-content: center;
-}
-
-.gallerygrid p, .specialreveal p{
-    margin: -8px 20px 25px 18px;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900px;
-    letter-spacing: 1px;
-    color: #3d3d3d;
-}
-
-.column {
-    flex: 24%;
-    max-width: 24%;
-    padding: 0 4px;
-}
   
-.column img {
-    margin-bottom: 20px;
-    vertical-align: middle;
-    width: 100%;
-
-    border-radius: 10px;
-}
-
-.recipeicon{
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
-    margin: -20px 0px 30px 20px;
-    cursor: pointer;
-}
-
-.reveal{
-    position: relative;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-
-.reveal.active{
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.reveal2{
-    position: relative;
-    transform: translateX(-100px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-
-.reveal2.active{
-    transform: translateX(0px);
-    opacity: 1;
-}
-
-.reveal3{
-    position: relative;
-    transform: translateX(100px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-
-.reveal3.active{
-    transform: translateX(0px);
-    opacity: 1;
-}
-
-/*back button*/
-
-.backbutton{
-    text-align: right;
-    margin-top: 50px;
-    bottom: 1.5%;
-    margin-right: 70px;
-    cursor: pointer;
-}
-
-.backbutton a{
-    font-size: 15px;
-    color: #575757;
-    text-decoration: none;
-}
-
-/*copyright*/
-
-.copyright{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 11px;
-    color: grey;
-    bottom: 2%;
-}
-
-
-@media only screen and (max-width:1450px){
-    .description{
-        margin: 0px 50px 0px 80px;
-    }
-
-    .description h1{
-        font-size: 11vw;
-        font-weight: 700;
-        letter-spacing: 18px;
-    }
-
-    .topdisplayimage img{
-        max-width: 40vw;
-        margin: 80px 50px 80px -30px;
-    }
-
-}
-
-@media only screen and (max-width:1250px){
-
-    .gallerycontent{
-        column-gap: 12px;
-        margin: 100px 30px 0px 30px;
-    }
-
-    .column {
-        flex: 23%;
-        max-width: 23%;
-    }
-
-}
-
-
-@media only screen and (max-width:1200px){
-
-    .topdisplayimage img{
-        margin: 50px 50px 50px -50px;
-    }
-
-    .description p{
-        font-size: 17px;
-    }
-
-    .gallerygrid p, .specialreveal p{
-        font-size: 17px;
-    }
-
-}
-
-@media only screen and (max-width:1100px){
-
-    .gallerygrid p, .specialreveal p{
-        margin: -5px 10px 25px 10px;
-    }
-
-    .recipeicon{
-        margin-left: 10px;
-    }
-}
-
-@media only screen and (max-width:1050px){
-    .description{
-        margin: 0px 20px 0px 60px;
-    }
-
-    .description h1{
-        font-size: 10vw;
-        font-weight: 700;
-        letter-spacing: 10px;
-    }
-
-    .topdisplayimage img{
-        max-width: 40vw;
-        margin: 50px 50px 50px 0px;
-    }
-
-}
-
-
-@media only screen and (max-width:1000px){
-
-    .description p{
-        font-size: 16px;
-    }
-
-    /*Change from 4 columns to 3 columns*/
-
-    .gallerycontent{
-        display: none;
-    }
-    
-    .gallerycontent2{
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 15px;
-        margin: 80px 30px 0px 30px;
-        justify-content: center;
-    }
-
-    .gallerygrid p, .specialreveal p{
-        margin: -5px 20px 25px 20px;
-    }
-
-    .recipeicon{
-        margin-left: 20px;
-    }
-
-    .column {
-        flex: 32%;
-        max-width: 32%;
-    }
-
-    /*back button*/
-
-    .backbutton{
-        margin-right: 50px;
-    }
- 
-}
-
-@media only screen and (max-width:950px){
-    .logo{
-        margin-left: 35px;
-    }
-
-    nav{
-        padding-right: 1%;
-    }
-
-    nav ul li{
-        margin-right: 3em;
-    }
-
-    .backbutton a{
-        font-size: 14px;
-    }
- 
-}
-
-
-@media only screen and (max-width:900px){
-    .description{
-        margin: 0px 10px 0px 50px;
-    }
-
-    .topdisplayimage img{
-        max-width: 40vw;
-        margin: 40px 40px 40px 0px;
-    }
-
-}
-
-
-@media only screen and (max-width:820px){
-
-    .column {
-        flex: 31%;
-        max-width: 31%;
-    }
-
-    .recipeicon{
-        width: 24px;
-        height: 24px;
-    }
-
-    .gallerygrid p, .specialreveal p{
-        margin: -5px 10px 25px 10px;
-        font-size: 16px;
-    }
-
-    .recipeicon{
-        margin-left: 10px;
-    }
- 
-}
-
-@media only screen and (max-width:800px){
-
-    /*Headings*/
-
-    nav ul li{
-        margin-right: 2em;
-    }
-
-    nav ul li a{
-        font-size: 13px;
-    }
-}
-
-
-@media only screen and (max-width:700px){
-
-    .topdisplay{
-        display: none;
-    }
-
-    .topdisplayformobile{
-        display: grid;
-        position: relative;
-        justify-items: center;
-    }
-    
-    .topdisplayformobile img{
-        width: 91%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-    
-    .message{
-        position: absolute;
-        top: 13px;
-        left: 43px;
-        right: 43px;
-        background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
-        z-index: 1;
-        border-radius: 5px;
-        padding: 25px;
-    }
-    
-    .message h1{
-        color: #ffffff;
-        font-family: 'DM Serif Display', sans-serif;
-        letter-spacing: 4px;
-        font-size: 10vw;
-        line-height: 1.1em;
-        text-align: right;
-    }
-    
-    .message p{
-        color: #ffffff;
-        margin-top: 10px;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 1px;
-        font-size: 16px;
-        text-align: right;
-        margin: 10px 0px 0px 100px;
-    }
-
-}
-
-
-@media only screen and (max-width:650px){
-
-    .message h1{
-        font-size: 9vw;
-    }
-
-    .message p{
-        line-height: 1.3em;
-    }
-
-    /*Change from 3 columns to 2 columns*/
-
-    .gallerycontent2{
-        display: none;
-    }
-    
-    .gallerycontent3{
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 10px;
-        margin: 60px 10px 0px 10px;
-        justify-content: center;
-    }
-
-    .gallerygrid p, .specialreveal p{
-        margin: -5px 20px 25px 20px;
-    }
-
-    .recipeicon{
-        margin-left: 20px;
-    }
-    
-    .column {
-        flex: 48.5%;
-        max-width: 48.5%;
-    }
- 
-}
-
-
-@media only screen and (max-width:600px){
-
-    .logo{
-        width: 12%;
-        max-width: 50px;
-        margin-left: 20px;
-        margin-top: 10px;
-    }
-
-    nav{
-        text-align: left;
-    }
-    
-    nav ul{
-        width: 100%;
-        background: white;
-        opacity: 0.98;
-        position: absolute;
-        align-self: center;
-        top: 100%;
-        height: 100vh;
-        right: 0;
-        z-index: 999;
-    }
-
-    nav ul li{
-        background-color: transparent;
-        display: block;
-        margin: 2.5em;
-    }
-
-    nav ul li a{
-        background-color: transparent;
-        color: rgb(20, 20, 20);
-        font-size: 16px;
-        margin: 0px;
-        letter-spacing: 3px;
-        font-weight: 500;
-    }
-
-    nav ul li a:hover{
-        color:black;
-    }
-
-    nav ul li a::after{
-        content: '';
-        width: 0;
-        height: 3px;
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: black;
-        transition: width 0.5s;
-    }
-
-    nav ul li a:hover::after{
-        width: 0;
-    }
-
-    .menu-icon{
-        display: block;
-        margin-right: 8%;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-
-    .menu-icon img{
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        margin-right: 30px;
-        align-content: center;
-    }
-
-    #menulist{
-        overflow: hidden;
-        transition: 0.5s;
-        padding-right: 10px;
-    }
-
-    /*Top Section*/
-
-    .message{
-        position: absolute;
-        top: 13px;
-        left: 40px;
-        right: 40px;
-        padding: 25px;
-    }
-
-    .message p{
-        margin: 15px 0px 0px 40px;
-    }
-
-    /*Gallery Grid*/
-
-    .gallerygrid p, .specialreveal p{
-        margin: -5px 10px 25px 10px;
-        font-size: 15px;
-        line-height: 1.3em;
-    }
-
-    .recipeicon{
-        margin-left: 10px;
-    }
-
-}
-
-
-@media only screen and (max-width:550px){
-
-    .topdisplayformobile img{
-        width: 94%;
-        border-radius: 5px;
-    }
-
-    .message{
-        top: 13px;
-        left: 25px;
-        right: 25px;
-        padding: 25px;
-    }
-
-    .message p{
-        margin: 15px 0px 0px 0px;
-    }
 }
 
 
 @media only screen and (max-width:500px){
 
-    /*Top Section*/
+  /*description*/
 
-    .message{
-        top: 10px;
-        left: 24px;
-        right: 24px;
-        padding: 20px 15px 20px 15px;
-    }
+  .gallerydescription h1{
+    margin: 120px 0 -40px 0px;
+    font-size: 9vw;
+  }
 
-    .message h1{
-        font-size: 9vw;
-        line-height: 1em;
-    }
-    
-    .message p{
-        letter-spacing: 1px;
-        font-size: 15px;
-        margin: 15px 0px 0px 20px;
-    }
+  .gallerydescription p{
+    font-size: 13px;
+    width: 380px;
+  }
 
-    /*Gallery Grid*/
+  .imagesdisplay{
+    gap: 13px;
+    padding: 20px 0;
+  }
 
-    .descriptionforsmallerscreen h1, .descriptionforsmallerscreen h2{
-        font-size: 90px;
-    }
+  .imagesdisplay img{
+    width: 55vw;
+    aspect-ratio: 1/1.2;
+  }
 
-    .descriptionforsmallerscreen h1{
-        margin: -30px 40px 0px 0px;
-    }
+  .container-description p,
+  .container-description2 p,
+  .container-description3 p,
+  .container-description4 p{
+    font-size: 13px;
+  }
 
-    .descriptionforsmallerscreen p{
-        font-size: 14px;
-    }
+  /*Whole Cake*/
 
-    .gallerygrid p, .specialreveal p{
-        margin: 0px 10px 25px 10px;
-        font-size: 14px;
-        line-height: 1.3em;
-    }
+  .container-description p{
+    width: 340px;
+  }
 
-    /*back button*/
+  .scroll-container img{
+    width: 260px;
+    aspect-ratio: 1/1;
+    padding: 3px;
+  }
 
-    .backbutton{
-        font-size: 14px;
-        margin-right: 30px;
-    }
+  /*Cake Roll*/
+
+  .container-description2{
+    margin: 20px 5% 0px 0px;
+  }
+
+  .scroll-container2{
+    margin: 70px 2% 20px 2%;
+  }
+  
+  .scroll-container2 img{
+    width: 47vw;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 80px 0;
+  }
+
+  .cakefact h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  .cakefact p{
+    font-size: 13px;
+    width: 330px;
+  }
+
+  /*Cupcake*/
+
+  .container-description3 p{
+    width: 350px;
+  }
+
+  .scroll-container3{
+    margin: 10px 2% 0px 2%;
+  }
+  
+  .scroll-container3 img{
+    width: 45vw;
+  }
+
+  /*Cakes*/
+
+  .scroll-container4 img{
+    width: 46vw;
+    aspect-ratio: 1/1;
+    padding: 5px;
+  }
 }
-
-
-@media only screen and (max-width:470px){
-
-    /*Content*/
-
-    .gallerycontent3{
-        column-gap: 6px;
-        margin: 70px 5px 0px 5px;
-    }
-
-    .gallerycontent3 img{
-        margin-bottom: 12px;
-    }
-}
-
-
-@media only screen and (max-width:450px){
-
-    .message{
-        top: 8px;
-        left: 21px;
-        right: 21px;
-        padding: 20px 15px 20px 15px;
-    }
-
-    .message p{
-        margin: 15px 0px 0px 0px;
-        letter-spacing: 1px;
-        font-size: 14px;
-    }
-
-}
-
 
 @media only screen and (max-width:400px){
-
-    .message{
-        top: 8px;
-        left: 18px;
-        right: 18px;
-        padding: 20px 10px 20px 10px;
-    }
-
-    /*Content*/
-
-    .gallerycontent3{
-        column-gap: 6px;
-        margin: 70px 8px 0px 8px;
-    }
-
+  
+  .gallerydescription p{
+    width: 330px;
+  }
 }
