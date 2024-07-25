@@ -120,36 +120,41 @@ nav ul li a:hover::after{
 
 /*Content*/
 
+.cakegallery{
+  background-color: #ffe4cf;
+  padding-top: 50px;
+}
+
 .gallerydescription{
-  padding: 30px 5%;
-  width: 75%;
+  padding: 0px 5% 30px 5%;
+  width: 50%;
   display: grid;
   background-color: #80b9ad;
 }
 
 .gallerydescription h1{
-  font-family: 'DM Serif Display', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   font-size: 7.5vw;
-  font-weight: 400;
-  line-height: 1em;
+  font-weight: 500;
+  line-height: 1.1em;
   letter-spacing: 8px;
-  margin: 35px 0 -85px 13%;
+  margin: 70px 0 -95px 13%;
   text-shadow: 2px 2px 2px #ffffff;
   z-index: 5;
+  color: rgb(9, 9, 23);
 }
 
 .gallerydescription p{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 350;
+  letter-spacing: 2px;
   line-height: 1.5em;
-  width: 550px;
+  width: 39vw;
   text-align: right;
   position: absolute;
-  right: 8%;
+  right: 6%;
   z-index: 5;
-  margin-top: 20px;
 }
 
 .container, .container2, .container3, .container4{
@@ -161,32 +166,34 @@ nav ul li a:hover::after{
 .container-description2 h2,
 .container-description3 h2,
 .container-description4 h2{
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 2px;
+  font-family: 'Merriweather', sans-serif;
+  letter-spacing: 3px;
   font-weight: 600;
   font-size: 40px;
   margin-bottom: 10px;
+  color: #0a0813;
 }
 
 .container-description p,
 .container-description2 p,
 .container-description3 p,
 .container-description4 p{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   font-weight: 350;
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.5em;
+  color: #0a0813;
 }
 
 /*Whole Cake*/
 
 .container-description{
-  padding: 70px 6% 20px 6%;
+  padding: 150px 6% 20px 6%;
 }
 
 .container-description p{
-  width: 900px;
+  width: 1050px;
 }
 
 .scroll-container{
@@ -208,14 +215,14 @@ nav ul li a:hover::after{
   letter-spacing: 1px;
   font-weight: 450;
   font-size: 15px;
-  color: rgb(130, 129, 126);
+  color: rgb(85, 84, 84);
 }
 
 .scroll-container img{
   width: 30vw;
   aspect-ratio: 1/1.2;
   object-fit: cover;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 .wholecake3{
@@ -239,6 +246,10 @@ nav ul li a:hover::after{
 }
 
 /*Cake Roll*/
+
+.container2{
+  background-color: #ffe4cf;
+}
 
 .container-description2{
   margin: 50px 7% 0px 150px;
@@ -273,7 +284,6 @@ nav ul li a:hover::after{
 
 .cakefact{
   background-color: #153448;
-  margin-top: 50px;
   padding: 120px 0;
 }
 
@@ -385,11 +395,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1700px){
 
-  .gallerydescription p{
-    font-size: 17px;
-    width: 480px;
-  }
-
   .container-description h2,
   .container-description2 h2,
   .container-description3 h2,
@@ -401,7 +406,7 @@ nav ul li a:hover::after{
   .container-description2 p,
   .container-description3 p,
   .container-description4 p{
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .cakefact h3{
@@ -415,15 +420,19 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:1500px){
+
+  .gallerydescription p{
+    width: 42vw;
+    right: 5%;
+  }
+}
+
+
 @media only screen and (max-width:1400px){
 
   .gallerydescription h1{
-    margin: 35px 0 -75px 13%;
-  }
-
-  .gallerydescription p{
-    font-size: 16px;
-    width: 450px;
+    margin: 60px 0 -75px 13%;
   }
 
   .container-description h2,
@@ -437,13 +446,17 @@ nav ul li a:hover::after{
   .container-description2 p,
   .container-description3 p,
   .container-description4 p{
-    font-size: 16px;
+    font-size: 17px;
   }
 
   /*Whole Cake*/
 
+  .container-description{
+    padding: 80px 6% 20px 6%;
+  }
+
   .container-description p{
-    width: 800px;
+    width: 840px;
   }
 
   .scroll-container{
@@ -489,20 +502,38 @@ nav ul li a:hover::after{
 }
 
 
-@media only screen and (max-width:1000px){
-
-  /*Content*/
+@media only screen and (max-width:1300px){
 
   .gallerydescription h1{
-    margin: 20px 0 -70px 40px;
-    font-size: 9vw;
+    margin: 90px 0 -75px 13%;
   }
 
   .gallerydescription p{
-    font-size: 15px;
-    width: 420px;
-    right: 4%;
+    font-size: 20px;
+    width: 550px;
+    right: 4.5%;
   }
+}
+
+
+@media only screen and (max-width:1100px){
+
+  .gallerydescription h1{
+    margin: 80px 0 -75px 13%;
+    font-size: 8vw;
+  }
+
+  .gallerydescription p{
+    font-size: 18px;
+    width: 560px;
+  }
+
+}
+
+
+@media only screen and (max-width:1000px){
+
+  /*Content*/
 
   .container-description h2,
   .container-description2 h2,
@@ -527,7 +558,6 @@ nav ul li a:hover::after{
   .scroll-container img{
     width: 32vw;
     aspect-ratio: 1/1.2;
-    padding-right: 15px;
   }
 
   .container-description p{
@@ -637,14 +667,30 @@ nav ul li a:hover::after{
     margin-right: 3em;
   }
 
-  
+  /*Content*/
+
+  .gallerydescription h1{
+    margin: 80px 0 -75px 13%;
+    font-size: 8vw;
+  }
+
+  .gallerydescription p{
+    font-size: 17px;
+    width: 490px;
+  }
 }
 
 
 @media only screen and (max-width:800px){
 
   .gallerydescription h1{
-    margin: 80px 0 -60px 20px;
+    margin: 90px 0 -70px 20px;
+  }
+
+  .gallerydescription p{
+    font-size: 16px;
+    width: 445px;
+    right: 3.5%;
   }
 
   .scroll-container2,
@@ -664,6 +710,10 @@ nav ul li a:hover::after{
   }
 
   /*Whole Cake*/
+
+  .container-description{
+    padding: 60px 5% 20px 5%;
+  }
 
   .container-description p{
     width: 470px;
@@ -723,13 +773,17 @@ nav ul li a:hover::after{
   /*description*/
 
   .gallerydescription h1{
-    margin: 120px 0 -60px 20px;
-    font-size: 9vw;
+    margin: 100px 0 -60px 20px;
+    font-size: 10vw;
+    font-weight: 600;
   }
 
   .gallerydescription p{
-    font-size: 14px;
+    margin-top: -20px;
+    font-weight: 400;
+    letter-spacing: 1px;
     width: 400px;
+    line-height: 1.4em;
   }
 
   .container-description h2,
@@ -743,13 +797,16 @@ nav ul li a:hover::after{
   .container-description2 p,
   .container-description3 p,
   .container-description4 p{
-    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 400;
   }
 
   /*Whole Cake*/
 
   .container-description p{
-    width: 440px;
+    width: 460px;
   }
 
   .container h4{
@@ -758,6 +815,7 @@ nav ul li a:hover::after{
 
   .scroll-container img{
     width: 310px;
+    margin-right: 10px;
   }
 
   /*Cake Roll*/
@@ -798,6 +856,10 @@ nav ul li a:hover::after{
   }
 
   /*Cupcake*/
+
+  .container-description3{
+    margin: 50px 5% 20px 5%;
+  }
 
   .container-description3 p{
     width: 350px;
@@ -899,7 +961,6 @@ nav ul li a:hover::after{
     transition: 0.5s;
     padding-right: 10px;
   }
-
   
 }
 
@@ -909,47 +970,35 @@ nav ul li a:hover::after{
   /*description*/
 
   .gallerydescription h1{
-    margin: 110px 0 -60px 30px;
-    font-size: 10vw;
+    margin: 100px 0 -60px 30px;
   }
 
   .gallerydescription p{
-    font-size: 13px;
+    font-size: 15px;
     width: 380px;
-    margin-top: 10px;
-  }
-
-  .imagesdisplay{
-    gap: 13px;
-    padding: 20px 0;
-  }
-
-  .imagesdisplay img{
-    width: 55vw;
-    aspect-ratio: 1/1.2;
   }
 
   .container-description p,
   .container-description2 p,
   .container-description3 p,
   .container-description4 p{
-    font-size: 13px;
+    font-size: 14px;
   }
 
   /*Whole Cake*/
 
   .container-description p{
-    width: 325px;
+    width: unset;
   }
 
   /*Cake Roll*/
 
   .container-description2{
-    margin: 20px 5% 0px 0px;
+    margin: 0px 8% 0px 0px;
   }
 
   .scroll-container2{
-    margin: 70px 2% 20px 2%;
+    margin: 15px 2% 20px 2%;
   }
   
   /*Cake Fact*/
@@ -989,11 +1038,11 @@ nav ul li a:hover::after{
 @media only screen and (max-width:400px){
 
   .gallerydescription h1{
-    margin: 120px 0 -50px 30px;
+    margin: 110px 0 -50px 20px;
     font-size: 12vw;
   }
   
   .gallerydescription p{
-    width: 325px;
+    width: 330px;
   }
 }
