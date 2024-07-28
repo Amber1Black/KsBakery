@@ -260,7 +260,7 @@ nav ul li a:hover::after{
 }
 
 .container img{
-  width: 480px;
+  width: 28vw;
   aspect-ratio: 2/2.5;
   object-fit: cover;
 }
@@ -590,11 +590,6 @@ nav ul li a:hover::after{
     width: 560px;
   }
 
-  .container img{
-    width: 430px;
-    aspect-ratio: 2/2.5;
-  }
-
   .secondpartsliderdescription h2{
     font-size: 27px;
     font-weight: 600;
@@ -656,16 +651,30 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
+  .secondpartdescription h1{
+    font-size: 7vw;
+    margin: 0 0 -130px 80px;
+  }
+
   .secondpartdescription p{
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
-    width: 480px;
+    width: 500px;
     margin-right: 1%;
   }
 
+  .secondpart-scroll-container{
+    margin: 20px 3% 30px 3%;
+    gap: 20px;
+  }
+
   .container img{
-    width: 400px;
-    aspect-ratio: 2/2.5;
+    width: 28.8vw;
+  }
+
+  .secondpartsliderdescription p{
+    font-size: 15px;
+    line-height: 1.3em;
   }
 
   /*Third Section*/
@@ -791,6 +800,15 @@ nav ul li a:hover::after{
     margin: 20px 4% 30px 4%;
   }
 
+  .container img{
+    width: 33.5vw;
+  }
+
+  .secondpartsliderdescription p{
+    font-size: 14px;
+    line-height: 1.3em;
+  }
+
   /*Third Section*/
 
   .thirdpart{
@@ -879,29 +897,24 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 50px 0 -110px 40px;
+    margin: 50px 0 -120px 40px;
   }
 
   .secondpartdescription p{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    width: 440px;
+    width: 400px;
     margin-right: 0%;
   }
 
   .container img{
-    width: 350px;
+    width: 40vw;
     aspect-ratio: 2/2.5;
   }
 
   .secondpartsliderdescription h2{
     font-size: 25px;
     letter-spacing: 1px;
-  }
-  
-  .secondpartsliderdescription p{
-    font-size: 15px;
-    line-height: 1.3em;
   }
 
   /*Third Section*/
@@ -1054,13 +1067,13 @@ nav ul li a:hover::after{
   }
 
   .secondpartdescription h1{
-    margin: 80px 0 -110px 30px;
+    margin: 80px 0 -115px 30px;
   }
 
   .secondpartdescription p{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
-    width: 410px;
+    width: 380px;
     margin-right: 0%;
   }
 
@@ -1069,7 +1082,7 @@ nav ul li a:hover::after{
   }
 
   .container img{
-    width: 330px;
+    width: 48vw;
     aspect-ratio: 2/2.5;
   }
 
@@ -1200,6 +1213,13 @@ nav ul li a:hover::after{
     border-radius: 100%;
     background: linear-gradient(-45deg, #FFC796 0%, #ff82a5 100%);
     padding: 6px;
+  }
+
+  /*Second Section*/
+
+  .container img{
+    width: 53vw;
+    aspect-ratio: 2/2.5;
   }
 
   /*Third Section*/
@@ -1367,8 +1387,13 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 80px -30px -110px 40px;
-    font-size: 8vw;
+    margin: 95px -30px -110px 40px;
+    font-size: 9vw;
+  }
+
+  .container img{
+    width: 64vw;
+    aspect-ratio: 2/2.5;
   }
 
   .secondpartsliderdescription h2{
@@ -1460,7 +1485,21 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 80px -10px -105px 40px;
+    margin: 90px -10px -110px 40px;
+  }
+
+  .secondpartdescription p{
+    font-size: 14px;
+    font-weight: 400;
+    width: 350px;
+  }
+
+  .container img{
+    width: 67vw;
+  }
+
+  .secondpartsliderdescription p{
+    font-size: 13px;
   }
 
   /*Third Section*/
@@ -1538,17 +1577,17 @@ nav ul li a:hover::after{
     margin-right: 2%;
   }
 
+  .secondpart-scroll-container{
+    gap: 15px;
+  }
+
   .container img{
-    width: 310px;
+    width: 75vw;
     aspect-ratio: 2/2.5;
   }
 
   .secondpartsliderdescription h2{
     font-size: 20px;
-  }
-
-  .secondpartsliderdescription p{
-    font-size: 13px;
   }
 
   /*Third Section*/
@@ -1626,7 +1665,14 @@ nav ul li a:hover::after{
     width: 300px;
     line-height: 1.4em;
     margin: 10px auto 0px auto;
-  }  
+  } 
+  
+  /*Second Section*/
+
+  .container img{
+    width: 81vw;
+    aspect-ratio: 2/2.6;
+  }
 
   /*Third Section*/
 
