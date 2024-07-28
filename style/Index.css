@@ -159,7 +159,8 @@ nav ul li a:hover::after{
 }
 
 .firstmessage p{
-  font-family: 'Raleway', sans-serif; 
+  font-family: 'Poppins', sans-serif; 
+  line-height: 1.3em;
   letter-spacing: 1px;
   font-size: 18px;
   color: #5b5b5b;
@@ -282,136 +283,140 @@ nav ul li a:hover::after{
   letter-spacing: 1px;
   font-size: 18px;
   color: rgb(103, 79, 49);
+  line-height: 1.3em;
 }
 
 
 /*Third Section*/
 
 .thirdpart{
-  margin: 200px auto;
+  overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .thirdpartdescription{
-  margin: 30px 30px 50px 30px;
-}
-
-.thirdpartdescription h1{
-  font-family: 'Raleway', sans-serif;
-  font-size: 6vw;
-  letter-spacing: 10px;
-  text-align: center;
-  color: #0b0c2f;
+  width: 100%;
+  background-color: #d7d3ce;
+  padding: 80px 100px;
 }
 
 .thirdpartdescription p{
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
   letter-spacing: 1px;
-  line-height: 1.4em;
-  margin: 20px auto;
-  width: 1000px;
-  text-align: center;
-}
-
-.recipegrid{
-  display: flex;
-  flex-direction: row;
-  gap: 45px;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-}
-
-.recipe, .recipe1{
-  width: 27vw;
-  padding: 0 0 20px 0;
-  text-align: center;
-  background-color: #fff6e9;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px grey;
-  position: relative;
-}
-
-.greenbox{
-  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  width: 100%;
-  aspect-ratio: 4/1.6;
-  border-radius: 10px 10px 0 0;
-}
-
-.recipe img, .recipe1 img{
-  position: absolute;
-  top: 10%;
-  left: 22%;
-  width: 56%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 100%;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #ffffff;
-}
-
-.recipe h2, .recipe1 h2{
-  margin: 33% auto 15px auto;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 3px;
-  font-size: 2vw;
-}
-
-.recipe p, .recipe1 p{
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 500;
   line-height: 1.3em;
-  margin: 15px auto 23px auto;
-  text-align: center;
-  width: 300px;
-  color: rgb(70, 70, 70);
+  width: 55vw;
 }
 
-.thirdpartredirection,
-.thirdpartreciperedirection{
-  margin: 20px auto;
-  padding: 13px 0px 13px 0px;
-  width: 13vw;
-  text-align: center;
-  border-radius: 25px;
-  background: linear-gradient(150deg, #13547a 0%, #336475 80%);
-  transition: : 0.5s;
-}
-
-.thirdpartredirection span,
-.thirdpartreciperedirection span{
-  width: 0;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.thirdpartredirection:hover span,
-.thirdpartreciperedirection:hover span{
-  width: 22px;
-}
-
-.thirdpartredirection a,
-.thirdpartreciperedirection a{
+.thirdpartdescription a{
   text-decoration: none;
-  color: #ffffff;
-  font-weight: 500; 
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  letter-spacing: 3px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
+}
+
+.thirdparttitle h1{
+  font-family: 'Merriweather', sans-serif;
+  font-size: 7vw;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: right;
+  margin: 20px 7% -35px 0;
+  z-index: 5;
+  text-shadow: 1px 1px 1px white;
+}
+
+.thirdpartslider{
+  position: relative;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.thirdpartsliderpic {
+  display: none;
+}
+
+.picturesdisplay{
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 
-.thirdpartredirection{
-  margin: 30px auto;
-  padding: 15px 0px 15px 0px;
+.pic2{
+  padding: 20px;
+  border-style: solid;
 }
 
+.pic2 img{
+  width: 30vw;
+  aspect-ratio: 2/2.2;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.pic2 h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 10px 0 0 10px;
+}
+
+.pic2 p{
+  width: 28vw;
+  margin: 10px 0 10px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+}
+
+.pic1 img, .pic3 img{
+  width: 25vw;
+  aspect-ratio: 2/2.4;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.thirdpartprev,
+.thirdpartnext{
+  position: absolute;
+  top: 48%;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #19475a;
+  border: none;
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+  border-style: solid;
+  border-color: #000000;
+  text-align: center;
+  cursor: pointer;
+  left: 32%;
+}
+
+.thirdpartnext{
+  left: unset;
+  right: 32%;
+}
+
+.thirdpartprev:hover,
+.thirdpartnext:hover{
+  background-color: rgb(33, 107, 99);
+  color: #ffffff;
+}
 
 /*Fourth Section*/
 
@@ -600,6 +605,12 @@ nav ul li a:hover::after{
     font-size: 16px;
   }
 
+  /*Third Section*/
+
+  .pic2 p{
+    font-size: 18px;
+  }
+
 }
 
 
@@ -672,41 +683,38 @@ nav ul li a:hover::after{
     width: 28.8vw;
   }
 
+  .secondpartsliderdescription h2{
+    font-size: 23px;
+    margin: 20px 0 7px 0;
+  }
+
   .secondpartsliderdescription p{
     font-size: 15px;
-    line-height: 1.3em;
   }
 
   /*Third Section*/
 
-  .thirdpart{
-    margin: 180px auto;
+  .thirdpartdescription p, .thirdpartdescription a{
+    font-size: 20px;
+    line-height: 1.3em;
+    width: 55vw;
   }
 
-  .thirdpartdescription p{
-    margin: 12px auto;
+  .thirdparttitle h1{
+    margin: 20px 7% -30px 0;
+  }
+
+  .picturesdisplay{
+    gap: 30px;
+  }
+
+  .pic2 h2{
+    font-size: 25px;
+    margin: 10px 0 0 10px;
+  }
+
+  .pic2 p{
     font-size: 16px;
-    width: 880px;
-  }
-
-  .recipe p, .recipe1 p{
-    font-size: 16px;
-    font-weight: 450;
-    width: 270px;
-  }
-
-  .thirdpartredirection a,
-  .thirdpartreciperedirection a{
-    font-size: 16px;
-    letter-spacing: 2px;
-  }
-
-  .recipegrid{
-    gap: 25px;
-  }
-
-  .recipe, .recipe1{
-    width: 28vw;
   }
 
   /*Fourth Section*/
@@ -811,31 +819,40 @@ nav ul li a:hover::after{
 
   /*Third Section*/
 
-  .thirdpart{
-    margin: 160px auto;
+  .thirdpartdescription p, .thirdpartdescription a{
+    font-size: 18px;
+    line-height: 1.3em;
+    width: 54vw;
   }
 
-  .recipe, .recipe1{
-    width: 30vw;
+  .picturesdisplay{
+    gap: 15px;
   }
 
-  .recipe h2, .recipe1 h2{
-    font-size: 23px;
-    margin: 33% auto 10px auto;
+  .pic2{
+    padding: 12px;
   }
 
-  .recipe p, .recipe1 p{
-    margin: 10px auto 20px auto;
+  .pic2 img{
+    width: 33vw;
+    aspect-ratio: 2/2.2;
   }
 
-  .thirdpartredirection,
-  .thirdpartreciperedirection{
-    margin: 20px auto 10px auto;
-    width: 16vw;
+  .pic1 img, .pic3 img{
+    width: 27vw;
   }
 
-  .recipegrid{
-    margin: 0px auto;
+  .pic2 p{
+    width: 32vw;
+    font-size: 15px;
+  }
+
+  .thirdpartprev{
+    left: 30.5%;
+  }
+
+  .thirdpartnext{
+    right: 30.5%;
   }
 
   /*Fourth Section*/
@@ -913,49 +930,59 @@ nav ul li a:hover::after{
   }
 
   .secondpartsliderdescription h2{
-    font-size: 25px;
-    letter-spacing: 1px;
+    font-size: 21px;
+    margin: 15px 0 7px 0;
   }
 
   /*Third Section*/
 
-  .thirdpart{
-    margin: 150px auto;
+  .thirdpartdescription{
+    padding: 80px 80px;
   }
 
-  .thirdpartdescription p{
-    margin: 12px auto;
+  .thirdpartdescription p, .thirdpartdescription a{
+    font-size: 17px;
+    line-height: 1.3em;
+    width: 60vw;
+  }
+
+  .thirdparttitle h1{
+    margin: 20px 7% -20px 0;
+  }
+
+  .picturesdisplay{
+    gap: 20px;
+  }
+
+  .pic2 img{
+    width: 39vw;
+    aspect-ratio: 2/2.2;
+  }
+
+  .pic1 img, .pic3 img{
+    width: 24vw;
+    height: 350px;
+  }
+
+  .pic1 img{
+    object-position: 99% 50%;
+  }
+
+  .pic3 img{
+    object-position: 1% 50%;
+  }
+
+  .pic2 p{
+    width: 38vw;
     font-size: 15px;
-    width: 800px;
   }
 
-  .recipe, .recipe1{
-    width: 31vw;
+  .thirdpartprev{
+    left: 27%;
   }
 
-  .recipe h2, .recipe1 h2{
-    font-size: 21px;
-    margin: 33% auto 5px auto;
-  }
-
-  .recipe p, .recipe1 p{
-    font-size: 15px;
-  }
-
-  .thirdpartredirection a,
-  .thirdpartreciperedirection a{
-    font-size: 15px;
-    letter-spacing: 2px;
-  }
-
-  .recipegrid{
-    gap: 15px;
-  }
-
-  .thirdpartredirection,
-  .thirdpartreciperedirection{
-    margin: 18px auto 8px auto;
-    width: 17vw;
+  .thirdpartnext{
+    right: 27%;
   }
 
   /*Fourth Section*/
@@ -990,38 +1017,6 @@ nav ul li a:hover::after{
     font-size: 16px;
   }
 }
-
-
-@media only screen and (max-width:850px){
-
-  /*Third Section*/
-
-  .thirdpart{
-    margin: 120px auto;
-  }
-
-  .thirdpartdescription p{
-    width: 600px;
-  }
-
-  .recipe{
-    width: 40vw;
-  }
-
-  .recipe1{
-    display: none;
-  }
-
-  .recipegrid{
-    gap: 30px;
-  }
-
-  .thirdpartredirection,
-  .thirdpartreciperedirection{
-    width: 20vw;
-  }
-}
-
 
 
 @media only screen and (max-width:800px){
@@ -1092,20 +1087,46 @@ nav ul li a:hover::after{
 
   /*Third Section*/
 
-  .thirdpartdescription p{
-    font-size: 14px;
-    width: 550px;
+  .thirdpartdescription{
+    padding: 80px 50px;
   }
 
-  .recipe p, .recipe1 p{
-    font-size: 14px;
-    width: 240px;
+  .thirdpartdescription p, .thirdpartdescription a{
+    font-size: 17px;
+    line-height: 1.3em;
+    width: 70vw;
   }
 
-  .thirdpartredirection a,
-  .thirdpartreciperedirection a{
+  .thirdparttitle h1{
+    font-size: 8vw;
+    margin: 20px 7% -5px 0;
+  }
+
+  .picturesdisplay{
+    gap: 20px;
+  }
+
+  .pic2 img{
+    width: 50vw;
+    aspect-ratio: 2/2.0;
+  }
+
+  .pic1 img, .pic3 img{
+    width: 23vw;
+    height: 350px;
+  }
+
+  .pic2 p{
+    width: 48vw;
     font-size: 14px;
-    letter-spacing: 2px;
+  }
+
+  .thirdpartprev{
+    left: 20%;
+  }
+
+  .thirdpartnext{
+    right: 20%;
   }
 
   /*Fourth Section*/
@@ -1220,22 +1241,6 @@ nav ul li a:hover::after{
   .container img{
     width: 53vw;
     aspect-ratio: 2/2.5;
-  }
-
-  /*Third Section*/
-
-  .recipegrid{
-    gap: 20px;
-  }
-
-  .recipe{
-    width: 43vw;
-  }
-
-  .thirdpartredirection,
-  .thirdpartreciperedirection{
-    width: 23vw;
-    padding: 10px 10px;
   }
 
   /*Fourth Section*/
@@ -1399,47 +1404,51 @@ nav ul li a:hover::after{
   .secondpartsliderdescription h2{
     font-size: 22px;
   }
-  
+
   /*Third Section*/
 
-  .thirdpartdescription h1{
-    text-transform: none;
-    letter-spacing: 6px;
-  }
-
-  .thirdpartdescription p{
-    width: 410px;
-  }
-
   .thirdpartdescription{
-    margin: 30px 0px 30px 0px;
+    padding: 80px 20px 80px 50px;
   }
 
-  .recipegrid{
-    gap: 13px;
+  .thirdpartdescription p, .thirdpartdescription a{
+    font-size: 16px;
+    line-height: 1.3em;
+    width: 68vw;
   }
 
-  .greenbox{
-    aspect-ratio: 4/1.7;
+  .thirdparttitle h1{
+    font-size: 8vw;
+    margin: 20px 7% 5px 0;
   }
 
-  .recipe{
-    width: 46vw;
+  .picturesdisplay{
+    gap: 20px;
   }
 
-  .recipe h2{
-    letter-spacing: 2px;
+  .pic2 img{
+    width: 60vw;
+    aspect-ratio: 2/2.0;
   }
 
-  .recipe p, .recipe1 p{
-    width: 150px;
+  .pic1 img, .pic3 img{
+    width: 20vw;
+    height: 350px;
   }
 
-  .thirdpartredirection,
-  .thirdpartreciperedirection{
-    width: 28vw;
-    padding: 11px 0px 11px 0px;
+  .pic2 p{
+    width: 58vw;
+    font-size: 14px;
   }
+
+  .thirdpartprev{
+    left: 15%;
+  }
+
+  .thirdpartnext{
+    right: 15%;
+  }
+  
 }
 
 
@@ -1486,6 +1495,7 @@ nav ul li a:hover::after{
 
   .secondpartdescription h1{
     margin: 90px -10px -110px 40px;
+    letter-spacing: 3px;
   }
 
   .secondpartdescription p{
@@ -1504,41 +1514,50 @@ nav ul li a:hover::after{
 
   /*Third Section*/
 
-  .thirdpart{
-    margin: 80px auto;
+  .thirdpartdescription{
+    padding: 80px 8%;
   }
 
-  .thirdpartdescription h1{
-    letter-spacing: 2px;
-    word-spacing: 5px;
+  .thirdpartdescription p, .thirdpartdescription a{
+    font-size: 16px;
+    line-height: 1.3em;
+    width: 72vw;
   }
 
-  .greenbox{
-    aspect-ratio: 4/1.8;
+  .thirdparttitle h1{
+    font-size: 9vw;
+    letter-spacing: 0px;
+    margin: 30px 6% -10px 0;
   }
 
-  .recipe, .recipe1{
-    padding: 0 0 15px 0;
+  .picturesdisplay{
+    gap: 10px;
   }
 
-  .recipe h2, .recipe1 h2{
-    font-size: 18px;
-    margin: 33% auto 0px auto;
-    letter-spacing: 1px;
+  .pic2 img{
+    width: 75vw;
+    aspect-ratio: 2/2.0;
   }
 
-  .recipe p, .recipe1 p{
-    width: 150px;
-    margin: 8px auto 5px auto;
+  .pic2 p{
+    width: 72vw;
+    font-size: 14px;
   }
 
-  .thirdpartredirection,
-  .thirdpartreciperedirection{
-    padding: 8px 0px 8px 0px;
+  .thirdpartprev{
+    left: 6%;
   }
 
-  .thirdpartreciperedirection{
-    margin: 13px auto 8px auto;
+  .thirdpartnext{
+    right: 6%;
+  }
+
+  .thirdpartslider h2{
+    font-size: 22px;
+  }
+
+  .thirdpartslider p{
+    font-size: 14px;
   }
 
   /*Fourth Section*/
@@ -1592,27 +1611,8 @@ nav ul li a:hover::after{
 
   /*Third Section*/
 
-  .thirdpartdescription p{
+  .thirdpartslider p{
     font-size: 13px;
-    font-weight: 500;
-    width: 380px;
-  }
-
-  .recipe p, .recipe1 p{
-    font-size: 13px;
-    font-weight: 500;
-    width: 140px;
-  }
-
-  .thirdpartredirection a,
-  .thirdpartreciperedirection a{
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
-
-  .thirdpartredirection,
-  .thirdpartreciperedirection{
-    width: 130px;
   }
 
   /*Fourth Section*/
@@ -1674,17 +1674,4 @@ nav ul li a:hover::after{
     aspect-ratio: 2/2.6;
   }
 
-  /*Third Section*/
-
-  .thirdpart{
-    margin: 50px auto;
-  }
-
-  .thirdpartdescription p{
-    width: 300px;
-  }
-
-  .recipe h2, .recipe1 h2{
-    font-size: 16px;
-  }
 }
