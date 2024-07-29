@@ -234,64 +234,51 @@
 
   <!-- Fourth Section -->
 
-  <div class="fourthpart reveal2">
+  <div class="fourthpart">
     <div class="fourthpartdescription">
       <h1>Discover the Splendor</h1>
-      <p>It's thrilling to discover the beautiful places around us. Sometimes just take a break to explore new destinations, it can bring us many unforgettable moments.</p>
-      <div class="fourthpartredirection">
-        <a href="https://www.k-bakery.com/JourneySummary">Explore <span>&#8594</span></a>
-      </div>
+      <p>It's thrilling to discover the beautiful places around us. Sometimes just take a break to explore new destinations, it can bring us many unforgettable moments.
+         <Br><Br>
+          <a href="https://www.k-bakery.com/JourneySummary">Let's Explore &#8594</a>
+      </p>
     </div>
-    <div class="fourthpartslider">
-      <div class="fourthpartsliderpic">
-        <img src="Pictures/Journey - Putney Bridge - 1.jpg">
+    
+    <div class="fourthpart-slideshow">
+      <div class="fourthpart-slideshow-pic fade">
+        <img src="Pictures/Journey - Regent Street - 1.jpg">
       </div>
+      <div class="fourthpart-slideshow-pic fade">
+        <img src="Pictures/Journey - Sky Garden - 1.jpg">
+      </div>
+      <div class="fourthpart-slideshow-pic fade">
+        <img src="Pictures/Journey - Golden Square - 1.jpg">
+      </div>
+      <div class="fourthpart-slideshow-pic fade">
+        <img src="Pictures/Journey - Kensington Gardens - 5.jpg">
+      </div>
+      <div class="fourthpart-slideshow-pic fade">
+        <img src="Pictures/Journey - Chelsea Riverside - 1.jpg">
+      </div>
+      <div class="fourthpart-slideshow-pic fade">
+        <img src="Pictures/Journey - Battersea Power Station - 1.jpg">
+      </div>
+      
+      <a class="fourthpartprev" onclick="plusSlides(-1)">❮</a>
+      <a class="fourthpartnext" onclick="plusSlides(1)">❯</a>
 
-      <div class="fourthpartsliderpic">
-        <img src="Pictures/Journey - Karuizawa 1.jpg" class ="fourthpartsliderpic2">
-      </div>
-
-      <div class="fourthpartsliderpic">
-        <img src="Pictures/Journey - Battersea Power Station - 1.jpg" class ="fourthpartsliderpic3">
-      </div>
-        
-      <div class="fourthpartsliderpic">
-        <img src="Pictures/Journey - Stratford-upon-Avon 2.jpg">
-      </div>
-
-      <div class="fourthpartsliderpic">
-        <img src="Pictures/Journey - Chelsea Riverside.jpg">
-      </div>
-        
-      <div class="fourthpartsliderpic">
-        <img src="Pictures/Journey - Tower Bridge 5 (view on the bridge).jpg" class ="fourthpartsliderpic6">
-      </div>
-        
-      <a class="fourthpartprev" onclick="plusSlides(-1)">&#8592</a>
-      <a class="fourthpartnext" onclick="plusSlides(1)">&#8594</a>
-
-      <div class="fourthpartsliderrow">
-        <div class="fourthpartsliderrowpic">
-          <img class="demo cursor" src="Pictures/Journey - Putney Bridge - 1.jpg" onclick="currentSlide(1)">
-        </div>
-        <div class="fourthpartsliderrowpic">
-          <img class="demo cursor" src="Pictures/Journey - Karuizawa 1.jpg" onclick="currentSlide(2)">
-        </div>
-        <div class="fourthpartsliderrowpic">
-          <img class="demo cursor" src="Pictures/Journey - Battersea Power Station - 1.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
-        </div>
-        <div class="fourthpartsliderrowpic">
-          <img class="demo cursor" src="Pictures/Journey - Stratford-upon-Avon 2.jpg" onclick="currentSlide(4)" alt="Northern Lights">
-        </div>
-        <div class="fourthpartsliderrowpic">
-          <img class="demo cursor" src="Pictures/Journey - Chelsea Riverside.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
-        </div>    
-        <div class="fourthpartsliderrowpic">
-          <img class="demo cursor" src="Pictures/Journey - Tower Bridge 5 (view on the bridge).jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
-        </div>
+      <div class ="fourthpart-bottomdot">
+        <span class="fourthpart-dot" onclick="currentSlide(1)"></span> 
+        <span class="fourthpart-dot" onclick="currentSlide(2)"></span> 
+        <span class="fourthpart-dot" onclick="currentSlide(3)"></span> 
+        <span class="fourthpart-dot" onclick="currentSlide(4)"></span>
+        <span class="fourthpart-dot" onclick="currentSlide(5)"></span>
+        <span class="fourthpart-dot" onclick="currentSlide(6)"></span> 
       </div>
     </div>
   </div>
+  
+
+
 
   <div class="copyright">
     Copyright &#169 2023 K's Bakery
@@ -463,29 +450,29 @@
     //Fourth Section
     let slideIndex = 1;
     showSlides(slideIndex);
-
+    
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-
+    
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-
+    
     function showSlides(n) {
       let i;
-      let slides = document.getElementsByClassName("fourthpartsliderpic");
-      let dots = document.getElementsByClassName("demo");
-      if (n > slides.length) {slideIndex = 1}
+      let slides = document.getElementsByClassName("fourthpart-slideshow-pic");
+      let fourthpartdots = document.getElementsByClassName("fourthpart-dot");
+      if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].style.display = "none";  
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+      for (i = 0; i < fourthpartdots.length; i++) {
+        fourthpartdots[i].className = fourthpartdots[i].className.replace("fourthpart-active", "");
       }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
+      slides[slideIndex-1].style.display = "block";  
+      fourthpartdots[slideIndex-1].className += " fourthpart-active";
     }
   </script>
 
