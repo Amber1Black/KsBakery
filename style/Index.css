@@ -352,6 +352,7 @@ nav ul li a:hover::after{
 .pic2{
   padding: 20px;
   border-style: solid;
+  border-width: 3px;
 }
 
 .pic2 img{
@@ -606,6 +607,11 @@ nav ul li a:hover::after{
   }
 
   /*Third Section*/
+
+  .thirdpartdescription p, .thirdpartdescription a{
+    font-size: 22px;
+    width: 55vw;
+  }
 
   .pic2 p{
     font-size: 18px;
