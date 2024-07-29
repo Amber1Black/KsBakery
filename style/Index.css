@@ -402,6 +402,7 @@ nav ul li a:hover::after{
   font-weight: bold;
   padding: 10px 0;
   border-style: solid;
+  border-width: 3px;
   border-color: #000000;
   text-align: center;
   cursor: pointer;
