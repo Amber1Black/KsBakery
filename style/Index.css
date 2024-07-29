@@ -260,6 +260,10 @@ nav ul li a:hover::after{
   display: none;  /* Safari and Chrome */
 }
 
+.container{
+  white-space: wrap;
+}
+
 .container img{
   width: 28vw;
   aspect-ratio: 2/2.5;
@@ -268,6 +272,7 @@ nav ul li a:hover::after{
 
 .secondpartsliderdescription{
   margin: 10px;
+  width: 26vw;
 }
 
 .secondpartsliderdescription h2{
@@ -306,7 +311,7 @@ nav ul li a:hover::after{
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.3em;
-  width: 55vw;
+  width: 950px;
 }
 
 .thirdpartdescription a{
@@ -381,7 +386,7 @@ nav ul li a:hover::after{
 
 .pic1 img, .pic3 img{
   width: 25vw;
-  aspect-ratio: 2/2.4;
+  aspect-ratio: 2/2.7;
   object-fit: cover;
   filter: brightness(0.9);
 }
@@ -611,7 +616,7 @@ nav ul li a:hover::after{
 
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 22px;
-    width: 55vw;
+    width: 830px;
   }
 
   .pic2 p{
@@ -690,6 +695,10 @@ nav ul li a:hover::after{
     width: 28.8vw;
   }
 
+  .secondpartsliderdescription{
+    width: 27vw;
+  }
+
   .secondpartsliderdescription h2{
     font-size: 23px;
     margin: 20px 0 7px 0;
@@ -704,7 +713,7 @@ nav ul li a:hover::after{
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 20px;
     line-height: 1.3em;
-    width: 55vw;
+    width: 770px;
   }
 
   .thirdparttitle h1{
@@ -816,7 +825,11 @@ nav ul li a:hover::after{
   }
 
   .container img{
-    width: 33.5vw;
+    width: 32vw;
+  }
+
+  .secondpartsliderdescription{
+    width: 30vw;
   }
 
   .secondpartsliderdescription p{
@@ -829,7 +842,7 @@ nav ul li a:hover::after{
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 18px;
     line-height: 1.3em;
-    width: 54vw;
+    width: 650px;
   }
 
   .picturesdisplay{
@@ -932,8 +945,12 @@ nav ul li a:hover::after{
   }
 
   .container img{
-    width: 40vw;
+    width: 38vw;
     aspect-ratio: 2/2.5;
+  }
+
+  .secondpartsliderdescription{
+    width: 36vw;
   }
 
   .secondpartsliderdescription h2{
@@ -944,13 +961,13 @@ nav ul li a:hover::after{
   /*Third Section*/
 
   .thirdpartdescription{
-    padding: 80px 80px;
+    padding: 80px 60px;
   }
 
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 17px;
     line-height: 1.3em;
-    width: 60vw;
+    width: 580px;
   }
 
   .thirdparttitle h1{
@@ -1083,9 +1100,8 @@ nav ul li a:hover::after{
     gap: 20px;
   }
 
-  .container img{
-    width: 48vw;
-    aspect-ratio: 2/2.5;
+  .secondpartsliderdescription{
+    width: 36vw;
   }
 
   .secondpartsliderdescription p{
@@ -1100,8 +1116,8 @@ nav ul li a:hover::after{
 
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 17px;
-    line-height: 1.3em;
-    width: 70vw;
+    line-height: 1.4em;
+    width: 400px;
   }
 
   .thirdparttitle h1{
@@ -1246,8 +1262,12 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .container img{
-    width: 53vw;
+    width: 48vw;
     aspect-ratio: 2/2.5;
+  }
+
+  .secondpartsliderdescription{
+    width: 46vw;
   }
 
   /*Fourth Section*/
@@ -1403,9 +1423,17 @@ nav ul li a:hover::after{
     font-size: 9vw;
   }
 
+  .secondpart-scroll-container{
+    gap: 10px;
+  }
+
   .container img{
-    width: 64vw;
+    width: 55vw;
     aspect-ratio: 2/2.5;
+  }
+
+  .secondpartsliderdescription{
+    width: 53vw;
   }
 
   .secondpartsliderdescription h2{
@@ -1420,8 +1448,8 @@ nav ul li a:hover::after{
 
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 16px;
-    line-height: 1.3em;
-    width: 68vw;
+    line-height: 1.4em;
+    width: 330px;
   }
 
   .thirdparttitle h1{
@@ -1449,11 +1477,11 @@ nav ul li a:hover::after{
   }
 
   .thirdpartprev{
-    left: 15%;
+    left: 14%;
   }
 
   .thirdpartnext{
-    right: 15%;
+    right: 14%;
   }
   
 }
@@ -1511,10 +1539,6 @@ nav ul li a:hover::after{
     width: 350px;
   }
 
-  .container img{
-    width: 67vw;
-  }
-
   .secondpartsliderdescription p{
     font-size: 13px;
   }
@@ -1527,8 +1551,8 @@ nav ul li a:hover::after{
 
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 16px;
-    line-height: 1.3em;
-    width: 72vw;
+    line-height: 1.4em;
+    width: 280px;
   }
 
   .thirdparttitle h1{
@@ -1552,11 +1576,11 @@ nav ul li a:hover::after{
   }
 
   .thirdpartprev{
-    left: 6%;
+    left: 5%;
   }
 
   .thirdpartnext{
-    right: 6%;
+    right: 5%;
   }
 
   .thirdpartslider h2{
@@ -1604,12 +1628,16 @@ nav ul li a:hover::after{
   }
 
   .secondpart-scroll-container{
-    gap: 15px;
+    gap: 5px;
   }
 
   .container img{
-    width: 75vw;
+    width: 70vw;
     aspect-ratio: 2/2.5;
+  }
+
+  .secondpartsliderdescription{
+    width: 68vw;
   }
 
   .secondpartsliderdescription h2{
@@ -1674,11 +1702,4 @@ nav ul li a:hover::after{
     margin: 10px auto 0px auto;
   } 
   
-  /*Second Section*/
-
-  .container img{
-    width: 81vw;
-    aspect-ratio: 2/2.6;
-  }
-
 }
