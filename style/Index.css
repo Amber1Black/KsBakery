@@ -302,7 +302,7 @@ nav ul li a:hover::after{
 .thirdpartdescription{
   width: 100%;
   background-color: #d7d3ce;
-  padding: 80px 100px;
+  padding: 90px 100px;
 }
 
 .thirdpartdescription p{
@@ -428,150 +428,128 @@ nav ul li a:hover::after{
 /*Fourth Section*/
 
 .fourthpart{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 5% 80px 5%;
+  background-color: rgb(9, 8, 39);
+  display: flex;
   overflow: hidden;
 }
 
 .fourthpartdescription{
-  width: 31vw;
-  margin: auto 5px auto 0;
+  width: 38vw;
+  margin: auto -200px auto 4%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  padding: 150px 150px 150px 60px;
+  z-index: 5;
 }
 
 .fourthpartdescription h1{
-  font-family: 'Raleway', sans-serif;
-  font-size: 4.5vw;
-  letter-spacing: 4px;
-  word-spacing: 2px;
-  margin-bottom: 25px;
+  font-family: 'DM Serif Display', sans-serif;
+  font-size: 3.5vw;
+  line-height: 1.2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0px 7% 30px 0;
+  z-index: 5;
+  color: #ffffff;
 }
 
 .fourthpartdescription p{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   letter-spacing: 1px;
-  line-height: 1.4em;
+  line-height: 1.3em;
+  color: #ffffff;
 }
 
-.fourthpartredirection{
-  margin: 30px 0 0 0;
-  padding: 13px 0px 13px 0px;
-  width: 160px;
-  text-align: center;
-  border-radius: 25px;
-  background: radial-gradient(circle at 10% 20%, rgb(75, 108, 183) 0%, rgb(55, 82, 141) 90%);
-  transition: : 0.5s;
-}
-
-.fourthpartredirection span{
-  width: 0;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.fourthpartredirection:hover span{
-  width: 22px;
-}
-
-.fourthpartredirection a{
+.fourthpartdescription a{
   text-decoration: none;
   color: #ffffff;
-  font-weight: 500; 
-  font-family: 'Raleway', sans-serif;
-  font-size: 17px;
-  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.fourthpartslider{
+.fourthpart-slideshow{
+  width: 60vw;
+  margin: 100px auto;
   position: relative;
-  margin: 0 0 0 0;
-  width: 55.3vw;
 }
 
-/* Hide the images by default */
-.fourthpartsliderpic {
-  display: none;
+.fourthpart-slideshow-pic{
+  text-align: center;
 }
 
-.fourthpartsliderpic img{
-  width: 55.3vw;
-  height: 65svh;
+.fourthpart-slideshow-pic img{
+  width: 57vw;
+  aspect-ratio: 3/2.3;
   object-fit: cover;
 }
 
-.fourthpartsliderpic2{
-  object-position: 50% 70%;;
-}
-
-.fourthpartsliderpic3{
-  object-position: 50% 90%;;
-}
-
-.fourthpartsliderpic6{
-  object-position: 30% 50%;;
-}
-
-.cursor{
+.fourthpartprev, .fourthpartnext{
   cursor: pointer;
-}
-
-.fourthpartprev,
-.fourthpartnext{
   position: absolute;
   top: 48%;
-  z-index: 100;
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  background-color: #ffffff;
-  border: none;
-  color: #403f3f;
-  font-family: monospace;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 6px 0;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
   text-align: center;
+  color: white;
+  background-color: rgb(45, 66, 139);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 100%;
+  user-select: none;
+  z-index: 10;
+}
+
+.fourthpartnext{
+  right: 0%;
+}
+
+.fourthpartprev:hover, .fourthpartnext:hover {
+  background-color: rgba(56, 62, 135, 0.8);
+}
+
+.fourthpart-bottomdot{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.fourthpart-dot{
   cursor: pointer;
-  left: 1.5%;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.fourthpartnext {
-  left: unset;
-  right: 1.5%;
+.fourthpart-active, .fourthpart-dot:hover {
+  background-color: #88b8e8;
 }
 
-.fourthpartprev:hover,
-.fourthpartnext:hover{
-  background-color: rgba(27, 70, 134, 0.8);
-  color: #ffffff;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
-.fourthpartsliderrow{
-  display: flex;
-  gap: 0.5vw;
-  margin: 0;
-  padding: 0;
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.fourthpartsliderrowpic img{
-  width: 8.8vw;
-  aspect-ratio: 3/2.5;
-  object-fit: cover;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.5;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
 
 
 /*copyright*/
@@ -643,6 +621,12 @@ nav ul li a:hover::after{
 
   .secondpartdescription h1{
     margin: 0 0 -110px 80px;
+  }
+
+  /*Fourth Section*/
+
+  .fourthpartdescription{
+    padding: 110px 115px 110px 60px;
   }
 }
 
@@ -735,37 +719,30 @@ nav ul li a:hover::after{
 
   /*Fourth Section*/
 
-  .fourthpart{
-    margin: 0 4%;
+  .fourthpartdescription{
+    width: 40vw;
+    margin: auto -160px auto 4%;
+    padding: 70px 110px 70px 50px;
   }
 
-  .fourthpartdescription h1{
-    font-size: 4.3vw;
-    letter-spacing: 2px;
-    word-spacing: 0px;
+  .fourthpartdescription p, .fourthpartdescription a{
+    font-size: 17px;
   }
 
-  .fourthpartdescription p,
-  .fourthpartredirection a{
-    font-size: 16px;
+  .fourthpart-slideshow-pic img{
+    width: 56vw;
+    aspect-ratio: 3/2.2;
   }
 
-  .fourthpartredirection{
-    padding: 10px 0px 10px 0px;
-    width: 150px;
+  .fourthpart-bottomdot{
+    margin-top: 10px;
   }
 
-  .fourthpartsliderpic img{
-    max-height: 550px;
+  .fourthpart-dot{
+    height: 12px;
+    width: 12px;
   }
 
-  .fourthpartprev,
-  .fourthpartnext{
-    width: 28px;
-    height: 28px;
-    padding: 4px 0;
-    font-size: 16px;
-  }
 }
 
 
@@ -877,8 +854,22 @@ nav ul li a:hover::after{
 
   /*Fourth Section*/
 
-  .fourthpartsliderpic img{
-    max-height: 470px;
+  .fourthpartdescription{
+    margin: auto -140px auto 3%;
+    padding: 65px 95px 65px 40px;
+  }
+
+  .fourthpartdescription h1{
+    margin: 0px 7% 20px 0;
+  }
+
+  .fourthpartdescription p, .fourthpartdescription a{
+    font-size: 16px;
+  }
+
+  .fourthpart-slideshow-pic img{
+    width: 56vw;
+    aspect-ratio: 3/2.5;
   }
 
 }
@@ -1011,35 +1002,32 @@ nav ul li a:hover::after{
 
   /*Fourth Section*/
 
-  .fourthpart{
-    margin: 0 3% 80px 3%;
+  .fourthpartdescription{
+    width: 43vw;
+    margin: auto -80px auto 2.5%;
+    padding: 65px 65px 65px 30px;
   }
 
   .fourthpartdescription h1{
-    font-size: 4.3vw;
-    letter-spacing: 3px;
+    margin: 0px 7% 20px 0;
   }
 
-  .fourthpartdescription p,
-  .fourthpartredirection a{
+  .fourthpartdescription p, .fourthpartdescription a{
     font-size: 15px;
   }
 
-  .fourthpartredirection{
-    width: 140px;
+  .fourthpart-slideshow-pic img{
+    width: 54.5vw;
+    aspect-ratio: 1/1;
   }
 
-  .fourthpartsliderpic img{
-    max-height: 500px;
+  .fourthpartprev, .fourthpartnext{
+    width: 45px;
+    height: 45px;
+    font-size: 17px;
+    padding: 10px;
   }
 
-  .fourthpartprev,
-  .fourthpartnext{
-    width: 25px;
-    height: 25px;
-    padding: 2px 0;
-    font-size: 16px;
-  }
 }
 
 
@@ -1154,9 +1142,28 @@ nav ul li a:hover::after{
 
   /*Fourth Section*/
 
-  .fourthpartdescription p,
-  .fourthpartredirection a{
-    font-size: 14px;
+  .fourthpart{
+    display: grid;
+  }
+
+  .fourthpartdescription{
+    width: 75vw;
+    margin: 80px 4% 0 4%;
+    padding: 50px 60px 50px 60px;
+  }
+
+  .fourthpartdescription h1{
+    font-size: 4.5vw;
+  }
+
+  .fourthpart-slideshow{
+    width: 75vw;
+    margin: -30px 5% 50px 20%;
+  }
+
+  .fourthpart-slideshow-pic img{
+    width: 70vw;
+    aspect-ratio: 4/3;
   }
 
 }
@@ -1272,49 +1279,25 @@ nav ul li a:hover::after{
 
   /*Fourth Section*/
 
-  .fourthpart{
-    grid-template-columns: 1fr;
-    margin: 0;
-  }
-
   .fourthpartdescription{
-    width: unset;
-    text-align: center;
+    width: 77vw;
+    padding: 50px 50px 50px 50px;
   }
 
-  .fourthpartdescription h1{
-    font-size: 6vw;
-    margin-bottom: 15px;
+  .fourthpartdescription p, .fourthpartdescription a{
+    font-size: 15px;
   }
 
-  .fourthpartdescription p{
-    margin: 0 auto;
-    width: 430px;
-  }
-  
-  .fourthpartredirection{
-    margin: 20px auto 30px auto;
-    text-align: center;
+  .fourthpart-slideshow{
+    width: 80vw;
+    margin: -30px 4% 50px 16%;
   }
 
-  .fourthpartslider{
-    width: 86.5vw;
-    margin: 0 auto 50px auto;
+  .fourthpart-slideshow-pic img{
+    width: 74vw;
+    aspect-ratio: 4/3.2;
   }
 
-  .fourthpartsliderpic img{
-    width: 86.5vw;
-    max-height: 400px;
-  }
-
-  .fourthpartsliderrowpic img{
-    width: 14vw;
-  }
-
-  .fourthpartprev,
-  .fourthpartnext{
-    display: none;
-  }
 }
 
 
@@ -1453,8 +1436,8 @@ nav ul li a:hover::after{
   }
 
   .thirdparttitle h1{
-    font-size: 8vw;
-    margin: 20px 7% 5px 0;
+    font-size: 9vw;
+    margin: 20px 7% -15px 0;
   }
 
   .picturesdisplay{
@@ -1482,6 +1465,27 @@ nav ul li a:hover::after{
 
   .thirdpartnext{
     right: 14%;
+  }
+
+  /*Fourth Section*/
+
+  .fourthpartdescription{
+    width: 80vw;
+    padding: 50px 35px 50px 35px;
+  }
+
+  .fourthpartdescription p, .fourthpartdescription a{
+    font-size: 14px;
+  }
+
+  .fourthpart-slideshow{
+    width: 83vw;
+    margin: -30px 2% 50px 11%;
+  }
+
+  .fourthpart-slideshow-pic img{
+    width: 75vw;
+    aspect-ratio: 4/3.3;
   }
   
 }
@@ -1593,18 +1597,25 @@ nav ul li a:hover::after{
 
   /*Fourth Section*/
 
-  .fourthpartslider{
-    width: 91.3vw;
+  .fourthpartdescription{
+    width: 83vw;
+    padding: 50px 30px 50px 30px;
   }
 
-  .fourthpartsliderpic img{
-    width: 91.3vw;
-    max-height: 400px;
+  .fourthpartdescription h1{
+    font-size: 5.3vw;
   }
 
-  .fourthpartsliderrowpic img{
-    width: 14.8vw;
+  .fourthpart-slideshow{
+    width: 95vw;
+    margin: -30px auto 50px auto;
   }
+
+  .fourthpart-slideshow-pic img{
+    width: 86vw;
+    aspect-ratio: 1/1.2;
+  }
+
 }
 
 
@@ -1652,28 +1663,15 @@ nav ul li a:hover::after{
 
   /*Fourth Section*/
 
-  .fourthpart{
-    padding-top: 50px;
+  .fourthpartdescription{
+    width: 83vw;
+    padding: 50px 25px 50px 25px;
   }
 
-  .fourthpartdescription h1{
-    margin-bottom: 10px;
-  }
-
-  .fourthpartdescription p{
-    font-size: 13px;
-    font-weight: 500;
-    width: 300px;
-  }
-
-  .fourthpartredirection{
-    margin: 12px auto 22px auto;
-    padding: 8px 0;
-  }
-
-  .fourthpartredirection a{
+  .fourthpartdescription p, .fourthpartdescription a{
     font-size: 13px;
   }
+
 }
 
 
