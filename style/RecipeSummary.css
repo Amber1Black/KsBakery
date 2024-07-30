@@ -84,22 +84,22 @@ nav ul li a:hover::after{
 
 .topheadingstitle h1{
   font-family: 'Raleway', sans-serif;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   word-spacing: 15px;
   font-weight: 600;
-  text-transform: uppercase;
-  font-size: 5vw;
+  font-size: 6vw;
   margin: 15px 50px 0 4%;
   line-height: 1.2em;
 }
 
 .topheadingstitle p{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
-  font-weight: 450;
+  font-weight: 400;
   font-size: 1.3vw;
   margin: 10px 50px 20px 4%;
   line-height: 1.4em;
+  width: 73vw;
 }
 
 /*Top Section*/
@@ -190,22 +190,27 @@ nav ul li a:hover::after{
 
 .recipecategory{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  column-gap: 60px;
-  row-gap: 30px;
-  padding: 80px 10%;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 50px;
+  padding: 80px 5%;
+}
+
+.recipegrid{
+  border-style: solid;
+  border-width: 2px;
+  padding: 20px;
 }
 
 .recipegrid img{
   width: 100%;
-  aspect-ratio: 7/5;
+  aspect-ratio: 1/1;
   object-fit: cover;
   display: block;
   transition: transform 0.5;
 }
 
 .recipename, .recipename1{
-  margin: 20px 0px 25px 30px;
+  margin: 20px 20px 25px 20px;
 }
 
 .recipename h4, .recipename1 h4{
@@ -232,18 +237,25 @@ h3{
   line-height: 1.4em;
 }
 
-.recipename a, .recipename1 a{
+.recipename h5, .recipename a, .recipename1 h5, .recipename1 a{
   text-decoration: none;
-  color: #535252;
-  font-weight: 500; 
-  font-size: 17px;
-  letter-spacing: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin-top: 10px;
+  color: rgb(50, 50, 50);
 }
 
-.recipename a span,
-.recipename1 a span{
-  color: #655e5e;
-  margin-left: 5px;
+.recipename p, .recipename1 p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin-top: 10px;
+  color: rgb(50, 50, 50);
 }
 
   
@@ -261,52 +273,54 @@ h3{
 @media only screen and (max-width:1700px){
 
   .recipecategory{
-    padding: 80px 7%;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 80px 4%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
   }
 
   .recipename1{
     margin-left: 20px;
   }
 
+  .recipename h5, .recipename a, .recipename1 h5, .recipename1 a,
+  .recipename p, .recipename1 p{
+    font-size: 18px;
+  }
+
 }
 
 
-@media only screen and (max-width:1550px){
+@media only screen and (max-width:1500px){
 
   .recipename1{
     margin-left: 15px;
   }
 
+  h3,
   .recipename1 h3{
-    font-size: 24px;
+    font-size: 23px;
     line-height: 1.4em;
     letter-spacing: 1px;
   }
 
   .recipecategory{
-    column-gap: 40px;
-    padding: 80px 6%;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 30px;
   }
 
-}
-
-
-@media only screen and (max-width:1450px){
-
-  .recipecategory{
-    padding: 80px 5%;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  .recipename, .recipename1{
+    margin: 20px 15px;
   }
 
-  h3,
-  .recipename1 h3{
-    font-size: 22px;
+  .recipename h5, .recipename a, .recipename1 h5, .recipename1 a,
+  .recipename p, .recipename1 p{
+    font-size: 17px;
   }
 
   .recipename h4, .recipename1 h4{
     font-size: 15px;
   }
+
 }
 
 
@@ -321,39 +335,23 @@ h3{
     font-size: 17px;
   }
 
-  .recipename{
-    margin: 20px 0px 25px 20px;
-  }
-
-}
-
-
-@media only screen and (max-width:1250px){
-  .topheadingstitle p{
-    margin-right: 120px;
-  }
-}
-
-
-@media only screen and (max-width:1200px){
-
-  .topheadingstitle p{
-    font-size: 16px;
-  }
-
   .recipecategory{
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    column-gap: 30px;
-    padding: 80px 4%;
+    padding: 80px 3%;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 20px;
   }
 
-  .recipename h4, .recipename1 h4{
-    font-size: 14px;
-    letter-spacing: 6px;
+  .recipegrid{
+    padding: 12px;
   }
 
-  .recipename1 h3{
-    font-size: 21px;
+  .recipename, .recipename1{
+    margin: 20px 10px;
+  }
+
+  .recipename h5, .recipename a, .recipename1 h5, .recipename1 a,
+  .recipename p, .recipename1 p{
+    font-size: 16px;
   }
 
 }
@@ -361,24 +359,23 @@ h3{
 
 @media only screen and (max-width:1100px){
 
-  .topheadingstitle p{
-    margin-right: 50px;
-  }
-
   /*Recipe Grid*/
 
   .recipecategory{
-    column-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    column-gap: 50px;
+    row-gap: 30px;
+    padding: 80px 9%;
   }
 
   .recipename1{
     margin: 20px 0px 30px 10px;
   }
 
-  .recipename1 h3{
-    font-size: 20px;
+  .recipename h5, .recipename a, .recipename1 h5, .recipename1 a,
+  .recipename p, .recipename1 p{
+    font-size: 15px;
   }
-
   
 }
 
@@ -391,19 +388,6 @@ h3{
 
   .circle span{
     font-size: 12px;
-  }
-
-  /*Recipe Grid*/
-
-  .recipecategory{
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    column-gap: 50px;
-    row-gap: 30px;
-    padding: 80px 11%;
-  }
-
-  .recipename1 h3, h3{
-    font-size: 22px;
   }
 
 }
@@ -457,7 +441,7 @@ h3{
   }
 
   .topheadingstitle p{
-    margin-right: 30px;
+    width: 83vw;
   }
 
   .circle span{
@@ -465,8 +449,8 @@ h3{
   }
 
   .recipecategory{
-    padding: 60px 6%;
-    column-gap: 25px;
+    padding: 60px 4%;
+    column-gap: 20px;
   }
 
   .recipename1 h3{
@@ -491,10 +475,10 @@ h3{
   /*Recipe Grid*/
 
   .recipecategory{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     column-gap: 15px;
     row-gap: 30px;
-    padding: 60px 4%;
+    padding: 60px 3%;
   }
 
   h3{
@@ -606,8 +590,8 @@ h3{
   /*Top Headings*/
 
   .topheadingstitle h1{
-    font-size: 6vw;
-    letter-spacing: 4px;
+    font-size: 7vw;
+    letter-spacing: 3px;
     word-spacing: 1px;
     margin: 15px 5% 0 5%;
     line-height: 1.4em;
@@ -615,11 +599,7 @@ h3{
   }
   
   .topheadingstitle p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    margin: 10px 5% 20px 5%;
-    line-height: 1.2em;
-    text-align: justify;
+    margin: 10px 3% 20px 5%;
   }
 
 
@@ -653,19 +633,22 @@ h3{
 
   /*Recipe Grid*/
 
+  .recipegrid{
+    padding: 20px;
+  }
+
   .recipecategory{
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    column-gap: 10px;
+    grid-template-columns: unset;
     row-gap: 30px;
-    padding: 50px 15%;
+    padding: 50px 12%;
   }
 
   .recipename, .recipename1{
-    margin: 20px 10px 25px 30px;
+    margin: 20px 20px 25px 20px;
   }
 
   .recipename h3, .recipename1 h3{
-    font-size: 22px;
+    font-size: 23px;
   }
 }
 
@@ -685,13 +668,17 @@ h3{
   /*Recipe Grid*/
 
   .recipecategory{
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     row-gap: 30px;
-    padding: 50px 12%;
+    padding: 50px 8%;
   }
 
   .recipename, .recipename1{
-    margin-left: 20px;
+    margin: 20px 15px 25px 15px;
+  }
+
+  .recipename h5, .recipename a, .recipename1 h5, .recipename1 a,
+  .recipename p, .recipename1 p{
+    font-size: 14px;
   }
 
 }
@@ -720,12 +707,15 @@ h3{
   /*Recipe Grid*/
 
   .recipecategory{
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 50px 8%;
+    padding: 50px 5%;
   }
 
-  .recipename, .recipename1{
-    margin: 18px 10px 20px 20px;
+  .recipegrid{
+    padding: 15px;
+  }
+
+  .recipename1 h3{
+    font-size: 22px;
   }
 
   .recipename h4, .recipename1 h4{
