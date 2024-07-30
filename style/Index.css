@@ -132,6 +132,7 @@ nav ul li a:hover::after{
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .firstmessage{
@@ -182,8 +183,8 @@ nav ul li a:hover::after{
 .pinkbox{
   background-image: linear-gradient(to bottom, rgb(250, 200, 200), rgb(247, 177, 177), rgb(240, 140, 140));
   width: 43vw;
-  height: 95svh;
-  height: 95vh;
+  height: 100svh;
+  height: 100vh;
   position: absolute;
   top: 0;
   right: 0;
@@ -212,12 +213,14 @@ nav ul li a:hover::after{
 /*Second Section*/
 
 .secondpart{
-  margin: 150px 0;
+  padding: 50px 0 80px 0;
+  background-color: #143442;
+  overflow: hidden;
 }
 
 .secondpartdescription{
   width: 100%;
-  padding: 70px 5%;
+  padding: 50px 5%;
   display: grid;
 }
 
@@ -227,10 +230,10 @@ nav ul li a:hover::after{
   line-height: 1.1em;
   font-weight: 500;
   letter-spacing: 5px;
-  margin: 0 0 -120px 80px;
+  margin: 20px 0 -100px 80px;
   z-index: 5;
-  text-shadow: 1px 1px 1px #ffffff;
-  color: rgb(103, 79, 49);
+  text-shadow: 2px 2px 1px rgb(106, 79, 46);
+  color: #ffffff;
 }
 
 .secondpartdescription p{
@@ -243,7 +246,8 @@ nav ul li a:hover::after{
   right: 5%;
   width: 600px;
   line-height: 1.4em;
-  color: rgb(103, 79, 49);
+  color: #ffffff;
+  margin-top: 50px;
 }
 
 .secondpart-scroll-container{
@@ -281,13 +285,14 @@ nav ul li a:hover::after{
   font-weight: 600;
   letter-spacing: 2px;
   margin: 20px 0 10px 0;
+  color: #ffffff;
 }
 
 .secondpartsliderdescription p{
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
-  color: rgb(103, 79, 49);
+  color: #ffffff;
   line-height: 1.3em;
 }
 
@@ -301,8 +306,8 @@ nav ul li a:hover::after{
 
 .thirdpartdescription{
   width: 100%;
-  background-color: #d7d3ce;
-  padding: 90px 100px;
+  background-color: #ffb6a2e0;
+  padding: 120px 100px;
 }
 
 .thirdpartdescription p{
@@ -312,17 +317,18 @@ nav ul li a:hover::after{
   letter-spacing: 1px;
   line-height: 1.3em;
   width: 950px;
+  color: rgb(8, 8, 44);
 }
 
 .thirdpartdescription a{
   text-decoration: none;
-  color: #000000;
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   font-weight: 400;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
+  color: rgb(8, 8, 44);
 }
 
 .thirdparttitle{
@@ -380,7 +386,7 @@ nav ul li a:hover::after{
 
 .pic2 p{
   width: 28vw;
-  margin: 10px 0 10px 10px;
+  margin: 10px 0 20px 10px;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -433,6 +439,9 @@ nav ul li a:hover::after{
 
 .fourthpart{
   background-color: rgb(9, 8, 39);
+}
+
+.fourthpartcontent{
   display: flex;
   overflow: hidden;
 }
@@ -619,12 +628,8 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpart{
-    margin: 100px 0;
-  }
-
   .secondpartdescription h1{
-    margin: 0 0 -110px 80px;
+    margin: 0 0 -90px 80px;
   }
 
   /*Fourth Section*/
@@ -664,7 +669,7 @@ nav ul li a:hover::after{
 
   .secondpartdescription h1{
     font-size: 7vw;
-    margin: 0 0 -130px 80px;
+    margin: 0 0 -100px 80px;
   }
 
   .secondpartdescription p{
@@ -798,7 +803,7 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 30px 0 -125px 40px;
+    margin: 30px 0 -100px 40px;
   }
 
   .secondpart-scroll-container{
@@ -928,8 +933,12 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
+  .secondpart{
+    padding: 20px 0 50px 0;
+  }
+
   .secondpartdescription h1{
-    margin: 50px 0 -120px 40px;
+    margin: 50px 0 -95px 40px;
   }
 
   .secondpartdescription p{
@@ -1069,12 +1078,10 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpart{
-    margin: 50px 0;
-  }
-
   .secondpartdescription h1{
-    margin: 80px 0 -115px 30px;
+    font-size: 9vw;
+    margin: 80px 0 -95px 30px;
+    text-shadow: none;
   }
 
   .secondpartdescription p{
@@ -1118,7 +1125,6 @@ nav ul li a:hover::after{
 
   .pic2 img{
     width: 50vw;
-    aspect-ratio: 2/2.0;
   }
 
   .pic1 img, .pic3 img{
@@ -1188,6 +1194,7 @@ nav ul li a:hover::after{
   .firstpartmobile{
     display: grid;
     overflow-x: hidden;
+    margin-bottom: 30px;
   }
 
   .firstpartmobiletopsection{
@@ -1401,8 +1408,8 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 95px -30px -110px 40px;
-    font-size: 9vw;
+    margin: 95px -30px -90px 40px;
+    font-size: 10vw;
   }
 
   .secondpart-scroll-container{
@@ -1445,7 +1452,6 @@ nav ul li a:hover::after{
 
   .pic2 img{
     width: 60vw;
-    aspect-ratio: 2/2.0;
   }
 
   .pic1 img, .pic3 img{
@@ -1532,7 +1538,8 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 90px -10px -110px 40px;
+    margin: 90px -10px -90px 30px;
+    font-size: 11vw;
     letter-spacing: 3px;
   }
 
@@ -1553,9 +1560,9 @@ nav ul li a:hover::after{
   }
 
   .thirdpartdescription p, .thirdpartdescription a{
-    font-size: 16px;
-    line-height: 1.4em;
-    width: 280px;
+    letter-spacing: 0px;
+    line-height: 1.5em;
+    width: 330px;
   }
 
   .thirdparttitle h1{
@@ -1569,7 +1576,6 @@ nav ul li a:hover::after{
 
   .pic2 img{
     width: 75vw;
-    aspect-ratio: 2/2.0;
   }
 
   .pic2 p{
@@ -1621,12 +1627,8 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpart{
-    margin: 30px 0 60px 0;
-  }
-
   .secondpartdescription h1{
-    margin: 90px 0 -105px 30px;
+    margin: 90px 0 -90px 30px;
   }
 
   .secondpartdescription p{
@@ -1654,6 +1656,12 @@ nav ul li a:hover::after{
   }
 
   /*Third Section*/
+
+  .thirdpartdescription p, .thirdpartdescription a{
+    font-size: 15px;
+    line-height: 1.6em;
+    width: 280px;
+  }
 
   .thirdpartslider p{
     font-size: 13px;
