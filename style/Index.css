@@ -1568,8 +1568,9 @@ nav ul li a:hover::after{
   }
 
   .thirdparttitle h1{
-    font-size: 12vw;
-    margin: 30px 2% -150px 15px;
+    font-size: 14vw;
+    line-height: 1.0em;
+    margin: 30px 2% -145px 80px;
     letter-spacing: 1px;
   }
 
@@ -1708,5 +1709,11 @@ nav ul li a:hover::after{
     line-height: 1.4em;
     margin: 10px auto 0px auto;
   } 
+
+  /*Third Section*/
+
+  .thirdparttitle h1{
+    margin: 30px 2% -140px 80px;
+  }
   
 }
