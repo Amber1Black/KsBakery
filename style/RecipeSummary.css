@@ -634,13 +634,14 @@ h3{
   /*Recipe Grid*/
 
   .recipegrid{
-    padding: 20px;
+    padding: none;
+    border-style: none;
   }
 
   .recipecategory{
     grid-template-columns: unset;
-    row-gap: 30px;
-    padding: 50px 12%;
+    row-gap: 10px;
+    padding: 50px 8%;
   }
 
   .recipename, .recipename1{
@@ -668,8 +669,8 @@ h3{
   /*Recipe Grid*/
 
   .recipecategory{
-    row-gap: 30px;
-    padding: 50px 8%;
+    row-gap: 0px;
+    padding: 50px 3%;
   }
 
   .recipename, .recipename1{
@@ -707,7 +708,7 @@ h3{
   /*Recipe Grid*/
 
   .recipecategory{
-    padding: 50px 5%;
+    padding: 50px 0%;
   }
 
   .recipegrid{
