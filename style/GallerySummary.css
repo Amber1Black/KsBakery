@@ -711,6 +711,12 @@ nav ul li a:hover::after{
 
   /*Gallery Quote*/
 
+  .galleryquote{
+    padding: 90px 12% 90px 12%;
+    border-radius: 25% 0 30% 0;
+    margin: 0;
+  }
+
   .galleryquote p{
     font-size: 14px;
   }
@@ -768,12 +774,14 @@ nav ul li a:hover::after{
   /*Gallery Quote*/
 
   .galleryquote{
-    padding: 90px 8% 90px 8%;
+    padding: 70px 10% 70px 10%;
+    border-radius: 15% 0 30% 0;
     margin: 0;
   }
 
   .galleryquote p{
     line-height: 1.4em;
+    letter-spacing: 0px;
   }
 
   /*Grid*/
@@ -808,6 +816,7 @@ nav ul li a:hover::after{
   .topsectiondescription p{
     font-size: 13px;
     font-weight: 450;
+    line-height: 1.4em;
   }
 
   .galleryquote p{
@@ -816,7 +825,6 @@ nav ul li a:hover::after{
 
   .intro p, .intro a{
     font-size: 13px;
-    font-weight: 450;
   }
  
 }
