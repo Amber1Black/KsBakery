@@ -82,22 +82,27 @@ nav ul li a:hover::after{
 
 /*Top Headings*/
 
+.topheadingstitle{
+  background-color: rgb(252, 243, 232);
+  padding: 50px 0;
+}
+
 .topheadingstitle h1{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lora', sans-serif;
   letter-spacing: 3px;
   word-spacing: 15px;
   font-weight: 600;
   font-size: 6vw;
-  margin: 15px 50px 0 4%;
+  margin: 0 50px 0 4%;
   line-height: 1.2em;
 }
 
 .topheadingstitle p{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
   font-size: 1.3vw;
-  margin: 10px 50px 20px 4%;
+  margin: 10px 50px 0 4%;
   line-height: 1.4em;
   width: 73vw;
 }
@@ -287,6 +292,16 @@ h3{
 
 @media only screen and (max-width:1500px){
 
+  /*Top Section*/
+
+  .topheadingstitle p{
+    font-size: 18px;
+    line-height: 1.5em;
+    width: 73vw;
+  }
+
+  /*Content*/
+
   .recipename1{
     margin-left: 15px;
   }
@@ -320,6 +335,10 @@ h3{
 
 
 @media only screen and (max-width:1300px){
+
+  .topheadingstitle{
+    padding: 30px 0;
+  }
 
   .topheadingstitle h1{
     word-spacing: 10px;
@@ -435,7 +454,7 @@ h3{
   /*Top Headings*/
 
   .topheadingstitle p{
-    font-size: 15px;
+    font-size: 16px;
   }
 
 }
@@ -446,7 +465,8 @@ h3{
   /*Top Headings*/
 
   .topheadingstitle h1{
-    letter-spacing: 6px;
+    font-size: 6vw;
+    letter-spacing: 3px;
     word-spacing: 5px;
   }
 
@@ -481,6 +501,18 @@ h3{
 
   nav ul li a{
     font-size: 13px;
+  }
+
+  /*Top Headings*/
+
+  .topheadingstitle h1{
+    font-size: 42px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+  }
+
+  .topheadingstitle p{
+    width: 95vw;
   }
 
   /*Recipe Grid*/
@@ -602,16 +634,18 @@ h3{
   /*Top Headings*/
 
   .topheadingstitle h1{
-    font-size: 7vw;
+    text-align: center;
+    font-size: 7.5vw;
     letter-spacing: 2px;
     word-spacing: 1px;
-    margin: 15px 5% 0 5%;
-    line-height: 1.4em;
-    text-transform: initial;
+    margin: 15px auto 10px auto;
   }
   
   .topheadingstitle p{
-    margin: 10px 3% 20px 5%;
+    font-size: 15px;
+    margin: 20px auto;
+    text-align: center;
+    width: 380px;
   }
 
 
@@ -663,14 +697,18 @@ h3{
 
 @media only screen and (max-width:500px){
 
+  .topheadingstitle{
+    padding: 20px 0;
+  }
+
   .topheadingstitle h1{
-    margin: 12px 3% 0 4%;
-    letter-spacing: 3px;
+    font-size: 38px;
+    letter-spacing: 2px;
   }
 
   .topheadingstitle p{
     font-size: 14px;
-    margin: 10px 4% 20px 4%;
+    width: 350px;
   }
 
   /*Recipe Grid*/
@@ -699,12 +737,13 @@ h3{
 @media only screen and (max-width:450px){
 
   .topheadingstitle h1{
-    letter-spacing: 2px;
+    font-size: 33px;
+    letter-spacing: 1px;
     word-spacing: 5px;
   }
 
   .topheadingstitle p{
-    font-size: 13px;
+    margin-top: 15px;
   }
 
   .uppersection{
@@ -743,6 +782,11 @@ h3{
 
 @media only screen and (max-width:400px){
 
+  .topheadingstitle h1{
+    font-size: 32px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
 
   .recipename h3, .recipename1 h3{
     font-size: 19px;
