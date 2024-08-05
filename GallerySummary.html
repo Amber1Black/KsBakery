@@ -18,7 +18,7 @@
   <meta name="description" content="K's Bakery, a gallery on my bakeries, a personal collection that showcases the diverse and delightful creations from my baking journey. From the first batch of cookies to intricate pastries and elaborate cakes, each of them represent a moment of learning, experimenting, and sharing.">
 
   <link rel="icon" type="image/png" href="./Pictures/websitelogo.png" sizes = "512x512">
-  <link rel="shortcut icon" href="./Pictures/websitelogo2.png" type="image/png" sizes = "512x512">
+  <link rel="shortcut icon" href="./Pictures/websitelogo.png" type="image/png" sizes = "512x512">
 
   <title>K's Bakery</title>
   <link rel="stylesheet" href="style/GallerySummary.css">
@@ -49,7 +49,8 @@
   <div class="topsection">
     <div class="topsectiondescription">
       <div class="topsectiondescription-h1">
-        <h1>My Baking Collection</h1>
+        <h1>My Baking</h1>
+        <h2>Collection</h2>
       </div>
       <div class="topsectiondescription-p">
         <p>A personal collection that showcases the diverse and delightful creations from my baking journey. From the first batch of cookies to intricate pastries and elaborate cakes, each of them represent a moment of learning, experimenting, and sharing.
@@ -57,9 +58,23 @@
       </div>
     </div>
     <div class="topimage">
-      <img src="Pictures/Tart Ring - Heart Shape with Choco.jpg" class ="image0">
+      <div class="mySlides fade">
+        <img src="Pictures/Tart Ring - Heart Shape with Choco.jpg" class ="image0">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Pictures/Tart - Choco Tart w Flower.jpg" class ="image00">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Pictures/Tart - Small Lemon Tart with Flowers.jpg" class ="image000">
+      </div>
     </div>
-    
+    <div class="topsectiondescription-p2">
+      <p>A personal collection that showcases the diverse and delightful creations from my baking journey. From the first batch of cookies to intricate pastries and elaborate cakes, each of them represent a moment of learning, experimenting, and sharing.
+      </p>
+    </div>
+
     
   </div>
 
@@ -99,7 +114,7 @@
   </div>
 
   <div class="galleryquote">
-    <p>Baking is a delightful blend of creativity and science, where simple ingredients like flour, sugar, eggs, and water transform into a wide array of delicious baked goods. These basic components are the foundation of countless recipes, each offering its own unique texture and flavor.
+    <p>Baking is a delightful blend of creativity and science, where simple ingredients like flour, sugar, eggs, and water transform into a wide array of delicious baked goods.
       <Br><Br>
       By incorporating chocolate, various extracts, or cream, the possibilities expand even further, allowing bakers to craft everything from rich, decadent desserts to light, airy pastries. The addition of nuts, fruits, or spices can introduce new layers of taste and complexity, catering to diverse palates.
       <Br><Br>
@@ -241,6 +256,28 @@
         }
       }
   }  
+  </script>
+
+  <script>
+    //Image Change
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < slides.length; i++) {
+        slides[i].className = slides[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      slides[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
   </script>
   
   
