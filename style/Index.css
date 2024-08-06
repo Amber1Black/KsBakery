@@ -225,27 +225,27 @@ nav ul li a:hover::after{
 }
 
 .secondpartdescription h1{
-  font-family: 'DM Serif Display', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-size: 7vw;
   line-height: 1.1em;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: 5px;
-  margin: 20px 0 -100px 80px;
+  margin: 20px 0 -100px 10%;
   z-index: 5;
-  text-shadow: 2px 2px 1px rgb(106, 79, 46);
+  text-shadow: 1px 1px 1px rgb(3, 3, 3);
   color: #ffffff;
 }
 
 .secondpartdescription p{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-align: right;
   position: absolute;
   right: 5%;
   width: 600px;
-  line-height: 1.4em;
+  line-height: 1.5em;
   color: #ffffff;
   margin-top: 50px;
 }
@@ -280,16 +280,16 @@ nav ul li a:hover::after{
 }
 
 .secondpartsliderdescription h2{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 2px;
   margin: 20px 0 10px 0;
   color: #ffffff;
 }
 
 .secondpartsliderdescription p{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
   color: #ffffff;
@@ -306,15 +306,15 @@ nav ul li a:hover::after{
 
 .thirdpartdescription{
   width: 100%;
-  background-color: #ffb6a2e0;
+  background-color: rgb(247, 237, 226) ;
   padding: 120px 100px;
 }
 
 .thirdpartdescription p{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 1.3em;
   width: 950px;
   color: #000000;
@@ -322,22 +322,22 @@ nav ul li a:hover::after{
 
 .thirdpartdescription a{
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   display: flex;
   align-items: center;
   color: #000000;
 }
 
 .thirdparttitle h1{
-  font-family: 'DM Serif Display', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-size: 9vw;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 2px;
   text-align: right;
-  margin: 0px 7% -200px 0;
+  margin: 0px 5% -200px 0;
 }
 
 .thirdpartslider{
@@ -381,7 +381,7 @@ nav ul li a:hover::after{
 .pic2 p{
   width: 28vw;
   margin: 10px 0 20px 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -432,7 +432,7 @@ nav ul li a:hover::after{
 /*Fourth Section*/
 
 .fourthpart{
-  background-color: rgb(9, 8, 39);
+  background-color: #143442;
 }
 
 .fourthpartcontent{
@@ -451,10 +451,10 @@ nav ul li a:hover::after{
 }
 
 .fourthpartdescription h1{
-  font-family: 'DM Serif Display', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-size: 3.5vw;
   line-height: 1.2em;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 2px;
   margin: 0px 7% 30px 0;
   z-index: 5;
@@ -462,10 +462,10 @@ nav ul li a:hover::after{
 }
 
 .fourthpartdescription p{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 1.3em;
   color: #ffffff;
 }
@@ -473,7 +473,7 @@ nav ul li a:hover::after{
 .fourthpartdescription a{
   text-decoration: none;
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -506,7 +506,7 @@ nav ul li a:hover::after{
   padding: 12px;
   text-align: center;
   color: white;
-  background-color: rgb(45, 66, 139);
+  background-color: rgb(45, 112, 139);
   border-style: solid;
   border-color: #ffffff;
   border-width: 2px;
@@ -523,7 +523,7 @@ nav ul li a:hover::after{
 }
 
 .fourthpartprev:hover, .fourthpartnext:hover {
-  background-color: rgba(56, 62, 135, 0.8);
+  background-color: rgba(56, 97, 135, 0.8);
 }
 
 .fourthpart-bottomdot{
@@ -543,7 +543,7 @@ nav ul li a:hover::after{
 }
 
 .fourthpart-active, .fourthpart-dot:hover {
-  background-color: #88b8e8;
+  background-color: #88e0e8;
 }
 
 /* Fading animation */
@@ -563,7 +563,7 @@ nav ul li a:hover::after{
 
 .copyright{
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
   font-size: 11px;
   color: grey;
   bottom: 2%;
@@ -581,15 +581,9 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpartdescription p{
-    font-size: 18px;
-    font-weight: 400;
-    width: 560px;
-  }
-
   .secondpartsliderdescription h2{
     font-size: 27px;
-    font-weight: 600;
+    font-weight: 300;
     letter-spacing: 2px;
   }
   
@@ -601,7 +595,7 @@ nav ul li a:hover::after{
 
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 22px;
-    width: 830px;
+    width: 850px;
   }
 
   .pic2 p{
@@ -623,7 +617,11 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 0 0 -90px 80px;
+    margin: 20px 0 -90px 80px;
+  }
+
+  .secondpartdescription p{
+    margin-top: 50px;
   }
 
   /*Fourth Section*/
@@ -663,13 +661,13 @@ nav ul li a:hover::after{
 
   .secondpartdescription h1{
     font-size: 7vw;
-    margin: 0 0 -100px 80px;
+    margin: 30px 0 -100px 80px;
   }
 
   .secondpartdescription p{
     font-size: 17px;
     font-weight: 400;
-    width: 500px;
+    width: 520px;
     margin-right: 1%;
   }
 
@@ -697,14 +695,18 @@ nav ul li a:hover::after{
 
   /*Third Section*/
 
+  .thirdpartdescription{
+    padding: 120px 120px;
+  }
+
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 20px;
     line-height: 1.3em;
-    width: 770px;
+    width: 780px;
   }
 
   .thirdparttitle h1{
-    margin: 10px 5% -190px 0px;
+    margin: 10px 1% -180px 0px;
   }
 
   .picturesdisplay{
@@ -797,7 +799,11 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 30px 0 -100px 40px;
+    margin: 50px 0 -100px 60px;
+  }
+
+  .secondpartdescription p{
+    margin: 30px 0 0 0;
   }
 
   .secondpart-scroll-container{
@@ -819,6 +825,10 @@ nav ul li a:hover::after{
 
   /*Third Section*/
 
+  .thirdpartdescription{
+    padding: 100px 80px 120px 80px;
+  }
+
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 18px;
     line-height: 1.3em;
@@ -826,7 +836,7 @@ nav ul li a:hover::after{
   }
 
   .thirdparttitle h1{
-    margin: 10px 5% -180px 0px;
+    margin: 10px 0% -180px 0px;
   }
 
   .picturesdisplay{
@@ -936,14 +946,14 @@ nav ul li a:hover::after{
   }
 
   .secondpartdescription h1{
-    margin: 50px 0 -95px 40px;
+    font-size: 70px;
+    margin: 50px 0 -95px 60px;
   }
 
   .secondpartdescription p{
     font-size: 16px;
-    font-weight: 400;
-    width: 400px;
-    margin-right: 0%;
+    letter-spacing: 1px;
+    width: 380px;
   }
 
   .container img{
@@ -963,11 +973,12 @@ nav ul li a:hover::after{
   /*Third Section*/
 
   .thirdpartdescription{
-    padding: 120px 60px 150px 60px;
+    padding: 100px 60px 150px 60px;
   }
 
   .thirdparttitle h1{
-    margin: 10px 5% -190px 0px;
+    margin: 10px 0% -190px 0px;
+    font-size: 90px;
   }
 
   .thirdpartdescription p, .thirdpartdescription a{
@@ -1081,16 +1092,15 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    font-size: 9vw;
-    margin: 80px 0 -95px 30px;
-    text-shadow: none;
+    font-family: 'Lora', sans-serif;
+    font-size: 65px;
+    font-weight: 200;
+    margin: 80px 0 -90px 60px;
   }
 
   .secondpartdescription p{
     font-size: 15px;
-    font-weight: 400;
-    width: 380px;
-    margin-right: 0%;
+    width: 420px;
   }
 
   .secondpart-scroll-container{
@@ -1108,17 +1118,18 @@ nav ul li a:hover::after{
   /*Third Section*/
 
   .thirdpartdescription{
-    padding: 100px 50px 150px 50px;
+    padding: 100px 50px 170px 50px;
   }
 
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 17px;
     line-height: 1.4em;
-    width: 400px;
+    width: 530px;
   }
 
   .thirdparttitle h1{
-    font-size: 10vw;
+    font-size: 80px;
+    margin: 20px 0 -210px 0;
   }
 
   .picturesdisplay{
@@ -1285,6 +1296,16 @@ nav ul li a:hover::after{
     width: 46vw;
   }
 
+  /*Third Section*/
+
+  .thirdparttitle h1{
+    font-size: 70px;
+  }
+
+  .thirdpartdescription p{
+    width: 450px;
+  }
+
   /*Fourth Section*/
 
   .fourthpartdescription{
@@ -1410,8 +1431,8 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 95px -30px -90px 40px;
-    font-size: 10vw;
+    margin: 70px -30px -90px 50px;
+    font-size: 60px;
   }
 
   .secondpart-scroll-container{
@@ -1434,7 +1455,7 @@ nav ul li a:hover::after{
   /*Third Section*/
 
   .thirdpartdescription{
-    padding: 80px 20px 120px 50px;
+    padding: 80px 20px 80px 50px;
   }
 
   .thirdpartdescription p, .thirdpartdescription a{
@@ -1444,8 +1465,8 @@ nav ul li a:hover::after{
   }
 
   .thirdparttitle h1{
-    font-size: 11vw;
-    margin: 10px 4% -155px 0;
+    font-size: 60px;
+    margin: 30px 2% -115px 0;
   }
 
   .picturesdisplay{
@@ -1540,15 +1561,14 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 90px -10px -90px 30px;
-    font-size: 11vw;
+    margin: 70px -10px -90px 40px;
+    font-size: 55px;
     letter-spacing: 3px;
   }
 
   .secondpartdescription p{
     font-size: 14px;
-    font-weight: 400;
-    width: 350px;
+    width: 390px;
   }
 
   .secondpartsliderdescription p{
@@ -1558,7 +1578,7 @@ nav ul li a:hover::after{
   /*Third Section*/
 
   .thirdpartdescription{
-    padding: 80px 8% 120px 8%;
+    padding: 80px 8% 80px 8%;
   }
 
   .thirdpartdescription p, .thirdpartdescription a{
@@ -1568,9 +1588,9 @@ nav ul li a:hover::after{
   }
 
   .thirdparttitle h1{
-    font-size: 14vw;
+    font-size: 50px;
     line-height: 1.0em;
-    margin: 30px 2% -145px 80px;
+    margin: 50px 0 -100px 0;
     letter-spacing: 1px;
   }
 
@@ -1632,7 +1652,8 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 90px 0 -90px 30px;
+    margin: 70px 0 -85px 35px;
+    font-size: 45px;
   }
 
   .secondpartdescription p{
@@ -1712,8 +1733,13 @@ nav ul li a:hover::after{
 
   /*Third Section*/
 
+  .thirdpartdescription{
+    padding: 60px 0 60px 30px;
+  }
+
   .thirdparttitle h1{
-    margin: 30px 2% -140px 80px;
+    margin: 20px 50px -80px 50px;
+    letter-spacing: 4px;
   }
   
 }
