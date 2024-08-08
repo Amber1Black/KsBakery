@@ -1,357 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-RF94ND0HKD');
-        </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-RF94ND0HKD');
+  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="K's Bakery, a gallery on the cookie I have baked. Cookie is very easy to be made, but it's tasty, worth making it at home. Wish you can get some ideas on what kind of cookie to be baked at home here.">
+  <meta name="description" content="K's Bakery, Cookie Gallery is where artisanal skills meet delicious creativity. Each cookie is handcrafted with precision and passion, showcasing the artistry of baking.">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/websitelogo.png">
+  <link rel="icon" type="image/png" href="./Pictures/websitelogo.png" sizes = "512x512">
+  <link rel="shortcut icon" href="./Pictures/websitelogo2.png" type="image/png" sizes = "512x512">
 
-  <!-- displays site properly based on user's device -->
-  
   <title>K's Bakery</title>
+  <link rel="stylesheet" href="style/testing.css">
+
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <!-- My CSS -->
-  <link rel="stylesheet" href="style/CookieGallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
+  <div class="headingsection">
+    <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
+        <nav>
+          <ul id="menulist">
+            <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
+            <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
+            <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
+            <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+            <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menuicon">
+            <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
+        </div>
+  </div>
 
-    <div class="headingsection">
-        <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
-            <nav>
-                <ul id="menulist">
-                    <li><a href="https://www.k-bakery.com/GallerySummary">Gallery</a></li>
-                    <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
-                    <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
-                    <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
-                    <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="menuicon">
-                <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
-            </div>
+  
+  <div class="content">
+    <div class="topsection">
+      <div class="topsection-h1">
+        <h1>Cookie</h1>
+        <h2>Gallery</h2>
+        <p>Each cookie is handcrafted with passion, where artisanal skills meet delicious creativity, showcasing the artistry of baking.</p>
+      </div>
+      <div class="topimage">
+        <img src = "Pictures/Cookie - Dress Cookie.jpg">
+      </div>
+  
+      <div class="topsection-p-mobile">
+        <p>It's easy to make cookies at home. Simply mix butter, sugar, eggs, and flour together, then bake them for a delicious treat. With a few simple steps, you can shape them into a variety of cute forms.</p>
+      </div>
     </div>
-    
-    <div class="content">
 
-        <div class="topdisplay">
-            <div class="description">
-                <h1>Cookie Gallery</h1>
-                <p>Cookie is very easy to make, but very tasty. Cookie is full of butter flavor, smells very good and can melt in our mouth. Worth baking cookie at home!</p>
-            </div>
-            <div class="topdisplayimage">
-                <img src ="Pictures/Outline - Dress Cookie 3.png">
-            </div>
+    <div class="row1 reveal2">
+      <div class="first-slideshow">
+        <div class="first-slideshow-pic fade">
+          <img src="Pictures/Cookie - Rectangle Cookie.jpg" class ="imageposition2">
         </div>
-
-        <div class="topdisplayformobile">
-            <img src ="Pictures/Cookie Gallery Cover.jpg">
-            <div class="message">
-                <h1>Cookie Gallery</h1>
-                <p>Cookie is very easy to make, but very tasty. Cookie is full of butter flavor, smells very good and can melt in our mouth. Worth baking cookie at home!</p>
-            </div>
+        <div class="first-slideshow-pic fade">
+          <img src="Pictures/Cookie - Flower Cookie.jpg">
         </div>
-    
-        <div class="gallerycontent reveal">
-
-            <div class="column">
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cookie Gallery - Poke Ball.jpg">
-                    <p>Poke Ball Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/PokeBallCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Apple Cookie.jpg">
-                    <p>Apple Cookie</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Cat Cookie.jpg">
-                    <p>Cat Cookie</p>
-                </div>
-            </div>
-            
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Mushroom.jpg">
-                    <p>Mushroom Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/MushroomCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cookie Gallery - Flower Cookie.jpg">
-                    <p>Flower Butter Cookie</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Heart Cookie.jpg">
-                    <p>Heart Cookie</p>
-                </div>
-            </div> 
-
-            <div class="column">
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cookie Gallery - Dress Cookie.jpg">
-                    <p>Dress Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/DressCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cookie Gallery - Jap Cookie.jpg">
-                    <p>Japanese Cookie</p>
-                </div>
-            </div>
-            
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Rectangle Cookie.jpg">
-                    <p>Almond, Matcha & Black Sesame Cookie</p>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cookie Gallery - Double color cookie.jpg">
-                    <p>Double Color Cookie</p>
-                </div>
-                
-            </div>
-
-        </div>
-
-
-        <div class="gallerycontent2 reveal">
-            <div class="column">
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cookie Gallery - Poke Ball.jpg">
-                    <p>Poke Ball Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/PokeBallCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Apple Cookie.jpg">
-                    <p>Apple Cookie</p>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cookie Gallery - Double color cookie.jpg">
-                    <p>Double Color Cookie</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Heart Cookie.jpg">
-                    <p>Heart Cookie</p>
-                </div>
-            </div>
-            
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Mushroom.jpg">
-                    <p>Mushroom Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/MushroomCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Rectangle Cookie.jpg">
-                    <p>Almond, Matcha & Black Sesame Cookie</p>
-                </div>
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cookie Gallery - Flower Cookie.jpg">
-                    <p>Flower Butter Cookie</p>
-                </div>
-            </div> 
-
-            <div class="column">
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cookie Gallery - Dress Cookie.jpg">
-                    <p>Dress Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/DressCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cookie Gallery - Jap Cookie.jpg">
-                    <p>Japanese Cookie</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Cat Cookie.jpg">
-                    <p>Cat Cookie</p>
-                </div>
-            </div>
+        <div class="first-slideshow-pic fade">
+          <img src="Pictures/Cookie - Jap Cookie.jpg">
         </div>
         
-        <div class="gallerycontent3 reveal">
-            <div class="column">
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cookie Gallery - Poke Ball.jpg">
-                    <p>Poke Ball Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/PokeBallCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Dress Cookie.jpg">
-                    <p>Dress Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/DressCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Apple Cookie.jpg">
-                    <p>Apple Cookie</p>
-                </div>
-                <div class="specialreveal reveal2">
-                    <img src="Pictures/Cookie Gallery - Flower Cookie.jpg">
-                    <p>Flower Butter Cookie</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Heart Cookie.jpg">
-                    <p>Heart Cookie</p>
-                </div>
-            </div>
-            
-            <div class="column">
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Mushroom.jpg">
-                    <p>Mushroom Cookie</p>
-                    <div class="recipeicon">
-                        <a href="https://www.k-bakery.com/MushroomCookieRecipe"><img src ="Pictures/RecipeIcon.jpg"></a>
-                    </div>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Rectangle Cookie.jpg">
-                    <p>Almond, Matcha & Black Sesame Cookie</p>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cookie Gallery - Double color cookie.jpg">
-                    <p>Double Color Cookie</p>
-                </div>
-                <div class="specialreveal reveal3">
-                    <img src="Pictures/Cookie Gallery - Jap Cookie.jpg">
-                    <p>Japanese Cookie</p>
-                </div>
-                <div class="gallerygrid">
-                    <img src="Pictures/Cookie Gallery - Cat Cookie.jpg">
-                    <p>Cat Cookie</p>
-                </div>
-            </div> 
-
+        <a class="firstprev" onclick="plusSlides(-1)">❮</a>
+        <a class="firstnext" onclick="plusSlides(1)">❯</a>
+  
+        <div class ="first-bottomdot">
+          <span class="first-dot" onclick="currentSlide(1)"></span> 
+          <span class="first-dot" onclick="currentSlide(2)"></span> 
+          <span class="first-dot" onclick="currentSlide(3)"></span>
         </div>
-            
-
-    </div>
-    
-    <div class="backbutton">
-        <a href="https://www.k-bakery.com/GallerySummary">Back &#8629</a>
+      </div>
+      <div class="topsection-p">
+        <p>It's easy to make cookies at home. Simply mix butter, sugar, eggs, and flour together, then bake them for a delicious treat. With a few simple steps, you can shape them into a variety of cute forms.</p>
+      </div>
     </div>
 
-    <div class="copyright">
-        Copyright &#169 2023 K's Bakery
+    <div class="firstmessage">
+      <p>To add variety to our cookie-making, we can try incorporating color gel into the dough. This will let us create different shades and craft adorable cartoon-themed cookies.</p>
     </div>
-        
 
-    <script>
-        var menulist = document.getElementById("menulist");
+    <div class="cartoon-background-color">
+      <div class="cartoon-image reveal">
+        <div class="image1">
+          <img src ="Pictures/Cookie - Poke Ball.jpg">
+        </div>
+        <div class="image2">
+          <img src ="Pictures/Cookie - Mushroom.jpg">
+        </div>
+        <div class="image3">
+          <img src ="Pictures/Cookie - Apple Cookie.jpg">
+        </div>
+      </div>
+    </div>
 
+    <div class="secondmessage">
+      <p>Making cookies at home is truly worth the effort. Not only is it a fun and creative activity, but the results are delicious and rewarding. Whether you're experimenting with different colors, shapes, or flavors, homemade cookies add a personal touch that everyone will love. I hope you all enjoy the process and the tasty treats that come from it!</p>
+    </div>
+
+    <div class="second-scroll-container reveal3">
+      <div class="container">
+        <img src="Pictures/Cookie - Double color cookie.jpg" class ="imageposition8">
+      </div>
+      <div class="container">
+        <img src="Pictures/Cookie - Heart Cookie.jpg">
+      </div>
+      <div class="container">
+        <img src="Pictures/Cookie - Cat Cookie.jpg">
+      </div>
+      
+    </div>
+  </div>  
+  
+  <div class="copyright">
+      Copyright &#169 2023 K's Bakery
+  </div>
+
+ 
+
+  <script>
+    //Menu
+    var menulist = document.getElementById("menulist");
+
+    menulist.style.maxHeight = "0px";
+
+    function togglemenu(){
+      if(menulist.style.maxHeight == "0px")
+      {
+        menulist.style.maxHeight = "100vh"
+      }
+      else
+      {
         menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
 
-        function togglemenu(){
-            if(menulist.style.maxHeight == "0px")
-            {
-                menulist.style.maxHeight = "100vh"
-            }
-            else
-            {
-                menulist.style.maxHeight = "0px";
-            }
-        }
-    </script>
-
-<script type = "text/javascript">
+  <script type = "text/javascript">
+    //Reveal
     window.addEventListener('scroll', reveal);
-
     function reveal (){
-        var reveals = document.querySelectorAll('.reveal');
+      var reveals = document.querySelectorAll('.reveal');
+      for(var i = 0; i < reveals.length; i++){
 
-        for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
 
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if(revealtop < windowheight - revealpoint){
-                reveals[i].classList.add('active');
-            }
-
-            else{
-                reveals[i].classList.remove('active');
-            }
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
         }
-    }  
-    </script>
 
-    <script type = "text/javascript">
+        else{
+            reveals[i].classList.remove('active');
+        }
+      }
+  }  
+  </script>
+
+  <script type = "text/javascript">
+    //Reveal2
     window.addEventListener('scroll', reveal2);
-
     function reveal2 (){
-        var reveals = document.querySelectorAll('.reveal2');
+      var reveals = document.querySelectorAll('.reveal2');
+      for(var i = 0; i < reveals.length; i++){
 
-        for(var i = 0; i < reveals.length; i++){
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
 
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
+      if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+      }
+      else{
+          reveals[i].classList.remove('active');
+      }
+    }
+  }  
+  </script>
 
-            if(revealtop < windowheight - revealpoint){
-                reveals[i].classList.add('active');
-            }
-
-            else{
-                reveals[i].classList.remove('active');
-            }
-        }
-    }  
-    </script>
-
-    <script type = "text/javascript">
+  <script type = "text/javascript">
+    //Reveal3
     window.addEventListener('scroll', reveal3);
-
     function reveal3 (){
-        var reveals = document.querySelectorAll('.reveal3');
+      var reveals = document.querySelectorAll('.reveal3');
+      for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
 
-        for(var i = 0; i < reveals.length; i++){
-
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
-
-            if(revealtop < windowheight - revealpoint){
-                reveals[i].classList.add('active');
-            }
-
-            else{
-                reveals[i].classList.remove('active');
-            }
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
         }
-    }  
-    </script>
+
+        else{
+            reveals[i].classList.remove('active');
+        }
+      }
+  }  
+  </script>
+
+  <script>
+    //Fourth Section
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("first-slideshow-pic");
+      let firstdots = document.getElementsByClassName("first-dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < firstdots.length; i++) {
+        firstdots[i].className = firstdots[i].className.replace("first-active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      firstdots[slideIndex-1].className += " first-active";
+    }
+  </script>
+
+  
 </body>
-
 </html>
-
-
