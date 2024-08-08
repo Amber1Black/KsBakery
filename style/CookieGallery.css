@@ -131,11 +131,12 @@ nav ul li a:hover::after{
   grid-template-columns: 55vw 45vw;
   justify-content: center;
   align-items: center;
+  padding: 70px 0;
 }
 
 .topsection-h1{
-  display: grid;
-  margin: 0 0 5% 10%;
+  margin: auto 0 auto 10%;
+  align-items: center;
 }
 
 .topsection-h1 h1, .topsection-h1 h2{
@@ -159,7 +160,7 @@ nav ul li a:hover::after{
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 25px;
-  margin: 40px 3% 20px 0;
+  margin: 40px 3% 0 0;
   text-align: center;
   line-height: 1.5em;
 }
@@ -167,7 +168,7 @@ nav ul li a:hover::after{
 .topimage{
   display: flex;
   justify-content: center;
-  padding: 50px 6% 50px 2%;
+  padding: 0px 6% 0px 2%;
 }
 
 .topimage img{
@@ -182,7 +183,7 @@ nav ul li a:hover::after{
 
 .row1{
   display: flex;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 /*First Slide Show*/
@@ -497,7 +498,7 @@ nav ul li a:hover::after{
 
   .topsection-h1 p{
     font-size: 20px;
-    margin: 30px 0 20px 2%;
+    margin: 30px 0 0 2%;
   }
 
   .topimage img{
@@ -505,6 +506,10 @@ nav ul li a:hover::after{
   }
 
   /*Row 1*/
+
+  .row1{
+    margin-top: 0px;
+  }
 
   .first-slideshow{
     width: 52vw;
@@ -560,6 +565,7 @@ nav ul li a:hover::after{
 
   .topsection{
     grid-template-columns: 60vw 45vw;
+    padding: 50px 0;
   }
 
   .topsection-h1{
@@ -576,7 +582,7 @@ nav ul li a:hover::after{
 
   .topsection-h1 p{
     font-size: 18px;
-    margin: 20px 0 20px 3%;
+    margin: 20px 0 0 3%;
   }
 
   .topimage{
@@ -611,7 +617,7 @@ nav ul li a:hover::after{
     letter-spacing: 2px;
     font-weight: 300;
     line-height: 1.8em;
-    width: 700px;
+    width: 550px;
     margin: 120px auto;
   }
 
@@ -632,7 +638,7 @@ nav ul li a:hover::after{
   }
   
   .image1 img{
-    width: 93%;
+    width: 98%;
     aspect-ratio: 1/1.2;
     object-fit: cover;
   }
@@ -643,7 +649,7 @@ nav ul li a:hover::after{
   }
   
   .image2 img{
-    width: 93%;
+    width: 98%;
     aspect-ratio: 1/1.2;
     object-fit: cover;
   }
@@ -1275,6 +1281,13 @@ nav ul li a:hover::after{
     margin: 80px auto;
   }
 
+  /*Second Slideshow*/
+  
+  .container img{
+    width: 65vw;
+    aspect-ratio: 1/1.2;
+  }
+
   
 }
 
@@ -1392,6 +1405,13 @@ nav ul li a:hover::after{
     line-height: 1.8em;
     width: 330px;
     margin: 80px auto;
+  }
+
+  /*Second Slideshow*/
+  
+  .container img{
+    width: 65vw;
+    aspect-ratio: 1/1.3;
   }
  
 }
