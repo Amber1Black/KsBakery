@@ -360,6 +360,7 @@ nav ul li a:hover::after{
 
   .topsectiondescription p{
     font-size: 18px;
+    line-height: 1.6em;
   }
 
   /*Gallery Quote*/
@@ -394,12 +395,12 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-p{
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .topsectiondescription p{
     font-size: 17px;
-    line-height: 1.7em;
+    line-height: 1.6em;
   }
 
   .image0{
@@ -479,6 +480,7 @@ nav ul li a:hover::after{
 
   .topsectiondescription p{
     font-size: 16px;
+    line-height: 1.5em;
   }
 
   /*Gallery Quote*/
