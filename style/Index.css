@@ -1258,19 +1258,20 @@ nav ul li a:hover::after{
     letter-spacing: 2px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    line-height: 1.4em;
     text-align: center;
   }
 
   .firstpartmobiledescription h3{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.5em;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     display: block;
     margin: 20px auto 25px auto;
-    width: 450px;
+    width: 480px;
     overflow: hidden;
   }
 
@@ -1418,12 +1419,12 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h2{
-    font-size: 4.3vw;
+    font-size: 25px;
   }
 
   .firstpartmobiledescription h3{
-    font-size: 16px;
-    width: 390px;
+    font-size: 17px;
+    width: 420px;
     margin-bottom: 10px;
   }
 
@@ -1539,15 +1540,14 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h2{
-    font-size: 20px;
+    font-size: 23px;
     letter-spacing: 1px;
   }
 
   .firstpartmobiledescription h3{
-    font-size: 15px;
-    width: 350px;
+    font-size: 16px;
+    width: 400px;
     margin: 15px auto 0px auto;
-    letter-spacing: 1px;
   }  
 
   .firstpartimagerow{
@@ -1651,6 +1651,20 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:450px){
 
+  /*First Section*/
+
+  .firstpartmobiledescription h2{
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .firstpartmobiledescription h3{
+    font-size: 15px;
+    width: 380px;
+    margin: 15px auto 0px auto;
+
+  }  
+
   /*Second Section*/
 
   .secondpartdescription h1{
@@ -1723,12 +1737,13 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h2{
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .firstpartmobiledescription h3{
     font-size: 14px;
     margin: 15px auto 0px auto;
+    width: 350px;
   } 
 
   /*Third Section*/
