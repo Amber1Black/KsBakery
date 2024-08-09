@@ -236,6 +236,10 @@ nav ul li a:hover::after{
   color: #ffffff;
 }
 
+.secondpartdescription a{
+  text-decoration: none;
+}
+
 .secondpartdescription p{
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -1258,15 +1262,15 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h3{
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
     line-height: 1.5em;
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
     display: block;
     margin: 20px auto 25px auto;
-    width: 400px;
+    width: 450px;
     overflow: hidden;
   }
 
@@ -1418,10 +1422,9 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h3{
-    font-size: 15px;
+    font-size: 16px;
     width: 390px;
     margin-bottom: 10px;
-    font-family: unset;
   }
 
   .firstpartimagerow{
@@ -1541,11 +1544,10 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h3{
-    font-size: 14px;
-    font-weight: 450;
-    width: 320px;
+    font-size: 15px;
+    width: 350px;
     margin: 15px auto 0px auto;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
   }  
 
   .firstpartimagerow{
@@ -1725,10 +1727,8 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h3{
-    font-size: 13px;
-    width: 300px;
-    line-height: 1.4em;
-    margin: 10px auto 0px auto;
+    font-size: 14px;
+    margin: 15px auto 0px auto;
   } 
 
   /*Third Section*/
