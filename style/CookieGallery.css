@@ -1360,14 +1360,18 @@ nav ul li a:hover::after{
 
   /*Top Section*/
 
+  .topsection{
+    padding: 0;
+  }
+
   .topsection-p{
     margin: 10px auto 70px auto;
   }
 
   .topsection p{
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
-    width: 280px;
+    width: 290px;
   }
 
   .topimage{
