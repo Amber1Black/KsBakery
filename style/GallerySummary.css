@@ -719,9 +719,9 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-p2 p{
-    width: 520px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    width: 500px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     letter-spacing: 2px;
     line-height: 1.7em;
@@ -858,11 +858,11 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-h1 h1{
-    margin: 10px 0 0 9%;
+    margin: 20px 0 0 9%;
   }
 
   .topsectiondescription-h1 h2{
-    margin: 0 0 10px 26%;
+    margin: 0 0 20px 26%;
   }
 
   .topimage img{
@@ -873,7 +873,8 @@ nav ul li a:hover::after{
 
   .topsectiondescription-p2 p{
     width: 430px;
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.8em;
     margin: 10px auto 70px auto;
   }
 
@@ -920,11 +921,11 @@ nav ul li a:hover::after{
   /*Top Section*/
 
   .topsectiondescription-h1 h1{
-    margin: 10px 0 0 8%;
+    margin: 20px 0 0 8%;
   }
 
   .topsectiondescription-h1 h2{
-    margin: 0 0 10px 25%;
+    margin: 0 0 20px 25%;
   }
 
   .topimage img{
@@ -934,7 +935,7 @@ nav ul li a:hover::after{
 
   .topsectiondescription-p2 p{
     width: 370px;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
     line-height: 1.8em;
     margin: 0 auto 70px auto;
@@ -989,7 +990,8 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-p2 p{
-    width: 340px;
+    width: 300px;
+    font-size: 14px;
     line-height: 1.6em;
     margin: 0px auto 60px auto;
   }
@@ -1008,14 +1010,4 @@ nav ul li a:hover::after{
     letter-spacing: 1px;
   }
  
-}
-
-
-@media only screen and (max-width:400px){
-
-  .topsectiondescription-p2 p{
-    width: 300px;
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
 }
