@@ -126,7 +126,7 @@ nav ul li a:hover::after{
 }
 
 .topsection{
-  background-color: rgb(247, 237, 226);
+  background-color:;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -148,11 +148,11 @@ nav ul li a:hover::after{
 }
 
 .topsectiondescription-p p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 2px;
-  line-height: 2em;
+  line-height: 1.8em;
   width: 40vw;
 }
 
@@ -161,7 +161,7 @@ nav ul li a:hover::after{
 }
 
 .topsectiondescription-h1{
-  margin: 0 0px 80px 0;
+  margin: 0 0px 60px 0;
 }
 
 .topsectiondescription-h1 h1,
@@ -257,9 +257,9 @@ nav ul li a:hover::after{
 }
 
 .intro p, .intro a{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.6em;
   letter-spacing: 1px;
 }
@@ -280,10 +280,10 @@ nav ul li a:hover::after{
 }
 
 .galleryquote p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: 22px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  letter-spacing: 1px;
   line-height: 1.6em;
 }
 
@@ -317,7 +317,7 @@ nav ul li a:hover::after{
   /*Gallery Quote*/
 
   .galleryquote p{
-    font-size: 19px;
+    font-size: 17px;
   }
 
   /*Grid*/
@@ -332,7 +332,7 @@ nav ul li a:hover::after{
   }
 
   .intro p, .intro a{
-    font-size: 18px;
+    font-size: 17px;
   }
 
   
@@ -355,12 +355,12 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-p{
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .topsectiondescription p{
     font-size: 18px;
-    line-height: 1.6em;
+    line-height: 1.7em;
   }
 
   /*Gallery Quote*/
@@ -370,13 +370,13 @@ nav ul li a:hover::after{
   }
 
   .galleryquote p{
-    font-size: 17px;
+    font-size: 16px;
   }
 
   /*Grid*/
 
   .intro p, .intro a{
-    font-size: 17px;
+    font-size: 16px;
   }
   
 }
@@ -395,12 +395,11 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-p{
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .topsectiondescription p{
     font-size: 17px;
-    line-height: 1.6em;
   }
 
   .image0{
@@ -448,7 +447,10 @@ nav ul li a:hover::after{
     font-size: 28px;
     letter-spacing: 5px;
   }
+
+  
 }
+
 
 @media only screen and (max-width:1100px){
 
@@ -469,6 +471,8 @@ nav ul li a:hover::after{
   .imagerow1{
     margin-left: 8%;
   }
+
+  
 
   
 }
@@ -524,7 +528,7 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-p{
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .topsectiondescription-p p{
@@ -561,6 +565,10 @@ nav ul li a:hover::after{
   .intro h2{
     font-size: 25px;
     letter-spacing: 5px;
+  }
+
+  .intro p, .intro a{
+    font-size: 15px;
   }
   
 }
@@ -655,7 +663,7 @@ nav ul li a:hover::after{
 
   .topsection{
     display: grid;
-    background-color: rgb(247, 237, 226);
+    background-color: rgb(255, 249, 242);
     position: initial;
     height: unset;
   }
@@ -677,15 +685,15 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-h1 h1{
-    margin: 15px 0 0 10%;
+    margin: 20px 0 0 10%;
   }
 
   .topsectiondescription-h1 h2{
-    margin: 0 0 15px 30%;
+    margin: 0 0 20px 30%;
   }
 
   .topimage{
-    background-color: #142c35;
+    background-color: rgb(255, 249, 242);
     text-align: center;
     position: initial;
   }
@@ -693,12 +701,12 @@ nav ul li a:hover::after{
   .topimage img{
     width: 60vw;
     aspect-ratio: 1/1;
-    margin: 50px auto 40px auto;
+    margin: 20px auto 40px auto;
     border-radius: 20% 0 20% 0;
     border-style: solid;
     border-width: 4px;
     border-color: #ffffff;
-    box-shadow: rgb(61, 60, 60) 0px 5px 30px;
+    box-shadow: rgb(61, 60, 60) 0px 5px 20px;
   }
 
   .image0{
@@ -715,19 +723,18 @@ nav ul li a:hover::after{
 
   .topsectiondescription-p2{
     display: flex;
-    background-color: #142c35;
+    background-color: rgb(255, 249, 242);
   }
 
   .topsectiondescription-p2 p{
-    width: 500px;
+    width: 450px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.7em;
-    margin: 0px auto 80px auto;
+    margin: 10px auto 80px auto;
     text-align: center;
-    color: #ffffff;
   }
 
   /*Gallery Quote*/
@@ -736,6 +743,10 @@ nav ul li a:hover::after{
     width: 95%;
     padding: 120px 10% 100px 10%;
     margin: 10px 0 10px 0;
+  }
+
+  .galleryquote p{
+    font-size: 17px;
   }
 
   /*Grid*/
@@ -767,7 +778,6 @@ nav ul li a:hover::after{
 
   .intro p, .intro a{
     font-size: 17px;
-    letter-spacing: 2px;
   }
 
 }
@@ -858,21 +868,22 @@ nav ul li a:hover::after{
   }
 
   .topsectiondescription-h1 h1{
-    margin: 20px 0 0 9%;
+    margin: 15px 0 0 12%;
   }
 
   .topsectiondescription-h1 h2{
-    margin: 0 0 20px 26%;
+    margin: 0 0 15px 28%;
   }
 
   .topimage img{
     width: 70vw;
-    margin: 50px auto 40px auto;
+    margin: 20px auto 40px auto;
     border-width: 4px;
   }
 
   .topsectiondescription-p2 p{
-    width: 430px;
+    width: 410px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.8em;
     margin: 10px auto 70px auto;
@@ -883,6 +894,7 @@ nav ul li a:hover::after{
   .galleryquote p{
     font-size: 16px;
     line-height: 1.5em;
+    font-weight: 400;
   }
 
   /*Grid*/
@@ -911,7 +923,7 @@ nav ul li a:hover::after{
   
   .intro p, .intro a{
     font-size: 16px;
-    line-height: 1.3em;
+    font-weight: 400;
   }
 }
 
@@ -920,23 +932,14 @@ nav ul li a:hover::after{
 
   /*Top Section*/
 
-  .topsectiondescription-h1 h1{
-    margin: 20px 0 0 8%;
-  }
-
-  .topsectiondescription-h1 h2{
-    margin: 0 0 20px 25%;
-  }
-
   .topimage img{
     width: 68vw;
-    margin: 50px auto 40px auto;
+    margin: 10px auto 40px auto;
   }
 
   .topsectiondescription-p2 p{
     width: 370px;
     font-size: 15px;
-    letter-spacing: 1px;
     line-height: 1.8em;
     margin: 0 auto 70px auto;
   }
@@ -949,6 +952,7 @@ nav ul li a:hover::after{
   }
 
   .galleryquote p{
+    font-size: 15px;
     line-height: 1.4em;
   }
 
@@ -979,6 +983,10 @@ nav ul li a:hover::after{
     margin: 10px 0 8px 0;
   }
 
+  .intro p, .intro a{
+    font-size: 15px;
+  }
+
 }
 
 
@@ -986,14 +994,14 @@ nav ul li a:hover::after{
 
   .topimage img{
     width: 68vw;
-    margin: 40px auto 30px auto;
+    margin: 10px auto 30px auto;
   }
 
   .topsectiondescription-p2 p{
     width: 300px;
     font-size: 14px;
     line-height: 1.6em;
-    margin: 0px auto 60px auto;
+    margin: 10px auto 60px auto;
   }
 
   .galleryquote{
@@ -1001,13 +1009,12 @@ nav ul li a:hover::after{
   }
 
   .galleryquote p{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.3em;
   }
 
   .intro p, .intro a{
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-size: 14px;
   }
  
 }
