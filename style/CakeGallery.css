@@ -191,22 +191,27 @@ h3{
   font-weight: 300;
   font-size: 40px;
   letter-spacing: 3px;
-  margin-bottom: 10px;
 }
 
 p{
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 2px;
-  font-size: 22px;
+  font-size: 19px;
   line-height: 1.5em;
+  margin-top: 15px;
 }
 
 
 /*Whole Cake*/
 
 .wholecake-description{
-  margin: 100px 25% 50px 10%;
+  margin: 100px 10% 50px 10%;
+  color: #ffffff;
+}
+
+.wholecake-description p{
+  width: 1050px;
 }
 
 .wholecake-slider{
@@ -214,6 +219,7 @@ p{
   position: relative;
   padding: 50px 0 100px 0;
   width: 100%;
+  background-color: #142c35;
 }
 
 /* Hide the images by default */
@@ -232,8 +238,9 @@ p{
   width: 31vw;
   aspect-ratio: 2/2.2;
   object-fit: cover;
+  padding: 20px;
   border-style: solid;
-  border-width: 20px;
+  border-width: 2px;
   border-color:#ffffff;
 }
 
@@ -266,8 +273,8 @@ p{
   width: 55px;
   height: 55px;
   border-radius: 100%;
-  background-color: #247174fa;
-  color: #ffffff;
+  background-color: #fffffffa;
+  color: #000000;
   font-size: 30px;
   font-weight: 400;
   font-family: monospace;
@@ -290,10 +297,6 @@ p{
 
 
 /*Cake Roll*/
-
-.cakeroll-background-color{
-  background-color: rgb(255, 220, 205);
-}
 
 .cakeroll-description{
   text-align: center;
@@ -366,7 +369,7 @@ p{
   line-height: 1.7em;
   color: #ffffff;
   text-align: center;
-  width: 880px;
+  width: 830px;
   margin: 0 auto;
 }
 
@@ -515,16 +518,78 @@ p{
   display: grid;
   justify-content: center;
   align-items: center;
-  margin: 20px auto 20px auto;
-}
-
-.cake-p p{
-  font-size: 25px;
-  width: 470px;
-  line-height: 1.8em;
+  margin: auto;
   text-align: center;
 }
 
+.cake-p p{
+  width: 450px;
+  line-height: 2em;
+}
+
+/*Explore other gallery*/
+
+.othergallerytoexplore{
+  margin: 100px 0 0 0;
+}
+
+.othergallerytoexplore h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-left: 6%;
+}
+
+.othergallery-scroll-container{
+  margin: 20px 6% 100px 6%;
+  gap: 40px;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.othergallery-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.container{
+  white-space: wrap;
+}
+
+.container img{
+  width: 23vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.othergallerytoexploreimage2{
+  object-position: 50% 65%;
+}
+
+.othergallery-sliderdescription h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 20px 15px 10px 15px;
+}
+
+.othergallery-sliderdescription a{
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.othergallery-sliderdescription p{
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  margin: 10px 15px;
+}
 
 /*copyright*/
 
@@ -555,22 +620,23 @@ p{
 
   .topsection-h1 p{
     font-size: 22px;
-    width: 730px;
+    width: 720px;
   }
 
   /*Common Parameter*/
 
   h3{
-    font-size: 38px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+    font-size: 35px;
+  }
+  
+  p{
+    font-size: 18px;
   }
 
-  p{
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 20px;
-    line-height: 1.5em;
+  /*Whole Cake*/
+
+  .wholecake-description p{
+    width: 1000px;
   }
 
   /*Cake Fact*/
@@ -589,9 +655,19 @@ p{
   /*Cake*/
 
   .cake-p p{
-    font-size: 22px;
-    width: 470px;
+    width: 380px;
     line-height: 1.8em;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 23px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 16px;
   }
 
 }
@@ -626,22 +702,21 @@ p{
   /*Common Parameter*/
 
   h3{
-    font-size: 35px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+    font-size: 33px;
   }
-
+  
   p{
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 19px;
-    line-height: 1.5em;
+    font-size: 17px;
   }
 
   /*Whole Cake*/
 
   .wholecake-description{
     margin: 70px 20% 50px 7%;
+  }
+
+  .wholecake-description p{
+    width: 950px;
   }
 
   .wholecake-prev,
@@ -676,9 +751,30 @@ p{
   /*Cake*/
 
   .cake-p p{
+    width: 380px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 30px;
+  }
+
+  .container img{
+    width: 26vw;
+  }
+
+  .othergallerytoexplore h3{
     font-size: 20px;
-    width: 420px;
-    line-height: 1.8em;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 21px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 15px;
   }
 
 }
@@ -709,14 +805,10 @@ p{
 
   h3{
     font-size: 30px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
   }
-
+  
   p{
-    letter-spacing: 1px;
-    font-size: 18px;
-    line-height: 1.5em;
+    font-size: 16px;
   }
 
   /*Whole Cake*/
@@ -726,7 +818,7 @@ p{
   }
 
   .wholecake-description p{
-    width: 800px;
+    width: 900px;
   }
 
   .wholecake-picturesdisplay{
@@ -760,7 +852,7 @@ p{
   /*Cake Roll*/
 
   .cakeroll-description{
-    padding-top: 20px;
+    padding-top: 70px;
   }
   
   .cakeroll-image{
@@ -848,9 +940,32 @@ p{
   }
 
   .cake-p p{
-    font-size: 19px;
-    width: 380px;
-    line-height: 1.8em;
+    width: 350px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 25px;
+    margin: 20px 4% 100px 4%;
+  }
+
+  .othergallerytoexplore h3{
+    font-size: 20px;
+    margin-left: 4%;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 18px;
+  }
+
+  .othergallery-sliderdescription h2{
+    margin: 12px 15px 3px 15px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
   }
 
   
@@ -879,24 +994,20 @@ p{
 
   h3{
     font-size: 28px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
   }
-
+  
   p{
-    letter-spacing: 1px;
-    font-size: 17px;
-    line-height: 1.5em;
+    font-size: 15px;
   }
 
   /*Whole Cake*/
 
   .wholecake-description{
-    margin: 30px 7% 50px 6%;
+    margin: 30px 8% 50px 8%;
   }
 
   .wholecake-description p{
-    width: 760px;
+    width: unset;
   }
 
   .wholecake-picturesdisplay{
@@ -906,7 +1017,6 @@ p{
   .pic2 img{
     width: 40vw;
     aspect-ratio: 1/1.2;
-    border-width: 15px;
   }
   
   .pic1 img, .pic3 img{
@@ -914,18 +1024,25 @@ p{
     aspect-ratio: 1/1.3;
   }
 
-  .wholecake-prev{
-    left: 28%;
+  .wholecake-prev,
+  .wholecake-next{
+    top: 55%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    padding: 10px 0;
+    left: 29%;
   }
 
   .wholecake-next{
-    right: 28%;
+    left: unset;
+    right: 29%;
   }
 
   /*Cake Roll*/
 
   .cakeroll-description{
-    padding-top: 20px;
+    padding-top: 70px;
   }
   
   .cakeroll-image{
@@ -1040,9 +1157,37 @@ p{
   }
 
   .cake-p p{
-    font-size: 18px;
-    width: 350px;
-    line-height: 1.8em;
+    width: 330px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 25px;
+    margin: 20px 5% 100px 5%;
+  }
+
+  .othergallerytoexplore h3{
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  .container img{
+    width: 31vw;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 17px;
+  }
+
+  .othergallery-sliderdescription h2{
+    margin: 12px 10px 0px 10px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+    margin: 10px 10px 0px 10px;
   }
 
   
@@ -1099,14 +1244,10 @@ p{
 
   h3{
     font-size: 25px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
   }
-
+  
   p{
-    letter-spacing: 1px;
-    font-size: 16px;
-    line-height: 1.5em;
+    font-size: 14px;
   }
 
   /*Whole Cake*/
@@ -1115,17 +1256,12 @@ p{
     margin: 30px 7% 50px 7%;
   }
 
-  .wholecake-description p{
-    width: unset;
-  }
-
   .wholecake-picturesdisplay{
     gap: 15px;
   }
   
   .pic2 img{
     width: 50vw;
-    border-width: 14px;
   }
   
   .pic1 img, .pic3 img{
@@ -1143,10 +1279,11 @@ p{
 
   /*Cake Roll*/
 
-  .cakeroll-description{
-    padding-top: 20px;
+  .cakeroll-description p{
+    width: 440px;
+    margin: 15px auto 0 auto;
   }
-  
+
   .cakeroll-image{
     padding-bottom: 30px;
   }
@@ -1195,7 +1332,7 @@ p{
 
   .cakefact p{
     line-height: 1.7em;
-    width: 540px;
+    width: 520px;
   }
 
   /*Cupcake*/
@@ -1256,9 +1393,17 @@ p{
   }
 
   .cake-p p{
-    font-size: 16px;
-    width: 270px;
-    line-height: 1.7em;
+    width: 290px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 20px;
+  }
+
+  .container img{
+    width: 38vw;
   }
 }
 
@@ -1288,35 +1433,37 @@ p{
 
   .topsection-h1{
     margin: 0;
+    z-index: 5;
   }
 
   .topsection-h1 h1, .topsection-h1 h2{
     font-family: 'Lora', sans-serif;
-    font-size: 11vw;
+    font-size: 13vw;
     font-weight: 400;
     letter-spacing: 6px;
     color: #142c35;
   }
 
   .topsection-h1 h1{
-    margin: 30px 0px 0px 20%;
+    margin: 0px 0px 0px 7%;
   }
 
   .topsection-h1 h2{
-    margin: 0px 0px 10px 39%;
+    margin: 0px 0px -130px 20%;
+    text-shadow: 1px 1px 1px white;
   }
 
   .topimage{
     display: flex;
-    justify-content: center;
-    padding: 20px 0 20px 0;
+    justify-content: right;
+    padding: 20px 0 50px 0;
   }
 
   .topimage img{
-    width: 70%;
-    aspect-ratio: 1/1;
+    width: 85%;
+    aspect-ratio: 1/1.1;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 0;
     box-shadow: 2px 2px 5px grey;
   }
 
@@ -1327,8 +1474,8 @@ p{
 
   .topsection-p-mobile{
     display: grid;
-    justify-content: center;
-    margin: 30px auto 100px auto;
+    justify-content: right;
+    margin: 30px 8% 0px 10%;
   }
 
   .topsection-p-mobile p{
@@ -1336,35 +1483,24 @@ p{
     font-size: 17px;
     letter-spacing: 1px;
     font-weight: 300;
-    line-height: 1.8em;
-    text-align: center;
+    line-height: 2em;
+    text-align: right;
     color: #142c35;
-    width: 410px;
+    width: 385px;
   }
 
   /*Common Parameter*/
 
   h3{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+    font-size: 30px;
   }
-
+  
   p{
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 1px;
-    font-weight: 400;
     font-size: 15px;
-    line-height: 1.5em;
+    line-height: 1.8em;
   }
 
   /*Whole Cake*/
-
-  .wholecake-slider{
-    background-color: rgb(255, 220, 205);
-  }
 
   .wholecake-description{
     margin: 30px 8% 50px 8%;
@@ -1373,7 +1509,6 @@ p{
   .pic2 img{
     width: 55vw;
     aspect-ratio: 1/1.2;
-    border-width: 14px;
   }
   
   .pic1 img, .pic3 img{
@@ -1391,13 +1526,8 @@ p{
 
   /*Cake Roll*/
 
-  .cakeroll-description{
-    padding-top: 0px;
-  }
-
   .cakeroll-description p{
-    width: 430px;
-    margin: 20px auto;
+    width: 470px;
   }
   
   .cakeroll-image{
@@ -1454,7 +1584,7 @@ p{
 
   .cakefact p{
     line-height: 1.7em;
-    width: 410px;
+    width: 430px;
   }
 
   /*Cupcake*/
@@ -1515,9 +1645,9 @@ p{
   }
 
   .cake-p-mobile p{
-    width: 450px;
+    width: 460px;
     line-height: 1.7em;
-    margin: 0 auto 30px auto;
+    margin: 15px auto 30px auto;
   }
 
   .cake-slideshow{
@@ -1537,6 +1667,30 @@ p{
     padding: 9px;
     font-weight: bold;
     font-size: 15px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 20px;
+    margin: 10px 5% 100px 5%;
+  }
+
+  .othergallerytoexplore{
+    margin: 30px 0 0 0;
+  }
+
+  .container img{
+    width: 40vw;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 20px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
   }
 
   
@@ -1621,10 +1775,6 @@ p{
 
   /*Top Section*/
 
-  .topsection-p-mobile{
-    margin: 30px auto 80px auto;
-  }
-
   .topsection-p-mobile p{
     font-size: 16px;
     font-weight: 400;
@@ -1632,19 +1782,20 @@ p{
     width: 390px;
   }
 
+  .topsection-h1 h2{
+    margin: 0px 0px -110px 20%;
+  }
+
   /*Common Parameter*/
 
   h3{
-    font-size: 28px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+    font-size: 30px;
   }
 
   p{
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 1px;
     font-size: 14px;
-    line-height: 1.5em;
+    font-weight: 400;
+    line-height: 1.8em;
   }
 
   /*Whole Cake*/
@@ -1660,7 +1811,6 @@ p{
   .pic2 img{
     width: 60vw;
     aspect-ratio: 1/1.2;
-    border-width: 12px;
   }
   
   .pic1 img, .pic3 img{
@@ -1689,7 +1839,7 @@ p{
   /*Cake Roll*/
 
   .cakeroll-description p{
-    width: 400px;
+    width: 440px;
     margin: 10px auto;
   }
   
@@ -1737,7 +1887,7 @@ p{
 
   .cakefact p{
     line-height: 1.7em;
-    width: 380px;
+    width: 410px;
   }
 
   /*Cupcake*/
@@ -1785,9 +1935,9 @@ p{
   /*Cake*/
 
   .cake-p-mobile p{
-    width: 420px;
+    width: 380px;
     line-height: 1.6em;
-    margin: 0 auto 30px auto;
+    margin: 15px auto;
   }
 
   .cake-slideshow{
@@ -1809,7 +1959,24 @@ p{
     font-size: 15px;
   }
 
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 18px;
+  }
+
+  .container img{
+    width: 50vw;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 20px;
+  }
   
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+  }
 }
 
 
@@ -1817,16 +1984,8 @@ p{
 
   /*Top Section*/
 
-  .topsection-h1 h1{
-    margin: 20px 0px 0px 20%;
-  }
-
-  .topsection-h1 h2{
-    margin: -5px 0px 5px 33%;
-  }
-
   .topsection-p-mobile{
-    margin: 30px auto 60px auto;
+    margin: 10px 5% 0 0;
   }
 
   .topsection-p-mobile p{
@@ -1836,12 +1995,25 @@ p{
     width: 300px;
   }
 
-  .topimage{
-    padding: 10px 0 10px 0;
+  .topsection-h1 h2{
+    margin: -10px 0px -60px 20%;
   }
 
   .topimage img{
-    width: 75%;
+    width: 85%;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 30px;
+  }
+  
+  p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7em;
   }
 
   /*Whole Cake*/
@@ -1853,7 +2025,6 @@ p{
   .pic2 img{
     width: 70vw;
     aspect-ratio: 1/1.2;
-    border-width: 10px;
   }
   
   .pic1 img, .pic3 img{
@@ -1870,6 +2041,10 @@ p{
   }
 
   /*Cake Roll*/
+
+  .cakeroll-description p{
+    width: 400px;
+  }
 
   .image1{
     rotate: -2deg;
@@ -1915,7 +2090,7 @@ p{
 
   .cakefact p{
     line-height: 1.7em;
-    width: 320px;
+    width: 350px;
   }
 
   /*Cupcake*/
@@ -1958,9 +2133,8 @@ p{
   /*Cake*/
 
   .cake-p-mobile p{
-    width: 350px;
+    width: 360px;
     line-height: 1.6em;
-    margin: 0 auto 30px auto;
   }
 
   .cake-slideshow{
@@ -1972,6 +2146,32 @@ p{
     width: 71vw;
     aspect-ratio: 1/1.2;
   }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore{
+    margin: 0 0 0 0;
+  }
+
+  .othergallerytoexplore h3{
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .container img{
+    width: 63vw;
+  }
+
+  .othergallery-sliderdescription h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 10px 10px 5px 10px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 13px;
+    margin: 0 10px;
+  }
 } 
 
 
@@ -1979,16 +2179,13 @@ p{
 
   /*Top Section*/
 
-  .topsection-h1 h1{
-    margin: 10px 0px 0px 20%;
-  }
-
   .topsection-h1 h2{
-    margin: 0px 0px 5px 33%;
+    margin: -10px 0px -50px 20%;
   }
 
-  .topimage{
-    padding: 10px 0 0px 0;
+  .topimage img{
+    width: 90%;
+    aspect-ratio: 1/1.2;
   }
 
   .topsection-p-mobile p{
@@ -2000,14 +2197,12 @@ p{
   /*Common Parameter*/
 
   h3{
-    font-size: 27px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    font-size: 25px;
   }
-
+  
   p{
     font-size: 13px;
-    line-height: 1.5em;
+    line-height: 1.4em;
   }
 
   /*Whole Cake*/
@@ -2023,7 +2218,6 @@ p{
   .pic2 img{
     width: 75vw;
     aspect-ratio: 1/1.2;
-    border-width: 10px;
   }
   
   .pic1 img, .pic3 img{
@@ -2043,12 +2237,11 @@ p{
 
   .cakeroll-description p{
     width: 350px;
-    margin: 0px auto;
   }
   
   .image1{
     rotate: -2deg;
-    margin: 40px 10% 0 0;
+    margin: 20px 10% 0 0;
   }
   
   .image1 img{
@@ -2090,7 +2283,7 @@ p{
 
   .cakefact p{
     line-height: 1.7em;
-    width: 290px;
+    width: 330px;
   }
 
   /*Cupcake*/
@@ -2133,9 +2326,8 @@ p{
   /*Cake*/
 
   .cake-p-mobile p{
-    width: 320px;
+    width: 340px;
     line-height: 1.6em;
-    margin: 0 auto 30px auto;
   }
 
   .cake-slideshow{
