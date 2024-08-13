@@ -132,27 +132,42 @@ nav ul li a:hover::after{
   justify-content: center;
   align-items: center;
   padding: 70px 0;
+  background: linear-gradient(
+  to right,
+  rgb(134, 179, 176) 0%,
+  rgb(163, 207, 204) 15%,
+  rgb(255, 236, 222) 15%,
+  rgb(255, 226, 212) 100%
+  );
+}
+
+.topsectiondot{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: rgb(255, 209, 193);
+  margin: 0 0 -50px -30px;
 }
 
 .topsection-h1{
-  margin: auto 0 auto 10%;
+  margin: auto 0 auto 32%;
   align-items: center;
 }
 
 .topsection-h1 h1, .topsection-h1 h2{
   font-family: 'Lora', sans-serif;
-  font-size: 9vw;
+  font-size: 8vw;
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   color: #142c35;
 }
 
 .topsection-h1 h1{
-  margin: 0px 0px 0px 8%;
+  margin: -150px 0px 0px 5%;
 }
 
 .topsection-h1 h2{
-  margin: 0px 0px 0px 25%;
+  margin: 0px 0px 0px 18%;
 }
 
 .topsection-mobile{
@@ -160,13 +175,13 @@ nav ul li a:hover::after{
 }
 
 .topsection-h1 p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 25px;
   margin: 40px auto 0 auto;
   text-align: center;
-  width: 820px;
+  width: 730px;
   line-height: 1.8em;
 }
 
@@ -504,21 +519,30 @@ p,
 
   /*Top Section*/
 
+  .topsectiondot{
+    width: 200px;
+    height: 200px;
+    margin: -30px 0 -50px -30px;
+  }
+  
   .topsection-h1{
-    margin: auto 0 auto 8%;
+    margin: auto 0 auto 32%;
+    align-items: center;
   }
-
+  
   .topsection-h1 h1{
-    margin: 0px 0px 0px 10%;
+    margin: -130px 0px 0px 5%;
   }
-
+  
   .topsection-h1 h2{
-    margin: 0px 0px 0px 26%;
+    margin: 0px 0px 0px 18%;
   }
 
   .topsection-h1 p{
     font-size: 22px;
-    width: 730px;
+    margin: 40px auto 0 auto;
+    width: 650px;
+    line-height: 1.8em;
   }
 
   /*Common Parameter*/
@@ -564,26 +588,32 @@ p,
   /*Top Section*/
 
   .topsection{
-    padding: 30px 0;
+    padding: 50px 0;
+  }
+
+  .topsectiondot{
+    width: 170px;
+    height: 170px;
+    margin: 0 0 -50px 20px;
   }
 
   .topsection-h1{
-    margin: auto 0 auto 6%;
+    margin: auto 0 auto 27%;
   }
 
   .topsection-h1 h1{
-    margin: 0px 0px 0px 10%;
+    margin: -110px 0px 0px 14%;
   }
 
   .topsection-h1 h2{
-    margin: 0px 0px 0px 26%;
+    margin: 0px 0px 0px 23%;
   }
 
   .topsection-h1 p{
     font-size: 19px;
-    width: 650px;
+    width: 550px;
     line-height: 1.6em;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 0 10%;
   }
 
   /*Common Parameter*/
@@ -673,25 +703,37 @@ p,
 
   /*Top Section*/
 
+  .topsection{
+    padding: 50px 0;
+  }
+
+  .topsectiondot{
+    width: 150px;
+    height: 150px;
+    margin: -50px 0 -50px 35px;
+  }
+
   .topsection-h1{
-    margin: auto 0 auto 5%;
+    margin: auto 0 auto 23%;
   }
 
   .topsection-h1 h1{
-    margin: 0px 0px 0px 13%;
+    margin: -90px 0px 0px 17%;
   }
 
   .topsection-h1 h2{
-    margin: 0px 0px 0px 26%;
+    margin: 0px 0px 0px 23%;
   }
 
   .topsection-h1 p{
     font-size: 18px;
-    width: 480px;
+    width: 500px;
+    line-height: 1.6em;
+    margin: 30px 20px 0 10%;
   }
 
   .topimage{
-    padding: 50px 8% 50px 2%;
+    padding: 50px 4% 50px 6%;
   }
 
   /*Common Parameter*/
@@ -825,14 +867,40 @@ p,
 
   /*Top Section*/
 
+  .topsection{
+    padding: 50px 0;
+    background: linear-gradient(
+    to right,
+    rgb(134, 179, 176) 0%,
+    rgb(163, 207, 204) 12%,
+    rgb(255, 236, 222) 12%,
+    rgb(255, 226, 212) 100%
+    );
+  }
+
+  .topsectiondot{
+    width: 130px;
+    height: 130px;
+    margin: -50px 0 -50px -30px;
+  }
+
   .topsection-h1{
-    margin: auto 0 auto 4%;
+    margin: auto 0 auto 18%;
+  }
+
+  .topsection-h1 h1{
+    margin: -90px 0px 0px 10%;
+  }
+
+  .topsection-h1 h2{
+    margin: 0px 0px 0px 22%;
   }
 
   .topsection-h1 p{
     font-size: 17px;
-    width: 430px;
-    margin: 25px auto 0 auto;
+    width: 380px;
+    line-height: 1.6em;
+    margin: 20px 20px 0 10%;
   }
 
   .topimage{
@@ -985,25 +1053,43 @@ p,
   /*Top Section*/
 
   .topsection{
-    grid-template-columns: 55vw 45vw;
+    padding: 50px 0;
+    background: linear-gradient(
+    to right,
+    rgb(134, 179, 176) 0%,
+    rgb(163, 207, 204) 10%,
+    rgb(255, 236, 222) 10%,
+    rgb(255, 226, 212) 100%
+    );
+  }
+
+  .topsectiondot{
+    width: 130px;
+    height: 130px;
+    margin: -50px 0 -50px -20px;
   }
 
   .topsection-h1{
-    margin: auto 0 auto 5%;
+    margin: auto 0 auto 10%;
   }
 
   .topsection-h1 h1{
-    margin: 0 0 0 10%;
+    margin: -90px 0px 0px 10%;
+  }
+
+  .topsection-h1 h2{
+    margin: 0px 0px 0px 24%;
   }
 
   .topsection-h1 p{
     font-size: 16px;
-    width: 370px;
-    margin: 20px auto 0 auto;
+    width: 360px;
+    line-height: 1.6em;
+    margin: 20px 20px 0 10%;
   }
 
   .topimage{
-    padding: 50px 6% 50px 0;
+    padding: 50px 3% 50px 0;
   }
 
   /*Common Parameter*/
@@ -1161,12 +1247,13 @@ p,
 
   .topsectionimage-mobile img{
     width: 100vw;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/0.8;
     object-fit: cover;
+    object-position: 50% 75%;
   }
 
   .topsectiondescription-mobile{
-    margin: 20px 6% 50px 23%;
+    margin: 20px 6% 20px 20%;
   }
 
   .topsectiondot-mobile{
@@ -1737,7 +1824,7 @@ p,
   }
 
   .palmier-description p{
-    line-height: 1.8em;
+    line-height: 1.7em;
     width: 280px;
   }
 
@@ -1791,6 +1878,22 @@ p,
   
   .macaron-slideshow-pic img{
     width: 85vw;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .othergallery-sliderdescription h2{
+    font-size: 17px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 12px;
+    margin: 0 10px;
   }
  
 }
