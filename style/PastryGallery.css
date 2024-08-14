@@ -121,82 +121,75 @@ nav ul li a:hover::after{
 
 .content{
   overflow: hidden;
-  background: rgb(252, 246, 239);
+  background: rgb(255, 246, 232);
 }
 
 /*Top Section*/
-
-.topsection{
-  display: grid;
-  grid-template-columns: 55vw 45vw;
-  justify-content: center;
-  align-items: center;
-  padding: 70px 0;
-  background: linear-gradient(
-  to right,
-  rgb(110, 150, 147) 0%,
-  rgb(154, 217, 213) 10%,
-  rgb(255, 236, 222) 10%,
-  rgb(255, 226, 212) 100%
-  );
-}
-
-.topsectiondot{
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  background-color: rgb(255, 209, 193);
-  margin: -20px 0 -50px -30px;
-}
-
-.topsection-h1{
-  margin: auto 0 auto 25%;
-  align-items: center;
-}
-
-.topsection-h1 h1, .topsection-h1 h2{
-  font-family: 'Lora', sans-serif;
-  font-size: 8vw;
-  font-weight: 400;
-  letter-spacing: 10px;
-  color: #142c35;
-}
-
-.topsection-h1 h1{
-  margin: -160px 0px 0px 5%;
-}
-
-.topsection-h1 h2{
-  margin: 0px 0px 0px 18%;
-}
 
 .topsection-mobile{
   display: none;
 }
 
-.topsection-h1 p{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  letter-spacing: 1px;
-  font-size: 22px;
-  margin: 40px auto 0 auto;
-  text-align: center;
-  width: 750px;
-  line-height: 1.8em;
-}
-
-.topimage{
+.topsection{
+  background: linear-gradient(
+  to right,
+  rgb(14, 46, 44) 0%,
+  rgb(17, 59, 57) 70%,
+  rgb(255, 243, 223) 70%,
+  rgb(255, 243, 223) 100%
+  );
   display: flex;
-  justify-content: center;
-  padding: 70px 6% 70px 2%;
 }
 
-.topimage img{
-  width: 80%;
-  aspect-ratio: 1/1;
-  border-radius: 100%;
+.topsectionimage{
+  margin: 100px 10% 100px 0;
+}
+
+.topsectionimage img{
+  width: 38vw;
+  aspect-ratio: 1/1.1;
   object-fit: cover;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+}
+
+.topsectiondescription{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 55vw;
+  color: #ffffff;
+  margin: auto -80px auto 10%;
+  padding: 70px 110px 70px 70px;
+  border-style: solid;
+  border-width: 2px;
+  z-index: 5;
+}
+
+.topsectiondescription h1,
+.topsectiondescription h2{
+  font-family: 'Lora', sans-serif;
+  font-size: 6vw;
+  font-weight: 400;
+  letter-spacing: 10px;
+  
+}
+
+.topsectiondescription h1{
+  margin-left: 3%;
+}
+
+.topsectiondescription h2{
+  margin-left: 22%;
+}
+
+.topsectiondescription p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 30px 0 0 0;
+  line-height: 1.6em;
+  width: 600px;
 }
 
 /*Common Parameter*/
@@ -251,12 +244,14 @@ p,
   text-align: center;
   align-items: center;
   line-height: 1.8em;
-  
 }
 
 .palmier-description a{
   text-decoration: none;
-  color: #ffffff;
+  color: #142c35;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  font-weight: 400;
 }
 
 /*Choux Pastry*/
@@ -447,9 +442,9 @@ p,
 }
 
 .othergallerytoexplore h3{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 30px;
   letter-spacing: 2px;
   margin-left: 6%;
 }
@@ -483,7 +478,7 @@ p,
 }
 
 .othergallery-sliderdescription h2{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
   margin: 20px 15px 10px 15px;
@@ -491,7 +486,7 @@ p,
 
 .othergallery-sliderdescription a{
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
   color: #000000;
@@ -518,31 +513,15 @@ p,
 @media only screen and (max-width:1700px){
 
   /*Top Section*/
-
-  .topsectiondot{
-    width: 200px;
-    height: 200px;
-    margin: -30px 0 -50px -30px;
-  }
   
-  .topsection-h1{
-    margin: auto 0 auto 25%;
-    align-items: center;
-  }
-  
-  .topsection-h1 h1{
-    margin: -150px 0px 0px 5%;
-  }
-  
-  .topsection-h1 h2{
-    margin: 0px 0px 0px 25%;
+  .topsectiondescription h2{
+    margin: 0px 0px 0px 30%;
   }
 
-  .topsection-h1 p{
-    font-size: 19px;
-    margin: 40px auto 0 auto;
-    width: 660px;
-    line-height: 1.8em;
+  .topsectiondescription p{
+    font-size: 18px;
+    width: 630px;
+    line-height: 1.7em;
   }
 
   /*Common Parameter*/
@@ -588,32 +567,35 @@ p,
   /*Top Section*/
 
   .topsection{
-    padding: 50px 0;
+    padding: 30px 0;
   }
 
-  .topsectiondot{
-    width: 170px;
-    height: 170px;
-    margin: -30px 0 -50px 20px;
+  .topsectiondescription{
+    width: 52vw;
+    margin: auto -80px auto 7%;
+    padding: 70px 100px 70px 50px;
   }
 
-  .topsection-h1{
-    margin: auto 0 auto 18%;
+  .topsectiondescription h1{
+    margin: 0px 0px 0px 8%;
   }
 
-  .topsection-h1 h1{
-    margin: -130px 0px 0px 14%;
+  .topsectiondescription h2{
+    margin: 0px 0px 0px 23%;
   }
 
-  .topsection-h1 h2{
-    margin: 0px 0px 0px 28%;
-  }
-
-  .topsection-h1 p{
+  .topsectiondescription p{
     font-size: 17px;
-    width: 600px;
+    width: 530px;
     line-height: 1.6em;
-    margin: 30px auto 0 10%;
+  }
+
+  .topsectionimage{
+    margin: 30px 7% 30px 0;
+  }
+
+  .topsectionimage img{
+    aspect-ratio: 1/1.2;
   }
 
   /*Common Parameter*/
@@ -684,7 +666,7 @@ p,
   }
 
   .othergallerytoexplore h3{
-    font-size: 20px;
+    font-size: 23px;
   }
 
   .othergallery-sliderdescription h2,
@@ -704,36 +686,38 @@ p,
   /*Top Section*/
 
   .topsection{
-    padding: 50px 0;
+    padding: 30px 0;
   }
 
-  .topsectiondot{
-    width: 150px;
-    height: 150px;
-    margin: -50px 0 -50px 25px;
+  .topsectiondescription{
+    width: 57vw;
+    margin: auto -30px auto 4%;
+    padding: 50px 80px 50px 50px;
   }
 
-  .topsection-h1{
-    margin: auto 0 auto 20%;
+  .topsectiondescription h1{
+    margin: 0px 0px 0px 6%;
+    font-size: 6.5vw;
   }
 
-  .topsection-h1 h1{
-    margin: -110px 0px 0px 14%;
+  .topsectiondescription h2{
+    margin: 0px 0px 0px 23%;
+    font-size: 6.5vw;
   }
 
-  .topsection-h1 h2{
-    margin: 0px 0px 0px 25%;
-  }
-
-  .topsection-h1 p{
+  .topsectiondescription p{
     font-size: 16px;
-    width: 510px;
+    width: 500px;
     line-height: 1.6em;
-    margin: 30px 20px 0 8%;
+    margin: 15px 0 0 0;
   }
 
-  .topimage{
-    padding: 50px 4% 50px 8%;
+  .topsectionimage{
+    margin: 30px 4% 30px 0;
+  }
+
+  .topsectionimage img{
+    aspect-ratio: 1/1.3;
   }
 
   /*Common Parameter*/
@@ -843,21 +827,22 @@ p,
   }
 
   .othergallerytoexplore h3{
-    font-size: 20px;
+    font-size: 23px;
     margin-left: 4%;
   }
 
   .othergallery-sliderdescription h2,
   .othergallery-sliderdescription a{
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .othergallery-sliderdescription h2{
-    margin: 12px 15px 3px 15px;
+    margin: 12px 15px 0px 15px;
   }
   
   .othergallery-sliderdescription p{
     font-size: 14px;
+    margin: 8px 10px 0px 15px;
   }
   
 }
@@ -868,47 +853,38 @@ p,
   /*Top Section*/
 
   .topsection{
-    padding: 50px 0;
-    background: linear-gradient(
-    to right,
-    rgb(134, 179, 176) 0%,
-    rgb(163, 207, 204) 10%,
-    rgb(255, 236, 222) 10%,
-    rgb(255, 226, 212) 100%
-    );
+    padding: 20px 0;
   }
 
-  .topsectiondot{
-    width: 130px;
-    height: 130px;
-    margin: -50px 0 -50px -30px;
+  .topsectiondescription{
+    width: 52vw;
+    margin: auto 0 auto 3%;
+    padding: 0;
+    border-style: none;
   }
 
-  .topsection-h1{
-    margin: auto 0 auto 17%;
+  .topsectiondescription h1{
+    margin: 0px 0px 0px 3%;
   }
 
-  .topsection-h1 h1{
-    margin: -90px 0px 0px 8%;
+  .topsectiondescription h2{
+    margin: 0px 0px 0px 23%;
   }
 
-  .topsection-h1 h2{
-    margin: 0px 0px 0px 25%;
+  .topsectiondescription p{
+    font-size: 16px;
+    width: 380px;
+    line-height: 1.5em;
+    margin: 30px 0 0 0;
   }
 
-  .topsection-h1 p{
-    font-size: 15px;
-    width: 400px;
-    line-height: 1.6em;
-    margin: 20px 20px 0 9%;
+  .topsectionimage{
+    margin: 50px 3% 50px 0;
   }
 
-  .topimage{
-    padding: 40px 4% 40px 2%;
-  }
-
-  .topimage img{
-    width: 88%;
+  .topsectionimage img{
+    width: 43vw;
+    aspect-ratio: 1/1.3;
   }
 
   /*Common Parameter*/
@@ -1001,17 +977,12 @@ p,
   }
 
   .othergallerytoexplore h3{
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 5%;
   }
 
   .container img{
     width: 31vw;
-  }
-
-  .othergallery-sliderdescription h2,
-  .othergallery-sliderdescription a{
-    font-size: 17px;
   }
 
   .othergallery-sliderdescription h2{
@@ -1020,7 +991,7 @@ p,
   
   .othergallery-sliderdescription p{
     font-size: 14px;
-    margin: 10px 10px 0px 10px;
+    margin: 8px 10px 0px 10px;
   }
 
 
@@ -1043,20 +1014,6 @@ p,
   nav ul li{
     margin-right: 3em;
   }
-
-  /*Top Section*/
-
-  .topsection-h1 p{
-    font-size: 15px;
-    width: 350px;
-    line-height: 1.6em;
-    margin: 20px 20px 0 10%;
-  }
-
-  .topimage{
-    padding: 80px 3% 80px 0;
-  }
-
   
 }
 
@@ -1065,40 +1022,15 @@ p,
 
   /*Top Section*/
 
-  .topsection{
-    padding: 50px 0;
-    background: linear-gradient(
-    to right,
-    rgb(134, 179, 176) 0%,
-    rgb(163, 207, 204) 9%,
-    rgb(255, 236, 222) 9%,
-    rgb(255, 226, 212) 100%
-    );
+  .topsectiondescription h2{
+    margin: 0px 0px 0px 20%;
   }
 
-  .topsectiondot{
-    width: 110px;
-    height: 110px;
-    margin: -50px 0 -50px -5px;
-  }
-
-  .topsection-h1{
-    margin: auto 0 auto 12%;
-  }
-
-  .topsection-h1 h1{
-    margin: -70px 0px 0px 10%;
-  }
-
-  .topsection-h1 h2{
-    margin: 0px 0px 0px 24%;
-  }
-
-  .topsection-h1 p{
-    font-size: 14px;
-    width: 310px;
-    line-height: 1.6em;
-    margin: 20px 20px 0 13%;
+  .topsectiondescription p{
+    font-size: 15px;
+    width: 330px;
+    line-height: 1.5em;
+    margin: 20px 0 0 0;
   }
 
   /*Common Parameter*/
@@ -1115,19 +1047,18 @@ p,
   /*Palmier*/
 
   .palmiersection img{
-    margin: 0 0 0 6%;
-    width: 46vw;
-    aspect-ratio: 1/1.3;
+    margin: 0 0 0 3%;
+    width: 45vw;
+    aspect-ratio: 1/1.5;
   }
 
   .palmier-description{
-    padding: 45px 35px;
-    margin-left: -20px;
+    padding: 45px 30px;
   }
 
   .palmier-description p{
     line-height: 1.7em;
-    width: 300px;
+    width: 36vw;
   }
 
   /*Choux Pastry*/
@@ -1198,28 +1129,6 @@ p,
 }
 
 
-@media only screen and (max-width:780px){
-
-  /*Palmier*/
-
-  .palmiersection img{
-    margin: 0 0 0 4%;
-    width: 46vw;
-    aspect-ratio: 1/1.3;
-  }
-
-  .palmier-description{
-    padding: 40px 25px;
-    margin-left: -15px;
-  }
-
-  .palmier-description p{
-    line-height: 1.7em;
-    width: 300px;
-  }
-}
-
-
 @media only screen and (max-width:700px){
 
 	/*Headings*/
@@ -1242,8 +1151,8 @@ p,
     display: grid;
     background: linear-gradient(
     to right,
-    rgb(134, 179, 176) 0%,
-    rgb(178, 224, 221) 12%,
+    rgb(29, 73, 70) 0%,
+    rgb(141, 195, 192) 12%,
     rgb(255, 255, 255) 12%,
     rgb(255, 255, 255) 100%
     );
@@ -1321,7 +1230,7 @@ p,
   }
 
   .palmier-description p{
-    width: 410px;
+    width: 435px;
     margin: auto;
   }
 
@@ -1358,6 +1267,10 @@ p,
 
   .macaron{
     display: grid;
+  }
+
+  .macaron-p{
+    margin-top: 80px;
   }
 
   .macaron-p p{
@@ -1540,7 +1453,7 @@ p,
   }
 
   .palmier-description p{
-    width: 360px;
+    width: 350px;
   }
 
   /*Choux Pastry*/
@@ -1596,7 +1509,7 @@ p,
   /*Explore other gallery*/
 
   .othergallerytoexplore h3{
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .container img{
@@ -1605,7 +1518,7 @@ p,
 
   .othergallery-sliderdescription h2,
   .othergallery-sliderdescription a{
-    font-size: 20px;
+    font-size: 19px;
   }
   
   .othergallery-sliderdescription p{
@@ -1670,7 +1583,7 @@ p,
   }
 
   .palmier-description p{
-    width: 300px;
+    width: 320px;
   }
 
   /*Choux Pastry*/
@@ -1748,7 +1661,7 @@ p,
   }
 
   .othergallerytoexplore h3{
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
   }
 
@@ -1825,13 +1738,17 @@ p,
   }
 
   .palmier-description{
-    padding: 45px 25px;
+    padding: 45px 20px;
     margin: -20px 5% 0 10%;
   }
 
   .palmier-description p{
     line-height: 1.7em;
-    width: 280px;
+    width: 270px;
+  }
+
+  .palmier-description a{
+    letter-spacing: 1px;
   }
 
   /*Choux Pastry*/
@@ -1899,7 +1816,7 @@ p,
   
   .othergallery-sliderdescription p{
     font-size: 12px;
-    margin: 0 10px;
+    margin: 5px 10px;
   }
  
 }
