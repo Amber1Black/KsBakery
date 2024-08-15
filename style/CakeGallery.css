@@ -127,61 +127,72 @@ nav ul li a:hover::after{
 /*Top Section*/
 
 .topsection{
-  display: grid;
-  grid-template-columns: 55vw 45vw;
-  justify-content: center;
-  align-items: center;
-  padding: 70px 0;
+  background: linear-gradient(
+    to right,
+    rgb(252, 242, 238) 0%,
+    rgb(255, 250, 246) 33%,
+    rgb(255, 200, 193) 33%,
+    rgb(255, 200, 193) 100%
+  );
+  padding: 50px 0;
+  display: flex;
+  overflow: hidden;
 }
 
-.topsection-h1{
-  margin: auto 0 auto 10%;
-  align-items: center;
-}
-
-.topsection-h1 h1, .topsection-h1 h2{
-  font-family: 'Lora', sans-serif;
-  font-size: 9vw;
-  font-weight: 400;
-  letter-spacing: 5px;
-  color: #142c35;
-}
-
-.topsection-h1 h1{
-  margin: 0px 0px 0px 8%;
-}
-
-.topsection-h1 h2{
-  margin: 0px 0px 0px 25%;
-}
-
-.topsection-p-mobile{
+.topsectiondescription-mobile{
   display: none;
 }
 
-.topsection-h1 p{
-  font-family: 'Roboto', sans-serif;
+.topsectiondescription{
+  display: grid;
+  align-items: center;
+  margin: auto 5%;
+}
+
+.topsectiondescription p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
   font-weight: 300;
-  letter-spacing: 1px;
-  font-size: 25px;
-  margin: 40px auto 0 auto;
-  text-align: center;
-  width: 820px;
+  letter-spacing: 2px;
+  margin: 40px 0 0 0;
   line-height: 1.8em;
+  width: 25vw;
 }
 
-.topimage{
-  display: flex;
+.topsection-right{
+  display: grid;
   justify-content: center;
-  padding: 70px 6% 70px 2%;
+  align-items: center;
+  margin: 100px auto;
+  width: 67vw;
 }
 
-.topimage img{
-  width: 80%;
+.topsection-right img{
+  width: 35vw;
   aspect-ratio: 1/1;
-  border-radius: 100%;
   object-fit: cover;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 8px;
+}
+
+.topsection-right h1,
+.topsection-right h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10vw;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 1px #ffffff;
+  z-index: 5;
+}
+
+.topsection-right h1{
+  margin: 0 0 -70% -32%;
+}
+
+.topsection-right h2{
+  margin: -45% 0 0 30%;
 }
 
 /*Common Parameter*/
@@ -205,6 +216,10 @@ p{
 
 /*Whole Cake*/
 
+.wholecake-backgroundcolor{
+  background-color: #142c35;
+}
+
 .wholecake-description{
   margin: 100px 10% 50px 10%;
   color: #ffffff;
@@ -219,7 +234,6 @@ p{
   position: relative;
   padding: 50px 0 100px 0;
   width: 100%;
-  background-color: #142c35;
 }
 
 /* Hide the images by default */
@@ -534,9 +548,9 @@ p{
 }
 
 .othergallerytoexplore h3{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 30px;
   letter-spacing: 2px;
   margin-left: 6%;
 }
@@ -570,7 +584,7 @@ p{
 }
 
 .othergallery-sliderdescription h2{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
   margin: 20px 15px 10px 15px;
@@ -578,7 +592,7 @@ p{
 
 .othergallery-sliderdescription a{
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
   color: #000000;
@@ -606,22 +620,11 @@ p{
 
   /*Top Section*/
 
-  .topsection-h1{
-    margin: auto 0 auto 8%;
+  .topsectiondescription p{
+    font-size: 20px;
+    width: 25vw;
   }
 
-  .topsection-h1 h1{
-    margin: 0px 0px 0px 10%;
-  }
-
-  .topsection-h1 h2{
-    margin: 0px 0px 0px 26%;
-  }
-
-  .topsection-h1 p{
-    font-size: 22px;
-    width: 720px;
-  }
 
   /*Common Parameter*/
 
@@ -676,27 +679,14 @@ p{
 
   /*Top Section*/
 
-  .topsection{
-    padding: 30px 0;
+  .topsectiondescription p{
+    font-size: 18px;
+    width: 25vw;
   }
 
-  .topsection-h1{
-    margin: auto 0 auto 6%;
-  }
-
-  .topsection-h1 h1{
-    margin: 0px 0px 0px 10%;
-  }
-
-  .topsection-h1 h2{
-    margin: 0px 0px 0px 26%;
-  }
-
-  .topsection-h1 p{
-    font-size: 20px;
-    width: 650px;
-    line-height: 1.6em;
-    margin: 30px auto 0 auto;
+  .topsection-right{
+    margin: 70px auto;
+    width: 67vw;
   }
 
   /*Common Parameter*/
@@ -745,7 +735,7 @@ p{
 
   .cakefact p{
     line-height: 1.7em;
-    width: 700px;
+    width: 710px;
   }
 
   /*Cake*/
@@ -765,7 +755,7 @@ p{
   }
 
   .othergallerytoexplore h3{
-    font-size: 20px;
+    font-size: 23px;
   }
 
   .othergallery-sliderdescription h2,
@@ -784,21 +774,19 @@ p{
 
   /*Top Section*/
 
-  .topsection-h1{
-    margin: auto 0 auto 5%;
+  .topsectiondescription{
+    margin: auto 4%;
   }
 
-  .topsection-h1 h1{
-    margin: 0px 0px 0px 10%;
+  .topsectiondescription p{
+    font-size: 17px;
+    letter-spacing: 1px;
+    width: 25vw;
   }
 
-  .topsection-h1 h2{
-    margin: 0px 0px 0px 26%;
-  }
-
-  .topsection-h1 p{
-    font-size: 18px;
-    width: 600px;
+  .topsection-right{
+    margin: 50px auto;
+    width: 67vw;
   }
 
   /*Common Parameter*/
@@ -951,21 +939,22 @@ p{
   }
 
   .othergallerytoexplore h3{
-    font-size: 20px;
+    font-size: 23px;
     margin-left: 4%;
   }
 
   .othergallery-sliderdescription h2,
   .othergallery-sliderdescription a{
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .othergallery-sliderdescription h2{
-    margin: 12px 15px 3px 15px;
+    margin: 12px 15px 0px 15px;
   }
   
   .othergallery-sliderdescription p{
     font-size: 14px;
+    margin: 8px 10px 0px 15px;
   }
 
   
@@ -976,18 +965,32 @@ p{
 
   /*Top Section*/
 
-  .topsection-h1{
-    margin: auto 0 auto 4%;
+  .topsectiondescription{
+    margin: auto 3.5%;
   }
 
-  .topsection-h1 p{
-    font-size: 17px;
-    width: 430px;
-    margin: 25px auto 0 auto;
+  .topsectiondescription p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.6em;
+    width: 27vw;
   }
 
-  .topimage img{
-    width: 88%;
+  .topsection-right{
+    margin: 50px auto;
+    width: 67vw;
+  }
+
+  .topsection-right img{
+    width: 42vw;
+  }
+
+  .topsection-right h1{
+    margin: 0 0 -75% -20%;
+  }
+  
+  .topsection-right h2{
+    margin: -50% 0 0 30%;
   }
 
   /*Common Parameter*/
@@ -1045,8 +1048,9 @@ p{
     padding-top: 70px;
   }
   
-  .cakeroll-image{
-    padding-bottom: 30px;
+  .cakeroll-image img{
+    padding-bottom: 0;
+    border-width: 12px;
   }
   
   .image1{
@@ -1168,17 +1172,12 @@ p{
   }
 
   .othergallerytoexplore h3{
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 5%;
   }
 
   .container img{
     width: 31vw;
-  }
-
-  .othergallery-sliderdescription h2,
-  .othergallery-sliderdescription a{
-    font-size: 17px;
   }
 
   .othergallery-sliderdescription h2{
@@ -1187,9 +1186,8 @@ p{
   
   .othergallery-sliderdescription p{
     font-size: 14px;
-    margin: 10px 10px 0px 10px;
+    margin: 8px 10px 0px 10px;
   }
-
   
 }
 
@@ -1219,25 +1217,45 @@ p{
   /*Top Section*/
 
   .topsection{
-    grid-template-columns: 53vw 47vw;
+    display: grid;
   }
 
-  .topsection-h1{
-    margin: auto 0 auto 3%;
+  .topsectiondescription{
+    display: none;
   }
 
-  .topsection-h1 h1{
-    margin: 0 0 0 10%;
+  .topsectiondescription-mobile{
+    display: initial;
   }
 
-  .topsection-h1 p{
-    font-size: 16px;
-    width: 350px;
-    margin: 20px auto 0 auto;
+  .topsection-right{
+    width: 100vw;
+    margin: 20px auto;
   }
 
-  .topimage{
-    padding: 60px 6% 60px 0;
+  .topsection-right img{
+    width: 60vw;
+  }
+
+  .topsection-right h1{
+    margin: 0 0 -75% -20%;
+    font-size: 14vw;
+  }
+  
+  .topsection-right h2{
+    margin: -50% 0 0 30%;
+    font-size: 14vw;
+  }
+
+  .topsectiondescription-mobile p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 30px auto;
+    line-height: 1.8em;
+    width: 500px;
   }
 
   /*Common Parameter*/
@@ -1423,71 +1441,14 @@ p{
 
   /*Top Section*/
 
-  .topsection{
-    display: grid;
-    grid-template-columns: unset;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  .topsection-h1{
-    margin: 0;
-    z-index: 5;
-  }
-
-  .topsection-h1 h1, .topsection-h1 h2{
-    font-family: 'Lora', sans-serif;
-    font-size: 13vw;
-    font-weight: 400;
-    letter-spacing: 6px;
-    color: #142c35;
-  }
-
-  .topsection-h1 h1{
-    margin: 0px 0px 0px 7%;
-  }
-
-  .topsection-h1 h2{
-    margin: 0px 0px -130px 20%;
-    text-shadow: 1px 1px 1px white;
-  }
-
-  .topimage{
-    display: flex;
-    justify-content: right;
-    padding: 20px 0 50px 0;
-  }
-
-  .topimage img{
-    width: 85%;
-    aspect-ratio: 1/1.1;
-    object-fit: cover;
-    border-radius: 0;
-    box-shadow: 2px 2px 5px grey;
-  }
-
-  .topsection-h1 p,
-  .topsection-p p{
-    display: none;
-  }
-
-  .topsection-p-mobile{
-    display: grid;
-    justify-content: right;
-    margin: 30px 8% 0px 10%;
-  }
-
-  .topsection-p-mobile p{
-    font-family: 'Poppins', sans-serif;
+  .topsectiondescription-mobile p{
     font-size: 17px;
-    letter-spacing: 1px;
     font-weight: 300;
-    line-height: 2em;
-    text-align: right;
-    color: #142c35;
-    width: 385px;
+    line-height: 1.8em;
+    width: 460px;
+    margin-bottom: 50px;
   }
+
 
   /*Common Parameter*/
 
@@ -1497,6 +1458,7 @@ p{
   
   p{
     font-size: 15px;
+    letter-spacing: 1px;
     line-height: 1.8em;
   }
 
@@ -1527,7 +1489,7 @@ p{
   /*Cake Roll*/
 
   .cakeroll-description p{
-    width: 470px;
+    width: 430px;
   }
   
   .cakeroll-image{
@@ -1584,7 +1546,7 @@ p{
 
   .cakefact p{
     line-height: 1.7em;
-    width: 430px;
+    width: 410px;
   }
 
   /*Cupcake*/
@@ -1775,15 +1737,26 @@ p{
 
   /*Top Section*/
 
-  .topsection-p-mobile p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8em;
-    width: 390px;
+  .topsection-right img{
+    width: 70vw;
   }
 
-  .topsection-h1 h2{
-    margin: 0px 0px -110px 20%;
+  .topsection-right h1{
+    margin: 0 0 -160% -5%;
+    font-size: 15vw;
+  }
+  
+  .topsection-right h2{
+    margin: -10% 0 0 20%;
+    font-size: 15vw;
+  }
+
+  .topsectiondescription-mobile p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto 40px auto;
+    line-height: 1.8em;
+    width: 380px;
   }
 
   /*Common Parameter*/
@@ -1839,7 +1812,7 @@ p{
   /*Cake Roll*/
 
   .cakeroll-description p{
-    width: 440px;
+    width: 400px;
     margin: 10px auto;
   }
   
@@ -1882,12 +1855,12 @@ p{
   .cakefact h4{
     font-size: 28px;
     letter-spacing: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .cakefact p{
     line-height: 1.7em;
-    width: 410px;
+    width: 390px;
   }
 
   /*Cupcake*/
@@ -1935,7 +1908,7 @@ p{
   /*Cake*/
 
   .cake-p-mobile p{
-    width: 380px;
+    width: 350px;
     line-height: 1.6em;
     margin: 15px auto;
   }
@@ -1962,7 +1935,7 @@ p{
   /*Explore other gallery*/
 
   .othergallerytoexplore h3{
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .container img{
@@ -1971,7 +1944,7 @@ p{
 
   .othergallery-sliderdescription h2,
   .othergallery-sliderdescription a{
-    font-size: 20px;
+    font-size: 19px;
   }
   
   .othergallery-sliderdescription p{
@@ -1984,24 +1957,26 @@ p{
 
   /*Top Section*/
 
-  .topsection-p-mobile{
-    margin: 10px 5% 0 0;
+  .topsection-right img{
+    width: 75vw;
   }
 
-  .topsection-p-mobile p{
+  .topsection-right h1{
+    margin: 0 0 -170% 0%;
+    font-size: 15vw;
+  }
+  
+  .topsection-right h2{
+    margin: -4% 0 0 17%;
+    font-size: 15vw;
+  }
+
+  .topsectiondescription-mobile p{
     font-size: 15px;
-    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 0 auto 30px auto;
     line-height: 1.7em;
-    width: 300px;
-  }
-
-  .topsection-h1 h2{
-    margin: -10px 0px -60px 20%;
-  }
-
-  .topimage img{
-    width: 85%;
-    aspect-ratio: 1/1.2;
+    width: 350px;
   }
 
   /*Common Parameter*/
@@ -2043,7 +2018,7 @@ p{
   /*Cake Roll*/
 
   .cakeroll-description p{
-    width: 400px;
+    width: 380px;
   }
 
   .image1{
@@ -2084,19 +2059,19 @@ p{
 
   .cakefact h4{
     font-size: 25px;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
   }
 
   .cakefact p{
-    line-height: 1.7em;
-    width: 350px;
+    line-height: 1.5em;
+    width: 310px;
   }
 
   /*Cupcake*/
 
   .cupcake-description{
-    padding: 50px 10% 0 10%;
+    padding: 50px 8% 0 8%;
   }
 
   .cupcake-image1{
@@ -2133,7 +2108,7 @@ p{
   /*Cake*/
 
   .cake-p-mobile p{
-    width: 360px;
+    width: 350px;
     line-height: 1.6em;
   }
 
@@ -2154,7 +2129,7 @@ p{
   }
 
   .othergallerytoexplore h3{
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
   }
 
@@ -2179,18 +2154,34 @@ p{
 
   /*Top Section*/
 
-  .topsection-h1 h2{
-    margin: -10px 0px -50px 20%;
+  .topsection-right{
+    margin: 0px auto;
   }
 
-  .topimage img{
-    width: 90%;
-    aspect-ratio: 1/1.2;
+  .topsection-right img{
+    width: 80vw;
   }
 
-  .topsection-p-mobile p{
+  .topsection-right h1,
+  .topsection-right h2{
+    letter-spacing: 6px;
+  }
+
+  .topsection-right h1{
+    margin: 0 0 -170% 5%;
+    font-size: 15vw;
+  }
+  
+  .topsection-right h2{
+    margin: -3% 0 0 24%;
+    font-size: 15vw;
+  }
+
+  .topsectiondescription-mobile p{
     font-size: 14px;
-    line-height: 1.6em;
+    font-weight: 400;
+    margin: 20px auto 30px auto;
+    line-height: 1.7em;
     width: 280px;
   }
 
@@ -2276,14 +2267,15 @@ p{
   }
 
   .cakefact h4{
-    font-size: 25px;
+    font-size: 24px;
     letter-spacing: 1px;
     margin-bottom: 30px;
   }
 
   .cakefact p{
     line-height: 1.7em;
-    width: 330px;
+    width: 290px;
+    
   }
 
   /*Cupcake*/
@@ -2326,7 +2318,7 @@ p{
   /*Cake*/
 
   .cake-p-mobile p{
-    width: 340px;
+    width: 330px;
     line-height: 1.6em;
   }
 
@@ -2347,6 +2339,22 @@ p{
     padding: 9px;
     font-weight: bold;
     font-size: 15px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .othergallery-sliderdescription h2{
+    font-size: 17px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 12px;
+    margin: 5px 10px;
   }
  
 }
