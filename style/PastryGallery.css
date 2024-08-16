@@ -134,7 +134,7 @@ nav ul li a:hover::after{
   background: linear-gradient(
   to right,
   rgb(14, 46, 44) 0%,
-  rgb(17, 59, 57) 70%,
+  rgb(22, 67, 65) 70%,
   rgb(255, 243, 223) 70%,
   rgb(255, 243, 223) 100%
   );
@@ -156,12 +156,8 @@ nav ul li a:hover::after{
   display: grid;
   align-items: center;
   justify-content: center;
-  width: 55vw;
   color: #ffffff;
-  margin: auto -80px auto 10%;
-  padding: 70px 110px 70px 70px;
-  border-style: solid;
-  border-width: 2px;
+  margin: auto 10% auto 12%;
   z-index: 5;
 }
 
@@ -170,26 +166,26 @@ nav ul li a:hover::after{
   font-family: 'Lora', sans-serif;
   font-size: 6vw;
   font-weight: 400;
-  letter-spacing: 10px;
+  letter-spacing: 12px;
   
 }
 
 .topsectiondescription h1{
-  margin-left: 3%;
+  margin-left: 2%;
 }
 
 .topsectiondescription h2{
-  margin-left: 22%;
+  margin-left: 20%;
 }
 
 .topsectiondescription p{
   font-family: 'Roboto', sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   margin: 30px 0 0 0;
-  line-height: 1.6em;
-  width: 600px;
+  line-height: 1.8em;
+  width: 30vw;
 }
 
 /*Common Parameter*/
@@ -249,7 +245,7 @@ p,
 .palmier-description a{
   text-decoration: none;
   color: #142c35;
-  background-color: #ffffff;
+  background-color: rgb(255, 249, 245);
   padding: 10px 30px;
   font-weight: 400;
 }
@@ -513,15 +509,14 @@ p,
 @media only screen and (max-width:1700px){
 
   /*Top Section*/
-  
-  .topsectiondescription h2{
-    margin: 0px 0px 0px 30%;
+
+  .topsectiondescription{
+    margin: auto 6% auto 12%;
   }
 
   .topsectiondescription p{
-    font-size: 18px;
-    width: 630px;
-    line-height: 1.7em;
+    font-size: 19px;
+    width: 34vw;
   }
 
   /*Common Parameter*/
@@ -566,32 +561,9 @@ p,
 
   /*Top Section*/
 
-  .topsection{
-    padding: 30px 0;
-  }
-
-  .topsectiondescription{
-    width: 52vw;
-    margin: auto -80px auto 7%;
-    padding: 70px 100px 70px 50px;
-  }
-
-  .topsectiondescription h1{
-    margin: 0px 0px 0px 8%;
-  }
-
-  .topsectiondescription h2{
-    margin: 0px 0px 0px 23%;
-  }
-
   .topsectiondescription p{
-    font-size: 17px;
-    width: 530px;
-    line-height: 1.6em;
-  }
-
-  .topsectionimage{
-    margin: 30px 7% 30px 0;
+    font-size: 18px;
+    width: 34vw;
   }
 
   .topsectionimage img{
@@ -685,39 +657,22 @@ p,
 
   /*Top Section*/
 
-  .topsection{
-    padding: 30px 0;
-  }
-
   .topsectiondescription{
-    width: 57vw;
-    margin: auto -30px auto 4%;
-    padding: 50px 80px 50px 50px;
-  }
-
-  .topsectiondescription h1{
-    margin: 0px 0px 0px 6%;
-    font-size: 6.5vw;
-  }
-
-  .topsectiondescription h2{
-    margin: 0px 0px 0px 23%;
-    font-size: 6.5vw;
+    margin: auto 5% auto 8%;
   }
 
   .topsectiondescription p{
-    font-size: 16px;
-    width: 500px;
-    line-height: 1.6em;
-    margin: 15px 0 0 0;
+    font-size: 17px;
+    width: 37vw;
   }
 
   .topsectionimage{
-    margin: 30px 4% 30px 0;
+    margin: 60px 8% 60px 0;
   }
 
   .topsectionimage img{
-    aspect-ratio: 1/1.3;
+    width: 42vw;
+    aspect-ratio: 1/1.15;
   }
 
   /*Common Parameter*/
@@ -852,30 +807,28 @@ p,
 
   /*Top Section*/
 
-  .topsection{
-    padding: 20px 0;
-  }
-
   .topsectiondescription{
     width: 52vw;
-    margin: auto 0 auto 3%;
+    margin: auto 0 auto 1%;
     padding: 0;
     border-style: none;
   }
 
   .topsectiondescription h1{
     margin: 0px 0px 0px 3%;
+    font-size: 6vw;
   }
 
   .topsectiondescription h2{
     margin: 0px 0px 0px 23%;
+    font-size: 6vw;
   }
 
   .topsectiondescription p{
-    font-size: 16px;
-    width: 380px;
-    line-height: 1.5em;
-    margin: 30px 0 0 0;
+    font-size: 17px;
+    width: 37vw;
+    line-height: 1.7em;
+    margin: 25px 0 0 0;
   }
 
   .topsectionimage{
@@ -1022,15 +975,20 @@ p,
 
   /*Top Section*/
 
+  .topsectiondescription h1,
   .topsectiondescription h2{
-    margin: 0px 0px 0px 20%;
+    letter-spacing: 8px;
   }
 
   .topsectiondescription p{
     font-size: 15px;
-    width: 330px;
-    line-height: 1.5em;
-    margin: 20px 0 0 0;
+    width: 38vw;
+    line-height: 1.6em;
+  }
+
+  .topsectionimage img{
+    width: 45vw;
+    aspect-ratio: 1/1.4;
   }
 
   /*Common Parameter*/
