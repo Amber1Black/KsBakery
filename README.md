@@ -22,6 +22,3 @@ cd k-bakery
 
 # Install dependencies (if any)
 npm install  # or pip install -r requirements.txt
-
-## Screenshots
-![image](https://github.com/user-attachments/assets/4017e7d6-0733-445c-b912-56348aae8a74)
