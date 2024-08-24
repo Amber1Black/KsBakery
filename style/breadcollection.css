@@ -1630,14 +1630,19 @@ p,
 
   /*Top Section*/
 
+  .topsectionimage img{
+    margin-left: 0%;
+  }
+
   .topsectionimage img,
   .topsection{
     height: 700px;   
   }
 
   .topsectiondescription{
-    width: 70vw;
-    margin: auto -40% auto 5%;
+    width: 75vw;
+    margin: auto -50% auto 5%;
+    margin-top: 10%;
     padding: 7% 6%;
   }
 
@@ -1648,7 +1653,9 @@ p,
 
   .topsectiondescription p{
     font-size: 15px;
+    letter-spacing: 0px;
     line-height: 1.5em;
+    margin: 10px 0 0 0;
   }
 
   /*Common Parameter*/
@@ -1661,6 +1668,7 @@ p,
   .bread-with-recipe-description a{
     font-size: 15px;
     font-weight: 400;
+    letter-spacing: 0px;
     line-height: 1.5em;
   }
 
@@ -1692,14 +1700,14 @@ p,
   /*Crispy Top*/
 
   .crispytop-description-mobile p{
-    width: 400px;
+    width: 380px;
   }
 
   /*Chocolate Bread*/
 
   .chocolate-bread-description p{
     margin: 12px auto 10px auto;
-    width: 420px;
+    width: 370px;
   }
 
   .chocolate-bread-slider-section-2{
@@ -1759,7 +1767,7 @@ p,
   }
 
   .bread-with-recipe-description p{
-    width: 420px;
+    width: 380px;
     line-height: 1.9em;
   }
 
@@ -1784,6 +1792,7 @@ p,
   
   .othergallery-sliderdescription p{
     font-size: 14px;
+    letter-spacing: 0px;
   }
   
 }
@@ -1837,7 +1846,7 @@ p,
 
   .crispytop-description-mobile p{
     margin: 15px auto 0 auto;
-    width: 320px;
+    width: 280px;
   }
 
   .crispytop-slideshow{
@@ -1861,7 +1870,7 @@ p,
 
   .chocolate-bread-description p{
     margin: 12px auto 10px auto;
-    width: 380px;
+    width: 310px;
   }
 
   .chocolate-bread-prev{
@@ -1889,7 +1898,7 @@ p,
   }
 
   .bread-with-recipe-description p{
-    width: 390px;
+    width: 350px;
     line-height: 1.9em;
   }
 
@@ -1942,14 +1951,22 @@ p,
   }
 
   .topsectiondescription{
-    width: 70vw;
-    margin: auto -55% auto 5%;
+    width: 80vw;
+    margin: auto -65% auto 5%;
+    margin-top: 10%;
     padding: 7% 6%;
   }
 
   .topsectiondescription h1{
-    font-size: 7vw;
+    font-size: 6.5vw;
+    letter-spacing: 1px;
     line-height: 1.3em;
+  }
+
+  .topsectiondescription p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
   }
 
   /*Common Parameter*/
@@ -1987,7 +2004,7 @@ p,
 
   .chocolate-bread-description p{
     margin: 12px auto 10px auto;
-    width: 300px;
+    width: 260px;
   }
 
   .chocolate-bread-prev{
@@ -2012,7 +2029,7 @@ p,
   }
 
   .bread-with-recipe-description p{
-    width: 310px;
+    width: 265px;
     line-height: 1.9em;
   }
 
