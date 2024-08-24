@@ -293,6 +293,16 @@ nav ul li a:hover::after{
   color: #ffffff;
 }
 
+.secondpartsliderdescription a{
+  text-decoration: none;
+  font-family: 'Lora', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 20px 0 10px 0;
+  color: #ffffff;
+}
+
 .secondpartsliderdescription p{
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
@@ -586,7 +596,8 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpartsliderdescription h2{
+  .secondpartsliderdescription h2,
+  .secondpartsliderdescription a{
     font-size: 27px;
     font-weight: 300;
     letter-spacing: 2px;
@@ -689,7 +700,8 @@ nav ul li a:hover::after{
     width: 27vw;
   }
 
-  .secondpartsliderdescription h2{
+  .secondpartsliderdescription h2,
+  .secondpartsliderdescription a{
     font-size: 23px;
     margin: 20px 0 7px 0;
   }
@@ -956,7 +968,8 @@ nav ul li a:hover::after{
     width: 36vw;
   }
 
-  .secondpartsliderdescription h2{
+  .secondpartsliderdescription h2,
+  .secondpartsliderdescription a{
     font-size: 21px;
     margin: 15px 0 7px 0;
   }
@@ -1461,7 +1474,8 @@ nav ul li a:hover::after{
     width: 53vw;
   }
 
-  .secondpartsliderdescription h2{
+  .secondpartsliderdescription h2,
+  .secondpartsliderdescription a{
     font-size: 22px;
   }
 
@@ -1701,7 +1715,8 @@ nav ul li a:hover::after{
     width: 68vw;
   }
 
-  .secondpartsliderdescription h2{
+  .secondpartsliderdescription h2,
+  .secondpartsliderdescription a{
     font-size: 20px;
   }
 
