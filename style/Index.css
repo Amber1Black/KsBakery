@@ -6,7 +6,7 @@
     
 }
 
-/*headings section*/
+/*Headings*/
 
 .headingsection{
   height: 88%;
@@ -34,7 +34,7 @@
 nav{
   flex: 1;
   text-align: right;
-  padding-right: 40px;
+  padding-right: 20px;
   background-color: white;
 }
 
@@ -45,22 +45,24 @@ nav ul{
 nav ul li{
   list-style: none;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 45px;
   background-color: white; 
 }
 
 nav ul li a{
   text-decoration: none;
-  color: #575757;
-  font-weight: 400;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
   letter-spacing: 1px;
-  font-size: 14px;
+  word-spacing: 3px;
+  font-size: 17px;
   background-color: white;
   position: relative;
 }
 
 nav ul li a:hover{
-  color: grey;
+  color: rgb(80, 80, 80);
 }
   
 nav ul li a::after{
@@ -78,7 +80,6 @@ nav ul li a::after{
 nav ul li a:hover::after{
   width: 100%;
 }
-
 
 /*Reveal*/
 
@@ -898,20 +899,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:950px){
 
-  /*Headings*/
-
-  .logo{
-    margin-left: 20px;
-  }
-
-  nav{
-    padding-right: 1%;
-  }
-
-  nav ul li{
-    margin-right: 3em;
-  }
-
   /*First Section*/
 
   .firstpartforlargerscreen,
@@ -1057,6 +1044,28 @@ nav ul li a:hover::after{
 }
 
 
+@media only screen and (max-width:900px){
+
+  /*Headings*/
+
+  .logo{
+    margin-left: 20px;
+  }
+
+  nav{
+    padding-right: 1%;
+  }
+
+  nav ul li{
+    margin-right: 28px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
 @media only screen and (max-width:800px){
 
   /*First Section*/
@@ -1195,11 +1204,11 @@ nav ul li a:hover::after{
 	/*Headings*/
 
   nav ul li{
-    margin-right: 30px;
+    margin-right: 15px;
   } 
 
   nav ul li a{
-    font-size: 13px;
+    font-size: 15px;
   }
 
   /*First Section*/
