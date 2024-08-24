@@ -295,9 +295,13 @@ p,
 
 /*Crispy Top*/
 
+.crispytop-backgroundcolor{
+  background-color: #142c35;
+}
+
 .crispytop{
   display: flex;
-  margin: 50px 10%;
+  padding: 50px 10%;
 }
 
 .crispytop-description-mobile{
@@ -309,6 +313,7 @@ p,
   justify-content: center;
   align-items: center;
   margin: auto;
+  color: #ffffff;
 }
 
 .crispytop-description h3{
@@ -381,7 +386,7 @@ p,
   height: 15px;
   width: 15px;
   margin: 0 2px 50px 2px;
-  background-color: #dfdfdf;
+  background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -410,7 +415,7 @@ p,
 }
 
 .chocolate-bread-description{
-  padding: 60px 0 0 0;
+  padding: 170px 0 0 0;
   color: #000000;
 }
 
@@ -740,7 +745,7 @@ p,
   /*Crispy Top*/
 
   .crispytop{
-    margin: 50px 7%;
+    padding: 0px 7% 50px 7%;
   }
 
   .crispytop-description p{
@@ -749,6 +754,10 @@ p,
   }
 
   /*Chocolate Bread*/
+
+  .chocolate-bread-description{
+    padding: 120px 0 0 0;
+  }
 
   .chocolate-bread-description p{
     width: 820px;
@@ -926,6 +935,10 @@ p,
 
   /*Chocolate Bread*/
 
+  .chocolate-bread-description{
+    padding: 100px 0 0 0;
+  }
+
   .chocolate-bread-description p{
     width: 780px;
   }
@@ -1033,10 +1046,6 @@ p,
 
   /*Common Parameter*/
 
-  h3{
-    font-size: 28px;
-  }
-  
   p,
   .bread-with-recipe-description a{
     font-size: 16px;
@@ -1076,7 +1085,7 @@ p,
   /*Crispy Top*/
 
   .crispytop{
-    margin: 20px 4%;
+    padding: 0 4% 20px 4%;
   }
 
   .crispytop-description p{
@@ -1114,6 +1123,10 @@ p,
 
   .chocolate-bread{
     padding-bottom: 70px;
+  }
+
+  .chocolate-bread-description{
+    padding: 80px 0 0 0;
   }
 
   .chocolate-bread-description p{
@@ -1162,6 +1175,10 @@ p,
   .bread-with-recipe-image img{
     width: 40vw;
     height: 500px;
+  }
+
+  .bread-with-recipe-description h3{
+    letter-spacing: 2px;
   }
 
   .bread-with-recipe-description p{
@@ -1259,12 +1276,6 @@ p,
     line-height: 1.5em;
   }
 
-  /*Common Parameter*/
-
-  h3{
-    font-size: 25px;
-  }
-
   /*Homemade Bread*/
 
   .homemade-bread-description p{
@@ -1299,7 +1310,7 @@ p,
   /*Crispy Top*/
 
   .crispytop{
-    margin: 0 3%;
+    padding: 0 3%;
   }
 
   .crispytop-description p{
@@ -1365,6 +1376,7 @@ p,
   }
 
   .bread-with-recipe-description h3{
+    font-size: 27px;
     letter-spacing: 2px;
   }
 
@@ -1439,7 +1451,7 @@ p,
   .crispytop{
     display: grid;
     justify-content: center;
-    margin: 50px 10% 30px 10%;
+    padding: 20px 10% 30px 10%;
   }
 
   .crispytop-description{
@@ -1448,7 +1460,7 @@ p,
 
   .crispytop-description-mobile{
     display: grid;
-    margin-top: 50px;
+    color: #ffffff;
   }
 
   .crispytop-description-mobile h3{
@@ -1531,7 +1543,6 @@ p,
 
   .bread-with-recipe-description p{
     width: 450px;
-    line-height: 1.9em;
   }
 
   .bread-with-recipe-arrow{
@@ -1673,8 +1684,8 @@ p,
 
   .topsectiondescription{
     width: 75vw;
-    margin: auto -50% auto 5%;
-    margin-top: 10%;
+    margin: auto -55% auto 5%;
+    margin-top: 8%;
     padding: 7% 6%;
   }
 
@@ -1684,21 +1695,15 @@ p,
   }
 
   .topsectiondescription p{
-    font-size: 15px;
     letter-spacing: 0px;
     line-height: 1.5em;
     margin: 10px 0 0 0;
   }
 
   /*Common Parameter*/
-
-  h3{
-    font-size: 30px;
-  }
   
   p,
   .bread-with-recipe-description a{
-    font-size: 15px;
     font-weight: 500;
     letter-spacing: 0px;
     line-height: 1.5em;
@@ -1715,7 +1720,7 @@ p,
   }
 
   .homemade-bread-description p{
-    width: 430px;
+    width: 370px;
   }
 
   .homemade-bread-pic2 img{
@@ -1739,18 +1744,18 @@ p,
   /*Crispy Top*/
 
   .crispytop{
-    margin: 30px 10% 10px 10%;
+    padding: 30px 10% 10px 10%;
   }
 
   .crispytop-description-mobile p{
-    width: 420px;
+    width: 390px;
   }
 
   /*Chocolate Bread*/
 
   .chocolate-bread-description p{
     margin: 12px auto 10px auto;
-    width: 400px;
+    width: 360px;
   }
 
   .chocolate-bread-slider-section-2{
@@ -1810,8 +1815,8 @@ p,
   }
 
   .bread-with-recipe-description p{
-    width: 380px;
-    line-height: 1.9em;
+    width: 400px;
+    line-height: 1.6em;
   }
 
   .bread-with-recipe-arrow{
@@ -1849,13 +1854,9 @@ p,
 
   /*Common Parameter*/
 
-  h3{
-    font-size: 30px;
-  }
-  
   p,
   .bread-with-recipe-description a{
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5em;
   }
 
@@ -1866,7 +1867,7 @@ p,
   }
 
   .homemade-bread-description p{
-    width: 320px;
+    width: 345px;
     margin: 15px auto;
   }
 
@@ -1891,12 +1892,12 @@ p,
   /*Crispy Top*/
 
   .crispytop{
-    margin: 0 6%;
+    padding: 50px 6% 20px 6%;
   }
 
   .crispytop-description-mobile p{
     margin: 15px auto 0 auto;
-    width: 320px;
+    width: 350px;
   }
 
   .crispytop-slideshow{
@@ -1910,10 +1911,10 @@ p,
   }
 
   .crispytopprev, .crispytopnext{
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    font-size: 14px;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    font-size: 15px;
   }
 
   /*Chocolate Bread*/
@@ -1948,8 +1949,7 @@ p,
   }
 
   .bread-with-recipe-description p{
-    width: 350px;
-    line-height: 1.9em;
+    width: 300px;
   }
 
   .bread-with-recipe-arrow{
@@ -2002,19 +2002,19 @@ p,
 
   .topsectiondescription{
     width: 80vw;
-    margin: auto -70% auto 5%;
-    margin-top: 10%;
-    padding: 7% 6%;
+    margin: auto -73% auto 5%;
+    margin-top: 8%;
+    padding: 6.5% 6%;
   }
 
   .topsectiondescription h1{
-    font-size: 7vw;
-    letter-spacing: 1px;
+    font-size: 7.3vw;
+    letter-spacing: 2px;
     line-height: 1.3em;
   }
 
   .topsectiondescription p{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.4em;
   }
@@ -2022,7 +2022,8 @@ p,
   /*Common Parameter*/
 
   h3{
-    font-size: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
   }
   
   /*Homemade Bread*/
@@ -2041,11 +2042,6 @@ p,
   }
 
   /*Chocolate Bread*/
-
-  .chocolate-bread-description p{
-    margin: 12px auto 10px auto;
-    width: 300px;
-  }
 
   .chocolate-bread-prev{
     margin: 0 1px 0 74%;
@@ -2066,11 +2062,6 @@ p,
   .bread-with-recipe-description h3{
     font-size: 24px;
     letter-spacing: 1px;
-  }
-
-  .bread-with-recipe-description p{
-    width: 280px;
-    line-height: 1.9em;
   }
 
   /*Explore other gallery*/
