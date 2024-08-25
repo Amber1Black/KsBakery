@@ -1,0 +1,2217 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Headings*/
+
+.headingsection{
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.logo{
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 40px;
+  margin-top: 14px;
+}
+  
+.menu-icon{
+  display: none;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+  background-color: white;
+}
+
+nav ul{
+  background-color: white;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 45px;
+  background-color: white; 
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: 17px;
+  background-color: white;
+  position: relative;
+}
+
+nav ul li a:hover{
+  color: rgb(80, 80, 80);
+}
+  
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/*Reveal*/
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.reveal2{
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal2.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal3{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal3.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*Content*/
+
+.content{
+  background: linear-gradient(
+    to right,
+    rgb(255, 250, 247) 0%,
+    rgb(255, 250, 247) 100%
+  );
+}
+
+/*Root*/
+
+:root{
+  --width-image: 70vw;
+  --height: calc(65vw * 0.8);
+}
+
+/*Top Section*/
+
+.topsection{
+  background: linear-gradient(
+    to right,
+    rgb(252, 242, 238) 0%,
+    rgb(255, 250, 246) 40%,
+    rgb(255, 255, 255) 40%,
+    rgb(255, 255, 255) 100%
+  );
+  display: flex;
+  overflow: hidden;
+  height: var(--height);
+}
+
+.topsectionimage img{
+  width: var(--width-image);
+  height: var(--height);
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-left: 10%;
+}
+
+.topsectiondescription{
+  width: 42vw;
+  display: grid;
+  align-items: center;
+  margin: auto -20% auto 8%;
+  background-color: #ffffff;
+  padding: 5% 6%;
+  z-index: 5;
+}
+
+.topsectiondescription h1{
+  font-family: 'DM Serif Display', sans-serif;
+  font-size: 4vw;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.3em;
+}
+
+.topsectiondescription p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 20px 0 0 0;
+  line-height: 1.6em;
+}
+
+/*Common Parameter*/
+
+h3{
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+p,
+.lemon-tart-description a,
+.lemon-tart-description-mobile a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 19px;
+  line-height: 1.5em;
+}
+
+/*Tart Ring*/
+
+.tart-ring-backgroundcolor{
+  background-color: #142c35;
+}
+
+.tart-ring{
+  padding-bottom: 150px;
+}
+
+.tart-ring-description{
+  padding-top: 150px;
+  color: #fffef3;
+  text-align: center;
+}
+
+.tart-ring-description p{
+  margin: 20px auto 30px auto;
+  width: 1100px;
+}
+
+.tart-ring-slider{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.tart-ring-sliderpic {
+  display: none;
+}
+
+.tart-ring-picturesdisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+  margin: 20px auto;
+}
+
+.tart-ring-pic2 img{
+  width: 31vw;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
+
+.tart-ring-pic1 img, .tart-ring-pic3 img{
+  width: 25vw;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+  filter:blur(0.5px);
+  filter: brightness(0.8);
+}
+
+.tart-ring-image-1{
+  object-position: 50% 30%;
+}
+
+.tart-ring-image-6{
+  object-position: 50% 40%;
+}
+
+.tart-ring-prev,
+.tart-ring-next{
+  position: absolute;
+  top: 46%;
+  z-index: 100;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 3px;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: monospace;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  left: 31%;
+}
+
+.tart-ring-next{
+  left: unset;
+  right: 31%;
+}
+
+.tart-ring-prev:hover,
+.tart-ring-next:hover{
+  background-color: #aae3d9ad;
+  color: #ffffff;
+}
+
+
+/* Lemon Tart*/
+
+.lemon-tart-backgroundcolor{
+  background-color: #142c35;
+}
+
+.lemon-tart{
+  display: flex;
+  padding: 100px 10%;
+}
+
+.lemon-tart-description-mobile{
+  display: none;
+}
+
+.lemon-tart-description{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #ffffff;
+}
+
+.lemon-tart-description h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lemon-tart-description p{
+  width: 430px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.lemon-tart-description a{
+  text-decoration: none;
+  color: #000000;
+  background-color: #fffbf1;
+  padding: 15px 30px;
+  width: 400px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.lemon-tart-slideshow{
+  width: 46vw;
+  position: relative;
+}
+
+.lemon-tart-slideshow-pic{
+  text-align: center;
+}
+
+.lemon-tart-slideshow-pic img{
+  width: 40vw;
+  aspect-ratio: 1/1.05;
+  object-fit: cover;
+}
+
+.lemon-tart-arrow{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0 auto;
+}
+
+.lemon-tart-prev, .lemon-tart-next{
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  padding: 14px;
+  text-align: center;
+  color: white;
+  background-color: rgb(45, 112, 139);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 100%;
+  user-select: none;
+  z-index: 10;
+}
+
+.lemon-tart-prev{
+  margin: 0 7px 0 0;
+}
+
+.lemon-tart-prev:hover, .lemon-tart-next:hover {
+  background-color: rgba(56, 97, 135, 0.8);
+}
+
+.lemon-tart-bottomdot{
+  display: flex;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.lemon-tart-dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px 50px 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.lemon-tart-active, .lemon-tart-dot:hover {
+  background-color: rgb(45, 112, 139);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*Flower Tart*/
+
+.flower-tart{
+  padding-bottom: 100px;
+}
+
+.flower-tart-description{
+  padding: 170px 0 0 0;
+  color: #000000;
+}
+
+.flower-tart-description h3{
+  text-align: center;
+}
+
+.flower-tart-description p{
+  margin: 20px auto 0 auto;
+  text-align: center;
+  width: 850px;
+}
+
+.flower-tart-slider-section-2,
+.flower-tart-slider-section-3{
+  display: none;
+}
+
+.flower-tart-slider-1{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.flower-tart-sliderpic-1 {
+  display: none;
+}
+
+.flower-tart-picturesdisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 20px auto;
+}
+
+.flower-tart-picturesdisplay img{
+  width: 27vw;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
+
+.flower-tart-image-5{
+  object-position: 50% 80%;
+}
+
+.flower-tart-arrow{
+  display: flex;
+  margin-left: 5%;
+}
+
+.flower-tart-prev,
+.flower-tart-next{
+  z-index: 100;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3px;
+  font-weight: bold;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: monospace;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.flower-tart-prev{
+  margin: 0 5px 0 86%;
+}
+
+.flower-tart-prev:hover,
+.flower-tart-next:hover{
+  background-color: ;
+  color: #000000;
+}
+
+/* Choco Tart*/
+
+.choco-tart-backgroundcolor{
+  background-color: #142c35;
+}
+
+.choco-tart{
+  display: flex;
+  padding: 50px 10%;
+}
+
+.choco-tart-description-mobile{
+  display: none;
+}
+
+.choco-tart-description{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #ffffff;
+}
+
+.choco-tart-description h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.choco-tart-description p{
+  width: 430px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.choco-tart-description a{
+  text-decoration: none;
+  color: #000000;
+  background-color: #fffbf1;
+  padding: 15px 30px;
+  width: 400px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.choco-tart-slideshow{
+  width: 46vw;
+  position: relative;
+  margin: 50px 0 0 0;
+}
+
+.choco-tart-slideshow-pic{
+  text-align: center;
+}
+
+.choco-tart-slideshow-pic img{
+  width: 40vw;
+  aspect-ratio: 1/1.05;
+  object-fit: cover;
+}
+
+.choco-tartprev, .choco-tart-next{
+  cursor: pointer;
+  position: absolute;
+  top: 43%;
+  width: 55px;
+  height: 55px;
+  padding: 14px;
+  text-align: center;
+  color: white;
+  background-color: rgb(45, 112, 139);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 100%;
+  user-select: none;
+  z-index: 10;
+}
+
+.choco-tartprev{
+  left: 3%;
+}
+
+.choco-tart-next{
+  right: 3%;
+}
+
+.choco-tartprev:hover, .choco-tart-next:hover {
+  background-color: rgba(56, 97, 135, 0.8);
+}
+
+.choco-tart-bottomdot{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.choco-tart-dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px 50px 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.choco-tart-active, .choco-tart-dot:hover {
+  background-color: rgb(45, 112, 139);
+}
+
+/*Bread with Recipe*/
+
+.bread-with-recipe-backgroundcolor{
+  background-color: #142c35;
+  padding: 50px 0;
+}
+
+.bread-with-recipe-slideshow{
+  position: relative;
+}
+
+.bread-with-recipe-grid-content{
+  display: flex;
+  margin: 50px 10%;
+}
+
+.bread-with-recipe-image img{
+  width: 40vw;
+  aspect-ratio: 1/1.05;
+  object-fit: cover;
+}
+
+.bread-with-recipe-description{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #fffbf1;
+}
+
+.bread-with-recipe-description h3{
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+.bread-with-recipe-description p{
+  width: 410px;
+  line-height: 2em;
+  text-align: center;
+  margin: auto;
+}
+
+.bread-with-recipe-description a{
+  text-decoration: none;
+  color: #000000;
+  background-color: #fffbf1;
+  padding: 15px 30px;
+  width: 400px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.bread-with-recipe-prev, .bread-with-recipe-next{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  color: white;
+  background-color: rgb(45, 112, 139);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.bread-with-recipe-arrow{
+  display: flex;
+  margin-top: -110px;
+}
+
+.bread-with-recipe-prev{
+  margin: 0 10px 0 53%;
+}
+
+.bread-with-recipe-next{
+  margin: 0 20px 0 0;
+}
+
+.bread-with-recipe-prev:hover, .bread-with-recipe-next:hover {
+  background-color: rgba(56, 97, 135, 0.8);
+}
+
+.bread-with-recipe-bottomdot{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.bread-with-recipe-dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px 50px 2px;
+  background-color: #dfdfdf;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.bread-with-recipe-active, .bread-with-recipe-dot:hover {
+  background-color: rgb(45, 112, 139);
+}
+
+/*Explore other gallery*/
+
+.othergallerytoexplore{
+  margin: 100px 0 0 0;
+}
+
+.othergallerytoexplore h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-left: 6%;
+}
+
+.othergallery-scroll-container{
+  margin: 20px 6% 100px 6%;
+  gap: 40px;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.othergallery-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.container{
+  white-space: wrap;
+}
+
+.container img{
+  width: 23vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.othergallerytoexploreimage2{
+  object-position: 50% 65%;
+}
+
+.othergallery-sliderdescription h2{
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 20px 15px 10px 15px;
+}
+
+.othergallery-sliderdescription a{
+  text-decoration: none;
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.othergallery-sliderdescription p{
+  font-size: 17px;
+  line-height: 1.4em;
+  margin: 10px 15px;
+}
+
+/*copyright*/
+
+.copyright{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 11px;
+  color: grey;
+  bottom: 2%;
+}
+
+
+@media only screen and (max-width:1700px){
+
+  /*Tart Ring*/
+
+  .tart-ring-prev{
+    left: 30.5%;
+  }
+
+  .tart-ring-next{
+    right: 30.5%;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 23px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 16px;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 8%;
+  }
+  
+}
+
+@media only screen and (max-width:1500px){
+
+  /*Common Parameter*/
+  
+  p,
+  .lemon-tart-description a,
+  .lemon-tart-description-mobile a{
+    font-size: 18px;
+  }
+
+  /*Tart Ring*/
+
+  .tart-ring-description p{
+    width: 1050px;
+  }
+
+  .tart-ring-pic2 img{
+    width: 35vw;
+    aspect-ratio: 1/1.2;
+  }
+  
+  .tart-ring-pic1 img, .tart-ring-pic3 img{
+    width: 25vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .tart-ring-prev{
+    left: 28%;
+  }
+
+  .tart-ring-next{
+    right: 28%;
+  }
+
+  /* Lemon Tart*/
+
+  .lemon-tart{
+    padding: 0px 7% 50px 7%;
+  }
+
+  .lemon-tart-description p{
+    width: 400px;
+    line-height: 2em;
+  }
+
+  .lemon-tart-description a{
+    padding: 12px 30px;
+  }
+
+  /*Flower Tart*/
+
+  .flower-tart-description{
+    padding: 120px 0 0 0;
+  }
+
+  .flower-tart-description p{
+    width: 820px;
+  }
+
+  .flower-tart-prev,
+  .flower-tart-next{
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    padding: 8px 0;
+    border-width: 2px;
+  }
+
+  .flower-tart-prev{
+    margin: 0 5px 0 88%;
+  }
+
+  .flower-tart-picturesdisplay{
+    gap: 30px;
+    margin: 10px auto;
+  }
+
+  .flower-tart-picturesdisplay img{
+    width: 29vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 7%;
+  }
+
+  .bread-with-recipe-description p{
+    width: 390px;
+    line-height: 2em;
+  }
+
+  .bread-with-recipe-prev{
+    margin: 0 10px 0 50%;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 30px;
+  }
+
+  .container img{
+    width: 26vw;
+  }
+
+  .othergallerytoexplore h3{
+    font-size: 20px;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 21px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 15px;
+  }
+ 
+}
+
+
+@media only screen and (max-width:1300px){
+
+  /*Root*/
+
+  :root{
+    --width-image: 70vw;
+  }
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 750px;   
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 35px;
+  }
+
+  p,
+  .lemon-tart-description a,
+  .lemon-tart-description-mobile a{
+    font-size: 17px;
+  }
+
+
+  /*Tart Ring*/
+
+  .tart-ring{
+    padding-bottom: 100px;
+  }
+
+  .tart-ring-description{
+    padding-top: 100px;
+  }
+  
+  .tart-ring-description p{
+    margin: 15px auto 30px auto;
+    width: 970px;
+  }
+
+  .tart-ring-picturesdisplay{
+    gap: 65px;
+  }
+
+  .tart-ring-pic2 img{
+    width: 38vw;
+    aspect-ratio: 1/1.2;
+  }
+  
+  .tart-ring-pic1 img, .tart-ring-pic3 img{
+    width: 25vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .tart-ring-prev,
+  .tart-ring-next{
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    padding: 9px 0;
+    left: 26.5%;
+  }
+
+  .tart-ring-next{
+    left: unset;
+    right: 26.5%;
+  }
+
+  /* Lemon Tart*/
+
+  .lemon-tart-description p{
+    width: 380px;
+  }
+
+  .lemon-tart-slideshow-pic img{
+    width: 40vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .lemon-tart-prev, .lemon-tart-next{
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    border-width: 2px;
+    font-size: 17px;
+  }
+
+  .lemon-tart-dot{
+    height: 12px;
+    width: 12px;
+  }
+
+  /*Flower Tart*/
+
+  .flower-tart-description{
+    padding: 100px 0 0 0;
+  }
+
+  .flower-tart-description p{
+    width: 780px;
+  }
+
+  .flower-tart-prev,
+  .flower-tart-next{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding: 7px 0;
+  }
+
+  .flower-tart-prev{
+    margin: 0 5px 0 90%;
+  }
+
+  .flower-tart-picturesdisplay{
+    gap: 20px;
+    margin: 10px auto;
+  }
+
+  .flower-tart-picturesdisplay img{
+    width: 31vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-description p{
+    width: 370px;
+  }
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 5%;
+  }
+
+  .bread-with-recipe-image img{
+    width: 40vw;
+    height: 550px;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: -100px;
+  }
+
+  .bread-with-recipe-prev{
+    margin: 0 5px 0 48%;
+  }
+
+  .bread-with-recipe-prev, .bread-with-recipe-next{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 25px;
+    margin: 20px 4% 100px 4%;
+  }
+
+  .othergallerytoexplore h3{
+    margin-left: 4%;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 20px;
+  }
+
+  .othergallery-sliderdescription h2{
+    margin: 12px 15px 0px 15px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+    margin: 8px 10px 0px 15px;
+  }
+ 
+}
+
+
+@media only screen and (max-width:1050px){
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 700px;   
+  }
+
+  .topsectiondescription{
+    width: 50vw;
+    margin: auto -25% auto 5%;
+    padding: 6% 6%;
+  }
+
+  .topsectiondescription p{
+    font-size: 17px;
+    line-height: 1.5em;
+  }
+
+  /*Common Parameter*/
+
+  p,
+  .lemon-tart-description a,
+  .lemon-tart-description-mobile a{
+    font-size: 16px;
+  }
+
+  /*Tart Ring*/
+
+  .tart-ring-description p{
+    margin: 20px auto 30px auto;
+    width: 640px;
+  }
+
+  .tart-ring-pic2 img{
+    width: 42vw;
+    aspect-ratio: 1/1.2;
+  }
+  
+  .tart-ring-pic1 img, .tart-ring-pic3 img{
+    width: 30vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .tart-ring-prev,
+  .tart-ring-next{
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    padding: 8px 0;
+    left: 24%;
+  }
+
+  .tart-ring-next{
+    left: unset;
+    right: 24%;
+  }
+
+  /* Lemon Tart*/
+
+  .lemon-tart{
+    padding: 0 4% 20px 4%;
+  }
+
+  .lemon-tart-description p{
+    width: 350px;
+    line-height: 1.8em;
+  }
+
+  .lemon-tart-slideshow{
+    width: 46vw;
+    margin: 50px 0 0 0;
+  }
+
+  .lemon-tart-slideshow-pic img{
+    width: 40vw;
+    height: 480px;
+  }
+
+  .lemon-tart-prev, .lemon-tart-next{
+    width: 45px;
+    height: 45px;
+    padding: 11px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+
+  .lemon-tart-dot{
+    margin: 17px 2px 50px 5px;
+  }
+
+  /*Flower Tart*/
+
+  .flower-tart{
+    padding-bottom: 70px;
+  }
+
+  .flower-tart-description{
+    padding: 80px 0 0 0;
+  }
+
+  .flower-tart-description p{
+    width: 700px;
+  }
+
+  .flower-tart-slider-section-1{
+    display: none;
+  }
+
+  .flower-tart-slider-section-2{
+    display: grid;
+  }
+
+  .flower-tart-slider-2{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Hide the images by default */
+  .flower-tart-sliderpic-2 {
+    display: none;
+  }
+
+  .flower-tart-picturesdisplay{
+    gap: 30px;
+    margin: 10px auto;
+  }
+
+  .flower-tart-prev{
+    margin: 0 2px 0 81.8%;
+  }
+
+  .flower-tart-picturesdisplay img{
+    width: 40vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 4%;
+  }
+
+  .bread-with-recipe-image img{
+    width: 40vw;
+    height: 500px;
+  }
+
+  .bread-with-recipe-description h3{
+    letter-spacing: 2px;
+  }
+
+  .bread-with-recipe-description p{
+    width: 350px;
+    line-height: 2em;
+  }
+
+  .bread-with-recipe-prev{
+    margin: 0 5px 0 47%;
+  }
+
+  .bread-with-recipe-prev, .bread-with-recipe-next{
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    font-size: 15px;
+  }
+
+  .bread-with-recipe-dot{
+    height: 12px;
+    width: 12px;
+    margin: 0 2px 50px 2px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 25px;
+    margin: 20px 5% 100px 5%;
+  }
+
+  .othergallerytoexplore h3{
+    margin-left: 5%;
+  }
+
+  .container img{
+    width: 31vw;
+  }
+
+  .othergallery-sliderdescription h2{
+    margin: 12px 10px 0px 10px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+    margin: 8px 10px 0px 10px;
+  }
+}
+
+
+@media only screen and (max-width:900px){
+
+  /*Headings*/
+
+  .logo{
+    margin-left: 20px;
+  }
+
+  nav{
+    padding-right: 1%;
+  }
+
+  nav ul li{
+    margin-right: 28px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width:850px){
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 700px;   
+  }
+
+  .topsectiondescription{
+    width: 65vw;
+    margin: auto -30% auto 5%;
+    padding: 7% 6%;
+  }
+
+  .topsectiondescription h1{
+    font-size: 5vw;
+    line-height: 1.3em;
+  }
+
+  .topsectiondescription p{
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  /*Tart Ring*/
+
+  .tart-ring-description p{
+    margin: 15px auto 30px auto;
+    width: 640px;
+  }
+
+  .tart-ring-pic2 img{
+    width: 50vw;
+    aspect-ratio: 1/1.2;
+  }
+  
+  .tart-ring-pic1 img, .tart-ring-pic3 img{
+    width: 30vw;
+    aspect-ratio: 1/1.3;
+  }
+
+  .tart-ring-prev,
+  .tart-ring-next{
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    padding: 7px 0;
+    left: 18.5%;
+  }
+
+  .tart-ring-next{
+    left: unset;
+    right: 18.5%;
+  }
+
+  /* Lemon Tart*/
+
+  .lemon-tart{
+    padding: 0 3%;
+  }
+
+  .lemon-tart-description p{
+    width: 310px;
+    line-height: 1.7em;
+  }
+
+  .lemon-tart-description a{
+    padding: 10px 30px;
+  }
+
+  .lemon-tart-slideshow{
+    width: 48vw;
+    margin: 50px 0 0 0;
+  }
+
+  .lemon-tart-slideshow-pic img{
+    width: 44vw;
+    height: 440px;
+  }
+
+  .lemon-tart-prev, .lemon-tart-next{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+
+  .lemon-tart-dot{
+    margin: 15px 2px 50px 5px;
+  }
+
+  /*Flower Tart*/
+
+  .flower-tart-description p{
+    margin: 12px auto 10px auto;
+    width: 540px;
+  }
+
+  .flower-tart-prev{
+    margin: 0 2px 0 83.5%;
+  }
+
+  .flower-tart-picturesdisplay{
+    gap: 20px;
+  }
+
+  .flower-tart-picturesdisplay img{
+    width: 44vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 2% 50px 4%;
+  }
+
+  .bread-with-recipe-image img{
+    width: 40vw;
+    height: 440px;
+  }
+
+  .bread-with-recipe-description h3{
+    font-size: 27px;
+    letter-spacing: 2px;
+  }
+
+  .bread-with-recipe-description p{
+    width: 280px;
+    line-height: 1.7em;
+  }
+
+  .bread-with-recipe-description a{
+    padding: 10px 30px;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: -95px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 18px;
+  }
+
+  .container img{
+    width: 38vw;
+  }
+  
+}
+
+
+
+@media only screen and (max-width:700px){
+
+	/*Headings*/
+
+  nav ul li{
+    margin-right: 15px;
+  } 
+
+  nav ul li a{
+    font-size: 15px;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  /*Tart Ring*/
+
+  .tart-ring-description p{
+    width: 500px;
+    line-height: 1.6em;
+  }
+
+  .tart-ring-pic2 img{
+    width: 57vw;
+    aspect-ratio: 1/1.2;
+  }
+  
+  .tart-ring-pic1 img, .tart-ring-pic3 img{
+    width: 35vw;
+    aspect-ratio: 1/1.4;
+  }
+
+  .tart-ring-prev{
+    left: 14%;
+  }
+
+  .tart-ring-next{
+    right: 14%;
+  }
+
+  /* Lemon Tart*/
+
+  .lemon-tart{
+    display: grid;
+    justify-content: center;
+    padding: 20px 10% 60px 10%;
+  }
+
+  .lemon-tart-description{
+    display: none;
+  }
+
+  .lemon-tart-description-mobile{
+    display: grid;
+    color: #ffffff;
+  }
+
+  .lemon-tart-description-mobile h3{
+    text-align: center;
+  }
+
+  .lemon-tart-description-mobile p{
+    text-align: center;
+    margin: 15px auto 0 auto;
+    width: 440px;
+    line-height: 1.7em;
+  }
+
+  .lemon-tart-description-mobile a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #fffbf1;
+    padding: 10px 30px;
+    width: 400px;
+    line-height: 1.8em;
+    text-align: center;
+  }
+
+  .lemon-tart-slideshow{
+    width: 82vw;
+    margin: 50px 0 0 0;
+  }
+
+  .lemon-tart-slideshow-pic img{
+    width: 73vw;
+    height: unset;
+    aspect-ratio: 1/1;
+  }
+
+  .lemon-tart-prev, .lemon-tart-next{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+
+  /*Flower Tart*/
+
+  .flower-tart{
+    padding-bottom: 50px;
+  }
+
+  .flower-tart-description p{
+    margin: 12px auto 10px auto;
+    width: 520px;
+    line-height: 1.6em;
+  }
+
+  .flower-tart-prev{
+    margin: 0 1px 0 82.5%;
+  }
+
+  .flower-tart-picturesdisplay{
+    gap: 15px;
+    margin: 10px auto;
+  }
+
+  .flower-tart-picturesdisplay img{
+    width: 45vw;
+    height: 400px;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    display: grid;
+    margin: 20px 7% 30px 7%;
+    justify-content: center;
+  }
+
+  .bread-with-recipe-image img{
+    width: 75vw;
+    height: 450px;
+  }
+
+  .bread-with-recipe-description h3{
+    margin: 30px auto 20px auto;
+  }
+
+  .bread-with-recipe-description p{
+    width: 450px;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: 0px;
+    justify-content: center;
+  }
+
+  .bread-with-recipe-prev{
+    margin: unset;
+  }
+
+  .bread-with-recipe-prev{
+    margin-right: 5px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore{
+    padding-top: 30px;
+  }
+
+  .othergallery-scroll-container{
+    gap: 20px;
+    margin: 10px 5% 100px 5%;
+  }
+
+  .othergallerytoexplore{
+    margin: 30px 0 0 0;
+  }
+
+  .container img{
+    width: 40vw;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 20px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+  }
+  
+}
+
+
+@media only screen and (max-width:600px){
+
+  /*Headings*/
+
+  .logo{
+    width: 12%;
+    max-width: 50px;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
+
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
+
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+
+  nav ul li a:hover{
+    color:black;
+  }
+
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.5s;
+  }
+
+  nav ul li a:hover::after{
+    width: 0;
+  }
+
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 58px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  #menulist{
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
+
+  /*Root*/
+
+  :root{
+    --width-image: 80vw;
+  }
+
+  /*Top Section*/
+
+  .topsectionimage img{
+    margin-left: 0%;
+  }
+
+  .topsectionimage img,
+  .topsection{
+    height: 700px;   
+  }
+
+  .topsectiondescription{
+    width: 75vw;
+    margin: auto -55% auto 5%;
+    margin-top: 8%;
+    padding: 7% 6%;
+  }
+
+  .topsectiondescription h1{
+    font-family: 'Lora', sans-serif;
+    font-size: 6vw;
+    line-height: 1.3em;
+  }
+
+  .topsectiondescription p{
+    letter-spacing: 0px;
+    line-height: 1.5em;
+    margin: 10px 0 0 0;
+  }
+
+  /*Common Parameter*/
+  
+  p,
+  .lemon-tart-description-mobile a{
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 1.5em;
+  }
+
+  /*Tart Ring*/
+
+  .tart-ring{
+    padding-bottom: 70px;
+  }
+
+  .tart-ring-description{
+    padding-top: 70px;
+  }
+
+  .tart-ring-description p{
+    width: 330px;
+  }
+
+  .tart-ring-pic2 img{
+    width: 65vw;
+    aspect-ratio: 1/1.25;
+  }
+  
+  .tart-ring-pic1 img, .tart-ring-pic3 img{
+    width: 40vw;
+    aspect-ratio: 1/1.4;
+  }
+
+  .tart-ring-prev{
+    left: 8.5%;
+  }
+
+  .tart-ring-next{
+    right: 8.5%;
+  }
+
+  /* Lemon Tart*/
+
+  .lemon-tart{
+    padding: 30px 10% 60px 10%;
+  }
+
+  .lemon-tart-description-mobile p{
+    width: 390px;
+  }
+
+  .lemon-tart-slideshow-pic img{
+    width: 78vw;
+    aspect-ratio: 1/1;
+  }
+
+  /*Flower Tart*/
+
+  .flower-tart-description p{
+    margin: 12px auto 10px auto;
+    width: 360px;
+  }
+
+  .flower-tart-slider-section-2{
+    display: none;
+  }
+
+  .flower-tart-slider-section-3{
+    display: grid;
+  }
+
+  .flower-tart-slider-3{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Hide the images by default */
+  .flower-tart-sliderpic-3 {
+    display: none;
+  }
+
+  .flower-tart-picturesdisplay{
+    gap: 0px;
+    margin: 10px auto;
+  }
+
+  .flower-tart-prev,
+  .flower-tart-next{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  .flower-tart-prev{
+    margin: 0 1px 0 74%;
+  }
+
+  .flower-tart-picturesdisplay img{
+    width: 80vw;
+    aspect-ratio: 1/1.1;
+    height: unset;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 20px auto;
+  }
+
+  .bread-with-recipe-image img{
+    width: 80vw;
+    height: 400px;
+  }
+
+  .bread-with-recipe-description h3{
+    margin: 30px auto 10px auto;
+  }
+
+  .bread-with-recipe-description p{
+    width: 400px;
+    line-height: 1.6em;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: 20px;
+  }
+
+  .bread-with-recipe-dot{
+    margin: 0 2px 20px 2px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 17px;
+  }
+
+  .container img{
+    width: 50vw;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 19px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  
+}
+
+
+@media only screen and (max-width:500px){
+
+  /*Common Parameter*/
+
+  p,
+  .lemon-tart-description-mobile a{
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  /*Tart Ring*/
+
+  .tart-ring{
+    padding-bottom: 30px;
+  }
+
+  .tart-ring-description p{
+    width: 320px;
+    margin: 15px auto;
+  }
+
+  .tart-ring-pic2 img{
+    width: 83vw;
+    aspect-ratio: 1/1.1;
+  }
+  
+  .tart-ring-pic1 img, .tart-ring-pic3 img{
+    width: 45vw;
+    aspect-ratio: 1/1.4;
+  }
+
+  .tart-ring-prev{
+    left: 2%;
+  }
+
+  .tart-ring-next{
+    right: 2%;
+  }
+
+  /* Lemon Tart*/
+
+  .lemon-tart{
+    padding: 50px 6% 40px 6%;
+  }
+
+  .lemon-tart-description-mobile p{
+    margin: 15px auto 0 auto;
+    width: 330px;
+  }
+
+  .lemon-tart-slideshow{
+    width: 90vw;
+  }
+
+  .lemon-tart-slideshow-pic img{
+    width: 90vw;
+  }
+
+  .lemon-tart-prev, .lemon-tart-next{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .lemon-tart-dot{
+    margin: 13px 2px 50px 5px;
+  }
+
+  /*Flower Tart*/
+
+  .flower-tart-description p{
+    margin: 12px auto 10px auto;
+    width: 315px;
+  }
+
+  .flower-tart-prev{
+    margin: 0 1px 0 76%;
+  }
+
+  .flower-tart-picturesdisplay img{
+    width: 90vw;
+    height: 450px;
+  }
+
+   /*Bread with Recipe*/
+
+   .bread-with-recipe-grid-content{
+    margin: 10px auto;
+  }
+
+  .bread-with-recipe-image img{
+    width: 90vw;
+    height: 360px;
+  }
+
+  .bread-with-recipe-description h3{
+    font-size: 27px;
+  }
+
+  .bread-with-recipe-description p{
+    width: 300px;
+  }
+
+  .bread-with-recipe-arrow{
+    margin-top: 30px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore{
+    margin: 40px 0 0 0;
+  }
+
+  .othergallerytoexplore h3{
+    letter-spacing: 0px;
+  }
+
+  .container img{
+    width: 63vw;
+  }
+
+  .othergallery-sliderdescription h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 10px 10px 5px 10px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 13px;
+    margin: 0 10px;
+  }
+  
+} 
+
+
+@media only screen and (max-width:450px){
+
+  /*Root*/
+
+  :root{
+    --width-image: 92vw;
+  }
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection{
+    height: 600px;   
+  }
+
+  .topsectionimage img{
+    object-position: 50% 100%;   
+  }
+
+  .topsectiondescription{
+    width: 85vw;
+    margin: auto -80% auto 4%;
+    margin-top: 390px;
+    padding: 6.5% 6%;
+  }
+
+  .topsectiondescription h1{
+    font-size: 6vw;
+    letter-spacing: 2px;
+    line-height: 1.3em;
+  }
+
+  .topsectiondescription p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4em;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  
+  /*Tart Ring*/
+
+  .tart-ring-pic2 img{
+    width: 80vw;
+    aspect-ratio: 1/1.2;
+  }
+  
+  .tart-ring-prev{
+    left: 2%;
+  }
+
+  .tart-ring-next{
+    right: 2%;
+  }
+
+  /*Flower Tart*/
+
+  .flower-tart-prev{
+    margin: 0 1px 0 74%;
+  }
+
+  .flower-tart-picturesdisplay img{
+    width: 90vw;
+    height: 420px;
+  }
+
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-image img{
+    width: 90vw;
+    height: 330px;
+  }
+
+  .bread-with-recipe-description h3{
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-sliderdescription h2{
+    font-size: 17px;
+  }
+
+}
+
