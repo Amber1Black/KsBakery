@@ -121,11 +121,7 @@ nav ul li a:hover::after{
 /*Content*/
 
 .content{
-  background: linear-gradient(
-    to right,
-    rgb(252, 245, 242) 0%,
-    rgb(255, 250, 246) 100%
-  );
+
 }
 
 /*Root*/
