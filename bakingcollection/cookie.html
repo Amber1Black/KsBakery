@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RF94ND0HKD');
+  </script>
+  
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="K's Bakery, Cookie Gallery is where artisanal skills meet delicious creativity. Each cookie is handcrafted with precision and passion, showcasing the artistry of baking.">
+
+  <link rel="icon" type="image/png" href="../Pictures/websitelogo.png" sizes = "512x512">
+  <link rel="shortcut icon" href="../Pictures/" type="image/png" sizes = "512x512">
+
+  <title>K's Bakery</title>
+  <link rel="stylesheet" href="../style/cookiecollection.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="headingsection">
+    <a href="https://www.k-bakery.com"><img class="logo" src="../Pictures/Logo6.jpg"></a>
+        <nav>
+          <ul id="menulist">
+            <li><a href="https://www.k-bakery.com/GallerySummary">Baking Collection</a></li>
+            <li><a href="https://www.k-bakery.com/RecipeSummary">Recipe</a></li>
+            <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
+            <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
+            <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menuicon">
+            <img class="menu-icon" onclick="togglemenu()" src="../Pictures/Menu.png">
+        </div>
+  </div>
+
+  
+  <div class="content">
+
+    <div class="topsection">
+      <div class="topsectiondescription">
+        <h1>Cookie Collection</h1>
+        <p>Cookies can be made in various styles, from simple designs to cartoon shapes and elegant creations. The process is easy and enjoyable, bake cookies at home is a fun and rewarding activity!</p>
+      </div>
+      <div class="topsectionimage">
+        <img src ="../Pictures/Cookie - Dress Cookie.jpg" alt="Dress-shaped cookies dipped in chocolate, decorated in different patterns.">
+      </div>
+    </div>
+
+    <div class="buttercookie">
+      <div class="buttercookie-reveal reveal2">
+        <div class="buttercookie-p">
+          <h3>Butter Cookie</h3>
+          <p>It's easy to make cookies at home. Simply mix butter, sugar, eggs, and flour together, then bake them for a delicious treat. With a few simple steps, you can shape them into a variety of cute forms.
+            <a href="https://www.k-bakery.com/DressCookieRecipe">Let's try &#8594</a>
+          </p>
+        </div>
+        <div class="buttercookie-slideshow">
+          <div class="buttercookie-slideshow-pic fade">
+            <img src="../Pictures/Cookie - Rectangle Cookie.jpg" alt="Simple cookie in butter, matcha and black sesame flavor">
+          </div>
+          <div class="buttercookie-slideshow-pic fade">
+            <img src="../Pictures/Cookie - Jap Cookie.jpg" alt="Japanese traditional cookie">
+          </div>
+          <div class="buttercookie-slideshow-pic fade">
+            <img src="../Pictures/Cookie - Flower Cookie.jpg" alt="Cookie with rich butter flavor in flower shape">
+          </div>
+          <a class="buttercookieprev" onclick="plusSlides(-1)">❮</a>
+          <a class="buttercookienext" onclick="plusSlides(1)">❯</a>
+    
+          <div class ="buttercookie-bottomdot">
+            <span class="buttercookie-dot" onclick="currentSlide(1)"></span> 
+            <span class="buttercookie-dot" onclick="currentSlide(2)"></span> 
+            <span class="buttercookie-dot" onclick="currentSlide(3)"></span> 
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="cartoon-cookie">
+      <div class="cartoon-cookie-description">
+        <h3>Cartoon Cookie</h3>
+        <p>To add variety to our cookie-making, we can try incorporating color gel into the dough. This will let us create different shades and craft adorable cartoon-themed cookies.</p>
+      </div>
+      <div class="cartoon-image reveal">
+        <div class="image1">
+          <img src ="../Pictures/Cookie - Poke Ball.jpg" alt="Cookie made in Pokemon Poke Ball shape">
+        </div>
+        <div class="image2">
+          <img src ="../Pictures/Cookie - Mushroom.jpg" alt="Cookie made in Mario Mushroom and Star shape">
+        </div>
+        <div class="image3">
+          <img src ="../Pictures/Cookie - Apple Cookie.jpg" alt="Cookie made in apple shape">
+        </div>
+      </div>
+    </div>
+
+    <div class="cookie-slider reveal">
+      <div class="cookie-description">
+        <h3>Cookie</h3>
+        <p>Making cookies at home is truly worth the effort. Not only is it a fun and creative activity, but the results are delicious and rewarding. Whether you're experimenting with different colors, shapes, or flavors, homemade cookies add a personal touch that everyone will love. I hope you all enjoy the process and the tasty treats that come from it!</p>
+      </div>
+      <div class="cookie-sliderpic">
+        <div class="cookie-picturesdisplay">
+          <div class="pic1">
+            <img src="../Pictures/Cookie - Rectangle Cookie 2.jpg" alt="Simple cookie in butter, matcha and black sesame flavor">
+          </div>
+          <div class="pic2">
+            <img src="../Pictures/Cookie - Double color cookie.jpg" alt="Bear and star-shaped cookie with a double flavor of butter and chocolate">
+          </div>
+          <div class="pic3">
+            <img src ="../Pictures/Cookie - Heart Cookie.jpg" alt="Cookie made in heart shape">
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-sliderpic">
+        <div class="cookie-picturesdisplay">
+          <div class="pic1">
+            <img src="../Pictures/Cookie - Double color cookie.jpg" alt="Bear and star-shaped cookie with a double flavor of butter and chocolate">
+          </div>
+          <div class="pic2">
+            <img src ="../Pictures/Cookie - Heart Cookie.jpg" alt="Cookie made in heart shape">
+          </div>
+          <div class="pic3">
+            <img src ="../Pictures/Cookie - Cat Cookie.jpg" alt="Cookie made in cat shape">
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-sliderpic">
+        <div class="cookie-picturesdisplay">
+          <div class="pic1">
+            <img src ="../Pictures/Cookie - Heart Cookie.jpg" alt="Cookie made in heart shape">
+          </div>
+          <div class="pic2">
+            <img src ="../Pictures/Cookie - Cat Cookie.jpg" alt="Cookie made in cat shape">
+          </div>
+          <div class="pic3">
+            <img src ="../Pictures/Cookie - Cheese Cookie.jpg" alt="Cookie made in cheese shape">
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-sliderpic">
+        <div class="cookie-picturesdisplay">
+          <div class="pic1">
+            <img src ="../Pictures/Cookie - Cat Cookie.jpg" alt="Cookie made in cat shape">
+          </div>
+          <div class="pic2">
+            <img src ="../Pictures/Cookie - Cheese Cookie.jpg" alt="Cookie made in cheese shape">
+          </div>
+          <div class="pic3">
+            <img src ="../Pictures/Cookie - Rectangle Cookie 2.jpg" alt="Simple cookie in butter, matcha and black sesame flavor">
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-sliderpic">
+        <div class="cookie-picturesdisplay">
+          <div class="pic1">
+            <img src ="../Pictures/Cookie - Cheese Cookie.jpg" alt="Cookie made in cheese shape">
+          </div>
+          <div class="pic2">
+            <img src ="../Pictures/Cookie - Rectangle Cookie 2.jpg" alt="Simple cookie in butter, matcha and black sesame flavor">
+          </div>
+          <div class="pic3">
+            <img src ="../Pictures/Cookie - Double color cookie.jpg" alt="Bear and star-shaped cookie with a double flavor of butter and chocolate">
+          </div>
+        </div>
+      </div>
+
+        
+      <a class="cookie-prev" onclick="cookieplusSlides(-1)">&#8592</a>
+      <a class="cookie-next" onclick="cookieplusSlides(1)">&#8594</a>
+    </div>
+
+    <div class="othergallerytoexplore">
+      <h3>You may explore the below collection also :</h3>
+      <div class="othergallery-scroll-container">
+        <div class="container">
+          <a href="https://www.k-bakery.com/bakingcollection/tart"><img src="../Pictures/Tart - Droplet.jpg" alt="Cream tart link to Tart Gallery page"></a>
+          <div class="othergallery-sliderdescription">
+            <a href="https://www.k-bakery.com/bakingcollection/tart"><h2>Tart <span style="font-family:cursive;">&#8594</span></h2></a>
+            <p>Discover a delightful array of handcrafted tarts, from classic fruit-filled delights to innovative creations that surprise and delight.</p>
+          </div>
+        </div>
+        <div class="container">
+          <a href="https://www.k-bakery.com/CakeGallery"><img src="../Pictures/Cake - Coffee Cake.jpg" class = "othergallerytoexploreimage2" alt="Coffee Cake link to Cake Gallery page"></a>
+          <div class="othergallery-sliderdescription">
+            <a href="https://www.k-bakery.com/CakeGallery"><h2>Cake <span style="font-family:cursive;">&#8594</span></h2></a>
+            <p>Cakes enrich our lives and create lasting memories. Let's discover the endless possibilities that cakes could offer.</p>
+          </div>
+        </div>
+        <div class="container">
+          <a href="https://www.k-bakery.com/bakingcollection/bread"><img src="../Pictures/Bread - Ribbon Bread 2.jpg" alt="Ribbon Bread link to Bread Gallery page"></a>
+          <div class="othergallery-sliderdescription">
+            <a href="https://www.k-bakery.com/bakingcollection/bread"><h2>Bread <span style="font-family:cursive;">&#8594</span></h2></a>
+            <p>Aroma of freshly baked bread fills the air, experience the exquisite textures and flavors that only handmade bread can offer.</p>
+          </div>
+        </div>
+        <div class="container">
+          <a href="https://www.k-bakery.com/bakingcollection/pastry"><img src="../Pictures/Pastry - Flower Puff.jpg" alt="Choux Pastry link to Pastry Gallery page"></a>
+          <div class="othergallery-sliderdescription">
+            <a href="https://www.k-bakery.com/bakingcollection/pastry"><h2>Pastry <span style="font-family:cursive;">&#8594</span></h2></a>
+            <p>A curated showcase of the finest pastries that highlight the artistry, craftsmanship, and cultural diversity found in the world of baking.</p>
+          </div>
+        </div>    
+      </div>
+    </div>
+
+  </div>  
+  
+  <div class="copyright">
+      Copyright &#169 2023 K's Bakery
+  </div>
+
+ 
+
+  <script>
+    //Menu
+    var menulist = document.getElementById("menulist");
+
+    menulist.style.maxHeight = "0px";
+
+    function togglemenu(){
+      if(menulist.style.maxHeight == "0px")
+      {
+        menulist.style.maxHeight = "100vh"
+      }
+      else
+      {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  <script type = "text/javascript">
+    //Reveal
+    window.addEventListener('scroll', reveal);
+    function reveal (){
+      var reveals = document.querySelectorAll('.reveal');
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+
+        else{
+            reveals[i].classList.remove('active');
+        }
+      }
+  }  
+  </script>
+
+  <script type = "text/javascript">
+    //Reveal2
+    window.addEventListener('scroll', reveal2);
+    function reveal2 (){
+      var reveals = document.querySelectorAll('.reveal2');
+      for(var i = 0; i < reveals.length; i++){
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+      }
+      else{
+          reveals[i].classList.remove('active');
+      }
+    }
+  }  
+  </script>
+
+  <script type = "text/javascript">
+    //Reveal3
+    window.addEventListener('scroll', reveal3);
+    function reveal3 (){
+      var reveals = document.querySelectorAll('.reveal3');
+      for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+
+        else{
+            reveals[i].classList.remove('active');
+        }
+      }
+  }  
+  </script>
+
+  <script>
+    //Last Part Cookie
+    let cookieslideIndex = 1;
+    cookieshowSlides(cookieslideIndex);
+
+    function cookieplusSlides(n) {
+      cookieshowSlides(cookieslideIndex += n);
+    }
+
+    function cookiecurrentSlide(n) {
+      cookieshowSlides(cookieslideIndex = n);
+    }
+
+    function cookieshowSlides(n) {
+      let i;
+      let cookieslides = document.getElementsByClassName("cookie-sliderpic");
+      let cookie = document.getElementsByClassName("whole");
+      if (n > cookieslides.length) {cookieslideIndex = 1}
+      if (n < 1) {cookieslideIndex = cookieslides.length}
+      for (i = 0; i < cookieslides.length; i++) {
+        cookieslides[i].style.display = "none";
+      }
+      for (i = 0; i < cookie.length; i++) {
+        cookie[i].className = cookie[i].className.replace("active", "");
+      }
+      cookieslides[cookieslideIndex-1].style.display = "block";
+      cookie[cookieslideIndex-1].className += " active";
+    }
+  </script>  
+
+  <script>
+    //Butter Cookie
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("buttercookie-slideshow-pic");
+      let firstdots = document.getElementsByClassName("buttercookie-dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < firstdots.length; i++) {
+        firstdots[i].className = firstdots[i].className.replace("buttercookie-active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      firstdots[slideIndex-1].className += " buttercookie-active";
+    }
+  </script>
+
+  
+</body>
+</html>
