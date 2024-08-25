@@ -123,7 +123,7 @@ nav ul li a:hover::after{
 
 .content{
   overflow: hidden;
-  background-color:rgb(255, 248, 243);
+  background: rgb(252, 246, 239);
 }
 
 /*Root*/
@@ -138,8 +138,8 @@ nav ul li a:hover::after{
 .topsection{
   background: linear-gradient(
     to right,
-    #142c35 0%,
-    #142c35 40%,
+    rgb(255, 216, 201) 0%,
+    rgb(255, 223, 211) 40%,
     rgb(255, 255, 255) 40%,
     rgb(255, 255, 255) 100%
   );
@@ -193,7 +193,7 @@ h3{
 }
 
 p,
-.palmier-description a{
+.buttercookie-p a{
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
@@ -201,164 +201,57 @@ p,
   line-height: 1.5em;
 }
 
-/*Palmier*/
+/*Butter Cookie*/
 
-.palmiersection{
-  display: flex;
+.buttercookie{
   background-color: #142c35;
-  padding: 80px 0;
-}
-
-.palmiersection img{
-  width: 40vw;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  margin: 0 0 0 8%;
-}
-
-.palmier-description{
-  border-style: solid;
-  border-width: 2px;
-  border-color: #ffffff;
-  padding: 80px;
-  color: #ffffff;
-  width: 710px;
-  margin: auto;
-}
-
-.palmier-description h3{
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.palmier-description p{
-  text-align: center;
-  align-items: center;
-  line-height: 1.8em;
-}
-
-.palmier-description a{
-  text-decoration: none;
-  color: #142c35;
-  background-color: rgb(255, 255, 250);
-  padding: 10px 30px;
-}
-
-/*Choux Pastry*/
-
-.chouxpastry-description{
-  margin: 60px 25% 50px 10%;
-}
-
-.chouxpastry-description p{
-  margin-top: 20px;
-}
-
-.chouxpastry-slider{
-  overflow: hidden;
-  position: relative;
-  padding: 50px 0 100px 0;
-  width: 100%;
-}
-
-/* Hide the images by default */
-.chouxpastry-sliderpic {
-  display: none;
-}
-
-.chouxpastry-picturesdisplay{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-}
-
-.pic2 img{
-  width: 31vw;
-  aspect-ratio: 1/1.2;
-  object-fit: cover;
-}
-
-.pic1 img, .pic3 img{
-  width: 25vw;
-  aspect-ratio: 1/1.1;
-  object-fit: cover;
-  filter: brightness(0.9);
-}
-
-.chouxpastry-prev,
-.chouxpastry-next{
-  position: absolute;
-  top: 55%;
-  z-index: 100;
-  width: 55px;
-  height: 55px;
-  border-radius: 100%;
-  color: #000000;
-  border-style: solid;
-  border-width: 3px;
-  font-size: 30px;
-  font-weight: 500;
-  font-family: ;
-  padding: 6px 0;
-  text-align: center;
-  cursor: pointer;
-  left: 31%;
-}
-
-.chouxpastry-next{
-  left: unset;
-  right: 31%;
-}
-
-.chouxpastry-prev:hover,
-.chouxpastry-next:hover{
-  background-color: #346b83ad;
   color: #ffffff;
 }
 
-/*Macaron*/
-
-.macaron{
+.buttercookie-reveal{
   display: flex;
-  margin-top: 20px;
 }
 
-.macaron-p{
+.buttercookie-p{
   display: grid;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 
-.macaron-p h3{
+.buttercookie-p h3{
   text-align: center;
   margin-bottom: 20px;
 }
 
-.macaron-p p{
-  width: 470px;
-  line-height: 1.8em;
+.buttercookie-p p{
+  width: 450px;
+  line-height: 2.2em;
   text-align: center;
 }
 
-.macaron-slideshow{
+.buttercookie-p a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.buttercookie-slideshow{
   width: 46vw;
   position: relative;
-  margin: 50px 5% 0 0;
+  margin: 100px 5% 100px 0;
 }
 
-.macaron-slideshow-pic{
+.buttercookie-slideshow-pic{
   text-align: center;
 }
 
-.macaron-slideshow-pic img{
+.buttercookie-slideshow-pic img{
   width: 40vw;
   aspect-ratio: 1/1.05;
   object-fit: cover;
 }
 
-.macaronprev, .macaronnext{
+.buttercookieprev, .buttercookienext{
   cursor: pointer;
   position: absolute;
   top: 45%;
@@ -379,35 +272,35 @@ p,
   z-index: 10;
 }
 
-.macaronprev{
+.buttercookieprev{
   left: 3%;
 }
 
-.macaronnext{
+.buttercookienext{
   right: 3%;
 }
 
-.macaronprev:hover, .macaronnext:hover {
+.buttercookieprev:hover, .buttercookienext:hover {
   background-color: rgba(56, 97, 135, 0.8);
 }
 
-.macaron-bottomdot{
+.buttercookie-bottomdot{
   margin-top: 15px;
   text-align: center;
 }
 
-.macaron-dot{
+.buttercookie-dot{
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px 50px 2px;
+  margin: 0 2px 0 2px;
   background-color: #dfdfdf;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.macaron-active, .macaron-dot:hover {
+.buttercookie-active, .buttercookie-dot:hover {
   background-color: rgb(45, 112, 139);
 }
 
@@ -420,6 +313,144 @@ p,
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+/*Cartoon Cookie*/
+
+.cartoon-cookie{
+  background-color: rgb(243, 201, 184);
+  padding: 50px 0;
+}
+
+.cartoon-cookie-description{
+  margin: 80px auto 0 auto;
+  text-align: center;
+}
+
+.cartoon-cookie-description p{
+  width: 950px;
+  line-height: 1.8em;
+  margin: 20px auto;
+}
+
+.cartoon-image{
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.cartoon-image img{
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+
+.image1{
+  rotate: -6deg;
+  margin: 90px 0 30px 80px;
+}
+
+.image1 img{
+  width: 90%;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
+
+.image2{
+  rotate: 5deg;
+  margin: 80px 0 0 0;
+}
+
+.image2 img{
+  width: 90%;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
+
+.image3{
+  rotate: 2deg;
+  margin: 150px 0 80px 2%;
+}
+
+.image3 img{
+  width: 80%;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+}
+
+/*Cookie*/
+
+.cookie-description{
+  margin: 60px 25% 50px 10%;
+}
+
+.cookie-description p{
+  margin-top: 20px;
+}
+
+.cookie-slider{
+  overflow: hidden;
+  position: relative;
+  padding: 50px 0 100px 0;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.cookie-sliderpic {
+  display: none;
+}
+
+.cookie-picturesdisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.pic2 img{
+  width: 31vw;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+  padding: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color:#000000;
+}
+
+.pic1 img, .pic3 img{
+  width: 25vw;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.cookie-prev,
+.cookie-next{
+  position: absolute;
+  top: 60%;
+  z-index: 100;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-color: #247174fa;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: monospace;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  left: 33.5%;
+}
+
+.cookie-next{
+  left: unset;
+  right: 33.5%;
+}
+
+.cookie-prev:hover,
+.cookie-next:hover{
+  background-color: #346b83ad;
+  color: #ffffff;
 }
 
 /*Explore other gallery*/
@@ -498,28 +529,10 @@ p,
 
 @media only screen and (max-width:1700px){
 
-  /*Choux Pastry*/
+  /*Butter Cookie*/
 
-  .chouxpastry-prev{
-    left: 30.5%;
-  }
-
-  .chouxpastry-next{
-    right: 30.5%;
-  }
-
-  /*Palmier*/
-
-  .palmier-description{
-    padding: 80px 60px;
-    width: 650px;
-  }
-
-  /*Macaron*/
-
-  .macaron-p p{
-    width: 460px;
-    line-height: 1.8em;
+  .buttercookie-p p{
+    width: 430px;
   }
 
   /*Explore other gallery*/
@@ -538,32 +551,36 @@ p,
 @media only screen and (max-width:1500px){
 
   /*Common Parameter*/
-  
+
   p,
-  .palmier-description a{
+  .buttercookie-p a{
     font-size: 18px;
   }
 
-  /*Palmier*/
+  /*Butter Cookie*/
 
-  .palmiersection img{
-    margin: 0 0 0 5%;
+  .buttercookie-p p{
+    width: 400px;
   }
 
-  .palmier-description{
-    padding: 60px 60px;
-    width: 625px;
+  /*Cartoon Cookie*/
+
+  .cartoon-cookie{
+    padding: 30px 0;
   }
 
-  /*Choux Pastry*/
-
-  .chouxpastry-picturesdisplay{
-    gap: 65px;
+  .cartoon-cookie-description p{
+    width: 900px;
+    line-height: 1.8em;
+    margin: 20px auto 0 auto;
   }
+
+  /*Cookie*/
 
   .pic2 img{
     width: 35vw;
     aspect-ratio: 1/1.2;
+    padding: 20px;
   }
   
   .pic1 img, .pic3 img{
@@ -571,21 +588,19 @@ p,
     aspect-ratio: 1/1.2;
   }
 
-  .chouxpastry-prev{
-    top: 57%;
-    left: 29.3%;
+  .cookie-prev,
+  .cookie-next{
+    top: 60%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    padding: 7px 0;
+    left: 31.5%;
   }
 
-  .chouxpastry-next{
-    top: 57%;
-    right: 29.3%;
-  }
-
-  /*Macaron*/
-
-  .macaron-p p{
-    width: 390px;
-    line-height: 1.8em;
+  .cookie-next{
+    left: unset;
+    right: 31.5%;
   }
 
   /*Explore other gallery*/
@@ -619,14 +634,14 @@ p,
   /*Root*/
 
   :root{
-    --width-image: 70vw;
+    --width-image: 75vw;
   }
 
   /*Top Section*/
 
   .topsectiondescription{
     width: 45vw;
-    margin: auto -25% auto 6%;
+    margin: auto -30% auto 6%;
     padding: 5% 6%;
   }
 
@@ -644,43 +659,92 @@ p,
   h3{
     font-size: 30px;
   }
-
+  
   p,
-  .palmier-description a{
+  .buttercookie-p a{
     font-size: 17px;
   }
 
-  /*Palmier*/
+  /*Butter Cookie*/
 
-  .palmiersection img{
-    margin: 0 0 0 5%;
-    aspect-ratio: 1/1.2;
+  .buttercookie{
+    margin-top: 0;
   }
 
-  .palmier-description{
-    padding: 55px 55px;
-    width: unset;
+  .buttercookie-p p{
+    width: 350px;
   }
 
-  .palmier-description p{
-    line-height: 1.7em;
-    width: 420px;
-    letter-spacing: 1px;
+  .buttercookie-slideshow-pic img{
+    width: 42vw;
+    aspect-ratio: 1/1.05;
+  }
+  
+  .buttercookieprev, .buttercookienext{
+    top: 45%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .buttercookieprev{
+    left: 0%;
+  }
+  
+  .buttercookienext{
+    right: 0%;
   }
 
-  .palmier-description a{
-    letter-spacing: 1px;
+  /*Cartoon Cookie*/
+
+  .cartoon-cookie{
+    padding: 10px 0;
   }
 
-  /*Choux Pastry*/
+  .cartoon-cookie-description p{
+    width: 850px;
+  }
 
-  .chouxpastry-description{
+  .image1{
+    rotate: -5deg;
+    margin: 70px 0 10px 60px;
+  }
+  
+  .image1 img{
+    width: 95%;
+  }
+  
+  .image2{
+    rotate: 5deg;
+    margin: 50px 0 0 0;
+  }
+  
+  .image2 img{
+    width: 93%;
+  }
+  
+  .image3{
+    rotate: 2deg;
+    margin: 120px 0 60px 2%;
+  }
+  
+  .image3 img{
+    width: 85%;
+  }
+
+  /*Cookie*/
+
+  .cookie-description{
     margin: 40px 8% 50px 8%;
+  }
+
+  .cookie-picturesdisplay{
+    gap: 25px;
   }
 
   .pic2 img{
     width: 38vw;
     aspect-ratio: 1/1.2;
+    padding: 20px;
   }
   
   .pic1 img, .pic3 img{
@@ -688,42 +752,19 @@ p,
     aspect-ratio: 1/1.2;
   }
 
-  .chouxpastry-prev{
-    left: 26.3%;
+  .cookie-prev,
+  .cookie-next{
+    top: 60%;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    padding: 7px 0;
+    left: 30%;
   }
 
-  .chouxpastry-next{
-    right: 26.3%;
-  }
-
-  /*Macaron*/
-
-  .macaron{
-    margin-top: 0;
-  }
-
-  .macaron-p p{
-    width: 370px;
-    line-height: 1.8em;
-  }
-
-  .macaron-slideshow-pic img{
-    width: 42vw;
-    aspect-ratio: 1/1.1;
-  }
-  
-  .macaronprev, .macaronnext{
-    top: 45%;
-    width: 50px;
-    height: 50px;
-  }
-  
-  .macaronprev{
-    left: 0%;
-  }
-  
-  .macaronnext{
-    right: 0%;
+  .cookie-next{
+    left: unset;
+    right: 30%;
   }
 
   /*Explore other gallery*/
@@ -734,7 +775,7 @@ p,
   }
 
   .othergallerytoexplore h3{
-    font-size: 23px;
+    font-size: 20px;
     margin-left: 4%;
   }
 
@@ -775,38 +816,85 @@ p,
     line-height: 1.5em;
   }
 
-
   /*Common Parameter*/
 
   p,
-  .palmier-description a{
+  .buttercookie-p a{
     font-size: 16px;
   }
 
-  /*Palmier*/
+  /*Butter Cookie*/
 
-  .palmiersection img{
-    margin: 0 0 0 4%;
-    height: 520px;
+  .buttercookie-p p{
+    width: 360px;
+    line-height: 2em;
   }
 
-  .palmier-description{
-    padding: 40px 35px;
+  .buttercookie-slideshow-pic img{
+    aspect-ratio: 1/1.1;
   }
 
-  .palmier-description p{
-    width: 350px;
+  .buttercookieprev, .buttercookienext{
+    top: 45%;
+    width: 45px;
+    height: 45px;
+    padding: 10px 0;
+    font-size: 16px;
   }
 
-  /*Choux Pastry*/
+  /*Cartoon Cookie*/
 
-  .chouxpastry-description{
+  .cartoon-cookie{
+    padding: 5px 0;
+  }
+
+  .cartoon-cookie-description p{
+    width: 560px;
+    margin: 15px auto;
+    line-height: 1.6em;
+  }
+
+  .image1{
+    rotate: -3deg;
+    margin: 70px 0 0 40px;
+  }
+  
+  .image1 img{
+    width: 100%;
+  }
+  
+  .image2{
+    rotate: 3deg;
+    margin: 30px 0 0 0;
+  }
+  
+  .image2 img{
+    width: 100%;
+  }
+  
+  .image3{
+    rotate: 2deg;
+    margin: 100px 0 60px 2%;
+  }
+  
+  .image3 img{
+    width: 90%;
+  }
+
+  /*Cookie*/
+
+  .cookie-description{
     margin: 40px 8% 50px 8%;
+  }
+
+  .cookie-picturesdisplay{
+    gap: 25px;
   }
 
   .pic2 img{
     width: 42vw;
     aspect-ratio: 1/1.2;
+    padding: 15px;
   }
   
   .pic1 img, .pic3 img{
@@ -814,38 +902,25 @@ p,
     aspect-ratio: 1/1.2;
   }
 
-  .chouxpastry-prev{
-    left: 23.2%;
-  }
-
-  .chouxpastry-next{
-    right: 23.2%;
-  }
-
-  /*Macaron*/
-
-  .macaron-p p{
-    width: 345px;
-    line-height: 1.8em;
-  }
-
-  .macaron-slideshow-pic img{
-    aspect-ratio: 1/1.2;
-  }
-
-  .macaronprev, .macaronnext{
-    top: 40%;
+  .cookie-prev,
+  .cookie-next{
+    top: 59%;
     width: 45px;
     height: 45px;
-    padding: 10px 0;
-    font-size: 16px;
+    font-size: 25px;
+    padding: 7px 0;
+    left: 27.5%;
   }
 
+  .cookie-next{
+    left: unset;
+    right: 27.5%;
+  }
 
   /*Explore other gallery*/
 
   .othergallery-scroll-container{
-    gap: 20px;
+    gap: 25px;
     margin: 20px 5% 100px 5%;
   }
 
@@ -865,6 +940,7 @@ p,
     font-size: 14px;
     margin: 8px 10px 0px 10px;
   }
+
 
 }
 
@@ -901,49 +977,96 @@ p,
   }
 
   .topsectiondescription{
-    width: 65vw;
-    margin: auto -35% auto 5%;
+    width: 70vw;
+    margin: auto -40% auto 5%;
     padding: 7% 6%;
   }
 
   .topsectiondescription h1{
-    font-size: 4.5vw;
+    font-size: 35px;
+    letter-spacing: 3px;
   }
 
   .topsectiondescription p{
     font-size: 16px;
     line-height: 1.5em;
+    margin: 15px 0 0 0;
   }
 
-  /*Palmier*/
+  /*Butter Cookie*/
 
-  .palmiersection img{
-    margin: 0 0 0 3%;
-    width: 44vw;
-    height: 500px;
+  .buttercookie-p p{
+    width: 300px;
   }
 
-  .palmier-description{
-    padding: 40px auto;
-    margin-left: -2%;
-    width: 53vw;
+  .buttercookie-slideshow-pic img{
+    aspect-ratio: 1/1.3;
   }
 
-  .palmier-description p{
-    line-height: 1.7em;
-    width: 43vw;
-    margin: auto;
+  .buttercookieprev, .buttercookienext{
+    top: 42%;
+    width: 40px;
+    height: 40px;
+    padding: 8px 0;
+    font-size: 15px;
   }
 
-  /*Choux Pastry*/
-
-  .chouxpastry-description{
-    margin: 20px 10% 50px 10%;
+  .buttercookie-bottomdot{
+    margin-top: 10px;
   }
   
+  .buttercookie-dot{
+    height: 12px;
+    width: 12px;
+  }
+
+  /*Cartoon Cookie*/
+
+  .cartoon-cookie-description p{
+    width: 550px;
+  }
+
+  .image1{
+    rotate: -3deg;
+    margin: 100px 0 0 20px;
+  }
+  
+  .image1 img{
+    width: 105%;
+  }
+  
+  .image2{
+    rotate: 3deg;
+    margin: 30px 0 0 0;
+  }
+  
+  .image2 img{
+    width: 105%;
+  }
+  
+  .image3{
+    rotate: 2deg;
+    margin: 150px 10px 60px 0;
+  }
+  
+  .image3 img{
+    width: 100%;
+  }
+
+  /*Cookie*/
+
+  .cookie-description{
+    margin: 20px 10% 50px 10%;
+  }
+
+  .cookie-picturesdisplay{
+    gap: 25px;
+  }
+
   .pic2 img{
-    width: 50vw;
+    width: 52vw;
     aspect-ratio: 1/1.2;
+    padding: 15px;
   }
   
   .pic1 img, .pic3 img{
@@ -951,37 +1074,19 @@ p,
     aspect-ratio: 1/1.3;
   }
 
-  .chouxpastry-prev,
-  .chouxpastry-next{
-    width: 48px;
-    height: 48px;
+  .cookie-prev,
+  .cookie-next{
+    top: 59%;
+    width: 45px;
+    height: 45px;
     font-size: 25px;
-    padding: 6px 0;
-    left: 18%;
+    padding: 7px 0;
+    left: 22%;
   }
 
-  .chouxpastry-next{
+  .cookie-next{
     left: unset;
-    right: 18%;
-  }
-
-  /*Macaron*/
-
-  .macaron-p p{
-    width: 290px;
-    line-height: 1.6em;
-  }
-
-  .macaron-slideshow-pic img{
-    aspect-ratio: 1/1.3;
-  }
-
-  .macaronprev, .macaronnext{
-    top: 40%;
-    width: 40px;
-    height: 40px;
-    padding: 8px 0;
-    font-size: 15px;
+    right: 22%;
   }
 
   /*Explore other gallery*/
@@ -1009,6 +1114,18 @@ p,
     font-size: 15px;
   }
 
+  /*Top Section*/
+
+  .topsectiondescription{
+    width: 70vw;
+    margin: auto -45% auto 5%;
+    padding: 7% 6%;
+  }
+
+  .topsectiondescription h1{
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
 
   /*Common Parameter*/
 
@@ -1017,44 +1134,99 @@ p,
     letter-spacing: 2px;
   }
 
-  /*Palmier*/
+  /*Butter Cookie*/
 
-  .palmiersection{
+  .buttercookie-reveal{
+    display: grid;
+    padding-top: 80px;
+  }
+
+  .buttercookie-p p{
+    line-height: 1.6em;
+    width: 450px;
+  }
+
+  .buttercookie-slideshow{
+    justify-content: center;
+    margin: 40px auto;
+    width: 71vw;
+  }
+  
+  .buttercookie-slideshow-pic img{
+    width: 64vw;
+    aspect-ratio: 1/1.1;
+  }
+
+  .buttercookieprev, .buttercookienext{
+    top: 40%;
+    width: 45px;
+    height: 45px;
+    padding: 10px 0;
+    font-size: 15px;
+  }
+
+  .buttercookie-bottomdot{
+    margin: 15px auto 50px auto;
+  }
+  
+  .buttercookie-dot{
+    height: 15px;
+    width: 15px;
+  }
+
+  /*Cartoon Cookie*/
+
+  .cartoon-cookie-description p{
+    width: 550px;
+  }
+
+  .cartoon-image{
     display: grid;
   }
 
-  .palmiersection img{
-    margin: 0 0 0 10%;
-    width: 73vw;
-    height: 450px;
-    object-position: 50% 15%;
+  .image1{
+    rotate: -3deg;
+    margin: 20px 0 0 15%;
+    z-index: 5;
+  }
+  
+  .image1 img{
+    width: 70%;
+  }
+  
+  .image2{
+    rotate: 3deg;
+    margin: -50px 0 0 25%;
+  }
+  
+  .image2 img{
+    width: 80%;
+  }
+  
+  .image3{
+    rotate: -2deg;
+    margin: -40px 10px 60px 10%;
+    z-index: -5;
+  }
+  
+  .image3 img{
+    width: 60%;
   }
 
-  .palmier-description{
-    padding: 60px 30px;
-    border-style: solid;
-    margin: -30px 5% 0 15%;
-    width: unset;
-  }
+  /*Cookie*/
 
-  .palmier-description p{
-    width: 400px;
-    margin: auto;
-  }
-
-  /*Choux Pastry*/
-
-  .chouxpastry-description{
+  .cookie-description{
     margin: 20px 10% 50px 10%;
   }
 
-  .chouxpastry-picturesdisplay{
-    gap: 60px;
+  .cookie-picturesdisplay{
+    gap: 25px;
   }
 
   .pic2 img{
     width: 60vw;
     aspect-ratio: 1/1.2;
+    padding: 15px;
   }
   
   .pic1 img, .pic3 img{
@@ -1062,45 +1234,21 @@ p,
     aspect-ratio: 1/1.4;
   }
 
-  .chouxpastry-prev{
-    left: 12.3%;
-  }
-
-  .chouxpastry-next{
-    right: 12.3%;
-  }
-
-  /*Macaron*/
-
-  .macaron{
-    display: grid;
-  }
-
-  .macaron-p{
-    margin-top: 80px;
-  }
-
-  .macaron-p p{
-    width: 480px;
-  }
-
-  .macaron-slideshow{
-    justify-content: center;
-    margin: 40px auto;
-    width: 71vw;
-  }
-  
-  .macaron-slideshow-pic img{
-    width: 64vw;
-    aspect-ratio: 1/1.1;
-  }
-
-  .macaronprev, .macaronnext{
-    top: 40%;
+  .cookie-prev,
+  .cookie-next{
+    top: 60%;
     width: 45px;
     height: 45px;
-    padding: 10px 0;
-    font-size: 15px;
+    font-size: 25px;
+    padding: 7px 0;
+  }
+
+  .cookie-prev{
+    left: 18%;
+  }
+
+  .cookie-next{
+    right: 18%;
   }
 
   /*Explore other gallery*/
@@ -1233,7 +1381,7 @@ p,
     width: 80vw;
     margin: auto -71% auto 5%;
     margin-top: 7%;
-    padding: 7% 5%;
+    padding: 6% 5%;
   }
 
   .topsectiondescription h1{
@@ -1250,52 +1398,87 @@ p,
   /*Common Parameter*/
   
   p,
-  .palmier-description a{
+  .buttercookie-p a{
     font-weight: 500;
     letter-spacing: 0px;
     line-height: 1.5em;
   }
 
-  /*Palmier*/
 
-  .palmiersection img{
-    margin: auto;
-    width: 80vw;
-    height: 380px;
-    object-position: 50% 10%;
+  /*Butter Cookie*/
+
+  .buttercookie-p p{
+    width: 400px;
   }
 
-  .palmier-description{
-    padding: unset;
-    border-style: none;
-    margin: 30px auto;
+  .buttercookie-slideshow{
+    justify-content: center;
+    margin: 40px auto;
+    width: 85vw;
+  }
+  
+  .buttercookie-slideshow-pic img{
+    width: 76vw;
+    aspect-ratio: 1/1.1;
   }
 
-  .palmier-description h3{
-    margin-bottom: 15px;
+  /*Cartoon Cookie*/
+
+  .cartoon-cookie-description p{
+    width: 350px;
   }
 
-  .palmier-description p{
-    width: 390px;
+  .cartoon-image{
+    display: grid;
   }
 
-  .palmier-description a{
-    letter-spacing: 1px;
+  .image1{
+    rotate: -3deg;
+    margin: 20px 0 0 15%;
+    z-index: 5;
+  }
+  
+  .image1 img{
+    width: 70%;
+  }
+  
+  .image2{
+    rotate: 3deg;
+    margin: -50px 0 0 30%;
+  }
+  
+  .image2 img{
+    width: 80%;
+  }
+  
+  .image3{
+    rotate: -2deg;
+    margin: -40px 10px 40px 10%;
+    z-index: -5;
+  }
+  
+  .image3 img{
+    width: 60%;
   }
 
-  /*Choux Pastry*/
+  /*Cookie*/
 
-  .chouxpastry-description{
-    margin: 10px 8% 30px 8%;
+  .cookie-description{
+    margin: 10px 8% 40px 8%;
   }
 
-  .chouxpastry-description p{
+  .cookie-description p{
     margin-top: 15px;
+  }
+
+  .cookie-picturesdisplay{
+    gap: 25px;
   }
 
   .pic2 img{
     width: 65vw;
     aspect-ratio: 1/1.25;
+    padding: 15px;
   }
   
   .pic1 img, .pic3 img{
@@ -1303,31 +1486,12 @@ p,
     aspect-ratio: 1/1.4;
   }
 
-  .chouxpastry-prev{
-    top: 54%;
-    left: 8.5%;
+  .cookie-prev{
+    left: 15%;
   }
 
-  .chouxpastry-next{
-    top: 54%;
-    right: 8.5%;
-  }
-
-  /*Macaron*/
-
-  .macaron-p p{
-    width: 420px;
-  }
-
-  .macaron-slideshow{
-    justify-content: center;
-    margin: 40px auto;
-    width: 80vw;
-  }
-  
-  .macaron-slideshow-pic img{
-    width: 72vw;
-    aspect-ratio: 1/1.1;
+  .cookie-next{
+    right: 15%;
   }
 
   /*Explore other gallery*/
@@ -1358,73 +1522,34 @@ p,
   /*Common Parameter*/
 
   p,
-  .palmier-description a{
+  .buttercookie-p a{
     font-size: 15px;
     line-height: 1.5em;
   }
 
-  /*Palmier*/
+  /*Butter Cookie*/
 
-  .palmiersection{
-    padding: 50px 0;
-  }
-
-  .palmiersection img{
-    width: 85vw;
-    height: 350px;
-    object-position: 50% 10%;
-  }
-
-  .palmier-description p{
-    width: 370px;
-  }
-
-  /*Choux Pastry*/
-
-  .chouxpastry-description{
-    margin: 10px 7% 40px 7%;
-  }
-
-  .pic2 img{
-    width: 73vw;
-    aspect-ratio: 1/1.25;
-  }
-  
-  .pic1 img, .pic3 img{
-    width: 45vw;
-    aspect-ratio: 1/1.4;
-  }
-
-  .chouxpastry-prev{
-    left: 2.5%;
-  }
-
-  .chouxpastry-next{
-    right: 2.5%;
-  }
-
-  /*Macaron*/
-
-  .macaron-p h3{
+  .buttercookie-p h3{
     margin-bottom: 15px;
   }
 
-  .macaron-p p{
-    width: 340px;
+  .buttercookie-p p{
+    width: 330px;
+    letter-spacing: 1px;
   }
 
-  .macaron-slideshow{
+  .buttercookie-slideshow{
     justify-content: center;
     margin: 40px auto;
     width: 90vw;
   }
   
-  .macaron-slideshow-pic img{
+  .buttercookie-slideshow-pic img{
     width: 80vw;
     aspect-ratio: 1/1.1;
   }
 
-  .macaronprev, .macaronnext{
+  .buttercookieprev, .buttercookienext{
     top: 40%;
     width: 40px;
     height: 40px;
@@ -1432,13 +1557,52 @@ p,
     font-size: 14px;
   }
 
-  .macaron-bottomdot{
+  .buttercookie-bottomdot{
     margin-top: 10px;
   }
   
-  .macaron-dot{
+  .buttercookie-dot{
     height: 12px;
     width: 12px;
+  }
+
+  /*Cartoon Cookie*/
+
+  .cartoon-cookie-description{
+    margin: 60px auto 0 auto;
+  }
+
+  .cartoon-cookie-description p{
+    width: 330px;
+  }
+
+  /*Cookie*/
+
+  .cookie-description{
+    margin: 10px 7% 40px 7%;
+  }
+
+  .cookie-picturesdisplay{
+    gap: 20px;
+  }
+
+  .pic2 img{
+    width: 73vw;
+    aspect-ratio: 1/1.25;
+    padding: 15px;
+  }
+  
+  .pic1 img, .pic3 img{
+    width: 45vw;
+    aspect-ratio: 1/1.4;
+  }
+
+  .cookie-prev{
+    left: 11%;
+  }
+
+  .cookie-next{
+    right: 11%;
   }
 
   /*Explore other gallery*/
@@ -1485,10 +1649,14 @@ p,
     height: 600px;   
   }
 
+  .topsectionimage img{
+    object-position: 50% 10%;   
+  }
+
   .topsectiondescription{
-    width: 80vw;
-    margin: auto -73% auto 5%;
-    margin-top: 8%;
+    width: 85vw;
+    margin: auto -77% auto 5%;
+    margin-top: 7%;
     padding: 6.5% 5%;
   }
 
@@ -1504,7 +1672,6 @@ p,
     line-height: 1.4em;
   }
 
-
   /*Common Parameter*/
 
   h3{
@@ -1512,31 +1679,86 @@ p,
     letter-spacing: 1px;
   }
 
-  /*Palmier*/
+  /*Butter Cookie*/
 
-  .palmiersection img{
-    width: 90vw;
-    height: 320px;
+  .buttercookie-p h3{
+    margin-bottom: 10px;
   }
 
-  .palmier-description p{
-    line-height: 1.6em;
-    width: 340px;
+  .buttercookie-p p{
+    width: 300px;
   }
 
-  /*Choux Pastry*/
+  .buttercookie-slideshow{
+    margin: 20px auto;
+    width: 95vw;
+  }
+  
+  .buttercookie-slideshow-pic img{
+    width: 85vw;
+  }
 
-  .chouxpastry-description{
+  /*Cartoon Cookie*/
+
+  .cartoon-cookie-description{
+    margin: 40px auto 0 auto;
+  }
+
+  .cartoon-cookie-description p{
+    width: ;
+  }
+
+  .cartoon-image{
+    display: grid;
+  }
+
+  .image1{
+    rotate: -2deg;
+    margin: 10px 0 0 15%;
+    z-index: 5;
+  }
+  
+  .image1 img{
+    width: 80%;
+  }
+  
+  .image2{
+    rotate: 3deg;
+    margin: -30px 0 0 20%;
+  }
+  
+  .image2 img{
+    width: 90%;
+  }
+  
+  .image3{
+    rotate: -2deg;
+    margin: -40px 10px 40px 10%;
+    z-index: -5;
+  }
+  
+  .image3 img{
+    width: 80%;
+  }
+
+  /*Cookie*/
+
+  .cookie-description{
     margin: 10px 6% 40px 6%;
   }
 
-  .chouxpastry-description p{
+  .cookie-description p{
     margin-top: 10px;
   }
 
+  .cookie-picturesdisplay{
+    gap: 15px;
+  }
+
   .pic2 img{
-    width: 82vw;
+    width: 78vw;
     aspect-ratio: 1/1.3;
+    padding: 15px;
   }
   
   .pic1 img, .pic3 img{
@@ -1544,31 +1766,12 @@ p,
     aspect-ratio: 1/1.4;
   }
 
-  .chouxpastry-prev{
-    left: 1%;
+  .cookie-prev{
+    left: 8%;
   }
 
-  .chouxpastry-next{
-    right: 1%;
-  }
-
-  /*Macaron*/
-
-  .macaron-p h3{
-    margin-bottom: 10px;
-  }
-
-  .macaron-p p{
-    width: 325px;
-  }
-
-  .macaron-slideshow{
-    margin: 20px auto;
-    width: 95vw;
-  }
-  
-  .macaron-slideshow-pic img{
-    width: 85vw;
+  .cookie-next{
+    right: 8%;
   }
 
   /*Explore other gallery*/
