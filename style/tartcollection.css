@@ -169,10 +169,10 @@ nav ul li a:hover::after{
 }
 
 .topsectiondescription h1{
-  font-family: 'DM Serif Display', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-size: 4vw;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   line-height: 1.3em;
 }
 
@@ -480,7 +480,8 @@ p,
 
 .flower-tart-arrow{
   display: flex;
-  margin-left: 5%;
+  justify-content: center;
+  margin: 15px auto 5px auto;
 }
 
 .flower-tart-prev,
@@ -489,27 +490,24 @@ p,
   width: 55px;
   height: 55px;
   border-radius: 100%;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 3px;
+  border-style: double;
+  border-color: #ffffff;
+  border-width: 5px;
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
+  background-color: #142c35;
   font-size: 25px;
   font-weight: 400;
   font-family: monospace;
-  padding: 10px 0;
+  padding: 8px 0;
   text-align: center;
   cursor: pointer;
 }
 
-.flower-tart-prev{
-  margin: 0 5px 0 86%;
-}
-
 .flower-tart-prev:hover,
 .flower-tart-next:hover{
-  background-color: ;
-  color: #000000;
+  background-color: rgb(29, 112, 125);
+  color: #ffffff;
 }
 
 /* Choco Tart*/
@@ -741,7 +739,7 @@ p,
 .othergallerytoexplore h3{
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 25px;
   letter-spacing: 1px;
   margin-left: 6%;
 }
@@ -896,19 +894,6 @@ p,
     width: 820px;
   }
 
-  .flower-tart-prev,
-  .flower-tart-next{
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    padding: 8px 0;
-    border-width: 2px;
-  }
-
-  .flower-tart-prev{
-    margin: 0 5px 0 88%;
-  }
-
   .flower-tart-picturesdisplay{
     gap: 30px;
     margin: 10px auto;
@@ -945,7 +930,7 @@ p,
   }
 
   .othergallerytoexplore h3{
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .othergallery-sliderdescription h2,
@@ -973,6 +958,12 @@ p,
   .topsectionimage img,
   .topsection{
     height: 750px;   
+  }
+
+  .topsectiondescription{
+    width: 42vw;
+    margin: auto -25% auto 8%;
+    padding: 5% 5%;
   }
 
   /*Common Parameter*/
@@ -1067,14 +1058,10 @@ p,
 
   .flower-tart-prev,
   .flower-tart-next{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     font-size: 18px;
-    padding: 7px 0;
-  }
-
-  .flower-tart-prev{
-    margin: 0 5px 0 90%;
+    padding: 9px 0;
   }
 
   .flower-tart-picturesdisplay{
@@ -1127,6 +1114,7 @@ p,
 
   .othergallerytoexplore h3{
     margin-left: 4%;
+    font-size: 20px;
   }
 
   .othergallery-sliderdescription h2,
@@ -1139,7 +1127,6 @@ p,
   }
   
   .othergallery-sliderdescription p{
-    font-size: 14px;
     margin: 8px 10px 0px 15px;
   }
  
@@ -1147,6 +1134,12 @@ p,
 
 
 @media only screen and (max-width:1050px){
+
+  /*Root*/
+
+  :root{
+    --width-image: 75vw;
+  }
 
   /*Top Section*/
 
@@ -1156,8 +1149,8 @@ p,
   }
 
   .topsectiondescription{
-    width: 50vw;
-    margin: auto -25% auto 5%;
+    width: 48vw;
+    margin: auto -30% auto 5%;
     padding: 6% 6%;
   }
 
@@ -1272,12 +1265,8 @@ p,
   }
 
   .flower-tart-picturesdisplay{
-    gap: 30px;
+    gap: 20px;
     margin: 10px auto;
-  }
-
-  .flower-tart-prev{
-    margin: 0 2px 0 81.8%;
   }
 
   .flower-tart-picturesdisplay img{
@@ -1342,8 +1331,7 @@ p,
   }
   
   .othergallery-sliderdescription p{
-    font-size: 14px;
-    margin: 8px 10px 0px 10px;
+    margin: 6px 10px 0px 10px;
   }
 }
 
@@ -1466,12 +1454,8 @@ p,
   /*Flower Tart*/
 
   .flower-tart-description p{
-    margin: 12px auto 10px auto;
-    width: 540px;
-  }
-
-  .flower-tart-prev{
-    margin: 0 2px 0 83.5%;
+    margin: 12px auto 5px auto;
+    width: 510px;
   }
 
   .flower-tart-picturesdisplay{
@@ -1570,7 +1554,7 @@ p,
     right: 14%;
   }
 
-  /* Lemon Tart*/
+  /*Lemon Tart*/
 
   .lemon-tart{
     display: grid;
@@ -1634,13 +1618,9 @@ p,
   }
 
   .flower-tart-description p{
-    margin: 12px auto 10px auto;
+    margin: 12px auto 5px auto;
     width: 520px;
     line-height: 1.6em;
-  }
-
-  .flower-tart-prev{
-    margin: 0 1px 0 82.5%;
   }
 
   .flower-tart-picturesdisplay{
@@ -1799,7 +1779,7 @@ p,
   /*Root*/
 
   :root{
-    --width-image: 80vw;
+    --width-image: 85vw;
   }
 
   /*Top Section*/
@@ -1813,17 +1793,20 @@ p,
     height: 700px;   
   }
 
+  .topsectionimage img{
+    object-position: 50% 0%;   
+  }
+
   .topsectiondescription{
-    width: 75vw;
-    margin: auto -55% auto 5%;
-    margin-top: 8%;
-    padding: 7% 6%;
+    width: 80vw;
+    margin: auto -70% auto 5%;
+    margin-top: 6%;
+    padding: 6% 6%;
   }
 
   .topsectiondescription h1{
-    font-family: 'Lora', sans-serif;
-    font-size: 6vw;
-    line-height: 1.3em;
+    font-size: 30px;
+    letter-spacing: 3px;
   }
 
   .topsectiondescription p{
@@ -1919,16 +1902,14 @@ p,
     margin: 10px auto;
   }
 
-  .flower-tart-prev,
-  .flower-tart-next{
-    width: 35px;
-    height: 35px;
-    font-size: 16px;
-    padding: 6px 0;
+  .flower-tart-arrow{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
   }
 
   .flower-tart-prev{
-    margin: 0 1px 0 74%;
+    margin: unset;
   }
 
   .flower-tart-picturesdisplay img{
@@ -2027,7 +2008,7 @@ p,
     right: 2%;
   }
 
-  /* Lemon Tart*/
+  /*Lemon Tart*/
 
   .lemon-tart{
     padding: 50px 6% 40px 6%;
@@ -2062,10 +2043,6 @@ p,
   .flower-tart-description p{
     margin: 12px auto 10px auto;
     width: 315px;
-  }
-
-  .flower-tart-prev{
-    margin: 0 1px 0 76%;
   }
 
   .flower-tart-picturesdisplay img{
@@ -2117,7 +2094,6 @@ p,
   }
   
   .othergallery-sliderdescription p{
-    font-size: 13px;
     margin: 0 10px;
   }
   
@@ -2140,13 +2116,13 @@ p,
   }
 
   .topsectionimage img{
-    object-position: 50% 100%;   
+    object-position: 50% 0%;
   }
 
   .topsectiondescription{
     width: 85vw;
-    margin: auto -80% auto 4%;
-    margin-top: 390px;
+    margin: auto -80% auto 5%;
+    margin-top: 30px;
     padding: 6.5% 6%;
   }
 
@@ -2185,10 +2161,6 @@ p,
   }
 
   /*Flower Tart*/
-
-  .flower-tart-prev{
-    margin: 0 1px 0 74%;
-  }
 
   .flower-tart-picturesdisplay img{
     width: 90vw;
