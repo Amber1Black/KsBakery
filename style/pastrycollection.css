@@ -123,7 +123,6 @@ nav ul li a:hover::after{
 
 .content{
   overflow: hidden;
-  background-color:rgb(255, 248, 243);
 }
 
 /*Root*/
@@ -196,7 +195,7 @@ h3{
 p,
 .palmier-description a{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
   font-size: 20px;
   line-height: 1.5em;
@@ -288,13 +287,16 @@ p,
 
 /*Palmier*/
 
-.palmiersection{
-  display: flex;
+.palmier-background-color{
   background-color: #142c35;
+}
+
+.palmier{
+  display: flex;
   padding: 80px 0;
 }
 
-.palmiersection img{
+.palmier img{
   width: 40vw;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -327,6 +329,7 @@ p,
   color: #142c35;
   background-color: rgb(255, 255, 250);
   padding: 10px 30px;
+  font-weight: 450;
 }
 
 
@@ -334,7 +337,7 @@ p,
 
 .macaron{
   display: flex;
-  margin-top: 20px;
+  padding: 50px 5%;
 }
 
 .macaron-p{
@@ -358,7 +361,6 @@ p,
 .macaron-slideshow{
   width: 46vw;
   position: relative;
-  margin: 50px 5% 0 0;
 }
 
 .macaron-slideshow-pic{
@@ -367,37 +369,34 @@ p,
 
 .macaron-slideshow-pic img{
   width: 40vw;
-  aspect-ratio: 1/1.05;
+  aspect-ratio: 1/1.1;
   object-fit: cover;
+}
+
+.macaron-arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .macaronprev, .macaronnext{
   cursor: pointer;
-  position: absolute;
-  top: 45%;
   width: 50px;
   height: 50px;
-  padding: 12px;
+  padding: 9px;
   text-align: center;
   color: white;
-  background-color: rgb(45, 112, 139);
-  border-style: solid;
+  background-color: rgb(27, 79, 90);
+  border-style: double;
   border-color: #ffffff;
-  border-width: 2px;
+  border-width: 5px;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 100%;
+  border-radius: ;
   user-select: none;
   z-index: 10;
-}
-
-.macaronprev{
-  left: 3%;
-}
-
-.macaronnext{
-  right: 3%;
 }
 
 .macaronprev:hover, .macaronnext:hover {
@@ -405,17 +404,18 @@ p,
 }
 
 .macaron-bottomdot{
-  margin-top: 15px;
+  display: flex;
   text-align: center;
+  align-items: center;
+  margin-left: 15px;
 }
 
 .macaron-dot{
   cursor: pointer;
-  height: 15px;
+  height: 12px;
   width: 15px;
-  margin: 0 2px 50px 2px;
+  margin: 0 4px;
   background-color: #dfdfdf;
-  border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
@@ -443,10 +443,11 @@ p,
 
 .othergallerytoexplore h3{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 28px;
   letter-spacing: 1px;
   margin-left: 6%;
+  word-spacing: normal;
 }
 
 .othergallery-scroll-container{
@@ -478,16 +479,16 @@ p,
 }
 
 .othergallery-sliderdescription h2{
-  font-family: 'Lora', sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   letter-spacing: 2px;
-  margin: 20px 15px 10px 15px;
+  margin: 20px 15px 5px 14px;
 }
 
 .othergallery-sliderdescription a{
   text-decoration: none;
-  font-family: 'Lora', sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   letter-spacing: 2px;
   color: #000000;
 }
@@ -495,7 +496,7 @@ p,
 .othergallery-sliderdescription p{
   font-size: 17px;
   line-height: 1.4em;
-  margin: 10px 15px;
+  margin: 5px 15px;
 }
 
 /*copyright*/
@@ -515,21 +516,20 @@ p,
 
   .palmier-description{
     padding: 80px 60px;
-    width: 650px;
+    width: 660px;
   }
 
   /*Macaron*/
 
   .macaron-p p{
-    width: 460px;
+    width: 470px;
     line-height: 1.8em;
   }
 
   /*Explore other gallery*/
 
-  .othergallery-sliderdescription h2,
-  .othergallery-sliderdescription a{
-    font-size: 23px;
+  .othergallerytoexplore h3{
+    font-size: 26px;
   }
   
   .othergallery-sliderdescription p{
@@ -590,20 +590,24 @@ p,
 
   /*Palmier*/
 
-  .palmiersection img{
+  .palmier img{
     margin: 0 0 0 5%;
   }
 
   .palmier-description{
     padding: 60px 60px;
-    width: 625px;
+    width: 640px;
   }
 
   /*Macaron*/
 
   .macaron-p p{
-    width: 390px;
+    width: 400px;
     line-height: 1.8em;
+  }
+
+  .macaron-arrow{
+    margin-top: 30px;
   }
 
   /*Explore other gallery*/
@@ -617,7 +621,7 @@ p,
   }
 
   .othergallerytoexplore h3{
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .othergallery-sliderdescription h2,
@@ -675,7 +679,7 @@ p,
   /*Choux Pastry*/
 
   .choux-pastry-description{
-    padding: 100px 20% 0 4%;
+    padding: 100px 20% 0 5%;
   }
 
   .choux-pastry-prev,
@@ -687,23 +691,25 @@ p,
     border-width: 4px;
   }
 
+  .choux-pastry-prev{
+    margin: auto 3px auto 87%;
+  }
+
   .choux-pastry-picturesdisplay{
     gap: 20px;
     margin: 40px auto;
   }
 
   .choux-pastry-picturesdisplay img{
-    width: 31vw;
-    aspect-ratio: 1/1.2;
+    width: 29vw;
+    aspect-ratio: 1/1.25;
+    min-height: 420px;
   }
 
-  .choux-pastry-prev{
-    margin: auto 3px auto 89%;
-  }
 
   /*Palmier*/
 
-  .palmiersection img{
+  .palmier img{
     margin: 0 0 0 5%;
     aspect-ratio: 1/1.2;
   }
@@ -726,31 +732,18 @@ p,
   /*Macaron*/
 
   .macaron{
-    margin-top: 0;
+    display: flex;
+    padding: 80px 3%;
   }
 
   .macaron-p p{
-    width: 370px;
+    width: 380px;
     line-height: 1.8em;
   }
 
   .macaron-slideshow-pic img{
     width: 42vw;
     aspect-ratio: 1/1.1;
-  }
-  
-  .macaronprev, .macaronnext{
-    top: 45%;
-    width: 50px;
-    height: 50px;
-  }
-  
-  .macaronprev{
-    left: 0%;
-  }
-  
-  .macaronnext{
-    right: 0%;
   }
 
   /*Explore other gallery*/
@@ -761,7 +754,6 @@ p,
   }
 
   .othergallerytoexplore h3{
-    font-size: 23px;
     margin-left: 4%;
   }
 
@@ -771,12 +763,11 @@ p,
   }
 
   .othergallery-sliderdescription h2{
-    margin: 12px 15px 0px 15px;
+    margin: 12px 15px 0px 14px;
   }
   
   .othergallery-sliderdescription p{
-    font-size: 14px;
-    margin: 8px 10px 0px 15px;
+    margin: 5px 10px 0px 15px;
   }
   
 }
@@ -876,7 +867,7 @@ p,
 
   /*Palmier*/
 
-  .palmiersection img{
+  .palmier img{
     margin: 0 0 0 4%;
     height: 520px;
   }
@@ -892,7 +883,7 @@ p,
   /*Macaron*/
 
   .macaron-p p{
-    width: 345px;
+    width: 360px;
     line-height: 1.8em;
   }
 
@@ -904,7 +895,7 @@ p,
     top: 40%;
     width: 45px;
     height: 45px;
-    padding: 10px 0;
+    padding: 8px 0;
     font-size: 16px;
   }
 
@@ -912,12 +903,13 @@ p,
   /*Explore other gallery*/
 
   .othergallery-scroll-container{
-    gap: 20px;
+    gap: 25px;
     margin: 20px 5% 100px 5%;
   }
 
   .othergallerytoexplore h3{
     margin-left: 5%;
+    font-size: 20px;
   }
 
   .container img{
@@ -925,12 +917,12 @@ p,
   }
 
   .othergallery-sliderdescription h2{
-    margin: 12px 10px 0px 10px;
+    margin: 12px 10px 0px 9px;
   }
   
   .othergallery-sliderdescription p{
     font-size: 14px;
-    margin: 8px 10px 0px 10px;
+    margin: 4px 10px 0px 10px;
   }
 
 }
@@ -1008,13 +1000,22 @@ p,
     aspect-ratio: 1/1.25;
   }
 
+  .choux-pastry-prev,
+  .choux-pastry-next{
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    padding: 6px 0;
+    border-width: 4px;
+  }
+
   .choux-pastry-prev{
-    margin: auto 3px auto 83%;
+    margin: auto 3px auto 85%;
   }
 
   /*Palmier*/
 
-  .palmiersection img{
+  .palmier img{
     margin: 0 0 0 3%;
     width: 44vw;
     height: 500px;
@@ -1034,8 +1035,13 @@ p,
 
   /*Macaron*/
 
+  .macaron{
+    display: flex;
+    padding: 80px 2% 50px 2%;
+  }
+
   .macaron-p p{
-    width: 290px;
+    width: 300px;
     line-height: 1.6em;
   }
 
@@ -1047,14 +1053,26 @@ p,
     top: 40%;
     width: 40px;
     height: 40px;
-    padding: 8px 0;
-    font-size: 15px;
+    padding: 7px 0;
+    font-size: 13px;
+  }
+
+  .macaron-dot{
+    cursor: pointer;
+    height: 10px;
+    width: 13px;
+    margin: 0 3px;
   }
 
   /*Explore other gallery*/
 
   .othergallerytoexplore h3{
-    font-size: 20px;
+    font-size: 19px;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 19px;
   }
 
   .container img{
@@ -1123,15 +1141,15 @@ p,
 
   /*Palmier*/
 
-  .palmiersection{
+  .palmier{
     display: grid;
   }
 
-  .palmiersection img{
+  .palmier img{
     margin: 0 0 0 10%;
     width: 73vw;
-    height: 450px;
-    object-position: 50% 15%;
+    height: 420px;
+    object-position: 50% 10%;
   }
 
   .palmier-description{
@@ -1150,32 +1168,28 @@ p,
 
   .macaron{
     display: grid;
-  }
-
-  .macaron-p{
-    margin-top: 80px;
+    padding: 100px 3% 20px 3%;
   }
 
   .macaron-p p{
-    width: 480px;
+    width: 500px;
   }
 
   .macaron-slideshow{
     justify-content: center;
-    margin: 40px auto;
-    width: 71vw;
+    margin: 30px auto;
+    width: unset;
   }
   
   .macaron-slideshow-pic img{
-    width: 64vw;
-    aspect-ratio: 1/1.1;
+    width: 80vw;
+    aspect-ratio: 1/1;
   }
 
   .macaronprev, .macaronnext{
-    top: 40%;
     width: 45px;
     height: 45px;
-    padding: 10px 0;
+    padding: 9px 0;
     font-size: 15px;
   }
 
@@ -1196,15 +1210,6 @@ p,
 
   .container img{
     width: 40vw;
-  }
-
-  .othergallery-sliderdescription h2,
-  .othergallery-sliderdescription a{
-    font-size: 20px;
-  }
-  
-  .othergallery-sliderdescription p{
-    font-size: 14px;
   }
 
 }
@@ -1334,6 +1339,7 @@ p,
   p,
   .palmier-description a{
     font-size: 16px;
+    font-weight: 450;
   }
 
   /*Choux Pastry*/
@@ -1403,7 +1409,7 @@ p,
 
   /*Palmier*/
 
-  .palmiersection img{
+  .palmier img{
     margin: auto;
     width: 80vw;
     height: 380px;
@@ -1434,21 +1440,26 @@ p,
     width: 420px;
   }
 
+  .macaron-arrow{
+    margin-top: 20px;
+  }
+
   .macaron-slideshow{
     justify-content: center;
-    margin: 40px auto;
-    width: 80vw;
+    margin: 30px auto;
   }
   
   .macaron-slideshow-pic img{
-    width: 72vw;
-    aspect-ratio: 1/1.1;
+    width: 85vw;
+    aspect-ratio: 1/1;
   }
 
   /*Explore other gallery*/
 
   .othergallerytoexplore h3{
     font-size: 19px;
+    font-weight: 500;
+    word-spacing: normal;
   }
 
   .container img{
@@ -1499,11 +1510,11 @@ p,
 
   /*Palmier*/
 
-  .palmiersection{
+  .palmier{
     padding: 50px 0;
   }
 
-  .palmiersection img{
+  .palmier img{
     width: 85vw;
     height: 350px;
     object-position: 50% 10%;
@@ -1515,6 +1526,10 @@ p,
 
   /*Macaron*/
 
+  .macaron{
+    padding: 80px 3% 0 3%;
+  }
+
   .macaron-p h3{
     margin-bottom: 15px;
   }
@@ -1525,12 +1540,11 @@ p,
 
   .macaron-slideshow{
     justify-content: center;
-    margin: 40px auto;
-    width: 90vw;
+    margin: 30px auto;
   }
   
   .macaron-slideshow-pic img{
-    width: 80vw;
+    width: 90vw;
     aspect-ratio: 1/1.1;
   }
 
@@ -1538,23 +1552,19 @@ p,
     top: 40%;
     width: 40px;
     height: 40px;
-    padding: 8px 0;
+    padding: 6px 0;
     font-size: 14px;
-  }
-
-  .macaron-bottomdot{
-    margin-top: 10px;
   }
   
   .macaron-dot{
-    height: 12px;
+    height: 10px;
     width: 12px;
   }
 
   /*Explore other gallery*/
 
   .othergallerytoexplore{
-    margin: 0 0 0 0;
+    margin: 40px 0 0 0;
   }
 
   .othergallerytoexplore h3{
@@ -1630,7 +1640,7 @@ p,
 
   /*Palmier*/
 
-  .palmiersection img{
+  .palmier img{
     width: 90vw;
     height: 320px;
   }
@@ -1652,11 +1662,10 @@ p,
 
   .macaron-slideshow{
     margin: 20px auto;
-    width: 95vw;
   }
   
   .macaron-slideshow-pic img{
-    width: 85vw;
+    width: 90vw;
   }
 
   /*Explore other gallery*/
