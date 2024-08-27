@@ -1285,11 +1285,11 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 1.5em;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     display: block;
     margin: 20px auto 25px auto;
@@ -1563,13 +1563,13 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h2{
-    font-size: 23px;
+    font-size: 25px;
     letter-spacing: 1px;
   }
 
   .firstpartmobiledescription h3{
     font-size: 16px;
-    width: 400px;
+    width: 390px;
     margin: 15px auto 0px auto;
   }  
 
@@ -1677,13 +1677,13 @@ nav ul li a:hover::after{
   /*First Section*/
 
   .firstpartmobiledescription h2{
-    font-size: 22px;
+    font-size: 23px;
     letter-spacing: 1px;
   }
 
   .firstpartmobiledescription h3{
     font-size: 15px;
-    width: 380px;
+    width: 370px;
     margin: 15px auto 0px auto;
 
   }  
@@ -1761,13 +1761,13 @@ nav ul li a:hover::after{
   }
 
   .firstpartmobiledescription h2{
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .firstpartmobiledescription h3{
-    font-size: 14px;
+    letter-spacing: 0px;
     margin: 15px auto 0px auto;
-    width: 350px;
+    width: 320px;
   } 
 
   /*Third Section*/
