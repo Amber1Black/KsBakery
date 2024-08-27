@@ -221,74 +221,28 @@ p,
   width: 980px;
 }
 
-.homemade-bread-slider{
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-/* Hide the images by default */
-.homemade-bread-sliderpic {
-  display: none;
-}
-
-.homemade-bread-picturesdisplay{
+.homemade-bread-scroll-container{
+  margin: 50px 4% 30px 4%;
+  gap: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 85px;
-  margin: 20px auto;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 
-.homemade-bread-pic2 img{
-  width: 31vw;
-  aspect-ratio: 1/1.2;
+.homemade-bread-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.homemade-bread-container{
+  white-space: wrap;
+}
+
+.homemade-bread-container img{
+  width: 28vw;
+  aspect-ratio: 1/1.3;
   object-fit: cover;
-}
-
-.homemade-bread-pic1 img, .homemade-bread-pic3 img{
-  width: 25vw;
-  aspect-ratio: 1/1.1;
-  object-fit: cover;
-  filter:blur(0.5px);
-  filter: brightness(0.8);
-}
-
-.homemade-bread-image-5{
-  object-position: 50% 80%;
-}
-
-.homemade-bread-prev,
-.homemade-bread-next{
-  position: absolute;
-  top: 50%;
-  z-index: 100;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  border-style: double;
-  border-color: #ffffff;
-  border-width: 5px;
-  font-weight: bold;
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 400;
-  font-family: monospace;
-  padding: 5px 0;
-  text-align: center;
-  cursor: pointer;
-}
-
-.homemade-bread-next{
-  left: unset;
-  right: 31%;
-}
-
-.homemade-bread-prev:hover,
-.homemade-bread-next:hover{
-  color:#142c35;
-  background-color: #ffffff;
-  border-color: #ffffff;
 }
 
 
@@ -677,16 +631,6 @@ p,
 
 @media only screen and (max-width:1700px){
 
-  /*Homemade Bread*/
-
-  .homemade-bread-prev{
-    left: 30.5%;
-  }
-
-  .homemade-bread-next{
-    right: 30.5%;
-  }
-
   /*Explore other gallery*/
 
   .othergallerytoexplore h3{
@@ -716,30 +660,6 @@ p,
   p,
   .bread-with-recipe-description a{
     font-size: 19px;
-  }
-
-  /*Homemade Bread*/
-
-  .homemade-bread-description p{
-    width: 880px;
-  }
-
-  .homemade-bread-pic2 img{
-    width: 35vw;
-    aspect-ratio: 1/1.2;
-  }
-  
-  .homemade-bread-pic1 img, .homemade-bread-pic3 img{
-    width: 25vw;
-    aspect-ratio: 1/1.2;
-  }
-
-  .homemade-bread-prev{
-    left: 28%;
-  }
-
-  .homemade-bread-next{
-    right: 28%;
   }
 
   /*Crispy Top*/
@@ -848,48 +768,23 @@ p,
     font-size: 18px;
   }
 
-
   /*Homemade Bread*/
-
-  .homemade-bread{
-    padding-bottom: 100px;
-  }
 
   .homemade-bread-description{
     padding-top: 100px;
   }
-  
+
   .homemade-bread-description p{
-    margin: 15px auto 30px auto;
-    width: 840px;
+    width: 900px;
   }
 
-  .homemade-bread-picturesdisplay{
-    gap: 65px;
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
   }
 
-  .homemade-bread-pic2 img{
-    width: 38vw;
+  .homemade-bread-container img{
+    width: 31vw;
     aspect-ratio: 1/1.2;
-  }
-  
-  .homemade-bread-pic1 img, .homemade-bread-pic3 img{
-    width: 25vw;
-    aspect-ratio: 1/1.2;
-  }
-
-  .homemade-bread-prev,
-  .homemade-bread-next{
-    width: 50px;
-    height: 50px;
-    font-size: 22px;
-    padding: 9px 0;
-    left: 26.5%;
-  }
-
-  .homemade-bread-next{
-    left: unset;
-    right: 26.5%;
   }
 
   /*Crispy Top*/
@@ -1044,32 +939,16 @@ p,
   /*Homemade Bread*/
 
   .homemade-bread-description p{
-    margin: 20px auto 30px auto;
-    width: 800px;
+    width: 600px;
   }
 
-  .homemade-bread-pic2 img{
-    width: 42vw;
-    aspect-ratio: 1/1.2;
-  }
-  
-  .homemade-bread-pic1 img, .homemade-bread-pic3 img{
-    width: 30vw;
-    aspect-ratio: 1/1.2;
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
   }
 
-  .homemade-bread-prev,
-  .homemade-bread-next{
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    padding: 8px 0;
-    left: 24%;
-  }
-
-  .homemade-bread-next{
-    left: unset;
-    right: 24%;
+  .homemade-bread-container img{
+    width: 35vw;
+    aspect-ratio: 1/1.25;
   }
 
   /*Crispy Top*/
@@ -1259,54 +1138,35 @@ p,
     line-height: 1.5em;
   }
 
+  /*Common Parameter*/
+
+  h3{
+    font-size: 30px;
+  }
+
+  p,
+  .bread-with-recipe-description a{
+    font-size: 16px;
+  }
+
   /*Homemade Bread*/
 
+  .homemade-bread{
+    padding-bottom: 100px;
+  }
+
   .homemade-bread-description p{
-    margin: 15px auto 30px auto;
-    width: 590px;
+    width: 580px;
   }
 
-  .homemade-bread-picturesdisplay{
-    gap: 30px;
-    margin: 5px auto;
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 20px;
   }
 
-  .homemade-bread-pic2 img{
-    width: 50vw;
-    aspect-ratio: 1/1.2;
-  }
-  
-  .homemade-bread-pic1 img, .homemade-bread-pic3 img{
-    width: 30vw;
-    aspect-ratio: 1/1.4;
-  }
-
-  .homemade-bread-arrow{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-
-  .homemade-bread-prev,
-  .homemade-bread-next{
-    position: unset;
-    top: 0%;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    padding: 7px 0;
-    border-style: double;
-    border-width: 3px;
-    left: initial;
-  }
-
-  .homemade-bread-prev{
-    margin: 0 5px 0 0;
-  }
-
-  .homemade-bread-next{
-    left: initial;
-    right: initial;
+  .homemade-bread-container img{
+    width: 40vw;
+    aspect-ratio: 1/1.25;
   }
 
   /*Crispy Top*/
@@ -1316,7 +1176,7 @@ p,
   }
 
   .crispytop-description p{
-    width: 320px;
+    width: 300px;
     line-height: 1.6em;
   }
 
@@ -1327,7 +1187,7 @@ p,
 
   .crispytop-slideshow-pic img{
     width: 44vw;
-    min-height: 470px;
+    min-height: 450px;
   }
 
   .crispytopprev, .crispytopnext{
@@ -1374,7 +1234,7 @@ p,
   }
 
   .bread-with-recipe-description p{
-    width: 320px;
+    width: 310px;
     line-height: 1.7em;
   }
 
@@ -1432,28 +1292,23 @@ p,
 
   p,
   .bread-with-recipe-description a{
-    font-size: 17px;
     letter-spacing: 0px;
   }
 
   /*Homemade Bread*/
 
-  .homemade-bread-pic2 img{
-    width: 57vw;
-    aspect-ratio: 1/1.2;
-  }
-  
-  .homemade-bread-pic1 img, .homemade-bread-pic3 img{
-    width: 35vw;
-    aspect-ratio: 1/1.4;
+  .homemade-bread-description p{
+    width: 500px;
   }
 
-  .homemade-bread-prev{
-    left: 14%;
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 25px;
   }
 
-  .homemade-bread-next{
-    right: 14%;
+  .homemade-bread-container img{
+    width: 50vw;
+    aspect-ratio: 1/1.25;
   }
 
   /*Crispy Top*/
@@ -1554,7 +1409,7 @@ p,
   }
 
   .bread-with-recipe-description p{
-    width: 450px;
+    width: 420px;
   }
 
   .bread-with-recipe-arrow{
@@ -1712,6 +1567,7 @@ p,
   h3{
     font-size: 32px;
     letter-spacing: 2px;
+    word-spacing: 5px;
   }
 
   p,
@@ -1721,36 +1577,18 @@ p,
 
   /*Homemade Bread*/
 
-  .homemade-bread{
-    padding-bottom: 70px;
-  }
-
-  .homemade-bread-description{
-    padding-top: 70px;
-  }
-
   .homemade-bread-description p{
     width: 370px;
   }
 
-  .homemade-bread-pic2 img{
-    width: 65vw;
-    aspect-ratio: 1/1.25;
-  }
-  
-  .homemade-bread-pic1 img, .homemade-bread-pic3 img{
-    width: 40vw;
-    aspect-ratio: 1/1.4;
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 25px;
   }
 
-  .homemade-bread-prev,
-  .homemade-bread-next{
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-    padding: 7px 0;
-    border-width: 3px;
-    border-style: double;
+  .homemade-bread-container img{
+    width: 60vw;
+    aspect-ratio: 1/1.25;
   }
 
   /*Crispy Top*/
@@ -1761,6 +1599,11 @@ p,
 
   .crispytop-description-mobile p{
     width: 390px;
+    margin: 10px auto 0 auto;
+  }
+
+  .crispytop-arrow{
+    margin-top: 18px;
   }
 
   .crispytopprev, .crispytopnext{
@@ -1906,39 +1749,27 @@ p,
 
   /*Homemade Bread*/
 
-  .homemade-bread{
-    padding-bottom: 30px;
-  }
-
   .homemade-bread-description p{
-    width: 345px;
-    margin: 15px auto;
-    line-height: 1.6em;
+    width: 350px;
   }
 
-  .homemade-bread-picturesdisplay{
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 30px 4%;
     gap: 20px;
-    margin: 15px auto;
   }
 
-  .homemade-bread-pic2 img{
-    width: 75vw;
-    aspect-ratio: 1/1.2;
-  }
-  
-  .homemade-bread-pic1 img, .homemade-bread-pic3 img{
-    width: 45vw;
-    aspect-ratio: 1/1.4;
+  .homemade-bread-container img{
+    width: 70vw;
+    aspect-ratio: 1/1.25;
   }
 
   /*Crispy Top*/
 
   .crispytop{
-    padding: 50px 6% 50px 6%;
+    padding: 50px 6% 20px 6%;
   }
 
   .crispytop-description-mobile p{
-    margin: 20px auto 0 auto;
     width: 360px;
   }
 
@@ -1949,10 +1780,6 @@ p,
   .crispytop-slideshow-pic img{
     width: 90vw;
     min-height: unset;
-  }
-
-  .crispytop-arrow{
-    margin-top: 25px;
   }
 
   /*Chocolate Bread*/
@@ -2073,34 +1900,23 @@ p,
     font-size: 15px;
     line-height: 1.4em;
   }
-  
+
   /*Homemade Bread*/
 
-  .homemade-bread-description p{
-    width: 350px;
+  .homemade-bread-scroll-container{
+    margin: 35px 4% 0 4%;
+    gap: 20px;
   }
 
-  .homemade-bread-pic2 img{
+  .homemade-bread-container img{
     width: 80vw;
-    aspect-ratio: 1/1.15;
-  }
-
-  .homemade-bread-arrow{
-    margin-top: 0px;
-  }
-
-  .homemade-bread-prev,
-  .homemade-bread-next{
-    width: 35px;
-    height: 35px;
-    font-size: 15px;
-    padding: 5px 0;
+    aspect-ratio: 1/1.25;
   }
 
   /*Crispy Top*/
 
   .crispytop{
-    padding: 50px 6% 0px 6%;
+    padding: 20px 6% 0px 6%;
   }
 
   .crispytop-description-mobile p{
@@ -2108,12 +1924,17 @@ p,
     line-height: 1.6em;
   }
 
+  .crispytop-slideshow{
+    margin: 20px 0 40px 0;
+  }
+
   .crispytop-slideshow-pic img{
+    aspect-ratio: 1/1.1;
     width: 90vw;
   }
 
   .crispytop-arrow{
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   /*Chocolate Bread*/
