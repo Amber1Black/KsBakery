@@ -194,7 +194,7 @@ h3{
 p,
 .bread-with-recipe-description a{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+  font-weight: 350;
   letter-spacing: 1px;
   font-size: 20px;
   line-height: 1.5em;
@@ -561,8 +561,8 @@ p,
 
 .othergallerytoexplore h3{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 28px;
   letter-spacing: 1px;
   margin-left: 6%;
   text-transform: none;
@@ -599,7 +599,7 @@ p,
 
 .othergallery-sliderdescription h2{
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 2px;
   margin: 20px 15px 5px 14px;
 }
@@ -1156,7 +1156,7 @@ p,
   }
 
   .homemade-bread-description p{
-    width: 580px;
+    width: 550px;
   }
 
   .homemade-bread-scroll-container{
@@ -1573,6 +1573,7 @@ p,
   p,
   .bread-with-recipe-description a{
     font-size: 16px;
+    font-weight: 450;
   }
 
   /*Homemade Bread*/
@@ -1721,6 +1722,7 @@ p,
 
   .othergallerytoexplore h3{
     font-size: 19px;
+    font-weight: 500;
     text-transform: none;
     word-spacing: normal;
   }
