@@ -11,8 +11,6 @@
 
   gtag('config', 'G-RF94ND0HKD');
   </script>
-
-    
   
   
   <meta charset="UTF-8">
@@ -29,7 +27,7 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -99,21 +97,23 @@
 
     <div class="crispytop-backgroundcolor">
       <div class="crispytop reveal2">
-        <div class="crispytop-description-mobile">
+        <div class="crispytop-description">
           <h3>Crispy Top</h3>
           <p>Bread can be covered with a crispy top, the crispy top pairs perfectly with the fluffy bread beneath. The toppings can be created in various flavors and shapes, offering endless possibilities for enjoying bread with a crunchy twist.</p>
+
           <div class="crispytop-arrow">
-            <a class="crispytopprev" onclick="crispytopplusSlides(-1)">❮</a>
-            <a class="crispytopnext" onclick="crispytopplusSlides(1)">❯</a>
+            <a class="crispytop-prev" onclick="crispytopplusSlides(-1)">❮</a>
+            <a class="crispytop-next" onclick="crispytopplusSlides(1)">❯</a>
     
             <div class ="crispytop-bottomdot">
-              <span class="crispytop-dot" onclick="currentSlide(1)"></span> 
-              <span class="crispytop-dot" onclick="currentSlide(2)"></span> 
-              <span class="crispytop-dot" onclick="currentSlide(3)"></span> 
-              <span class="crispytop-dot" onclick="currentSlide(4)"></span> 
+              <span class="crispytop-dot" onclick="crispytopcurrentSlide(1)"></span> 
+              <span class="crispytop-dot" onclick="crispytopcurrentSlide(2)"></span> 
+              <span class="crispytop-dot" onclick="crispytopcurrentSlide(3)"></span> 
+              <span class="crispytop-dot" onclick="crispytopcurrentSlide(4)"></span> 
             </div>
           </div>
         </div>
+
         <div class="crispytop-slideshow">
           <div class="crispytop-slideshow-pic fade">
             <img src="../Pictures/Bread - Matcha Mushroom Bread.jpg" alt="Matcha Mushroom Bread: Bread with a crispy top, shaped like a mushroom, and flavored with matcha">
@@ -126,22 +126,6 @@
           </div>
           <div class="crispytop-slideshow-pic fade">
             <img src="../Pictures/Bread - Mexico Bun.jpg" alt="Mexico Bun: A famous bread from Hong Kong with a crispy top">
-          </div>
-        </div>
-        <div class="crispytop-description">
-          <h3>Crispy Top</h3>
-          <p>Bread can be covered with a crispy top, the crispy top pairs perfectly with the fluffy bread beneath. The toppings can be created in various flavors and shapes, offering endless possibilities for enjoying bread with a crunchy twist.</p>
-
-          <div class="crispytop-arrow">
-            <a class="crispytopprev" onclick="crispytopplusSlides(-1)">❮</a>
-            <a class="crispytopnext" onclick="crispytopplusSlides(1)">❯</a>
-    
-            <div class ="crispytop-bottomdot">
-              <span class="crispytop-dot" onclick="currentSlide(1)"></span> 
-              <span class="crispytop-dot" onclick="currentSlide(2)"></span> 
-              <span class="crispytop-dot" onclick="currentSlide(3)"></span> 
-              <span class="crispytop-dot" onclick="currentSlide(4)"></span> 
-            </div>
           </div>
         </div>
       </div>
@@ -562,7 +546,7 @@
       crispytopshowSlides(crispytopslideIndex += n);
     }
     
-    function currentSlide(n) {
+    function crispytopcurrentSlide(n) {
       crispytopshowSlides(crispytopslideIndex = n);
     }
     
@@ -582,6 +566,7 @@
       crispytopdots[crispytopslideIndex-1].className += " crispytop-active";
     }
   </script>
+
 
   <script>
     //Chocolate Bread 1
