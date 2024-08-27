@@ -194,7 +194,7 @@ h3{
 p,
 .bread-with-recipe-description a{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 350;
+  font-weight: 400;
   letter-spacing: 1px;
   font-size: 20px;
   line-height: 1.5em;
@@ -257,7 +257,7 @@ p,
   padding: 100px 10%;
 }
 
-.crispytop-description-mobile{
+.crispytop-mobile{
   display: none;
 }
 
@@ -300,9 +300,8 @@ p,
   margin-top: 50px;
 }
 
-.crispytopprev, .crispytopnext{
+.crispytop-prev, .crispytop-next{
   cursor: pointer;
-  top: 43%;
   width: 50px;
   height: 50px;
   padding: 13px;
@@ -319,15 +318,15 @@ p,
   z-index: 10;
 }
 
-.crispytopprev{
+.crispytop-prev{
   margin: 0 10px 0 0;
 }
 
-.crispytopnext{
+.crispytop-next{
   right: 3%;
 }
 
-.crispytopprev:hover, .crispytopnext:hover {
+.crispytop-prev:hover, .crispytop-next:hover{
   background-color: rgba(56, 97, 135, 0.8);
 }
 
@@ -346,7 +345,7 @@ p,
   transition: background-color 0.6s ease;
 }
 
-.crispytop-active, .crispytop-dot:hover {
+.crispytop-active, .crispytop-dot:hover{
   background-color: rgb(45, 112, 139);
 }
 
@@ -565,7 +564,6 @@ p,
   font-size: 28px;
   letter-spacing: 1px;
   margin-left: 6%;
-  text-transform: none;
   word-spacing: normal;
 }
 
@@ -631,6 +629,12 @@ p,
 
 @media only screen and (max-width:1700px){
 
+  /*Bread with Recipe*/
+
+  .bread-with-recipe-grid-content{
+    margin: 50px 8%;
+  }
+
   /*Explore other gallery*/
 
   .othergallerytoexplore h3{
@@ -639,12 +643,6 @@ p,
   
   .othergallery-sliderdescription p{
     font-size: 16px;
-  }
-
-  /*Bread with Recipe*/
-
-  .bread-with-recipe-grid-content{
-    margin: 50px 8%;
   }
   
 }
@@ -803,7 +801,7 @@ p,
     margin-top: 40px;
   }
 
-  .crispytopprev, .crispytopnext{
+  .crispytop-prev, .crispytop-next{
     width: 40px;
     height: 40px;
     padding: 9px;
@@ -1190,7 +1188,7 @@ p,
     min-height: 450px;
   }
 
-  .crispytopprev, .crispytopnext{
+  .crispytop-prev, .crispytop-next{
     width: 40px;
     height: 40px;
     padding: 8px;
@@ -1315,47 +1313,22 @@ p,
 
   .crispytop{
     display: grid;
-    justify-content: center;
-    padding: 20px 10% 30px 10%;
   }
 
-  .crispytop-description{
-    display: none;
-  }
-
-  .crispytop-description-mobile{
-    display: grid;
-    color: #ffffff;
-  }
-
-  .crispytop-description-mobile h3{
-    text-align: center;
-  }
-
-  .crispytop-description-mobile p{
-    text-align: center;
-    margin: 20px auto 0 auto;
-    width: 490px;
-    line-height: 1.8em;
+  .crispytop-description p{
+    width: 450px;
   }
 
   .crispytop-slideshow{
-    width: 82vw;
-    margin: 30px 0 30px 0;
+    width: unset;
+    min-height: unset;
+    margin-top: 30px;
   }
 
   .crispytop-slideshow-pic img{
-    width: 80vw;
-    aspect-ratio: 1/1;
-    min-height: 350px;
-  }
-
-  .crispytopprev, .crispytopnext{
-    width: 45px;
-    height: 45px;
-    padding: 10px;
-    border-width: 2px;
-    font-size: 15px;
+    width: 75vw;
+    aspect-ratio: 1/1.1;
+    min-height: unset;
   }
 
   /*Chocolate Bread*/
@@ -1596,31 +1569,37 @@ p,
   /*Crispy Top*/
 
   .crispytop{
-    padding: 50px auto;
+    padding: 50px auto 0 auto;
   }
 
-  .crispytop-description-mobile p{
+  .crispytop-description p{
     width: 390px;
-    margin: 10px auto 0 auto;
+    margin: 0 auto;
   }
 
   .crispytop-arrow{
     margin-top: 18px;
   }
 
-  .crispytopprev, .crispytopnext{
+  .crispytop-prev, .crispytop-next{
     width: 35px;
     height: 35px;
     padding: 8px;
     font-size: 12px;
   }
 
-  .crispytopprev{
+  .crispytop-prev{
     margin: 0 5px 0 0;
   }
 
   .crispytop-dot{
     margin: 12px 2px;
+  }
+
+  .crispytop-slideshow-pic img{
+    width: 80vw;
+    aspect-ratio: 1/1.1;
+    min-height: unset;
   }
 
   /*Chocolate Bread*/
@@ -1723,7 +1702,6 @@ p,
   .othergallerytoexplore h3{
     font-size: 19px;
     font-weight: 500;
-    text-transform: none;
     word-spacing: normal;
   }
 
@@ -1774,15 +1752,11 @@ p,
   /*Crispy Top*/
 
   .crispytop{
-    padding: 50px 6% 20px 6%;
+    padding: 0px 6% 40px 6%;
   }
 
-  .crispytop-description-mobile p{
+  .crispytop-description p{
     width: 360px;
-  }
-
-  .crispytop-slideshow{
-    width: 95vw;
   }
 
   .crispytop-slideshow-pic img{
@@ -1921,7 +1895,7 @@ p,
     padding: 20px 6% 0px 6%;
   }
 
-  .crispytop-description-mobile p{
+  .crispytop-description p{
     width: 300px;
     line-height: 1.6em;
   }
