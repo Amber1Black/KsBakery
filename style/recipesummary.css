@@ -224,7 +224,7 @@ nav ul li a:hover::after{
   font-size: 16px;
   letter-spacing: 8px;
   font-weight: 400;
-  margin: 12px 0px 8px 0px;
+  margin: 12px 0px 8px 1px;
   color: #575757;
 }
 
@@ -408,7 +408,7 @@ h3{
   }
 
   .recipename h4, .recipename1 h4{
-    margin: 12px 0px 2px 0px;
+    margin: 12px 0px 2px 1px;
   }
 
   .recipename p, .recipename1 p{
@@ -442,7 +442,7 @@ h3{
   }
 
   .recipename h4, .recipename1 h4{
-    margin: 12px 0px 7px 0px;
+    margin: 12px 0px 7px 1px;
   }
 
   .recipename p, .recipename1 p{
@@ -805,7 +805,7 @@ h3{
 
   .recipename h4, .recipename1 h4{
     font-size: 13px;
-    margin: 12px 0px 5px 0px;
+    margin: 12px 0px 5px 1px;
   }
 
   .recipename, .recipename1{
