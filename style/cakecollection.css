@@ -1,0 +1,2394 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+    
+}
+
+/*Headings*/
+
+.headingsection{
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.logo{
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 40px;
+  margin-top: 14px;
+}
+  
+.menu-icon{
+  display: none;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+  background-color: white;
+}
+
+nav ul{
+  background-color: white;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 45px;
+  background-color: white; 
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: 17px;
+  background-color: white;
+  position: relative;
+}
+
+nav ul li a:hover{
+  color: rgb(80, 80, 80);
+}
+  
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/*Reveal*/
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.reveal2{
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal2.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal3{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal3.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*Content*/
+
+.content{
+  overflow: hidden;
+}
+
+/*Top Section*/
+
+.topsection-mobile{
+  display: none;
+}
+
+.topsection{
+  background: linear-gradient(
+    to right,
+    rgb(252, 242, 238) 0%,
+    rgb(255, 250, 246) 33%,
+    rgb(255, 200, 193) 33%,
+    rgb(255, 200, 193) 100%
+  );
+  padding: 50px 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.topsectiondescription-mobile{
+  display: none;
+}
+
+.topsectiondescription{
+  display: grid;
+  align-items: center;
+  margin: auto 5%;
+}
+
+.topsectiondescription p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 40px 0 0 0;
+  line-height: 1.8em;
+  width: 25vw;
+}
+
+.topsection-right{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  width: 67vw;
+}
+
+.topsection-right img{
+  width: 35vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 8px;
+  text-align: center;
+  margin: auto;
+}
+
+.topsection-right h1,
+.topsection-right h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10vw;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-shadow: 1px 1px 1px #ffffff;
+  z-index: 5;
+}
+
+.topsection-right h1{
+  margin: 0% 0 -40% -5%;
+}
+
+.topsection-right h2{
+  margin: -30% 0 0 10%;
+}
+
+/*Common Parameter*/
+
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 3px;
+  word-spacing: 8px;
+}
+
+p,
+.coffee-genoise-description a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+/*Whole Cake*/
+
+.whole-cake{
+  padding-bottom: 100px;
+}
+
+.whole-cake-description{
+  padding: 170px 30% 0 7%;
+  color: #000000;
+}
+
+.whole-cake-description p{
+  margin-top: 20px;
+}
+
+.whole-cake-slider-section-2,
+.whole-cake-slider-section-3{
+  display: none;
+}
+
+.whole-cake-slider-1{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.whole-cake-sliderpic-1 {
+  display: none;
+}
+
+.whole-cake-picturesdisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 40px auto;
+}
+
+.whole-cake-picturesdisplay img{
+  width: 27vw;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
+
+.wholecake-image-1,
+.wholecake-image-6{
+  object-position: 50% 60%;
+}
+
+.wholecake-image-7{
+  object-position: 50% 70%;
+}
+
+.wholecake-image-10{
+  object-position: 50% 40%;
+}
+
+.whole-cake-arrow{
+  display: flex;
+  margin-top: -60px;
+}
+
+.whole-cake-prev,
+.whole-cake-next{
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border-radius: ;
+  border-style: double;
+  border-color: #000000;
+  border-width: 5px;
+  font-weight: bold;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: monospace;
+  padding: 5px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.whole-cake-prev{
+  margin: auto 3px auto 87%;
+}
+
+.whole-cake-prev:hover,
+.whole-cake-next:hover{
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/*Cake Roll*/
+
+.cake-roll-backgroundcolor{
+  background-color: #142c35;
+}
+
+.cake-roll{
+  display: flex;
+  padding: 0px 10%;
+}
+
+.cake-roll-mobile{
+  display: none;
+}
+
+.cake-roll-description{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #ffffff;
+}
+
+.cake-roll-description h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cake-roll-description p{
+  width: 430px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.cake-roll-slideshow{
+  width: 46vw;
+  margin: 100px auto;
+}
+
+.cake-roll-slideshow-pic{
+  text-align: center;
+}
+
+.cake-roll-slideshow-pic img{
+  width: 40vw;
+  aspect-ratio: 1/1.05;
+  object-fit: cover;
+}
+
+.cake-roll-arrow{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cake-roll-prev, .cake-roll-next{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  text-align: center;
+  color: white;
+  background-color: rgb(45, 112, 139);
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+.cake-roll-prev{
+  margin: 0 10px 0 0;
+}
+
+.cake-roll-next{
+  right: 3%;
+}
+
+.cake-roll-prev:hover, .cake-roll-next:hover{
+  background-color: rgba(56, 97, 135, 0.8);
+}
+
+.cake-roll-bottomdot{
+  text-align: center;
+  margin-left: 20px;
+}
+
+.cake-roll-dot{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 20px 3px 20px 3px;
+  background-color: #ffffff;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.cake-roll-active, .cake-roll-dot:hover{
+  background-color: rgb(45, 112, 139);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Cake*/
+
+.cake-backgroundcolor{
+  background-color: #142c35;
+}
+
+.cake{
+  padding-bottom: 150px;
+}
+
+.cake-description{
+  padding-top: 150px;
+  color: #fffef3;
+  text-align: center;
+}
+
+.cake-description p{
+  margin: 20px auto 30px auto;
+  width: 980px;
+}
+
+.cake-scroll-container{
+  margin: 50px 4% 0 4%;
+  gap: 30px;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cake-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.cake-container{
+  white-space: wrap;
+}
+
+.cake-container img{
+  width: 28vw;
+  aspect-ratio: 1/1.3;
+  object-fit: cover;
+}
+
+/*Coffee Genoise*/
+
+.coffee-genoise{
+  display: flex;
+  padding: 150px 8%;
+}
+
+.coffee-genoise img{
+  width: 40vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: 50% 70%;
+  margin-right: 50px;
+}
+
+.coffee-genoise-description{
+  border-style: solid;
+  border-width: 2px;
+  border-color: 000000;
+  padding: 80px;
+  width: 650px;
+  margin: auto;
+  justify-content: center;
+}
+
+.coffee-genoise-description h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.coffee-genoise-description p{
+  text-align: center;
+  align-items: center;
+  line-height: 1.8em;
+}
+
+.coffee-genoise-description a{
+  text-decoration: none;
+  color: #ffffff;
+  background-color:#000000;
+  padding: 10px 30px;
+  font-weight: 450;
+}
+
+/*Cupcake*/
+
+.cupcake{
+  display: flex;
+  padding: 100px 8%;
+}
+
+.cupcake-description{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.cupcake-description h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cupcake-description p{
+  width: 500px;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.cupcake-slideshow{
+  width: 46vw;
+  position: relative;
+}
+
+.cupcake-slideshow-pic{
+  text-align: center;
+}
+
+.cupcake-slideshow-pic img{
+  width: 40vw;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+}
+
+.cupcake-arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.cupcakeprev, .cupcakenext{
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 9px;
+  text-align: center;
+  color: white;
+  background-color: rgb(27, 79, 90);
+  border-style: double;
+  border-color: #ffffff;
+  border-width: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 100%;
+  user-select: none;
+  z-index: 10;
+}
+
+.cupcakeprev:hover, .cupcakenext:hover {
+  background-color: rgba(56, 97, 135, 0.8);
+}
+
+.cupcake-bottomdot{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.cupcake-dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  margin: 0 4px;
+  background-color: #dfdfdf;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.cupcake-active, .cupcake-dot:hover {
+  background-color: rgb(45, 112, 139);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*Cake Fact*/
+
+.cakefact{
+  background-color: #142c35;
+  padding: 180px 0;
+}
+
+.cakefact h3{
+  text-align: center;
+  color: #ffffff;
+}
+
+.cakefact p{
+  color: #ffffff;
+  text-align: center;
+  width: 770px;
+  margin: 20px auto 0 auto;
+  line-height: 2em;
+}
+
+/*Explore other gallery*/
+
+.othergallerytoexplore{
+  margin: 100px 0 0 0;
+}
+
+.othergallerytoexplore h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-left: 6%;
+  word-spacing: normal;
+}
+
+.othergallery-scroll-container{
+  margin: 20px 6% 100px 6%;
+  gap: 40px;
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.othergallery-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.container{
+  white-space: wrap;
+}
+
+.container img{
+  width: 23vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.othergallerytoexploreimage2{
+  object-position: 50% 65%;
+}
+
+.othergallery-sliderdescription h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 20px 15px 5px 14px;
+}
+
+.othergallery-sliderdescription a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.othergallery-sliderdescription p{
+  font-size: 17px;
+  line-height: 1.4em;
+  margin: 5px 15px;
+}
+
+/*copyright*/
+
+.copyright{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 11px;
+  color: grey;
+  bottom: 2%;
+}
+
+
+@media only screen and (max-width:1700px){
+
+  /*Top Section*/
+
+  .topsectiondescription p{
+    font-size: 21px;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise-description{
+    padding: 80px 60px;
+    width: 630px;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 26px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width:1500px){
+
+  /*Top Section*/
+
+  .topsection-right img{
+    width: 38vw;
+  }
+
+  .topsectiondescription{
+    margin: auto;
+    padding: 5% 5%;
+  }
+
+  .topsectiondescription p{
+    font-size: 20px;
+  }
+
+  .topsection-right{
+    margin: 70px auto;
+  }
+
+  .topsection-right h1,
+  .topsection-right h2{
+    letter-spacing: 5px;
+  }
+
+  .topsection-right h1{
+    margin: 0% 0 -45% -10%;
+  }
+  
+  .topsection-right h2{
+    margin: -35% 0 0 8%;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 37px;
+  }
+  
+  p,
+  .coffee-genoise-description a{
+    font-size: 19px;
+  }
+
+  /*Whole Cake*/
+
+  .whole-cake-description{
+    padding: 120px 30% 0 5%;
+  }
+
+  .whole-cake-picturesdisplay{
+    gap: 30px;
+    margin: 40px auto;
+  }
+
+  .whole-cake-picturesdisplay img{
+    width: 29vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .whole-cake-arrow{
+    margin-top: -50px;
+  }
+
+  .whole-cake-prev{
+    margin: auto 3px auto 88%;
+  }
+
+  /*Cake Roll*/
+
+  .cake-roll{
+    padding: 0px 7%;
+  }
+
+  .cake-roll-description p{
+    width: 420px;
+    line-height: 2em;
+  }
+
+  /*Cupcake*/
+
+  .cupcake{
+    display: flex;
+    padding: 100px 6%;
+  }
+
+  .cupcake-description p{
+    width: 480px;
+    line-height: 1.8em;
+  }
+
+  .cupcake-arrow{
+    margin-top: 30px;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise img{
+    aspect-ratio: 1/1.1;
+  }
+
+  .coffee-genoise-description{
+    padding: 60px 60px;
+    width: 640px;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 150px 0;
+  }
+
+  .cakefact p{
+    width: 720px;
+    margin: 20px auto 0 auto;
+    line-height: 2em;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 30px;
+  }
+
+  .container img{
+    width: 26vw;
+  }
+
+  .othergallerytoexplore h3{
+    font-size: 21px;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 21px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 15px;
+  }
+
+}
+
+
+@media only screen and (max-width:1300px){
+
+  /*Root*/
+
+  :root{
+    --width-image: 70vw;
+  }
+
+  /*Top Section*/
+
+  .topsection-right{
+    margin: 50px auto;
+  }
+
+  .topsectiondescription p{
+    font-size: 18px;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 35px;
+  }
+
+  p,
+  .coffee-genoise-description a{
+    font-size: 18px;
+  }
+
+  /*Whole Cake*/
+
+  .whole-cake-description{
+    padding: 100px 20% 0 5%;
+  }
+
+  .whole-cake-prev,
+  .whole-cake-next{
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    padding: 7px 0;
+    border-width: 4px;
+  }
+
+  .whole-cake-prev{
+    margin: auto 3px auto 87%;
+  }
+
+  .whole-cake-picturesdisplay{
+    gap: 20px;
+    margin: 40px auto;
+  }
+
+  .whole-cake-picturesdisplay img{
+    width: 29vw;
+    aspect-ratio: 1/1.25;
+    min-height: 420px;
+  }
+
+  /*Cake Roll*/
+
+  .cake-roll-description p{
+    width: 400px;
+  }
+
+  .cake-roll-slideshow-pic img{
+    width: 40vw;
+    aspect-ratio: 1/1.2;
+    min-height: 550px;
+  }
+
+  .cake-roll-arrow{
+    margin-top: 40px;
+  }
+
+  .cake-roll-prev, .cake-roll-next{
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+
+  .cake-roll-dot{
+    height: 10px;
+    width: 10px;
+    margin: 15px 3px 15px 3px;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding-bottom: 100px;
+  }
+
+  .cake-description{
+    padding-top: 100px;
+  }
+
+  .cake-description p{
+    width: 900px;
+  }
+
+  .cake-scroll-container{
+    margin: 35px 4% 0 4%;
+  }
+
+  .cake-container img{
+    width: 31vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise{
+    padding: 100px 4%;
+  }
+
+  .coffee-genoise img{
+    aspect-ratio: 1/1.2;
+    min-height: 550px;
+    margin-right: 30px;
+  }
+
+  .coffee-genoise-description{
+    padding: 55px 45px;
+    width: unset;
+  }
+
+  .coffee-genoise-description p{
+    line-height: 1.7em;
+    width: 430px;
+  }
+
+  .coffee-genoise-description a{
+    letter-spacing: 1px;
+  }
+
+  /*Cupcake*/
+
+  .cupcake{
+    padding: 80px 3%;
+  }
+
+  .cupcake-description p{
+    width: 460px;
+    line-height: 1.8em;
+  }
+
+  .cupcake-slideshow-pic img{
+    width: 42vw;
+    aspect-ratio: 1/1.15;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 25px;
+    margin: 20px 4% 100px 4%;
+  }
+
+  .othergallerytoexplore h3{
+    margin-left: 4%;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 20px;
+  }
+
+  .othergallery-sliderdescription h2{
+    margin: 12px 15px 0px 14px;
+  }
+  
+  .othergallery-sliderdescription p{
+    margin: 5px 10px 0px 15px;
+  }
+  
+}
+
+
+@media only screen and (max-width:1050px){
+
+  /*Root*/
+
+  :root{
+    --width-image: 78vw;
+  }
+
+  /*Top Section*/
+
+  .topsection-right img{
+    width: 43vw;
+  }
+
+  .topsectiondescription{
+    padding: auto 4%;
+  }
+
+  .topsectiondescription p{
+    letter-spacing: 0px;
+  }
+
+  .topsection-right h1{
+    margin: 0% 0 -50% -10%;
+  }
+  
+  .topsection-right h2{
+    margin: -38% 0 0 7%;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 32px;
+  }
+
+  p,
+  .coffee-genoise-description a{
+    font-size: 17px;
+  }
+
+  /*Whole Cake*/
+
+  .whole-cake{
+    padding-bottom: 70px;
+  }
+
+  .whole-cake-description{
+    padding: 80px 28% 0 6%;
+  }
+
+  .whole-cake-description p{
+    margin-top: 12px;
+  }
+
+  .whole-cake-slider-section-1{
+    display: none;
+  }
+
+  .whole-cake-slider-section-2{
+    display: grid;
+  }
+
+  .whole-cake-slider-2{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Hide the images by default */
+  .whole-cake-sliderpic-2 {
+    display: none;
+  }
+
+  .whole-cake-picturesdisplay{
+    gap: 30px;
+    margin: 30px auto;
+  }
+
+  .whole-cake-picturesdisplay img{
+    width: 43vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .whole-cake-arrow{
+    margin-top: -40px;
+  }
+
+  .whole-cake-prev{
+    margin: auto 3px auto 84%;
+  }
+
+  /*Cake Roll*/
+
+  .cake-roll{
+    padding: 0 4%;
+  }
+
+  .cake-roll-description p{
+    width: 380px;
+    line-height: 1.8em;
+  }
+
+  .cake-roll-slideshow{
+    width: 46vw;
+    margin: 70px auto;
+  }
+
+  .cake-roll-slideshow-pic img{
+    width: 40vw;
+    min-height: 470px;
+  }
+
+  .cake-roll-arrow{
+    margin-top: 30px;
+  }
+
+  /*Cake*/
+
+  .cake-description p{
+    width: 580px;
+  }
+
+  .cake-scroll-container{
+    margin: 35px 4% 0 4%;
+  }
+
+  .cake-container img{
+    width: 35vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise{
+    padding: 80px 3%;
+  }
+
+  .coffee-genoise img{
+    min-height: 500px;
+    margin-right: 15px;
+  }
+
+  .coffee-genoise-description{
+    padding: 40px 35px;
+  }
+
+  .coffee-genoise-description p{
+    width: 360px;
+    line-height: 1.6em;
+  }
+
+  /*Cupcake*/
+
+  .cupcake-description p{
+    width: 400px;
+    line-height: 1.7em;
+  }
+
+  .cupcake-slideshow-pic img{
+    aspect-ratio: 1/1.25;
+  }
+
+  .cupcakeprev, .cupcakenext{
+    top: 40%;
+    width: 45px;
+    height: 45px;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 120px 0;
+  }
+
+  .cakefact p{
+    width: 660px;
+    margin: 20px auto 0 auto;
+    line-height: 1.8em;
+  }
+
+
+  /*Explore other gallery*/
+
+  .othergallery-scroll-container{
+    gap: 25px;
+    margin: 20px 5% 100px 5%;
+  }
+
+  .othergallerytoexplore h3{
+    margin-left: 5%;
+    font-size: 20px;
+  }
+
+  .container img{
+    width: 31vw;
+  }
+
+  .othergallery-sliderdescription h2{
+    margin: 12px 10px 0px 9px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+    margin: 4px 10px 0px 10px;
+  }
+
+}
+
+
+@media only screen and (max-width:900px){
+
+  /*Headings*/
+
+  .logo{
+    margin-left: 20px;
+  }
+
+  nav{
+    padding-right: 1%;
+  }
+
+  nav ul li{
+    margin-right: 28px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width:850px){
+
+  /*Top Section*/
+
+  .topsectiondescription p{
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 30px;
+  }
+
+  p,
+  .coffee-genoise-description a{
+    font-size: 16px;
+  }
+
+  /*Whole Cake*/
+
+  .whole-cake-description{
+    padding: 80px 23% 0 6%;
+  }
+
+  .whole-cake-picturesdisplay{
+    gap: 20px;
+  }
+
+  .whole-cake-picturesdisplay img{
+    width: 45vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  .whole-cake-prev,
+  .whole-cake-next{
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    padding: 6px 0;
+    border-width: 4px;
+  }
+
+  .whole-cake-prev{
+    margin: auto 3px auto 85%;
+  }
+
+  /*Cake Roll*/
+
+  .cake-roll{
+    padding: 0 2%;
+  }
+
+  .cake-roll-description p{
+    width: 300px;
+    line-height: 1.6em;
+  }
+
+  .cake-roll-slideshow{
+    width: 46vw;
+    min-height: 400px;
+  }
+
+  .cake-roll-slideshow-pic img{
+    width: 44vw;
+  }
+
+  .cake-roll-prev, .cake-roll-next{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-width: 2px;
+    font-size: 15px;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding-bottom: 80px;
+  }
+
+  .cake-description{
+    padding-top: 80px;
+  }
+
+  .cake-description p{
+    width: 550px;
+  }
+
+  .cake-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 20px;
+  }
+
+  .cake-container img{
+    width: 40vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise img{
+    width: 44vw;
+    min-height: 470px;
+  }
+
+  .coffee-genoise-description{
+    padding: 40px auto;
+    margin-left: -5%;
+  }
+
+  .coffee-genoise-description p{
+    width: 43vw;
+    margin: auto;
+  }
+
+  /*Cupcake*/
+
+  .cupcake{
+    display: flex;
+    padding: 80px 2% 50px 2%;
+  }
+
+  .cupcake-description p{
+    width: 300px;
+    line-height: 1.4em;
+  }
+
+  .cupcake-slideshow-pic img{
+    width: 45vw;
+    aspect-ratio: 1/1.3;
+    min-height: 430px;
+  }
+
+  .cupcake-arrow{
+    margin-top: 18px;
+  }
+
+  .cupcakeprev, .cupcakenext{
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    padding: 7px 0;
+    font-size: 13px;
+  }
+
+  .cupcake-dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 3px;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 120px 0;
+  }
+
+  .cakefact p{
+    width: 500px;
+    margin: 30px auto 0 auto;
+    line-height: 1.8em;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 19px;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 19px;
+  }
+
+  .container img{
+    width: 38vw;
+  }
+
+}
+
+
+@media only screen and (max-width:700px){
+
+	/*Headings*/
+
+  nav ul li{
+    margin-right: 15px;
+  } 
+
+  nav ul li a{
+    font-size: 15px;
+  }
+
+  /*Top Section*/
+
+  .topsection{
+    display: none;
+  }
+
+  .topsection-mobile{
+    display: initial;
+    background: linear-gradient(
+        to right,
+        rgb(255, 200, 193) 0%,
+        rgb(255, 200, 193) 12%,
+        rgb(255, 255, 255) 12%,
+        rgb(255, 255, 255) 100%
+      );  
+    display: grid;
+    overflow: hidden;
+    height: 800px;
+  }
+
+  .topsectionimage{
+    margin-left: 11.99%;
+    position: relative;
+    justify-content: center;
+  }
+
+  .topsectionimage img{
+    width: 90vw;
+    height: 800px;
+    object-fit: cover; 
+    filter: brightness(0.9);
+    object-position: 50% 0%;
+  }
+
+  .topsection-mobile-description{
+    margin: 50px 6% 50px 17%;
+    z-index: 5;
+    position: absolute;
+  }
+
+  .topsection-mobile-description h1{
+    font-family: 'Lora', sans-serif;
+    font-size: 8vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 0 0 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .topsection-mobile-description p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+    font-weight: 500;
+    margin: 15px 0 0 0;
+    line-height: 1.4em;
+    width: unset;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  }
+
+
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+
+  p,
+  .coffee-genoise-description a{
+    letter-spacing: 0px;
+  }
+
+  /*Whole Cake*/
+
+  .whole-cake{
+    padding-bottom: 50px;
+  }
+
+  .whole-cake-description{
+    padding: 80px 21% 0 4%;
+  }
+
+  .whole-cake-picturesdisplay{
+    gap: 15px;
+    margin: 30px auto;
+  }
+
+  .whole-cake-picturesdisplay img{
+    width: 45vw;
+    height: 400px;
+  }
+
+  .whole-cake-prev,
+  .whole-cake-next{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding: 6px 0;
+    border-width: 3px;
+  }
+
+  .whole-cake-prev{
+    margin: auto 3px auto 82%;
+  }
+
+  /*Cake Roll*/
+
+  .cake-roll{
+    display: grid;
+    padding-top: 100px;
+  }
+
+  .cake-roll-description p{
+    width: 450px;
+  }
+
+  .cake-roll-slideshow{
+    width: unset;
+    min-height: unset;
+    margin: 50px auto 70px auto;
+  }
+
+  .cake-roll-slideshow-pic img{
+    width: 75vw;
+    aspect-ratio: 1/1.1;
+    min-height: unset;
+  }
+
+  /*Cake*/
+
+  .cake-description p{
+    width: 490px;
+  }
+
+  .cake-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 25px;
+  }
+
+  .cake-container img{
+    width: 50vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise{
+    display: grid;
+  }
+
+  .coffee-genoise img{
+    margin: 0 0 0 5%;
+    width: 80vw;
+    aspect-ratio: 1/0.8;
+    object-position: 50% 66%;
+  }
+
+  .coffee-genoise-description{
+    padding: 60px 30px;
+    border-style: solid;
+    margin: -30px 5% 0 15%;
+    width: unset;
+  }
+
+  .coffee-genoise-description p{
+    width: 410px;
+    margin: auto;
+  }
+
+  /*Cupcake*/
+
+  .cupcake{
+    display: grid;
+    padding: 80px 3%;
+  }
+
+  .cupcake-description p{
+    width: 500px;
+    line-height: 1.6em;
+  }
+
+  .cupcake-slideshow{
+    justify-content: center;
+    margin: 30px auto;
+    width: unset;
+  }
+  
+  .cupcake-slideshow-pic img{
+    width: 80vw;
+    aspect-ratio: 1/1;
+  }
+
+  .cupcake-arrow{
+    margin-top: 25px;
+  }
+
+  .cupcakeprev, .cupcakenext{
+    width: 45px;
+    height: 45px;
+    padding: 8px 0;
+    font-size: 15px;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 100px 0;
+  }
+
+  .cakefact p{
+    width: 450px;
+    margin: 30px auto 0 auto;
+    line-height: 1.8em;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore{
+    padding-top: 30px;
+  }
+
+  .othergallery-scroll-container{
+    gap: 20px;
+    margin: 10px 5% 100px 5%;
+  }
+
+  .othergallerytoexplore{
+    margin: 30px 0 0 0;
+  }
+
+  .container img{
+    width: 40vw;
+  }
+
+}
+
+
+@media only screen and (max-width:600px){
+
+  /*Headings*/
+
+  .logo{
+    width: 12%;
+    max-width: 50px;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
+
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
+
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+
+  nav ul li a:hover{
+    color:black;
+  }
+
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.5s;
+  }
+
+  nav ul li a:hover::after{
+    width: 0;
+  }
+
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 58px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  #menulist{
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
+
+  /*Top Section*/
+
+  .topsection-mobile-description{
+    margin: 40px 6% 50px 17%;
+  }
+
+  .topsectionimage img,
+  .topsection-mobile{
+    height: 750px;   
+  }
+
+  .topsection-mobile-description p{
+    font-size: 17px;
+  }
+
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 32px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+  }
+
+  p,
+  .coffee-genoise-description a{
+    font-size: 16px;
+    font-weight: 450;
+  }
+
+  /*Whole Cake*/
+
+  .whole-cake-description{
+    padding: 80px 22% 0 7%;
+  }
+
+  .whole-cake-description p{
+    margin-top: 10px;
+  }
+
+  .whole-cake-slider-section-2{
+    display: none;
+  }
+
+  .whole-cake-slider-section-3{
+    display: grid;
+  }
+
+  .whole-cake-slider-3{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Hide the images by default */
+  .whole-cake-sliderpic-3 {
+    display: none;
+  }
+
+  .whole-cake-picturesdisplay{
+    gap: 0px;
+    margin: 30px auto;
+  }
+
+  .whole-cake-picturesdisplay img{
+    width: 80vw;
+    aspect-ratio: 1/1.1;
+    height: unset;
+  }
+
+  .whole-cake-prev,
+  .whole-cake-next{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .whole-cake-prev:hover,
+  .whole-cake-next:hover{
+    background-color: unset;
+    color: unset;
+    border-color: unset;
+  }
+
+  .whole-cake-arrow{
+    display: grid;
+    margin-top: -80px;
+  }
+
+  .whole-cake-prev,
+  .whole-cake-next{
+    margin: auto 0 3px 85%;
+  }
+
+  /*Cake Roll*/
+
+  .cake-roll{
+    padding: 50px auto 0 auto;
+  }
+
+  .cake-roll-description p{
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .cake-roll-arrow{
+    margin-top: 25px;
+  }
+
+  .cake-roll-prev, .cake-roll-next{
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .cake-roll-prev{
+    margin: 0 5px 0 0;
+  }
+
+  .cake-roll-dot{
+    margin: 12px 2px;
+  }
+
+  .cake-roll-slideshow{
+    margin: 40px auto 60px auto;
+  }
+
+  .cake-roll-slideshow-pic img{
+    width: 80vw;
+    aspect-ratio: 1/1.1;
+    min-height: unset;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding-bottom: 30px;
+  }
+
+  .cake-description{
+    padding-top: 70px;
+  }
+
+  .cake-description p{
+    margin: 15px auto 30px auto;
+    width: 370px;
+  }
+
+  .cake-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 25px;
+  }
+
+  .cake-container img{
+    width: 60vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise img{
+    margin: auto;
+    width: 85vw;
+    min-height: unset;
+  }
+
+  .coffee-genoise-description{
+    padding: unset;
+    border-style: none;
+    margin: 30px auto;
+  }
+
+  .coffee-genoise-description h3{
+    margin: 20px auto 15px auto;
+  }
+
+  .coffee-genoise-description p{
+    width: 410px;
+  }
+
+  .coffee-genoise-description a{
+    letter-spacing: 1px;
+  }
+
+  /*Cupcake*/
+
+  .cupcake{
+    padding: 60px auto;
+  }
+
+  .cupcake-description p{
+    width: 450px;
+  }
+
+  .cupcake-arrow{
+    margin-top: 20px;
+  }
+
+  .cupcake-slideshow{
+    margin: 30px auto;
+  }
+  
+  .cupcake-slideshow-pic img{
+    width: 85vw;
+    aspect-ratio: 1/0.9;
+    min-height: unset;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 100px 0;
+  }
+
+  .cakefact p{
+    width: 370px;
+    margin: 30px auto 0 auto;
+    line-height: 1.8em;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 19px;
+    font-weight: 500;
+    word-spacing: normal;
+  }
+
+  .container img{
+    width: 50vw;
+  }
+
+  .othergallery-sliderdescription h2,
+  .othergallery-sliderdescription a{
+    font-size: 19px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  
+}
+
+
+@media only screen and (max-width:500px){
+
+  /*Common Parameter*/
+
+  p,
+  .coffee-genoise-description a{
+    font-size: 15px;
+    line-height: 1.4em;
+  }
+
+  /*Top Section*/
+
+  .topsection-mobile-description p{
+    font-size: 16px;
+  }
+
+  .topsectionimage img{
+    width: 95vw;
+    object-position: 0% 0%;
+  }
+
+  /*Whole Cake*/
+
+  .whole-cake-description{
+    padding: 80px 20% 0 6%;
+  }
+
+  .whole-cake-picturesdisplay{
+    margin: 30px auto;
+  }
+
+  .whole-cake-picturesdisplay img{
+    width: 85vw;
+  }
+
+  .whole-cake-prev,
+  .whole-cake-next{
+    margin: auto 0 3px 87%;
+  }
+
+  /*Cake Roll*/
+
+  .cake-roll{
+    padding: 0px auto;
+  }
+
+  .cake-roll-description p{
+    width: 350px;
+  }
+
+  .cake-roll-slideshow{
+    margin: 30px auto 50px auto;
+  }
+
+  .cake-roll-slideshow-pic img{
+    width: 90vw;
+    min-height: unset;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding-bottom: 20px;
+  }
+
+  .cake-description p{
+    margin: 12px auto 30px auto;
+    width: 350px;
+  }
+
+  .cake-scroll-container{
+    margin: 35px 4% 30px 4%;
+    gap: 20px;
+  }
+
+  .cake-container img{
+    width: 70vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise{
+    padding: 50px 0;
+  }
+
+  .coffee-genoise img{
+    width: 85vw;
+  }
+
+  .coffee-genoise-description h3{
+    margin: 10px auto 15px auto;
+  }
+
+  .coffee-genoise-description p{
+    width: 390px;
+  }
+
+  /*Cupcake*/
+
+  .cupcake{
+    padding: 60px 3%;
+  }
+
+  .cupcake-description h3{
+    margin-bottom: 15px;
+  }
+
+  .cupcake-description p{
+    width: 340px;
+  }
+
+  .cupcake-slideshow{
+    justify-content: center;
+    margin: 30px auto;
+  }
+  
+  .cupcake-slideshow-pic img{
+    width: 90vw;
+    aspect-ratio: 1/1.1;
+  }
+
+  .cupcakeprev, .cupcakenext{
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+  
+  .cupcake-dot{
+    height: 12px;
+    width: 12px;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 80px 0;
+  }
+
+  .cakefact h3{
+    word-spacing: normal;
+    letter-spacing: 1px;
+    font-size: 28px;
+  }
+
+  .cakefact p{
+    width: 350px;
+    margin: 30px auto 0 auto;
+    line-height: 1.6em;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore{
+    margin: 40px 0 0 0;
+  }
+
+  .othergallerytoexplore h3{
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  .container img{
+    width: 63vw;
+  }
+
+  .othergallery-sliderdescription h2{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 10px 10px 5px 10px;
+  }
+  
+  .othergallery-sliderdescription p{
+    font-size: 13px;
+    margin: 0 10px;
+  }
+
+} 
+
+
+@media only screen and (max-width:450px){
+
+  /*Top Section*/
+
+  .topsection-mobile-description{
+    margin: 30px 6% 0 17%;
+  }
+
+  .topsection-mobile-description p{
+    margin: 10px 0 0 0;
+    font-size: 15px;
+  }
+
+  .topsectionimage img,
+  .topsection-mobile{
+    height: 650px;   
+  }
+
+  /*Common Parameter*/
+
+  h3{
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  /*Whole Cake*/
+
+  .whole-cake-picturesdisplay img{
+    width: 90vw;
+    height: 420px;
+  }
+
+  /*Cake Roll*/
+
+  .cake-roll{
+    padding: 70px 6% 0px 6%;
+  }
+
+  .cake-roll-description p{
+    width: 300px;
+    line-height: 1.6em;
+  }
+
+  .cake-roll-slideshow{
+    margin: 20px 0 40px 0;
+  }
+
+  .cake-roll-slideshow-pic img{
+    aspect-ratio: 1/1.1;
+    width: 90vw;
+  }
+
+  .cake-roll-arrow{
+    margin-top: 15px;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding-bottom: 30px;
+  }
+
+  .cake-scroll-container{
+    margin: 35px 4% 0 4%;
+    gap: 20px;
+  }
+
+  .cake-container img{
+    width: 80vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  /*Coffee Genoise*/
+
+  .coffee-genoise img{
+    width: 90vw;
+    aspect-ratio: 1/0.8;
+  }
+
+  .coffee-genoise-description h3{
+    margin: 5px auto 15px auto;
+  }
+
+  .coffee-genoise-description p{
+    line-height: 1.5em;
+    width: 330px;
+  }
+
+  /*Cupcake*/
+
+  .cupcake-description h3{
+    margin-bottom: 10px;
+  }
+
+  .cupcake-description p{
+    width: 340px;
+  }
+
+  .cupcake-slideshow{
+    margin: 20px auto;
+  }
+  
+  .cupcake-slideshow-pic img{
+    width: 90vw;
+    aspect-ratio: 1/0.9;
+  }
+
+  /*Cake Fact*/
+
+  .cakefact{
+    padding: 80px 0;
+  }
+
+  .cakefact h3{
+    font-size: 26px;
+  }
+
+  .cakefact p{
+    width: 320px;
+    margin: 25px auto 0 auto;
+    line-height: 1.6em;
+  }
+
+  /*Explore other gallery*/
+
+  .othergallerytoexplore h3{
+    font-size: 16px;
+  }
+
+  .othergallery-sliderdescription h2{
+    font-size: 17px;
+  }
+ 
+}
+
+@media only screen and (max-width:400px){
+
+  /*Top Section*/
+
+  .topsectionimage img,
+  .topsection-mobile{
+    height: 600px;   
+  }
+}
+
