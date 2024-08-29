@@ -123,7 +123,6 @@ nav ul li a:hover::after{
 
 .content{
   overflow: hidden;
-  background: rgb(252, 246, 239);
 }
 
 /*Root*/
@@ -138,8 +137,8 @@ nav ul li a:hover::after{
 .topsection{
   background: linear-gradient(
     to right,
-    rgb(255, 216, 201) 0%,
-    rgb(255, 223, 211) 40%,
+    rgb(255, 206, 195) 0%,
+    rgb(255, 206, 195) 40%,
     rgb(255, 255, 255) 40%,
     rgb(255, 255, 255) 100%
   );
@@ -1116,15 +1115,56 @@ p,
 
   /*Top Section*/
 
+  .topsection{
+    background: linear-gradient(
+      to right,
+      rgb(255, 220, 206) 0%,
+      rgb(255, 220, 206) 12%,
+      rgb(255, 255, 255) 12%,
+      rgb(255, 255, 255) 100%
+    );
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .topsectionimage img,
+  .topsection{
+    height: 800px;   
+  }
+
   .topsectiondescription{
+    background-color: unset;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
     width: 70vw;
-    margin: auto -45% auto 5%;
-    padding: 7% 6%;
+    padding: unset;
+    position: absolute;
+    top: 8%;
+    left: 10%;
   }
 
   .topsectiondescription h1{
-    font-size: 32px;
-    letter-spacing: 2px;
+    font-family: 'Lora', sans-serif;
+    font-size: 40px;
+  }
+
+  .topsectiondescription p{
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .topsectionimage{
+    position: absolute;
+    left: 11%;
+    top: 0%;
+  }
+
+  .topsectionimage img{
+    width: 89vw;
+    margin-left: 0%;
+    filter: brightness(0.75);
+    object-position: 50% 35%;
   }
 
   /*Common Parameter*/
@@ -1360,39 +1400,19 @@ p,
     padding-right: 10px;
   }
 
-  /*Root*/
-
-  :root{
-    --width-image: 88vw;
-  }
-
   /*Top Section*/
-
-  .topsectionimage img{
-    margin-left: 0%;
-  }
 
   .topsectionimage img,
   .topsection{
     height: 700px;   
   }
 
-  .topsectiondescription{
-    width: 80vw;
-    margin: auto -71% auto 5%;
-    margin-top: 7%;
-    padding: 6% 5%;
-  }
-
   .topsectiondescription h1{
-    font-family: 'Lora', sans-serif;
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .topsectiondescription p{
-    letter-spacing: 0px;
-    line-height: 1.5em;
-    margin: 10px 0 0 0;
+    margin: 12px 0 0 0;
   }
 
   /*Common Parameter*/
@@ -1519,6 +1539,22 @@ p,
 
 @media only screen and (max-width:500px){
 
+  /*Top Section*/
+
+  .topsectiondescription{
+    width: 75vw;
+  }
+
+  .topsectiondescription h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+
+  .topsectiondescription p{
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
   /*Common Parameter*/
 
   p,
@@ -1636,12 +1672,6 @@ p,
 
 @media only screen and (max-width:450px){
 
-  /*Root*/
-
-  :root{
-    --width-image: 88vw;
-  }
-
   /*Top Section*/
 
   .topsectionimage img,
@@ -1649,27 +1679,25 @@ p,
     height: 600px;   
   }
 
-  .topsectionimage img{
-    object-position: 50% 10%;   
-  }
-
   .topsectiondescription{
-    width: 85vw;
-    margin: auto -77% auto 5%;
-    margin-top: 7%;
-    padding: 6.5% 5%;
+    width: 75vw;
+    margin-top: 1%;
   }
 
   .topsectiondescription h1{
-    font-size: 25px;
-    letter-spacing: 1px;
-    line-height: 1.3em;
+    font-size: 6.5vw;
+    letter-spacing: 2px;
   }
 
   .topsectiondescription p{
     font-size: 15px;
     font-weight: 500;
-    line-height: 1.4em;
+    line-height: 1.3em;
+    margin: 10px 0 0 0;
+  }
+
+  .topsectionimage img{
+    object-position: 50% 0%;
   }
 
   /*Common Parameter*/
