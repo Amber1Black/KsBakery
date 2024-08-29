@@ -1658,8 +1658,8 @@ p,
     display: initial;
     background: linear-gradient(
         to right,
-        rgb(251, 235, 227) 0%,
-        rgb(251, 235, 224) 12%,
+        rgb(255, 227, 213) 0%,
+        rgb(255, 227, 213) 12%,
         rgb(255, 255, 255) 12%,
         rgb(255, 255, 255) 100%
       );  
@@ -1683,16 +1683,17 @@ p,
   }
 
   .topsection-mobile-description{
-    margin: 50px 8% 50px 15%;
+    margin: 50px 9% 50px 15%;
     z-index: 5;
     position: absolute;
   }
 
   .topsection-mobile-description h1{
     font-family: 'Lora', sans-serif;
-    font-size: 7.5vw;
+    font-size: 60px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    word-spacing: 80px;
     margin: 0 0 0 0;
     color: #ffffff;
     text-shadow: 2px 2px 1px black;
@@ -2022,6 +2023,11 @@ p,
     height: 750px;   
   }
 
+  .topsection-mobile-description h1{
+    font-size: 55px;
+    line-height: 1.2em;
+  }
+
   .topsection-mobile-description p{
     font-size: 17px;
   }
@@ -2206,9 +2212,19 @@ p,
     height: 650px;   
   }
 
+  .topsection-mobile-description{
+    margin: 40px 9% 50px 15%;
+  }
+
+  .topsection-mobile-description h1{
+    font-size: 50px;
+    line-height: 1.2em;
+  }
+
   .topsection-mobile-description p{
     font-size: 16px;
     font-weight: 600;
+    line-height: 1.4em;
   }
 
   /*Common Parameter*/
@@ -2399,11 +2415,15 @@ p,
 
   /*Top Section*/
 
+  .topsection-mobile-description h1{
+    font-size: 42px;
+    line-height: 1.2em;
+  }
+
   .topsection-mobile-description p{
     margin: 10px 0 0 0;
     font-size: 15px;
     font-weight: 600;
-    line-height: 1.4em;
   }
 
   .topsectionimage img,
