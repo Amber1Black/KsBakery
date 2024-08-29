@@ -1280,8 +1280,8 @@ p,
   .topsection{
     background: linear-gradient(
       to right,
-      rgb(252, 242, 238) 0%,
-      rgb(252, 242, 238) 12%,
+      rgb(158, 210, 201) 0%,
+      rgb(158, 209, 201) 12%,
       rgb(255, 255, 255) 12%,
       rgb(255, 255, 255) 100%
     );
@@ -1302,18 +1302,19 @@ p,
     width: 72vw;
     padding: unset;
     position: absolute;
-    top: 8%;
+    top: 65%;
     left: 12%;
   }
 
   .topsectiondescription h1{
     font-family: 'Lora', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .topsectiondescription p{
     font-size: 17px;
     font-weight: 500;
+    letter-spacing: 0px;
   }
 
   .topsectionimage{
@@ -1325,7 +1326,7 @@ p,
   .topsectionimage img{
     width: 89vw;
     margin-left: 0%;
-    filter: brightness(0.85);
+    filter: brightness(0.9);
   }
 
   /*Common Parameter*/
@@ -1558,8 +1559,13 @@ p,
     height: 700px;   
   }
 
+  .topsectiondescription{
+    width: 68vw;
+    top: 55%;
+  }
+
   .topsectiondescription h1{
-    font-size: 35px;
+    font-size: 47px;
   }
 
   .topsectiondescription p{
@@ -1874,12 +1880,6 @@ p,
 
 @media only screen and (max-width:450px){
 
-  /*Root*/
-
-  :root{
-    --width-image: 88vw;
-  }
-
   /*Top Section*/
 
   .topsectionimage img,
@@ -1889,11 +1889,11 @@ p,
 
   .topsectiondescription{
     width: 75vw;
-    margin-top: 3%;
+
   }
 
   .topsectiondescription h1{
-    font-size: 6.5vw;
+    font-size: 40px;
     letter-spacing: 2px;
   }
 

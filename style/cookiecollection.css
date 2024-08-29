@@ -1137,21 +1137,22 @@ p,
     background-color: unset;
     color: #ffffff;
     text-shadow: 1px 1px 1px black;
-    width: 70vw;
+    width: 68vw;
     padding: unset;
     position: absolute;
-    top: 8%;
-    left: 10%;
+    top: 10%;
+    left: 12%;
   }
 
   .topsectiondescription h1{
     font-family: 'Lora', sans-serif;
-    font-size: 40px;
+    font-size: 55px;
   }
 
   .topsectiondescription p{
     font-size: 17px;
     font-weight: 500;
+    letter-spacing: 0px;
   }
 
   .topsectionimage{
@@ -1163,7 +1164,7 @@ p,
   .topsectionimage img{
     width: 89vw;
     margin-left: 0%;
-    filter: brightness(0.75);
+    filter: brightness(0.9);
     object-position: 50% 35%;
   }
 
@@ -1407,8 +1408,12 @@ p,
     height: 700px;   
   }
 
+  .topsectiondescription{
+    top: 10%;
+  }
+
   .topsectiondescription h1{
-    font-size: 35px;
+    font-size: 50px;
   }
 
   .topsectiondescription p{
@@ -1543,11 +1548,11 @@ p,
 
   .topsectiondescription{
     width: 75vw;
+    top: 7%;
   }
 
   .topsectiondescription h1{
-    font-size: 35px;
-    letter-spacing: 2px;
+    font-size: 45px;
   }
 
   .topsectiondescription p{
@@ -1681,17 +1686,17 @@ p,
 
   .topsectiondescription{
     width: 75vw;
-    margin-top: 1%;
+    top: 4%;
   }
 
   .topsectiondescription h1{
-    font-size: 6.5vw;
-    letter-spacing: 2px;
+    font-size: 32px;
+    letter-spacing: 1px;
   }
 
   .topsectiondescription p{
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.3em;
     margin: 10px 0 0 0;
   }

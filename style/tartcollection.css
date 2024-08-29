@@ -1658,8 +1658,8 @@ p,
     display: initial;
     background: linear-gradient(
         to right,
-        rgb(252, 242, 238) 0%,
-        rgb(252, 242, 238) 12%,
+        rgb(251, 235, 227) 0%,
+        rgb(251, 235, 224) 12%,
         rgb(255, 255, 255) 12%,
         rgb(255, 255, 255) 100%
       );  
@@ -1678,7 +1678,7 @@ p,
     width: 95vw;
     height: 800px;
     object-fit: cover; 
-    filter: brightness(0.75);
+    filter: brightness(0.9);
     object-position: 50% 0%;
   }
 
