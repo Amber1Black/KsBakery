@@ -304,7 +304,12 @@ h5{
 .what-to-do li,
 .note{
   font-size: var(--font-size);
+  letter-spacing: 1px;
   padding-bottom: 15px;
+}
+
+li span{
+  font-weight: 600;
 }
 
 .note{
@@ -316,11 +321,13 @@ h5{
   justify-content: center;
 }
 
-.stepspic img{
-  width: 25vw;
+.what-to-do img{
+  width: 30vw;
   aspect-ratio: 1/1.1;
   object-fit: cover;
   margin: 10px auto 60px auto;
+  display: flex;
+  justify-content: center;
 }
 
 /*Explore other recipe*/
