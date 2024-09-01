@@ -79,25 +79,37 @@
           <img class="menu-icon" onclick="togglemenu()" src="../Pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
       </div>
   </div>
-
-  <div class="top-section-mobile">
-    <div class="recipe-name">
-      <h1>Dress Cookie</h1>
-    </div>
-  
-    <div class="additional-info">
-      <div class="left-column">
-        <h4>Category : Cookie</h4>
-        <h4>Yield : ~70 pieces</h4>
-      </div>
-      <div class="right-column">
-        <h4>Total Time : 2 hours</h4>
-        <h4>Date Created : 01/09/2024</h4>
-      </div>
-    </div>
-  </div>
   
   <div class="top-section">
+    <div class="top-section-description">
+      <div class="recipe-name">
+        <h1>Dress Cookie</h1>
+        <h4>A fun and delicious treat, these dress-shaped cookies are perfect for any occasion. With a buttery base and customizable chocolate decorations, they bring creativity and sweetness together in every bite!</h4>
+      </div>
+    
+      <div class="additional-info">
+        <div class="left-column">
+          <h4>Category : Cookie</h4>
+          <h4>Yield : ~70 pieces</h4>
+        </div>
+        <div class="right-column">
+          <h4>Total Time : 2 hours</h4>
+          <h4>Date Created : 01/09/2024</h4>
+        </div>
+      </div>
+
+      <div class="top-images-arrow">
+        <a class="top-images-prev" onclick="topimagesplusSlides(-1)">❮</a>
+        <a class="top-images-next" onclick="topimagesplusSlides(1)">❯</a>
+
+        <div class ="top-images-bottomdot">
+          <span class="top-images-dot" onclick="currentSlide(1)"></span> 
+          <span class="top-images-dot" onclick="currentSlide(2)"></span> 
+          <span class="top-images-dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </div>
+    </div>
+
     <div class="top-images reveal">
       <div class="top-images-slideshow">
         <div class="top-images-slideshow-pic fade">
@@ -109,40 +121,39 @@
         <div class="top-images-slideshow-pic fade">
           <img src="../Pictures/recipe-dress-cookie-2.jpg" class ="image3" alt="Cookie in dress shape with various chocolate decoration">
         </div>
-        <div class="top-images-arrow">
-          <a class="top-images-prev" onclick="topimagesplusSlides(-1)">❮</a>
-          <a class="top-images-next" onclick="topimagesplusSlides(1)">❯</a>
-  
-          <div class ="top-images-bottomdot">
-            <span class="top-images-dot" onclick="currentSlide(1)"></span> 
-            <span class="top-images-dot" onclick="currentSlide(2)"></span> 
-            <span class="top-images-dot" onclick="currentSlide(3)"></span> 
-          </div>
-        </div>
       </div>
     </div>
 
-    <div class="top-section-right-column">
-      <div class="top-section-larger-screen">
-        <div class="recipe-name">
-          <h1>Dress Cookie</h1>
-        </div>
-      
-        <div class="additional-info">
-          <div class="left-column">
-            <h4>Category : Cookie</h4>
-            <h4>Yield : ~70 pieces</h4>
-          </div>
-          <div class="right-column">
-            <h4>Total Time : 2 hours</h4>
-            <h4>Date Created : 01/09/2024</h4>
-          </div>
-        </div>
-      </div>
+    
+  </div>
+ 
   
+  <div class="lower-section">
+    <div class="lower-section-left-column">
       <div class="what-you-need">
         <h2>What you need</h2>
-    
+        <div class="ingredients">
+          <div class="ingredients-col">
+              <h3>Butter</h3>
+              <p>240g</p>
+          </div>
+          <div class="ingredients-col">
+              <h3>Caster Sugar</h3>
+              <p>80g</p>
+          </div>
+          <div class="ingredients-col">
+              <h3>Egg</h3>
+              <p>50g</p>
+          </div>
+          <div class="ingredients-col">
+              <h3>Plain Flour</h3>
+              <p>370g</p>
+          </div>
+        </div>
+        <h5>&#9733; Chocolate : Add according to preference</h5>
+      </div>
+      <div class="what-you-need-mobile">
+        <h2>What you need</h2>
         <div class="ingredients">
           <div class="ingredients-col">
               <br>
@@ -163,41 +174,36 @@
               <p>370g</p>
           </div>
         </div>
-        <h5>&#9733 Chocolate : Add according to preference</h5>
+        <h5>&#9733; Chocolate : Add according to preference</h5>
       </div>
-  
+      <div class="what-to-do">
+        <h2>What to do</h2>
+        <ul class = "a">
+          <li><span>Soften the Butter :</span> Take the butter out of the fridge and let it soften at room temperature</li>
+              <img src = "../Pictures/recipe-cookie-1.jpg" alt = "Softened butter after resting at room temperature"> 
+          <li><span>Mix Butter and Sugar :</span> Add the caster sugar to the softened butter in batches, mixing well after each addition.</li>
+              <img src = "../Pictures/recipe-cookie-2.jpg" alt = "Butter mixed with caster sugar in a bowl."> 
+          <li><span>Incorporate the Egg :</span> Add the egg to the butter-sugar mixture and mix until fully combined and no longer visible</li>
+              <img src = "../Pictures/recipe-cookie-3.jpg" alt = "Butter and caster sugar mixture with added egg"> 
+          <li><span>Add Flour :</span> Gradually add the flour to the mixture, sifting it in batches, and mix well.</li>
+              <img src = "../Pictures/recipe-cookie-4.jpg" alt = "Butter, caster sugar, and egg mixture with added plain flour."> 
+          <li><span>Form and Freeze the Dough :</span> After mixing everything together, roll the dough into a large, flat sheet, and freeze it.</li>
+              <img src = "../Pictures/recipe-cookie-5.jpg" alt = "Large plain dough rolled out flat"> 
+          <li><span>Cut the Dough :</span> Use a dress-shaped cookie cutter to cut the dough into shapes.</li>
+          <li><span>Bake the Cookies:</span> Bake the cookies at 150°C (300°F) for 15 minutes. (You can add chocolate to the dough for additional variations.)</li>
+              <img src = "../Pictures/recipe-dress-cookie-3.jpg" alt = "Cookie baked in dress shape"> 
+          <li><span>Decorate with Chocolate :</span> Allow the cookies to cool completely, then dip them in melted chocolate to create your desired patterns.</li>
+              <img src = "../Pictures/cookie-dress-shape.jpg" alt = "Cookie in dress shape with various chocolate decoration"> 
+        </ul>
+      </div>
     </div>
-  </div>
- 
-  
-  <div class="lower-section">
-    <div class="what-to-do">
-      <h2>What to do</h2>
-      <ul class = "a">
-        <li><span>Soften the Butter :</span> Take the butter out of the fridge and let it soften at room temperature</li>
-            <img src = "../Pictures/recipe-cookie-1.jpg" alt = "Softened butter after resting at room temperature"> 
-        <li><span>Mix Butter and Sugar :</span> Add the caster sugar to the softened butter in batches, mixing well after each addition.</li>
-            <img src = "../Pictures/recipe-cookie-2.jpg" alt = "Butter mixed with caster sugar in a bowl."> 
-        <li><span>Incorporate the Egg :</span> Add the egg to the butter-sugar mixture and mix until fully combined and no longer visible</li>
-            <img src = "../Pictures/recipe-cookie-3.jpg" alt = "Butter and caster sugar mixture with added egg"> 
-        <li><span>Add Flour :</span> Gradually add the flour to the mixture, sifting it in batches, and mix well.</li>
-            <img src = "../Pictures/recipe-cookie-4.jpg" alt = "Butter, caster sugar, and egg mixture with added plain flour."> 
-        <li><span>Form and Freeze the Dough :</span> After mixing everything together, roll the dough into a large, flat sheet, and freeze it.</li>
-            <img src = "../Pictures/recipe-cookie-5.jpg" alt = "Large plain dough rolled out flat"> 
-        <li><span>Cut the Dough :</span> Use a dress-shaped cookie cutter to cut the dough into shapes.</li>
-        <li><span>Bake the Cookies:</span> Bake the cookies at 150°C (300°F) for 15 minutes. (You can add chocolate to the dough for additional variations.)</li>
-            <img src = "../Pictures/recipe-dress-cookie-3.jpg" alt = "Cookie baked in dress shape"> 
-        <li><span>Decorate with Chocolate :</span> Allow the cookies to cool completely, then dip them in melted chocolate to create your desired patterns.</li>
-            <img src = "../Pictures/cookie-dress-shape.jpg" alt = "Cookie in dress shape with various chocolate decoration"> 
-      </ul>
-    </div>
-
+    
     <div class="otherrecipetoexplore">
       <h3>Other recipes to try</h3>
-      <h4>You may try the other recipes :</h4>
+      <h4>You may try out other recipes :</h4>
       <div class="otherrecipe-scroll-container">
         <div class="container">
-          <a href="https://www.k-bakery.com/CustardBreadRecipe"><img src = "../Pictures/Bread - Custart Bread.jpg" alt = "Custard bread with a rich custard filling inside, linking to the Custard Bread recipe"></a>
+          <a href="https://www.k-bakery.com/CustardBreadRecipe"><img src = "../Pictures/bread-custard.jpg" alt = "Custard bread with a rich custard filling inside, linking to the Custard Bread recipe"></a>
           <div class="otherrecipe-sliderdescription">
             <a href="https://www.k-bakery.com/CustardBreadRecipe"><h2>Custard Bread</h2></a>
             <p>The rich custard inside elevates the taste of the bread to another level</p>
@@ -256,9 +262,9 @@
       </div>
     </div>
   </div>
-  
+
   <div class="copyright">
-      Copyright &copy 2023 K's Bakery
+    Copyright &copy; 2023–<span id="currentYear"></span> K's Bakery
   </div>
  
 
@@ -278,6 +284,11 @@
         menulist.style.maxHeight = "0px";
       }
     }
+  </script>
+
+  <script>
+    // JavaScript to automatically update the copyright year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
 
   
