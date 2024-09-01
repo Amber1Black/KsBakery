@@ -99,10 +99,14 @@ h2{
 
 /*Top Section*/
 
+.top-section-mobile{
+  display: none;
+}
+
 .top-section{
   display: flex;
   align-items: center;
-  margin: 50px 10% 50px 5%;
+  margin: 50px 5% 50px 10%;
 }
 
 .top-section-description{
@@ -112,7 +116,8 @@ h2{
 
 /*Recipe Name*/
 
-.recipe-name h1{
+.recipe-name h1,
+.recipe-name-mobile h1{
   font-family: 'Roboto', sans-serif;
   font-size: 3vw;
   font-weight: 500;
@@ -121,7 +126,8 @@ h2{
   text-align: center;
 }
 
-.recipe-name h4{
+.recipe-name h4,
+.recipe-name-mobile h4{
   font-size: var(--font-size);
   font-weight: var(--font-weight);
   letter-spacing: var(--letter-spacing);
@@ -133,14 +139,16 @@ h2{
 
 /*Additional Information*/
 
-.additional-info{
+.additional-info,
+.additional-info-mobile{
   display: flex;
   justify-content: center;
   margin: 40px 0%;
   gap: 10%;
 }
 
-.additional-info h4{
+.additional-info h4,
+.additional-info-mobile h4{
   font-size: var(--font-size);
   letter-spacing: var(--letter-spacing);
   font-weight: var(--font-weight);
@@ -148,7 +156,9 @@ h2{
 }
 
 .left-column,
-.right-column{
+.left-column-mobile,
+.right-column,
+.right-column-mobile{
   display: grid;
 }
 
@@ -336,7 +346,7 @@ li span{
 
 .otherrecipetoexplore{
   margin: 3% 2% 0 7%;
-  padding: 30px;
+  padding: 10px 30px;
   width: 22vw;
   background-color: #fff5e8;
 }
@@ -350,7 +360,7 @@ li span{
   font-weight: 400;
   font-size: 28px;
   letter-spacing: var(--letter-spacing);
-  margin: 50px auto;
+  margin: 80px auto 40px auto;
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 12px;
@@ -427,7 +437,7 @@ li span{
   /*Top Section*/
 
   .top-section{
-    margin: 40px 7% 40px 3%;
+    margin: 40px 3% 40px 7%;
   }
 
   .top-section-description{
@@ -452,6 +462,10 @@ li span{
   .top-images-slideshow-pic img{
     width: 40vw;
     aspect-ratio: 1/1.2;
+  }
+
+  .top-images-prev{
+    margin: 0 3px 0 0;
   }
 
   .top-images-prev, .top-images-next{
@@ -497,7 +511,7 @@ li span{
   /*Top Section*/
 
   .top-section{
-    margin: 40px 4% 40px 1%;
+    margin: 40px 1% 40px 4%;
   }
 
   .top-section-description{
@@ -543,9 +557,9 @@ li span{
   /*Explore other recipe*/
 
   .otherrecipetoexplore{
-    margin: 3% 0 0 3%;
+    margin: 3% 0 0 5%;
     padding: 20px;
-    width: 25vw;
+    width: 23vw;
   }
 
   .otherrecipetoexplore h3{
@@ -575,7 +589,7 @@ li span{
   /*Top Section*/
 
   .top-section{
-    margin: 40px 3% 40px 1%;
+    margin: 40px 1% 40px 3%;
   }
 
   .top-section-description{
@@ -615,6 +629,10 @@ li span{
 
   /*What you need*/
 
+  .lower-section-left-column{
+    margin: 80px 8%;
+  }
+
   .ingredients{
     margin: 30px 0;
   }
@@ -632,7 +650,7 @@ li span{
   /*Explore other recipe*/
 
   .otherrecipetoexplore{
-    margin: 3% 0 0 3%;
+    margin: 3% 1% 0 2%;
     padding: 15px;
     width: 25vw;
   }
@@ -643,6 +661,7 @@ li span{
 
   .otherrecipetoexplore h2{
     font-size: 18px;
+    margin: 15px 15px 5px 6px;
   }
 
   .otherrecipetoexplore p{
@@ -686,29 +705,41 @@ li span{
 
   .top-section{
     display: grid;
-    margin: 10px auto;
+    margin: 0;
   }
 
   .top-section-description{
     width: unset;
-    margin: 10px 18%;
+    margin: unset;
+  }
+
+  .recipe-name,
+  .additional-info{
+    display: none;
+  }
+
+  .top-section-mobile{
+    display: initial;
+    margin: 0 13%;
   }
 
   /*Recipe Name*/  
 
-  .recipe-name h1{
+  .recipe-name-mobile h1{
     font-size: 6vw;
-    margin: 20px auto;
+    margin: 50px auto 0 auto;
   }
 
-  .recipe-name h4{
+  .recipe-name-mobile h4{
     width: unset;
     text-align: justify;
+    margin: 40px auto;
+    line-height: 2em;
   }
 
   /*Additional Info*/
 
-  .additional-info{
+  .additional-info-mobile{
     justify-content:space-between;
     margin: 40px 0;
     gap: unset;
@@ -723,7 +754,7 @@ li span{
   }
 
   .top-images-arrow{
-    margin: 30px auto 15px auto;
+    margin: 20px auto 15px auto;
   }
 
   .top-images-prev{
@@ -757,7 +788,7 @@ li span{
 
   .lower-section-left-column{
     width: unset;
-    margin: 0px 8%;
+    margin: 20px 8%;
     justify-content: center;
   }
 
@@ -869,12 +900,19 @@ li span{
 
   /*Top Section*/
 
-  .top-section{
-    margin: 0 auto;
+  .top-section-mobile{
+    margin: 0 12%;
   }
 
-  .top-section-description{
-    margin: 5px 13%;
+  /*Recipe Name*/  
+
+  .recipe-name-mobile h1{
+    margin: 30px auto 0 auto;
+  }
+
+  .recipe-name-mobile h4{
+    margin: 30px auto;
+    line-height: 1.8em;
   }
 
   /*Top Images*/
@@ -1011,22 +1049,28 @@ li span{
 
   /*Top Section*/
 
-  .top-section-description{
-    margin: 5px 10%;
+  .top-section-mobile{
+    margin: 0 8%;
   }
 
-  .recipe-name h4{
+  /*Recipe Name*/  
+
+  .recipe-name-mobile h1{
+    margin: 10px auto 0 auto;
+  }
+
+  .recipe-name-mobile h4{
     line-height: 1.7em;
     margin: 25px auto;
   }
 
   /*Additional Info*/
 
-  .additional-info{
+  .additional-info-mobile{
     margin: 30px auto;
   }
 
-  .additional-info h4{
+  .additional-info-mobile h4{
     line-height: 2em;
   }
 
@@ -1128,13 +1172,19 @@ li span{
 
   /*Top Section*/
 
-  .top-section-description{
+  .top-section-mobile{
     margin: 0 7%;
   }
 
-  .recipe-name h4{
+  .recipe-name-mobile h4{
     line-height: 1.5em;
     margin: 15px auto;
+  }
+
+  /*Additional Info*/
+
+  .additional-info-mobile h4{
+    line-height: 1.6em;
   }
 
   /*Top Images*/
@@ -1144,7 +1194,7 @@ li span{
   }
 
   .top-images-arrow{
-    margin: 30px auto 10px auto;
+    margin: 10px auto 10px auto;
   }
 
   .top-images-prev, .top-images-next{
@@ -1230,13 +1280,13 @@ li span{
 
   /*Top Section*/
 
-  .top-section-description{
+  .top-section-mobile{
     margin: 0 5%;
   }
 
   /*Recipe Name*/
 
-  .recipe-name h1{
+  .recipe-name-mobile h1{
     font-size: 28px;
   }
 
