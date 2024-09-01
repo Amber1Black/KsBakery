@@ -371,7 +371,7 @@ li span{
   object-position: 50% 70%;
 }
 
-.otherrecipe-sliderdescription h2{
+.other-sliderdescription h2{
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   font-weight: 400;
@@ -380,7 +380,7 @@ li span{
   text-align: left;
 }
 
-.otherrecipe-sliderdescription a{
+.other-sliderdescription a{
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: var(--font-weight);
@@ -388,7 +388,7 @@ li span{
   color: #000000;
 }
 
-.otherrecipe-sliderdescription p{
+.other-sliderdescription p{
   line-height: 1.4em;
   margin: 5px 0 70px 6px;
   text-align: left;
@@ -783,7 +783,7 @@ li span{
     margin-top: 60px;
   }
 
-  .otherrecipe-scroll-container{
+  .other-scroll-container{
     margin: 20px 6% 100px 6%;
     gap: 20px;
     display: flex;
@@ -793,7 +793,7 @@ li span{
     scrollbar-width: none; /* Firefox */
   }
   
-  .otherrecipe-scroll-container::-webkit-scrollbar { 
+  .other-scroll-container::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
   }
   
@@ -814,12 +814,12 @@ li span{
     letter-spacing: 1px;
   }
 
-  .otherrecipe-sliderdescription p{
+  .other-sliderdescription p{
     margin: 0 0 0 5px;
   }
 
-  .otherrecipe-sliderdescription h2,
-  .otherrecipe-sliderdescription a{
+  .other-sliderdescription h2,
+  .other-sliderdescription a{
     font-size: 19px;
   }
 
@@ -893,7 +893,7 @@ li span{
 
   /*Explore other recipe*/
 
-  .otherrecipe-scroll-container{
+  .other-scroll-container{
     gap: 20px;
     margin: 20px 5% 100px 5%;
   }
@@ -1082,7 +1082,7 @@ li span{
     word-spacing: normal;
   }
 
-  .otherrecipe-scroll-container{
+  .other-scroll-container{
     gap: 15px;
   }
 
@@ -1090,12 +1090,12 @@ li span{
     width: 45vw;
   }
 
-  .otherrecipe-sliderdescription h2,
-  .otherrecipe-sliderdescription a{
+  .other-sliderdescription h2,
+  .other-sliderdescription a{
     font-size: 19px;
   }
   
-  .otherrecipe-sliderdescription p{
+  .other-sliderdescription p{
     font-size: 14px;
   }
   
@@ -1205,12 +1205,12 @@ li span{
     width: 50vw;
   }
 
-  .otherrecipe-sliderdescription h2{
+  .other-sliderdescription h2{
     font-size: 18px;
     margin: 10px 10px 5px 10px;
   }
   
-  .otherrecipe-sliderdescription p{
+  .other-sliderdescription p{
     font-size: 13px;
     margin: 0 10px;
   }
@@ -1286,8 +1286,8 @@ li span{
     font-size: 17px;
   }
 
-  .otherrecipe-sliderdescription h2,
-  .otherrecipe-sliderdescription a{
+  .other-sliderdescription h2,
+  .other-sliderdescription a{
     font-size: 17px;
   }
 
