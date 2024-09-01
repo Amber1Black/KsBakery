@@ -100,8 +100,12 @@ nav ul li a:hover::after{
 
 .top-images-slideshow-pic img{
   width: 35vw;
-  aspect-ratio: 1/1.1;
+  aspect-ratio: 1/1.15;
   object-fit: cover;
+}
+
+.container-coffee-genoise-image{
+  object-position: 50% 70%;
 }
 
 .top-images-arrow{
@@ -230,11 +234,6 @@ h2{
   margin: 80px 3%;
 }
 
-.ingredients-2,
-.ingredients-3{
-  display: none;
-}
-
 .ingredients{
   display: flex;
   align-items: center;
@@ -281,7 +280,7 @@ h2{
 h5{
   font-size: var(--font-size);
   font-weight: 450;
-  margin: 40px 0 50px 6%;
+  margin: 40px 0 50px 10%;
 }
 
 /*Lower Section*/
@@ -479,12 +478,13 @@ h5{
   /*Top Section*/
 
   .top-section{
-    margin: 50px 5%;
+    margin: 50px 4%;
   }
 
   /*Top Images*/
 
   .top-images-slideshow-pic img{
+    width: 38vw;
     aspect-ratio: 1/1.2;
   }
 
@@ -538,6 +538,7 @@ h5{
 
   .top-images-slideshow-pic img{
     width: 40vw;
+    aspect-ratio: 1/1.25;
   }
 
   .top-images-prev, .top-images-next{
@@ -563,7 +564,7 @@ h5{
   /*Additional Information*/
 
   .additional-info{
-    gap: 6%;
+    gap: 5%;
     margin: 30px 0%;
   }
 
@@ -575,6 +576,10 @@ h5{
 
   .ingredients{
     margin: 20px 3% 10px 3%;
+  }
+
+  h5{
+    margin: 40px 0 50px 8%;
   }
 
   /*What to do*/
@@ -674,11 +679,11 @@ h5{
 
   .top-images-slideshow-pic img{
     width: 75vw;
-    aspect-ratio: 1/0.9;
+    aspect-ratio: 1/1;
   }
 
-  .image3{
-    object-position: 50% 30%;
+  .container-coffee-genoise-image{
+    object-position: 50% 60%;
   }
 
   .top-images-prev{
@@ -700,6 +705,10 @@ h5{
     background-color: #000000;
   }
 
+  .top-images-prev:hover, .top-images-next:hover {
+    background-color: unset;
+  }
+
   /*What you need*/
 
   .what-you-need{
@@ -711,7 +720,7 @@ h5{
   }
 
   h5{
-    margin: 40px 0 30px 13%;
+    margin: 40px 0 30px 16%;
   }
 
   /*Lower Section*/
@@ -828,11 +837,6 @@ h5{
 
   .top-images-slideshow-pic img{
     width: 85vw;
-    aspect-ratio: 1/0.9;
-  }
-
-  .image3{
-    object-position: 50% 30%;
   }
 
   .top-images-prev{
@@ -850,7 +854,7 @@ h5{
   }
 
   h5{
-    margin: 40px 0 0 8%;
+    margin: 40px 0 0 11%;
   }
 
   /*what to do*/
@@ -996,7 +1000,7 @@ h5{
   }
 
   h5{
-    margin: 30px 0 0 7%;
+    margin: 30px 0 0 10%;
   }
 
   /*what to do*/
@@ -1095,24 +1099,12 @@ h5{
     margin: 60px auto 20px auto;
   }
 
-  .what-you-need h2{
-    margin-bottom: 10px;
-  }
-
   .ingredients{
-    display: none;
+    margin: 0 4%;
   }
 
-  .ingredients-2,
-  .ingredients-3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 8%;
-    z-index: -1;
-    font-size: 15px;
-    font-weight: 450;
-    letter-spacing: 0px;
+  h5{
+    margin: 30px 0 0 9%;
   }
 
   /*What to do*/
@@ -1184,7 +1176,7 @@ h5{
   .top-images-prev, .top-images-next{
     width: 35px;
     height: 35px;
-    padding: 5px;
+    padding: 4px;
     border-width: 5px;
     font-size: 12px;
   }
@@ -1205,16 +1197,11 @@ h5{
   /*What you need*/
 
   .what-you-need{
-    margin: 50px auto 20px auto;
-  }
-
-  .ingredients-2,
-  .ingredients-3{
-    margin: 0 5%;
+    margin: 50px auto 40px auto;
   }
 
   h5{
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
     text-align: center;
   }
 
