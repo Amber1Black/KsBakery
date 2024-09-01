@@ -50,7 +50,7 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  font-family: ;
+  font-family: 'Nunito Sans', sans-serif;
   color: #000000;
   font-weight: 500;
   letter-spacing: 1px;
@@ -990,7 +990,7 @@ li span{
     margin-right: 15px;
     cursor: pointer;
     margin-top: 5px;
-    width: 58px;
+    width: 55px;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
