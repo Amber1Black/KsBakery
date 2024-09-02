@@ -265,11 +265,6 @@ h2{
 
 /*What you need*/
 
-.ingredients-2,
-.ingredients-3{
-  display: none;
-}
-
 .ingredients{
   display: flex;
   align-items: center;
