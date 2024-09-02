@@ -501,7 +501,7 @@ p,
   cursor: pointer;
   width: 50px;
   height: 50px;
-  padding: 12px;
+  padding: 14px;
   text-align: center;
   color: white;
   background-color: rgb(45, 112, 139);
@@ -517,7 +517,7 @@ p,
 
 .bread-with-recipe-arrow{
   display: flex;
-  margin-top: -110px;
+  margin: -130px 0 70px 0;
 }
 
 .bread-with-recipe-prev{
@@ -533,16 +533,17 @@ p,
 }
 
 .bread-with-recipe-bottomdot{
-  margin-top: 15px;
+  display: flex;
   text-align: center;
+  align-items: center;
 }
 
 .bread-with-recipe-dot{
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 5px 50px 2px;
-  background-color: #dfdfdf;
+  margin: 0 5px;
+  background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -804,7 +805,7 @@ p,
   .crispytop-prev, .crispytop-next{
     width: 40px;
     height: 40px;
-    padding: 9px;
+    padding: 10px;
     border-width: 2px;
     font-size: 15px;
   }
@@ -861,7 +862,7 @@ p,
   }
 
   .bread-with-recipe-arrow{
-    margin-top: -100px;
+    margin: -110px 0 50px 0;
   }
 
   .bread-with-recipe-prev{
@@ -871,8 +872,13 @@ p,
   .bread-with-recipe-prev, .bread-with-recipe-next{
     width: 45px;
     height: 45px;
-    padding: 10px;
+    padding: 13px;
     font-size: 16px;
+  }
+
+  .bread-with-recipe-dot{
+    width: 13px;
+    height: 13px;
   }
   
 
@@ -1027,7 +1033,7 @@ p,
   /*Bread with Recipe*/
 
   .bread-with-recipe-grid-content{
-    margin: 50px 4%;
+    margin: 40px 4%;
   }
 
   .bread-with-recipe-image img{
@@ -1045,6 +1051,10 @@ p,
     line-height: 2em;
   }
 
+  .bread-with-recipe-arrow{
+    margin: -90px 0 20px 0;
+  }
+
   .bread-with-recipe-prev{
     margin: 0 5px 0 47%;
   }
@@ -1052,14 +1062,13 @@ p,
   .bread-with-recipe-prev, .bread-with-recipe-next{
     width: 40px;
     height: 40px;
-    padding: 9px;
+    padding: 11px;
     font-size: 15px;
   }
 
   .bread-with-recipe-dot{
     height: 12px;
     width: 12px;
-    margin: 0 2px 50px 2px;
   }
 
   /*Explore other gallery*/
@@ -1191,7 +1200,7 @@ p,
   .crispytop-prev, .crispytop-next{
     width: 40px;
     height: 40px;
-    padding: 8px;
+    padding: 11px;
     border-width: 2px;
     font-size: 15px;
   }
@@ -1535,7 +1544,7 @@ p,
     margin-right: 15px;
     cursor: pointer;
     margin-top: 5px;
-    width: 58px;
+    width: 55px;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
@@ -1621,7 +1630,7 @@ p,
   .crispytop-prev, .crispytop-next{
     width: 35px;
     height: 35px;
-    padding: 8px;
+    padding: 10px;
     font-size: 12px;
   }
 
@@ -1704,7 +1713,6 @@ p,
     margin: auto 0 3px 85%;
   }
 
-  
 
   /*Bread with Recipe*/
 
@@ -1727,11 +1735,15 @@ p,
   }
 
   .bread-with-recipe-arrow{
-    margin-top: 20px;
+    margin-top: 30px;
+  }
+
+  .bread-with-recipe-next{
+    margin-right: 7px;
   }
 
   .bread-with-recipe-dot{
-    margin: 0 2px 20px 2px;
+    margin: 0 4px;
   }
 
   /*Explore other gallery*/
