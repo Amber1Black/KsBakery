@@ -256,6 +256,7 @@ h2{
 
 .what-you-need h5{
   font-size: 20px;
+  letter-spacing: 1px;
   font-weight: 600;
   margin: 5% 0 0 6%;
 }
@@ -1122,6 +1123,7 @@ h2{
 
   .what-you-need h5{
     font-size: 18px;
+    letter-spacing: 0px;
     margin: 15px 0 5px 3%;
   }
 
