@@ -1275,6 +1275,7 @@ h5{
 
   h5{
     font-size: 17px;
+    letter-spacing: 0px;
   }
 
   /*Top Section*/
@@ -1290,6 +1291,10 @@ h5{
   .recipe-name-mobile h4{
     line-height: 1.5em;
     margin: 15px auto;
+  }
+
+  .recipe-name-mobile h5{
+    font-size: 16px;
   }
 
   /*Additional Info*/
@@ -1329,6 +1334,7 @@ h5{
   }
 
   .what-you-need h5{
+    letter-spacing: 0px;
     margin: 15px 0 15px 4%;
   }
 
@@ -1396,10 +1402,6 @@ h5{
 
   :root{
     --font-size: 15px;
-  }
-
-  h5{
-    font-size: 16px;
   }
 
   /*Top Section*/
