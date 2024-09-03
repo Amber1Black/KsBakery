@@ -256,9 +256,9 @@ h2{
 
 .what-you-need h5{
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: 600;
-  margin: 5% 0 0 6%;
+  margin: 5% 0 20px 6%;
 }
 
 .ingredients{
@@ -277,16 +277,16 @@ h2{
 }
 
 .ingredients-col h3{
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 3px;
   font-size: var(--font-size);
   font-weight: 600;
-  padding: 0.5rem;
 }
 
 .ingredients-col p{
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 3px;
   font-size: var(--font-size);
   font-weight: var(--font-weight);
+  margin-top: 10px;
 }
 
 .ingredients-col::after{
@@ -296,7 +296,7 @@ h2{
   background: rgb(0, 0, 0);
   position: absolute;
   align-items: center;
-  top: 42px;
+  top: 50%;
   right: 0;
 }
 
@@ -479,13 +479,17 @@ h2{
 
   /*What you need*/
 
-  .what-you-need h4{
-    font-size: 30px;
+  .what-you-need h2{
+    margin-bottom: 0px;
   }
 
   .what-you-need h5{
     font-size: 19px;
-    margin: 40px 0 10px 6%;
+    margin: 20px 0 20px 4%;
+  }
+
+  .ingredients{
+    margin: 10px 8% 40px 8%;
   }
 
   /*What to do*/
@@ -551,12 +555,12 @@ h2{
 
   /*What you need*/
 
-  .ingredients{
-    margin: 0 8%;
+  .what-you-need h5{
+    margin: 20px 0 15px 4%;
   }
 
-  h5{
-    margin: 35px 0 8px 3%;
+  .ingredients{
+    margin: 10px 8% 40px 8%;
   }
 
   /*Explore other recipe*/
@@ -645,13 +649,22 @@ h2{
     margin: 80px 8%;
   }
 
-  .ingredients{
-    margin: 0 4%;
+  .ingredients-col h3{
+    letter-spacing: 2px;
+  }
+
+  .ingredients-col p{
+    letter-spacing: 2px;
+    margin-top: 8px;
   }
 
   .what-you-need h5{
-    font-size: 17px;
-    margin: 30px 0 5px 0;
+    font-size: 18px;
+    margin: 20px 0 10px 1%;
+  }
+
+  .ingredients{
+    margin: 10px 4% 40px 4%;
   }
 
   /*What to do*/
@@ -812,12 +825,12 @@ h2{
   }
 
   .ingredients{
-    margin: 0 7% 40px 7%;
+    margin: 0 9% 40px 9%;
   }
 
   .what-you-need h5{
-    font-size: 19px;
-    margin: 15px 0 8px 5%;
+    font-size: 20px;
+    margin: 15px 0 15px 3%;
   }
 
   /*what to do*/
@@ -943,12 +956,12 @@ h2{
   }
 
   .ingredients{
-    margin: 0 6% 35px 6%;
+    margin: 0 5% 35px 5%;
   }
 
   .what-you-need h5{
     font-size: 19px;
-    margin: 15px 0 5px 2%;
+    margin: 15px 0 15px 1%;
   }
 
   /*what to do*/
@@ -1114,7 +1127,7 @@ h2{
 
   .ingredients-col::after{
     width: 1.5px;
-    top: 40px;
+    height: 27px; 
   }
 
   .ingredients{
@@ -1123,8 +1136,17 @@ h2{
 
   .what-you-need h5{
     font-size: 18px;
-    letter-spacing: 0px;
-    margin: 15px 0 5px 3%;
+    letter-spacing: 1px;
+    margin: 15px 0 15px 3%;
+  }
+
+  .ingredients-col h3{
+    letter-spacing: 1px;
+  }
+
+  .ingredients-col p{
+    letter-spacing: 1px;
+    margin-top: 8px;
   }
 
   /*what to do*/
@@ -1227,7 +1249,16 @@ h2{
 
   .what-you-need h5{
     font-size: 17px;
-    margin: 15px 0 5px 5%;
+    margin: 15px 0 15px 4%;
+  }
+
+  .ingredients-col h3{
+    letter-spacing: 0px;
+  }
+
+  .ingredients-col p{
+    letter-spacing: 0px;
+    margin-top: 8px;
   }
 
   /*What to do*/
@@ -1318,7 +1349,7 @@ h2{
 
   .what-you-need h5{
     font-size: 16px;
-    margin: 0 0 5px 4%;
+    margin: 10px 0 10px 4%;
   }
 
   /*What to do*/
