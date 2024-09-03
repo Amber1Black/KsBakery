@@ -13,28 +13,63 @@
     </script>
 
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="K's Bakery offers a collection of my favorite baking recipes, perfect for anyone who loves the taste of freshly made, homemade baked goods. Discover the joy of baking at home with simple, delicious recipes that bring warmth and sweetness to your kitchen!">
+  <meta name="description" content="K's Bakery offers a collection of my favorite baking recipes, perfect for anyone who loves the taste of freshly made, homemade baked goods. Discover the joy of baking at home with simple, delicious recipes that bring warmth and sweetness to your kitchen!">
 
-<link rel="icon" type="image/png" href="Pictures/websitelogo.png" sizes = "512x512">
-<link rel="shortcut icon" href="Pictures/websitelogo2.png" type="image/png" sizes = "512x512">
-  
-<title>K's Bakery</title>
-<!-- Google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="pictures/websitelogo.png" sizes = "512x512">
+    
+  <title>K's Bakery</title>
 
-<!-- My CSS -->
-<link rel="stylesheet" href="style/recipesummary.css">
+  <!-- JSON-LD structured data snipper -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Recipes Collection",
+      "description": "Explore a collection of delicious recipes, including custard bread, lemon tart, and more. Each recipe is easy to follow and perfect for any occasion.",
+      "url": "https://www.k-bakery.com/recipesummary",
+      "mainEntity": [
+        {
+          "@type": "Recipe",
+          "name": "Lemon Tart",
+          "url": "https://www.k-bakery.com/LemonTartRecipe",
+          "description": "The tangy lemon pairs perfectly with the sweet decorations on top",
+          "image": "https://www.k-bakery.com/pictures/grassland-tart-ring.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Hydrangea Tart",
+          "url": "https://www.k-bakery.com/HydrangeaTartRecipe",
+          "description": "The tarts look gorgeous, but they are very easy to make.",
+          "image": "https://www.k-bakery.com/pictures/hydrangea-tart-blue-and-white.jpg"
+        }
+        {
+          "@type": "Recipe",
+          "name": "Pumpkin Bread",
+          "url": "https://www.k-bakery.com/recipe/pumpkinbread",
+          "description": "Bread shaped like a pumpkin, with a crispy top",
+          "image": "https://www.k-bakery.com/pictures/pumpkin-bread.jpg"
+        }
+
+      ]
+    }
+  </script>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Abril+Fatface&family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style/recipesummary.css">
 </head>
 
 <body>
 
   <div class="headingsection">
-    <a href="https://www.k-bakery.com"><img class="logo" src="Pictures/Logo6.jpg"></a>
+    <a href="https://www.k-bakery.com"><img class="logo" src="../pictures/logo.jpg" alt = "Logo of the website"></a>
     <nav>
       <ul id="menulist">
         <li><a href="https://www.k-bakery.com/GallerySummary">Baking Collection</a></li>
@@ -44,7 +79,9 @@
         <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
       </ul>
     </nav>
-    <img class="menu-icon" onclick="togglemenu()" src="Pictures/Menu.png">
+    <div class="menuicon">
+      <img class="menu-icon" onclick="togglemenu()" src="../pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
+    </div>
   </div>
 
   <div class="topheadingstitle">
@@ -55,16 +92,16 @@
     <div class="uppersection">
         <div class="imageshown">
           <div class="picture1" >
-              <img src="Pictures/Tart - Droplet.jpg" alt = "Tart topped with heart-shaped cream, decorated with almonds and pistachios.">
+              <img src="pictures/droplet-cream-tart.jpg" alt = "Tart topped with heart-shaped cream, decorated with almonds and pistachios.">
           </div>
           <div class="picture2">
-              <img src="Pictures/Pastry - Flower Puff.jpg" alt = "Choux Pastry with flower-shaped cream decoration on top">
+              <img src="pictures/flower-choux-pastry.jpg" alt = "Choux Pastry with flower-shaped cream decoration on top">
           </div>
           <div class="picture22">
-            <img src="Pictures/Recipe Summary Top Images.png" alt = "3 images in rotation : Choux pastry with flower-shaped cream decoration, bread with a crispy pumpkin-shaped top, and tart topped with ring-shaped chocolate.">
+            <img src="pictures/recipe-summary-top-images.png" alt = "3 images in rotation : Choux pastry with flower-shaped cream decoration, bread with a crispy pumpkin-shaped top, and tart topped with ring-shaped chocolate.">
           </div>
           <div class="picture3">
-              <img src="Pictures/Bread - Pumpkin Bread.jpg" alt ="Bread with a crispy top shaped like a pumpkin">
+              <img src="pictures/pumpkin-bread.jpg" alt ="Bread with a crispy top shaped like a pumpkin">
           </div>
         </div>
         <div class="circle">
@@ -74,7 +111,7 @@
 
     <div class="recipecategory reveal">
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/LemonTartRecipe"><img src = "Pictures/Tart Ring - Grassland.jpg" alt = "Tart ring with grassland-themed decoration on top, linking to the Lemon Tart recipe."></a>
+        <a href="https://www.k-bakery.com/LemonTartRecipe"><img src = "pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top, linking to the Lemon Tart recipe."></a>
         <div class="recipename">
           <h4>Tart</h4>
           <h3>Lemon Tart</h3>
@@ -84,7 +121,7 @@
       </div>
 
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/HydrangeaTartRecipe"><img src = "Pictures/Tart - Hydrangea Tart.jpg" alt = "Tart topped with hydrangea-shaped cream decoration in a mix of white and blue colors, linking to the Hydrangea Tart recipe"></a>
+        <a href="https://www.k-bakery.com/HydrangeaTartRecipe"><img src = "pictures/hydrangea-tart-blue-and-white.jpg" alt = "Tart topped with hydrangea-shaped cream decoration in a mix of white and blue colors, linking to the Hydrangea Tart recipe"></a>
         <div class="recipename">
           <h4>Tart</h4>
           <h3>Hydrangea Tart</h3>
@@ -94,7 +131,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src = "Pictures/Cake - Coffee Cake.jpg" class ="image3" alt = "Coffee Genoise, ideal for coffee lover, linking to the Coffee Genoise recipe."></a>
+        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src = "pictures/coffee-genoise.jpg" class ="image3" alt = "Coffee Genoise, ideal for coffee lover, linking to the Coffee Genoise recipe."></a>
         <div class="recipename">
           <h4>Cake</h4>
           <h3>Coffee Genoise</h3>
@@ -104,7 +141,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/recipe/custardbread"><img src = "Pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside, linking to the Custard Bread recipe"></a>
+        <a href="https://www.k-bakery.com/recipe/custardbread"><img src = "pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside, linking to the Custard Bread recipe"></a>
         <div class="recipename">
           <h4>Bread</h4>
           <h3>Custard Bread</h3>
@@ -114,7 +151,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/recipe/chocolatetwistbread"><img src = "Pictures/chocolate-twist-bread.jpg" alt ="Chocolate Twist Bread: bread filled with rich chocolate, linking to the Chocolate Twist Bread recipe"></a>
+        <a href="https://www.k-bakery.com/recipe/chocolatetwistbread"><img src = "pictures/chocolate-twist-bread.jpg" alt ="Chocolate Twist Bread: bread filled with rich chocolate, linking to the Chocolate Twist Bread recipe"></a>
         <div class="recipename">
           <h4>Bread</h4>
           <h3>Choco Twist Bread</h3>
@@ -124,17 +161,17 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/PumpkinBreadRecipe"><img src = "Pictures/Bread - Pumpkin Bread.jpg" alt ="Bread with a crispy top shaped like a pumpkin, linking to Pumpkin Bread recipe"></a>
+        <a href="https://www.k-bakery.com/recipe/pumpkinbread"><img src = "pictures/pumpkin-bread.jpg" alt ="Bread with a crispy top shaped like a pumpkin, linking to Pumpkin Bread recipe"></a>
         <div class="recipename">
           <h4>Bread</h4>
           <h3>Pumpkin Bread</h3>
           <p>They look adorable and require only simple preparation</p>
-          <a href="https://www.k-bakery.com/PumpkinBreadRecipe"><h5>Let's try &#8594</h5></a>
+          <a href="https://www.k-bakery.com/recipe/pumpkinbread"><h5>Let's try &#8594</h5></a>
         </div>
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/MatchaMushroomBreadRecipe"><img src = "Pictures/Bread - Matcha Mushroom Bread.jpg" alt ="Bread with a crispy matcha top shaped like a mushroom, linking to Matcha Mushroom Bread recipe"></a>
+        <a href="https://www.k-bakery.com/MatchaMushroomBreadRecipe"><img src = "pictures/matcha-mushroom-bread.jpg" alt ="Bread with a crispy matcha top shaped like a mushroom, linking to Matcha Mushroom Bread recipe"></a>
         <div class="recipename1">
           <h4>Bread</h4>
           <h3>Matcha Mushroom Bread</h3>
@@ -144,7 +181,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/MushroomBreadRecipe"><img src = "Pictures/Bread - Mushroom Bread.jpg" alt = "Bread with a crispy coffee top shaped like a mushroom, linking to Mushroom Bread recipe"></a>
+        <a href="https://www.k-bakery.com/MushroomBreadRecipe"><img src = "pictures/mushroom-bread.jpg" alt = "Bread with a crispy coffee top shaped like a mushroom, linking to Mushroom Bread recipe"></a>
         <div class="recipename">
           <h4>Bread</h4>
           <h3>Mushroom Bread</h3>
@@ -154,7 +191,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/MexicoBunRecipe"><img src = "Pictures/Bread - Mexico Bun.jpg" alt = "Mexico Bun : A famous bread from Hong Kong with a crispy top, linking to the Mexico Bun recipe"></a>
+        <a href="https://www.k-bakery.com/MexicoBunRecipe"><img src = "pictures/mexico-bun.jpg" alt = "Mexico Bun : A famous bread from Hong Kong with a crispy top, linking to the Mexico Bun recipe"></a>
         <div class="recipename">
           <h4>Bread</h4>
           <h3>Mexico Bun</h3>
@@ -164,7 +201,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/MatchaLoafRecipe"><img src = "Pictures/Bread - Matcha Loaf.jpg" alt = "Matcha Loaf : A loaf with mixed matcha flavor inside, linking to the Matcha Loaf recipe"></a>
+        <a href="https://www.k-bakery.com/MatchaLoafRecipe"><img src = "pictures/matcha-loaf.jpg" alt = "Matcha Loaf : A loaf with mixed matcha flavor inside, linking to the Matcha Loaf recipe"></a>
         <div class="recipename">
           <h4>Bread</h4>
           <h3>Matcha Loaf</h3>
@@ -174,7 +211,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/recipe/dresscookie"><img src = "Pictures/dress-shape-cookie.jpg" alt ="Cookie in dress-shape with different decoration on top, linking to Dress Cookie recipe."></a>
+        <a href="https://www.k-bakery.com/recipe/dresscookie"><img src = "pictures/dress-shape-cookie.jpg" alt ="Cookie in dress-shape with different decoration on top, linking to Dress Cookie recipe."></a>
         <div class="recipename">
           <h4>Cookie</h4>
           <h3>Dress Cookie</h3>
@@ -184,17 +221,17 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/PokeBallCookieRecipe"><img src = "Pictures/Cookie - Poke Ball.jpg" alt ="Cookie shaped like a Poké Ball, linking to the Poké Ball Cookie recipe."></a>
+        <a href="https://www.k-bakery.com/PokeBallCookieRecipe"><img src = "pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball, linking to the Poké Ball Cookie recipe."></a>
         <div class="recipename">
           <h4>Cookie</h4>
-          <h3>Poke Ball Cookie</h3>
+          <h3>Poké Ball Cookie</h3>
           <p>The cookies are adorable, it's a joyful experience to make them.</p>
           <a href="https://www.k-bakery.com/PokeBallCookieRecipe"><h5>Let's try &#8594</h5></a>
         </div>
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/MushroomCookieRecipe"><img src = "Pictures/Cookie - Mushroom.jpg" alt ="Cookie in mushroom and star-shape, linking to Mushroom recipe"></a>
+        <a href="https://www.k-bakery.com/MushroomCookieRecipe"><img src = "pictures/mushroom-and-star-cookie.jpg" alt ="Cookie in mushroom and star-shape, linking to Mushroom recipe"></a>
         <div class="recipename">
           <h4>Cookie</h4>
           <h3>Mushroom Cookie</h3>
@@ -204,7 +241,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/FlowerCookieRecipe"><img src = "Pictures/Cookie - Flower Cookie.jpg" alt = "Butter Cookie piped in flower shape, linking to Flower Cookie recipe"></a>
+        <a href="https://www.k-bakery.com/FlowerCookieRecipe"><img src = "pictures/Cookie - Flower Cookie.jpg" alt = "Butter Cookie piped in flower shape, linking to Flower Cookie recipe"></a>
         <div class="recipename">
           <h4>Cookie</h4>
           <h3>Flower Cookie</h3>
@@ -214,7 +251,7 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/PalmierRecipe"><img src = "Pictures/Pastry - Butterfly Palmier 2.jpg" alt = "Palmier in butterfly shape, linking to Butterfly Palmier recipe"></a>
+        <a href="https://www.k-bakery.com/PalmierRecipe"><img src = "pictures/butterfly-palmier.jpg" alt = "Palmier in butterfly shape, linking to Butterfly Palmier recipe"></a>
         <div class="recipename">
           <h4>Pastry</h4>
           <h3>Butterfly Palmier</h3>
