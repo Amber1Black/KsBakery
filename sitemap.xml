@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.k-bakery.com/</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Baking Collection Page -->
+  <url>
+    <loc>https://www.k-bakery.com/GallerySummary</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Recipe Summary Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipesummary</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Journey Page -->
+  <url>
+    <loc>https://www.k-bakery.com/JourneySummary</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Me Page -->
+  <url>
+    <loc>https://www.k-bakery.com/AboutMe</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.k-bakery.com/Contact</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Tart Collection Page -->
+  <url>
+    <loc>https://www.k-bakery.com/bakingcollection/tart</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cake Collection Page -->
+  <url>
+    <loc>https://www.k-bakery.com/bakingcollection/cake</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Bread Collection Page -->
+  <url>
+    <loc>https://www.k-bakery.com/bakingcollection/bread</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cookie Collection Page -->
+  <url>
+    <loc>https://www.k-bakery.com/bakingcollection/cookie</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pastry Collection Page -->
+  <url>
+    <loc>https://www.k-bakery.com/bakingcollection/pastry</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Custard Bread Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/custardbread</loc>
+    <lastmod>2024-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Chocolate Twist Bread Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/chocolatetwistbread</loc>
+    <lastmod>2024-08-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Pumpkin Bread Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/pumpkinbread</loc>
+    <lastmod>2024-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Dress Cookie Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/dresscookie</loc>
+    <lastmod>2024-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Poke Ball Cookie Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/pokeballcookie</loc>
+    <lastmod>2024-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mushroom Ball Cookie Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/mushroomcookie</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Butterfly Palmier Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/butterflypalmier</loc>
+    <lastmod>2024-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
