@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
     
 }
@@ -99,7 +99,6 @@ nav ul li a:hover::after{
 }
 
 .topheadingstitle p{
-  font-family: 'Open Sans', sans-serif;
   letter-spacing: 2px;
   font-weight: 380;
   font-size: 25px;
@@ -230,9 +229,9 @@ nav ul li a:hover::after{
 
 h3{
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 2px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: rgb(0, 0, 0);
 }
 
@@ -244,7 +243,6 @@ h3{
 
 .recipename h5, .recipename a, .recipename1 h5, .recipename1 a{
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -254,7 +252,6 @@ h3{
 }
 
 .recipename p, .recipename1 p{
-  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -319,7 +316,6 @@ h3{
   .recipename1 h3{
     font-size: 23px;
     line-height: 1.4em;
-    letter-spacing: 1px;
   }
 
   .recipecategory{
@@ -374,6 +370,10 @@ h3{
     font-size: 16px;
   }
 
+  .recipename1 h3{
+    letter-spacing: 1px;
+  }
+
 }
 
 
@@ -408,7 +408,11 @@ h3{
   }
 
   .recipename h4, .recipename1 h4{
-    margin: 12px 0px 2px 1px;
+    margin: 12px 0px 8px 1px;
+  }
+
+  .recipename1 h3{
+    letter-spacing: 1px;
   }
 
   .recipename p, .recipename1 p{
@@ -447,6 +451,7 @@ h3{
 
   .recipename p, .recipename1 p{
     margin-top: 10px;
+    font-size: 16px;
   }
 
 }
@@ -567,7 +572,7 @@ h3{
   }
 
   .recipename h4, .recipename1 h4{
-    font-size: 13px;
+    font-size: 14px;
   }
 
 }
@@ -653,7 +658,7 @@ h3{
     margin-right: 15px;
     cursor: pointer;
     margin-top: 5px;
-    width: 58px;
+    width: 55px;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
@@ -760,7 +765,8 @@ h3{
 
   .recipename h5, .recipename a, .recipename1 h5, .recipename1 a,
   .recipename p, .recipename1 p{
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
   }
 
 }
@@ -796,7 +802,7 @@ h3{
   /*Recipe Grid*/
 
   .recipecategory{
-    padding: 50px 0%;
+    padding: 50px 4%;
   }
 
   .recipename1 h3{
@@ -805,11 +811,11 @@ h3{
 
   .recipename h4, .recipename1 h4{
     font-size: 13px;
-    margin: 12px 0px 5px 1px;
+    margin: 12px 0px 6px 1px;
   }
 
   .recipename, .recipename1{
-    margin: 20px 30px;
+    margin: 20px 15px;
   }
 
   .recipename p, .recipename1 p{
@@ -822,10 +828,6 @@ h3{
 
   .recipename h3, .recipename1 h3{
     font-size: 19px;
-  }
-
-  .recipename h4, .recipename1 h4{
-    margin-bottom: 5px;
   }
 
 }
