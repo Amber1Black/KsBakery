@@ -1564,6 +1564,7 @@ nav ul li a:hover::after{
 
   .firstpartmobiledescription h2{
     font-size: 25px;
+    font-weight: 550;
     letter-spacing: 1px;
   }
 
@@ -1586,14 +1587,15 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 70px -10px -90px 40px;
+    margin: 90px -10px -90px 40px;
     font-size: 55px;
     letter-spacing: 3px;
   }
 
   .secondpartdescription p{
-    font-size: 14px;
-    width: 390px;
+    font-size: 15px;
+    width: 330px;
+    margin: 30px 0 20px 0;
   }
 
   .secondpartsliderdescription p{
@@ -1691,15 +1693,15 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 70px 0 -90px 25px;
+    margin: 85px 0 -90px 25px;
     font-size: 45px;
   }
 
   .secondpartdescription p{
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 0px;
     font-weight: 400;
-    width: 260px;
+    width: 280px;
     margin: 30px 0 20px 0;
   }
 
@@ -1725,12 +1727,12 @@ nav ul li a:hover::after{
 
   .thirdpartdescription p, .thirdpartdescription a{
     font-size: 15px;
-    line-height: 1.6em;
-    width: 280px;
+    line-height: 1.5em;
+    width: 260px;
   }
 
   .thirdpartslider p{
-    font-size: 13px;
+    font-size: 15px;
   }
 
   /*Fourth Section*/
@@ -1741,7 +1743,7 @@ nav ul li a:hover::after{
   }
 
   .fourthpartdescription p, .fourthpartdescription a{
-    font-size: 13px;
+    font-size: 15px;
   }
 
 }
