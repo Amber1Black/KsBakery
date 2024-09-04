@@ -13,12 +13,11 @@
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="K's Bakery, where I would share all my bakeries and recipes, wish everyone experience the joy of baking at home, discover endless possibilities, and indulge in delicious baked creations.">
 
-  <link rel="icon" type="image/png" href="Pictures/websitelogo.png" sizes = "512x512">
-
   <title>K's Bakery</title>
+
+  <link rel="icon" type="image/png" href="Pictures/websitelogo.png" sizes = "512x512">
   <link rel="stylesheet" href="style/Index.css">
 
   <!-- Google fonts -->
@@ -120,7 +119,7 @@
         </div>
       </div>
       <div class="container">
-        <a href="https://www.k-bakery.com/bakingcollection/pastry"><img src="Pictures/flower-cream-puff.jpg" alt = "Choux Pastry with flower-shape cream piping on top, linking to the Pastry Collection."></a>
+        <a href="https://www.k-bakery.com/bakingcollection/pastry"><img src="Pictures/flower-choux-pastry.jpg" alt = "Choux Pastry with flower-shape cream piping on top, linking to the Pastry Collection."></a>
         <div class="secondpartsliderdescription">
           <a href="https://www.k-bakery.com/bakingcollection/pastry"><h2>Pastry</h2></a>
           <p>A curated showcase of the finest pastries that highlight the artistry, craftsmanship, and cultural diversity found in the world of baking.</p>
@@ -166,7 +165,7 @@
             <img src="Pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside">
           </div>
           <div class="pic2">
-            <a href="https://www.k-bakery.com/recipe/pumpkinbread"><img src="Pictures/pumpkin-bread.jpg"  alt = "Bread with a crispy top shaped like a pumpkin, linking to the Pumpkin recipe"></a>
+            <a href="https://www.k-bakery.com/recipe/pumpkinrecipe"><img src="Pictures/pumpkin-bread.jpg"  alt = "Bread with a crispy top shaped like a pumpkin, linking to the Pumpkin recipe"></a>
             <h2>Pumpkin Bread</h2>
             <p>They look adorable and require only simple preparation</p>
           </div>
@@ -281,7 +280,7 @@
 
 
   <div class="copyright">
-    Copyright &#169 2023 K's Bakery
+    Copyright &copy; 2023–<span id="currentYear"></span> K's Bakery
   </div>
  
 
@@ -301,6 +300,11 @@
         menulist.style.maxHeight = "0px";
       }
     }
+  </script>
+
+  <script>
+    // JavaScript to automatically update the copyright year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
 
 
