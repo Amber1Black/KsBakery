@@ -1289,8 +1289,9 @@ h2{
     margin: 20px 4% 60px 4%;
   }
 
-  .otherrecipetoexplore h3{
+  .otherrecipetoexplore h4{
     font-size: 18px;
+    letter-spacing: 0px;
   }
 
   .container img{
