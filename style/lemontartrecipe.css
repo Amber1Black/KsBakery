@@ -1239,6 +1239,7 @@ h5{
 
   .what-to-do h5{
     margin-bottom: 25px;
+    text-decoration-thickness: 2px;
   }
 
   .what-to-do img{
@@ -1356,6 +1357,11 @@ h5{
 
   .what-to-do{
     margin: 0 8%;
+  }
+
+  .what-to-do h5{
+    margin-bottom: 20px;
+    text-decoration-thickness: 1.5px;
   }
 
   .what-to-do li,
