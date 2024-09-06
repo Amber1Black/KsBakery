@@ -129,6 +129,30 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Matcha Mushroom Bread Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/matchamushroombread</loc>
+    <lastmod>2024-09-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mushroom Bread Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/mushroombread</loc>
+    <lastmod>2024-09-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Matcha Loaf Recipe Page -->
+  <url>
+    <loc>https://www.k-bakery.com/recipe/matchaloaf</loc>
+    <lastmod>2024-09-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Dress Cookie Recipe Page -->
   <url>
     <loc>https://www.k-bakery.com/recipe/dresscookie</loc>
