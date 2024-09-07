@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-RF94ND0HKD');
-    </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +13,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Start cookieyes banner --> 
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
+  <!-- End cookieyes banner -->
+   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  
+    // Set default consent mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',         // Deny storage of ads-related cookies
+      'analytics_storage': 'denied'   // Deny storage of analytics cookies
+    });
+  
+    // Initialize Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-RF94ND0HKD', {
+      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
+      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
+      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
+    });
+  </script>
 
   <!-- JSON-LD structured data snipper -->
   <script type="application/ld+json">
@@ -170,12 +186,12 @@
       </div>
   
       <div class="recipegrid">
-        <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><img src = "pictures/coffee-genoise.jpg" class ="image3" alt = "Coffee Genoise, ideal for coffee lover, linking to the Coffee Genoise recipe."></a>
+        <a href="https://www.k-bakery.com/recipe/coffeegenoise"><img src = "pictures/coffee-genoise.jpg" class ="image3" alt = "Coffee Genoise, ideal for coffee lover, linking to the Coffee Genoise recipe."></a>
         <div class="recipename">
           <h4>Cake</h4>
           <h3>Coffee Genoise</h3>
           <p>The fluffy cake matches perfectly with the cream added on top</p>
-          <a href="https://www.k-bakery.com/CoffeeGenoiseRecipe"><h5>Let's try &#8594;</h5></a>
+          <a href="https://www.k-bakery.com/recipe/coffeegenoise"><h5>Let's try &#8594;</h5></a>
         </div>
       </div>
   
