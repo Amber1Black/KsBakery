@@ -2,16 +2,6 @@
 <html lang="en">
 <head>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RF94ND0HKD');
-  </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,6 +10,31 @@
   <link rel="icon" type="image/png" href="../pictures/websitelogo.png" sizes = "512x512">
 
   <title>K's Bakery</title>
+
+  <!-- Start cookieyes banner --> 
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
+  <!-- End cookieyes banner -->
+   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  
+    // Set default consent mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',         // Deny storage of ads-related cookies
+      'analytics_storage': 'denied'   // Deny storage of analytics cookies
+    });
+  
+    // Initialize Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-RF94ND0HKD', {
+      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
+      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
+      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
+    });
+  </script>
 
   <!-- JSON-LD structured data snipper -->
   <script type="application/ld+json">
@@ -221,8 +236,9 @@
             <br>
             <span class="note">[Ovens vary, so adjust the time and temperature as needed to get the best results.]</span>
           </li>
-          <li>After removing from the oven, brush the bread with butter to make them shiny.</li>
+          <li>After removing from the oven, brush the bread with butter to make them shiny.
               <img src = "../pictures/chocolate-twist-bread.jpg" alt = "A well baked chocolate twist bread">
+          </li>  
         </ul>
       </div>
     </div>
