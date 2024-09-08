@@ -2,24 +2,48 @@
 <html lang="en">
 <head>
 
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="K's Bakery presents a delightful Dress Cookie recipe. These cookies are both beautiful and delicious!">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../pictures/websitelogo.png" sizes="512x512">
+
+  <!-- Title and CSS -->
+  <title>K's Bakery</title>
+  <link rel="stylesheet" href="../style/dresscookierecipe.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Start cookieyes banner --> 
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
+  <!-- End cookieyes banner -->
+   
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  
+    // Set default consent mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',         // Deny storage of ads-related cookies
+      'analytics_storage': 'denied'   // Deny storage of analytics cookies
+    });
+  
+    // Initialize Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-RF94ND0HKD', {
+      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
+      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
+      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
+    });
+  </script>  
 
-  gtag('config', 'G-RF94ND0HKD');
-  </script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="K's Bakery presents a delightful Dress Cookie recipe. These cookies are both beautiful and delicious!">
-
-  <link rel="icon" type="image/png" href="../pictures/websitelogo.png" sizes="512x512">
-
-  <title>K's Bakery</title>
 
   <!-- JSON-LD structured data snipper -->
   <script type="application/ld+json">
@@ -193,21 +217,29 @@
       <div class="what-to-do">
         <h2>What to do</h2>
         <ul class = "a">
-          <li><span>Soften the Butter :</span> Take the butter out of the fridge and let it soften at room temperature</li>
+          <li><span>Soften the Butter :</span> Take the butter out of the fridge and let it soften at room temperature
               <img src = "../pictures/cookie-recipe-1.jpg" alt = "Softened butter after resting at room temperature"> 
-          <li><span>Mix Butter and Sugar :</span> Add the caster sugar to the softened butter in batches, mixing well after each addition.</li>
+            </li>
+          <li><span>Mix Butter and Sugar :</span> Add the caster sugar to the softened butter in batches, mixing well after each addition.
               <img src = "../pictures/cookie-recipe-2.jpg" alt = "Butter mixed with caster sugar in a bowl."> 
-          <li><span>Incorporate the Egg :</span> Add the egg to the butter-sugar mixture and mix until fully combined and no longer visible</li>
+            </li>  
+          <li><span>Incorporate the Egg :</span> Add the egg to the butter-sugar mixture and mix until fully combined and no longer visible
               <img src = "../pictures/cookie-recipe-3.jpg" alt = "Butter and caster sugar mixture with added egg"> 
-          <li><span>Add Flour :</span> Gradually add the flour to the mixture, sifting it in batches, and mix well.</li>
+            </li>  
+          <li><span>Add Flour :</span> Gradually add the flour to the mixture, sifting it in batches, and mix well.
               <img src = "../pictures/cookie-recipe-4.jpg" alt = "Butter, caster sugar, and egg mixture with added plain flour."> 
-          <li><span>Form and Freeze the Dough :</span> After mixing everything together, roll the dough into a large, flat sheet, and freeze it.</li>
+            </li>  
+          <li><span>Form and Freeze the Dough :</span> After mixing everything together, roll the dough into a large, flat sheet, and freeze it.
               <img src = "../pictures/cookie-recipe-5.jpg" alt = "Large plain dough rolled out flat"> 
-          <li><span>Cut the Dough :</span> Use a dress-shaped cookie cutter to cut the dough into shapes.</li>
-          <li><span>Bake the Cookies:</span> Bake the cookies at 150°C (302°F) for 15 minutes. (You can add chocolate to the dough for additional variations.)</li>
+            </li>  
+          <li><span>Cut the Dough :</span> Use a dress-shaped cookie cutter to cut the dough into shapes.
+            </li>
+          <li><span>Bake the Cookies:</span> Bake the cookies at 150°C (302°F) for 15 minutes. (You can add chocolate to the dough for additional variations.)
               <img src = "../pictures/dress-cookie-recipe-3.jpg" alt = "Cookie baked in dress shape"> 
-          <li><span>Decorate with Chocolate :</span> Allow the cookies to cool completely, then dip them in melted chocolate to create your desired patterns.</li>
+            </li>  
+          <li><span>Decorate with Chocolate :</span> Allow the cookies to cool completely, then dip them in melted chocolate to create your desired patterns.
               <img src = "../pictures/dress-shape-cookie.jpg" alt = "Cookie in dress shape with various chocolate decoration"> 
+            </li>  
         </ul>
       </div>
     </div>
@@ -224,9 +256,9 @@
           </div>
         </div>
         <div class="container">
-          <a href="https://www.k-bakery.com/MatchaMushroomBreadRecipe"><img src = "../pictures/matcha-mushroom-bread.jpg" alt ="Bread with a crispy matcha top shaped like a mushroom, linking to Matcha Mushroom Bread recipe"></a>
+          <a href="https://www.k-bakery.com/recipe/matchamushroombread"><img src = "../pictures/matcha-mushroom-bread.jpg" alt ="Bread with a crispy matcha top shaped like a mushroom, linking to Matcha Mushroom Bread recipe"></a>
           <div class="other-sliderdescription">
-            <a href="https://www.k-bakery.com/MatchaMushroomBreadRecipe"><h2>Matcha Mushroom Bread</h2></a>
+            <a href="https://www.k-bakery.com/recipe/matchamushroombread"><h2>Matcha Mushroom Bread</h2></a>
             <p>The bread look very cute and are full of matcha flavor</p>
           </div>
         </div>
