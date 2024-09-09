@@ -19,14 +19,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-  <!-- Google Tag Manager -->
+  <!-- Start cookieyes banner --> 
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
+  <!-- End cookieyes banner -->
+   
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+  
+    // Set default consent mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',         // Deny storage of ads-related cookies
+      'analytics_storage': 'denied'   // Deny storage of analytics cookies
+    });
+  
+    // Initialize Google Analytics
     gtag('js', new Date());
-    gtag('config', 'G-RF94ND0HKD');
-  </script>
+    gtag('config', 'G-RF94ND0HKD', {
+      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
+      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
+      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
+    });
+  </script>  
 
   <!-- JSON-LD structured data snipper -->
   <script type="application/ld+json">
@@ -73,7 +89,7 @@
             {
               "@type": "HowToStep",
               "text": "Prepare the Coffee Paste: Dissolve the coffee powder in hot water, stirring until smooth. Add this coffee mixture to the butter mixture and mix until evenly distributed.",
-              "image": "https://www.k-bakery.com/pictures/mushroom-bread-recipe-1.jpg"
+              "image": "https://www.k-bakery.com/pictures/coffee-batter.jpg"
             },
             {
               "@type": "HowToStep",
@@ -291,7 +307,7 @@
               <li><span style="font-weight: 600;">Soften the Butter: </span>Take the butter out of the fridge and let it soften at room temperature.</li>
               <li><span style="font-weight: 600;">Mix the Ingredients: </span>Once softened, mix the butter with the icing sugar until well combined and creamy. Gradually add the flour to the mixture, mixing thoroughly until all the ingredients are fully incorporated.</li>
               <li><span style="font-weight: 600;">Prepare the Coffee Paste: </span>Dissolve the coffee powder in hot water, stirring until smooth. Add this coffee mixture to the butter mixture and mix well together.
-                <img src="../pictures/mushroom-bread-recipe-1.jpg" alt="Well mixed ingredients ready to make the crispy top">
+                <img src="../pictures/coffee-batter.jpg" alt="Well mixed ingredients ready to make the crispy top">
               </li>
               <li><span style="font-weight: 600;">Ready to Pipe: </span>Transfer the mixture into a piping bag for forming the top.
                 <img src="../pictures/mushroom-bread-recipe-2.jpg" alt="Mixture placed in piping bag">
@@ -391,6 +407,13 @@
           <div class="other-sliderdescription">
             <a href="https://www.k-bakery.com/recipe/pokeballcookie"><h2>Poke Ball Cookie</h2></a>
             <p>The cookies are adorable, it's a joyful experience to make them.</p>
+          </div>
+        </div>
+        <div class="container">
+          <a href="https://www.k-bakery.com/recipe/butterflypalmier"><img src = "../pictures/butterfly-palmier-2.jpg" alt ="Butterfly-shaped palmier pastry, linking to the Butterfly Palmier recipe."></a>
+          <div class="other-sliderdescription">
+            <a href="https://www.k-bakery.com/recipe/butterflypalmier"><h2>Butterfly Palmier</h2></a>
+            <p>Irresistibly crispy and light, these palmier pastries make the perfect snack.</p>
           </div>
         </div>
       </div>
