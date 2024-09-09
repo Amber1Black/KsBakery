@@ -2,23 +2,10 @@
 <html lang="en">
 <head>
 
-  <!-- Start cookieyes banner --> 
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
-  <!-- End cookieyes banner -->
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RF94ND0HKD');
-  </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to my webpage, where I share my passion for baking and travel! Discover delicious bakery recipes to try at home and read about my travel adventures. Let's enjoy baking and the beauty of life together!">
+
   <title>K's Bakery</title>
   <link rel="icon" type="image/png" href="pictures/websitelogo.png" sizes="512x512">
   <link rel="stylesheet" href="style/index.css">
@@ -27,10 +14,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   
+  <!-- Start cookieyes banner --> 
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
+  <!-- End cookieyes banner -->
+   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  
+    // Set default consent mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',         // Deny storage of ads-related cookies
+      'analytics_storage': 'denied'   // Deny storage of analytics cookies
+    });
+  
+    // Initialize Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-RF94ND0HKD', {
+      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
+      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
+      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
+    });
+  </script>
+
+
 </head>
 <body>
   <div class="headingsection">
-    <a href="https://www.k-bakery.com"><img class="logo" src="../Pictures/logo.jpg" alt = "Logo of the website"></a>
+    <a href="https://www.k-bakery.com"><img class="logo" src="pictures/logo.jpg" alt = "Logo of the website"></a>
         <nav>
           <ul id="menulist">
             <li><a href="https://www.k-bakery.com/GallerySummary">Baking Collection</a></li>
@@ -41,7 +54,7 @@
           </ul>
         </nav>
         <div class="menuicon">
-          <img class="menu-icon" onclick="togglemenu()" src="../Pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
+          <img class="menu-icon" onclick="togglemenu()" src="pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
         </div>
   </div>
 
@@ -148,7 +161,7 @@
       <div class="thirdpartsliderpic">
         <div class="picturesdisplay">
           <div class="pic1">
-            <img src="Pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top">
+            <img src="pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top">
           </div>
           <div class="pic2">
             <a href="https://www.k-bakery.com/recipe/custardbread"><img src="pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside, linking to the Custard recipe."></a>
@@ -156,7 +169,7 @@
             <p>The rich custard inside elevates the taste of the bread to another level</p>
           </div>
           <div class="pic3">
-            <img src ="Pictures/pumpkin-bread.jpg" alt = "Bread with a crispy top shaped like a pumpkin">
+            <img src ="pictures/pumpkin-bread.jpg" alt = "Bread with a crispy top shaped like a pumpkin">
           </div>
         </div>
       </div>
@@ -164,7 +177,7 @@
       <div class="thirdpartsliderpic">
         <div class="picturesdisplay">
           <div class="pic1">
-            <img src="Pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside">
+            <img src="pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside">
           </div>
           <div class="pic2">
             <a href="https://www.k-bakery.com/recipe/pumpkinbread"><img src="pictures/pumpkin-bread.jpg"  alt = "Bread with a crispy top shaped like a pumpkin, linking to the Pumpkin recipe"></a>
@@ -172,7 +185,7 @@
             <p>They look adorable and require only simple preparation</p>
           </div>
           <div class="pic3">
-            <img src ="Pictures/butterfly-palmier.jpg" alt = "Palmier in butterfly shape">
+            <img src ="pictures/butterfly-palmier.jpg" alt = "Palmier in butterfly shape">
           </div>
         </div>
       </div>
@@ -180,7 +193,7 @@
       <div class="thirdpartsliderpic">
         <div class="picturesdisplay">
           <div class="pic1">
-            <img src="Pictures/pumpkin-bread.jpg" alt = "Bread with a crispy top shaped like a pumpkin">
+            <img src="pictures/pumpkin-bread.jpg" alt = "Bread with a crispy top shaped like a pumpkin">
           </div>
           <div class="pic2">
             <a href="https://www.k-bakery.com/recipe/butterflypalmier"><img src="pictures/butterfly-palmier.jpg"  alt = "Palmier in butterfly shape, linking to Butterfly Palmier recipe"></a>
@@ -188,7 +201,7 @@
             <p>Can't stop eating one after another with the crispy texture</p>
           </div>
           <div class="pic3">
-            <img src ="Pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball">
+            <img src ="pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball">
           </div>
         </div>
       </div>
@@ -196,7 +209,7 @@
       <div class="thirdpartsliderpic">
         <div class="picturesdisplay">
           <div class="pic1">
-            <img src="Pictures/butterfly-palmier.jpg" alt = "Palmier in butterfly shape">
+            <img src="pictures/butterfly-palmier.jpg" alt = "Palmier in butterfly shape">
           </div>
           <div class="pic2">
             <a href="https://www.k-bakery.com/recipe/pokeballcookie"><img src="pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball, linking to the Poké Ball Cookie recipe."></a>
@@ -204,7 +217,7 @@
             <p>The cookies look so cute that you almost don't want to eat them</p>
           </div>
           <div class="pic3">
-            <img src ="Pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top">
+            <img src ="pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top">
           </div>
         </div>
       </div>
@@ -212,7 +225,7 @@
       <div class="thirdpartsliderpic">
         <div class="picturesdisplay">
           <div class="pic1">
-            <img src="Pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball">
+            <img src="pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball">
           </div>
           <div class="pic2">
             <a href="https://www.k-bakery.com/recipe/lemontart"><img src="pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top, linking to the Lemon Tart recipe"></a>
@@ -220,7 +233,7 @@
             <p>The tangy lemon pairs perfectly with the sweet decorations on top</p>
           </div>
           <div class="pic3">
-            <img src ="Pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside">
+            <img src ="pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside">
           </div>
         </div>
       </div>
@@ -245,22 +258,22 @@
       
       <div class="fourthpart-slideshow">
         <div class="fourthpart-slideshow-pic fade">
-          <img src="Pictures/Journey - Regent Street - 1.jpg" alt = "A picture of Regent Street in London, showing the iconic curved architecture and bustling street scene.">
+          <img src="pictures/regent-street-1.jpg" alt = "A picture of Regent Street in London, showing the iconic curved architecture and bustling street scene.">
         </div>
         <div class="fourthpart-slideshow-pic fade">
-          <img src="Pictures/Journey - Somerset House - 1.jpg" alt = "A building at Somerset House in London, featuring its historic architecture and classical design.">
+          <img src="pictures/somerset-house-1.jpg" alt = "A building at Somerset House in London, featuring its historic architecture and classical design.">
         </div>
         <div class="fourthpart-slideshow-pic fade">
-          <img src="Pictures/Journey - Golden Square - 1.jpg" alt = "A picture of Golden Square in London, featuring beautiful blooming flowers.">
+          <img src="pictures/golden-square-1.jpg" alt = "A picture of Golden Square in London, featuring beautiful blooming flowers.">
         </div>
         <div class="fourthpart-slideshow-pic fade">
-          <img src="Pictures/Journey - Kensington Gardens - 5.jpg" alt = "A picture of Kensington Gardens in London, showcasing the pumpkin exhibition by renowned Japanese artist Yayoi Kusama.">
+          <img src="pictures/kensington-gardens-5.jpg" alt = "A picture of Kensington Gardens in London, showcasing the pumpkin exhibition by renowned Japanese artist Yayoi Kusama.">
         </div>
         <div class="fourthpart-slideshow-pic fade">
-          <img src="Pictures/Journey - Chelsea Riverside - 1.jpg" alt = "A picture of the Chelsea Riverside, featuring a peaceful seaside view.">
+          <img src="pictures/chelsea-riverside-1.jpg" alt = "A picture of the Chelsea Riverside, featuring a peaceful seaside view.">
         </div>
         <div class="fourthpart-slideshow-pic fade">
-          <img src="Pictures/Journey - Battersea Power Station - 1.jpg" alt = "A picture of Battersea Power Station, showcasing its iconic landmark architecture.">
+          <img src="pictures/battersea-power-station-1.jpg" alt = "A picture of Battersea Power Station, showcasing its iconic landmark architecture.">
         </div>
         
         <a class="fourthpartprev" onclick="plusSlides(-1)">❮</a>
