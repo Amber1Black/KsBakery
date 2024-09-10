@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
     
 }
@@ -518,7 +518,7 @@ nav ul li a:hover::after{
   top: 48%;
   width: 50px;
   height: 50px;
-  padding: 15px;
+  padding: 11px;
   text-align: center;
   color: white;
   background-color: rgb(45, 112, 139);
@@ -1046,8 +1046,8 @@ nav ul li a:hover::after{
   .fourthpartprev, .fourthpartnext{
     width: 45px;
     height: 45px;
-    font-size: 17px;
-    padding: 12px;
+    font-size: 16px;
+    padding: 9px;
   }
 
 }
@@ -1665,6 +1665,13 @@ nav ul li a:hover::after{
   .fourthpart-slideshow-pic img{
     width: 86vw;
     aspect-ratio: 1/1.2;
+  }
+
+  .fourthpartprev, .fourthpartnext{
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding: 7px;
   }
 
 }
