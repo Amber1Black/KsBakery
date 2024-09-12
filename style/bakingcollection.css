@@ -1,0 +1,1483 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+    
+}
+
+/*Headings*/
+
+.headingsection{
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.logo{
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 40px;
+  margin-top: 14px;
+}
+  
+.menu-icon{
+  display: none;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+  background-color: white;
+}
+
+nav ul{
+  background-color: white;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 45px;
+  background-color: white; 
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: 17px;
+  background-color: white;
+  position: relative;
+}
+
+nav ul li a:hover{
+  color: rgb(80, 80, 80);
+}
+  
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/*Reveal*/
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.reveal2{
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal2.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.reveal3{
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal3.active{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+/*Content*/
+
+.content{
+  overflow: hidden;
+}
+
+/*Common Parameter*/
+
+h2{
+  font-family: 'Nanum Myeongjo', sans-serif;
+  font-size: 3vw;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+p{
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 350;
+  line-height: 1.7em;
+}
+
+a{
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 350;
+  line-height: 1.7em;
+}
+
+/*Top Section*/
+
+.topsection{
+  display: flex;
+  overflow: hidden;
+  padding: 40px 0;
+  background-color:rgb(42, 76, 76);
+}
+
+.topsectiondescription{
+  width: 35vw;
+  display: grid;
+  align-items: center;
+  margin: auto 5% auto 5%;
+  z-index: 5;
+  color: #ffffff;
+}
+
+.topsectiondescription h1{
+  font-family: 'Nanum Myeongjo', sans-serif;
+  font-size: 7vw;
+  font-weight: 350;
+  letter-spacing: 3px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.topsectiondescription p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 40px 5% 0 0;
+  line-height: 1.7em;
+  text-align: left;
+  width: 480px;
+}
+
+.image-container {
+  width: 50vw; 
+  aspect-ratio: 1/0.8; 
+  border-radius: 7%;
+  overflow: hidden; 
+  position: relative; /* Relative positioning for absolutely positioned children */
+}
+
+.zoom-image{
+  width: 100%; /* Image width matches container width */
+  height: 100%; /* Image height matches container height */
+  object-fit: cover; /* Ensures images cover the container without stretching */
+  position: absolute; /* Position absolute for layering */
+  transition: opacity 2s ease-in-out; /* Smoother transition for fading */
+  opacity: 0.8; /* Start fully visible */
+}
+
+.top-section-right-column hr{
+  border: none;
+  width: 50vw;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 30px auto 0 auto;
+  justify-content: center;
+}
+
+
+/*Tart*/
+
+.tart{
+  display: flex;
+  padding: 80px 0;
+}
+
+.tart img{
+  width: 45vw;
+  aspect-ratio: 1/0.9;
+  object-fit: cover;
+  margin: 0 0 0 8%;
+  border-radius: 8%;
+  border-style: solid;
+  object-position: 50% 55%;
+}
+
+.tart-description{
+  width: 500px;
+  margin: 3% auto 5% auto;
+}
+
+.tart-description a{
+  color: #000000;
+}
+
+.tart-description hr{
+  margin-top: 30px;
+  width: 500px;
+}
+
+/*Cake*/
+
+.cake{
+  display: flex;
+  padding: 80px 5%;
+}
+
+.cake img{
+  width: 48vw;
+  aspect-ratio: 1/0.9;
+  object-fit: cover;
+  margin: 0 6% 0 2%;
+  border-radius: 15% 0 15% 0;
+  border-style: solid;
+}
+
+.cake-description{
+  width: 450px;
+  margin: auto;
+}
+
+.cake-description a{
+  color: #ffffff;
+  background-color:#000000;
+  padding: 10px 30px;
+}
+
+.cake-line-1{
+  width: 25vw;
+  margin: 30px 5% 10px 0;
+}
+
+.cake-line-2{
+  width: 25vw;
+  margin: 30px 0 0 12%;
+}
+
+
+/*Bread*/
+
+.bread{
+  display: flex;
+  padding: 80px 5%;
+  overflow: hidden;
+}
+
+.bread img{
+  width: 58vw;
+  aspect-ratio: 1/0.8;
+  object-fit: cover;
+  margin: 0 4% 0 0;
+  border-radius: 5%;
+  border-style: solid;
+}
+
+.bread-description{
+  width: 28vw;
+  margin: auto;
+}
+
+.bread-description p{
+  align-items: center;
+}
+
+.bread-description a{
+  color: #ffffff;
+  background-color:#000000;
+  padding: 10px 30px;
+}
+
+/*Gallery Quote*/
+
+.galleryquote{
+  position: relative;
+}
+
+.gallery-image img{
+  width: 90vw;
+  height: 600px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  filter: brightness(0.3);
+}
+
+.galleryquote p{
+  color: #ffffff;
+  position: absolute;
+  top: 28%;
+  left: 10%;
+  width: 1000px;
+  font-family: ;
+  line-height: 1.5em;
+}
+
+/*Cookie*/
+
+.cookie{
+  display: flex;
+  padding: 80px 5%;
+  overflow: hidden;
+}
+
+.cookie img{
+  width: 40vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin: 0 6% 0 2%;
+  border-radius: 15% 0 15% 0;
+  border-style: solid;
+}
+
+.cookie-description{
+  width: 520px;
+  margin: auto;
+}
+
+.cookie-description a{
+  color: #ffffff;
+  background-color:#000000;
+  padding: 10px 30px;
+}
+
+.cookie-line-1{
+  width: 20vw;
+  margin: 30px 5% 10px 0;
+}
+
+.cookie-line-2{
+  width: 20vw;
+  margin: 20px 0 0 20%;
+}
+
+.cookie-line-3{
+  width: 20vw;
+  margin: 20px 0 0 40%;
+}
+
+/*Pastry*/
+
+.pastry{
+  display: flex;
+  padding: 80px 5%;
+}
+
+.pastry img{
+  width: 45vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 15% 0 15% 0;
+  border-style: solid;
+}
+
+.pastry-description{
+  padding: 50px;
+  width: 600px;
+  margin: auto;
+}
+
+.pastry-description a{
+  color: #000000;
+}
+
+.pastry-line-1{
+  margin-top: 20px;
+}
+
+
+/*copyright*/
+
+.copyright{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
+  color: grey;
+  bottom: 2%;
+}
+
+
+@media only screen and (max-width:1700px){
+
+  /*Common Parameter*/
+
+  p,
+  a{
+    font-size: 19px;
+  }
+
+  /*Top Section*/
+
+  .topsectiondescription p{
+    font-size: 20px;
+    line-height: 1.7em;
+    width: 450px;
+  }
+
+  /*Gallery Quote*/
+
+  .galleryquote p{
+    width: 940px;
+  }
+
+
+}
+
+@media only screen and (max-width:1500px){
+
+  /*Common Parameter*/
+
+  p,
+  a{
+    font-size: 18px;
+  }
+
+  /*Top Section*/
+
+  .topsectiondescription p{
+    font-size: 18px;
+    width: 400px;
+  }
+
+  /*Tart*/
+
+  .tart img{
+    width: 48vw;
+    margin: 0 0 0 6%;
+  }
+
+  .tart-description,
+  .tart-description hr{
+    width: 450px;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding: 80px 4%;
+  }
+
+  .cake img{
+    width: 50vw;
+    margin: 0 4% 0 2%;
+  }
+
+  .cake-description{
+    width: 410px;
+  }
+
+  .cake-line-1{
+    width: 25vw;
+    margin: 30px 5% 10px 0;
+  }
+
+  .cake-line-2{
+    width: 25vw;
+    margin: 30px 0 0 12%;
+  }
+
+  /*Gallery Quote*/
+
+  .galleryquote p{
+    top: 28%;
+    left: 10%;
+    width: 800px;
+    line-height: 1.5em;
+  }
+
+  /*Cookie*/
+
+  .cookie{
+    padding: 80px 3%;
+  }
+
+  .cookie img{
+    width: 45vw;
+    aspect-ratio: 1/1;
+    margin: 0 6% 0 2%;
+  }
+
+  .cookie-description{
+    width: 470px;
+  }
+
+}
+
+
+@media only screen and (max-width:1200px){
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 3.5vw;
+  }
+
+  p,
+  a{
+    font-size: 17px;
+  }
+
+  /*Top Section*/
+
+  .image-container {
+    width: 52vw; 
+    aspect-ratio: 1/0.9; 
+  }
+
+  /*Tart*/
+
+  .tart img{
+    width: 48vw;
+    aspect-ratio: 1/1.1;
+    margin: 0 0 0 4%;
+  }
+
+  .tart-description,
+  .tart-description hr{
+    width: 380px;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding: 60px 2%;
+  }
+
+  .cake img{
+    width: 50vw;
+    aspect-ratio: 1/1;
+    margin: 0 2% 0 2%;
+  }
+
+  .cake-description{
+    width: 390px;
+  }
+
+  .cake-line-1{
+    width: 350px;
+    margin: 30px 5% 10px 0;
+  }
+
+  .cake-line-2{
+    width: 350px;
+    margin: 20px 0 0 14%;
+  }
+
+  /*Bread*/
+
+  .bread{
+    padding: 80px 3%;
+  }
+
+  .bread img{
+    margin: 0 2% 0 0;
+  }
+
+  .bread-description{
+    width: 30vw;
+  }
+
+  /*Gallery Quote*/
+
+  .gallery-image img{
+    width: 95vw;
+    height: 550px;
+    filter: brightness(0.3);
+  }
+
+  .galleryquote p{
+    top: 28%;
+    left: 8%;
+    width: 730px;
+  }
+
+  /*Cookie*/
+
+  .cookie{
+    padding: 80px 1%;
+  }
+
+  .cookie img{
+    width: 48vw;
+    aspect-ratio: 1/1.1;
+    margin: 0 3% 0 1%;
+  }
+
+  .cookie-description{
+    width: 400px;
+  }
+
+  /*Pastry*/
+
+  .pastry{
+    padding: 80px 2%;
+  }
+
+  .pastry img{
+    width: 45vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .pastry-description{
+    width: 500px;
+  }
+
+  .pastry-line-1{
+    margin-top: 20px;
+  }
+
+
+}
+
+
+@media only screen and (max-width:1000px){
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 4vw;
+  }
+
+  p,
+  a{
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+
+  /*Top Section*/
+
+  .image-container {
+    width: 52vw; 
+    aspect-ratio: 1/1.1; 
+  }
+
+  .topsectiondescription p{
+    font-size: 16px;
+    width: 280px;
+  }
+
+  /*Tart*/
+
+  .tart img{
+    width: 50vw;
+    aspect-ratio: 1/1.2;
+    margin: 0 0 0 3%;
+  }
+
+  .tart-description,
+  .tart-description hr{
+    width: 320px;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding: 50px 2%;
+  }
+
+  .cake img{
+    aspect-ratio: 1/1.1;
+  }
+
+  .cake-description{
+    width: 310px;
+  }
+
+  .cake-line-1{
+    width: 280px;
+    margin: 30px 5% 10px 0;
+  }
+
+  .cake-line-2{
+    width: 280px;
+    margin: 20px 0 0 14%;
+  }
+
+  /*Bread*/
+
+  .bread{
+    padding: 60px 2%;
+  }
+
+  .bread img{
+    aspect-ratio: 1/1;
+    margin: 0 1% 0 0;
+  }
+
+  .bread-description{
+    width: 32vw;
+  }
+
+  /*Gallery Quote*/
+
+  .galleryquote p{
+    top: 27%;
+    left: 7%;
+    width: 610px;
+  }
+
+  /*Cookie*/
+
+  .cookie{
+    padding: 60px 1%;
+  }
+
+  .cookie img{
+    width: 50vw;
+    aspect-ratio: 1/1.25;
+    margin: 0 2% 0 1%;
+  }
+
+  .cookie-description{
+    width: 38vw;
+  }
+
+  .cookie-line-1{
+    width: 20vw;
+    margin: 25px 5% 10px 0;
+  }
+
+  .cookie-line-2{
+    width: 20vw;
+    margin: 15px 0 0 20%;
+  }
+
+  .cookie-line-3{
+    width: 20vw;
+    margin: 15px 0 0 40%;
+  }
+
+  /*Pastry*/
+
+  .pastry{
+    padding: 60px 2%;
+  }
+
+  .pastry img{
+    width: 48vw;
+    aspect-ratio: 1/1.25;
+  }
+
+  .pastry-description{
+    width: 47vw;
+  }
+
+}
+
+
+@media only screen and (max-width:900px){
+
+  /*Headings*/
+
+  .logo{
+    margin-left: 20px;
+  }
+
+  nav{
+    padding-right: 1%;
+  }
+
+  nav ul li{
+    margin-right: 28px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+
+@media only screen and (max-width:800px){
+
+  /*Common Parameter*/
+
+  p,
+  a{
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  /*Top Section*/
+
+  .topsectiondescription{
+    width: 33vw;
+    margin: auto 4%;
+  }
+
+  .image-container{
+    width: 55vw; 
+    aspect-ratio: 1/1.25; 
+  }
+
+  .top-section-right-column hr{
+    width: 55vw;
+  }
+
+  .topsectiondescription p{
+    font-size: 16px;
+    width: 260px;
+  }
+
+  /*Tart*/
+
+  .tart img{
+    width: 51vw;
+    aspect-ratio: 1/1.3;
+    margin: 0 0 0 2%;
+  }
+
+  .tart-description,
+  .tart-description hr{
+    width: 270px;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding: 50px 1%;
+  }
+
+  .cake img{
+    aspect-ratio: 1/1.2;
+  }
+
+  .cake-description{
+    width: 250px;
+  }
+
+  .cake-line-1{
+    width: 230px;
+    margin: 30px 5% 10px 0;
+  }
+
+  .cake-line-2{
+    width: 230px;
+    margin: 20px 0 0 12%;
+  }
+
+  /*Gallery Quote*/
+
+  .galleryquote p{
+    top: 25%;
+    left: 7%;
+    width: 470px;
+  }
+
+  /*Cookie*/
+
+  .cookie img{
+    width: 50vw;
+    aspect-ratio: 1/1.25;
+    margin: 0 2% 0 0;
+  }
+
+  .cookie-description{
+    width: 38vw;
+  }
+
+  .cookie-line-1{
+    width: 20vw;
+    margin: 25px 5% 10px 0;
+  }
+
+  .cookie-line-2{
+    width: 20vw;
+    margin: 15px 0 0 20%;
+  }
+
+  .cookie-line-3{
+    width: 20vw;
+    margin: 15px 0 0 40%;
+  }
+
+  /*Pastry*/
+
+  .pastry{
+    padding: 50px 2%;
+  }
+
+  .pastry img{
+    width: 50vw;
+    aspect-ratio: 1/1.3;
+  }
+
+  .pastry-description{
+    width: 45vw;
+    padding: 30px;
+  }
+}
+
+
+@media only screen and (max-width:700px){
+
+	/*Headings*/
+
+  nav ul li{
+    margin-right: 15px;
+  } 
+
+  nav ul li a{
+    font-size: 15px;
+  }
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 5vw;
+  }
+
+  p,
+  a{
+    font-size: 17px;
+    line-height: 1.6em;
+  }
+
+  /*Top Section*/
+
+  .topsection{
+    display: grid;
+    padding: 40px 0;
+  }
+
+  .topsectiondescription{
+    width: unset;
+    margin: auto 10%;
+  }
+
+  .topsectiondescription h1{
+    font-size: 7vw;
+    letter-spacing: 5px;
+    line-height: 1.3em;
+    margin-top: 20px;
+  }
+
+  .topsectiondescription p{
+    font-size: 18px;
+    line-height: 1.5em;
+    width: 380px;
+    margin: 20px 0 0 0;
+  }
+
+  .image-container{
+    width: 85vw; 
+    aspect-ratio: 1/1.1;
+    margin: 30px auto; 
+  }
+
+  .top-section-right-column hr{
+    width: 85vw;
+    height: 1px;
+    margin: 0px auto 0 auto;
+  }
+
+  /*Tart*/
+
+  .tart{
+    display: grid;
+    padding: 80px 0;
+  }
+
+  .tart img{
+    width: 85vw;
+    aspect-ratio: 1/0.85;
+    margin: 0 auto 20px auto;
+  }
+
+  .tart-description,
+  .tart-description hr{
+    width: 450px;
+  }
+
+  .tart-description{
+    margin: 30px 0 0 12%;
+  }
+
+  /*Cake*/
+
+  .cake{
+    display: grid;
+    padding: 50px 1%;
+  }
+
+  .cake img{
+    width: 85vw;
+    aspect-ratio: 1/0.9;
+    margin: 20px auto;
+  }
+
+  .cake-description{
+    width: unset;
+    margin: auto 8%;
+  }
+
+  .cake-line-1{
+    width: 430px;
+    margin: 20px 5% 10px 0;
+  }
+
+  .cake-line-2{
+    width: 430px;
+    margin: 15px 0 0 13%;
+  }
+
+  /*Bread*/
+
+  .bread{
+    display: grid;
+    padding: 60px 2%;
+  }
+
+  .bread img{
+    width: 90vw;
+    aspect-ratio: 1/0.75;
+    margin: 10px auto;
+  }
+
+  .bread-description{
+    margin: 20px 0 20px 8%;
+    width: 60vw;
+  }
+
+  /*Gallery Quote*/
+
+  .gallery-image img{
+    width: 95vw;
+    height: 560px;
+    filter: brightness(0.3);
+  }
+
+  .galleryquote p{
+    top: 19%;
+    left: 7%;
+    width: 490px;
+  }
+
+  /*Cookie*/
+
+  .cookie{
+    display: grid;
+    padding: 80px 0;
+  }
+
+  .cookie img{
+    width: 85vw;
+    aspect-ratio: 1/1;
+    margin: auto;
+  }
+
+  .cookie-description{
+    width: unset;
+    margin: auto 10%;
+  }
+
+  .cookie-line-1{
+    width: 50vw;
+    margin: 25px 5% 10px 0;
+  }
+
+  .cookie-line-2{
+    width: 50vw;
+    margin: 10px 0 0 20%;
+  }
+
+  .cookie-line-3{
+    width: 50vw;
+    margin: 10px 0 20px 40%;
+  }
+
+  /*Pastry*/
+
+  .pastry{
+    display: grid;
+    padding: 50px 2%;
+  }
+
+  .pastry img{
+    width: 90vw;
+    margin: 0 auto;
+    aspect-ratio: 1/0.9;
+  }
+
+  .pastry-description{
+    width: 65vw;
+    padding: 0px;
+    margin: 30px 0 0 8dvi;
+  }
+}
+
+
+@media only screen and (max-width:600px){
+
+  /*Headings*/
+
+  .logo{
+    width: 12%;
+    max-width: 50px;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
+
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
+
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+
+  nav ul li a:hover{
+    color:black;
+  }
+
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.5s;
+  }
+
+  nav ul li a:hover::after{
+    width: 0;
+  }
+
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 55px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  #menulist{
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 6vw;
+  }
+
+  p,
+  a{
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  /*Top Section*/
+
+  .topsectiondescription{
+    margin: auto 8%;
+  }
+
+  .topsectiondescription h1{
+    font-size: 8vw;
+  }
+
+  .topsectiondescription p{
+    font-size: 17px;
+    margin: 15px 0 0 0;
+  }
+
+  .image-container{
+    width: 90vw; 
+    margin: 30px auto 20px auto; 
+  }
+
+  .top-section-right-column hr{
+    width: 90vw;
+  }
+
+  /*Tart*/
+
+  .tart img{
+    width: 90vw;
+    aspect-ratio: 1/0.85;
+    margin: 0 auto 20px auto;
+  }
+
+  .tart-description,
+  .tart-description hr{
+    width: 400px;
+  }
+
+  .tart-description{
+    margin: 30px 0 0 10%;
+  }
+
+  /*Cake*/
+
+  .cake{
+    display: grid;
+    padding: 50px 1%;
+  }
+
+  .cake img{
+    width: 90vw;
+    aspect-ratio: 1/0.9;
+  }
+
+  .cake-description{
+    margin: auto 7%;
+  }
+
+  .cake-line-1{
+    width: 70vw;
+    margin: 20px 5% 10px 0;
+  }
+
+  .cake-line-2{
+    width: 70vw;
+    margin: 15px 0 0 12%;
+  }
+
+  /*Gallery Quote*/
+
+  .gallery-image img{
+    width: 95vw;
+    height: 600px;
+    filter: brightness(0.3);
+  }
+
+  .galleryquote p{
+    top: 18%;
+    left: 7%;
+    width: 380px;
+  }
+
+  /*Cookie*/
+
+  .cookie{
+    padding: 60px 0;
+  }
+
+  .cookie img{
+    width: 90vw;
+    aspect-ratio: 1/1;
+  }
+
+  .cookie-description{
+    margin: auto 7%;
+  }
+
+  .cookie-line-1{
+    width: 50vw;
+    margin: 25px 5% 10px 0;
+  }
+
+  .cookie-line-2{
+    width: 50vw;
+    margin: 10px 0 0 20%;
+  }
+
+  .cookie-line-3{
+    width: 50vw;
+    margin: 10px 0 20px 40%;
+  }
+
+  /*Pastry*/
+
+  .pastry{
+    padding: 40px 0;
+  }
+
+  .pastry img{
+    width: 90vw;
+    margin: 0 auto;
+    aspect-ratio: 1/0.9;
+  }
+
+  .pastry-description{
+    width: 70vw;
+    padding: 0px;
+    margin: 30px 0 0 8%;
+  }
+  
+}
+
+
+@media only screen and (max-width:500px){
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 6.5vw;
+  }
+
+  p,
+  a{
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  /*Top Section*/
+
+  .topsectiondescription{
+    margin: auto 7%;
+  }
+
+  .topsectiondescription h1{
+    margin-top: 0px;
+  }
+
+  .topsectiondescription p{
+    font-size: 16px;
+    line-height: 1.4em;
+    width: 280px;
+  }
+
+  .image-container{
+    aspect-ratio: 1/1.2;
+    margin: 25px auto 15px auto; 
+  }
+
+  /*Tart*/
+
+  .tart-description,
+  .tart-description hr{
+    width: 310px;
+  }
+
+  .tart-description{
+    margin: 15px 0 0 10%;
+  }
+
+  /*Bread*/
+
+  .bread-description{
+    margin: 20px 0 20px 6%;
+    width: 70vw;
+  }
+
+  /*Gallery Quote*/
+
+  .gallery-image img{
+    width: 95vw;
+    height: 600px;
+    filter: brightness(0.3);
+  }
+
+  .galleryquote p{
+    top: 18%;
+    left: 8%;
+    width: 340px;
+  }
+
+} 
+
+
+@media only screen and (max-width:450px){
+
+  /*Common Parameter*/
+
+  p,
+  a{
+    line-height: 1.4em;
+  }
+
+  /*Top Section*/
+
+  .topsectiondescription p{
+    font-size: 15px;
+  }
+
+  /*Tart*/
+
+  .tart-description,
+  .tart-description hr{
+    width: 270px;
+  }
+
+  .tart-description{
+    margin: 15px 0 0 9%;
+  }
+
+  /*Cake*/
+
+  .cake{
+    padding: 30px 1%;
+  }
+
+  .cake img{
+    aspect-ratio: 1/1;
+  }
+
+  /*Gallery Quote*/
+
+  .gallery-image img{
+    width: 95vw;
+    height: 600px;
+    filter: brightness(0.3);
+  }
+
+  .galleryquote p{
+    top: 12%;
+    left: 10%;
+    width: 280px;
+  }
+
+}
+
