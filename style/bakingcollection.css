@@ -81,42 +81,42 @@ nav ul li a:hover::after{
   width: 100%;
 }
 
-/*Reveal*/
-
-.reveal{
+/* Common Reveal Styles */
+.reveal {
   position: relative;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(100px); /* Start by moving content down */
+  transition: all 2s ease; /* Smooth transition */
+}
+
+.reveal.active {
+  opacity: 1; /* Visible when active */
+  transform: translateY(0); /* Moves back to normal position */
+}
+
+/* Specific Reveal Animations */
+.reveal[data-reveal-type="reveal"] {
   transform: translateY(100px);
-  opacity: 0;
-  transition: all 2s ease;
 }
 
-.reveal.active{
+.reveal[data-reveal-type="reveal"].active {
   transform: translateY(0px);
-  opacity: 1;
 }
 
-.reveal2{
-  position: relative;
+.reveal[data-reveal-type="reveal2"] {
   transform: translateX(-100px);
-  opacity: 0;
-  transition: all 2s ease;
 }
 
-.reveal2.active{
+.reveal[data-reveal-type="reveal2"].active {
   transform: translateX(0px);
-  opacity: 1;
 }
 
-.reveal3{
-  position: relative;
+.reveal[data-reveal-type="reveal3"] {
   transform: translateX(100px);
-  opacity: 0;
-  transition: all 2s ease;
 }
 
-.reveal3.active{
+.reveal[data-reveal-type="reveal3"].active {
   transform: translateX(0px);
-  opacity: 1;
 }
 
 /*Content*/
