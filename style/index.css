@@ -81,49 +81,48 @@ nav ul li a:hover::after{
   width: 100%;
 }
 
-/*Reveal*/
-
-.reveal{
+/* Common Reveal Styles */
+.reveal {
   position: relative;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(100px); /* Start by moving content down */
+  transition: all 2s ease; /* Smooth transition */
+}
+
+.reveal.active {
+  opacity: 1; /* Visible when active */
+  transform: translateY(0); /* Moves back to normal position */
+}
+
+/* Specific Reveal Animations */
+.reveal[data-reveal-type="reveal"] {
   transform: translateY(100px);
-  opacity: 0;
-  transition: all 2s ease;
 }
 
-.reveal.active{
+.reveal[data-reveal-type="reveal"].active {
   transform: translateY(0px);
-  opacity: 1;
 }
 
-.reveal2{
-  position: relative;
+.reveal[data-reveal-type="reveal2"] {
   transform: translateX(-100px);
-  opacity: 0;
-  transition: all 2s ease;
 }
 
-.reveal2.active{
+.reveal[data-reveal-type="reveal2"].active {
   transform: translateX(0px);
-  opacity: 1;
 }
 
-.reveal3{
-  position: relative;
+.reveal[data-reveal-type="reveal3"] {
   transform: translateX(100px);
-  opacity: 0;
-  transition: all 2s ease;
 }
 
-.reveal3.active{
+.reveal[data-reveal-type="reveal3"].active {
   transform: translateX(0px);
-  opacity: 1;
 }
-
 
 
 /*First Section*/
 
-.firstpartmobile{
+.first-part-mobile{
 	display: none;
 }
 
@@ -231,7 +230,7 @@ nav ul li a:hover::after{
   line-height: 1.1em;
   font-weight: 300;
   letter-spacing: 5px;
-  margin: 20px 0 -100px 10%;
+  margin: 50px 0 -100px 10%;
   z-index: 5;
   text-shadow: 1px 1px 1px rgb(3, 3, 3);
   color: #ffffff;
@@ -252,7 +251,7 @@ nav ul li a:hover::after{
   width: 620px;
   line-height: 1.7em;
   color: #ffffff;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .secondpart-scroll-container{
@@ -633,7 +632,7 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 20px 0 -90px 80px;
+    margin: 50px 0 -90px 80px;
   }
 
   /*Fourth Section*/
@@ -673,14 +672,14 @@ nav ul li a:hover::after{
 
   .secondpartdescription h1{
     font-size: 7vw;
-    margin: 30px 0 -105px 75px;
+    margin: 50px 0 -105px 75px;
   }
 
   .secondpartdescription p{
     font-size: 17px;
     font-weight: 400;
     width: 550px;
-    margin-right: 0%;
+    margin: 20px 0 0 0;
   }
 
   .secondpart-scroll-container{
@@ -816,7 +815,8 @@ nav ul li a:hover::after{
   }
 
   .secondpartdescription p{
-    margin: 30px 0 20px 0;
+    width: 440px;
+    margin: 0px 0 20px 0;
   }
 
   .secondpart-scroll-container{
@@ -946,13 +946,13 @@ nav ul li a:hover::after{
 
   .secondpartdescription h1{
     font-size: 70px;
-    margin: 50px 0 -95px 50px;
+    margin: 70px 0 -95px 30px;
   }
 
   .secondpartdescription p{
     font-size: 16px;
     letter-spacing: 1px;
-    width: 380px;
+    width: 370px;
   }
 
   .container img{
@@ -1117,7 +1117,7 @@ nav ul li a:hover::after{
     font-family: 'Lora', sans-serif;
     font-size: 65px;
     font-weight: 200;
-    margin: 80px 0 -95px 60px;
+    margin: 90px 0 -95px 50px;
   }
 
   .secondpartdescription p{
@@ -1226,86 +1226,102 @@ nav ul li a:hover::after{
     display: none;
   }
 
-  .firstpartmobile{
+  .first-part-mobile{
     display: grid;
-    overflow-x: hidden;
-    margin-bottom: 30px;
+    overflow: hidden;
+    margin: 20px auto 50px auto;
   }
 
-  .firstpartmobiletopsection{
-    height: 420px;
-    background: linear-gradient(330deg, rgb(248, 163, 160) 10%, rgb(255, 251, 239) 96.1%);
-    padding: 0px 3%;
-    position: relative;
+  .first-part-mobile-description{
+    margin: auto 3% auto 12%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    overflow: hidden;
   }
-
-  .firstpartmobiletopsection h1{
-    font-size: 13vw;
-    letter-spacing: 6px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 750;
+  
+  .first-part-mobile-description h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #000000;
+    text-shadow: 1px 1px 1px #ffffff;
+  }
+  
+  .first-part-mobile-description h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.4em;
+    margin: 0 5%;
+  }
+  
+  .first-part-mobile-image-row{
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .first-part-mobile-image-row h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 9vw;
+    letter-spacing: 5px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    align-items: center;
+    margin: auto -11% auto 10px;
+    z-index: 10;
+    text-shadow: 1px 1px 1px #ffffff;
+  }
+  
+  .first-part-mobile-image-container {
     position: relative;
-    z-index: 2;
-    color: #151515;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    overflow: hidden; /* Ensures the image stays within bounds */
+    width: 85vw; /* Container width */
+    aspect-ratio: 1/1.4;
+    margin-left: 5%;
   }
-
-  .firstpartpictureshown{
+  
+  #panning-image {
     position: absolute;
     top: 0;
-    right: 0;
-    height: 420px;
-    width: 75%;
-    background-image: url(AboutMe.jpeg);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    left: 0;
+    width: 125%; /* Wider than container to enable panning */
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the container without stretching */
+    transform-origin: left center; /* Start at left side for panning */
+    opacity: 0; /* Start transparent for fade-in */
+    animation: panLeftToRight 5s linear infinite, fadeInOut 5s linear infinite; /* 5-second duration for panning and fading */
+  
   }
-
-  .firstpartmobiledescription{
-    margin: 40px 0;
-    overflow: hidden;
+  
+  /* Keyframes for the panning effect */
+  @keyframes panLeftToRight {
+    0% {
+      transform: translateX(0) scale(1); /* Start from left side */
+    }
+    50% {
+      transform: translateX(-12%) scale(1.1); /* Pan to the middle */
+    }
+    100% {
+      transform: translateX(-24%) scale(1.2); /* Pan to the right side */
+    }
   }
-
-  .firstpartmobiledescription h2{
-    font-size: 28px;
-    letter-spacing: 2px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    line-height: 1.4em;
-    text-align: center;
-  }
-
-  .firstpartmobiledescription h3{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 1.5em;
-    font-weight: 500;
-    text-align: center;
-    display: block;
-    margin: 20px auto 25px auto;
-    width: 480px;
-    overflow: hidden;
-  }
-
-  .firstpartimagerow{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-  }
-
-  .firstpartimagerow img{
-    width: 27vw;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 100%;
-    background: linear-gradient(-45deg, #FFC796 0%, #ff82a5 100%);
-    padding: 6px;
+  
+  /* Keyframes for the fade-in and fade-out effect */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0; /* Start transparent */
+    }
+    20% {
+      opacity: 1; /* Fade in */
+    }
+    80% {
+      opacity: 1; /* Stay visible */
+    }
+    100% {
+      opacity: 0; /* Fade out at the end */
+    }
   }
 
   /*Second Section*/
@@ -1431,29 +1447,24 @@ nav ul li a:hover::after{
 
   /*First Section*/
 
-  .firstpartmobiletopsection,
-  .firstpartpictureshown{
-    height: 360px;
+  .first-part-mobile-description h1{
+    font-size: 60px;
   }
-
-  .firstpartmobiledescription h2{
+  
+  .first-part-mobile-description h2{
     font-size: 25px;
   }
 
-  .firstpartmobiledescription h3{
-    font-size: 17px;
-    width: 420px;
-    margin-bottom: 10px;
-  }
-
-  .firstpartimagerow{
-    gap: 20px;
+  .first-part-mobile-image-row h3{
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin: auto -12% auto 10px;
   }
 
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 70px -30px -90px 50px;
+    margin: 90px -30px -90px 30px;
     font-size: 60px;
   }
 
@@ -1547,43 +1558,37 @@ nav ul li a:hover::after{
 
   /*First Section*/
 
-  .firstpartmobiletopsection,
-  .firstpartpictureshown{
-    height: 340px;
+  .first-part-mobile{
+    margin: 0 auto 50px auto;
   }
 
-  .firstpartmobiletopsection h1{
-    font-size: 15vw;
-    letter-spacing: 3px;
-    font-weight: 700;
+  .first-part-mobile-description{
+    margin: auto 6% auto 9%;
   }
 
-  .firstpartmobiledescription h2{
-    font-size: 25px;
-    font-weight: 550;
-    letter-spacing: 1px;
+  .first-part-mobile-description h1{
+    font-size: 55px;
+  }
+  
+  .first-part-mobile-description h2{
+    font-size: 22px;
   }
 
-  .firstpartmobiledescription h3{
-    font-size: 16px;
-    width: 390px;
-    margin: 15px auto 0px auto;
-  }  
-
-  .firstpartimagerow{
-    gap: 13px;
-    margin: 3px 0;
+  .first-part-mobile-image-row h3{
+    font-size: 55px;
+    margin: auto -12% auto 10px;
   }
 
-  .firstpartimagerow img{
-    width: 28vw;
-    padding: 5px;
+  .first-part-mobile-image-container {
+    width: 92vw;
+    aspect-ratio: 1/1.5;
+    margin-left: 6%;
   }
 
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 95px -10px -90px 35px;
+    margin: 120px -10px -90px 35px;
     font-size: 55px;
     letter-spacing: 3px;
   }
@@ -1591,7 +1596,6 @@ nav ul li a:hover::after{
   .secondpartdescription p{
     font-size: 15px;
     width: 350px;
-    margin: 30px 0 20px 0;
   }
 
   .secondpartsliderdescription p{
@@ -1681,22 +1685,27 @@ nav ul li a:hover::after{
 
   /*First Section*/
 
-  .firstpartmobiledescription h2{
-    font-size: 23px;
-    letter-spacing: 1px;
+  .first-part-mobile{
+    margin: 0 auto 50px auto;
   }
 
-  .firstpartmobiledescription h3{
-    font-size: 15px;
-    width: 370px;
-    margin: 15px auto 0px auto;
+  .first-part-mobile-description h1{
+    font-size: 47px;
+  }
+  
+  .first-part-mobile-description h2{
+    font-size: 18px;
+  }
 
-  }  
+  .first-part-mobile-image-row h3{
+    font-size: 50px;
+    margin: auto -12% auto 10px;
+  }
 
   /*Second Section*/
 
   .secondpartdescription h1{
-    margin: 90px 0 -90px 25px;
+    margin: 120px 0 -90px 25px;
     font-size: 45px;
   }
 
@@ -1705,7 +1714,6 @@ nav ul li a:hover::after{
     letter-spacing: 0px;
     font-weight: 400;
     width: 300px;
-    margin: 30px 0 20px 0;
   }
 
   .secondpart-scroll-container{
@@ -1754,27 +1762,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:400px){
-
-  /*First Section*/
-
-  .firstpartmobiletopsection,
-  .firstpartpictureshown{
-    height: 280px;
-  }
-
-  .firstpartmobiledescription{
-    margin: 30px 0px;
-  }
-
-  .firstpartmobiledescription h2{
-    font-size: 21px;
-  }
-
-  .firstpartmobiledescription h3{
-    letter-spacing: 0px;
-    margin: 15px auto 0px auto;
-    width: 320px;
-  } 
 
   /*Third Section*/
 
