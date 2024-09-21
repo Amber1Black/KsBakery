@@ -79,14 +79,16 @@
   
   <div class="first-part-mobile">
     <div class="first-part-mobile-description">
-      <h1>K's </h1>
-      <h2>Indulgence in Baking and Travel Inspiration</h2>
+      <h2>Indulgence in Baking</h2>
+      <img src = "pictures/logo-in-white.png">
+      <h2>and Travel Inspiration</h2>
     </div>
-    <div class="first-part-mobile-image-row">
-      <h3>PASSION</h3>
-      <div class="first-part-mobile-image-container">
-        <img id="panning-image" src="pictures/white-flower-tarts.jpg" alt="Panning Image">
-      </div>
+    
+    <div class="first-part-mobile-image-container-1">
+      <img id="change-image-1" src="pictures/heart-shape-tart-ring.jpg" alt="Tart ring with heart-shape cream piping on top">
+    </div>
+    <div class="first-part-mobile-image-container-2">
+      <img id="change-image-2" src="pictures/old-royal-naval-college-3-first-page-mobile.jpg" alt="Ancient architecture in Old royal Naval College">
     </div>
   </div>
 
@@ -304,30 +306,41 @@
   <script src="js/reveal.js"></script> 
 
   <script>
-    //First Part Mobile
-    const imageElement = document.getElementById('panning-image');
-    const images = [
+    // First Part Mobile
+    const imageElement1 = document.getElementById('change-image-1');
+    const imageElement2 = document.getElementById('change-image-2');
+    
+    // List of images for both elements
+    const images1 = [
+      'pictures/heart-shape-tart-ring.jpg',
       'pictures/white-flower-tarts.jpg',
-      'pictures/flower-choux-pastry.jpg',
-      'pictures/choco-ring-tarts.jpg',
-      'pictures/old-royal-naval-college-3.jpg',
-      'pictures/chelsea-embankment-1.jpg',
+      'pictures/choco-ring-tarts-first-page-mobile.jpg'
+    ]; // First image list
+    
+    const images2 = [
+      'pictures/old-royal-naval-college-3-first-page-mobile.jpg',
+      'pictures/karuizawa-1.jpg',
       'pictures/surrey-quays-1.jpg'
-    ]; // List of images
-    let currentIndex = 0;
+    ]; // Second image list
     
-    // Duration of the animation should match the CSS duration
-    const animationDuration = 5000; // 5 seconds
+    let currentIndex1 = 0;
+    let currentIndex2 = 0;
     
-    // Function to change image
-    function changeImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      imageElement.src = images[currentIndex];
+    // Function to change the first image every 5 seconds
+    function changeImage1() {
+      currentIndex1 = (currentIndex1 + 1) % images1.length;
+      imageElement1.src = images1[currentIndex1] + '?t=' + new Date().getTime(); // Force reload
     }
     
-    // Set interval to change image
-    setInterval(changeImage, animationDuration);
-  
+    // Function to change the second image every 5 seconds
+    function changeImage2() {
+      currentIndex2 = (currentIndex2 + 1) % images2.length;
+      imageElement2.src = images2[currentIndex2] + '?t=' + new Date().getTime(); // Force reload
+    }
+    
+    // Set intervals for each image change
+    setInterval(changeImage1, 4000); // Change the first image every 4 seconds
+    setInterval(changeImage2, 4000); // Change the second image every 4 seconds
   </script>
   
 
