@@ -1229,102 +1229,81 @@ nav ul li a:hover::after{
   .first-part-mobile{
     display: grid;
     overflow: hidden;
-    margin: 20px auto 50px auto;
-  }
-
-  .first-part-mobile-description{
-    margin: auto 3% auto 12%;
-    display: flex;
-    align-items: center;
+    position: relative;
   }
   
-  .first-part-mobile-description h1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 70px;
-    letter-spacing: 3px;
-    font-weight: 600;
-    color: #000000;
-    text-shadow: 1px 1px 1px #ffffff;
+  .first-part-mobile-image-container-1,
+  .first-part-mobile-image-container-2{
+    overflow: hidden;
+    width: 100vw;
+  }
+  
+  .first-part-mobile-image-container-2{
+    margin-top: -5px;
+  }
+  
+  #change-image-1,
+  #change-image-2{
+    width: 100%;
+    aspect-ratio: 1/0.75;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 1;
+    filter: brightness(65%) sepia(10%);
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in; /* Fast transition */
+  }
+  
+  .fade-out {
+    opacity: 0.4; /* Fade to 40% visibility */
+    transition: opacity 0.5s ease-out; /* Fast transition */
+  }
+  
+  .first-part-mobile-description{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .first-part-mobile-description img{
+    width: 20vw;
+    margin: 8% auto;
+    text-align: center;
   }
   
   .first-part-mobile-description h2{
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    color: #000000;
-    line-height: 1.4em;
-    margin: 0 5%;
-  }
-  
-  .first-part-mobile-image-row{
-    display: flex;
-    margin-top: 10px;
-  }
-  
-  .first-part-mobile-image-row h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 9vw;
-    letter-spacing: 5px;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    align-items: center;
-    margin: auto -11% auto 10px;
-    z-index: 10;
-    text-shadow: 1px 1px 1px #ffffff;
-  }
-  
-  .first-part-mobile-image-container {
-    position: relative;
-    overflow: hidden; /* Ensures the image stays within bounds */
-    width: 85vw; /* Container width */
-    aspect-ratio: 1/1.4;
-    margin-left: 5%;
-  }
-  
-  #panning-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 125%; /* Wider than container to enable panning */
-    height: 100%;
-    object-fit: cover; /* Ensure the image fills the container without stretching */
-    transform-origin: left center; /* Start at left side for panning */
-    opacity: 0; /* Start transparent for fade-in */
-    animation: panLeftToRight 5s linear infinite, fadeInOut 5s linear infinite; /* 5-second duration for panning and fading */
-  
-  }
-  
-  /* Keyframes for the panning effect */
-  @keyframes panLeftToRight {
-    0% {
-      transform: translateX(0) scale(1); /* Start from left side */
-    }
-    50% {
-      transform: translateX(-12%) scale(1.1); /* Pan to the middle */
-    }
-    100% {
-      transform: translateX(-24%) scale(1.2); /* Pan to the right side */
-    }
-  }
-  
-  /* Keyframes for the fade-in and fade-out effect */
-  @keyframes fadeInOut {
-    0% {
-      opacity: 0; /* Start transparent */
-    }
-    20% {
-      opacity: 1; /* Fade in */
-    }
-    80% {
-      opacity: 1; /* Stay visible */
-    }
-    100% {
-      opacity: 0; /* Fade out at the end */
-    }
+    font-size: 5.5vw;
+    letter-spacing: 2px;
+    font-weight: 450;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px black;
+    justify-content: center;
   }
 
   /*Second Section*/
+
+  .secondpart{
+    background-color: unset;
+  }
+
+  .secondpartdescription h1,
+  .secondpartdescription p{
+    color: #000000;
+    text-shadow: 1px 1px 1px #ffffff;
+  }
 
   .container img{
     width: 48vw;
@@ -1333,6 +1312,12 @@ nav ul li a:hover::after{
 
   .secondpartsliderdescription{
     width: 46vw;
+  }
+
+  .secondpartsliderdescription h2,
+  .secondpartsliderdescription a,
+  .secondpartsliderdescription p{
+    color: #000000;
   }
 
   /*Third Section*/
@@ -1445,22 +1430,6 @@ nav ul li a:hover::after{
     padding-right: 10px;
   }
 
-  /*First Section*/
-
-  .first-part-mobile-description h1{
-    font-size: 60px;
-  }
-  
-  .first-part-mobile-description h2{
-    font-size: 25px;
-  }
-
-  .first-part-mobile-image-row h3{
-    font-size: 70px;
-    letter-spacing: 5px;
-    margin: auto -12% auto 10px;
-  }
-
   /*Second Section*/
 
   .secondpartdescription h1{
@@ -1555,35 +1524,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:500px){
-
-  /*First Section*/
-
-  .first-part-mobile{
-    margin: 0 auto 50px auto;
-  }
-
-  .first-part-mobile-description{
-    margin: auto 6% auto 9%;
-  }
-
-  .first-part-mobile-description h1{
-    font-size: 55px;
-  }
-  
-  .first-part-mobile-description h2{
-    font-size: 22px;
-  }
-
-  .first-part-mobile-image-row h3{
-    font-size: 55px;
-    margin: auto -12% auto 10px;
-  }
-
-  .first-part-mobile-image-container {
-    width: 92vw;
-    aspect-ratio: 1/1.5;
-    margin-left: 6%;
-  }
 
   /*Second Section*/
 
@@ -1682,25 +1622,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:450px){
-
-  /*First Section*/
-
-  .first-part-mobile{
-    margin: 0 auto 50px auto;
-  }
-
-  .first-part-mobile-description h1{
-    font-size: 47px;
-  }
-  
-  .first-part-mobile-description h2{
-    font-size: 18px;
-  }
-
-  .first-part-mobile-image-row h3{
-    font-size: 50px;
-    margin: auto -12% auto 10px;
-  }
 
   /*Second Section*/
 
