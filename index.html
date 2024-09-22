@@ -59,21 +59,13 @@
   </div>
 
 
-  <div class="firstpartforlargerscreen">
-    <div class="firstmessage">
-      <h1>K's Bakery</h1>
-      <h2>Delight in the exquisite flavors of homemade treats</h2>
-      <p>Wish everyone experience the joy of baking at home, discover endless possibilities, and indulge in delicious baked creations.</p>
+  <div class="first-part-larger-screen">
+    <div class="first-part-logo">
+      <img src = "pictures/first-page-logo.png">
     </div>
-    <div class="outline">
-      <img src ="Pictures/Outline - Heart Shape Tart Ring with shadow.png" alt ="Tart Ring with heart-shape cream piping on top">
-    </div>
-    <div class="pinkbox"></div>
-
-    <div class="firstpartimagecolumn">
-      <img class = "firstpartdecorationimage1" src ="Pictures/First Page - Image Column 1.png" alt = "Images in rotation: Crown cake and coffee cake.">
-      <img class = "firstpartdecorationimage2" src ="Pictures/First Page - Image Column 2.png" alt = "Images in rotation: Choux pastry with flower-shape cream piping on top, flower-shaped cream tart and tart with ring-shaped choco on top">
-      <img class = "firstpartdecorationimage3" src ="Pictures/First Page - Image Column 3.png" alt = "Images in rotation: Custard bread and matcha mushroom bread">
+    
+    <div class="first-part-image-container">
+      <img id="change-image-1" src="pictures/first-page-image-1.jpg" alt="Tart ring with heart-shape cream piping on top">
     </div>
   </div>
   
@@ -82,8 +74,8 @@
       <img src = "pictures/first-page-logo.png">
     </div>
     
-    <div class="first-part-mobile-image-container-1">
-      <img id="change-image-1" src="pictures/first-page-mobile-image-1.jpg" alt="Tart ring with heart-shape cream piping on top">
+    <div class="first-part-mobile-image-container">
+      <img id="change-image-2" src="pictures/first-page-mobile-image-1.jpg" alt="Tart ring with heart-shape cream piping on top">
     </div>
   </div>
 
@@ -301,11 +293,20 @@
   <script src="js/reveal.js"></script> 
 
   <script>
-    // First Part Mobile
+    // First Part
     const imageElement1 = document.getElementById('change-image-1');
+    const imageElement2 = document.getElementById('change-image-2');
     
     // List of images for both elements
     const images1 = [
+      'pictures/first-page-image-1.jpg',
+      'pictures/first-page-image-2.jpg',
+      'pictures/first-page-image-3.jpg',
+      'pictures/first-page-image-4.jpg',
+      'pictures/first-page-image-5.jpg'
+    ]; 
+
+    const images2 = [
       'pictures/first-page-mobile-image-1.jpg',
       'pictures/first-page-mobile-image-2.jpg',
       'pictures/first-page-mobile-image-3.jpg',
@@ -314,15 +315,22 @@
     ]; 
     
     let currentIndex1 = 0;
+    let currentIndex2 = 0;
     
     // Function to change the first image every 5 seconds
     function changeImage1() {
       currentIndex1 = (currentIndex1 + 1) % images1.length;
       imageElement1.src = images1[currentIndex1] + '?t=' + new Date().getTime(); // Force reload
     }
+
+    function changeImage2() {
+      currentIndex2 = (currentIndex2 + 1) % images2.length;
+      imageElement2.src = images2[currentIndex2] + '?t=' + new Date().getTime(); // Force reload
+    }
     
     // Set intervals for each image change
     setInterval(changeImage1, 4000); // Change the first image every 4 seconds
+    setInterval(changeImage2, 4000); // Change the second image every 4 seconds
   </script>
   
 
