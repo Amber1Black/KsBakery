@@ -123,96 +123,67 @@ nav ul li a:hover::after{
 /*First Section*/
 
 .first-part-mobile{
-	display: none;
+  display: none;
 }
 
-.firstpartforlargerscreen{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  position: relative;
+.first-part-larger-screen{
+  display: grid;
   overflow: hidden;
+  position: relative;
 }
 
-.firstmessage{
-	margin-left: 70px;
-	max-width: 27%;
-}
-
-.firstmessage h1{
-	font-size: 7vw;
-  font-weight: 800;
-  line-height: 1em;
-	font-family: 'Raleway', sans-serif; 
-	color: rgb(0, 0, 0);
-	letter-spacing: 4px;
-	margin: 0 0 25px -7px;
-}
-
-.firstmessage h2{
-  font-family: 'Raleway', sans-serif; 
-  letter-spacing: 2px;
-	font-size: 25px;
-	color: #3d3d3d;
-	font-weight: 500;
-	margin: 15px 0px 15px 0px;
-}
-
-.firstmessage p{
-  font-family: 'Poppins', sans-serif; 
-  line-height: 1.3em;
-  letter-spacing: 1px;
-  font-size: 18px;
-  color: #5b5b5b;
-  font-weight: 400;
-}
-
-.outline{
-  width: 52vw;
+.first-part-image-container{
+  overflow: hidden;
+  width: 95vw;
   justify-content: center;
-  position: absolute;
-  left: 31%;
+  margin: auto;
 }
 
-.outline img{
+#change-image-1{
   width: 100%;
-  mix-blend-mode: multiply;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 1;
+  filter: brightness(70%) sepia(10%);
 }
 
-.pinkbox{
-  background-image: linear-gradient(to bottom, rgb(250, 200, 200), rgb(247, 177, 177), rgb(240, 140, 140));
-  width: 43vw;
-  height: 100svh;
-  height: 100vh;
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in; /* Fast transition */
+}
+
+.fade-out {
+  opacity: 0.4; /* Fade to 40% visibility */
+  transition: opacity 0.5s ease-out; /* Fast transition */
+}
+
+.first-part-logo{
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -10;
-}
-
-.firstpartimagecolumn{
+  z-index: 10;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content */
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  justify-content: right;
-  position: absolute;
-  right: 5%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.firstpartimagecolumn img{
-  width: 200px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 100%;
-  background: white;
-  padding: 6px;
+.first-part-logo img{
+  width: 47vw;
+  margin:auto;
+  text-align: center;
 }
 
 
 /*Second Section*/
 
 .secondpart{
+  margin-top: 50px;
   padding: 50px 0 80px 0;
   background-color: #143442;
   overflow: hidden;
@@ -587,12 +558,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1700px){
 
-  /*First Section*/
-
-  .firstpartimagecolumn img{
-    width: 150px;
-  }
-
   /*Second Section*/
 
   .secondpartsliderdescription h2,
@@ -622,13 +587,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1600px){
 
-  /*First Section*/
-
-  .firstpartforlargerscreen,
-  .pinkbox{
-    max-height: 1000px;
-  }
-
   /*Second Section*/
 
   .secondpartdescription h1{
@@ -644,29 +602,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1400px){
-
-  /*First Section*/
-
-  .firstpartforlargerscreen,
-  .pinkbox{
-    max-height: 850px;
-  }
-
-  .firstmessage h1{
-    font-size: 7vw;
-  }
-
-  .firstmessage h2{
-    font-size: 22px;
-  }
-  
-  .firstmessage p{
-    font-size: 17px;
-  }
-
-  .firstpartimagecolumn img{
-    width: 120px;
-  }
 
   /*Second Section*/
 
@@ -762,51 +697,21 @@ nav ul li a:hover::after{
 
 }
 
-
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1250px){
 
   /*First Section*/
 
-  .firstpartforlargerscreen,
-  .pinkbox{
-    max-height: 750px;
-  }
-
-  .firstmessage{
-    margin-left: 45px;
-    max-width: 27%;
-  }
-
-  .firstmessage h1{
-    font-size: 6vw;
-    margin: 0 0 15px -3px;
-  }
-
-  .firstmessage h2{
-    font-size: 19px;
+  #change-image-1{
+    aspect-ratio: 1/0.6;
   }
   
-  .firstmessage p{
-    font-size: 15px;
+  .first-part-logo img{
+    width: 47vw;
   }
+}
 
-  .outline{
-    width: 58vw;
-    left: 28%;
-  }
 
-  .pinkbox{
-    width: 43vw;
-  }
-
-  .firstpartimagecolumn{
-    right: 4%;
-  }
-
-  .firstpartimagecolumn img{
-    width: 110px;
-    padding: 5px;
-  }
+@media only screen and (max-width:1200px){
 
   /*Second Section*/
 
@@ -909,33 +814,12 @@ nav ul li a:hover::after{
 
   /*First Section*/
 
-  .firstpartforlargerscreen,
-  .pinkbox{
-    max-height: 650px;
+  #change-image-1{
+    aspect-ratio: 1/0.8;
   }
-
-  .firstmessage{
-    margin-left: 30px;
-    max-width: 26%;
-  }
-
-  .firstmessage h2{
-    font-size: 18px;
-    letter-spacing: 1px;
-  }
-
-  .outline{
-    width: 62vw;
-    left: 26%;
-  }
-
-  .firstpartimagecolumn{
-    right: 2.5%;
-  }
-
-  .firstpartimagecolumn img{
-    width: 95px;
-    padding: 4px;
+  
+  .first-part-logo img{
+    width: 48vw;
   }
 
   /*Second Section*/
@@ -1077,40 +961,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:800px){
 
-  /*First Section*/
-
-  .firstpartforlargerscreen,
-  .pinkbox{
-    max-height: 550px;
-  }
-
-  .firstmessage{
-    margin-left: 25px;
-    max-width: 26%;
-  }
-
-  .firstmessage h2{
-    font-size: 17px;
-    letter-spacing: 1px;
-  }
-
-  .firstmessage p{
-    font-size: 14px;
-  }
-
-  .outline{
-    width: 62vw;
-    left: 26%;
-  }
-
-  .firstpartimagecolumn{
-    right: 1.8%;
-  }
-
-  .firstpartimagecolumn img{
-    width: 88px;
-  }
-
   /*Second Section*/
 
   .secondpartdescription h1{
@@ -1221,7 +1071,7 @@ nav ul li a:hover::after{
 
   /*First Section*/
 
-  .firstpartforlargerscreen{
+  .first-part-larger-screen{
     display: none;
   }
 
@@ -1231,12 +1081,12 @@ nav ul li a:hover::after{
     position: relative;
   }
   
-  .first-part-mobile-image-container-1{
+  .first-part-mobile-image-container{
     overflow: hidden;
     width: 100vw;
   }
   
-  #change-image-1{
+  #change-image-2{
     width: 100%;
     aspect-ratio: 1/1.5;
     object-fit: cover;
