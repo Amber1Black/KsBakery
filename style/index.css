@@ -1256,7 +1256,7 @@ nav ul li a:hover::after{
     transition: opacity 0.5s ease-out; /* Fast transition */
   }
   
-  .first-part-mobile-description{
+  .first-part-mobile-logo{
     position: absolute;
     z-index: 10;
     top: 51%;
@@ -1270,20 +1270,10 @@ nav ul li a:hover::after{
     white-space: nowrap;
   }
   
-  .first-part-mobile-description img{
+  .first-part-mobile-logo img{
     width: 85vw;
     margin:auto;
     text-align: center;
-  }
-  
-  .first-part-mobile-description h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 5.5vw;
-    letter-spacing: 2px;
-    font-weight: 450;
-    color: #ffffff;
-    text-shadow: 2px 2px 1px black;
-    justify-content: center;
   }
 
   /*Second Section*/
