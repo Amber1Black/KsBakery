@@ -1231,25 +1231,19 @@ nav ul li a:hover::after{
     position: relative;
   }
   
-  .first-part-mobile-image-container-1,
-  .first-part-mobile-image-container-2{
+  .first-part-mobile-image-container-1{
     overflow: hidden;
     width: 100vw;
   }
   
-  .first-part-mobile-image-container-2{
-    margin-top: -5px;
-  }
-  
-  #change-image-1,
-  #change-image-2{
+  #change-image-1{
     width: 100%;
-    aspect-ratio: 1/0.75;
+    aspect-ratio: 1/1.5;
     object-fit: cover;
     object-position: center;
     display: block;
     opacity: 1;
-    filter: brightness(65%) sepia(10%);
+    filter: brightness(70%) sepia(10%);
   }
   
   .fade-in {
@@ -1265,7 +1259,7 @@ nav ul li a:hover::after{
   .first-part-mobile-description{
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the content */
     display: flex;
@@ -1277,8 +1271,8 @@ nav ul li a:hover::after{
   }
   
   .first-part-mobile-description img{
-    width: 80vw;
-    margin: 8% auto;
+    width: 85vw;
+    margin:auto;
     text-align: center;
   }
   
