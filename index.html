@@ -83,10 +83,7 @@
     </div>
     
     <div class="first-part-mobile-image-container-1">
-      <img id="change-image-1" src="pictures/heart-shape-tart-ring.jpg" alt="Tart ring with heart-shape cream piping on top">
-    </div>
-    <div class="first-part-mobile-image-container-2">
-      <img id="change-image-2" src="pictures/old-royal-naval-college-3-first-page-mobile.jpg" alt="Ancient architecture in Old royal Naval College">
+      <img id="change-image-1" src="pictures/first-page-mobile-image-1.jpg" alt="Tart ring with heart-shape cream piping on top">
     </div>
   </div>
 
@@ -306,23 +303,17 @@
   <script>
     // First Part Mobile
     const imageElement1 = document.getElementById('change-image-1');
-    const imageElement2 = document.getElementById('change-image-2');
     
     // List of images for both elements
     const images1 = [
-      'pictures/heart-shape-tart-ring.jpg',
-      'pictures/white-flower-tarts.jpg',
-      'pictures/choco-ring-tarts-first-page-mobile.jpg'
-    ]; // First image list
-    
-    const images2 = [
-      'pictures/old-royal-naval-college-3-first-page-mobile.jpg',
-      'pictures/karuizawa-1.jpg',
-      'pictures/surrey-quays-1.jpg'
-    ]; // Second image list
+      'pictures/first-page-mobile-image-1.jpg',
+      'pictures/first-page-mobile-image-2.jpg',
+      'pictures/first-page-mobile-image-3.jpg',
+      'pictures/first-page-mobile-image-4.jpg',
+      'pictures/first-page-mobile-image-5.jpg'
+    ]; 
     
     let currentIndex1 = 0;
-    let currentIndex2 = 0;
     
     // Function to change the first image every 5 seconds
     function changeImage1() {
@@ -330,15 +321,8 @@
       imageElement1.src = images1[currentIndex1] + '?t=' + new Date().getTime(); // Force reload
     }
     
-    // Function to change the second image every 5 seconds
-    function changeImage2() {
-      currentIndex2 = (currentIndex2 + 1) % images2.length;
-      imageElement2.src = images2[currentIndex2] + '?t=' + new Date().getTime(); // Force reload
-    }
-    
     // Set intervals for each image change
     setInterval(changeImage1, 4000); // Change the first image every 4 seconds
-    setInterval(changeImage2, 4000); // Change the second image every 4 seconds
   </script>
   
 
