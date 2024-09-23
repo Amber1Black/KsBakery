@@ -182,103 +182,91 @@ nav ul li a:hover::after{
 
 /*Second Section*/
 
-.secondpart{
-  margin-top: 50px;
-  padding: 50px 0 80px 0;
-  background-color: #143442;
-  overflow: hidden;
+.second-part{
+  margin: 100px 3%;
+  display: flex;
+  position: relative;
+  height: calc(42vw/0.95);
 }
 
-.secondpartdescription{
-  width: 100%;
-  padding: 50px 5%;
-  display: grid;
+.second-part-description{
+  z-index: 10;
 }
 
-.secondpartdescription h1{
-  font-family: 'Lora', sans-serif;
+.second-part-description-1{
+  position: absolute;
+  top: 7%;
+  left: 20%;
+}
+
+.second-part-description-1 h1{
   font-size: 7vw;
-  line-height: 1.1em;
-  font-weight: 300;
-  letter-spacing: 5px;
-  margin: 80px 0 -100px 10%;
-  z-index: 5;
-  text-shadow: 1px 1px 1px rgb(3, 3, 3);
-  color: #ffffff;
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  letter-spacing: 8px;
+  color:rgb(38, 91, 93);
+  text-shadow: 1px 1px 1px white;
 }
 
-.secondpartdescription a{
-  text-decoration: none;
+.second-part-description-2{
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  width: 32vw;
 }
 
-.secondpartdescription p{
+.second-part-description-2 h2{
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 2.5vw;
   font-weight: 400;
   letter-spacing: 2px;
-  text-align: right;
-  position: absolute;
-  right: 5%;
-  width: 650px;
-  line-height: 1.7em;
-  color: #ffffff;
-  margin-top: 30px;
+  word-spacing: 10px;
+  margin-bottom: 10px;
 }
 
-.secondpart-scroll-container{
-  margin: 0px 4% 30px 4%;
-  gap: 30px;
-  display: flex;
-  overflow: auto;
-  white-space: nowrap;
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-}
-
-.secondpart-scroll-container::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
-}
-
-.container{
-  white-space: wrap;
-}
-
-.container img{
-  width: 28vw;
-  aspect-ratio: 2/2.5;
-  object-fit: cover;
-}
-
-.secondpartsliderdescription{
-  margin: 10px;
-  width: 26vw;
-}
-
-.secondpartsliderdescription h2{
-  font-family: 'Lora', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin: 20px 0 10px 0;
-  color: #ffffff;
-}
-
-.secondpartsliderdescription a{
-  text-decoration: none;
-  font-family: 'Lora', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin: 20px 0 10px 0;
-  color: #ffffff;
-}
-
-.secondpartsliderdescription p{
+.second-part-description-2 p{
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.1vw;
   letter-spacing: 1px;
-  font-size: 18px;
-  color: #ffffff;
-  line-height: 1.3em;
+}
+
+.second-part-button{
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  background-color: antiquewhite;
+  border-radius: 100%;
+  width: 10vw;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.second-part-button a,
+.second-part-button p{
+  text-align: center;
+  align-items: center;
+  margin: 28% auto;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  color: rgb(30, 35, 35);
+}
+
+.second-part-button a{
+  text-decoration: none;
+}
+
+.second-part-image{
+  position: absolute;
+  right: 0%;
+}
+
+.second-part img{
+  width: 42vw;
+  aspect-ratio: 1/1.05;
+  object-fit: cover;
 }
 
 
@@ -558,19 +546,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1700px){
 
-  /*Second Section*/
-
-  .secondpartsliderdescription h2,
-  .secondpartsliderdescription a{
-    font-size: 27px;
-    font-weight: 300;
-    letter-spacing: 2px;
-  }
-  
-  .secondpartsliderdescription p{
-    font-size: 16px;
-  }
-
   /*Third Section*/
 
   .thirdpartdescription p, .thirdpartdescription a{
@@ -587,12 +562,6 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1600px){
 
-  /*Second Section*/
-
-  .secondpartdescription h1{
-    margin: 90px 0 -90px 80px;
-  }
-
   /*Fourth Section*/
 
   .fourthpartdescription{
@@ -602,42 +571,15 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:1400px){
-
+  
   /*Second Section*/
 
-  .secondpartdescription h1{
-    font-size: 7vw;
-    margin: 90px 0 -105px 75px;
+  .second-part-description-2{
+    width: 34vw;
   }
 
-  .secondpartdescription p{
-    font-size: 17px;
-    font-weight: 400;
-    width: 550px;
-    margin: 20px 0 0 0;
-  }
-
-  .secondpart-scroll-container{
-    margin: 20px 3% 30px 3%;
-    gap: 20px;
-  }
-
-  .container img{
-    width: 28.8vw;
-  }
-
-  .secondpartsliderdescription{
-    width: 27vw;
-  }
-
-  .secondpartsliderdescription h2,
-  .secondpartsliderdescription a{
-    font-size: 23px;
-    margin: 20px 0 7px 0;
-  }
-
-  .secondpartsliderdescription p{
-    font-size: 15px;
+  .second-part-description-2 p{
+    font-size: 1.2vw;
   }
 
   /*Third Section*/
@@ -708,38 +650,48 @@ nav ul li a:hover::after{
   .first-part-logo img{
     width: 47vw;
   }
+
+  /*Second Section*/
+
+  .second-part{
+    margin: 80px 3%;
+    height: calc(42vw/0.85);
+  }
+
+  .second-part img{
+    width: 42vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .second-part-description-2{
+    bottom: 7%;
+    left: 3%;
+    width: 410px;
+  }
+
+  .second-part-description-2 p{
+    line-height: 1.5em;
+    font-size: 15px;
+  }
+
+  .second-part-button{
+    bottom: 12%;
+    left: 50%;
+    width: 11vw;
+  }
+  
+  .second-part-button a,
+  .second-part-button p{
+    margin: 28% auto;
+    font-size: 1.6vw;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+  }
+
 }
 
 
 @media only screen and (max-width:1200px){
-
-  /*Second Section*/
-
-  .secondpartdescription h1{
-    margin: 110px 0 -100px 30px;
-  }
-
-  .secondpartdescription p{
-    width: 540px;
-    margin: 0px 0 20px 0;
-  }
-
-  .secondpart-scroll-container{
-    margin: 20px 4% 30px 4%;
-  }
-
-  .container img{
-    width: 32vw;
-  }
-
-  .secondpartsliderdescription{
-    width: 30vw;
-  }
-
-  .secondpartsliderdescription p{
-    font-size: 14px;
-    line-height: 1.3em;
-  }
 
   /*Third Section*/
 
@@ -824,34 +776,50 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpart{
-    padding: 20px 0 50px 0;
+  .second-part{
+    margin: 80px 2%;
+    height: calc(42vw/0.72);
   }
 
-  .secondpartdescription h1{
-    font-size: 70px;
-    margin: 130px 0 -95px 20px;
+  .second-part-description-1{
+    top: 7%;
+    left: 16%;
+  }
+  
+  .second-part-description-1 h1{
+    font-size: 8vw;
+    font-weight: 400;
+    letter-spacing: 5px;
   }
 
-  .secondpartdescription p{
-    font-size: 16px;
-    letter-spacing: 1px;
-    width: 460px;
+  .second-part img{
+    width: 45vw;
+    aspect-ratio: 1/1.3;
   }
 
-  .container img{
-    width: 38vw;
-    aspect-ratio: 2/2.5;
+  .second-part-description-2{
+    bottom: 7%;
+    left: 3%;
+    width: 320px;
   }
 
-  .secondpartsliderdescription{
-    width: 36vw;
+  .second-part-description-2 p{
+    line-height: 1.5em;
+    font-size: 15px;
   }
 
-  .secondpartsliderdescription h2,
-  .secondpartsliderdescription a{
-    font-size: 21px;
-    margin: 15px 0 7px 0;
+  .second-part-button{
+    bottom: 15%;
+    left: 47%;
+    width: 12vw;
+  }
+  
+  .second-part-button a,
+  .second-part-button p{
+    margin: 28% auto;
+    font-size: 1.8vw;
+    letter-spacing: 2px;
+    line-height: 1.5em;
   }
 
   /*Third Section*/
@@ -963,27 +931,50 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpartdescription h1{
-    font-size: 65px;
-    font-weight: 200;
-    margin: 130px 0 -95px 50px;
+  .second-part{
+    margin: 80px 2%;
+    height: calc(42vw/0.65);
   }
 
-  .secondpartdescription p{
-    font-size: 15px;
-    width: 440px;
+  .second-part-description-1{
+    top: 7%;
+    left: 12%;
   }
 
-  .secondpart-scroll-container{
-    gap: 20px;
+  .second-part img{
+    width: 50vw;
+    aspect-ratio: 1/1.3;
   }
 
-  .secondpartsliderdescription{
-    width: 36vw;
+  .second-part-description-2{
+    bottom: 7%;
+    left: 2%;
+    width: 260px;
   }
 
-  .secondpartsliderdescription p{
+  .second-part-description-2 h2{
+    font-size: 2.8vw;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+  }
+
+  .second-part-description-2 p{
+    line-height: 1.5em;
     font-size: 14px;
+  }
+
+  .second-part-button{
+    bottom: 15%;
+    left: 42%;
+    width: 13vw;
+  }
+  
+  .second-part-button a,
+  .second-part-button p{
+    margin: 28% auto;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    line-height: 1.5em;
   }
 
   /*Third Section*/
@@ -1059,143 +1050,8 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:700px){
 
-	/*Headings*/
-
-  nav ul li{
-    margin-right: 15px;
-  } 
-
-  nav ul li a{
-    font-size: 15px;
-  }
-
-  /*First Section*/
-
-  .first-part-larger-screen{
-    display: none;
-  }
-
-  .first-part-mobile{
-    display: grid;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .first-part-mobile-image-container{
-    overflow: hidden;
-    width: 100vw;
-  }
-  
-  #change-image-2{
-    width: 100%;
-    aspect-ratio: 1/1.5;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    opacity: 1;
-    filter: brightness(70%) sepia(10%);
-  }
-  
-  .fade-in {
-    opacity: 1;
-    transition: opacity 0.5s ease-in; /* Fast transition */
-  }
-  
-  .fade-out {
-    opacity: 0.4; /* Fade to 40% visibility */
-    transition: opacity 0.5s ease-out; /* Fast transition */
-  }
-  
-  .first-part-mobile-logo{
-    position: absolute;
-    z-index: 10;
-    top: 51%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the content */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    white-space: nowrap;
-  }
-  
-  .first-part-mobile-logo img{
-    width: 85vw;
-    margin:auto;
-    text-align: center;
-  }
-
-  /*Second Section*/
-
-  .secondpart{
-    background-color: unset;
-  }
-
-  .secondpartdescription h1,
-  .secondpartdescription p{
-    color: #000000;
-    text-shadow: 1px 1px 1px #ffffff;
-  }
-
-  .secondpartdescription h1{
-    margin: 140px 0 -95px 50px;
-  }
-
-  .container img{
-    width: 48vw;
-    aspect-ratio: 2/2.5;
-  }
-
-  .secondpartsliderdescription{
-    width: 46vw;
-  }
-
-  .secondpartsliderdescription h2,
-  .secondpartsliderdescription a,
-  .secondpartsliderdescription p{
-    color: #000000;
-  }
-
-  /*Third Section*/
-
-  .thirdparttitle h1{
-    font-size: 70px;
-  }
-
-  .thirdpartdescription p{
-    width: 450px;
-  }
-
-  /*Fourth Section*/
-
-  .fourthpartdescription{
-    width: 77vw;
-    padding: 50px 50px 50px 50px;
-  }
-
-  .fourthpartdescription p, .fourthpartdescription a{
-    font-size: 15px;
-  }
-
-  .fourthpart-slideshow{
-    width: 80vw;
-    margin: -30px 4% 50px 16%;
-  }
-
-  .fourthpart-slideshow-pic img{
-    width: 74vw;
-    aspect-ratio: 4/3.2;
-  }
-
-}
-
-
-@media only screen and (max-width:600px){
-
-  .logo{
-    width: 12%;
-    max-width: 50px;
+	.logo{
+    width: 20vw;
     margin-left: 20%;
     margin-top: 10px;
   }
@@ -1267,29 +1123,184 @@ nav ul li a:hover::after{
     padding-right: 10px;
   }
 
+  /*First Section*/
+
+  .first-part-larger-screen{
+    display: none;
+  }
+
+  .first-part-mobile{
+    display: grid;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .first-part-mobile-image-container{
+    overflow: hidden;
+    width: 90vw;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  #change-image-2{
+    width: 100%;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 1;
+    filter: brightness(70%) sepia(10%);
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in; /* Fast transition */
+  }
+  
+  .fade-out {
+    opacity: 0.4; /* Fade to 40% visibility */
+    transition: opacity 0.5s ease-out; /* Fast transition */
+  }
+  
+  .first-part-mobile-logo{
+    position: absolute;
+    z-index: 10;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .first-part-mobile-logo img{
+    width: 85vw;
+    margin:auto;
+    text-align: center;
+  }
+
   /*Second Section*/
 
-  .secondpartdescription h1{
-    margin: 150px -30px -90px 30px;
-    font-size: 60px;
+  .second-part{
+    margin: 80px 2%;
+    height: calc(90vw/0.85);
   }
 
-  .secondpart-scroll-container{
-    gap: 10px;
+  .second-part-description-1{
+    top: 0%;
+    left: 4%;
   }
 
-  .container img{
-    width: 55vw;
-    aspect-ratio: 2/2.5;
+  .second-part-description-1 h1{
+    font-size: 10vw;
+    line-height: 1.2em;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 1px white;
   }
 
-  .secondpartsliderdescription{
-    width: 53vw;
+  .second-part-image{
+    top: 18%;
+    right: 2%;
   }
 
-  .secondpartsliderdescription h2,
-  .secondpartsliderdescription a{
-    font-size: 22px;
+  .second-part img{
+    width: 80vw;
+    aspect-ratio: 1/0.7;
+    object-position: 10% 55%;
+    filter: brightness(0.94);
+  }
+
+  .second-part-description-2{
+    bottom: -2%;
+    left: 13%;
+    width: 75vw;
+  }
+
+  .second-part-description-2 h2{
+    font-size: 4vw;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+  }
+
+  .second-part-description-2 p{
+    line-height: 1.6em;
+    font-size: 16px;
+  }
+
+  .second-part-button{
+    bottom: 40%;
+    left: 3%;
+    width: 18vw;
+  }
+  
+  .second-part-button a,
+  .second-part-button p{
+    margin: 28% auto;
+    font-size: 2.7vw;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+  }
+
+  /*Third Section*/
+
+  .thirdparttitle h1{
+    font-size: 70px;
+  }
+
+  .thirdpartdescription p{
+    width: 450px;
+  }
+
+  /*Fourth Section*/
+
+  .fourthpartdescription{
+    width: 77vw;
+    padding: 50px 50px 50px 50px;
+  }
+
+  .fourthpartdescription p, .fourthpartdescription a{
+    font-size: 15px;
+  }
+
+  .fourthpart-slideshow{
+    width: 80vw;
+    margin: -30px 4% 50px 16%;
+  }
+
+  .fourthpart-slideshow-pic img{
+    width: 74vw;
+    aspect-ratio: 4/3.2;
+  }
+
+}
+
+
+@media only screen and (max-width:600px){
+
+  /*Second Section*/
+
+  .second-part{
+    margin: 80px 2%;
+    height: calc(90vw/0.82);
+  }
+
+  .second-part-description-2{
+    bottom: -2%;
+    left: 6%;
+    width: 85vw;
+  }
+
+  .second-part-description-2 h2{
+    font-size: 4.5vw;
+  }
+
+  .second-part-description-2 p{
+    line-height: 1.5em;
+    font-size: 15px;
   }
 
   /*Third Section*/
@@ -1364,19 +1375,33 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpartdescription h1{
-    margin: 170px -10px -90px 35px;
-    font-size: 55px;
-    letter-spacing: 3px;
+  .second-part{
+    margin: 70px 2%;
+    height: calc(90vw/0.8);
   }
 
-  .secondpartdescription p{
+  .second-part-description-2{
+    bottom: -2%;
+    left: 5%;
+    width: 89vw;
+  }
+
+  .second-part-description-2 h2{
+    font-size: 4.5vw;
+  }
+
+  .second-part-description-2 p{
+    line-height: 1.5em;
+    font-size: 14px;
+  }
+
+  .second-part-button{
+    width: 100px;
+  }
+  
+  .second-part-button a,
+  .second-part-button p{
     font-size: 15px;
-    width: 380px;
-  }
-
-  .secondpartsliderdescription p{
-    font-size: 13px;
   }
 
   /*Third Section*/
@@ -1462,35 +1487,34 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .secondpartdescription h1{
-    margin: 170px 0 -90px 25px;
-    font-size: 45px;
+  .second-part{
+    margin: 60px 2%;
+    height: calc(90vw/0.75);
   }
 
-  .secondpartdescription p{
-    font-size: 15px;
-    letter-spacing: 0px;
-    font-weight: 400;
-    width: 330px;
-    line-height: 1.6em;
+  .second-part-image{
+    top: 16%;
+    right: 2%;
   }
 
-  .secondpart-scroll-container{
-    gap: 5px;
+  .second-part-description-2{
+    bottom: -2%;
+    left: 5%;
+    width: 88vw;
   }
 
-  .container img{
-    width: 70vw;
-    aspect-ratio: 2/2.5;
+  .second-part-description-2 h2{
+    font-size: 22px;
   }
 
-  .secondpartsliderdescription{
-    width: 68vw;
+  .second-part-description-2 p{
+    line-height: 1.5em;
+    font-size: 14px;
   }
 
-  .secondpartsliderdescription h2,
-  .secondpartsliderdescription a{
-    font-size: 20px;
+  .second-part-button{
+    bottom: 45%;
+    left: 3%;
   }
 
   /*Third Section*/
@@ -1521,6 +1545,24 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:400px){
+
+  /*Second Section*/
+
+  .second-part{
+    margin: 60px 2%;
+    height: calc(90vw/0.70);
+  }
+
+  .second-part-description-2{
+    bottom: -2%;
+    left: 6%;
+    width: 86vw;
+  }
+
+  .second-part-description-2 p{
+    line-height: 1.5em;
+    font-size: 14px;
+  }
 
   /*Third Section*/
 
