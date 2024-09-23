@@ -1137,7 +1137,7 @@ nav ul li a:hover::after{
   
   .first-part-mobile-image-container{
     overflow: hidden;
-    width: 90vw;
+    width: 100vw;
     justify-content: center;
     margin: auto;
   }
