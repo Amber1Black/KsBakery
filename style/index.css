@@ -184,69 +184,65 @@ nav ul li a:hover::after{
 
 .second-part{
   margin: 100px 3%;
-  display: flex;
   position: relative;
   height: calc(42vw/0.95);
 }
 
 .second-part-description-mobile,
-.second-part-image-mobile{
+.second-part-headings-mobile{
   display: none;
+}
+
+.second-part-headings{
+  position: absolute;
+  top: 8%;
+  left: 26%;
+  z-index: 10;
+}
+
+.second-part-headings img{
+  width: 35vw;
 }
 
 .second-part-description{
   z-index: 10;
 }
 
-.second-part-description-1{
-  position: absolute;
-  top: 7%;
-  left: 20%;
-}
-
-.second-part-description-1 h1{
-  font-size: 7vw;
-  font-family: 'Lora', sans-serif;
-  font-weight: 400;
-  letter-spacing: 6px;
-  text-shadow: 2px 2px 1px white;
-}
-
 .second-part-description-2{
   position: absolute;
-  bottom: 10%;
+  bottom: 4%;
   left: 3%;
-  width: 32vw;
+  width: 580px;
 }
 
 .second-part-description-2 h2{
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-weight: 400;
   letter-spacing: 2px;
-  word-spacing: 10px;
-  margin-bottom: 10px;
+  word-spacing: 8px;
+  margin-bottom: 15px;
 }
 
 .second-part-description-2 p{
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1vw;
+  font-size: 20px;
+  line-height: 1.6em;
   letter-spacing: 1px;
 }
 
 .second-part-button{
   position: absolute;
-  bottom: 12%;
-  left: 50%;
+  bottom: 10%;
+  left: 49%;
   background-color: antiquewhite;
   border-radius: 100%;
   width: 10vw;
   aspect-ratio: 1/1;
-  cursor: pointer;
+  z-index: 10;
 }
 
-.second-part-button a,
 .second-part-button p{
   text-align: center;
   align-items: center;
@@ -258,17 +254,13 @@ nav ul li a:hover::after{
   color: rgb(30, 35, 35);
 }
 
-.second-part-button a{
-  text-decoration: none;
-}
-
 .second-part-image{
   position: absolute;
   right: 0%;
 }
 
-.second-part img{
-  width: 42vw;
+.second-part-image img{
+  width: 43vw;
   aspect-ratio: 1/1.05;
   object-fit: cover;
 }
@@ -566,6 +558,16 @@ nav ul li a:hover::after{
 
 @media only screen and (max-width:1600px){
 
+  /*Second Section*/
+
+  .second-part-description-2{
+    width: 550px;
+  }
+
+  .second-part-description-2 p{
+    font-size: 18px;
+  }
+
   /*Fourth Section*/
 
   .fourthpartdescription{
@@ -579,11 +581,11 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .second-part-description-2{
-    width: 34vw;
+    width: 500px;
   }
 
   .second-part-description-2 p{
-    font-size: 1.2vw;
+    font-size: 16px;
   }
 
   /*Third Section*/
@@ -659,28 +661,33 @@ nav ul li a:hover::after{
 
   .second-part{
     margin: 80px 3%;
-    height: calc(42vw/0.85);
+    height: calc(42vw/0.8);
   }
 
-  .second-part img{
-    width: 42vw;
+  .second-part-image img{
+    width: 44vw;
     aspect-ratio: 1/1.2;
   }
 
   .second-part-description-2{
     bottom: 7%;
-    left: 3%;
-    width: 410px;
+    left: 2%;
+    width: 400px;
+  }
+
+  .second-part-description-2 h2{
+    font-size: 25px;
+    margin-bottom: 10px;
   }
 
   .second-part-description-2 p{
-    line-height: 1.5em;
+    line-height: 1.6em;
     font-size: 15px;
   }
 
   .second-part-button{
     bottom: 12%;
-    left: 50%;
+    left: 47%;
     width: 11vw;
   }
   
@@ -785,26 +792,27 @@ nav ul li a:hover::after{
     height: calc(42vw/0.72);
   }
 
-  .second-part-description-1{
-    top: 7%;
-    left: 16%;
+  .second-part-headings{
+    left: 24%;
   }
   
-  .second-part-description-1 h1{
-    font-size: 8vw;
-    font-weight: 400;
-    letter-spacing: 5px;
+  .second-part-headings img{
+    width: 40vw;
   }
 
-  .second-part img{
+  .second-part-image img{
     width: 45vw;
     aspect-ratio: 1/1.3;
   }
 
   .second-part-description-2{
-    bottom: 7%;
+    bottom: 2%;
     left: 3%;
     width: 320px;
+  }
+
+  .second-part-description-2 h2{
+    font-size: 22px;
   }
 
   .second-part-description-2 p{
@@ -814,14 +822,14 @@ nav ul li a:hover::after{
 
   .second-part-button{
     bottom: 15%;
-    left: 47%;
-    width: 12vw;
+    left: 46%;
+    width: 13vw;
   }
   
   .second-part-button a,
   .second-part-button p{
     margin: 28% auto;
-    font-size: 1.8vw;
+    font-size: 2vw;
     letter-spacing: 2px;
     line-height: 1.5em;
   }
@@ -940,24 +948,23 @@ nav ul li a:hover::after{
     height: calc(42vw/0.65);
   }
 
-  .second-part-description-1{
-    top: 7%;
-    left: 12%;
+  .second-part-headings{
+    left: 19%;
   }
 
-  .second-part img{
+  .second-part-image img{
     width: 50vw;
     aspect-ratio: 1/1.3;
   }
 
   .second-part-description-2{
-    bottom: 7%;
+    bottom: 1%;
     left: 2%;
     width: 260px;
   }
 
   .second-part-description-2 h2{
-    font-size: 2.8vw;
+    font-size: 20px;
     letter-spacing: 1px;
     word-spacing: 5px;
   }
@@ -1194,6 +1201,22 @@ nav ul li a:hover::after{
     display: grid;
   }
 
+  .second-part-headings{
+    display: none;
+  }
+
+  .second-part-headings-mobile{
+    display: initial;
+    position: absolute;
+    left: 15%;
+    top: 4%;
+    z-index: 10;
+  }
+
+  .second-part-headings-mobile img{
+    width: 60vw;
+  }
+
   .second-part-description-2{
     display: none;
   }
@@ -1202,33 +1225,25 @@ nav ul li a:hover::after{
     display: grid;
   }
 
-  .second-part-description-1{
-    top: 5%;
-    left: 28%;
-  }
-
-  .second-part-description-1 h1{
-    font-size: 11vw;
-    line-height: 1.2em;
-    font-weight: 450;
-    letter-spacing: 3px;
-    color: #ffffff;
-    text-shadow: 2px 2px 1px #000000;
-  }
-
   .second-part-image{
-    display: none;
+    position: relative;
   }
 
-  .second-part-image-mobile{
-    display: grid;
-  }
+  .second-part-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 50%; /* Adjust the height of the darkened area */
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.75), rgba(0, 0, 0, 0));
+    pointer-events: none; /* Allows clicking on the image */
+}
 
-  .second-part-image-mobile img{
+  .second-part-image img{
     width: 90vw;
     aspect-ratio: 1/1.2;
-    object-position: 50% 35%;
-    filter: brightness(0.7); 
+    object-position: 50% 35%; 
   }
 
   .second-part-button{
@@ -1386,16 +1401,6 @@ nav ul li a:hover::after{
     margin: 30px 6%;
   }
 
-  .second-part-image-mobile img{
-    aspect-ratio: 1/1.3;
-    object-position: 50% 15%;
-  }
-
-  .second-part-description-1{
-    top: 4%;
-    left: 26%;
-  }
-
   .second-part-description-mobile h2{
     margin-bottom: 10px;
     font-size: 25px;
@@ -1504,7 +1509,7 @@ nav ul li a:hover::after{
 
   .second-part-description-mobile h2{
     margin-bottom: 8px;
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .second-part-description-mobile p{
