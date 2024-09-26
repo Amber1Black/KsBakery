@@ -189,7 +189,7 @@ nav ul li a:hover::after{
 }
 
 .second-part-description-mobile,
-.second-part-headings-mobile{
+.second-part-image-mobile{
   display: none;
 }
 
@@ -216,11 +216,11 @@ nav ul li a:hover::after{
 }
 
 .second-part-description-2 h2{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 2.2vw;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   word-spacing: 8px;
   margin-bottom: 15px;
 }
@@ -241,9 +241,11 @@ nav ul li a:hover::after{
   width: 10vw;
   aspect-ratio: 1/1;
   z-index: 10;
+  cursor: pointer;
 }
 
-.second-part-button p{
+.second-part-button p,
+.second-part-button a{
   text-align: center;
   align-items: center;
   margin: 28% auto;
@@ -252,6 +254,10 @@ nav ul li a:hover::after{
   letter-spacing: 2px;
   line-height: 1.5em;
   color: rgb(30, 35, 35);
+}
+
+.second-part-button a{
+  text-decoration: none;
 }
 
 .second-part-image{
@@ -1176,7 +1182,7 @@ nav ul li a:hover::after{
   .first-part-mobile-logo{
     position: absolute;
     z-index: 10;
-    top: 51%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the content */
     display: flex;
@@ -1188,7 +1194,7 @@ nav ul li a:hover::after{
   }
   
   .first-part-mobile-logo img{
-    width: 85vw;
+    width: 88vw;
     margin:auto;
     text-align: center;
   }
@@ -1201,23 +1207,9 @@ nav ul li a:hover::after{
     display: grid;
   }
 
+  .second-part-description-2,
+  .second-part-image,
   .second-part-headings{
-    display: none;
-  }
-
-  .second-part-headings-mobile{
-    display: initial;
-    position: absolute;
-    left: 15%;
-    top: 4%;
-    z-index: 10;
-  }
-
-  .second-part-headings-mobile img{
-    width: 60vw;
-  }
-
-  .second-part-description-2{
     display: none;
   }
 
@@ -1225,29 +1217,18 @@ nav ul li a:hover::after{
     display: grid;
   }
 
-  .second-part-image{
-    position: relative;
+  .second-part-image-mobile{
+    display: flex;
   }
 
-  .second-part-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+  .second-part-image-mobile img{
     width: 90vw;
-    height: 50%; /* Adjust the height of the darkened area */
-    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.75), rgba(0, 0, 0, 0));
-    pointer-events: none; /* Allows clicking on the image */
-}
-
-  .second-part-image img{
-    width: 90vw;
-    aspect-ratio: 1/1.2;
-    object-position: 50% 35%; 
+    object-fit: cover;
+    margin-left: 5%;
   }
 
   .second-part-button{
-    bottom: 21%;
+    bottom: 20%;
     left: 73%;
     width: 23vw;
   }
@@ -1261,20 +1242,23 @@ nav ul li a:hover::after{
   }
 
   .second-part-description-mobile{
-    margin: 30px 9%;
+    margin: 30px 10%;
   }
 
   .second-part-description-mobile h2{
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 15px;
     font-size: 35px;
     letter-spacing: 2px;
     font-weight: 450;
+    text-align: center;
   }
 
   .second-part-description-mobile p{
-    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 450;
     line-height: 1.6em;
   }
 
@@ -1316,13 +1300,21 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
+  .second-part-description-mobile{
+    margin: 30px 7%;
+  }
+
   .second-part-description-mobile h2{
-    margin-bottom: 12px;
     font-size: 30px;
   }
 
+  .second-part-description-mobile p{
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+
   .second-part-button{
-    bottom: 25%;
+    bottom: 28%;
   }
 
   /*Third Section*/
@@ -1392,10 +1384,13 @@ nav ul li a:hover::after{
 }
 
 
-
 @media only screen and (max-width:500px){
 
   /*Second Section*/
+
+  .second-part{
+    margin: 50px 0;
+  }
 
   .second-part-description-mobile{
     margin: 30px 6%;
@@ -1410,13 +1405,12 @@ nav ul li a:hover::after{
 
   .second-part-description-mobile p{
     font-size: 15px;
-    letter-spacing: 0px;
-    line-height: 1.4em;
+    line-height: 1.5em;
   }
 
   .second-part-button{
-    bottom: 23%;
-    left: 75%;
+    bottom: 25%;
+    left: 74%;
   }
 
 
@@ -1504,12 +1498,12 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .second-part-description-mobile{
-    margin: 20px 5%;
+    margin: 25px 5%;
   }
 
   .second-part-description-mobile h2{
-    margin-bottom: 8px;
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
   }
 
   .second-part-description-mobile p{
@@ -1517,14 +1511,15 @@ nav ul li a:hover::after{
   }
 
   .second-part-button{
-    bottom: 23%;
-    left: 75%;
+    bottom: 25%;
+    left: 73%;
+    width: 25vw;
   }
   
   .second-part-button a,
   .second-part-button p{
-    font-size: 3.8vw;
-    margin: 27% auto;
+    font-size: 4vw;
+    margin: 28% auto;
     font-weight: 500;
     line-height: 1.4em;
   }
@@ -1561,7 +1556,7 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .second-part-button{
-    bottom: 24%;
+    bottom: 27%;
   }
 
   /*Third Section*/
