@@ -146,6 +146,7 @@ nav ul li a:hover::after{
   object-position: center;
   display: block;
   opacity: 1;
+  filter: brightness(0.85);
 }
 
 .fade-in {
@@ -1164,6 +1165,7 @@ nav ul li a:hover::after{
     object-position: center;
     display: block;
     opacity: 1;
+    filter: brightness(0.8);
   }
   
   .fade-in {
@@ -1199,7 +1201,7 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .second-part{
-    margin: 60px 0;
+    margin: 80px 0;
     height: unset;
     display: grid;
   }
@@ -1219,36 +1221,28 @@ nav ul li a:hover::after{
   }
 
   .second-part-image-mobile img{
-    width: 90vw;
+    width: 80vw;
     object-fit: cover;
-    margin-left: 5%;
+    margin-left: 10%;
   }
 
   .second-part-button{
-    bottom: 20%;
+    bottom: 50px;
     left: 73%;
-    width: 23vw;
+    width: 25vw;
   }
   
   .second-part-button a,
   .second-part-button p{
-    margin: 28% auto;
+    margin: 30% auto;
     font-size: 3.5vw;
     letter-spacing: 2px;
     line-height: 1.5em;
   }
 
   .second-part-description-mobile{
-    margin: 30px 10%;
-  }
-
-  .second-part-description-mobile h2{
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 15px;
-    font-size: 35px;
-    letter-spacing: 2px;
-    font-weight: 450;
-    text-align: center;
+    margin: 20px 8%;
+    justify-content: center;
   }
 
   .second-part-description-mobile p{
@@ -1256,7 +1250,15 @@ nav ul li a:hover::after{
     font-size: 17px;
     letter-spacing: 1px;
     font-weight: 450;
-    line-height: 1.6em;
+    line-height: 1.5em;
+  }
+
+  .second-part-description-mobile img{
+    width: 84vw;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    margin-top: 30px;
+    object-position: 50% 58%;
   }
 
   /*Third Section*/
@@ -1297,21 +1299,9 @@ nav ul li a:hover::after{
 
   /*Second Section*/
 
-  .second-part-description-mobile{
-    margin: 30px 7%;
-  }
-
-  .second-part-description-mobile h2{
-    font-size: 30px;
-  }
-
   .second-part-description-mobile p{
     font-size: 16px;
     line-height: 1.6em;
-  }
-
-  .second-part-button{
-    bottom: 28%;
   }
 
   /*Third Section*/
@@ -1386,30 +1376,24 @@ nav ul li a:hover::after{
   /*Second Section*/
 
   .second-part{
-    margin: 50px 0;
+    margin: 60px 0;
   }
 
   .second-part-description-mobile{
-    margin: 30px 6%;
-  }
-
-  .second-part-description-mobile h2{
-    margin-bottom: 10px;
-    font-size: 25px;
-    letter-spacing: 1px;
-    word-spacing: 3px;
+    margin: 20px 5%;
   }
 
   .second-part-description-mobile p{
     font-size: 15px;
-    line-height: 1.5em;
+    line-height: 1.4em;
+    letter-spacing: 0px;
   }
 
-  .second-part-button{
-    bottom: 25%;
-    left: 74%;
+  .second-part-description-mobile img{
+    width: 90vw;
+    aspect-ratio: 1/1.2;
+    margin-top: 15px;
   }
-
 
   /*Third Section*/
 
@@ -1508,17 +1492,16 @@ nav ul li a:hover::after{
   }
 
   .second-part-button{
-    bottom: 25%;
-    left: 73%;
-    width: 25vw;
+    bottom: 40px;
+    left: 72%;
+    width: 27vw;
   }
   
   .second-part-button a,
   .second-part-button p{
-    font-size: 4vw;
-    margin: 28% auto;
+    margin: 30% auto;
+    font-size: 3.8vw;
     font-weight: 500;
-    line-height: 1.4em;
   }
 
   /*Third Section*/
@@ -1549,12 +1532,6 @@ nav ul li a:hover::after{
 
 
 @media only screen and (max-width:400px){
-
-  /*Second Section*/
-
-  .second-part-button{
-    bottom: 27%;
-  }
 
   /*Third Section*/
 
