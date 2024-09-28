@@ -162,19 +162,19 @@
 </head>
 <body>
   <div class="headingsection">
-    <a href="https://www.k-bakery.com"><img class="logo" src="../pictures/logo.jpg" alt = "Logo of the website"></a>
-      <nav>
-        <ul id="menulist">
-          <li><a href="https://www.k-bakery.com/bakingcollection">Baking Collection</a></li>
-          <li><a href="https://www.k-bakery.com/recipesummary">Recipe</a></li>
-          <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
-          <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
-          <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="menuicon">
-        <img class="menu-icon" onclick="togglemenu()" src="../pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
-      </div>
+    <a href="https://www.k-bakery.com"><img class="logo" src="../pictures/logo.png" alt = "Logo of the website"></a>
+        <nav>
+          <ul id="menulist">
+            <li><a href="https://www.k-bakery.com/bakingcollection">Baking Collection</a></li>
+            <li><a href="https://www.k-bakery.com/recipesummary">Recipe</a></li>
+            <li><a href="https://www.k-bakery.com/journeysummary">Journey</a></li>
+            <li><a href="https://www.k-bakery.com/aboutme">About Me</a></li>
+            <li><a href="https://www.k-bakery.com/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menuicon">
+          <img class="menu-icon" onclick="togglemenu()" src="../pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
+        </div>
   </div>
 
   <div class="top-section">
@@ -470,29 +470,10 @@
     Copyright &copy; 2023–<span id="currentYear"></span> K's Bakery
   </div>
  
+  <script src="../js/menu.js"></script>
+  <script src="../js/copyright.js"></script> 
 
   <script>
-    //Menu
-    var menulist = document.getElementById("menulist");
-
-    menulist.style.maxHeight = "0px";
-
-    function togglemenu(){
-      if(menulist.style.maxHeight == "0px")
-      {
-        menulist.style.maxHeight = "100vh"
-      }
-      else
-      {
-        menulist.style.maxHeight = "0px";
-      }
-    }
-
-
-    // JavaScript to automatically update the copyright year
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-
-
     //Top Images
     let topimagesslideIndex = 1;
     topimagesshowSlides(topimagesslideIndex);

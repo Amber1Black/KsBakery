@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RF94ND0HKD');
-  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="Try K's Bakery's irresistible Pumpkin Bread recipe. Shaped like a real pumpkin, this bread not only looks stunning but is also incredibly easy to make.">
 
-  <link rel="icon" type="image/png" href="../pictures/websitelogo.png" sizes = "512x512">
-
   <title>K's Bakery</title>
+  <link rel="icon" type="image/png" href="../pictures/websitelogo.png" sizes="512x512">
+  <link rel="stylesheet" href="../style/pumpkinbreadrecipe.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Start cookieyes banner --> 
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
+  <!-- End cookieyes banner -->
+   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  
+    // Set default consent mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',         // Deny storage of ads-related cookies
+      'analytics_storage': 'denied'   // Deny storage of analytics cookies
+    });
+  
+    // Initialize Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-RF94ND0HKD', {
+      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
+      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
+      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
+    });
+  </script>
 
   <!-- JSON-LD structured data snipper -->
   <script type="application/ld+json">
@@ -85,29 +104,22 @@
     }
   </script>
 
-  <link rel="stylesheet" href="../style/pumpkinbreadrecipe.css">
-
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <div class="headingsection">
-    <a href="https://www.k-bakery.com"><img class="logo" src="../pictures/logo.jpg" alt = "Logo of the website"></a>
-      <nav>
-        <ul id="menulist">
-          <li><a href="https://www.k-bakery.com/bakingcollection">Baking Collection</a></li>
-          <li><a href="https://www.k-bakery.com/recipesummary">Recipe</a></li>
-          <li><a href="https://www.k-bakery.com/JourneySummary">Journey</a></li>
-          <li><a href="https://www.k-bakery.com/AboutMe">About Me</a></li>
-          <li><a href="https://www.k-bakery.com/Contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="menuicon">
-        <img class="menu-icon" onclick="togglemenu()" src="../pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
-      </div>
+    <a href="https://www.k-bakery.com"><img class="logo" src="../pictures/logo.png" alt = "Logo of the website"></a>
+        <nav>
+          <ul id="menulist">
+            <li><a href="https://www.k-bakery.com/bakingcollection">Baking Collection</a></li>
+            <li><a href="https://www.k-bakery.com/recipesummary">Recipe</a></li>
+            <li><a href="https://www.k-bakery.com/journeysummary">Journey</a></li>
+            <li><a href="https://www.k-bakery.com/aboutme">About Me</a></li>
+            <li><a href="https://www.k-bakery.com/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menuicon">
+          <img class="menu-icon" onclick="togglemenu()" src="../pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
+        </div>
   </div>
 
   <div class="top-section">
@@ -380,29 +392,10 @@
     Copyright &copy; 2023–<span id="currentYear"></span> K's Bakery
   </div>
  
+  <script src="../js/menu.js"></script>
+  <script src="../js/copyright.js"></script> 
 
   <script>
-    //Menu
-    var menulist = document.getElementById("menulist");
-
-    menulist.style.maxHeight = "0px";
-
-    function togglemenu(){
-      if(menulist.style.maxHeight == "0px")
-      {
-        menulist.style.maxHeight = "100vh"
-      }
-      else
-      {
-        menulist.style.maxHeight = "0px";
-      }
-    }
-
-
-    // JavaScript to automatically update the copyright year
-    document.getElementById("currentYear").textContent = new Date().getFullYear();
-
-
     //Top Images
     let topimagesslideIndex = 1;
     topimagesshowSlides(topimagesslideIndex);
