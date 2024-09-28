@@ -129,9 +129,8 @@ nav ul li a:hover::after{
 
 .topsection{
   overflow: hidden;
-  padding: 40px 0;
-  background-color: rgb(23, 68, 80);
   position: relative;
+  padding: 0 4%;
 }
 
 .topsectiondescription{
@@ -139,7 +138,7 @@ nav ul li a:hover::after{
   z-index: 5;
   color: #ffffff;
   position: absolute;
-  top: 23%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the content */
   justify-content: center;
@@ -168,9 +167,10 @@ nav ul li a:hover::after{
 }
 
 .top-section-image img{
-  width: 86vw;
-  margin-left: 7%;
-  border-radius: 30px;
+  width: 92vw;
+  aspect-ratio: 1/0.55;
+  object-fit: cover;
+  filter: brightness(0.9);
 }
 
 /*Common Parameter*/
@@ -387,6 +387,19 @@ p{
   bottom: 2%;
 }
 
+@media only screen and (max-width:1700px){
+
+  /*Top Section*/
+
+  .topsection{
+    padding: 0 2%;
+  }
+
+  .top-section-image img{
+    width: 96vw;
+  }
+
+}
 
 @media only screen and (max-width:1500px){
 
@@ -398,6 +411,7 @@ p{
 
   p{
     font-size: 17px;
+    line-height: 1.5em;
   }
 
   /*Intro*/
@@ -610,9 +624,7 @@ p{
   /*Top Section*/
 
   .top-section-image img{
-    width: 90vw;
     aspect-ratio: 1/0.7;
-    margin-left: 5%;
   }
 
   .topsectiondescription p{
@@ -1122,6 +1134,7 @@ p{
     margin: 0;
     object-fit: cover;
     border-radius: 0;
+    filter: brightness(0.9);
   }
 
   /*Old Royal Naval College*/
