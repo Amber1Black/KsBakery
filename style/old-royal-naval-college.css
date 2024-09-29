@@ -262,13 +262,20 @@ p{
   margin-right: 3%;
 }
 
-/*Red Building*/
+/*Elaborated Images*/
 
 .image-4{
   width: 70vw;
-  aspect-ratio: 1/0.6;
+  aspect-ratio: 1/0.55;
   object-fit: cover;
-  margin: 70px 0 70px 10%;
+  margin: 70px 0 20px 7%;
+}
+
+.image-9{
+  width: 70vw;
+  aspect-ratio: 1/0.55;
+  object-fit: cover;
+  margin: 20px 0 70px 23%;
 }
 
 /*Riverside*/
@@ -457,10 +464,14 @@ p{
     margin: auto 5%;
   }
 
-  /*Red Building*/
+  /*Elaborated Images*/
 
   .image-4{
-    margin: 10px 0 10px 10%;
+    margin: 10px 0 10px 7%;
+  }
+
+  .image-9{
+    margin: 10px 0 10px 23%;
   }
 
   /*Riverside*/
@@ -542,10 +553,16 @@ p{
     aspect-ratio: 1/0.8;
   }
 
+  /*Elaborated Images*/
+
   .image-4{
     width: 75vw;
-    aspect-ratio: 1/0.6;
-    margin: 0 0 30px 10%;
+    margin: 0 0 20px 5%;
+  }
+
+  .image-9{
+    width: 75vw;
+    margin: 0 0 30px 20%;
   }
 
   /*Riverside*/
@@ -662,10 +679,18 @@ p{
     aspect-ratio: 1/0.9;
   }
 
+  /*Elaborated Images*/
+
   .image-4{
     width: 86vw;
-    aspect-ratio: 1/0.7;
-    margin: 0 7%;
+    aspect-ratio: 1/0.6;
+    margin: 0 0 0 4%;
+  }
+
+  .image-9{
+    width: 86vw;
+    aspect-ratio: 1/0.6;
+    margin: 20px 0 0 10%;
   }
 
   /*Riverside*/
@@ -809,10 +834,16 @@ p{
     aspect-ratio: 1/1.1;
   }
 
+  /*Elaborated Images*/
+
   .image-4{
     width: 90vw;
-    aspect-ratio: 1/0.6;
-    margin: 0 5%;
+    margin: 0 0 0 3%;
+  }
+
+  .image-9{
+    width: 90vw;
+    margin: 20px 0 0 7%;
   }
 
   /*Riverside*/
@@ -1163,12 +1194,10 @@ p{
     margin: 30px 4% 30px 15%;
   }
 
-  /*Red Building*/
+  /*Elaborated Images*/
 
-  .image-4{
-    width: 96vw;
+  .image-4, .image-9{
     aspect-ratio: 1/0.7;
-    margin: 0 2%;
   }
 
   /*Royal Heritage*/
@@ -1282,12 +1311,18 @@ p{
     margin: auto 4%;
   }
 
-  /*Red Building*/
+  /*Elaborated Images*/
 
   .image-4{
-    width: 96vw;
+    width: 100vw;
     aspect-ratio: 1/0.8;
-    margin: 0 2%;
+    margin: 0;
+  }
+
+  .image-9{
+    width: 100vw;
+    aspect-ratio: 1/0.8;
+    margin: 20px 0 0 0;
   }
 
   /*Royal Heritage*/
@@ -1437,13 +1472,6 @@ p{
   .royal-heritage img{
     width: 90vw;
     margin: 20px 5%;
-  }
-
-  /*Red Building*/
-
-  .image-4{
-    width: 100vw;
-    margin: 0;
   }
 
   /*Riverside*/
