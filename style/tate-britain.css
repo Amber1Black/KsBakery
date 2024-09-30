@@ -137,57 +137,61 @@ h2{
 
 p{
   font-size: 19px;
-  font-weight: 400;
+  font-weight: 380;
   letter-spacing: 1px;
   line-height: 1.6em;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root{
-  --width: 68vw;
-  --height: calc(var(--width)*0.7);
+  --width: 65vw;
+  --height: calc(var(--width)*0.6);
 }
 
 /*Top Section*/
 
-.top-section{
-  background: linear-gradient(to right, rgb(126, 222, 235), rgb(14, 79, 87));
+.top-section-image{
   display: flex;
-  height: var(--height);
 }
 
 .image-12{
   display: none;
 }
 
-.top-section img{
+.image-1{
   width: var(--width);
   height: var(--height);
   object-fit: cover;
 }
 
-.top-section-description{
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  color: #ffffff;
+.image-14{
+  width: 35vw;
+  height: var(--height);
+  object-fit: cover;
+  object-position: 50% 75%;
 }
 
-.top-section-description h1{
-  font-family: 'Roboto', sans-serif;
-  font-size: 6vw;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 1px black;
+.top-section-description{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 30px 30px 0 30px;
+  position: relative;
+}
+
+.top-section-description img{
+  width: 60vw;
 }
 
 .top-section-description h3{
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 1.5vw;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3vw;
   font-weight: 380;
-  letter-spacing: 2px;
-  margin-top: 20px;
+  letter-spacing: 1px;
+  margin: 50px 20px 0 50px;
   line-height: 1.5em;
+  width: 40vw;
+  text-align: right;
 }
 
 
@@ -339,17 +343,21 @@ p{
   }
 
   p{
-    font-size: 17px;
+    font-size: 18px;
   }
 
   /*Top Section*/
 
   .top-section-description{
-    padding: 35px;
+    padding: 30px 15px 0 25px;
   }
 
   .top-section-description h3{
-    font-size: 20px;
+    position: absolute;
+    width: 500px;
+    right: 1%;
+    font-size: 19px;
+    bottom: 10%;
   }
 
   /*Gallery*/
@@ -385,23 +393,28 @@ p{
   /*Common Parameter*/
 
   h2{
-    font-size: 25px;
+    font-size: 30px;
   }
 
   p{
-    font-size: 16px;
     line-height: 1.5em;
+    letter-spacing: 0px;
   }
 
   :root{
-    --width: 68vw;
     --height: calc(var(--width)*0.8);
   }
 
   /*Top Section*/
 
+  .top-section-description{
+    padding: 30px 0px 0 15px;
+  }
+
   .top-section-description h3{
-    letter-spacing: 1px;
+    width: 450px;
+    right: 0%;
+    letter-spacing: 0px;
   }
 
   /*Gallery*/ 
@@ -438,22 +451,28 @@ p{
   /*Common Parameter*/
 
   h2{
-    font-size: 23px;
+    font-size: 25px;
   }
 
   p{
-    font-size: 15px;
+    font-size: 17px;
   }
 
   :root{
-    --width: 68vw;
     --height: calc(var(--width)*0.9);
   }
 
   /*Top Section*/
 
   .top-section-description h3{
-    font-size: 19px;
+    font-size: 18px;
+    width: 250px;
+    right: 0.5%;
+    bottom: 8%;
+  }
+
+  .top-section-description img{
+    width: 65vw;
   }
 
   /*Gallery*/
@@ -559,17 +578,27 @@ p{
     font-size: 28px;
   }
 
-  p{
-    font-size: 15px;
-    line-height: 1.5em;
-  }
-
   :root{
-    --width: 62vw;
+    --width: 60vw;
     --height: calc(var(--width)*1.3);
   }
 
   /*Top Section*/
+
+  .top-section-description{
+    display: grid;
+  }
+
+  .top-section-description img{
+    width: 80vw;
+  }
+
+  .top-section-description h3{
+    position: initial;
+    width: unset;
+    margin: 10px 15px 20px 15px;
+    text-align: left;
+  }
 
   .image-1{
     display: none;
@@ -577,19 +606,15 @@ p{
 
   .image-12{
     display: initial;
+    width: var(--width);
+    height: var(--height);
+    object-fit: cover;
   }
 
-  .top-section img{
-    object-position: 50% 75%;
+  .image-14{
+    width: 40vw;
   }
 
-  .top-section-description h1{
-    font-size: 50px;
-  }
-
-  .top-section-description h3{
-    letter-spacing: 0px;
-  }
 }
 
 
@@ -692,22 +717,23 @@ p{
   }
 
   :root{
-    --width: 65vw;
-    --height: calc(var(--width)*1.45);
+    --width: 60vw;
+    --height: calc(var(--width)*1.4);
   }
 
   /*Top Section*/
 
   .top-section-description{
-    padding: 30px;
+    padding: 15px 25px 10px 25px;
   }
 
-  .top-section-description h1{
-    font-size: 45px;
+  .top-section-description img{
+    width: 85vw;
   }
 
   .top-section-description h3{
     font-size: 18px;
+    margin: 10px 10px 15px 10px;
   }
 
   /*Gallery*/
@@ -805,42 +831,18 @@ p{
   /*Common Parameter*/
 
   :root{
-    --width: 93vw;
-    --height: calc(var(--width)*1.5);
+    --width: 70vw;
+    --height: calc(var(--width)*1.45);
   }
 
   /*Top Section*/
 
-  .top-section{
-    position: relative;
-  }
-
-  .top-section-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(99, 99, 99, 0.432), rgba(255, 255, 255, 0));
-    pointer-events: none; /* Ensures the gradient doesn't interfere with image interaction */
-  }
-
   .top-section-description{
-    position: absolute;
-    padding: 9%;
-  }
-
-  .top-section-description h1{
-    font-size: 42px;
+    padding: 15px 15px 5px 15px;
   }
 
   .top-section-description h3{
-    text-shadow: 1px 1px 1px black;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 1.3em;
+    font-size: 17px;
   }
 
   /*Decoration*/
@@ -877,10 +879,22 @@ p{
 
 @media only screen and (max-width:500px){
 
+  /*Common Parameter*/
+
+  p{
+    font-size: 16px;
+  }
+
+  :root{
+    --width: 75vw;
+    --height: calc(var(--width)*1.5);
+  }
+
   /*Top Section*/
 
   .top-section-description h3{
-    font-size: 18px;
+    font-size: 17px;
+    margin: 2%;
   }
 
   /*Gallery*/
