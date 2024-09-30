@@ -143,7 +143,7 @@ nav ul li a:hover::after{
 
 .spot-description{
   align-items: center;
-  margin: auto 5% auto 0;
+  margin: auto 5% auto 4%;
 }
 
 .spot-description h2{
@@ -167,6 +167,10 @@ nav ul li a:hover::after{
   width: 50vw;
   aspect-ratio: 1/0.7;
   object-fit: cover;
+}
+
+.image-2{
+  display: none;
 }
 
 
@@ -392,6 +396,15 @@ nav ul li a:hover::after{
   .spot-image img{
     width: 86vw;
     aspect-ratio: 1/0.8;
+    margin-top: 10px;
+  }
+
+  .image-1{
+    display: none;
+  }
+
+  .image-2{
+    display: initial;
   }
 }
 
