@@ -58,24 +58,30 @@
         </div>
   </div>
 
-
   <div class="first-part-larger-screen">
-    <div class="first-part-logo">
-      <img src = "pictures/first-page-logo-2.png" alt ="Logo of the webpage with headings">
+    <div class="first-part-headings">
+      <div class="first-part-headings-700">
+        <p>Sharing My Passion for Baking, Travel, and Design - Where Creativity Meets Detail</p>
+      </div>
+      <img src ="pictures/first-page-first-part-headings-1.png" class ="first-part-image-1">
+      <img src ="pictures/first-page-first-part-headings-2.png" class ="first-part-image-2">
+      <div class="first-part-headings-wordings">
+        <p>Sharing My Passion for Baking, Travel, and Design - Where Creativity Meets Detail</p>
+      </div>
     </div>
-    
     <div class="first-part-image-container">
       <img id="change-image-1" src="pictures/first-page-image-1.jpg" alt="Tart ring with heart-shape cream piping on top">
     </div>
   </div>
   
   <div class="first-part-mobile">
-    <div class="first-part-mobile-logo">
-      <img src = "pictures/first-page-logo-2.png" alt ="Logo of the webpage with headings">
-    </div>
-    
-    <div class="first-part-mobile-image-container">
-      <img id="change-image-2" src="pictures/first-page-mobile-image-1.jpg" alt="Tart ring with heart-shape cream piping on top">
+    <div id="dark-container">
+      <img id="change-image-2" src="pictures/first-page-mobile-image-1.jpg" alt="Background Image">
+      
+      <div class="center-image">
+        <img src="pictures/first-page-first-part-headings-2.png" alt="Overlay Image">
+        <p>Sharing My Passion for Baking, Travel, and Design - Where Creativity Meets Detail</p>
+      </div>
     </div>
   </div>
 
@@ -83,27 +89,33 @@
   <!-- Second Section -->
 
   <div class="second-part">
-    <div class="second-part-headings">
-      <img src ="pictures/first-page-second-part-headings-1.png">
-    </div>
-    <div class="second-part-description">
-      <div class="second-part-description-2">
-        <h2>Creativity and Joy</h2>
+    <div class="second-part-larger-screen">
+      <div class="second-part-headings">
+        <img src ="pictures/first-page-second-part-headings-1.png" class ="second-part-image-1">
+        <img src ="pictures/first-page-second-part-headings-2.png" class ="second-part-image-2">
+      </div>
+      <div class="second-part-description">
+        <h2>Joy of Baking at Home</h2>
         <p>Baking at home opens up a world of possibilities, from delightful tarts and luscious cakes to hearty bread, cookies, and pastries. Each option offers plenty of room for creativity and joy. I wish you find inspiration here to spark your next baking adventure!</p>
+      </div>
+      
+      <div class="reveal" data-reveal-type="reveal3">  
+        <div class="second-part-slider-container" id="slider1">
+          <div class="slide fade"><img src="pictures/rasperry-tart-ring.jpg" class = "image-1" alt="Tart ring topped with raspberries and cream piped in various shapes"></div>
+          <div class="slide fade"><img src="pictures/crown-cream-cake.jpg" class = "image-2" alt="Strawberry Cream Cake, covered with cream and topped with strawberry."></div>
+          <div class="slide fade"><img src="pictures/ribbon-bread.jpg" class = "image-3" alt="Bread in ribbon-shape, very adorable."></div>
+          <div class="slide fade"><img src="pictures/dress-shape-cookie.jpg" class = "image-4" alt="Cookie in dress-shape, topped with chocolate decoration."></div>
+          <div class="slide fade"><img src="pictures/choux-pastry.jpg" class = "image-5" alt="Choux Pastry filled with various kind of cream"></div>   
+          
+          <div class="second-part-arrow">
+              <a class="second-part-prev" onclick="plusArrowSlides(-1, 'slider1')">&#10094;</a>
+              <a class="second-part-next" onclick="plusArrowSlides(1, 'slider1')">&#10095;</a>
+          </div>
+        </div>
       </div>
       <div class="second-part-button">
         <a href="https://www.k-bakery.com/bakingcollection"><p>Let's<br>View</p></a>
       </div>
-    </div>
-    <div class="second-part-image">
-      <img src ="pictures/rasperry-tart-ring.jpg">
-    </div>
-    <div class="second-part-image-mobile">
-      <img src ="pictures/first-page-second-part-headings-3.png">
-    </div>
-    <div class="second-part-description-mobile">
-      <p>Baking at home opens up a world of possibilities, from delightful tarts and luscious cakes to hearty bread, cookies, and pastries. Each option offers plenty of room for creativity and joy. I wish you find inspiration here to spark your next baking adventure!</p>
-      <img src ="pictures/rasperry-tart-ring.jpg">
     </div>
   </div>
   
@@ -111,12 +123,13 @@
 
   <!-- Third Section -->
 
-  <div class="thirdpartdescription">
+  <div class="third-part-description">
     <p>Homemade baked goods are not only the most delicious but also the healthiest. The aroma that fills the air when they come out of the oven is simply irresistible. Hope everyone enjoys baking at home!
       <Br><Br>
         <a href="https://www.k-bakery.com/recipesummary">Check out the recipes &#8594;</a></p>
-      <div class="thirdparttitle reveal2">
-        <h1>Bake at home</h1>
+      <div class="third-part-title reveal2">
+        <img src ="pictures/first-page-third-part-headings-1.png" class ="third-part-image-1">
+        <img src ="pictures/first-page-third-part-headings-2.png" class ="third-part-image-2">
       </div>    
   </div>
   <div class="reveal" data-reveal-type="reveal2">
@@ -202,8 +215,8 @@
           </div>
         </div>
           
-        <a class="thirdpartprev" onclick="thirdpartplusSlides(-1)"><</a>
-        <a class="thirdpartnext" onclick="thirdpartplusSlides(1)">></a>
+        <a class="third-part-prev" onclick="thirdpartplusSlides(-1)"><</a>
+        <a class="third-part-next" onclick="thirdpartplusSlides(1)">></a>
       </div>
     </div>
   </div>
@@ -212,52 +225,24 @@
 
   <!-- Fourth Section -->
 
-  <div class="fourthpart">
-    <div class="reveal" data-reveal-type="reveal">
-      <div class="fourthpartcontent">
-        <div class="fourthpartdescription">
-          <h1>Discover the Splendor</h1>
-          <p>It's thrilling to discover the beautiful places around us. Sometimes just take a break to explore new destinations, it can bring us many unforgettable moments.
-            <Br><Br>
-              <a href="https://www.k-bakery.com/journeysummary">Let's Explore &#8594;</a>
-          </p>
-        </div>
-        
-        <div class="fourthpart-slideshow">
-          <div class="fourthpart-slideshow-pic fade">
-            <img src="pictures/regent-street-1.jpg" alt = "A picture of Regent Street in London, showing the iconic curved architecture and bustling street scene.">
-          </div>
-          <div class="fourthpart-slideshow-pic fade">
-            <img src="pictures/somerset-house-1.jpg" alt = "A building at Somerset House in London, featuring its historic architecture and classical design.">
-          </div>
-          <div class="fourthpart-slideshow-pic fade">
-            <img src="pictures/golden-square-1.jpg" alt = "A picture of Golden Square in London, featuring beautiful blooming flowers.">
-          </div>
-          <div class="fourthpart-slideshow-pic fade">
-            <img src="pictures/kensington-gardens-5.jpg" alt = "A picture of Kensington Gardens in London, showcasing the pumpkin exhibition by renowned Japanese artist Yayoi Kusama.">
-          </div>
-          <div class="fourthpart-slideshow-pic fade">
-            <img src="pictures/chelsea-riverside-1.jpg" alt = "A picture of the Chelsea Riverside, featuring a peaceful seaside view.">
-          </div>
-          <div class="fourthpart-slideshow-pic fade">
-            <img src="pictures/battersea-power-station-1.jpg" alt = "A picture of Battersea Power Station, showcasing its iconic landmark architecture.">
-          </div>
-          
-          <a class="fourthpartprev" onclick="plusSlides(-1)">❮</a>
-          <a class="fourthpartnext" onclick="plusSlides(1)">❯</a>
-  
-          <div class ="fourthpart-bottomdot">
-            <span class="fourthpart-dot" onclick="currentSlide(1)"></span> 
-            <span class="fourthpart-dot" onclick="currentSlide(2)"></span> 
-            <span class="fourthpart-dot" onclick="currentSlide(3)"></span> 
-            <span class="fourthpart-dot" onclick="currentSlide(4)"></span>
-            <span class="fourthpart-dot" onclick="currentSlide(5)"></span>
-            <span class="fourthpart-dot" onclick="currentSlide(6)"></span> 
-          </div>
-        </div>
-      </div> 
+  <div class="fourth-part">
+    <div class="four-part-description">
+      <p>It's thrilling to discover the beautiful places around us. Sometimes just take a break to explore new destinations, it can bring us many unforgettable moments.</p>
+      <br>
+      <a href="https://www.k-bakery.com/journeysummary">Let's Explore &#8594;</a>
     </div>
-     
+    <div class="fourth-part-heading-image">
+      <img src ="pictures/first-page-fourth-part-headings-1.png" class ="fourth-part-image-1">
+      <img src ="pictures/first-page-fourth-part-headings-2.png" class ="fourth-part-image-2">
+    </div>
+    <div class="fourth-part-content-image">
+      <img src ="pictures/sant-miquel-beach-1.jpg">
+      <img src ="pictures/tate-britain-1.jpg">
+      <img src ="pictures/random-walk-2.jpg">
+      <img src ="pictures/regent-street-2.jpg">
+      <img src ="pictures/surrey-quays-1.jpg">
+      <img src ="pictures/sunset-1.jpg">
+    </div>
   </div>
   
 
@@ -268,6 +253,16 @@
   <script src="js/menu.js"></script>
   <script src="js/copyright.js"></script> 
   <script src="js/reveal.js"></script> 
+
+  <script src="js/image-slider-with-arrows.js"></script> 
+    <script>
+      ArrowImageSlider('slider1'); // Call the function after the script is loaded
+    </script>
+
+  <script src="js/image-slider-with-dots.js"></script> 
+    <script>
+      WithDotsSlider('slider2'); // Call the function after the script is loaded
+    </script> 
 
   <script>
     // First Part
@@ -341,35 +336,8 @@
     }
   </script>  
 
-  <script>
-    //Fourth Section
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("fourthpart-slideshow-pic");
-      let fourthpartdots = document.getElementsByClassName("fourthpart-dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < fourthpartdots.length; i++) {
-        fourthpartdots[i].className = fourthpartdots[i].className.replace("fourthpart-active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      fourthpartdots[slideIndex-1].className += " fourthpart-active";
-    }
-  </script>
+  
+
 
 </body>
 </html>
