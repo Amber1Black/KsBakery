@@ -205,6 +205,10 @@ a{
   filter: contrast(10%);
 }
 
+.second-part-description-800{
+  display: none;
+}
+
 .second-part-description{
   z-index: 10;
 }
@@ -248,19 +252,19 @@ a{
   color: rgb(30, 35, 35);
 }
 
-  /* Second Part Slider Container */
-.second-part-slider-container {
+/* Second Part Slider Container */
+#slider1.second-part-slider-container{
   position: relative;
   margin: auto;
 }
 
-  /* Hide all slides by default */
-.second-part-slide {
+/* Hide all slides by default */
+#slider1 .slide {
   display: none;
 }
 
-  /* Fade effect for slides */
-.fade {
+/* Fade effect for slides */
+#slider1 .fade {
   animation-name: fade;
   animation-duration: 2s;
 }
@@ -270,6 +274,7 @@ a{
   to { opacity: 1; }
 }
 
+/* Arrow styles for second part */
 .second-part-arrow{
   display: grid;
   cursor: pointer;
@@ -292,13 +297,15 @@ a{
   color: #5a5a5a;
 }
 
-.second-part-prev:hover, .second-part-next:hover{
+.second-part-prev:hover, 
+.second-part-next:hover {
   background-color: #000000;
   color: #ffffff;
   border-color: #000000;
 }
 
-.second-part-slider-container img{
+/* Styling for images in slider1 */
+#slider1 img {
   width: 40vw;
   aspect-ratio: 1/1.1;
   object-fit: cover;
@@ -355,15 +362,21 @@ a{
   filter: contrast(20%);
 }
 
-.thirdpartslider{
+/* Second Part Slider Container */
+#slider2.third-part-slider{
   position: relative;
   margin: 60px 0 0 0;
-  width: 100%;
 }
 
-/* Hide the images by default */
-.thirdpartsliderpic {
+/* Hide all slides by default */
+#slider2 .slide {
   display: none;
+}
+
+/* Fade effect for slides */
+#slider2 .fade {
+  animation-name: fade;
+  animation-duration: 2s;
 }
 
 .picturesdisplay{
@@ -604,7 +617,7 @@ a{
     width: 40vw;
   }
 
-  .second-part-slider-container img {
+  #slider1 img{
     width: 44vw;
     aspect-ratio: 1/1.25;
     margin-left: 48%;
@@ -652,7 +665,7 @@ a{
     margin: 0 0 -10% 27%;
   }
 
-  .thirdpartslider{
+  .third-part-slider{
     margin: 35px 0 0 0;
   }
 
@@ -734,7 +747,7 @@ a{
     width: 42vw;
   }
 
-  .second-part-slider-container img{
+  #slider1 img {
     width: 44vw;
     aspect-ratio: 1/1.3;
     margin-left: 54%;
@@ -896,22 +909,23 @@ a{
   /*Second Section*/
 
   .second-part{
-    margin: 80px auto;
+    margin: 0px auto 80px auto;
     height: unset;
   }
 
-  .second-part-headings,
-  .second-part-description{
+  .second-part-headings{
     position: initial;
+    margin-top: -22%;
   }
 
-  .second-part-description h2{
+  .second-part-description{
     display: none;
   }
 
-  .second-part-description{
-    width: unset;
-    margin: 30px 10%;
+  .second-part-description-800{
+    display: grid;
+    padding: 100px 10% 210px 10%;
+    background-color: rgb(248, 245, 240);
   }
 
   .second-part-image-1{
@@ -920,21 +934,17 @@ a{
 
   .second-part-image-2{
     display: initial;
-    width: 75vw;
-    margin: 30px 0 10px 12%;
-    filter: contrast(10%);
+    width: 80vw;
+    margin: 15px 0 10px 10%;
+    filter: contrast(15%);
   }
 
-  .second-part-slider-container img{
+  #slider1 img {
     width: 73vw;
     aspect-ratio: 1/1;
     display: flex;
     margin: auto;
     justify-content: center;
-  }
-
-  .second-part-slider-container{
-    position: relative;
   }
 
   .second-part-arrow{
@@ -1194,15 +1204,11 @@ a{
 
   /*Second Section*/
 
-  .second-part{
-    margin: 70px 0;
+  .second-part-description-800{
+    padding: 100px 10% 160px 10%;
   }
 
-  .second-part-description{
-    margin: 10px 10% 20px 10%;
-  }
-
-  .second-part-slider-container img{
+  #slider1 img {
     width: 75vw;
     aspect-ratio: 1/1.1;
   }
@@ -1268,12 +1274,20 @@ a{
 
   /*Second Section*/
 
-  .second-part-image-2{
-    width: 80vw;
-    margin: 30px 0 10px 10%;
+  .second-part-headings{
+    margin-top: -25%;
   }
 
-  .second-part-slider-container img{
+  .second-part-description-800{
+    padding: 80px 8% 160px 8%;
+  }
+
+  .second-part-image-2{
+    width: 88vw;
+    margin: 15px 0 10px 6%;
+  }
+
+  #slider1 img {
     width: 80vw;
     aspect-ratio: 1/1.2;
   }
@@ -1381,16 +1395,17 @@ a{
 
   /*Second Section*/
 
-  .second-part-image-2{
-    width: 86vw;
-    margin: 30px 0 10px 7%;
+  .second-part-headings{
+    margin-top: -25%;
   }
 
-  .second-part-description{
-    margin: 10px 5% 20px 5%;
+  .second-part-description-800{
+    padding: 70px 6% 130px 6%;
   }
 
-  .second-part-slider-container img{
+  
+
+  #slider1 img {
     width: 96vw;
     aspect-ratio: 1/1.2;
   }
@@ -1449,11 +1464,11 @@ a{
     right: 3%;
   }
 
-  .thirdpartslider h2{
+  .third-part-slider h2{
     font-size: 22px;
   }
 
-  .thirdpartslider p{
+  .third-part-slider p{
     font-size: 14px;
   }
 
@@ -1496,8 +1511,4 @@ a{
     font-size: 16px;
     width: 350px;
   }
-
-
 }
-
-
