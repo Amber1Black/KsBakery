@@ -147,12 +147,15 @@ nav ul li a:hover::after{
 }
 
 .spot-description h2{
-  font-family: 'Nanum Myeongjo', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 3vw;
   margin-bottom: 20px;
 }
 
 .spot-description p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 380;
   font-size: 20px;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -189,6 +192,7 @@ nav ul li a:hover::after{
 
   .topsectiondescription p{
     font-size: 18px;
+    letter-spacing: 0px;
     margin: 25px 0 0 0;
     width: 30vw;
   }
