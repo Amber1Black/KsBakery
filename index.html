@@ -90,6 +90,9 @@
 
   <div class="second-part">
     <div class="second-part-larger-screen">
+      <div class="second-part-description-800">
+        <p>Baking at home opens up a world of possibilities, from delightful tarts and luscious cakes to hearty bread, cookies, and pastries. Each option offers plenty of room for creativity and joy. I wish you find inspiration here to spark your next baking adventure!</p>
+      </div>
       <div class="second-part-headings">
         <img src ="pictures/first-page-second-part-headings-1.png" class ="second-part-image-1">
         <img src ="pictures/first-page-second-part-headings-2.png" class ="second-part-image-2">
@@ -100,7 +103,7 @@
       </div>
       
       <div class="reveal" data-reveal-type="reveal3">  
-        <div class="second-part-slider-container" id="slider1">
+        <div class="slider-container second-part-slider" id="slider1">  
           <div class="slide fade"><img src="pictures/rasperry-tart-ring.jpg" class = "image-1" alt="Tart ring topped with raspberries and cream piped in various shapes"></div>
           <div class="slide fade"><img src="pictures/crown-cream-cake.jpg" class = "image-2" alt="Strawberry Cream Cake, covered with cream and topped with strawberry."></div>
           <div class="slide fade"><img src="pictures/ribbon-bread.jpg" class = "image-3" alt="Bread in ribbon-shape, very adorable."></div>
@@ -108,8 +111,8 @@
           <div class="slide fade"><img src="pictures/choux-pastry.jpg" class = "image-5" alt="Choux Pastry filled with various kind of cream"></div>   
           
           <div class="second-part-arrow">
-              <a class="second-part-prev" onclick="plusArrowSlides(-1, 'slider1')">&#10094;</a>
-              <a class="second-part-next" onclick="plusArrowSlides(1, 'slider1')">&#10095;</a>
+            <a class="prev-arrow second-part-prev">&#10094;</a>
+            <a class="next-arrow second-part-next">&#10095;</a>
           </div>
         </div>
       </div>
@@ -134,8 +137,8 @@
   </div>
   <div class="reveal" data-reveal-type="reveal2">
     <div class="thirdpart">
-      <div class="thirdpartslider">
-        <div class="thirdpartsliderpic">
+      <div class="slider-container third-part-slider" id="slider2">  
+        <div class="slide fade">
           <div class="picturesdisplay">
             <div class="pic1">
               <img src="pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top">
@@ -151,7 +154,7 @@
           </div>
         </div>
   
-        <div class="thirdpartsliderpic">
+        <div class="slide fade">
           <div class="picturesdisplay">
             <div class="pic1">
               <img src="pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside">
@@ -167,7 +170,7 @@
           </div>
         </div>
   
-        <div class="thirdpartsliderpic">
+        <div class="slide fade">
           <div class="picturesdisplay">
             <div class="pic1">
               <img src="pictures/pumpkin-bread.jpg" alt = "Bread with a crispy top shaped like a pumpkin">
@@ -183,7 +186,7 @@
           </div>
         </div>
   
-        <div class="thirdpartsliderpic">
+        <div class="slide fade">
           <div class="picturesdisplay">
             <div class="pic1">
               <img src="pictures/butterfly-palmier.jpg" alt = "Palmier in butterfly shape">
@@ -199,7 +202,7 @@
           </div>
         </div>
   
-        <div class="thirdpartsliderpic">
+        <div class="slide fade">
           <div class="picturesdisplay">
             <div class="pic1">
               <img src="pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball">
@@ -214,9 +217,10 @@
             </div>
           </div>
         </div>
-          
-        <a class="third-part-prev" onclick="thirdpartplusSlides(-1)"><</a>
-        <a class="third-part-next" onclick="thirdpartplusSlides(1)">></a>
+        <div class="third-part-arrow">
+          <a class="prev-arrow third-part-prev"><</a>
+          <a class="next-arrow third-part-next">></a>
+        </div>
       </div>
     </div>
   </div>
@@ -257,12 +261,13 @@
   <script src="js/image-slider-with-arrows.js"></script> 
     <script>
       ArrowImageSlider('slider1'); // Call the function after the script is loaded
+      ArrowImageSlider('slider2'); // Call the function after the script is loaded
     </script>
 
-  <script src="js/image-slider-with-dots.js"></script> 
-    <script>
-      WithDotsSlider('slider2'); // Call the function after the script is loaded
-    </script> 
+
+
+
+
 
   <script>
     // First Part
@@ -304,39 +309,6 @@
     setInterval(changeImage1, 4000); // Change the first image every 4 seconds
     setInterval(changeImage2, 4000); // Change the second image every 4 seconds
   </script>
-  
-
-  <script>
-    //Third Section
-    let thirdpartslideIndex = 1;
-    thirdpartshowSlides(thirdpartslideIndex);
-
-    function thirdpartplusSlides(n) {
-      thirdpartshowSlides(thirdpartslideIndex += n);
-    }
-
-    function thirdpartcurrentSlide(n) {
-      thirdpartshowSlides(thirdpartslideIndex = n);
-    }
-
-    function thirdpartshowSlides(n) {
-      let i;
-      let thirdpartslides = document.getElementsByClassName("thirdpartsliderpic");
-      let thirdpart = document.getElementsByClassName("third");
-      if (n > thirdpartslides.length) {thirdpartslideIndex = 1}
-      if (n < 1) {thirdpartslideIndex = thirdpartslides.length}
-      for (i = 0; i < thirdpartslides.length; i++) {
-        thirdpartslides[i].style.display = "none";
-      }
-      for (i = 0; i < thirdpart.length; i++) {
-        thirdpart[i].className = thirdpart[i].className.replace("active", "");
-      }
-      thirdpartslides[thirdpartslideIndex-1].style.display = "block";
-      thirdpart[thirdpartslideIndex-1].className += " active";
-    }
-  </script>  
-
-  
 
 
 </body>
