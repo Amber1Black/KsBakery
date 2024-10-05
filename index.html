@@ -1,321 +1,1474 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to my webpage, where I share my passion for baking and travel! Discover delicious bakery recipes to try at home and read about my travel adventures. Let's enjoy baking and the beauty of life together!">
-
-  <title>K's Bakery</title>
-  <link rel="icon" type="image/png" href="pictures/websitelogo.png" sizes="512x512">
-  <link rel="stylesheet" href="style/index.css">
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  
-  <!-- Start cookieyes banner --> 
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
-  <!-- End cookieyes banner -->
-   
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-  
-    // Set default consent mode
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',         // Deny storage of ads-related cookies
-      'analytics_storage': 'denied'   // Deny storage of analytics cookies
-    });
-  
-    // Initialize Google Analytics
-    gtag('js', new Date());
-    gtag('config', 'G-RF94ND0HKD', {
-      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
-      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
-      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
-    });
-  </script>
-
-
-</head>
-<body>
-  <div class="headingsection">
-    <a href="https://www.k-bakery.com"><img class="logo" src="pictures/logo.png" alt = "Logo of the website"></a>
-        <nav>
-          <ul id="menulist">
-            <li><a href="https://www.k-bakery.com/bakingcollection">Baking Collection</a></li>
-            <li><a href="https://www.k-bakery.com/recipesummary">Recipe</a></li>
-            <li><a href="https://www.k-bakery.com/journeysummary">Journey</a></li>
-            <li><a href="https://www.k-bakery.com/aboutme">About Me</a></li>
-            <li><a href="https://www.k-bakery.com/contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="menuicon">
-          <img class="menu-icon" onclick="togglemenu()" src="pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
-        </div>
-  </div>
-
-  <div class="first-part-larger-screen">
-    <div class="first-part-headings">
-      <img src ="pictures/first-page-first-part-headings-2.png" class ="first-part-image-1">
-      <img src ="pictures/first-page-first-part-headings-2.png" class ="first-part-image-2">
-      <p>Sharing My Passion for Baking, Travel, and Design - Where Creativity Meets Detail</p>
-    </div>
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
     
-    <div class="first-part-image-container">
-      <img id="change-image-1" src="pictures/first-page-image-1.jpg" alt="Tart ring with heart-shape cream piping on top">
-    </div>
-  </div>
+}
+
+/*Headings*/
+
+.headingsection{
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.logo{
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 40px;
+  margin-top: 14px;
+}
   
-  <div class="first-part-mobile">
-    <div id="dark-container">
-      <img id="change-image-2" src="pictures/first-page-mobile-image-1.jpg" alt="Background Image">
-      
-      <div class="first-part-mobilwordings">
-        <img src="pictures/first-page-mobile-headings.png">
-      </div>  
-      <div class="first-part-mobile-description">
-        <img src = "pictures/first-part-mobile-description.png">
-      </div>
-        
-    </div>
-  </div>
+.menu-icon{
+  display: none;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+  background-color: white;
+}
+
+nav ul{
+  background-color: white;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 45px;
+  background-color: white; 
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: 17px;
+  background-color: white;
+  position: relative;
+}
+
+nav ul li a:hover{
+  color: rgb(80, 80, 80);
+}
+  
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/* Common Reveal Styles */
+.reveal {
+  position: relative;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(100px); /* Start by moving content down */
+  transition: all 2s ease; /* Smooth transition */
+}
+
+.reveal.active {
+  opacity: 1; /* Visible when active */
+  transform: translateY(0); /* Moves back to normal position */
+}
+
+/* Specific Reveal Animations */
+.reveal[data-reveal-type="reveal"] {
+  transform: translateY(100px);
+}
+
+.reveal[data-reveal-type="reveal"].active {
+  transform: translateY(0px);
+}
+
+.reveal[data-reveal-type="reveal2"] {
+  transform: translateX(-100px);
+}
+
+.reveal[data-reveal-type="reveal2"].active {
+  transform: translateX(0px);
+}
+
+.reveal[data-reveal-type="reveal3"] {
+  transform: translateX(100px);
+}
+
+.reveal[data-reveal-type="reveal3"].active {
+  transform: translateX(0px);
+}
+
+/*Common Parameter*/
+
+a,
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 380;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*First Section*/
+
+.first-part-mobile,
+.first-part-image-2{
+  display: none;
+}
+
+.first-part-image-container{
+  position: relative;
+}
+
+.first-part-headings{
+  position: absolute;
+  z-index: 10;
+  top: 230px;
+  right: 7%;
+}
+
+.first-part-image-1{
+  width: 86vw;
+}
+
+.first-part-headings p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: end;
+  margin: 20px 15px 0 0;
+  color: #ffffff;
+}
+
+#change-image-1{
+  width: 100%;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 1;
+  filter: brightness(0.7);
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in; /* Fast transition */
+}
+
+.fade-out {
+  opacity: 0; /* Fade to 40% visibility */
+  transition: opacity 1s ease-out; /* Fast transition */
+}
 
 
-  <!-- Second Section -->
+/*Second Section*/
 
-  <div class="second-part">
-    <div class="second-part-larger-screen">
-      <div class="second-part-description-800">
-        <p>Baking at home opens up a world of possibilities, from delightful tarts and luscious cakes to hearty bread, cookies, and pastries. Each option offers plenty of room for creativity and joy. I wish you find inspiration here to spark your next baking adventure!</p>
-      </div>
-      <div class="second-part-headings">
-        <img src ="pictures/first-page-second-part-headings-1.png" class ="second-part-image-1">
-        <img src ="pictures/first-page-second-part-headings-2.png" class ="second-part-image-2">
-      </div>
-      <div class="second-part-description">
-        <h2>Joy of Baking at Home</h2>
-        <p>Baking at home opens up a world of possibilities, from delightful tarts and luscious cakes to hearty bread, cookies, and pastries. Each option offers plenty of room for creativity and joy. I wish you find inspiration here to spark your next baking adventure!</p>
-      </div>
-      
-      <div class="reveal" data-reveal-type="reveal3">  
-        <div class="slider-container second-part-slider" id="slider1">  
-          <div class="slide fade"><img src="pictures/rasperry-tart-ring.jpg" class = "image-1" alt="Tart ring topped with raspberries and cream piped in various shapes"></div>
-          <div class="slide fade"><img src="pictures/crown-cream-cake.jpg" class = "image-2" alt="Strawberry Cream Cake, covered with cream and topped with strawberry."></div>
-          <div class="slide fade"><img src="pictures/ribbon-bread.jpg" class = "image-3" alt="Bread in ribbon-shape, very adorable."></div>
-          <div class="slide fade"><img src="pictures/dress-shape-cookie.jpg" class = "image-4" alt="Cookie in dress-shape, topped with chocolate decoration."></div>
-          <div class="slide fade"><img src="pictures/choux-pastry.jpg" class = "image-5" alt="Choux Pastry filled with various kind of cream"></div>   
-          
-          <div class="second-part-arrow">
-            <a class="prev-arrow second-part-prev">&#10094;</a>
-            <a class="next-arrow second-part-next">&#10095;</a>
-          </div>
-        </div>
-        <div class="second-part-button">
-          <a href="https://www.k-bakery.com/bakingcollection"><p>Let's<br>View</p></a>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+.second-part{
+  margin: 100px 3%;
+  position: relative;
+  height: calc(42vw/0.95);
+  overflow: hidden;
+}
+
+.second-part-headings{
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  z-index: 10;
+}
+
+.second-part-image-2{
+  display: none;
+}
+
+.second-part-image-1{
+  width: 40vw;
+  filter: contrast(10%);
+}
+
+.second-part-description-800{
+  display: none;
+}
+
+.second-part-description{
+  z-index: 10;
+}
+
+.second-part-description{
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+  width: 550px;
+}
+
+.second-part-description h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 380;
+  word-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.second-part-button{
+  position: absolute;
+  bottom: 10%;
+  left: 47.5%;
+  background-color: antiquewhite;
+  border-radius: 100%;
+  width: 10vw;
+  aspect-ratio: 1/1;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.second-part-button p,
+.second-part-button a{
+  text-align: center;
+  align-items: center;
+  margin: 28% auto;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  color: rgb(30, 35, 35);
+}
+
+/* Second Part Slider Container */
+#slider1.second-part-slider-container{
+  position: relative;
+  margin: auto;
+}
+
+/* Hide all slides by default */
+#slider1 .slide {
+  display: none;
+}
+
+/* Fade effect for slides */
+#slider1 .fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Arrow styles for second part */
+.second-part-arrow{
+  display: grid;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 0%;
+  gap: 3%;
+}
+
+.second-part-prev,
+.second-part-next{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #5a5a5a;
+  padding: 8px 15px;
+  font-size: 30px;
+  font-weight: 300;
+  color: #5a5a5a;
+}
+
+.second-part-prev:hover, 
+.second-part-next:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+/* Styling for images in slider1 */
+#slider1 img {
+  width: 40vw;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+  margin-left: 53%;
+}
+
+.image-1{
+  object-position: 50% 55%;
+}
+
+.image-2{
+  object-position: 50% 60%;
+}
+
+.image-3{
+  object-position: 50% 70%;
+}
+
+
+/*Third Section*/
+
+.thirdpart{
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.third-part-description{
+  background-color: rgb(248, 245, 240);
+  padding: 80px 5%;
+}
+
+.third-part-description p{
+  width: 700px;
+  color: #000000;
+}
+
+.third-part-description a{
+  text-decoration: none;
+  background-color: #727171;
+  color: #ffffff;
+  padding: 12px 35px;
+  border-radius: 50px;
+  border-style: none;
+  margin-top: 20px;
+}
+
+.third-part-image-2{
+  display: none;
+}
+
+.third-part-image-1{
+  width: 60vw;
+  margin: 0 0 -9% 27%;
+  filter: contrast(20%);
+}
+
+/* Second Part Slider Container */
+#slider2.third-part-slider{
+  position: relative;
+  margin: 60px 0 0 0;
+}
+
+/* Hide all slides by default */
+#slider2 .slide {
+  display: none;
+}
+
+/* Fade effect for slides */
+#slider2 .fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.picturesdisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.pic2{
+  padding: 20px;
+  border-width: 3px;
+  box-shadow: 0px 0px 3px black;
+  margin: 5px 0;
+}
+
+.pic2 img{
+  width: 30vw;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.pic2 h2{
+  font-size: 30px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  margin: 10px 0 0 10px;
+}
+
+.pic2 p{
+  width: 28vw;
+  margin: 10px 0 20px 10px;
+}
+
+.pic1 img, .pic3 img{
+  width: 25vw;
+  aspect-ratio: 2/2.7;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.third-part-prev,
+.third-part-next{
+  position: absolute;
+  top: 48%;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #5a5a5a;
+  border: none;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  padding: 2px 0;
+  border-style: double;
+  border-width: 5px;
+  border-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  left: 31.5%;
+}
+
+.third-part-next{
+  left: unset;
+  right: 31.5%;
+}
+
+.third-part-prev:hover,
+.third-part-next:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+
+/*Fourth Section*/
+
+.fourth-part{
+  margin: 150px auto;
+  padding: 50px 0;
+  background-color: rgb(248, 245, 240);
+}
+
+.four-part-description{
+  text-align: right;
+  width: 55vw;
+  margin: 30px 0 0 42%;
+}
+
+.four-part-description a,
+.four-part-description p{
+  color: #484848;
+} 
+
+.four-part-description a{
+  text-decoration: none;
+  background-color: #727171;
+  color: #ffffff;
+  padding: 12px 35px;
+  border-radius: 50px;
+  border-style: none;
+  margin-top: 20px;
+}
+
+.fourth-part-heading-image{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 20px auto;
+  filter: contrast(1%);
+}
+
+.fourth-part-image-2{
+  display: none;
+}
+
+.fourth-part-image-1{
+  width: 95vw;
+}
+
+.fourth-part-content-image{
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px;
+  column-gap: 0.5%;
+  margin: auto 1%;
+}
+
+.fourth-part-content-image img{
+  width: 30vw;
+  aspect-ratio: 1/1.3;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+
+/*copyright*/
+
+.copyright{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 11px;
+  color: grey;
+  bottom: 2%;
+}
+
+
+@media only screen and (max-width:1500px){
+
+  /*Common Parameter*/
+
+  a,
+  p{
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  /*First Section*/
+
+  .first-part-headings p{
+    font-size: 22px;
+  }
+
+  #change-image-1{
+    aspect-ratio: 1/0.55;
+  }
+
+  /*Second Section*/
+
+  .second-part-description{
+    width: 520px;
+  }
+
+  .second-part-prev,
+  .second-part-next{
+    padding: 8px 15px;
+    font-size: 27px;
+  }
+
+  /*Third Section*/
+
+  .third-part-description p{
+    width: 620px;
+  }
+
+  .third-part-image-1{
+    margin: 0 0 -11% 27%;
+  }
+
+  .third-part-prev,
+  .third-part-next{
+    top: 48%;
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 2px 0;
+    border-width: 5px;
+    left: 31.5%;
+  }
+
+  .third-part-next{
+    left: unset;
+    right: 31.5%;
+  }
+
+}
+
+
+@media only screen and (max-width:1250px){
+
+  /*Common Parameter*/
+
+  a,
+  p{
+    font-size: 17px;
+  }
+
+  /*First Section*/
+
+  .first-part-headings p{
+    font-size: 20px;
+    margin: 15px 10px 0 0;
+  }
+
+  #change-image-1{
+    aspect-ratio: 1/0.6;
+  }
+
+  /*Second Section*/
+
+  .second-part{
+    margin: 100px 3%;
+    height: calc(42vw/0.8);
+  }
+
+  .second-part-headings{
+    top: 8%;
+    left: 7%;
+  }
+  
+  .second-part-image-1{
+    width: 40vw;
+  }
+
+  #slider1 img{
+    width: 44vw;
+    aspect-ratio: 1/1.25;
+    margin-left: 48%;
+  }
+
+  .second-part-description{
+    left: 1%;
+    width: 37vw;
+  }
+
+  .second-part-description h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .second-part-button{
+    left: 42%;
+    width: 11vw;
+  }
+  
+  .second-part-button a,
+  .second-part-button p{
+    margin: 28% auto;
+    font-size: 1.6vw;
+    letter-spacing: 1px;
+  }
+
+  .second-part-prev,
+  .second-part-next{
+    padding: 6px 13px;
+    font-size: 27px;
+  }
+
+  .image-1{
+    object-position: 50% 68%;
+  }
+  
+  /*Third Section*/
+
+  .third-part-description{
+    padding: 70px 4%;
+  }
+
+  .third-part-image-1{
+    margin: 0 0 -10% 27%;
+  }
+
+  .third-part-slider{
+    margin: 35px 0 0 0;
+  }
+
+  .picturesdisplay{
+    gap: 3%;
+  }
+
+  .pic2{
+    padding: 12px;
+  }
+
+  .pic2 img{
+    width: 33vw;
+  }
+
+  .pic1 img, .pic3 img{
+    width: 27vw;
+  }
+
+  .pic2 h2{
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .pic2 p{
+    width: 31vw;
+    margin: 5px 0 20px 10px;
+  }
+
+  .third-part-prev{
+    left: 30.5%;
+  }
+
+  .third-part-next{
+    right: 30.5%;
+  }
+
+  /*Fourth Section*/
+
+  .fourth-part{
+    margin: 100px auto;
+    padding: 50px 0;
+  }
+
+  .four-part-description{
+    width: 62vw;
+    margin: 30px 0 0 35%;
+  }
+
+}
+
+
+@media only screen and (max-width:1000px){
+
+  /*First Section*/
+
+  .first-part-headings p{
+    font-size: 18px;
+    margin: 15px 5px 0 0;
+  }
+
+  #change-image-1{
+    aspect-ratio: 1/0.7;
+  }
+
+  /*Second Section*/
+
+  .second-part{
+    margin: 80px 2%;
+    height: calc(42vw/0.72);
+  }
+
+  .second-part-headings{
+    top: 4%;
+    left: 4%;
+  }
+  
+  .second-part-image-1{
+    width: 42vw;
+  }
+
+  #slider1 img {
+    width: 44vw;
+    aspect-ratio: 1/1.3;
+    margin-left: 54%;
+  }
+
+  .second-part-description{
+    bottom: 5%;
+    left: 2%;
+    width: 42vw;
+  }
+
+  .second-part-description h2{
+    font-size: 25px;
+  }
+
+  .second-part-button{
+    bottom: 10%;
+    left: 47%;
+    width: 13vw;
+  }
+  
+  .second-part-button a,
+  .second-part-button p{
+    margin: 28% auto;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+  }
+
+  .second-part-arrow{
+    display: flex;
+    top: 45%;
+    right: unset;
+    left: 44%;
+    gap: 3%;
+  }
+
+  .second-part-prev,
+  .second-part-next{
+    padding: 3px 12px;
+    font-size: 22px;
+  }
+
+  .second-part-prev:hover, .second-part-next:hover{
+    background-color: unset;
+    color: unset;
+    border-color: unset;
+  }
+
+  /*Third Section*/
+
+  .third-part-description{
+    padding: 60px 4%;
+  }
+
+  .third-part-description p{
+    width: 530px;
+  }
+
+  .third-part-image-1{
+    margin: 0 0 -11.5% 27%;
+  }
+
+  .picturesdisplay{
+    gap: 20px;
+  }
+
+  .pic2 img{
+    width: 39vw;
+  }
+
+  .pic2 p{
+    width: 38vw;
+  }
+
+  .pic1 img, .pic3 img{
+    width: 33vw;
+    height: 400px;
+  }
+
+  .pic1 img{
+    object-position: 99% 50%;
+  }
+
+  .pic3 img{
+    object-position: 1% 50%;
+  }
+
+  .third-part-prev{
+    left: 26%;
+  }
+
+  .third-part-next{
+    right: 26%;
+  }
+
+  /*Fourth Section*/
+
+  .four-part-description{
+    width: 77vw;
+    margin: 30px 0 0 20%;
+  }
+
+  .fourth-part-content-image img{
+    width: 40vw;
+    aspect-ratio: 1/1.3;
+    margin-bottom: 5px;
+  }
+
+}
+
+
+@media only screen and (max-width:900px){
+
+  /*Headings*/
+
+  .logo{
+    margin-left: 20px;
+  }
+
+  nav{
+    padding-right: 1%;
+  }
+
+  nav ul li{
+    margin-right: 28px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width:800px){
+
+  /*Common Parameter*/
+
+  a,
+  p{
+    font-size: 16px;
+  }
+
+  /*First Section*/
+
+  .first-part-headings{
+    top: 200px;
+    right: 2.5%;
+  }
+
+  .first-part-headings p{
+    font-size: 20px;
+    width: 450px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .first-part-image-1{
+    width: 95vw;
+  }
+
+  #change-image-1{
+    width: 100vw;
+    aspect-ratio: 1/0.8;
+  }
+
+  /*Second Section*/
+
+  .second-part{
+    margin: 0px auto 80px auto;
+    height: unset;
+  }
+
+  .second-part-headings{
+    position: initial;
+    margin-top: 20px;
+  }
+
+  .second-part-description{
+    display: none;
+  }
+
+  .second-part-description-800{
+    display: grid;
+    padding: 100px 28% 0 8%;
+  }
+
+  .second-part-image-1{
+    display: none;
+  }
+
+  .second-part-image-2{
+    display: initial;
+    width: 80vw;
+    margin: 15px 0 10px 10%;
+    filter: contrast(15%);
+  }
+
+  #slider1 img {
+    width: 73vw;
+    aspect-ratio: 1/1;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .second-part-arrow{
+    position: initial;
+    display: initial;
+    top: unset;
+    right: unset;
+  }
+
+  .second-part-prev{
+    position: absolute;
+    top: 45%;
+    left: 7%;
+  }
+
+  .second-part-next{
+    position: absolute;
+    right: 7%;
+    top: 45%;
+  }
+
+  .second-part-prev,
+  .second-part-next{
+    padding: 5px 15px;
+    font-size: 25px;
+  }
+
+  .second-part-button{
+    bottom: 1%;
+    left: unset;
+    right: 10%;
+    width: 130px;
+  }
+  
+  .second-part-button a,
+  .second-part-button p{
+    margin: 38px auto;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    z-index: 10;
+  }
+
+  .image-1{
+    object-position: 50% 55%;
+  }
+  
+  .image-2{
+    object-position: 50% 60%;
+  }
+  
+  .image-3{
+    object-position: 50% 70%;
+  }
+
+  /*Third Section*/
+
+  .third-part-description{
+    padding: 60px 4%;
+  }
+
+  .third-part-description p{
+    width: 490px;
+  }
+
+  .third-part-description a{
+    padding: 12px 25px;
+  }
+
+  .third-part-image-1{
+    margin: 0 0 -12% 27%;
+    width: 65vw;
+  }
+
+  .pic2 img{
+    width: 50vw;
+    aspect-ratio: 1/1;
+  }
+
+  .pic1 img, .pic3 img{
+    width: 28vw;
+    height: 380px;
+  }
+
+  .pic2 p{
+    width: 48vw;
+  }
+
+  .third-part-prev{
+    left: 19%;
+  }
+
+  .third-part-next{
+    right: 19%;
+  }
+
+  /*Fourth Section*/
+
+  .four-part-description{
+    width: 57vw;
+    margin: 30px 0 0 40%;
+  }
+
+  .fourth-part-content-image img{
+    width: 45vw;
+    aspect-ratio: 1/1.3;
+  }
+
+}
+
+@media only screen and (max-width:700px){
+
+	.logo{
+    width: 20vw;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
+
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
+
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+
+  nav ul li a:hover{
+    color:black;
+  }
+
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.5s;
+  }
+
+  nav ul li a:hover::after{
+    width: 0;
+  }
+
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 55px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  #menulist{
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
+
+  /*First Section*/
+
+  .first-part-larger-screen{
+    display: none;
+  }
+
+  .first-part-mobile{
+    display: initial;
+  }
+  
+  :root {
+    --width: 10vw;
+    --height: calc(100vw * 1.5);
+  }
+  
+  #dark-container {
+    position: relative;
+    width: 100vw;
+    height: var(--height);
+    overflow: hidden;
+  }
+  
+  /* Background image */
+  #change-image-2 {
+    width: 100%;
+    height: var(--height);
+    object-fit: cover; /* Maintain aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Behind the text */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    filter: brightness(0.65) contrast(80%);
+  }
+  
+  .first-part-mobilwordings{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    z-index: 3; /* On top of everything */
+    text-align: center; /* Center text */
+  }
+  
+  /* Explicit size control for center image */
+  .first-part-mobilwordings img {
+    width: auto; /* Responsive width */
+    max-width: 55vw; /* Maintain aspect ratio */
+    height: auto; /* Keep height auto */
+  }
+
+  .first-part-mobile-description{
+    position: absolute;
+    z-index: 10;
+    bottom: 12%;
+    right: 3%;
+  }
+
+  .first-part-mobile-description img{
+    width: 60vw;
+  }
   
 
+  /*Second Section*/
 
-  <!-- Third Section -->
+  #slider1 img {
+    width: 75vw;
+    aspect-ratio: 1/1.1;
+  }
 
-  <div class="third-part-description">
-    <p>Homemade baked goods are not only the most delicious but also the healthiest. The aroma that fills the air when they come out of the oven is simply irresistible. Hope everyone enjoys baking at home!
-      <Br><Br>
-        <a href="https://www.k-bakery.com/recipesummary">Check out the recipes &#8594;</a></p>
-      <div class="reveal" data-reveal-type="reveal">
-        <div class="third-part-title">
-          <img src ="pictures/first-page-third-part-headings-1.png" class ="third-part-image-1">
-          <img src ="pictures/first-page-third-part-headings-2.png" class ="third-part-image-2">
-        </div>   
-      </div>   
-  </div>
-  <div class="reveal" data-reveal-type="reveal2">
-    <div class="thirdpart">
-      <div class="slider-container third-part-slider" id="slider2">  
-        <div class="slide fade">
-          <div class="picturesdisplay">
-            <div class="pic1">
-              <img src="pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top">
-            </div>
-            <div class="pic2">
-              <a href="https://www.k-bakery.com/recipe/custardbread"><img src="pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside, linking to the Custard recipe."></a>
-              <h2>Custard Bread</h2>
-              <p>The rich custard inside elevates the taste of the bread to another level</p>
-            </div>
-            <div class="pic3">
-              <img src ="pictures/pumpkin-bread.jpg" alt = "Bread with a crispy top shaped like a pumpkin">
-            </div>
-          </div>
-        </div>
+  .second-part-prev{
+    left: 4%;
+  }
+
+  .second-part-next{
+    right: 4%;
+  }
+
+
+  /*Third Section*/
+
+  .third-part-description{
+    padding: 65px 4%;
+  }
+
+  .third-part-image-1{
+    margin: 0 0 -15% 15%;
+    width: 80vw;
+  }
+
+  /*Fourth Section*/
+
+  .four-part-description{
+    width: 68vw;
+    margin: 30px 0 0 29%;
+  }
+
+  .fourth-part-heading-image{
+    justify-content: initial;
+    margin: -10px auto 10px 4%;
+  }
+
+  .fourth-part-image-1{
+    display: none;
+  }
+
+  .fourth-part-image-2{
+    display: initial;
+    width: 88vw;
+  }
+
+  .fourth-part-content-image img{
+    width: 58vw;
+    aspect-ratio: 1/1.3;
+  }
+
+}
+
+
+@media only screen and (max-width:600px){
+
+  /*Second Section*/
+
+  .second-part-image-2{
+    width: 88vw;
+    margin: 15px 0 10px 6%;
+  }
+
+  #slider1 img {
+    width: 80vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .second-part-prev{
+    left: 2%;
+  }
+
+  .second-part-next{
+    right: 2%;
+  }
+
+  .second-part-button{
+    bottom: 1%;
+    right: 10%;
+    width: 120px;
+  }
   
-        <div class="slide fade">
-          <div class="picturesdisplay">
-            <div class="pic1">
-              <img src="pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside">
-            </div>
-            <div class="pic2">
-              <a href="https://www.k-bakery.com/recipe/pumpkinbread"><img src="pictures/pumpkin-bread.jpg"  alt = "Bread with a crispy top shaped like a pumpkin, linking to the Pumpkin recipe"></a>
-              <h2>Pumpkin Bread</h2>
-              <p>They look adorable and require only simple preparation</p>
-            </div>
-            <div class="pic3">
-              <img src ="pictures/butterfly-palmier.jpg" alt = "Palmier in butterfly shape">
-            </div>
-          </div>
-        </div>
+  .second-part-button a,
+  .second-part-button p{
+    margin: 33px auto;
+    font-size: 18px;
+  }
+
+  /*Third Section*/
+
+  .third-part-description{
+    padding: 60px 5%;
+  }
+
+  .third-part-description p, .third-part-description a{
+    width: 330px;
+  }
+
+  .third-part-image-1{
+    display: none;
+  }
+
+  .third-part-image-2{
+    display: initial;
+    width: 65vw;
+    filter: contrast(15%);
+    margin: -15% 0 -90px 30%;
+  }
+
+  .pic2 img{
+    width: 60vw;
+  }
+
+  .pic2 p{
+    width: 58vw;
+  }
+
+  .pic1 img, .pic3 img{
+    width: 20vw;
+  }
+
+  .third-part-prev{
+    left: 13%;
+  }
+
+  .third-part-next{
+    right: 13%;
+  }
+
   
-        <div class="slide fade">
-          <div class="picturesdisplay">
-            <div class="pic1">
-              <img src="pictures/pumpkin-bread.jpg" alt = "Bread with a crispy top shaped like a pumpkin">
-            </div>
-            <div class="pic2">
-              <a href="https://www.k-bakery.com/recipe/butterflypalmier"><img src="pictures/butterfly-palmier.jpg"  alt = "Palmier in butterfly shape, linking to Butterfly Palmier recipe"></a>
-              <h2>Butterfly Palmier</h2>
-              <p>Can't stop eating one after another with the crispy texture</p>
-            </div>
-            <div class="pic3">
-              <img src ="pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball">
-            </div>
-          </div>
-        </div>
+  /*Fourth Section*/
+
+  .four-part-description{
+    width: 80vw;
+    margin: 30px 0 0 17%;
+  }
+
+  .fourth-part-heading-image{
+    margin: 0px auto 10px 4%;
+  }
+
+  .fourth-part-content-image img{
+    width: 65vw;
+    aspect-ratio: 1/1.3;
+  }
+
+  .four-part-description a{
+    padding: 12px 30px;
+  }
+}
+
+
+@media only screen and (max-width:500px){
+
+  /*Common Parameter*/
+
+  a,
+  p{
+    font-size: 15px;
+  }
+
+  /*Second Section*/
+
+  #slider1 img {
+    width: 96vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .second-part-prev{
+    left: 0.5%;
+    color: #ffffff;
+    border-style: none;
+    font-size: 45px;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .second-part-next{
+    right: 0.5%;
+    color: #ffffff;
+    border-style: none;
+    font-size: 45px;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .second-part-button{
+    bottom: 1%;
+    right: 5%;
+    width: 110px;
+  }
   
-        <div class="slide fade">
-          <div class="picturesdisplay">
-            <div class="pic1">
-              <img src="pictures/butterfly-palmier.jpg" alt = "Palmier in butterfly shape">
-            </div>
-            <div class="pic2">
-              <a href="https://www.k-bakery.com/recipe/pokeballcookie"><img src="pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball, linking to the Poké Ball Cookie recipe."></a>
-              <h2>Poke Ball Cookie</h2>
-              <p>The cookies look so cute that you almost don't want to eat them</p>
-            </div>
-            <div class="pic3">
-              <img src ="pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top">
-            </div>
-          </div>
-        </div>
-  
-        <div class="slide fade">
-          <div class="picturesdisplay">
-            <div class="pic1">
-              <img src="pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball">
-            </div>
-            <div class="pic2">
-              <a href="https://www.k-bakery.com/recipe/lemontart"><img src="pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top, linking to the Lemon Tart recipe"></a>
-              <h2>Lemon Tart</h2>
-              <p>The tangy lemon pairs perfectly with the sweet decorations on top</p>
-            </div>
-            <div class="pic3">
-              <img src ="pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside">
-            </div>
-          </div>
-        </div>
-        <div class="third-part-arrow">
-          <a class="prev-arrow third-part-prev"><</a>
-          <a class="next-arrow third-part-next">></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+  .second-part-button a,
+  .second-part-button p{
+    margin: 30px auto;
+    font-size: 17px;
+  }
 
+  /*Third Section*/
 
-  <!-- Fourth Section -->
+  .third-part-description p{
+    width: 290px;
+  }
 
-  <div class="fourth-part">
-    <div class="four-part-description">
-      <p>It's thrilling to discover the beautiful places around us. Sometimes just take a break to explore new destinations, it can bring us many unforgettable moments.</p>
-      <br>
-      <a href="https://www.k-bakery.com/journeysummary">Let's Explore &#8594;</a>
-    </div>
-    <div class="reveal" data-reveal-type="reveal">
-      <div class="fourth-part-heading-image">
-        <img src ="pictures/first-page-fourth-part-headings-1.png" class ="fourth-part-image-1">
-        <img src ="pictures/first-page-fourth-part-headings-2.png" class ="fourth-part-image-2">
-      </div>
-    </div>  
-    <div class="reveal" data-reveal-type="reveal2">
-      <div class="fourth-part-content-image">
-        <img src ="pictures/sant-miquel-beach-1.jpg">
-        <img src ="pictures/tate-britain-1.jpg">
-        <img src ="pictures/random-walk-2.jpg">
-        <img src ="pictures/regent-street-2.jpg">
-        <img src ="pictures/surrey-quays-1.jpg">
-        <img src ="pictures/sunset-1.jpg">
-      </div>
-    </div>
-  </div>
-  
+  .third-part-description a{
+    padding: 12px 15px;
+  }
 
-  <div class="copyright">
-    Copyright &copy; 2023–<span id="currentYear"></span> K's Bakery
-  </div>
- 
-  <script src="js/menu.js"></script>
-  <script src="js/copyright.js"></script> 
-  <script src="js/reveal.js"></script> 
+  .pic2 img{
+    width: 75vw;
+  }
 
-  <script src="js/image-slider-with-arrows.js"></script> 
-    <script>
-      ArrowImageSlider('slider1'); // Call the function after the script is loaded
-      ArrowImageSlider('slider2'); // Call the function after the script is loaded
-    </script>
+  .pic2 p{
+    width: 72vw;
+  }
 
+  .third-part-prev{
+    left: 3%;
+  }
 
+  .third-part-next{
+    right: 3%;
+  }
 
+  .third-part-slider h2{
+    font-size: 22px;
+  }
 
+  .third-part-slider p{
+    font-size: 14px;
+  }
 
+  /*Fourth Section*/
 
-  <script>
-    // First Part
-    const imageElement1 = document.getElementById('change-image-1');
-    const imageElement2 = document.getElementById('change-image-2');
-    
-    // List of images for both elements
-    const images1 = [
-      'pictures/first-page-image-1.jpg',
-      'pictures/first-page-image-2.jpg',
-      'pictures/first-page-image-3.jpg',
-      'pictures/first-page-image-4.jpg',
-      'pictures/first-page-image-5.jpg'
-    ]; 
+  .fourth-part{
+    margin: 70px auto;
+    padding: 25px 0;
+  }
 
-    const images2 = [
-      'pictures/first-page-mobile-image-1.jpg',
-      'pictures/first-page-mobile-image-2.jpg',
-      'pictures/first-page-mobile-image-3.jpg',
-      'pictures/first-page-mobile-image-4.jpg',
-      'pictures/first-page-mobile-image-5.jpg'
-    ]; 
-    
-    let currentIndex1 = 0;
-    let currentIndex2 = 0;
-    
-    // Function to change the first image every 5 seconds
-    function changeImage1() {
-      currentIndex1 = (currentIndex1 + 1) % images1.length;
-      imageElement1.src = images1[currentIndex1] + '?t=' + new Date().getTime(); // Force reload
-    }
+  .four-part-description{
+    width: 80vw;
+    margin: 30px 0 0 17%;
+  }
 
-    function changeImage2() {
-      currentIndex2 = (currentIndex2 + 1) % images2.length;
-      imageElement2.src = images2[currentIndex2] + '?t=' + new Date().getTime(); // Force reload
-    }
-    
-    // Set intervals for each image change
-    setInterval(changeImage1, 4000); // Change the first image every 4 seconds
-    setInterval(changeImage2, 4000); // Change the second image every 4 seconds
-  </script>
+  .fourth-part-heading-image{
+    margin: 5px auto 10px 3%;
+  }
 
+  .fourth-part-image-2{
+    width: 94vw;
+  }
 
-</body>
-</html>
+  .fourth-part-content-image img{
+    width: 80vw;
+    aspect-ratio: 1/1.35;
+  }
+
+  .four-part-description a{
+    padding: 12px 18px;
+  }
+}
+
