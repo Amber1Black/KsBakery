@@ -12,7 +12,7 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   
   <!-- Start cookieyes banner --> 
   <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
@@ -88,38 +88,55 @@
   <!-- Second Section -->
 
   <div class="second-part">
-    <div class="second-part-larger-screen">
-      <div class="second-part-description-800">
-        <p>Baking at home opens up a world of possibilities, from delightful tarts and luscious cakes to hearty bread, cookies, and pastries. Each option offers plenty of room for creativity and joy. I wish you find inspiration here to spark your next baking adventure!</p>
-      </div>
-      <div class="second-part-headings">
-        <img src ="pictures/first-page-second-part-headings-1.png" class ="second-part-image-1">
-        <img src ="pictures/first-page-second-part-headings-2.png" class ="second-part-image-2">
-      </div>
-      <div class="second-part-description">
-        <h2>Joy of Baking at Home</h2>
-        <p>Baking at home opens up a world of possibilities, from delightful tarts and luscious cakes to hearty bread, cookies, and pastries. Each option offers plenty of room for creativity and joy. I wish you find inspiration here to spark your next baking adventure!</p>
-      </div>
-      
-      <div class="reveal" data-reveal-type="reveal3">  
-        <div class="slider-container second-part-slider" id="slider1">  
-          <div class="slide fade"><img src="pictures/rasperry-tart-ring.jpg" class = "image-1" alt="Tart ring topped with raspberries and cream piped in various shapes"></div>
-          <div class="slide fade"><img src="pictures/crown-cream-cake.jpg" class = "image-2" alt="Strawberry Cream Cake, covered with cream and topped with strawberry."></div>
-          <div class="slide fade"><img src="pictures/ribbon-bread.jpg" class = "image-3" alt="Bread in ribbon-shape, very adorable."></div>
-          <div class="slide fade"><img src="pictures/dress-shape-cookie.jpg" class = "image-4" alt="Cookie in dress-shape, topped with chocolate decoration."></div>
-          <div class="slide fade"><img src="pictures/choux-pastry.jpg" class = "image-5" alt="Choux Pastry filled with various kind of cream"></div>   
-          
-          <div class="second-part-arrow">
-            <a class="prev-arrow second-part-prev">&#10094;</a>
-            <a class="next-arrow second-part-next">&#10095;</a>
+    <div class="reveal" data-reveal-type="reveal">
+      <div class="second-part-top-section">
+        <div class="second-part-headings">
+          <h2>MY BAKING COLLECTION</h2>
+        </div>
+        <div class="second-part-description">
+          <p>Baking at home opens up a world of possibilities, from delightful tarts and luscious cakes to hearty bread, cookies, and pastries. Each option offers plenty of room for creativity and joy. I wish you find inspiration here to spark your next baking adventure.</p>
+          <div class="second-part-direction">
+            <a href="https://www.k-bakery.com/bakingcollection"><p>Take a look &#8594;</p></a>
           </div>
         </div>
-        <div class="second-part-button">
-          <a href="https://www.k-bakery.com/bakingcollection"><p>Let's<br>View</p></a>
+      </div>
+    </div>
+    
+    <div class="reveal" data-reveal-type="reveal2">
+      <div class="second-part-slider">
+        <div class="second-part-slider-item" onclick="changeActive(this)">
+          <div class="second-part-slider-image">
+            <img src="pictures/mushroom-bread-7.jpg" alt="Bread in the shape of mushroom, with a crispy coffee top." class ="second-part-image-3">
+          </div>  
+          <div class="second-part-slider-title"><a href="https://www.k-bakery.com/bakingcollection/bread"><h2>BREAD</h2></a></div> 
+        </div>
+        <div class="second-part-slider-item" onclick="changeActive(this)">
+          <div class="second-part-slider-image">
+            <img src="pictures/crown-cream-cake.jpg" alt="Image 2">
+          </div>  
+          <div class="second-part-slider-title"><a href="https://www.k-bakery.com/bakingcollection/cake"><h2>CAKE</h2></a></div>  
+        </div>
+        <div class="second-part-slider-item active" onclick="changeActive(this)">
+          <div class="second-part-slider-image">
+            <img src="pictures/heart-shape-tart-ring.jpg" alt="Image 3">
+          </div>  
+          <div class="second-part-slider-title"><a href="https://www.k-bakery.com/bakingcollection/tart"><h2>TART</h2></a></div>
+            
+        </div>
+        <div class="second-part-slider-item" onclick="changeActive(this)">
+          <div class="second-part-slider-image">
+            <img src="pictures/dress-shape-cookie.jpg" alt="Image 4">
+          </div> 
+          <div class="second-part-slider-title"><a href="https://www.k-bakery.com/bakingcollection/cookie"><h2>COOKIE</h2></a></div>  
+        </div>
+        <div class="second-part-slider-item" onclick="changeActive(this)">
+          <div class="second-part-slider-image">
+            <img src="pictures/flower-choux-pastry.jpg" alt="Image 5">
+          </div> 
+          <div class="second-part-slider-title"><a href="https://www.k-bakery.com/bakingcollection/pastry"><h2>PASTRY</h2></a></div>  
         </div>
       </div>
-      
-    </div>
+    </div>  
   </div>
   
 
@@ -271,7 +288,18 @@
     </script>
 
 
+<script>
+  //Second Part
+  function changeActive(element) {
+  // Remove 'active' class from all slider items
+  const items = document.querySelectorAll('.second-part-slider-item');
+  items.forEach(item => item.classList.remove('active'));
 
+  // Add 'active' class to the clicked item
+  element.classList.add('active');
+  }
+
+</script>  
 
 
 
