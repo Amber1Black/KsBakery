@@ -1063,29 +1063,30 @@ a{
     left: 0;
     z-index: 1; /* Behind the text */
     transition: opacity 0.3s ease; /* Smooth transition */
-    filter: brightness(0.65) contrast(80%);
+    filter: brightness(0.9);
   }
   
   .first-part-mobilwordings{
     position: absolute;
-    top: 25%;
-    left: 8%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3; /* On top of everything */
     text-align: center; /* Center text */
   }
   
   /* Explicit size control for center image */
   .first-part-mobilwordings img {
-    width: auto; /* Responsive width */
-    max-width: 55vw; /* Maintain aspect ratio */
-    height: auto; /* Keep height auto */
+    width: auto; 
+    max-width: 45vw; 
+    height: auto; 
   }
 
   .first-part-mobile-description{
     position: absolute;
     z-index: 10;
-    bottom: 12%;
-    right: 5%;
+    bottom: 4%;
+    left: 5%;
   }
 
   .first-part-mobile-description img{
