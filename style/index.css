@@ -827,14 +827,13 @@ a{
 
   .second-part-top-section{
     position: unset;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     overflow: hidden;
   }
   
   .second-part-headings{
     width: unset;
-    margin: 50px 5% 20px 5%;
-    text-align: center;
+    margin: 50px 5% 20px 8%;
   }
 
   .second-part-description{
@@ -844,11 +843,15 @@ a{
     transform: unset;
   }
   
-  .second-part-direction a,
   .second-part-description p{
-    text-align: center;
-    width: 650px;
-    margin: 20px auto;
+    width: 540px;
+    margin: 0 9%;
+    text-align: initial;
+  }
+
+  .second-part-direction a{
+    font-weight: 700;
+    margin: 0 6% 0 6%;
   }
 
   .second-part-slider {
@@ -859,11 +862,11 @@ a{
   .second-part-slider-title a{
     transform: rotate(270deg); /* Rotate the text vertically */
     font-size: 20px;
-    text-align: start;
+    text-align: left;
     align-items: unset;
     padding-left: 50px;
     white-space: nowrap; /* Prevent text from breaking into multiple lines */
-}
+  }
 
   .second-part-slider-item.active {
     width: 69vw; 
@@ -1097,7 +1100,6 @@ a{
 
   .second-part-description p{
     width: 500px;
-    margin: 25px auto;
   }
 
   /*Third Section*/
@@ -1145,16 +1147,19 @@ a{
   }
 
   .second-part-top-section{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .second-part-description p{
-    width: 400px;
-    margin: 20px auto;
+    width: 420px;
   }
 
   .second-part-slider-item.active .second-part-slider-title h2{
     font-size: 70px;
+  }
+
+  .second-part-slider-item img {
+    height: 400px;
   }
 
   /*Third Section*/
@@ -1226,6 +1231,7 @@ a{
   a,
   p{
     font-size: 15px;
+    font-weight: 420;
   }
 
   /*Second Section*/
@@ -1234,9 +1240,17 @@ a{
     margin: 30px auto;
   }
 
+  .second-part-headings{
+    margin: 50px 5% 20px 6%;
+  }
+
+  .second-part-top-section{
+    margin-bottom: 40px;
+  }
+  
   .second-part-description p{
+    margin: 0 7%;
     width: 330px;
-    margin: 20px auto;
   }
 
   .second-part-slider-item img {
