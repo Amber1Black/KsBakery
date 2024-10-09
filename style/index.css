@@ -371,7 +371,7 @@ a{
 
 .pic2 img, .pic1 img, .pic3 img{
   width: 27vw;
-  aspect-ratio: 1/0.8;
+  aspect-ratio: 1/0.95;
   object-fit: cover;
   cursor: pointer;
 }
@@ -389,7 +389,7 @@ a{
 }
 
 .third-part-image-3{
-  object-position: 50% 15%;
+  object-position: 50% 0%;
 }
 
 .third-part-prev,
@@ -554,6 +554,7 @@ a{
 
   .pic2 img, .pic1 img, .pic3 img{
     width: 28vw;
+    aspect-ratio: 1/1;
   }
   
   .pic1 p, .pic2 p, .pic3 p{
@@ -932,6 +933,7 @@ a{
 
   .pic1 img, .pic3 img{
     width: 44vw;
+    aspect-ratio: 1/0.9;
   }
 
   .pic1 p, .pic3 p{
