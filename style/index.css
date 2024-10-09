@@ -203,16 +203,9 @@ a{
   position: relative;
 }
 
-.second-part-headings{
-  width: 50vw;
-  margin: 50px 5%;
-}
-
-.second-part-headings h2 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 10vw;
-  font-weight: 500;
-  letter-spacing: 1px;
+.second-part-headings img{
+  width: 45vw;
+  margin: 100px 0% 100px 8%;
 }
 
 .second-part-description{
@@ -342,7 +335,6 @@ a{
 }
 
 #slider2.third-part-slider{
-  position: relative;
   margin: 0 0 0 0;
 }
 
@@ -363,60 +355,59 @@ a{
 }
 
 .pic1, .pic2, .pic3{
-  padding: 20px;
   border-width: 3px;
-  box-shadow: 0px 0px 3px black;
   margin: 5px 0;
 }
 
 .pic2 img, .pic1 img, .pic3 img{
   width: 27vw;
-  aspect-ratio: 1/0.95;
+  aspect-ratio: 1/1.1;
   object-fit: cover;
   cursor: pointer;
+  filter: contrast(0.8);
 }
 
 .pic1 h3, .pic2 h3, .pic3 h3{
   font-size: 30px;
   font-weight: 550;
   letter-spacing: 1px;
-  margin: 15px 0 8px 10px;
+  margin: 10px 0 5px 10px;
 }
 
 .pic1 p, .pic2 p, .pic3 p{
   width: 25.5vw;
-  margin: 0 0 20px 10px;
+  margin: 0 0 10px 10px;
 }
 
 .third-part-image-3{
   object-position: 50% 0%;
 }
 
+.third-part-arrow{
+  display: flex;
+  margin: 30px 0 0 86%;
+  width: 60px;
+  aspect-ratio: 1/1;
+}
+
 .third-part-prev,
 .third-part-next{
-  position: absolute;
-  top: 48%;
   z-index: 100;
-  width: 70px;
-  height: 70px;
-  border-radius: 100%;
   background-color: #000000;
   border: none;
   color: #ffffff;
   font-size: 35px;
   font-weight: 500;
-  padding: 5px 0;
+  padding: 1px 15px;
   border-style: double;
   border-width: 5px;
   border-color: #ffffff;
   text-align: center;
   cursor: pointer;
-  left: 33%;
 }
 
 .third-part-next{
   left: unset;
-  right: 33%;
 }
 
 .third-part-prev:hover,
@@ -431,13 +422,14 @@ a{
 .fourth-part{
   margin: 150px auto;
   background-color: #000000;
+  padding-bottom: 100px;
 }
 
 .four-part-description{
   text-align: right;
   width: 55vw;
-  margin: 30px 0 0 42%;
-  padding-top: 80px;
+  margin: 0 0 0 42%;
+  padding-top: 150px;
 }
 
 .four-part-description a,
@@ -495,10 +487,8 @@ a{
 
 @media only screen and (max-width:1700px){
 
-  /*Second Section*/
-
-  .second-part-description{
-    right: 3%;
+  .third-part-arrow{
+    margin-left: 85%;
   }
 }
 
@@ -528,6 +518,11 @@ a{
     width: 460px;
   }
 
+  .second-part-headings img{
+    width: 48vw;
+    margin: 100px 0% 100px 6%;
+  }
+
   .second-part-slider-item img {
     height: 550px;
   }
@@ -543,39 +538,17 @@ a{
     margin: 20px 0 20px 20%;
   }
 
-  .picturesdisplay{
-    gap: 1.5%;
-  }
-
   .pic1 h3, .pic2 h3, .pic3 h3{
-    font-size: 25px;
-    margin: 12px 0 5px 10px;
+    font-size: 22px;
+    margin: 10px 0 5px 10px;
   }
 
   .pic2 img, .pic1 img, .pic3 img{
     width: 28vw;
-    aspect-ratio: 1/1;
   }
   
   .pic1 p, .pic2 p, .pic3 p{
     width: 26vw;
-  }
-
-  .third-part-prev,
-  .third-part-next{
-    top: 48%;
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    font-weight: 400;
-    padding: 3px 0;
-    border-width: 5px;
-    left: 32.5%;
-  }
-
-  .third-part-next{
-    left: unset;
-    right: 32.5%;
   }
 
 }
@@ -628,49 +601,43 @@ a{
 
   .third-part-title h2{
     font-size: 11.5vw;
-    margin: 20px 0 0 17%;
+    margin: 20px 0 30px 17%;
   }
 
   .picturesdisplay{
-    gap: 3%;
+    gap: 1.5%;
   }
 
-  .pic2 img{
-    width: 33vw;
+  .pic2 img, .pic1 img, .pic3 img{
+    width: 31vw;
   }
 
-  .pic1 img, .pic3 img{
-    width: 28vw;
+  .pic1 p, .pic2 p, .pic3 p{
+    width: 29vw;
   }
 
-  .pic1 p, .pic3 p{
-    width: 27vw;
-    font-size: 16px;
-  }
-
-  .pic2 h3{
+  .pic1 h3, .pic2 h3, .pic3 h3{
     font-size: 25px;
     font-weight: 500;
   }
 
-  .pic2 p{
-    width: 31vw;
-    margin: 5px 0 20px 10px;
+  .third-part-arrow{
+    margin: 30px 0 0 88%;
+    width: 55px;
   }
-
-  .third-part-prev{
-    left: 30%;
-  }
-
+  
+  .third-part-prev,
   .third-part-next{
-    right: 30%;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 1px 13px;
+    border-width: 5px;
   }
 
   /*Fourth Section*/
 
   .fourth-part{
     margin: 100px auto;
-    padding: 50px 0;
   }
 
   .four-part-description{
@@ -709,16 +676,20 @@ a{
   /*Second Section*/
 
   .second-part{
-    margin: 120px auto;
+    margin: 80px auto;
+  }
+
+  .second-part-description{
+    right: 3%;
   }
 
   .second-part-description p{
-    width: 290px;
+    width: 350px;
   }
 
-  .second-part-headings{
-    width: 58vw;
-    margin: 50px 2% 50px 3%;
+  .second-part-headings img{
+    width: 52vw;
+    margin: 80px 2% 80px 3%;
   }
 
   .second-part-slider-item img {
@@ -751,48 +722,24 @@ a{
 
   .third-part-title h2{
     font-size: 11.5vw;
-    margin: 30px 0 0 18%;
+    margin: 30px 0 20px 18%;
   }
 
   .third-part{
     margin: 100px 0 0 0;
   }
 
-  .picturesdisplay{
-    gap: 20px;
+  .third-part-arrow{
+    margin: 20px 0 0 87%;
+    width: 50px;
   }
-
-  .pic2 img{
-    width: 39vw;
-  }
-
-  .pic2 p{
-    width: 38vw;
-  }
-
-  .pic1 img, .pic3 img{
-    width: 33vw;
-  }
-
-  .pic1 p, .pic3 p{
-    width: 31.5vw;
-    font-size: 15px;
-  }
-
-  .pic1 img{
-    object-position: 99% 50%;
-  }
-
-  .pic3 img{
-    object-position: 1% 50%;
-  }
-
-  .third-part-prev{
-    left: 25%;
-  }
-
+  
+  .third-part-prev,
   .third-part-next{
-    right: 25%;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 2px 12px;
+    border-width: 5px;
   }
 
   /*Fourth Section*/
@@ -834,7 +781,7 @@ a{
   /*Second Section*/
 
   .second-part{
-    margin: 80px auto;
+    margin: 100px auto;
   }
 
   .second-part-top-section{
@@ -843,9 +790,9 @@ a{
     overflow: hidden;
   }
   
-  .second-part-headings{
-    width: unset;
-    margin: 50px 5% 20px 8%;
+  .second-part-headings img{
+    width: 55vw;
+    margin: 50px 5% 30px 11%;
   }
 
   .second-part-description{
@@ -856,8 +803,8 @@ a{
   }
   
   .second-part-description p{
-    width: 540px;
-    margin: 0 9%;
+    width: 500px;
+    margin: 0 12%;
     text-align: initial;
   }
 
@@ -895,6 +842,39 @@ a{
     padding-left: 0px;
   }
 
+  /*Third Section*/
+
+  .picturesdisplay{
+    justify-content: initial;
+    gap: 1.5%;
+    margin-left: 2%;
+  }
+
+  .pic2 img, .pic1 img, .pic3 img{
+    width: 44vw;
+  }
+
+  .pic1 p, .pic2 p, .pic3 p{
+    width: 42vw;
+  }
+
+  .pic1 h3, .pic2 h3, .pic3 h3{
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .third-part-arrow{
+    margin: 20px 0 0 86%;
+    width: 55px;
+  }
+  
+  .third-part-prev,
+  .third-part-next{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 1px 13px;
+    border-width: 5px;
+  }
 
 }
 
@@ -922,30 +902,17 @@ a{
     margin: 40px 0 20px 14%;
   }
 
-  .pic2 img{
-    width: 48vw;
-    aspect-ratio: 1/0.9;
+  .third-part-arrow{
+    margin: 20px 0 0 84%;
+    width: 50px;
   }
-
-  .pic2 p{
-    width: 46vw;
-  }
-
-  .pic1 img, .pic3 img{
-    width: 44vw;
-    aspect-ratio: 1/0.9;
-  }
-
-  .pic1 p, .pic3 p{
-    width: 42vw;
-  }
-
-  .third-part-prev{
-    left: 19%;
-  }
-
+  
+  .third-part-prev,
   .third-part-next{
-    right: 19%;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 1px 12px;
+    border-width: 5px;
   }
 
   /*Fourth Section*/
@@ -1117,7 +1084,41 @@ a{
   /*Second Section*/
 
   .second-part-description p{
-    width: 500px;
+    width: 420px;
+  }
+
+  /*Third Section*/
+
+  .picturesdisplay{
+    gap: 2%;
+    margin-left: 3%;
+  }
+
+  .pic2 img, .pic1 img, .pic3 img{
+    width: 53vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  .pic1 p, .pic2 p, .pic3 p{
+    width: 51vw;
+  }
+
+  .pic1 h3, .pic2 h3, .pic3 h3{
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .third-part-arrow{
+    margin: 20px 0 0 80%;
+    width: 55px;
+  }
+  
+  .third-part-prev,
+  .third-part-next{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 1px 13px;
+    border-width: 5px;
   }
 
   /*Fourth Section*/
@@ -1142,8 +1143,14 @@ a{
     margin-bottom: 50px;
   }
 
+  .second-part-headings img{
+    width: 55vw;
+    margin: 50px 5% 30px 9%;
+  }
+
   .second-part-description p{
-    width: 420px;
+    width: 360px;
+    margin: 0 10%;
   }
 
   .second-part-slider-item.active .second-part-slider-title h2{
@@ -1175,29 +1182,24 @@ a{
     margin: -30px 5% 30px 1%;
   }
 
-  .pic2 img{
-    width: 60vw;
+  .picturesdisplay{
+    gap: 2%;
+    margin-left: 2%;
   }
 
-  .pic2 p{
-    width: 58vw;
+  .pic2 img, .pic1 img, .pic3 img{
+    width: 65vw;
   }
 
-  .pic1 img, .pic3 img{
-    width: 57vw;
+  .pic1 p, .pic2 p, .pic3 p{
+    width: 63vw;
   }
 
-  .pic1 p, .pic3 p{
-    width: 55vw;
+  .third-part-arrow{
+    margin: 20px 0 0 77%;
+
   }
 
-  .third-part-prev{
-    left: 12%;
-  }
-
-  .third-part-next{
-    right: 12%;
-  }
 
   
   /*Fourth Section*/
@@ -1223,11 +1225,11 @@ a{
   /*Second Section*/
 
   .second-part{
-    margin: 30px auto;
+    margin: 80px auto;
   }
 
-  .second-part-headings{
-    margin: 50px 5% 20px 6%;
+  .second-part-headings img{
+    margin: 50px 5% 30px 6%;
   }
 
   .second-part-top-section{
@@ -1266,52 +1268,36 @@ a{
     margin: -20px 3% 30px 1%;
   }
 
-  .pic2 img{
+  .pic2 img, .pic1 img, .pic3 img{
+    width: 78vw;
+
+  }
+
+  .pic1 p, .pic2 p, .pic3 p{
     width: 75vw;
-  }
-
-  .pic2 p{
-    width: 72vw;
-  }
-
-  .pic1 img, .pic3 img{
-    width: 70vw;
-  }
-
-  .pic1 p, .pic3 p{
-    width: 68vw;
-  }
-
-  .third-part-prev,
-  .third-part-next{
-    top: 48%;
-    width: 55px;
-    height: 55px;
-    font-size: 26px;
-    padding: 4px 0;
-  }
-
-  .third-part-prev{
-    left: 2%;
-  }
-
-  .third-part-next{
-    right: 2%;
   }
 
   .third-part-slider h2{
     font-size: 22px;
   }
 
-  .third-part-slider p{
-    font-size: 14px;
+  .third-part-arrow{
+    margin: 20px 0 0 76%;
+    width: 45px;
+  }
+  
+  .third-part-prev,
+  .third-part-next{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0px 10px;
+    border-width: 5px;
   }
 
   /*Fourth Section*/
 
   .fourth-part{
     margin: 70px auto;
-    padding: 30px 0;
   }
 
   .four-part-description{
@@ -1325,3 +1311,4 @@ a{
   }
 
 }
+
