@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="K's Bakery offers a collection of my favorite baking recipes, perfect for anyone who loves the taste of freshly made, homemade baked goods. Discover the joy of baking at home with simple, delicious recipes that bring warmth and sweetness to your kitchen!">
   <title>K's Bakery</title>
-  <link rel="icon" type="image/png" href="../pictures/websitelogo.png" sizes="512x512">
-  <link rel="stylesheet" href="../style/recipesummary.css">
+  <link rel="icon" type="image/png" href="pictures/websitelogo.png" sizes="512x512">
+  <link rel="stylesheet" href="style/recipesummary.css">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,9 +58,16 @@
         {
           "@type": "Recipe",
           "name": "Hydrangea Tart",
-          "url": "https://www.k-bakery.com/HydrangeaTartRecipe",
+          "url": "https://www.k-bakery.com/recipe/hydrangeatart",
           "description": "Elegant hydrangea-inspired tarts that are easy to make and beautiful to serve",
           "image": "https://www.k-bakery.com/pictures/hydrangea-tart-blue-and-white.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Coffee Genoise",
+          "url": "https://www.k-bakery.com/recipe/coffeegenoise",
+          "description": "Full of coffee flavor from inside to outside, perfect to coffee lover.",
+          "image": "https://www.k-bakery.com/pictures/coffee-genoise.jpg"
         },
         {
           "@type": "Recipe",
@@ -85,6 +92,34 @@
         },
         {
           "@type": "Recipe",
+          "name": "Matcha Muchroom Bread",
+          "url": "https://www.k-bakery.com/recipe/matchamushroombread",
+          "description": "Resemble real mushrooms but are topped with rich matcha flavor",
+          "image": "https://www.k-bakery.com/pictures/matcha-mushroom-bread.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Mushroom Bread",
+          "url": "https://www.k-bakery.com/recipe/mushroombread",
+          "description": "They resemble real mushrooms but are bursting with rich coffee flavor",
+          "image": "https://www.k-bakery.com/pictures/mushroom-bread.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Mexico Bun",
+          "url": "https://www.k-bakery.com/recipe/mexicobun",
+          "description": "Popular bread from Hong Kong with a crispy top",
+          "image": "https://www.k-bakery.com/pictures/mexico-bun.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Matcha Loaf",
+          "url": "https://www.k-bakery.com/recipe/matchaloaf",
+          "description": "The bread is rich with the enticing aroma of matcha",
+          "image": "https://www.k-bakery.com/pictures/matcha-loaf.jpg"
+        },
+        {
+          "@type": "Recipe",
           "name": "Dress Cookie",
           "url": "https://www.k-bakery.com/recipe/dresscookie",
           "description": "Elegant dress-shaped cookies with various decorations, perfect for parties.",
@@ -106,6 +141,13 @@
         },
         {
           "@type": "Recipe",
+          "name": "Flower Butter Cookie",
+          "url": "https://www.k-bakery.com/recipe/flowerbuttercookie",
+          "description": "The rich butter makes the cookie melt in our mouths",
+          "image": "https://www.k-bakery.com/pictures/flower-butter-cookie.jpg"
+        },
+        {
+          "@type": "Recipe",
           "name": "Butterfly Palmier",
           "url": "https://www.k-bakery.com/recipe/butterflypalmier",
           "description": "Irresistibly crispy, caramelized treats with a delicate crunch—perfect for any age!",
@@ -116,9 +158,6 @@
       ]
     }
   </script>
-
-  <!-- My CSS -->
-  <link rel="stylesheet" href="style/recipesummary.css">
 </head>
 
 <body>
@@ -135,34 +174,21 @@
       </ul>
     </nav>
     <div class="menuicon">
-      <img class="menu-icon" onclick="togglemenu()" src="../pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
+      <img class="menu-icon" onclick="togglemenu()" src="pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
     </div>
   </div>
 
-  <div class="topheadingstitle">
-    <h1>Cozy baking at home</h1>
-    <p>Homemade baked goods are simply the freshest and most delicious. Wishing everyone the delightful pleasure of baking at home!</p>
-  </div>
-
-    <div class="uppersection">
-        <div class="imageshown">
-          <div class="picture1" >
-              <img src="pictures/droplet-cream-tart.jpg" alt = "Tart topped with heart-shaped cream, decorated with almonds and pistachios.">
-          </div>
-          <div class="picture2">
-              <img src="pictures/flower-choux-pastry.jpg" alt = "Choux Pastry with flower-shaped cream decoration on top">
-          </div>
-          <div class="picture22">
-            <img src="pictures/recipe-summary-top-images.png" alt = "3 images in rotation : Choux pastry with flower-shaped cream decoration, bread with a crispy pumpkin-shaped top, and tart topped with ring-shaped chocolate.">
-          </div>
-          <div class="picture3">
-              <img src="pictures/pumpkin-bread.jpg" alt ="Bread with a crispy top shaped like a pumpkin">
-          </div>
-        </div>
-        <div class="circle">
-            Embrace the beauty of homemade bakeries.&nbsp
-        </div>
+  <div class="top-section">
+    <div class="top-section-background-pic">
+      <img src ="pictures/cookie-with-chocolate-2.jpg" class = "image-1" alt ="cookie in the shape of heart, cat and star, decorated with chocolate on top.">
+      <img src ="pictures/cookie-with-chocolate-3.jpg" class = "image-2" alt ="cookie in the shape of heart, cat and star, decorated with chocolate on top.">
     </div>
+    
+    <div class="top-section-title">
+      <img src ="pictures/recipe-summary.png">
+      <p>Homemade baked goods are simply the freshest and most delicious. Let's enjoy the delightful pleasure of baking at home.</p>
+    </div>
+  </div>
 
     <div class="recipecategory reveal">
       <div class="recipegrid">
@@ -320,54 +346,11 @@
     <div class="copyright">
       Copyright &copy; 2023–<span id="currentYear"></span> K's Bakery
     </div>
-          
+    
+    <script src="js/menu.js"></script>
+    <script src="js/copyright.js"></script> 
+    <script src="js/reveal.js"></script> 
   
-    <script>
-
-      //Menu
-      
-      var menulist = document.getElementById("menulist");
-  
-      menulist.style.maxHeight = "0px";
-  
-      function togglemenu(){
-        if(menulist.style.maxHeight == "0px")
-        {
-          menulist.style.maxHeight = "100vh"
-        }
-        else
-        {
-          menulist.style.maxHeight = "0px";
-        }
-      }
-
-      // JavaScript to automatically update the copyright year
-      document.getElementById("currentYear").textContent = new Date().getFullYear();
-
-      //Upper Section
-
-      let circle = document.querySelector('.circle');
-      let uppersection = document.querySelector('.uppersection');
-      let imageshown = document.querySelector('.imageshown');
-      let items = document.querySelectorAll('.picture1, .picture2, .picture3');
-      let count = items.length;
-      let active = 1;
-      let leftTransform = 0;
-      let width_item = items[active].offsetWidth;
-
-
-      // Set Text on a Circle
-      let textCircle = circle.innerText.split('');
-      circle.innerText = '';
-      textCircle.forEach((value, key) => {
-          let newSpan =  document.createElement("span");
-          newSpan.innerText = value;
-          let rotateThisSpan = (360 / textCircle.length) * (key + 1);
-          newSpan.style.setProperty('--rotate', rotateThisSpan + 'deg');
-          circle.appendChild(newSpan); 
-      });
-
-
-    </script>
+    
 </body>
 </html>
