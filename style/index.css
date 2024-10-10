@@ -859,7 +859,7 @@ a{
   }
 
   .pic1 h3, .pic2 h3, .pic3 h3{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
   }
 
@@ -1104,7 +1104,7 @@ a{
   }
 
   .pic1 h3, .pic2 h3, .pic3 h3{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
   }
 
@@ -1219,7 +1219,7 @@ a{
   a,
   p{
     font-size: 15px;
-    font-weight: 420;
+    font-weight: 550;
   }
 
   /*Second Section*/
@@ -1238,7 +1238,7 @@ a{
   
   .second-part-description p{
     margin: 0 7%;
-    width: 330px;
+    width: 290px;
   }
 
   .second-part-slider-item img {
@@ -1270,15 +1270,15 @@ a{
 
   .pic2 img, .pic1 img, .pic3 img{
     width: 78vw;
-
   }
 
   .pic1 p, .pic2 p, .pic3 p{
     width: 75vw;
   }
 
-  .third-part-slider h2{
+  .third-part-slider h3{
     font-size: 22px;
+    font-weight: 600;
   }
 
   .third-part-arrow{
