@@ -444,6 +444,7 @@ a{
   position: absolute;
   right: 6%;
   top: 15%;
+  z-index: 10;
 }
 
 .fourth-part-description a,
@@ -478,18 +479,17 @@ a{
   position: absolute;
   color: #ffffff;
   font-size: 6vw;
-  padding: 0px 15px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
 }
 
 .fourth-part-prev{
-  left: 16.5%;
+  left: 17%;
 }
 
 .fourth-part-next{
-  right: 16.5%;
+  right: 17%;
 }
 
 .fourth-part-image-grid{
@@ -547,6 +547,12 @@ a{
   aspect-ratio: 1/0.9;
   object-fit: cover;
   border-radius: 15px;
+}
+
+.grid-1-mobile-image,
+.grid-2-mobile-image,
+.grid-3-mobile-image{
+  display: none;
 }
 
 
@@ -643,14 +649,6 @@ a{
     width: 510px;
     right: 5%;
     top: 12%;
-  }
-
-  .fourth-part-prev{
-    left: 16%;
-  }
-  
-  .fourth-part-next{
-    right: 16%;
   }
 
 }
@@ -756,14 +754,6 @@ a{
   .grid-3-main-image img{
     width: 35vw;
     aspect-ratio: 1/1.1;
-  }
-
-  .fourth-part-prev{
-    left: 15.3%;
-  }
-  
-  .fourth-part-next{
-    right: 15.3%;
   }
 }
 
@@ -884,11 +874,11 @@ a{
   }
 
   .fourth-part-prev{
-    left: 9%;
+    left: 11%;
   }
   
   .fourth-part-next{
-    right: 9%;
+    right: 11%;
   }
 }
 
@@ -1038,11 +1028,11 @@ a{
   /*Fourth Section*/
 
   .fourth-part{
-    padding: 320px 0 100px 0;
+    padding: 350px 0 100px 0;
   }
 
   .fourth-part-description{
-    width: 390px;
+    width: 350px;
     right: 5%;
     top: 12%;
   }
@@ -1056,12 +1046,12 @@ a{
 
   .fourth-part-prev{
     font-size: 9vw;
-    left: 4%;
+    left: 6%;
   }
   
   .fourth-part-next{
     font-size: 9vw;
-    right: 4%;
+    right: 6%;
   }
 
 }
@@ -1244,31 +1234,67 @@ a{
 
   /*Fourth Section*/
 
+  .grid-1,
+  .grid-2,
+  .grid-3{
+    display: grid;
+    padding: 0px 15px;
+  }
+
   .grid-1-description,
   .grid-2-description,
   .grid-3-description{
-    width: 28vw;
+    width: unset;
+    position: initial;
+    margin: 12px 0;
+  }
+
+  .grid-1-description-content,
+  .grid-2-description-content,
+  .grid-3-description-content{
+    position: initial;
+    bottom: 5%;
   }
 
   .grid-1-description img,
   .grid-2-description img,
   .grid-3-description img{
-    width: 23vw;
+    width: 30vw;
   }
 
   .grid-1-main-image img,
   .grid-2-main-image img,
   .grid-3-main-image img{
-    width: 48vw;
-    aspect-ratio: 1/1.25;
+    display: none;
+  }
+
+  .grid-1-mobile-image,
+  .grid-2-mobile-image,
+  .grid-3-mobile-image{
+    display: initial;
+  }
+
+  .grid-1-mobile-image img,
+  .grid-2-mobile-image img,
+  .grid-3-mobile-image img{
+    width: 60vw;
+    aspect-ratio: 1/0.8;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+
+  .fourth-part-image-1,
+  .fourth-part-image-3{
+    object-position: 50% 70%;
   }
 
   .fourth-part-prev{
-    left: 0.5%;
+    left: 11%;
   }
   
   .fourth-part-next{
-    right: 0.5%;
+    right: 11%;
   }
 
 }
@@ -1345,7 +1371,7 @@ a{
   /*Fourth Section*/
 
   .fourth-part-description{
-    width: 315px;
+    width: 310px;
     right: 5%;
     top: 12%;
   }
@@ -1353,44 +1379,6 @@ a{
   .fourth-part-title img{
     width: 70vw;
     margin: 80px 0 -2% 4%;
-  }
-
-  .grid-1-description,
-  .grid-2-description,
-  .grid-3-description{
-    width: 36vw;
-  }
-
-  .grid-1-description img,
-  .grid-2-description img,
-  .grid-3-description img{
-    width: 31vw;
-  }
-
-  .grid-1-main-image img,
-  .grid-2-main-image img,
-  .grid-3-main-image img{
-    width: 48vw;
-    aspect-ratio: 1/1.45;
-  }
-
-  .grid-1,
-  .grid-2,
-  .grid-3{
-    padding: 10px;
-    display: flex;
-    background-color: #ffffff;
-    border-radius: 15px;
-  }
-
-  .fourth-part-prev{
-    left: 0%;
-    padding: 0;
-  }
-  
-  .fourth-part-next{
-    right: 0%;
-    padding: 0;
   }
 
 }
@@ -1473,49 +1461,37 @@ a{
   /*Fourth Section*/
 
   .fourth-part-description{
-    width: 300px;
+    width: 270px;
     right: 5%;
-    top: 12%;
+    top: 10%;
   }
 
   .fourth-part-title img{
-    width: 85vw;
-    margin: 50px 0 0 4%;
-  }
-
-  .grid-1,
-  .grid-2,
-  .grid-3{
-    padding: 15px 8px;
-  }
-
-  .grid-1-description,
-  .grid-2-description,
-  .grid-3-description{
-    width: 40vw;
+    width: 87vw;
+    margin: 80px 0 0 2%;
   }
 
   .grid-1-description img,
   .grid-2-description img,
   .grid-3-description img{
-    width: 36vw;
+    width: 40vw;
   }
 
-  .grid-1-main-image img,
-  .grid-2-main-image img,
-  .grid-3-main-image img{
-    width: 46vw;
-    aspect-ratio: 1/1.6;
-    border-radius: 10px;
+  .grid-1-mobile-image img,
+  .grid-2-mobile-image img,
+  .grid-3-mobile-image img{
+    width: 78vw;
+    aspect-ratio: 1/1;
   }
 
-  .grid-1-description-content p,
-  .grid-2-description-content p,
-  .grid-3-description-content p{
-    text-align: center;
-    margin: 10px 1%;
-    font-size: 14px;
+  .fourth-part-prev{
+    left: 0.5%;
+    font-size: 11vw;
   }
-
+  
+  .fourth-part-next{
+    right: 0.5%;
+    font-size: 11vw;
+  }
 }
 
