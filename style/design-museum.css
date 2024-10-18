@@ -1,0 +1,1285 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+    
+}
+
+/*Headings*/
+
+.headingsection{
+  height: 88%;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.logo{
+  width: 20%;
+  min-width: 65px;
+  max-width: 70px;
+  margin-left: 40px;
+  margin-top: 14px;
+}
+  
+.menu-icon{
+  display: none;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+  background-color: white;
+}
+
+nav ul{
+  background-color: white;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 45px;
+  background-color: white; 
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: 17px;
+  background-color: white;
+  position: relative;
+}
+
+nav ul li a:hover{
+  color: rgb(80, 80, 80);
+}
+  
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(107, 107, 107);
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/* Common Reveal Styles */
+.reveal {
+  position: relative;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(100px); /* Start by moving content down */
+  transition: all 2s ease; /* Smooth transition */
+}
+
+.reveal.active {
+  opacity: 1; /* Visible when active */
+  transform: translateY(0); /* Moves back to normal position */
+}
+
+/* Specific Reveal Animations */
+.reveal[data-reveal-type="reveal"] {
+  transform: translateY(100px);
+}
+
+.reveal[data-reveal-type="reveal"].active {
+  transform: translateY(0px);
+}
+
+.reveal[data-reveal-type="reveal2"] {
+  transform: translateX(-100px);
+}
+
+.reveal[data-reveal-type="reveal2"].active {
+  transform: translateX(0px);
+}
+
+.reveal[data-reveal-type="reveal3"] {
+  transform: translateX(100px);
+}
+
+.reveal[data-reveal-type="reveal3"].active {
+  transform: translateX(0px);
+}
+
+/*Content*/
+
+.content{
+  overflow: hidden;
+}
+
+/*Common Parameter*/
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.philosophy-content li,
+p{
+  font-size: 19px;
+  font-weight: 380;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Top Section*/
+
+.top-section-mobile{
+  display: none;
+}
+
+.top-section{
+  position: relative;
+}
+
+.image-1{
+  width: 100%;
+  aspect-ratio: 1/0.45;
+  object-fit: cover;
+  filter: brightness(0.9) hue-rotate(350deg);
+}
+
+.top-section-description{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  display: grid;
+  z-index: 10;
+}
+
+.top-section-description img{
+  width: 65vw;
+}
+
+.top-section-description h3{
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 10px 0 0 6px;
+  line-height: 1.5em;
+}
+
+/*Design World*/
+
+.design-world{
+  margin: 150px 15%;
+}
+
+.design-world-row-1{
+  display: flex;
+}
+
+.design-world-description{
+  align-items: center;
+  margin: auto 5% auto 0;
+}
+
+.design-world-image img{
+  width: 35vw;
+  aspect-ratio: 1/1.1;
+  object-fit: cover;
+  object-position: 50% 80%;
+}
+
+.design-world-add-image{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.design-world-add-image img{
+  width: 65vw;
+  aspect-ratio: 1/0.45;
+  object-fit: cover;
+}
+
+.image-4{
+  margin: 30px 10% 20px 0;
+  object-position: 50% 70%;
+}
+
+.image-5{
+  margin: 30px 0 20px 10%;
+  object-position: 50% 70%;
+}
+
+/*Philosophy*/
+
+.philosophy{
+  margin: 100px 15%;
+}
+
+.philosophy-description p{
+  margin-bottom: 40px;
+}
+
+li{
+  padding-bottom: 15px;
+  line-height: 1.3em;
+  margin: 0 2%;
+}
+
+li span{
+  font-weight: 600;
+}
+
+.philosophy-image{
+  margin: 50px auto;
+  text-align: center;
+}
+
+.philosophy-image img{
+  width: 70vw;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+/*Display*/
+
+.display{
+  margin: 200px 13%;
+}
+
+.display-description{
+  margin: 0 4% 30px 4%;
+}
+
+.display-image{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 3%;
+}
+
+.display-image img{
+  width: 33vw;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+  margin-bottom: 3%;
+}
+
+/*Art Corner*/
+
+.art-corner{
+  display: flex;
+  margin: 80px 15%;
+}
+
+.art-corner-description{
+  width: 38vw;
+  margin: auto 80px auto 0;
+  align-items: center;
+}
+
+.art-corner-image img{
+  width: 35vw;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+}
+
+/*Exhibition*/
+
+.exhibition{
+  margin: 150px 15%;
+}
+
+.exhibition p{
+  margin-bottom: 50px;
+}
+
+.exhibition-images{
+  text-align: center;
+}
+
+.exhibition-images img{
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/*Ending*/
+
+.ending{
+  margin: 150px 15%;
+  position: relative;
+}
+
+.ending-image{
+  text-align: center;
+}
+
+.ending-image img{
+  width: 70vw;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  filter: brightness(0.3);
+}
+
+.ending-description{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 10;
+  width: 50vw;
+}
+
+.ending-description p{
+  color: #ffffff;
+  line-height: 2em;
+  font-weight: 400;
+  z-index: 100;
+  text-align: justify;
+}
+
+/*Explore other spots*/
+
+.other-spots{
+  margin: 100px 5%;
+}
+
+.other-spots h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.other-spots-container{
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  margin: 2% 0 0 0;
+  padding: 10px 0px;
+  width: 55vw;
+  gap: 5%;
+}
+
+.other-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.container{
+  white-space: wrap;
+}
+
+.container img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.other-slider-description h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 20px 15px 10px 6px;
+  text-align: left;
+}
+
+.other-slider-description a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+.other-slider-description p{
+  line-height: 1.4em;
+  margin: 5px 0 70px 6px;
+  text-align: left;
+}
+
+/*copyright*/
+
+.copyright{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
+  color: grey;
+  bottom: 2%;
+}
+
+
+@media only screen and (max-width:1500px){
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 35px;
+  }
+
+  .philosophy-content li,
+  p{
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  /*Explore other spots*/
+
+  .other-spots h2{
+    font-size: 22px;
+  }
+
+  .other-slider-description h2{
+    font-size: 20px;
+    margin: 20px 0 7px 6px;
+  }
+
+  .other-slider-description p{
+    font-size: 16px;
+  }
+
+  .other-spots-container{
+    margin: 1% 0 0 0;
+    padding: 5px 0;
+  }
+
+}
+
+
+@media only screen and (max-width:1300px){
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 30px;
+  }
+
+  .philosophy-content li,
+  p{
+    line-height: 1.5em;
+    letter-spacing: 0px;
+  }
+
+  /*Top Section*/
+
+  .top-section-description h3{
+    font-size: 20px;
+    margin: 20px 0 0 6px;
+  }
+
+  /*Display*/
+
+  .display{
+    margin: 150px 13%;
+  }
+  
+  /*Ending*/
+
+  .ending{
+    margin: 100px 15% 50px 15%;
+  }
+
+  .ending-image img{
+    aspect-ratio: 1/0.7;
+  }
+
+  .ending-description p{
+    line-height: 1.7em;
+  }
+  
+}
+
+
+@media only screen and (max-width:1100px){
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 25px;
+  }
+
+  .philosophy-content li,
+  p{
+    font-size: 17px;
+  }
+
+  /*Top Section*/
+
+  .image-1{
+    aspect-ratio: 1/0.55;
+  }
+
+  /*Design World*/
+
+  .design-world{
+    margin: 100px 6%;
+  }
+
+  .design-world-image img{
+    width: 45vw;
+    aspect-ratio: 1/1.15;
+  }
+
+  .design-world-add-image img{
+    width: 75vw;
+    aspect-ratio: 1/0.45;
+  }
+
+  /*Philosophy*/
+
+  .philosophy{
+    margin: 80px 8%;
+  }
+
+  .philosophy-description p{
+    margin-bottom: 20px;
+  }
+
+  .philosophy-image img{
+    width: 75vw;
+    aspect-ratio: 1/0.5;
+  }
+
+  /*Display*/
+
+  .display{
+    margin: 120px 8%;
+  }
+
+  .display-description{
+    margin: 0 3% 30px 3%;
+  }
+
+  .display-image img{
+    width: 38vw;
+    aspect-ratio: 1/1.2;
+    margin-bottom: 3%;
+  }
+
+  /*Art Corner*/
+
+  .art-corner{
+    margin: 30px 8%;
+  }
+
+  .art-corner-description{
+    width: 38vw;
+    margin: auto 60px auto 0;
+  }
+
+  .art-corner-image img{
+    width: 45vw;
+  }
+
+  /*Exhibition*/
+
+  .exhibition{
+    margin: 100px 8%;
+  }
+  
+  /*Ending*/
+
+  .ending{
+    margin: 10px 3%;
+    padding: 0;
+  }
+
+  .ending-image img{
+    width: 85vw;
+    aspect-ratio: 1/0.6;
+  }
+
+  .ending-description{
+    width: 65vw;
+  }
+
+  /*Explore other spots*/
+
+  .other-spots-container{
+    width: 65vw;
+    gap: 4%;
+  }
+
+  .other-spots h2{
+    font-size: 20px;
+  }
+
+  .other-slider-description h2{
+    font-size: 19px;
+    margin: 20px 0 7px 6px;
+  }
+
+}
+
+@media only screen and (max-width:900px){
+
+  /*Headings*/
+
+  .logo{
+    margin-left: 20px;
+  }
+
+  nav{
+    padding-right: 1%;
+  }
+
+  nav ul li{
+    margin-right: 28px;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 28px;
+  }
+
+  /*Top Section*/
+
+  .image-1{
+    aspect-ratio: 1/0.65;
+  }
+
+  /*Design World*/
+
+  .design-world{
+    margin: 100px 4%;
+  }
+
+  .design-world-image img{
+    width: 45vw;
+    aspect-ratio: 1/1.3;
+  }
+
+  .design-world-add-image img{
+    width: 80vw;
+    aspect-ratio: 1/0.5;
+  }
+
+  /*Philosophy*/
+
+  .philosophy{
+    margin: 80px 6%;
+  }
+
+  .philosophy-description p{
+    margin-bottom: 20px;
+  }
+
+  .philosophy-image img{
+    width: 80vw;
+    aspect-ratio: 1/0.5;
+  }
+
+  /*Display*/
+
+  .display{
+    margin: 120px 5%;
+  }
+
+  .display-description{
+    margin: 0 3% 30px 3%;
+  }
+
+  .display-image img{
+    width: 40vw;
+    aspect-ratio: 1/1.2;
+    margin-bottom: 3%;
+  }
+
+  /*Art Corner*/
+
+  .art-corner{
+    margin: 30px 5%;
+  }
+
+  .art-corner-description{
+    width: 40vw;
+    margin: auto 40px auto 0;
+  }
+
+  .art-corner-image img{
+    width: 45vw;
+    aspect-ratio: 1/1.3;
+  }
+
+  /*Exhibition*/
+
+  .exhibition{
+    margin: 100px 6%;
+  }
+  
+  /*Ending*/
+
+  .ending{
+    margin: 10px 3%;
+    padding: 0;
+  }
+
+  .ending-image img{
+    width: 87vw;
+    aspect-ratio: 1/0.7;
+  }
+
+  .ending-description{
+    width: 65vw;
+  }
+
+  /*Explore other spots*/
+
+  .other-spots-container{
+    width: 75vw;
+    gap: 4%;
+  }
+
+  .other-spots h2{
+    font-size: 20px;
+  }
+
+  .other-slider-description h2{
+    font-size: 19px;
+    margin: 20px 0 7px 6px;
+  }
+
+}
+
+
+@media only screen and (max-width:800px){
+
+  /*Common Parameter*/
+
+  h2{
+    line-height: 1.5em;
+  }
+
+  .philosophy-content li,
+  p{
+    line-height: 1.4em;
+  }
+
+  /*Ending*/
+
+  .ending-image img{
+    width: 90vw;
+    aspect-ratio: 1/0.8;
+  }
+
+}
+
+
+@media only screen and (max-width:700px){
+
+	.logo{
+    width: 20vw;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  nav{
+    text-align: left;
+  }
+  
+  nav ul{
+    width: 100%;
+    background: white;
+    opacity: 0.98;
+    position: absolute;
+    align-self: center;
+    top: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 999;
+  }
+
+  nav ul li{
+    background-color: transparent;
+    display: block;
+    margin: 2.5em;
+  }
+
+  nav ul li a{
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    font-size: 15px;
+    margin: 0px;
+    letter-spacing: 3px;
+    font-weight: 500;
+  }
+
+  nav ul li a:hover{
+    color:black;
+  }
+
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    transition: width 0.5s;
+  }
+
+  nav ul li a:hover::after{
+    width: 0;
+  }
+
+  .menu-icon{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 55px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  #menulist{
+    overflow: hidden;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
+
+  /*Common Parameter*/
+
+  h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  /*Top Section*/
+
+  .top-section{
+    display: none;
+  }
+
+  .top-section-mobile{
+    display: grid;
+    position: relative;
+  }
+  
+  .top-section-image-mobile img{
+    width: 100vw;
+    aspect-ratio: 1/1.3;
+    object-fit: cover;
+    filter: brightness(0.85) hue-rotate(350deg);
+  }
+  
+  .top-section-description-mobile{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    display: grid;
+    z-index: 10;
+  }
+  
+  .top-section-description-mobile img{
+    width: 65vw;
+  }
+  
+  .top-section-description-mobile h3{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 20px 0 0 6px;
+  }
+
+  /*Design World*/
+
+  .design-world{
+    margin: 100px 9%;
+  }
+
+  .design-world-row-1{
+    display: grid;
+  }
+
+  .design-world-description{
+    margin: auto 0 auto 0;
+  }
+
+  .design-world-image{
+    text-align: center;
+  }
+
+  .design-world-image img{
+    width: 70vw;
+    aspect-ratio: 1/1.1;
+    margin: 30px auto;
+  }
+
+  .design-world-add-image img{
+    width: 80vw;
+    aspect-ratio: 1/0.6;
+  }
+
+  .image-4{
+    margin: 0px 15% 20px 0;
+    object-position: 50% 70%;
+  }
+  
+  .image-5{
+    margin: 30px 0 20px 8%;
+    object-position: 50% 70%;
+  }
+
+  /*Philosophy*/
+
+  .philosophy{
+    margin: 80px 8%;
+  }
+
+  .philosophy-description p{
+    margin-bottom: 20px;
+  }
+
+  li{
+    padding-bottom: 10px;
+    margin: 0 0 0 3%;
+  }
+
+  .philosophy-image{
+    margin: 20px auto;
+  }
+
+  .philosophy-image img{
+    width: 80vw;
+    aspect-ratio: 1/0.7;
+  }
+
+  /*Display*/
+
+  .display{
+    margin: 80px 5%;
+  }
+
+  .display-description{
+    margin: 0 3% 30px 3%;
+  }
+
+  .display-image img{
+    width: 75vw;
+    aspect-ratio: 1/1.1;
+    margin-bottom: 3%;
+  }
+
+  /*Art Corner*/
+
+  .art-corner{
+    margin: 30px 8%;
+    display: grid;
+  }
+
+  .art-corner-description{
+    width: unset;
+    margin: auto 0;
+  }
+
+  .art-corner-image{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .art-corner-image img{
+    width: 70vw;
+    aspect-ratio: 1/1;
+  }
+
+  /*Exhibition*/
+
+  .exhibition{
+    margin: 100px 8%;
+  }
+
+  .exhibition-images img{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  /*Ending*/
+
+  .ending{
+    margin: 10px 3%;
+    padding: 0;
+  }
+
+  .ending-image img{
+    width: 87vw;
+    aspect-ratio: 1/1;
+  }
+
+  .ending-description{
+    width: 70vw;
+  }
+
+  .ending-description p{
+    line-height: 1.5em;
+  }
+
+  /*Explore other spots*/
+
+  .other-spots-container{
+    width: 78vw;
+    gap: 4%;
+  }
+
+  .other-spots h2{
+    font-size: 20px;
+  }
+
+  .other-slider-description h2{
+    font-size: 19px;
+    margin: 20px 0 7px 6px;
+  }
+
+  .other-spots-container{
+    margin: 1% 0 0 0;
+    padding: 5px 0px;
+  }
+
+}
+
+
+@media only screen and (max-width:600px){
+
+  /*Top Section*/
+  
+  .top-section-description-mobile h3{
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+
+  /*Ending*/
+
+  .ending-image img{
+    width: 90vw;
+    aspect-ratio: 1/1.1;
+  }
+
+  .ending-description p{
+    line-height: 1.4em;
+  }
+
+  .ending-description{
+    width: 75vw;
+  }
+
+  /*Explore other spots*/
+
+  .other-spots-container{
+    width: 90vw;
+    gap: 3%;
+  }
+
+  .other-spots h2{
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  .other-slider-description h2{
+    font-size: 18px;
+    margin: 20px 0 2px 6px;
+  }
+
+  .other-slider-description p{
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width:500px){
+
+  /*Common Parameter*/
+
+  .philosophy-content li,
+  p{
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  /*Top Section*/
+
+  .top-section-image-mobile img{
+    aspect-ratio: 1/1.45;
+  }
+
+  .top-section-description-mobile h3{
+    font-size: 17px;
+  }
+
+  /*Design World*/
+
+  .design-world{
+    margin: 80px 5%;
+  }
+
+  .design-world-row-1{
+    display: grid;
+  }
+
+  .design-world-description{
+    margin: auto 0 auto 0;
+  }
+
+  .design-world-image img{
+    width: 75vw;
+    aspect-ratio: 1/1.1;
+    margin: 30px auto 0 auto;
+  }
+
+  .design-world-add-image img{
+    width: 80vw;
+    aspect-ratio: 1/0.7;
+  }
+
+  .image-4{
+    margin: -5px 15% 10px 0;
+    object-position: 50% 70%;
+  }
+  
+  .image-5{
+    margin: 10px 0 20px 8%;
+    object-position: 50% 70%;
+  }
+
+  /*Philosophy*/
+
+  .philosophy{
+    margin: 60px 5%;
+  }
+
+  .philosophy-description p{
+    margin-bottom: 20px;
+  }
+
+  .philosophy-image img{
+    width: 85vw;
+    aspect-ratio: 1/0.7;
+  }
+
+  /*Display*/
+
+  .display{
+    margin: 70px 5%;
+  }
+
+  .display-description{
+    margin: 0 0 30px 0;
+  }
+
+  .display-image img{
+    width: 80vw;
+    aspect-ratio: 1/1.1;
+    margin-bottom: 3%;
+  }
+
+  /*Art Corner*/
+
+  .art-corner{
+    margin: 30px 5%;
+  }
+
+  .art-corner-image{
+    margin-top: 30px;
+  }
+
+  .art-corner-image img{
+    width: 80vw;
+    aspect-ratio: 1/1.1;
+  }
+
+  /*Exhibition*/
+
+  .exhibition{
+    margin: 70px 5%;
+  }
+
+  .exhibition-images img{
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  
+  /*Ending*/
+
+  .ending{
+    margin: 10px 3%;
+    padding: 0;
+  }
+
+  .ending-image img{
+    width: 87vw;
+    aspect-ratio: 1/1.2;
+  }
+
+}
+
+
+@media only screen and (max-width:450px){
+
+  /*Philosophy*/
+
+  li{
+    padding-bottom: 8px;
+    margin: 0 0 0 4%;
+  }
+
+  /*Ending*/
+
+  .ending{
+    margin: 10px 3%;
+  }
+
+  .ending-image img{
+    width: 94vw;
+    aspect-ratio: 1/1.4;
+  }
+
+  /*Explore other spots*/
+
+  .other-spots{
+    margin: 80px 3% 30px 3%;
+  }
+
+  .other-spots-container{
+    width: 100vw;
+    gap: 2%;
+  }
+
+  .other-spots h2{
+    font-size: 17px;
+  }
+
+  .other-slider-description h2{
+    font-size: 17px;
+    margin: 15px 0 0 6px;
+  }
+
+  .other-slider-description p{
+    font-size: 14px;
+  }
+
+
+
+}
