@@ -185,6 +185,10 @@ nav ul li a:hover::after{
 
 /*Spots Grid*/
 
+.grid-1-image-mobile{
+  display: none;
+}
+
 .grid-1-description,
 .grid-2-description{
   display: flex;
@@ -243,7 +247,8 @@ a{
   display: flex;
 }
 
-.grid-1-image img{
+.grid-1-image img,
+.grid-1-image-mobile img{
   width: 42vw;
   aspect-ratio: 1/0.75;
   object-fit: cover;
@@ -269,7 +274,7 @@ a{
 
 .copyright{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 11px;
   color: grey;
   bottom: 2%;
@@ -437,6 +442,7 @@ a{
 
   h2{
     font-size: 27px;
+    margin-bottom: 10px;
   }
   
   p,
@@ -449,30 +455,35 @@ a{
     width: 130px;
   }
 
+  .grid-1-image{
+    display: none;
+  }
+
+  .grid-1-image-mobile{
+    display: initial;
+  }
+
   .grid-1{
-    margin: 50px 17.5%;
+    margin: 50px 13%;
     display: grid;
   }
   
   .grid-2{
-    margin: 160px 17.5%;
+    margin: 100px 13%;
     display: grid;
   }
 
-  .grid-1-description{
-    margin: 40px 0;
-  }
-
+  .grid-1-description,
   .grid-2-description{
-    margin: 40px 0;
+    margin: 40px 2%;
   }
 
-  .grid-1-image,
+  .grid-1-image-mobile,
   .grid-2-image{
     text-align: center;
   }
 
-  .grid-1-image img,
+  .grid-1-image-mobile img,
   .grid-2-image img{
     width: 100%;
     aspect-ratio: 1/0.7;
@@ -557,18 +568,130 @@ a{
     padding-right: 10px;
   }
 
+  /*Top Section*/
+
+  .top-section-title img{
+    width: 70vw;
+    margin: 20% 0 -3% 5%;
+  }
+
+  .top-section-description{
+    top: 1%;
+    right: 4%;
+  }
+
+  .top-section-image-row img{
+    width: 65vw;
+    aspect-ratio: 1/1.1;
+  }
+
+  /*Spots Grid*/
+
+  h2{
+    font-size: 25px;
+  }
+
+  .grid-1{
+    margin: 10px 10%;
+  }
   
+  .grid-2{
+    margin: 100px 10%;
+  }
+
+  .grid-1-description,
+  .grid-2-description{
+    margin: 25px 3%;
+  }
 }
 
 
 @media only screen and (max-width:600px){
 
+  /*Top Section*/
+
+  .top-section-title img{
+    width: 80vw;
+    margin: 25% 0 -3% 5%;
+  }
+
+  .top-section-description p{
+    width: 340px;
+    font-size: 16px;
+  }
+
+  .top-section-image-row img{
+    width: 65vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Spots Grid*/
+
+  .grid-1{
+    margin: 10px 7%;
+  }
   
+  .grid-2{
+    margin: 80px 7%;
+  }
 }
 
 
 @media only screen and (max-width:500px){
 
+  /*Top Section*/
+
+  .top-section-description p{
+    width: 320px;
+    font-size: 15px;
+  }
+
+  .top-section-image-row img{
+    width: 75vw;
+    aspect-ratio: 1/1.2;
+  }
+
+  /*Spots Grid*/
+
+  h2{
+    font-size: 20px;
+  }
+
+  p,
+  a{
+    font-size: 14px;
+    font-weight: 450;
+  }
+
+  .grid-1{
+    margin: 0px 5%;
+  }
+  
+  .grid-2{
+    margin: 60px 5%;
+  }
   
 }
 
+
+@media only screen and (max-width:450px){
+
+  /*Top Section*/
+
+  .top-section-title img{
+    width: 80vw;
+    margin: 30% 0 -3% 5%;
+  }
+
+  /*Spots Grid*/
+
+  .grid-1-description,
+  .grid-2-description{
+    margin: 25px 2%;
+  }
+
+  .grid-1-image-mobile img,
+  .grid-2-image img{
+    aspect-ratio: 1/0.8;
+  }
+}
