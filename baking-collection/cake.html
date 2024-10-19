@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="K's Bakery, from simple treats to elaborate masterpieces, cakes enrich our lives and create lasting memories. Let's delve into this collection and discover the endless possibilities that the world of cakes could offer.">
+
+  <link rel="icon" type="image/png" href="../pictures/websitelogo.png" sizes="512x512">
+
+  <title>K's Bakery</title>
+  <link rel="stylesheet" href="../style/cakecollection.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Start cookieyes banner --> 
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
+  <!-- End cookieyes banner -->
+   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  
+    // Set default consent mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',         // Deny storage of ads-related cookies
+      'analytics_storage': 'denied'   // Deny storage of analytics cookies
+    });
+  
+    // Initialize Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-RF94ND0HKD', {
+      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
+      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
+      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
+    });
+  </script>
+
+</head>
+<body>
+  <div class="headingsection">
+    <a href="https://www.k-bakery.com"><img class="logo" src="../pictures/logo.png" alt = "Logo of the website"></a>
+        <nav>
+          <ul id="menulist">
+            <li><a href="https://www.k-bakery.com/baking-collection">Baking Collection</a></li>
+            <li><a href="https://www.k-bakery.com/recipe-summary">Recipe</a></li>
+            <li><a href="https://www.k-bakery.com/journey-summary">Journey</a></li>
+            <li><a href="https://www.k-bakery.com/about-me">About Me</a></li>
+            <li><a href="https://www.k-bakery.com/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menuicon">
+          <img class="menu-icon" onclick="togglemenu()" src="../pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
+        </div>
+  </div>
+
+  
+  <div class="content">
+    <div class="topsection">
+      <div class="topsectiondescription">
+        <p>From simple treats to elaborate masterpieces, cakes enrich our lives and create lasting memories. Let's delve into this collection to discover the endless possibilities that we can try at home.</p>
+      </div>
+      <div class="topsection-right">
+        <h1>Cake</h1>
+        <img src ="../pictures/strawberry-cake.jpg" alt="Strawberry Cake covered with cream and decorated with strawberry and pink cream on top">
+        <h2>Collection</h2>
+      </div>
+    </div>
+    <div class="topsection-mobile">
+      <div class="topsectionimage">
+        <img src ="../pictures/strawberry-cake.jpg" alt="Strawberry Cake covered with cream and decorated with strawberry and pink cream on top">
+      </div>
+      <div class="topsection-mobile-description">
+        <h1>Cake Collection</h1>
+        <p>From simple treats to elaborate masterpieces, cakes enrich our lives and create lasting memories. Let's delve into this collection to discover the endless possibilities that we can try at home.</p>
+      </div>
+    </div>
+
+    <div class="whole-cake reveal">
+      <div class="whole-cake-description">
+        <h3>Whole Cake</h3>
+        <p>Cake plays a vital role in every festive occasion and special day. With endless possibilities for decoration, it's exciting and enjoyable to experiment with different designs.</p>
+      </div>
+      <div class="whole-cake-slider-section-1">
+        <div class="whole-cake-arrow">
+          <a class="whole-cake-prev" onclick="wholecakesliderplusSlides(-1)"><</a>
+          <a class="whole-cake-next" onclick="wholecakesliderplusSlides(1)">></a>
+        </div>
+        
+        <div class="whole-cake-slider-1">
+          <div class="whole-cake-sliderpic-1">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src="../pictures/coffee-genoise.jpg" class = "wholecake-image-1" alt="Rich coffee cake topped with creamy coffee frosting">
+              </div>
+              <div class="whole-cake-pic2">
+                <img src="../pictures/crown-cream-cake.jpg" alt="Cake with crown-shaped cream piping, ideal for an elegant occasion">
+              </div>
+              <div class="whole-cake-pic3">
+                <img src ="../pictures/purple-cream-cake.jpg" alt="Cake topped with purple cream decoration for a vibrant touch">
+              </div>
+            </div>
+          </div>
+
+          <div class="whole-cake-sliderpic-1">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/matcha-cake.jpg" class = "wholecake-image-6" alt="Matcha cake covered with matcha cream, rich in matcha flavor inside and out">
+              </div>
+              <div class="whole-cake-pic2">
+                <img src ="../pictures/strawberry-cake.jpg" alt="Strawberry Cake covered with cream and decorated with strawberry and pink cream on top">
+              </div>
+              <div class="whole-cake-pic3">
+                <img src ="../pictures/mango-cake.jpg" class = "wholecake-image-7" alt="Cake topped with mango, enhancing its sweetness and flavor">
+              </div>
+            </div>
+          </div>
+    
+          <div class="whole-cake-sliderpic-1">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/skirt-cream-cake.jpg" alt="Cake topped with skirt-like cream and filled with nuts for added texture, ideal for girls' celebration">
+              </div>
+              <div class="whole-cake-pic2">
+                <img src ="../pictures/choco-cream-cake.jpg" alt="Chocolate cake covered with chocolate cream, perfect for chocolate lovers">
+              </div>
+              <div class="whole-cake-pic3">
+                <img src ="../pictures/flower-cream-cake.jpg" class = "wholecake-image-10" alt="Cake decorated with cream piped in flower shape on top">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="whole-cake-slider-section-2">
+        <div class="whole-cake-arrow">
+          <a class="whole-cake-prev" onclick="wholecake2sliderplusSlides(-1)"><</a>
+          <a class="whole-cake-next" onclick="wholecake2sliderplusSlides(1)">></a>
+        </div>
+        <div class="whole-cake-slider-2">
+          <div class="whole-cake-sliderpic-2">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src="../pictures/coffee-genoise.jpg" class = "wholecake-image-1" alt="Rich coffee cake topped with creamy coffee frosting">
+              </div>
+              <div class="whole-cake-pic2">
+                <img src="../pictures/crown-cream-cake.jpg" alt="Cake with crown-shaped cream piping, ideal for an elegant occasion">
+              </div>
+            </div>
+          </div>
+      
+          <div class="whole-cake-sliderpic-2">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/purple-cream-cake.jpg" alt="Cake topped with purple cream decoration for a vibrant touch">
+              </div>
+              <div class="whole-cake-pic2">
+                <img src ="../pictures/matcha-cake.jpg" class = "wholecake-image-6" alt="Matcha cake covered with matcha cream, rich in matcha flavor inside and out">
+              </div>
+            </div>
+          </div>
+    
+          <div class="whole-cake-sliderpic-2">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/strawberry-cake.jpg" alt="Strawberry Cake covered with cream and decorated with strawberry and pink cream on top">
+              </div>
+              <div class="whole-cake-pic2">
+                <img src ="../pictures/mango-cake.jpg" class = "wholecake-image-7" alt="Cake topped with mango, enhancing its sweetness and flavor">
+              </div>
+            </div>
+          </div>
+    
+          <div class="whole-cake-sliderpic-2">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/skirt-cream-cake.jpg" alt="Cake topped with skirt-like cream and filled with nuts for added texture, ideal for girls' celebration">
+              </div>
+              <div class="whole-cake-pic2">
+                <img src ="../pictures/choco-cream-cake.jpg" alt="Chocolate cake covered with chocolate cream, perfect for chocolate lovers">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="whole-cake-slider-section-3">
+        <div class="whole-cake-arrow">
+          <a class="whole-cake-prev" onclick="wholecake3sliderplusSlides(-1)"><</a>
+          <a class="whole-cake-next" onclick="wholecake3sliderplusSlides(1)">></a>
+        </div>
+        <div class="whole-cake-slider-3">
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src="../pictures/coffee-genoise.jpg" class = "wholecake-image-1" alt="Rich coffee cake topped with creamy coffee frosting">
+              </div>
+            </div>
+          </div>
+
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src="../pictures/crown-cream-cake.jpg" alt="Cake with crown-shaped cream piping, ideal for an elegant occasion">
+              </div>
+            </div>
+          </div>
+      
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/purple-cream-cake.jpg" alt="Cake topped with purple cream decoration for a vibrant touch">
+              </div>
+            </div>
+          </div>
+    
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/matcha-cake.jpg" class = "wholecake-image-6" alt="Matcha cake covered with matcha cream, rich in matcha flavor inside and out">
+              </div>
+            </div>
+          </div>
+
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic2">
+                <img src ="../pictures/strawberry-cake.jpg" alt="Strawberry Cake covered with cream and decorated with strawberry and pink cream on top">
+              </div>
+            </div>
+          </div>
+
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/mango-cake.jpg" class = "wholecake-image-7" alt="Cake topped with mango, enhancing its sweetness and flavor">
+              </div>
+            </div>
+          </div>
+    
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic1">
+                <img src ="../pictures/skirt-cream-cake.jpg" alt="Cake topped with skirt-like cream and filled with nuts for added texture, ideal for girls' celebration">
+              </div>
+            </div>
+          </div>
+
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic2">
+                <img src ="../pictures/choco-cream-cake.jpg" alt="Chocolate cake covered with chocolate cream, perfect for chocolate lovers">
+              </div>
+            </div>
+          </div>
+
+          <div class="whole-cake-sliderpic-3">
+            <div class="whole-cake-picturesdisplay">
+              <div class="whole-cake-pic2">
+                <img src ="../pictures/flower-cream-cake.jpg" class = "wholecake-image-10" alt="Cake decorated with cream piped in flower shape on top">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="cake-roll-backgroundcolor">
+      <div class="cake-roll reveal">
+        <div class="cake-roll-description">
+          <h3>Cake Roll</h3>
+          <p>A cake roll is a delicious dessert where a soft, fluffy cake is perfectly complemented by creamy fillings and toppings. The versatility of a cake roll allows for a variety of decorations on top, making it the ideal centerpiece for any celebration, perfectly tailored to match any theme.</p>
+
+          <div class="cake-roll-arrow">
+            <a class="cake-roll-prev" onclick="cakerollplusSlides(-1)">❮</a>
+            <a class="cake-roll-next" onclick="cakerollplusSlides(1)">❯</a>
+    
+            <div class ="cake-roll-bottomdot">
+              <span class="cake-roll-dot" onclick="cakerollcurrentSlide(1)"></span> 
+              <span class="cake-roll-dot" onclick="cakerollcurrentSlide(2)"></span> 
+              <span class="cake-roll-dot" onclick="cakerollcurrentSlide(3)"></span> 
+            </div>
+          </div>
+        </div>
+
+        <div class="cake-roll-slideshow">
+          <div class="cake-roll-slideshow-pic fade">
+            <img src ="../pictures/coffee-cake-roll.jpg" alt="Coffee cake roll filled with coffee cream">
+          </div>
+          <div class="cake-roll-slideshow-pic fade">
+            <img src ="../pictures/coffee-cream-cake-roll.jpg" alt="Coffee cake roll filled with coffee cream, and decorated with coffee cream on top">
+          </div>
+          <div class="cake-roll-slideshow-pic fade">
+            <img src ="../pictures/matcha-cake-roll.jpg" alt="Matcha cake roll filled with matcha cream and decorated with matcha cream on top">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cupcake reveal2">
+      <div class="cupcake-slideshow">
+        <div class="cupcake-slideshow-pic fade">
+          <img src ="../pictures/xmas-tree-cupcake.jpg" alt="Cupcakes shaped like Christmas tree with matcha cream piped on top, ideal for Christmas celebrations">
+        </div>
+        <div class="cupcake-slideshow-pic fade">
+          <img src ="../pictures/flower-cupcake.jpg" alt="Cupcakes topped with white and blue flower-shaped cream piping">
+        </div>
+        <div class="cupcake-slideshow-pic fade">
+          <img src ="../pictures/cupcake-flower-top.jpg" alt="Cupcakes with simple flower-shape cream piped on top">
+        </div>
+      </div>
+      <div class="cupcake-description">
+        <h3>Cupcake</h3>
+        <p>Cupcakes may be small, but they are a canvas for creativity and elegance. With a variety of piping techniques, these delightful treats can be transformed into miniature works of art. From intricate swirls of buttercream to delicate floral designs and playful patterns, each cupcake can be customized to suit any occasion.</p>
+        <div class="cupcake-arrow">
+          <a class="cupcakeprev" onclick="plusSlides(-1)">❮</a>
+          <a class="cupcakenext" onclick="plusSlides(1)">❯</a>
+    
+          <div class ="cupcake-bottomdot">
+            <span class="cupcake-dot" onclick="currentSlide(1)"></span> 
+            <span class="cupcake-dot" onclick="currentSlide(2)"></span> 
+            <span class="cupcake-dot" onclick="currentSlide(3)"></span> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cake-backgroundcolor">
+      <div class="cake reveal">  
+        <div class="cake-description">
+          <h3>Cake</h3>
+          <p>Cakes come in various forms, offering unlimited possibilities for us to explore. Wish you enjoy the process of crafting a cake that reflects your unique style, and with your preferred flavor!</p>
+        </div>
+        <div class="cake-scroll-container">
+          <div class="cake-container">
+            <img src="../pictures/layer-cake.jpg" alt="Layered cake with cream piped between layers, shaped like a cylinder">
+          </div>
+          <div class="cake-container">
+            <img src="../pictures/letter-C-cake.jpg" alt="Birthday cake featuring a cookie shaped like the letter 'C' and decorated with variously shaped cream piping on top and between the layers">
+          </div>
+          <div class="cake-container">
+            <img src="../pictures/madeleine.jpg" alt="Madeleine, with some dipped in rich chocolate and some topped with pistachio">
+          </div>
+          <div class="cake-container">
+            <img src="../pictures/simple-opera.jpg" alt="A simple version of Opera Cake with fewer layer, easy to make at home">
+          </div>
+          <div class="cake-container">
+            <img src="../pictures/basque-cheesecake.jpg" alt="Basque Cheesecake: a very easy cheese cake to be made at home">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="coffee-genoise-background-color">
+      <div class="coffee-genoise reveal">
+        <img src="../pictures/coffee-genoise.jpg" alt="Rich coffee cake topped with creamy coffee frosting">
+        <div class="coffee-genoise-description">
+          <h3>Coffee Genoise</h3>
+          <p>Experience the perfect harmony of rich coffee flavor in every bite of this delightful cake. From the tender, fluffy cake to the velvety smooth cream, each mouthful is infused with an irresistible coffee essence. This cake would be loved by any coffee enthusiast.
+            <Br><Br>
+            <a href="https://www.k-bakery.com/recipe/coffeegenoise">Let's bake &#8594</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cakefact">
+      <h3>Why cake is called "cake"?</h3>
+      <p>The term "cake" has a very long history, it traces back through several languages and centuries. The word "cake" comes from the Old Norse word "kaka." The Old Norse "kaka" referred to a small, flat bread or loaf. This word was then translated into Old English as "cāc," which eventually evolved into the modern English word "cake."
+        <Br><Br>Originally, cakes were more like bread and were often sweetened with honey. Over time, as baking techniques and ingredients improved, cakes became lighter and sweeter, resembling the desserts we know today.
+        </p>
+    </div>
+
+    <div class="othergallerytoexplore">
+      <h3>You may explore the below collection also :</h3>
+      <div class="othergallery-scroll-container">
+        <div class="container">
+          <a href="https://www.k-bakery.com/baking-collection/tart"><img src="../pictures/droplet-cream-tart.jpg" alt="Cream tart link to Tart Gallery page"></a>
+          <div class="othergallery-sliderdescription">
+            <a href="https://www.k-bakery.com/baking-collection/tart"><h2>Tart</h2></a>
+            <p>Discover a delightful array of handcrafted tarts, from classic fruit-filled delights to innovative creations that surprise and delight.</p>
+          </div>
+        </div>
+        <div class="container">
+          <a href="https://www.k-bakery.com/baking-collection/bread"><img src="../pictures/ribbon-bread.jpg" alt="Ribbon Bread link to Bread Gallery page"></a>
+          <div class="othergallery-sliderdescription">
+            <a href="https://www.k-bakery.com/baking-collection/bread"><h2>Bread</h2></a>
+            <p>Aroma of freshly baked bread fills the air, experience the exquisite textures and flavors that only handmade bread can offer.</p>
+          </div>
+        </div>
+        <div class="container">
+          <a href="https://www.k-bakery.com/baking-collection/cookie"><img src="../pictures/dress-shape-cookie.jpg" alt="Dress Cookie link to Cookie Gallery page"></a>
+          <div class="othergallery-sliderdescription">
+            <a href="https://www.k-bakery.com/baking-collection/cookie"><h2>Cookie</h2></a>
+            <p>Each cookie is handcrafted with passion, where artisanal skills meet delicious creativity, showcasing the artistry of baking.</p>
+          </div>
+        </div> 
+        <div class="container">
+          <a href="https://www.k-bakery.com/baking-collection/pastry"><img src="../pictures/flower-choux-pastry.jpg" alt="Choux Pastry link to Pastry Gallery page"></a>
+          <div class="othergallery-sliderdescription">
+            <a href="https://www.k-bakery.com/baking-collection/pastry"><h2>Pastry</h2></a>
+            <p>A curated showcase of the finest pastries that highlight the artistry, craftsmanship, and cultural diversity found in the world of baking.</p>
+          </div>
+        </div>       
+      </div>
+    </div>
+  </div>  
+  
+  <div class="copyright">
+    Copyright &copy; 2023–<span id="currentYear"></span> K's Bakery
+  </div>
+
+ 
+
+  <script src="../js/menu.js"></script>
+  <script src="../js/copyright.js"></script> 
+  <script src="../js/reveal.js"></script> 
+
+  <script>
+    //Reveal
+    window.addEventListener('scroll', reveal);
+    function reveal (){
+      var reveals = document.querySelectorAll('.reveal');
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+
+        else{
+            reveals[i].classList.remove('active');
+        }
+      }
+  }  
+  </script>
+
+  <script>
+    //Reveal2
+    window.addEventListener('scroll', reveal2);
+    function reveal2 (){
+      var reveals = document.querySelectorAll('.reveal2');
+      for(var i = 0; i < reveals.length; i++){
+
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+      }
+      else{
+          reveals[i].classList.remove('active');
+      }
+    }
+  }  
+  </script>
+
+  <script>
+    //Reveal3
+    window.addEventListener('scroll', reveal3);
+    function reveal3 (){
+      var reveals = document.querySelectorAll('.reveal3');
+      for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+
+        else{
+            reveals[i].classList.remove('active');
+        }
+      }
+  }  
+  </script>
+
+  <script>
+    //Whole Cake 1
+    let wholecakeslideIndex = 1;
+    wholecakeshowSlides(wholecakeslideIndex);
+
+    function wholecakesliderplusSlides(n) {
+      wholecakeshowSlides(wholecakeslideIndex += n);
+    }
+
+    function wholecakecurrentSlide(n) {
+      wholecakeshowSlides(wholecakeslideIndex = n);
+    }
+
+    function wholecakeshowSlides(n) {
+      let i;
+      let wholecakeslides = document.getElementsByClassName("whole-cake-sliderpic-1");
+      let wholecake = document.getElementsByClassName("whole");
+      if (n > wholecakeslides.length) {wholecakeslideIndex = 1}
+      if (n < 1) {wholecakeslideIndex = wholecakeslides.length}
+      for (i = 0; i < wholecakeslides.length; i++) {
+        wholecakeslides[i].style.display = "none";
+      }
+      for (i = 0; i < wholecake.length; i++) {
+        wholecake[i].className = wholecake[i].className.replace("active", "");
+      }
+      wholecakeslides[wholecakeslideIndex-1].style.display = "block";
+      wholecake[wholecakeslideIndex-1].className += " active";
+    }
+  </script>
+
+  <script>
+    //Whole Cake 2
+    let wholecake2slideIndex = 1;
+    wholecake2showSlides(wholecake2slideIndex);
+
+    function wholecake2sliderplusSlides(n) {
+      wholecake2showSlides(wholecake2slideIndex += n);
+    }
+
+    function wholecake2currentSlide(n) {
+      wholecake2showSlides(wholecake2slideIndex = n);
+    }
+
+    function wholecake2showSlides(n) {
+      let i;
+      let wholecake2slides = document.getElementsByClassName("whole-cake-sliderpic-2");
+      let wholecake2 = document.getElementsByClassName("whole");
+      if (n > wholecake2slides.length) {wholecake2slideIndex = 1}
+      if (n < 1) {wholecake2slideIndex = wholecake2slides.length}
+      for (i = 0; i < wholecake2slides.length; i++) {
+        wholecake2slides[i].style.display = "none";
+      }
+      for (i = 0; i < wholecake2.length; i++) {
+        wholecake2[i].className = wholecake2[i].className.replace("active", "");
+      }
+      wholecake2slides[wholecake2slideIndex-1].style.display = "block";
+      wholecake2[wholecake2slideIndex-1].className += " active";
+    }
+  </script>  
+
+  <script>
+    //Whole Cake 3
+    let wholecake3slideIndex = 1;
+    wholecake3showSlides(wholecake3slideIndex);
+
+    function wholecake3sliderplusSlides(n) {
+      wholecake3showSlides(wholecake3slideIndex += n);
+    }
+
+    function wholecake3currentSlide(n) {
+      wholecake3showSlides(wholecake3slideIndex = n);
+    }
+
+    function wholecake3showSlides(n) {
+      let i;
+      let wholecake3slides = document.getElementsByClassName("whole-cake-sliderpic-3");
+      let wholecake3 = document.getElementsByClassName("whole");
+      if (n > wholecake3slides.length) {wholecake3slideIndex = 1}
+      if (n < 1) {wholecake3slideIndex = wholecake3slides.length}
+      for (i = 0; i < wholecake3slides.length; i++) {
+        wholecake3slides[i].style.display = "none";
+      }
+      for (i = 0; i < wholecake3.length; i++) {
+        wholecake3[i].className = wholecake3[i].className.replace("active", "");
+      }
+      wholecake3slides[wholecake3slideIndex-1].style.display = "block";
+      wholecake3[wholecake3slideIndex-1].className += " active";
+    }
+  </script>
+
+  <script>
+    //Cake Roll
+    let cakerollslideIndex = 1;
+    cakerollshowSlides(cakerollslideIndex);
+    
+    function cakerollplusSlides(n) {
+      cakerollshowSlides(cakerollslideIndex += n);
+    }
+    
+    function cakerollcurrentSlide(n) {
+      cakerollshowSlides(cakerollslideIndex = n);
+    }
+    
+    function cakerollshowSlides(n) {
+      let i;
+      let cakerollslides = document.getElementsByClassName("cake-roll-slideshow-pic");
+      let cakerolldots = document.getElementsByClassName("cake-roll-dot");
+      if (n > cakerollslides.length) {cakerollslideIndex = 1}    
+      if (n < 1) {cakerollslideIndex = cakerollslides.length}
+      for (i = 0; i < cakerollslides.length; i++) {
+        cakerollslides[i].style.display = "none";  
+      }
+      for (i = 0; i < cakerolldots.length; i++) {
+        cakerolldots[i].className = cakerolldots[i].className.replace("cake-roll-active", "");
+      }
+      cakerollslides[cakerollslideIndex-1].style.display = "block";  
+      cakerolldots[cakerollslideIndex-1].className += " cake-roll-active";
+    }
+  </script>
+
+  <script>
+    //Macaron
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("cupcake-slideshow-pic");
+      let firstdots = document.getElementsByClassName("cupcake-dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < firstdots.length; i++) {
+        firstdots[i].className = firstdots[i].className.replace("cupcake-active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      firstdots[slideIndex-1].className += " cupcake-active";
+    }
+  </script>
+
+  
+</body>
+</html>
