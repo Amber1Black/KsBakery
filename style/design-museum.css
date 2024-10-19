@@ -254,7 +254,7 @@ li span{
   width: 70vw;
   aspect-ratio: 1/0.5;
   object-fit: cover;
-  object-position: 50% 20%;
+  object-position: 50% 0%;
 }
 
 /*Display*/
@@ -349,7 +349,7 @@ li span{
 
 .ending-description p{
   color: #ffffff;
-  line-height: 2em;
+  line-height: 1.8em;
   font-weight: 400;
   z-index: 100;
   text-align: justify;
@@ -438,6 +438,12 @@ li span{
     letter-spacing: 0px;
   }
 
+  /*Ending*/
+
+  .ending-description p{
+    line-height: 1.6em;
+  }
+
   /*Explore other spots*/
 
   .other-spots h2{
@@ -496,10 +502,6 @@ li span{
 
   .ending-image img{
     aspect-ratio: 1/0.7;
-  }
-
-  .ending-description p{
-    line-height: 1.7em;
   }
   
 }
