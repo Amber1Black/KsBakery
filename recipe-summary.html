@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="K's Bakery offers a collection of my favorite baking recipes, perfect for anyone who loves the taste of freshly made, homemade baked goods. Discover the joy of baking at home with simple, delicious recipes that bring warmth and sweetness to your kitchen!">
+  <title>K's Bakery</title>
+  <link rel="icon" type="image/png" href="pictures/websitelogo.png" sizes="512x512">
+  <link rel="stylesheet" href="style/recipesummary.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Start cookieyes banner --> 
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/5ab64a6adbfd14cb1dcddf88/script.js"></script> 
+  <!-- End cookieyes banner -->
+   
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF94ND0HKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  
+    // Set default consent mode
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',         // Deny storage of ads-related cookies
+      'analytics_storage': 'denied'   // Deny storage of analytics cookies
+    });
+  
+    // Initialize Google Analytics
+    gtag('js', new Date());
+    gtag('config', 'G-RF94ND0HKD', {
+      'anonymize_ip': true,                  // Anonymize IPs to further protect user privacy
+      'allow_google_signals': false,         // Prevent the use of additional data for remarketing and advertising
+      'allow_ad_personalization_signals': false // Prevent data from being used for ad personalization
+    });
+  </script>
+
+  <!-- JSON-LD structured data snipper -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Recipes Collection",
+      "description": "Explore a collection of delicious recipes, including custard bread, lemon tart, and more. Each recipe is easy to follow and perfect for any occasion.",
+      "url": "https://www.k-bakery.com/recipesummary",
+      "mainEntity": [
+        {
+          "@type": "Recipe",
+          "name": "Lemon Tart",
+          "url": "https://www.k-bakery.com/recipe/lemontart",
+          "description": "A delightful tart with tangy lemon curd and sweet decorations, perfect for any occasion.",
+          "image": "https://www.k-bakery.com/pictures/grassland-tart-ring.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Hydrangea Tart",
+          "url": "https://www.k-bakery.com/recipe/hydrangeatart",
+          "description": "Elegant hydrangea-inspired tarts that are easy to make and beautiful to serve",
+          "image": "https://www.k-bakery.com/pictures/hydrangea-tart-blue-and-white.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Coffee Genoise",
+          "url": "https://www.k-bakery.com/recipe/coffeegenoise",
+          "description": "Full of coffee flavor from inside to outside, perfect to coffee lover.",
+          "image": "https://www.k-bakery.com/pictures/coffee-genoise.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Custard Bread",
+          "url": "https://www.k-bakery.com/recipe/custardbread",
+          "description": "Soft, fluffy bread filled with rich, creamy custard for a delightful treat.",
+          "image": "https://www.k-bakery.com/pictures/custard-bread.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Chocolate Twist Bread",
+          "url": "https://www.k-bakery.com/recipe/chocolatetwistbread",
+          "description": "Fluffy bread twisted with rich chocolate paste, perfect for chocolate lovers.",
+          "image": "https://www.k-bakery.com/pictures/chocolate-twist-bread.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Pumpkin Bread",
+          "url": "https://www.k-bakery.com/recipe/pumpkinbread",
+          "description": "A crispy, pumpkin-shaped bread with a delicious flavor.",
+          "image": "https://www.k-bakery.com/pictures/pumpkin-bread.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Matcha Muchroom Bread",
+          "url": "https://www.k-bakery.com/recipe/matchamushroombread",
+          "description": "Resemble real mushrooms but are topped with rich matcha flavor",
+          "image": "https://www.k-bakery.com/pictures/matcha-mushroom-bread.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Mushroom Bread",
+          "url": "https://www.k-bakery.com/recipe/mushroombread",
+          "description": "They resemble real mushrooms but are bursting with rich coffee flavor",
+          "image": "https://www.k-bakery.com/pictures/mushroom-bread.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Mexico Bun",
+          "url": "https://www.k-bakery.com/recipe/mexicobun",
+          "description": "Popular bread from Hong Kong with a crispy top",
+          "image": "https://www.k-bakery.com/pictures/mexico-bun.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Matcha Loaf",
+          "url": "https://www.k-bakery.com/recipe/matchaloaf",
+          "description": "The bread is rich with the enticing aroma of matcha",
+          "image": "https://www.k-bakery.com/pictures/matcha-loaf.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Dress Cookie",
+          "url": "https://www.k-bakery.com/recipe/dresscookie",
+          "description": "Elegant dress-shaped cookies with various decorations, perfect for parties.",
+          "image": "https://www.k-bakery.com/pictures/dress-cookie.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Poke Ball Cookie",
+          "url": "https://www.k-bakery.com/recipe/pokeballcookie",
+          "description": "Cute and colorful Poké Ball Cookies loved by all Pokémon fans",
+          "image": "https://www.k-bakery.com/pictures/poke-ball-cookie.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Mushroom Cookie",
+          "url": "https://www.k-bakery.com/recipe/mushroomcookie",
+          "description": "Adorable cookies shaped like Mario mushrooms and stars, perfect for tea-time snacks.",
+          "image": "https://www.k-bakery.com/pictures/mushroom-and-star-cookie.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Flower Butter Cookie",
+          "url": "https://www.k-bakery.com/recipe/flowerbuttercookie",
+          "description": "The rich butter makes the cookie melt in our mouths",
+          "image": "https://www.k-bakery.com/pictures/flower-butter-cookie.jpg"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Butterfly Palmier",
+          "url": "https://www.k-bakery.com/recipe/butterflypalmier",
+          "description": "Irresistibly crispy, caramelized treats with a delicate crunch—perfect for any age!",
+          "image": "https://www.k-bakery.com/pictures/butterfly-palmier.jpg"
+        }
+
+
+      ]
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="headingsection">
+    <a href="https://www.k-bakery.com"><img class="logo" src="pictures/logo.png" alt = "Logo of the website"></a>
+    <nav>
+      <ul id="menulist">
+        <li><a href="https://www.k-bakery.com/bakingcollection">Baking Collection</a></li>
+            <li><a href="https://www.k-bakery.com/recipesummary">Recipe</a></li>
+            <li><a href="https://www.k-bakery.com/journeysummary">Journey</a></li>
+            <li><a href="https://www.k-bakery.com/aboutme">About Me</a></li>
+            <li><a href="https://www.k-bakery.com/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menuicon">
+      <img class="menu-icon" onclick="togglemenu()" src="pictures/menu.png" alt = "Menu icon to display a list of website pages when clicked">
+    </div>
+  </div>
+
+  <div class="top-section">
+    <div class="top-section-background-pic">
+      <img src ="pictures/cookie-with-chocolate-2.jpg" class = "image-1" alt ="cookie in the shape of heart, cat and star, decorated with chocolate on top.">
+      <img src ="pictures/cookie-with-chocolate-3.jpg" class = "image-2" alt ="cookie in the shape of heart, cat and star, decorated with chocolate on top.">
+    </div>
+    
+    <div class="top-section-title">
+      <img src ="pictures/recipe-summary.png">
+      <p>Homemade baked goods are simply the freshest and most delicious. Let's enjoy the delightful pleasure of baking at home.</p>
+    </div>
+  </div>
+
+    <div class="recipecategory reveal">
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/lemontart"><img src = "pictures/grassland-tart-ring.jpg" alt = "Tart ring with grassland-themed decoration on top, linking to the Lemon Tart recipe."></a>
+        <div class="recipename">
+          <h4>Tart</h4>
+          <h3>Lemon Tart</h3>
+          <p>The tangy lemon pairs perfectly with the sweet decorations on top</p>
+          <a href="https://www.k-bakery.com/recipe/lemontart"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/hydrangeatart"><img src = "pictures/hydrangea-tart-blue-and-white.jpg" alt = "Tart topped with hydrangea-shaped cream decoration in a mix of white and blue colors, linking to the Hydrangea Tart recipe"></a>
+        <div class="recipename">
+          <h4>Tart</h4>
+          <h3>Hydrangea Tart</h3>
+          <p>The tarts look gorgeous, but they are very easy to make.</p>
+          <a href="https://www.k-bakery.com/recipe/hydrangeatart"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/coffeegenoise"><img src = "pictures/coffee-genoise.jpg" class ="image3" alt = "Coffee Genoise, ideal for coffee lover, linking to the Coffee Genoise recipe."></a>
+        <div class="recipename">
+          <h4>Cake</h4>
+          <h3>Coffee Genoise</h3>
+          <p>The fluffy cake matches perfectly with the cream added on top</p>
+          <a href="https://www.k-bakery.com/recipe/coffeegenoise"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/custardbread"><img src = "pictures/custard-bread.jpg" alt = "Custard bread with a rich custard filling inside, linking to the Custard Bread recipe"></a>
+        <div class="recipename">
+          <h4>Bread</h4>
+          <h3>Custard Bread</h3>
+          <p>The rich custard inside elevates the taste of the bread to another level</p>
+          <a href="https://www.k-bakery.com/recipe/custardbread"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/chocolatetwistbread"><img src = "pictures/chocolate-twist-bread.jpg" alt ="Chocolate Twist Bread: bread filled with rich chocolate, linking to the Chocolate Twist Bread recipe"></a>
+        <div class="recipename">
+          <h4>Bread</h4>
+          <h3>Choco Twist Bread</h3>
+          <p>The hazelnut paste added makes the bread very tasty</p>
+          <a href="https://www.k-bakery.com/recipe/chocolatetwistbread"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/pumpkinbread"><img src = "pictures/pumpkin-bread.jpg" alt ="Bread with a crispy top shaped like a pumpkin, linking to Pumpkin Bread recipe"></a>
+        <div class="recipename">
+          <h4>Bread</h4>
+          <h3>Pumpkin Bread</h3>
+          <p>They look adorable and require only simple preparation</p>
+          <a href="https://www.k-bakery.com/recipe/pumpkinbread"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/matchamushroombread"><img src = "pictures/matcha-mushroom-bread.jpg" alt ="Bread with a crispy matcha top shaped like a mushroom, linking to Matcha Mushroom Bread recipe"></a>
+        <div class="recipename1">
+          <h4>Bread</h4>
+          <h3>Matcha Mushroom Bread</h3>
+          <p>They look very cute and are full of matcha flavor</p>
+          <a href="https://www.k-bakery.com/recipe/matchamushroombread"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/mushroombread"><img src = "pictures/mushroom-bread.jpg" alt = "Bread with a crispy coffee top shaped like a mushroom, linking to Mushroom Bread recipe"></a>
+        <div class="recipename">
+          <h4>Bread</h4>
+          <h3>Mushroom Bread</h3>
+          <p>They resemble real mushrooms but are bursting with rich coffee flavor</p>
+          <a href="https://www.k-bakery.com/recipe/mushroombread"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/mexicobun"><img src = "pictures/mexico-bun.jpg" alt = "Mexico Bun : A famous bread from Hong Kong with a crispy top, linking to the Mexico Bun recipe"></a>
+        <div class="recipename">
+          <h4>Bread</h4>
+          <h3>Mexico Bun</h3>
+          <p>The crispy top makes the bread very delicious</p>
+          <a href="https://www.k-bakery.com/recipe/mexicobun"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/matchaloaf"><img src = "pictures/matcha-loaf.jpg" class = "matcha-loaf-image" alt = "Matcha Loaf : A loaf with mixed matcha flavor inside, linking to the Matcha Loaf recipe"></a>
+        <div class="recipename">
+          <h4>Bread</h4>
+          <h3>Matcha Loaf</h3>
+          <p>The bread is rich with the enticing aroma of matcha</p>
+          <a href="https://www.k-bakery.com/recipe/matchaloaf"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/dresscookie"><img src = "pictures/dress-shape-cookie.jpg" alt ="Cookie in dress-shape with different decoration on top, linking to Dress Cookie recipe."></a>
+        <div class="recipename">
+          <h4>Cookie</h4>
+          <h3>Dress Cookie</h3>
+          <p>By simply adding chocolate, different patterns can be made.</p>
+          <a href="https://www.k-bakery.com/recipe/dresscookie"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/pokeballcookie"><img src = "pictures/poke-ball-cookie.jpg" alt ="Cookie shaped like a Poké Ball, linking to the Poké Ball Cookie recipe."></a>
+        <div class="recipename">
+          <h4>Cookie</h4>
+          <h3>Poké Ball Cookie</h3>
+          <p>The cookies are adorable, it's a joyful experience to make them.</p>
+          <a href="https://www.k-bakery.com/recipe/pokeballcookie"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/mushroomcookie"><img src = "pictures/mushroom-and-star-cookie.jpg" alt ="Cookie in mushroom and star-shape, linking to Mushroom recipe"></a>
+        <div class="recipename">
+          <h4>Cookie</h4>
+          <h3>Mushroom Cookie</h3>
+          <p>A bit of effort is needed, but it's worth making.</p>
+          <a href="https://www.k-bakery.com/recipe/mushroomcookie"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/flowerbuttercookie"><img src = "pictures/flower-butter-cookie.jpg" alt = "Butter Cookie piped in flower shape, linking to Flower Cookie recipe"></a>
+        <div class="recipename">
+          <h4>Cookie</h4>
+          <h3>Flower Cookie</h3>
+          <p>The rich butter makes the cookie melt in our mouths</p>
+          <a href="https://www.k-bakery.com/recipe/flowerbuttercookie"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+  
+      <div class="recipegrid">
+        <a href="https://www.k-bakery.com/recipe/butterflypalmier"><img src = "pictures/butterfly-palmier.jpg" class = "butterfly-palmier-image" alt = "Palmier in butterfly shape, linking to Butterfly Palmier recipe"></a>
+        <div class="recipename">
+          <h4>Pastry</h4>
+          <h3>Butterfly Palmier</h3>
+          <p>Can't stop eating one after another with the crispy texture</p>
+          <a href="https://www.k-bakery.com/recipe/butterflypalmier"><h5>Let's try &#8594;</h5></a>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="copyright">
+      Copyright &copy; 2023–<span id="currentYear"></span> K's Bakery
+    </div>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/copyright.js"></script> 
+    <script src="js/reveal.js"></script> 
+  
+    
+</body>
+</html>
