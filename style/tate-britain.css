@@ -150,15 +150,15 @@ p{
 
 /*Top Section*/
 
+.top-section{
+  background-color: #000000;
+}
+
 .top-section-image{
   display: flex;
   background-color: #000000;
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
   gap: 2%;
-}
-
-.image-12{
-  display: none;
 }
 
 .image-1{
@@ -174,29 +174,31 @@ p{
   object-fit: cover;
   object-position: 50% 75%;
   border-radius: 10px 0 0 10px;
+  filter: hue-rotate(340deg) brightness(0.6) blur(0.5px);
 }
 
 .top-section-description{
   display: flex;
   margin: auto;
   align-items: center;
-  padding: 30px 30px 0 30px;
+  padding: 50px 30px 0 30px;
   position: relative;
 }
 
 .top-section-description img{
   width: 62vw;
-  filter: brightness(0.1);
+  margin-top: 50px;
 }
 
 .top-section-description h3{
   font-family: 'Roboto', sans-serif;
   font-size: 1.3vw;
-  font-weight: 380;
+  font-weight: 400;
   margin: 50px 20px 0 50px;
   line-height: 1.5em;
   width: 600px;
   text-align: right;
+  color: #ffffff;
 }
 
 
@@ -593,14 +595,17 @@ p{
 
   .top-section-description h3{
     font-size: 18px;
-    width: 250px;
+    width: 270px;
     right: 0.5%;
-    bottom: 13%;
+    bottom: 2%;
   }
 
   .top-section-description img{
     width: 65vw;
-    margin-bottom: 20px;
+  }
+
+  .image-14{
+    object-position: 32% 50%;
   }
 
   /*Gallery*/
@@ -726,7 +731,7 @@ p{
 
   :root{
     --width: 60vw;
-    --height: calc(var(--width)*0.95);
+    --height: calc(var(--width)*1);
   }
 
   /*Top Section*/
@@ -737,30 +742,21 @@ p{
 
   .top-section-description img{
     width: 80vw;
-    margin: 11% 0 20px 0;
+    margin: 15% 0 -20px 0;
   }
 
   .top-section-description h3{
     width: 420px;
-    top: 12%;
+    top: 30%;
     margin: 0 15px 20px 15px;
   }
 
   .image-1{
-    display: none;
-  }
-
-  .image-12{
-    display: initial;
-    width: var(--width);
-    height: var(--height);
-    object-fit: cover;
-    border-radius: 0 10px 10px 0;
-    object-position: 50% 60%;
+    object-position: 60% 50%;
   }
 
   .image-14{
-    width: 40vw;
+    object-position: 30% 50%;
   }
 
   /*Background*/
@@ -910,24 +906,28 @@ p{
 
   :root{
     --width: 60vw;
-    --height: calc(var(--width)*1.2);
+    --height: calc(var(--width)*1.15);
   }
 
   /*Top Section*/
 
-  .top-section-description{
-    padding: 0px 25px 10px 25px;
-  }
-
   .top-section-description img{
     width: 85vw;
-    margin: 16% 0 10px 0;
+    margin: 17% 0 -20px 0;
   }
 
   .top-section-description h3{
-    top: 2%;
+    top: 20%;
     font-size: 18px;
     margin: 10px 10px 15px 10px;
+  }
+
+  .image-1{
+    object-position: 65% 50%;
+  }
+
+  .image-14{
+    object-position: 28% 50%;
   }
 
   /*Gallery*/
@@ -1044,14 +1044,15 @@ p{
   }
 
   :root{
-    --width: 75vw;
-    --height: calc(var(--width)*1);
+    --width: 60vw;
+    --height: calc(var(--width)*1.2);
   }
 
   /*Top Section*/
 
-  .top-section-description{
-    padding: 15px 15px 5px 15px;
+  .top-section-description img{
+    width: 85vw;
+    margin: 20% 0 -20px 0;
   }
 
   .top-section-description h3{
@@ -1131,24 +1132,34 @@ p{
   p{
     font-size: 15px;
     font-weight: 400;
+    line-height: 1.3em;
   }
 
   :root{
-    --width: 85vw;
-    --height: calc(var(--width)*0.9);
+    --width: 65vw;
+    --height: calc(var(--width)*1.3);
   }
 
   /*Top Section*/
 
   .top-section-description img{
     width: 90vw;
-    margin: 20% 0 10px 0;
+    margin: 25% 0 -17px 0;
   }
 
   .top-section-description h3{
     font-size: 16px;
+    font-weight: 400;
     width: 250px;
     margin: 2%;
+  }
+
+  .image-1{
+    object-position: 70% 50%;
+  }
+
+  .image-14{
+    object-position: 24% 50%;
   }
 
   /*Gallery*/
@@ -1162,7 +1173,7 @@ p{
   }
 
   .gallery-additional-description{
-    margin: 50px 4%;
+    margin: 50px 0;
   }
 
   .image-4{
@@ -1195,7 +1206,7 @@ p{
   /*Decoration*/
 
   .decoration{
-    margin: 100px 5%;
+    margin: 80px 5%;
   }
 
   .image-13,
@@ -1230,7 +1241,7 @@ p{
 
   .ending p{
     line-height: 1.5em;
-    width: 320px;
+    width: 350px;
   }
 
   /*Explore other spots*/
@@ -1249,15 +1260,39 @@ p{
     font-size: 22px;
   }
 
+  :root{
+    --width: 65vw;
+    --height: calc(var(--width)*1.4);
+  }
+
   /*Top Section*/
 
   .top-section-description img{
-    margin: 22% 0 10px 0;
+    margin: 25% 0 -16px 0;
   }
 
   .top-section-description h3{
     font-size: 15px;
     width: 230px;
+  }
+
+  .image-1{
+    object-position: 70% 50%;
+  }
+
+  .image-14{
+    object-position: 25% 50%;
+  }
+
+  /*Ending*/
+
+  .ending-image img{
+    aspect-ratio: 1/1.2;
+  }
+
+  .ending p{
+    line-height: 1.5em;
+    width: 270px;
   }
 
   /*Explore other spots*/
