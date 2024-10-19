@@ -152,8 +152,8 @@ nav ul li a:hover::after{
 }
 
 .top-section-description p{
-  width: 530px;
-  font-size: 25px;
+  width: 480px;
+  font-size: 22px;
   font-family: 'Roboto', sans-serif;
   font-weight: 380;
   line-height: 1.5em;
@@ -292,9 +292,17 @@ a{
 
 @media only screen and (max-width:1500px){
 
+  .top-section-description{
+    top: 15%;
+  }
+
   .top-section-description p{
-    width: 450px;
-    font-size: 21px;
+    width: 410px;
+    font-size: 19px;
+  }
+
+  .top-section-image-row img{
+    aspect-ratio: 1/0.8;
   }
 
   h2{
@@ -330,8 +338,8 @@ a{
 @media only screen and (max-width:1300px){
 
   .top-section-description p{
-    width: 400px;
-    font-size: 19px;
+    width: 420px;
+    font-size: 18px;
   }
 
   h2{
