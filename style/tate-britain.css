@@ -144,7 +144,7 @@ p{
 }
 
 :root{
-  --width: 65vw;
+  --width: 55vw;
   --height: calc(var(--width)*0.6);
 }
 
@@ -152,6 +152,9 @@ p{
 
 .top-section-image{
   display: flex;
+  background-color: #000000;
+  padding: 40px 0;
+  gap: 2%;
 }
 
 .image-12{
@@ -162,13 +165,15 @@ p{
   width: var(--width);
   height: var(--height);
   object-fit: cover;
+  border-radius: 0 10px 10px 0;
 }
 
 .image-14{
-  width: 35vw;
+  width: 45vw;
   height: var(--height);
   object-fit: cover;
   object-position: 50% 75%;
+  border-radius: 10px 0 0 10px;
 }
 
 .top-section-description{
@@ -180,17 +185,17 @@ p{
 }
 
 .top-section-description img{
-  width: 60vw;
+  width: 62vw;
+  filter: brightness(0.1);
 }
 
 .top-section-description h3{
   font-family: 'Roboto', sans-serif;
   font-size: 1.3vw;
   font-weight: 380;
-  letter-spacing: 1px;
   margin: 50px 20px 0 50px;
   line-height: 1.5em;
-  width: 40vw;
+  width: 600px;
   text-align: right;
 }
 
@@ -198,37 +203,36 @@ p{
 /*Gallery*/
 
 .gallery{
-  margin: 200px auto;
+  margin: 200px 20%;
+  text-align: center;
 }
 
 .gallery-description{
-  margin: 30px 7% 100px 7%;
+  margin: 30px 0 100px 0;
+  text-align: initial;
 }
 
 .gallery img{
-  width: 76vw;
-  aspect-ratio: 1/0.5;
+  width: 50vw;
+  aspect-ratio: 1/0.6;
   object-fit: cover;
 }
 
 .gallery-additional-description{
-  margin: 150px 20%;
+  margin: 120px 0;
+  text-align: initial;
 }
 
 .image-2{
-  margin-left: 12%;
-}
-
-.image-3{
-  margin: 30px 0 0 5%;
+  margin: 0 0 30px 0;
 }
 
 .image-4{
-  margin: 0 0 0 20%;
+  margin: 0 0 0 12%;
 }
 
 .image-5{
-  margin: 30px 0 0 4%;
+  margin: 30px 12% 0 -5%;
 }
 
 .image-6{
@@ -238,32 +242,30 @@ p{
 /*Chairs*/
 
 .chairs-description{
-  margin: 80px 10%;
+  margin: 80px 20%;
+  text-align: initial;
+}
+
+.chairs{
+  text-align: center;
 }
 
 .chairs img{
-  width: 72vw;
-  aspect-ratio: 1/0.6;
+  width: 50vw;
+  aspect-ratio: 1/0.5;
   object-fit: cover;
 }
 
-.image-7{
-  margin-left: 14%;
-}
-
 .image-8{
-  margin: 20px 0 0 14%;
+  margin: 20px 0 0 0;
+  object-position: 50% 90%;
 }
 
 
 /*Decoration*/
 
 .decoration{
-  margin: 150px auto;
-}
-
-.decoration-description{
-  margin: auto 7%;
+  margin: 150px 20%;
 }
 
 .image-13{
@@ -271,20 +273,20 @@ p{
 }
 
 .image-9{
-  width: 80vw;
+  width: 60vw;
   aspect-ratio: 1/0.5;
   object-fit: cover;
-  margin: 80px 10% 30px 10%;
+  margin: 50px auto 30px auto;
 }
 
 .decoration-image{
   display: flex;
   justify-content: center;
-  gap: 2%;
+  gap: 2vw;
 }
 
 .decoration-image img{
-  width: 39vw;
+  width: 29vw;
   aspect-ratio: 1/1.2;
   object-fit: cover;
 }
@@ -293,11 +295,11 @@ p{
 
 .background{
   display: flex;
-  margin: 200px 7%;
+  margin: 200px 17%;
 }
 
 .background img{
-  width: 40vw;
+  width: 35vw;
   aspect-ratio: 1/1.2;
   object-fit: cover;
   object-position: 50% 70%;
@@ -305,22 +307,90 @@ p{
 
 .background-description{
   align-items: center;
-  margin: auto 2% auto 5%;
+  margin: auto 0 auto 4%;
 }
 
 /*Ending*/
 
 .ending{
-  margin: 150px auto;
+  margin: 150px 17%;
   text-align: justify;
-  width: 1200px;
-  background-color: rgb(238, 237, 237);
-  font-style: italic;
-  padding: 150px 200px;
+  position: relative;
+}
+
+.ending-image img{
+  width: 100%;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  filter: brightness(0.2);
 }
 
 .ending p{
-  line-height: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 1.8em;
+  color: #ffffff;
+  width: 700px;
+}
+
+/*Explore other spots*/
+
+.other-spots{
+  margin: 100px 5%;
+  overflow: hidden;
+}
+
+.other-spots h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.other-spots-container{
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  margin: 2% 0 0 0;
+  gap: 4%;
+}
+
+.other-scroll-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.container{
+  white-space: wrap;
+  width: 25vw;
+}
+
+.container img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.other-slider-description h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 20px 15px 10px 6px;
+  text-align: left;
+}
+
+.other-slider-description a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+.other-slider-description p{
+  line-height: 1.4em;
+  margin: 5px 0 70px 6px;
+  text-align: left;
 }
 
 /*copyright*/
@@ -354,7 +424,7 @@ p{
 
   .top-section-description h3{
     position: absolute;
-    width: 500px;
+    width: 450px;
     right: 1%;
     font-size: 19px;
     bottom: 10%;
@@ -363,28 +433,63 @@ p{
   /*Gallery*/
 
   .gallery{
-    margin: 150px auto;
+    margin: 150px 15%;
   }
 
   .gallery-description{
-    margin: 30px 7% 70px 7%;
+    margin: 30px 0 70px 0;
   }
 
   .gallery-additional-description{
-    margin: 100px 20%;
+    margin: 100px 0;
   }
 
-  /*Decoration*/
+  /*Chairs*/
 
-  .image-9{
-    margin: 50px 10% 30px 10%;
+  .chairs-description{
+    margin: 80px 18%;
+  }
+
+  .chairs img{
+    width: 50vw;
+    aspect-ratio: 1/0.6;
+  }
+
+  /*Background*/
+
+  .background{
+    margin: 200px 12%;
   }
 
   /*Ending*/
 
   .ending{
-    margin: 100px auto;
+    margin: 120px 12%;
   }
+
+  /*Explore other spots*/
+
+  .other-spots-container{
+    gap: 2%;
+  }
+
+  .container{
+    width: 27vw;
+  }
+
+  .other-spots h2{
+    font-size: 22px;
+  }
+
+  .other-slider-description h2{
+    font-size: 20px;
+    margin: 20px 0 7px 6px;
+  }
+
+  .other-slider-description p{
+    font-size: 16px;
+  }
+
 }
 
 
@@ -402,7 +507,7 @@ p{
   }
 
   :root{
-    --height: calc(var(--width)*0.8);
+    --height: calc(var(--width)*0.7);
   }
 
   /*Top Section*/
@@ -412,7 +517,8 @@ p{
   }
 
   .top-section-description h3{
-    width: 450px;
+    font-size: 18px;
+    width: 410px;
     right: 0%;
     letter-spacing: 0px;
   }
@@ -420,26 +526,46 @@ p{
   /*Gallery*/ 
 
   .gallery img{
+    width: 60vw;
     aspect-ratio: 1/0.6;
+  }
+
+  /*Decoration*/
+
+  .decoration{
+    margin: 150px 17%;
+  }
+
+  .image-9{
+    width: 100%;
+    aspect-ratio: 1/0.5;
+    margin: 50px auto 30px auto;
+  }
+
+  .decoration-image{
+    gap: 2vw;
+  }
+
+  .decoration-image img{
+    width: 32vw;
+    aspect-ratio: 1/1.2;
   }
 
   /*Background*/
 
   .background{
-    margin: 150px 5%;
+    margin: 150px 8%;
   }
 
   .background img{
     width: 45vw;
-    aspect-ratio: 1/1.2;
+    aspect-ratio: 1/1.1;
   }
 
   /*Ending*/
 
   .ending{
-    margin: 80px 12%;
-    width: unset;
-    padding: 150px 150px;
+    margin: 20px 10%;
   }
 
   
@@ -452,6 +578,7 @@ p{
 
   h2{
     font-size: 25px;
+    margin-bottom: 10px;
   }
 
   p{
@@ -459,7 +586,7 @@ p{
   }
 
   :root{
-    --height: calc(var(--width)*0.9);
+    --height: calc(var(--width)*0.75);
   }
 
   /*Top Section*/
@@ -468,46 +595,39 @@ p{
     font-size: 18px;
     width: 250px;
     right: 0.5%;
-    bottom: 8%;
+    bottom: 13%;
   }
 
   .top-section-description img{
     width: 65vw;
+    margin-bottom: 20px;
   }
 
   /*Gallery*/
 
   .gallery{
-    margin: 100px auto;
+    margin: 130px 12%;
   }
 
   .gallery-description{
-    margin: 30px 7% 50px 7%;
+    margin: 30px 0 50px 0;
   }
 
   .gallery img{
-    width: 80vw;
-    aspect-ratio: 1/0.7;
+    width: 70vw;
+    aspect-ratio: 1/0.55;
   }
 
   .gallery-additional-description{
-    margin: 100px 15%;
-  }
-
-  .image-2{
-    margin-left: 15%;
-  }
-
-  .image-3{
-    margin: 30px 0 0 5%;
+    margin: 100px 3%;
   }
 
   .image-4{
-    margin: 0 0 0 20%;
+    margin: 0 0 0 15%;
   }
 
   .image-5{
-    margin: 30px 0 0 4%;
+    margin: 30px 10% 0 0;
   }
 
   .image-6{
@@ -517,37 +637,63 @@ p{
   /*Chairs*/
 
   .chairs-description{
-    margin: 80px 10% 40px 10%;
+    margin: 80px 12% 40px 12%;
+  }
+
+  .chairs img{
+    width: 60vw;
+    aspect-ratio: 1/0.6;
   }
 
   /*Decoration*/
+
+  .decoration{
+    margin: 100px 11%;
+  }
   
   .image-9{
-    width: 88vw;
     aspect-ratio: 1/0.5;
-    margin: 40px 10% 30px 6%;
+    margin: 30px 0;
   }
   
   .decoration-image img{
-    width: 43vw;
+    width: 38vw;
   }
 
   /*Background*/
 
   .background{
-    margin: 150px 3%;
+    margin: 150px 5%;
   }
 
   .background img{
     width: 48vw;
-    aspect-ratio: 1/1.2;
+    aspect-ratio: 1/1.1;
   }
 
   /*Ending*/
 
   .ending{
-    margin: 80px 8%;
-    padding: 130px 100px;
+    margin: 20px 8%;
+  }
+
+  .ending p{
+    width: 610px;
+  }
+
+  /*Explore other spots*/
+
+  .container{
+    width: 30vw;
+  }
+
+  .other-spots h2{
+    font-size: 20px;
+  }
+
+  .other-slider-description h2{
+    font-size: 19px;
+    margin: 20px 0 7px 6px;
   }
 }
 
@@ -575,12 +721,12 @@ p{
   /*Common Parameter*/
 
   h2{
-    font-size: 28px;
+    font-size: 25px;
   }
 
   :root{
     --width: 60vw;
-    --height: calc(var(--width)*1.3);
+    --height: calc(var(--width)*0.95);
   }
 
   /*Top Section*/
@@ -591,13 +737,13 @@ p{
 
   .top-section-description img{
     width: 80vw;
+    margin: 11% 0 20px 0;
   }
 
   .top-section-description h3{
-    position: initial;
-    width: unset;
-    margin: 10px 15px 20px 15px;
-    text-align: left;
+    width: 420px;
+    top: 12%;
+    margin: 0 15px 20px 15px;
   }
 
   .image-1{
@@ -609,10 +755,52 @@ p{
     width: var(--width);
     height: var(--height);
     object-fit: cover;
+    border-radius: 0 10px 10px 0;
+    object-position: 50% 60%;
   }
 
   .image-14{
     width: 40vw;
+  }
+
+  /*Background*/
+
+  .background{
+    margin: 150px 3%;
+  }
+
+  .background img{
+    width: 48vw;
+    aspect-ratio: 1/1.1;
+  }
+
+  /*Ending*/
+
+  .ending{
+    margin: 20px 8%;
+  }
+
+  .ending-image img{
+    aspect-ratio: 1/0.6;
+  }
+
+  .ending p{
+    width: 500px;
+  }
+
+  /*Explore other spots*/
+
+  .container{
+    width: 33vw;
+  }
+
+  .other-spots h2{
+    font-size: 20px;
+  }
+
+  .other-slider-description h2{
+    font-size: 19px;
+    margin: 20px 0 7px 6px;
   }
 
 }
@@ -716,51 +904,57 @@ p{
     margin-bottom: 10px;
   }
 
+  p{
+    font-size: 16px;
+  }
+
   :root{
     --width: 60vw;
-    --height: calc(var(--width)*1.4);
+    --height: calc(var(--width)*1.2);
   }
 
   /*Top Section*/
 
   .top-section-description{
-    padding: 15px 25px 10px 25px;
+    padding: 0px 25px 10px 25px;
   }
 
   .top-section-description img{
     width: 85vw;
+    margin: 16% 0 10px 0;
   }
 
   .top-section-description h3{
+    top: 2%;
     font-size: 18px;
     margin: 10px 10px 15px 10px;
   }
 
   /*Gallery*/
 
+  .gallery{
+    margin: 100px 10%;
+  }
+
   .gallery img{
-    width: 90vw;
-    aspect-ratio: 1/0.8;
+    width: 95%;
+    aspect-ratio: 1/0.7;
   }
 
   .gallery-additional-description{
-    margin: 80px 15%;
-  }
-
-  .image-2{
-    margin-left: 5%;
+    margin: 60px 3%;
   }
 
   .image-3{
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
   }
 
   .image-4{
-    margin: 0 0 0 10%;
+    margin: 0 0 0 8%;
   }
 
   .image-5{
-    margin: 20px 0 0 2%;
+    margin: 20px 8% 0 0;
   }
 
   .image-6{
@@ -770,32 +964,23 @@ p{
   /*Chairs*/
 
   .chairs img{
-    width: 84vw;
+    width: 70%;
     aspect-ratio: 1/0.7;
-  }
-  
-  .image-7{
-    margin-left: 8%;
-  }
-  
-  .image-8{
-    margin: 20px 0 0 8%;
   }
 
   /*Decoration*/
 
   .decoration{
-    margin: 100px auto;
+    margin: 100px 5%;
   }
 
   .image-9{
-    width: 96vw;
-    aspect-ratio: 1/0.7;
-    margin: 40px 2% 15px 2%;
+    aspect-ratio: 1/0.6;
+    margin: 30px 0 15px 0;
   }
   
   .decoration-image img{
-    width: 47vw;
+    width: 44vw;
     aspect-ratio: 1/1.5;
   }
 
@@ -808,19 +993,43 @@ p{
 
   .background img{
     width: 76vw;
+    aspect-ratio: 1/0.9;
     justify-content: center;
     margin: auto;
   }
 
   .background-description{
-    margin: 40px 5%;
+    margin: 40px 10%;
   }
 
   /*Ending*/
 
   .ending{
-    margin: 20px 5% 150px 5%;
-    padding: 100px 80px;
+    margin: 20px 5% 100px 5%;
+  }
+
+  .ending-image img{
+    aspect-ratio: 1/0.7;
+  }
+
+  .ending p{
+    width: 450px;
+    line-height: 1.6em;
+  }
+
+  /*Explore other spots*/
+
+  .container{
+    width: 38vw;
+  }
+
+  .other-spots h2{
+    font-size: 20px;
+  }
+
+  .other-slider-description h2{
+    font-size: 19px;
+    margin: 15px 0 2px 6px;
   }
 
 }
@@ -830,9 +1039,13 @@ p{
 
   /*Common Parameter*/
 
+  h2{
+    font-size: 23px;
+  }
+
   :root{
-    --width: 70vw;
-    --height: calc(var(--width)*1.45);
+    --width: 75vw;
+    --height: calc(var(--width)*1);
   }
 
   /*Top Section*/
@@ -843,9 +1056,14 @@ p{
 
   .top-section-description h3{
     font-size: 17px;
+    width: 400px;
   }
 
   /*Decoration*/
+
+  .decoration{
+    margin: 100px 10%;
+  }
 
   .decoration-image{
     display: grid;
@@ -856,23 +1074,48 @@ p{
   }
 
   .image-13{
-    display: initial;
-    width: 80vw;
-    aspect-ratio: 1/1.3;
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    aspect-ratio: 1/1.1;
     object-fit: cover;
-    margin: 20px 10%;
-    
+    margin: 20px auto 10px auto;
   }
 
   .decoration-image img{
-    width: 80vw;
-    aspect-ratio: 1/1.3;
+    width: 70vw;
+    aspect-ratio: 1/1.1;
   }
 
   /*Ending*/
 
+  .ending-image img{
+    aspect-ratio: 1/0.85;
+  }
+
   .ending p{
-    line-height: 1.8em;
+    width: 360px;
+    line-height: 1.5em;
+  }
+
+  /*Explore other spots*/
+
+  .container{
+    width: 43vw;
+  }
+
+  .other-spots h2{
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  .other-slider-description h2{
+    font-size: 18px;
+    margin: 20px 0 2px 6px;
+  }
+
+  .other-slider-description p{
+    font-size: 15px;
   }
 }
 
@@ -881,47 +1124,49 @@ p{
 
   /*Common Parameter*/
 
+  h2{
+    letter-spacing: 0px;
+  }
+
   p{
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 400;
   }
 
   :root{
-    --width: 75vw;
-    --height: calc(var(--width)*1.5);
+    --width: 85vw;
+    --height: calc(var(--width)*0.9);
   }
 
   /*Top Section*/
 
+  .top-section-description img{
+    width: 90vw;
+    margin: 20% 0 10px 0;
+  }
+
   .top-section-description h3{
-    font-size: 17px;
+    font-size: 16px;
+    width: 250px;
     margin: 2%;
   }
 
   /*Gallery*/
 
   .gallery{
-    margin: 70px auto;
+    margin: 70px 5%;
   }
 
   .gallery img{
-    width: 96vw;
-    aspect-ratio: 1/0.8;
+    aspect-ratio: 1/0.7;
   }
 
   .gallery-additional-description{
-    margin: 60px 10%;
-  }
-
-  .image-2{
-    margin-left: 2%;
-  }
-
-  .image-3{
-    margin: 20px 0 0 0;
+    margin: 50px 4%;
   }
 
   .image-4{
-    margin: 0 0 0 4%;
+    margin: 0;
   }
 
   .image-5{
@@ -929,7 +1174,7 @@ p{
   }
 
   .image-6{
-    margin: 20px 0 0 2%;
+    margin: 20px 0 0 0;
   }
 
   /*Chairs*/
@@ -939,49 +1184,59 @@ p{
   }
 
   .chairs img{
-    width: 90vw;
+    width: 80%;
     aspect-ratio: 1/0.7;
   }
   
-  .image-7{
-    margin-left: 5%;
-  }
-  
   .image-8{
-    margin: 15px 0 0 5%;
+    margin: 15px 0 0 0;
   }
 
   /*Decoration*/
 
-  .image-13{
-    width: 86vw;
-    aspect-ratio: 1/1.3;
-    margin: 20px 7%;
+  .decoration{
+    margin: 100px 5%;
   }
 
+  .image-13,
   .decoration-image img{
-    width: 86vw;
+    width: 75vw;
+    aspect-ratio: 1/1.1;
   }
 
   /*Background*/
 
   .background{
-    margin: 100px 3%;
+    margin: 100px 0 50px 0;
   }
 
   .background img{
-    width: 86vw;
+    width: 90vw;
+  }
+
+  .background-description{
+    margin: 30px 5%;
   }
 
   /*Ending*/
   
   .ending{
-    margin: 0px 5% 150px 5%;
-    padding: 80px 50px;
+    margin: 20px 5%;
+  }
+
+  .ending-image img{
+    aspect-ratio: 1/0.9;
   }
 
   .ending p{
-    line-height: 1.7em;
+    line-height: 1.5em;
+    width: 320px;
+  }
+
+  /*Explore other spots*/
+
+  .container{
+    width: 50vw;
   }
 }
 
@@ -996,19 +1251,36 @@ p{
 
   /*Top Section*/
 
-  .top-section-description h1{
-    font-size: 35px;
+  .top-section-description img{
+    margin: 22% 0 10px 0;
   }
 
   .top-section-description h3{
-    font-size: 16px;
+    font-size: 15px;
+    width: 230px;
   }
 
-  /*Ending*/
-  
-  .ending{
-    margin: 0px 5% 150px 5%;
-    padding: 80px 35px;
+  /*Explore other spots*/
+
+  .other-spots{
+    margin: 80px 3% 30px 3%;
   }
 
+  .other-spots-container{
+    width: 100vw;
+    gap: 2%;
+  }
+
+  .other-spots h2{
+    font-size: 17px;
+  }
+
+  .other-slider-description h2{
+    font-size: 17px;
+    margin: 15px 0 0 6px;
+  }
+
+  .other-slider-description p{
+    font-size: 14px;
+  }
 }
